@@ -13,8 +13,10 @@
         "category": "misc",
         "ingredients": [
           {
-            "tag": "forge:dough",
-            "count": 2
+            "tag": "forge:dough"
+          },
+          {
+            "tag": "forge:dough"
           },
           {
             "tag": "forge:pumpkins"
