@@ -125,6 +125,7 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> SEEDS_SALMONBERRY = forge("seeds/salmonberry");
 	public static final TagKey<Item> SEEDS_CANTALOUPE = forge("seeds/cantaloupe");
 	public static final TagKey<Item> TORTILLA = forge("tortilla");
+	public static final TagKey<Item> SYRUP = forge("syrup");
 
 	// Forbidden and Arcanus
 	public static final TagKey<Item> STELLARITE_PIECE = Util.it("forbidden_arcanus", "stellarite_piece");

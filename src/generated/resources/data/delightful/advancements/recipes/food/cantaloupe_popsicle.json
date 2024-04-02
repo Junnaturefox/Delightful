@@ -16,7 +16,7 @@
           },
           "has_the_recipe": {
             "conditions": {
-              "recipe": "delightful:wrapped_cantaloupe"
+              "recipe": "delightful:food/cantaloupe_popsicle"
             },
             "trigger": "minecraft:recipe_unlocked"
           }
@@ -29,7 +29,7 @@
         ],
         "rewards": {
           "recipes": [
-            "delightful:wrapped_cantaloupe"
+            "delightful:food/cantaloupe_popsicle"
           ]
         },
         "sends_telemetry_event": false
@@ -37,7 +37,7 @@
       "conditions": [
         {
           "type": "delightful:enabled",
-          "value": "wrapped_cantaloupe"
+          "value": "cantaloupe_popsicle"
         }
       ]
     }

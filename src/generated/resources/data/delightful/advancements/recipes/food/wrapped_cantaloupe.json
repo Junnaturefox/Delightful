@@ -16,7 +16,7 @@
           },
           "has_the_recipe": {
             "conditions": {
-              "recipe": "delightful:cantaloupe_bread"
+              "recipe": "delightful:food/wrapped_cantaloupe"
             },
             "trigger": "minecraft:recipe_unlocked"
           }
@@ -29,7 +29,7 @@
         ],
         "rewards": {
           "recipes": [
-            "delightful:cantaloupe_bread"
+            "delightful:food/wrapped_cantaloupe"
           ]
         },
         "sends_telemetry_event": false
@@ -37,7 +37,7 @@
       "conditions": [
         {
           "type": "delightful:enabled",
-          "value": "cantaloupe_bread"
+          "value": "wrapped_cantaloupe"
         }
       ]
     }

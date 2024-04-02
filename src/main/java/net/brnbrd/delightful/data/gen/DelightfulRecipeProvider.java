@@ -170,11 +170,11 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
                     DelightfulItems.COOKED_MARSHMALLOW_STICK.get(), 0.5F, 600)
                 .unlockedBy("has_marshmallow_stick", has(DelightfulItems.MARSHMALLOW_STICK.get())),
             "campfire/marshmallow_stick", finished, enabled("cooked_marshmallow_stick"));
-        wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DelightfulItems.HONEY_GLAZED_WALNUT.get(), 3)
-                .requires(Ingredient.of(DelightfulItemTags.NUTS_WALNUT), 3)
+        wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DelightfulItems.HONEY_GLAZED_WALNUT.get(), 2)
+                .requires(Ingredient.of(DelightfulItemTags.NUTS_WALNUT), 2)
                 .requires(Items.HONEY_BOTTLE)
                 .unlockedBy("has_walnut", has(DelightfulItemTags.NUTS_WALNUT)),
-            "food/honey_glazed_walnut", finished, enabled("honey_glazed_walnut"), not(tagEmpty(DelightfulItemTags.NUTS_WALNUT)));
+            "food/honey_glazed_walnut", finished, enabled(DelightfulItems.HONEY_GLAZED_WALNUT), not(tagEmpty(DelightfulItemTags.NUTS_WALNUT)));
         wrap(CookingPotRecipeBuilder.cookingPotRecipe(
                     DelightfulItems.MATCHA_LATTE.get(), 1, CookingRecipes.FAST_COOKING, 0.35F, Items.HONEY_BOTTLE)
                 .addIngredient(Ingredient.of(ForgeTags.MILK))
@@ -313,7 +313,7 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
                 .requires(DelightfulItemTags.FRUITS_CANTALOUPE)
                 .requires(ForgeTags.COOKED_BACON)
                 .unlockedBy("has_cantaloupe_slice", has(DelightfulItemTags.FRUITS_CANTALOUPE)),
-            "wrapped_cantaloupe", finished, enabled("wrapped_cantaloupe"));
+            "food/wrapped_cantaloupe", finished, enabled("wrapped_cantaloupe"));
         wrap(ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, DelightfulItems.CANTALOUPE_POPSICLE.get(), 1)
                 .define('s', Tags.Items.RODS_WOODEN)
                 .define('i', Items.ICE)
@@ -322,12 +322,12 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
                 .pattern("icc")
                 .pattern("si ")
                 .unlockedBy("has_cantaloupe_slice", has(DelightfulItemTags.FRUITS_CANTALOUPE)),
-            "cantaloupe_popsicle", finished, enabled("cantaloupe_popsicle"));
+            "food/cantaloupe_popsicle", finished, enabled("cantaloupe_popsicle"));
         wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DelightfulItems.CANTALOUPE_BREAD.get(), 1)
                 .requires(ForgeTags.DOUGH)
                 .requires(DelightfulItemTags.FRUITS_CANTALOUPE)
                 .unlockedBy("has_cantaloupe_slice", has(DelightfulItemTags.FRUITS_CANTALOUPE)),
-            "cantaloupe_bread", finished, enabled("cantaloupe_bread"));
+            "food/cantaloupe_bread", finished, enabled("cantaloupe_bread"));
         wrap(CookingPotRecipeBuilder.cookingPotRecipe(
             DelightfulItems.ENDER_NECTAR.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F)
                 .addIngredient(Items.ENDER_EYE)
@@ -513,7 +513,7 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
             .pattern("xOx")
             .define('c', DelightfulItemTags.CHOCOLATE)
             .define('m', ForgeTags.MILK)
-            .define('x', Items.SUGAR)
+            .define('x', DelightfulItemTags.SUGAR)
             .define('O', ModItems.PIE_CRUST.get())
             .unlockedBy("has_pie_crust", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.PIE_CRUST.get()))
             .save(f))
@@ -524,7 +524,7 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
             .pattern("xOx")
             .define('c', Items.COCOA_BEANS)
             .define('m', ForgeTags.MILK)
-            .define('x', Items.SUGAR)
+            .define('x', DelightfulItemTags.SUGAR)
             .define('O', ModItems.PIE_CRUST.get())
             .unlockedBy("has_pie_crust", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.PIE_CRUST.get()))
             .save(f))

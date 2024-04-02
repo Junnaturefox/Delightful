@@ -373,6 +373,9 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 			.addOptional(Util.rl("vintagedelight", "cucumber_seeds"))
 			.addOptional(Util.rl("fruitsdelight", "lemon_seeds"))
 			.addOptional(Util.rl("fruitsdelight", "hamimelon_seeds"));
+		tag(DelightfulItemTags.SYRUP)
+			.addOptionalTag(Util.rl("supplementaries", "pancake_syrup"))
+			.addOptional(Util.rl("autumnity", "syrup_bottle"));
 
 		// Minecraft
 		tag(ItemTags.SMALL_FLOWERS)

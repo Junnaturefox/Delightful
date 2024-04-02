@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "#supplementaries:pancake_syrup",
+      "required": false
+    },
+    {
+      "id": "autumnity:syrup_bottle",
+      "required": false
+    }
+  ]
+}

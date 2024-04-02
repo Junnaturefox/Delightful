@@ -31,14 +31,11 @@
             "tag": "forge:nuts/walnut"
           },
           {
-            "tag": "forge:nuts/walnut"
-          },
-          {
             "item": "minecraft:honey_bottle"
           }
         ],
         "result": {
-          "count": 3,
+          "count": 2,
           "item": "delightful:honey_glazed_walnut"
         }
       }

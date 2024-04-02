@@ -25,7 +25,7 @@
             "tag": "forge:milk"
           },
           "x": {
-            "item": "minecraft:sugar"
+            "tag": "forge:sugar"
           }
         },
         "pattern": [
@@ -60,7 +60,7 @@
             "tag": "forge:milk"
           },
           "x": {
-            "item": "minecraft:sugar"
+            "tag": "forge:sugar"
           }
         },
         "pattern": [

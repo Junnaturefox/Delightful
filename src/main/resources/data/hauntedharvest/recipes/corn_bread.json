@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:item_exists",
+          "item": "haunted_harvest:cornbread"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          {
+            "tag": "forge:dough",
+            "count": 2
+          },
+          {
+            "tag": "forge:crops/corn"
+          }
+        ],
+        "result": {
+          "item": "haunted_harvest:cornbread",
+          "count": 3
+        }
+      }
+    }
+  ]
+}
