@@ -261,6 +261,8 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 			.addOptional(Util.rl("etcetera", "eggple"))
 			.addOptional(Util.rl("naturalist", "tortoise_egg"))
 			.addOptional(Util.rl("naturalist", "alligator_egg"));
+		tag(ForgeTags.COOKED_EGGS)
+			.addOptionalTag(Util.rl(Mods.AA, "fried_egg"));
 		tag(DelightfulItemTags.CRAB_LEGS)
 			.addOptional(Util.rl("quark", "cooked_crab_leg"))
 			.addOptional(Util.rl("crabbersdelight", "crab_legs"));
