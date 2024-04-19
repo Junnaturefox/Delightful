@@ -33,7 +33,7 @@ public class CompatKnifeItem extends DelightfulKnifeItem implements ICompat {
 
     @Override
     public boolean enabled() {
-        return ICompat.super.enabled() && super.enabled();
+        return ICompat.super.enabled() && this.isTag();
     }
 
     @Override
