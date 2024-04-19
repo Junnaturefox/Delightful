@@ -4,11 +4,16 @@
 # 3.5.3
 
 ### Updates
+- Added Mendosteen Crate (for [Ars Nouveau](https://www.curseforge.com/minecraft/mc-mods/ars-nouveau))
+- Added Bastion Fruit Crate (for [Ars Nouveau](https://www.curseforge.com/minecraft/mc-mods/ars-nouveau))
+- Added Frostaya Crate (for [Ars Nouveau](https://www.curseforge.com/minecraft/mc-mods/ars-nouveau))
+- Added Bombegranate Crate (for [Ars Nouveau](https://www.curseforge.com/minecraft/mc-mods/ars-nouveau))
 - Matcha is now created using Green Tea Leaves with a shovel on a cutting board
 - Matcha now uses item tag "forge:matcha"
 - Matcha will be disabled in the presence of [Youkai's Homecoming](https://www.curseforge.com/minecraft/mc-mods/youkais-homecoming), in favor of theirs
 - Some items (such as teas) can be made in [Youkai's Homecoming](https://www.curseforge.com/minecraft/mc-mods/youkais-homecoming)'s kettle
 - Matcha Latte's recipe is now bottled in a Honey Bottle
+- Fixed Living Knife being disabled
 - Azalea Tea can now be made with Twigs' Azalea Flowers
 - Nut Milk recipe compat for Miner's Delight's Copper Cup
 - Immersive Engineering garden cloche compat fixes, and support for Cantaloupes
