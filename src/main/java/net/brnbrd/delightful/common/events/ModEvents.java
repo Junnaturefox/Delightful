@@ -63,6 +63,10 @@ public class ModEvents {
             ComposterBlock.COMPOSTABLES.put(DelightfulItems.NIGHTSHADE_BERRY_SACK.get(), 1.0F);
             ComposterBlock.COMPOSTABLES.put(DelightfulItems.BLUEBERRY_SACK.get(), 1.0F);
             ComposterBlock.COMPOSTABLES.put(DelightfulItems.CRIMSON_BERRY_SACK.get(), 1.0F);
+            ComposterBlock.COMPOSTABLES.put(DelightfulItems.MENDOSTEEN_CRATE.get(), 1.0F);
+            ComposterBlock.COMPOSTABLES.put(DelightfulItems.BASTION_FRUIT_CRATE.get(), 1.0F);
+            ComposterBlock.COMPOSTABLES.put(DelightfulItems.FROSTAYA_CRATE.get(), 1.0F);
+            ComposterBlock.COMPOSTABLES.put(DelightfulItems.BOMBEGRANATE_CRATE.get(), 1.0F);
             ComposterBlock.COMPOSTABLES.put(DelightfulItems.GREEN_APPLE_CRATE.get(), 1.0F);
             ComposterBlock.COMPOSTABLES.put(DelightfulItems.JOSHUA_FRUIT_CRATE.get(), 1.0F);
             ComposterBlock.COMPOSTABLES.put(DelightfulItems.BAOBAB_FRUIT_CRATE.get(), 1.0F);

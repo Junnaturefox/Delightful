@@ -1,0 +1,34 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:item_exists",
+              "item": "ars_nouveau:bastion_pod"
+            },
+            {
+              "type": "delightful:enabled",
+              "value": "bastion_fruit_crate"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "item": "delightful:bastion_fruit_crate"
+          }
+        ],
+        "result": {
+          "count": 9,
+          "item": "ars_nouveau:bastion_pod"
+        }
+      }
+    }
+  ]
+}

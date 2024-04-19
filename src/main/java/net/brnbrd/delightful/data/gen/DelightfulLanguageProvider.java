@@ -118,6 +118,10 @@ public class DelightfulLanguageProvider extends LanguageProvider {
         addBlock(DelightfulBlocks.ACORN_SACK, "Acorn Sack");
         addBlock(DelightfulBlocks.SALMONBERRY_SACK, "Salmonberry Sack");
         addBlock(DelightfulBlocks.BLUEBERRY_SACK, "Blueberry Sack");
+        addBlock(DelightfulBlocks.MENDOSTEEN_CRATE, "Mendosteen Crate");
+        addBlock(DelightfulBlocks.BASTION_FRUIT_CRATE, "Bastion Fruit Crate");
+        addBlock(DelightfulBlocks.FROSTAYA_CRATE, "Frostaya Crate");
+        addBlock(DelightfulBlocks.BOMBEGRANATE_CRATE, "Bombegranate Crate");
         addBlock(DelightfulBlocks.CRIMSON_BERRY_SACK, "Crimson Berry Sack");
         addBlock(DelightfulBlocks.NIGHTSHADE_BERRY_SACK, "Nightshade Berry Sack");
         addBlock(DelightfulBlocks.GREEN_APPLE_CRATE, "Green Apple Crate");

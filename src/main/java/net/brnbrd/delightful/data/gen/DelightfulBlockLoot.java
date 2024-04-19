@@ -154,6 +154,10 @@ public class DelightfulBlockLoot extends BlockLootSubProvider {
         this.dropSelf(DelightfulBlocks.SALMONBERRY_SACK.get());
         this.dropSelf(DelightfulBlocks.ACORN_SACK.get());
         this.dropSelf(DelightfulBlocks.BLUEBERRY_SACK.get());
+        this.dropSelf(DelightfulBlocks.MENDOSTEEN_CRATE.get());
+        this.dropSelf(DelightfulBlocks.BASTION_FRUIT_CRATE.get());
+        this.dropSelf(DelightfulBlocks.FROSTAYA_CRATE.get());
+        this.dropSelf(DelightfulBlocks.BOMBEGRANATE_CRATE.get());
         this.dropSelf(DelightfulBlocks.CRIMSON_BERRY_SACK.get());
         this.dropSelf(DelightfulBlocks.NIGHTSHADE_BERRY_SACK.get());
         this.dropSelf(DelightfulBlocks.GREEN_APPLE_CRATE.get());

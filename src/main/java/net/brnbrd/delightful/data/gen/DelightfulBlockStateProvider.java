@@ -62,6 +62,10 @@ public class DelightfulBlockStateProvider extends BlockStateProvider {
         this.simpleBlock(DelightfulBlocks.SALMONBERRY_ICE_CREAM_BLOCK.get());
         this.simpleBlock(DelightfulBlocks.MATCHA_ICE_CREAM_BLOCK.get());
         this.sackBlock(DelightfulBlocks.BLUEBERRY_SACK.get(), "blueberry");
+        this.crateBlock(DelightfulBlocks.MENDOSTEEN_CRATE.get(), "mendosteen", false);
+        this.crateBlock(DelightfulBlocks.BASTION_FRUIT_CRATE.get(), "bastion_fruit", false);
+        this.crateBlock(DelightfulBlocks.FROSTAYA_CRATE.get(), "frostaya", false);
+        this.crateBlock(DelightfulBlocks.BOMBEGRANATE_CRATE.get(), "bombegranate", false);
         this.sackBlock(DelightfulBlocks.CRIMSON_BERRY_SACK.get(), "crimson_berry");
         this.sackBlock(DelightfulBlocks.NIGHTSHADE_BERRY_SACK.get(), "nightshade_berry");
         this.crateBlock(DelightfulBlocks.GREEN_APPLE_CRATE.get(), "green_apple", true);

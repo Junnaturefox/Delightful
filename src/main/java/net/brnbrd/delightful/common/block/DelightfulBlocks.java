@@ -114,6 +114,16 @@ public class DelightfulBlocks {
     );
     public static final RegistryObject<Block> BLUEBERRY_SACK = BLOCKS.register("blueberry_sack",
         () ->  new Block(Block.Properties.copy(Blocks.BLUE_WOOL).strength(.5f).sound(SoundType.WOOL)));
+    //public static final RegistryObject<Block> SOURCE_BERRY_CRATE = BLOCKS.register("source_berry_crate",
+    //    () ->  new Block(Block.Properties.copy(Blocks.OAK_PLANKS).mapColor(MapColor.COLOR_PURPLE).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> MENDOSTEEN_CRATE = BLOCKS.register("mendosteen_crate",
+        () ->  new Block(Block.Properties.copy(Blocks.OAK_PLANKS).mapColor(MapColor.COLOR_LIGHT_GREEN).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> BASTION_FRUIT_CRATE = BLOCKS.register("bastion_fruit_crate",
+        () ->  new Block(Block.Properties.copy(Blocks.OAK_PLANKS).mapColor(MapColor.COLOR_PURPLE).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> FROSTAYA_CRATE = BLOCKS.register("frostaya_crate",
+        () ->  new Block(Block.Properties.copy(Blocks.OAK_PLANKS).mapColor(MapColor.COLOR_LIGHT_BLUE).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+    public static final RegistryObject<Block> BOMBEGRANATE_CRATE = BLOCKS.register("bombegranate_crate",
+        () ->  new Block(Block.Properties.copy(Blocks.OAK_PLANKS).mapColor(MapColor.COLOR_RED).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> CRIMSON_BERRY_SACK = BLOCKS.register("crimson_berry_sack",
         () ->  new Block(Block.Properties.copy(Blocks.RED_WOOL).strength(.5f).sound(SoundType.WOOL)));
     public static final RegistryObject<Block> NIGHTSHADE_BERRY_SACK = BLOCKS.register("nightshade_berry_sack",

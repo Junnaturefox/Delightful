@@ -33,6 +33,14 @@ public class DelightfulItems {
         () -> new BlockItem(DelightfulBlocks.BASALT_CABINET.get(), ModItems.basicItem()));
     public static final RegistryObject<Item> BLUEBERRY_SACK = registerItem("blueberry_sack", () ->
         new CompatBlockItem(DelightfulBlocks.BLUEBERRY_SACK.get(), (new Item.Properties()), Mods.BYG, Mods.WB, Mods.AE));
+    public static final RegistryObject<Item> MENDOSTEEN_CRATE = registerItem("mendosteen_crate", () ->
+        new CompatBlockItem(DelightfulBlocks.MENDOSTEEN_CRATE.get(), (new Item.Properties()), Mods.AN));
+    public static final RegistryObject<Item> BASTION_FRUIT_CRATE = registerItem("bastion_fruit_crate", () ->
+        new CompatBlockItem(DelightfulBlocks.BASTION_FRUIT_CRATE.get(), (new Item.Properties()), Mods.AN));
+    public static final RegistryObject<Item> FROSTAYA_CRATE = registerItem("frostaya_crate", () ->
+        new CompatBlockItem(DelightfulBlocks.FROSTAYA_CRATE.get(), (new Item.Properties()), Mods.AN));
+    public static final RegistryObject<Item> BOMBEGRANATE_CRATE = registerItem("bombegranate_crate", () ->
+        new CompatBlockItem(DelightfulBlocks.BOMBEGRANATE_CRATE.get(), (new Item.Properties()), Mods.AN));
     public static final RegistryObject<Item> CRIMSON_BERRY_SACK = registerItem("crimson_berry_sack", () ->
         new CompatBlockItem(DelightfulBlocks.CRIMSON_BERRY_SACK.get(), (new Item.Properties()), Mods.BYG));
     public static final RegistryObject<Item> NIGHTSHADE_BERRY_SACK = registerItem("nightshade_berry_sack", () ->
