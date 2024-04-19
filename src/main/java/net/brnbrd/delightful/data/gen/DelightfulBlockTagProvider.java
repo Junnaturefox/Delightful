@@ -95,7 +95,8 @@ public class DelightfulBlockTagProvider extends BlockTagsProvider {
 			.add(DelightfulBlocks.SALMONBERRY_SACK.get())
 			.add(DelightfulBlocks.BLUEBERRY_SACK.get())
 			.add(DelightfulBlocks.CRIMSON_BERRY_SACK.get())
-			.add(DelightfulBlocks.NIGHTSHADE_BERRY_SACK.get());
+			.add(DelightfulBlocks.NIGHTSHADE_BERRY_SACK.get())
+			.addOptional(Util.rl(Mods.AN, "sourceberry_sack"));
 		this.tag(BlockTags.SMALL_FLOWERS)
 			.add(DelightfulBlocks.WILD_SALMONBERRIES.get());
 		this.tag(BlockTags.CAULDRONS)

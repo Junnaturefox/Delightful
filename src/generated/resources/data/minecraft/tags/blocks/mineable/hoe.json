@@ -4,6 +4,10 @@
     "delightful:salmonberry_sack",
     "delightful:blueberry_sack",
     "delightful:crimson_berry_sack",
-    "delightful:nightshade_berry_sack"
+    "delightful:nightshade_berry_sack",
+    {
+      "id": "ars_nouveau:sourceberry_sack",
+      "required": false
+    }
   ]
 }
