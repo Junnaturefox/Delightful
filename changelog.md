@@ -13,9 +13,11 @@
 - Matcha will be disabled in the presence of [Youkai's Homecoming](https://www.curseforge.com/minecraft/mc-mods/youkais-homecoming), in favor of theirs
 - Some items (such as teas) can be made in [Youkai's Homecoming](https://www.curseforge.com/minecraft/mc-mods/youkais-homecoming)'s kettle
 - Matcha Latte's recipe is now bottled in a Honey Bottle
-- Fixed Living Knife being disabled
 - Azalea Tea can now be made with Twigs' Azalea Flowers
 - Nut Milk recipe compat for Miner's Delight's Copper Cup
+
+### Fixes
+- Fixed Living Knife being disabled
 - Immersive Engineering garden cloche compat fixes, and support for Cantaloupes
 
 
