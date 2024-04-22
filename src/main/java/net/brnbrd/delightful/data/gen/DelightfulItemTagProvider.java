@@ -469,6 +469,8 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		tag(DelightfulItemTags.CRYSTAL_SPIKE_TIPS)
 			.addOptional(Util.rl(Mods.EP, "crystal_spike_tip"))
 			.addOptional(Util.rl(Mods.EP, "void_crystal_spike_tip"));
+		tag(DelightfulItemTags.XP_BOOSTED)
+			.add(Knives.CRYSTALLINE.get());
 
 		tag(DelightfulItemTags.SOUL_STEEL_INGOT)
 			.addOptional(Util.rl("spirit", "soul_steel_ingot"));

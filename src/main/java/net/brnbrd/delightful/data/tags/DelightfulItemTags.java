@@ -171,6 +171,7 @@ public class DelightfulItemTags {
 	// Phantasm
 	public static final TagKey<Item> VOID_CRYSTAL_BLOCK = Util.it(Mods.EP, "void_crystal_block");
 	public static final TagKey<Item> CRYSTAL_SPIKE_TIPS = Util.it(Mods.EP, "crystal_spike_tips");
+	public static final TagKey<Item> XP_BOOSTED = Util.it(Mods.EP, "gets_xp_speed_boost");
 
 	// AE2
 	public static final TagKey<Item> QUARTZ_KNIFE = Util.it(Delightful.MODID, "quartz_knife");
