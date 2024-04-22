@@ -1,4 +1,4 @@
-// 1.20.1	2024-04-02T01:39:00.4029158	Recipes
+// 1.20.1	2024-04-22T11:31:05.3501936	Recipes
 6c217dd6477efa10f6042809ba959d53036ab5e2 data/delightful/advancements/recipes/cabinets/basalt_cabinet.json
 5b82f87851220644287d771121677deac66b3b89 data/delightful/advancements/recipes/cabinets/quartz_cabinet.json
 cf29033c1c919355c261025df529938e6ebc73f8 data/delightful/advancements/recipes/campfire/cactus_steak.json
@@ -109,7 +109,6 @@ c45a079a9e779846ac986fd09b1c1ab3cde29ddd data/delightful/advancements/recipes/kn
 68bdcd159d01cd0c033bb1c41ae88ab01e56c116 data/delightful/advancements/recipes/knives/smithing/warden_knife.json
 ed9c90a37c0e3db34b0204b0b790ed22b8660d0b data/delightful/advancements/recipes/knives/soul_steel_knife.json
 8868e2defc2051581da437f40183ea917af7f81a data/delightful/advancements/recipes/knives/steel_knife.json
-6800a2c5fdce0dcf8875c7aea30417475ca2c4c1 data/delightful/advancements/recipes/knives/stellium_knife.json
 ddc6ba62056ccad517db569c43db337531b99340 data/delightful/advancements/recipes/knives/terra_knife.json
 07fdd85eb61974d3235ff4c36365820807804e27 data/delightful/advancements/recipes/knives/thyrium_knife.json
 5cf2bd9506b4f5964ad25f556c262b7f60d055d6 data/delightful/advancements/recipes/knives/tin_knife.json
@@ -252,7 +251,6 @@ e73b6ae9b94fbb2ba6753ece5f012afc89d6cb9f data/delightful/recipes/knives/smithing
 13384a61b58a8c379b19f0df61518b015b4f14a9 data/delightful/recipes/knives/smithing/warden_knife.json
 87131637334c551a08520b78dca66f0037223bc1 data/delightful/recipes/knives/soul_steel_knife.json
 72afa878d7c09e94e0512c102deedde5bdac98cf data/delightful/recipes/knives/steel_knife.json
-7cb9d0951d20c2e1eee1708330e2dc3f02972281 data/delightful/recipes/knives/stellium_knife.json
 997851c0e27b79b01c16a5731fc7cf0e640d28b4 data/delightful/recipes/knives/terra_knife.json
 37e9180074eff4fa1a1ec3293b2a5a0a14e3d67e data/delightful/recipes/knives/thyrium_knife.json
 f931103ca112dfa60fd57ce8c8721c44338c680e data/delightful/recipes/knives/tin_knife.json

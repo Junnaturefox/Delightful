@@ -169,7 +169,6 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> SPRING_CROPS = Util.it("sereneseasons", "spring_crops");
 
 	// Phantasm
-	public static final TagKey<Item> INGOTS_STELLIUM = DelightfulItems.ingot("stellium");
 	public static final TagKey<Item> VOID_CRYSTAL_BLOCK = Util.it(Mods.EP, "void_crystal_block");
 	public static final TagKey<Item> CRYSTAL_SPIKE_TIPS = Util.it(Mods.EP, "crystal_spike_tips");
 

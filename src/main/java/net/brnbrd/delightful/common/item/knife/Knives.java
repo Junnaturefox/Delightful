@@ -29,7 +29,6 @@ import net.brnbrd.delightful.common.item.knife.compat.nethers_exoticism.KiwanoKn
 import net.brnbrd.delightful.common.item.knife.compat.nourished_nether.NecroniumKnifeItem;
 import net.brnbrd.delightful.common.item.knife.compat.oresabovediamonds.LargeAmethystKnifeItem;
 import net.brnbrd.delightful.common.item.knife.compat.oresabovediamonds.NetheriteOpalKnifeItem;
-import net.brnbrd.delightful.common.item.knife.compat.phantasm.StelliumKnifeItem;
 import net.brnbrd.delightful.common.item.knife.compat.rootsclassic.LivingKnifeItem;
 import net.brnbrd.delightful.common.item.knife.compat.seeds.LeafKnifeItem;
 import net.brnbrd.delightful.common.item.knife.compat.spirit.SoulSteelKnifeItem;
@@ -102,7 +101,6 @@ public class Knives extends DelightfulItems {
 	public static final RegistryObject<Item> LEAF = registerItem("leaf_knife", () -> new LeafKnifeItem(props()));
 	public static final RegistryObject<Item> KIWANO = registerItem("kiwano_knife", () -> new KiwanoKnifeItem(props()));
 	public static final RegistryObject<Item> CRYSTALLINE = registerCompatKnife("crystalline", Mods.EP, DelightfulItemTags.VOID_CRYSTAL_BLOCK);
-	public static final RegistryObject<Item> STELLIUM = registerItem("stellium_knife", () -> new StelliumKnifeItem(props()));
 	public static final RegistryObject<Item> SOUL_STEEL = registerItem("soul_steel_knife", () -> new SoulSteelKnifeItem(props()));
 	public static final RegistryObject<Item> ROSE_GOLD = registerItem("rose_gold_knife", () -> new RoseGoldKnifeItem(props()));
 	public static final RegistryObject<Item> GILDED_NETHERITE = registerItem("gilded_netherite_knife", () -> new GildedNetheriteKnifeItem(props()));

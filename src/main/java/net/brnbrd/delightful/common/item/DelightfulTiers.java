@@ -59,7 +59,6 @@ public enum DelightfulTiers implements Tier {
     BLAZING(3, 450, 12F, 2.5F, 2, Ingredient.of(Tags.Items.INGOTS_GOLD)),
     ADAMANTITE(4, 0, 8F, 3.5F, 15, DelightfulItems.getIngot("adamantite")),
     CRYSTALLINE(2, 183, 1F, 3.5F, 11, Ingredient.of(DelightfulItemTags.CRYSTAL_SPIKE_TIPS)),
-    STELLIUM(4, 1337, 7.5F, 5F, 17, Ingredient.of(DelightfulItemTags.INGOTS_STELLIUM)),
     ROSE_GOLD(2, 900, 9F, 2F, 17, Ingredient.of(Tags.Items.INGOTS_COPPER)),
     GILDED_NETHERITE(4, 2031, 10F, 4F, 20, Ingredient.of(Tags.Items.INGOTS_NETHERITE)),
     SOUL_STEEL(3, 200, 9F, 3.5F, 25, Ingredient.EMPTY),

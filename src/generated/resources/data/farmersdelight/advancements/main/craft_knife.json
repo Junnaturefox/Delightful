@@ -757,18 +757,6 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "stellium_knife": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "delightful:stellium_knife"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "stratus_knife": {
       "conditions": {
         "items": [
@@ -957,7 +945,6 @@
       "leaf_knife",
       "kiwano_knife",
       "crystalline_knife",
-      "stellium_knife",
       "soul_steel_knife",
       "rose_gold_knife",
       "gilded_netherite_knife",
