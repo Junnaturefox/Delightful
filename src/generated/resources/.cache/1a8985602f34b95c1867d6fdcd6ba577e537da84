@@ -1,4 +1,4 @@
-// 1.20.1	2024-04-22T11:43:33.0319787	delightful
+// 1.20.1	2024-04-22T12:00:25.9888424	delightful
 8980358a7235536580c6b076956e78e18eca38e9 data/additionaladditions/tags/items/gilded_netherite_upgrade.json
 251ab39f668c15d972d4630264e39f06ec646606 data/additionaladditions/tags/items/gold_ring.json
 9136930399e99d219f34c05a02844b699ef0873a data/additionaladditions/tags/items/rose_gold_alloy.json
@@ -30,7 +30,6 @@ d74ce8344a88381660e30e19cdffd508a6ac6951 data/farmersdelight/tags/items/cabinets
 46f279b6acd03b06ea14e9f62be7d48e200c002c data/farmersdelight/tags/items/wild_crops.json
 a1edebb3bd4f7f3d7e73d53c915b2fe3203614aa data/forbidden_arcanus/tags/items/draco_arcanus_staff.json
 67b8f22c3fbfa7142b71a6a27d583be2b01e8ceb data/forbidden_arcanus/tags/items/dragon_scale.json
-bc0d2f9713a6dad4f628cff66b39b0e49f09e3aa data/forbidden_arcanus/tags/items/stellarite_piece.json
 7817031f97a8b7a33c050db6733dc0de55bd9d94 data/forge/tags/items/berries.json
 cfa01c68f0a165ee8f4cb2ffdf3c84d288224411 data/forge/tags/items/bread_slices.json
 72eaab1ff623df1fd6d815418fec865bb72c52ac data/forge/tags/items/cattail.json
@@ -95,7 +94,6 @@ d6c74500b2d44fbad3f18f4213772b35ce41a9ca data/forge/tags/items/fruits/wild_berri
 78cac37f0ee6dd6b721fa29f42197a86e08ca5ed data/forge/tags/items/gems/skyjade.json
 b3d5bd87cc20e4f6a39f331a575350af129f3bc7 data/forge/tags/items/gems/zanite.json
 1d56151bc106a5979925295ca4d9faeff01dbe6e data/forge/tags/items/ingots/alfsteel.json
-a7bc19c2e1e0313dd1e42237af5b8fb21e732196 data/forge/tags/items/ingots/deorum.json
 a5708a8ea09880e2d376492b61ffc16aa8437828 data/forge/tags/items/ingots/necronium.json
 90235b6f15531552c3f8f86f9bef1259505b1a8a data/forge/tags/items/ingots/pendorite.json
 8b80964776f0c80a646e2e0f98a96923eed65892 data/forge/tags/items/ingots/soul_steel.json

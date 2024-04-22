@@ -406,10 +406,8 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		this.addSelf(DelightfulItemTags.COOKED_PRICKLY_PEAR);
 
 		// Forbidden and Arcanus
-		this.addSelf(DelightfulItemTags.STELLARITE_PIECE);
 		this.addSelf(DelightfulItemTags.DRACO_ARCANUS_STAFF);
 		this.addSelf(DelightfulItemTags.DRAGON_SCALE);
-		tag(DelightfulItemTags.INGOTS_DEORUM).addOptional(Util.rl(Mods.FA, "deorum_ingot"));
 
 		// Byg
 		tag(DelightfulItemTags.INGOTS_PENDORITE).addOptional(Util.rl(Mods.BYG, BYGCompat.pendorite_ingot));

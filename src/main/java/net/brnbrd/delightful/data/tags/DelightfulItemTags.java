@@ -117,21 +117,19 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> FOOD_MEAT = forge("food/meat");
 	public static final TagKey<Item> MEAT = forge("meat");
 	public static final TagKey<Item> CATTAIL = forge("cattail");
-	public static final TagKey<Item> INGOTS_STEEL = DelightfulItems.ingot("steel");
-	public static final TagKey<Item> INGOTS_ZINC = DelightfulItems.ingot("zinc");
-	public static final TagKey<Item> GEMS_ROSE_QUARTZ = forge("gems/rose_quartz");
-	public static final TagKey<Item> GEMS_ZANITE = forge("gems/zanite");
 	public static final TagKey<Item> ICE_CUBES = forge("ice_cubes");
-	public static final TagKey<Item> SEEDS_SALMONBERRY = forge("seeds/salmonberry");
-	public static final TagKey<Item> SEEDS_CANTALOUPE = forge("seeds/cantaloupe");
 	public static final TagKey<Item> TORTILLA = forge("tortilla");
 	public static final TagKey<Item> SYRUP = forge("syrup");
+	public static final TagKey<Item> GEMS_ROSE_QUARTZ = forge("gems/rose_quartz");
+	public static final TagKey<Item> GEMS_ZANITE = forge("gems/zanite");
+	public static final TagKey<Item> INGOTS_STEEL = DelightfulItems.ingot("steel");
+	public static final TagKey<Item> INGOTS_ZINC = DelightfulItems.ingot("zinc");
+	public static final TagKey<Item> SEEDS_SALMONBERRY = forge("seeds/salmonberry");
+	public static final TagKey<Item> SEEDS_CANTALOUPE = forge("seeds/cantaloupe");
 
 	// Forbidden and Arcanus
-	public static final TagKey<Item> STELLARITE_PIECE = Util.it("forbidden_arcanus", "stellarite_piece");
 	public static final TagKey<Item> DRAGON_SCALE = Util.it("forbidden_arcanus", "dragon_scale");
 	public static final TagKey<Item> DRACO_ARCANUS_STAFF = Util.it("forbidden_arcanus", "draco_arcanus_staff");
-	public static final TagKey<Item> INGOTS_DEORUM = DelightfulItems.ingot("deorum");
 
 	// Allthemodium
 	public static final TagKey<Item> PLATES_ALLTHEMODIUM = forge("plates/allthemodium");

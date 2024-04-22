@@ -3,7 +3,6 @@ package net.brnbrd.delightful.common.item;
 import net.brnbrd.delightful.Util;
 import net.brnbrd.delightful.compat.Mods;
 import net.brnbrd.delightful.data.tags.DelightfulItemTags;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -40,9 +39,7 @@ public enum DelightfulTiers implements Tier {
     STEELEAF(3, 131, 8F, 3, 9, DelightfulItems.getIngot("steeleaf")),
     KNIGHTMETAL(3, 512, 8F, 3, 8, DelightfulItems.getIngot("knightmetal")),
     LIVING(2, 192, 6F, 2F, 18, Ingredient.EMPTY),
-    DRACO_ARCANUS(4, 2661, 12F, 7F, 20, Ingredient.of(Util.it("forbidden_arcanus", "dragon_scale"))),
-    DEORUM(3, 1861, 9F, 3.5F, 26, DelightfulItems.getIngot("deorum")),
-    REINFORCED_DEORUM(3, 2561, 9F, 3.5F, 26, Ingredient.of(Util.it("forbidden_arcanus", "stellarite_piece"))),
+    DRACO_ARCANUS(4, 2661, 12F, 7F, 20, Ingredient.of(DelightfulItemTags.DRAGON_SCALE)),
     MYTHRIL(Tiers.IRON.getLevel(), 800, 8F, 3F, 12, DelightfulItems.getIngot("mythril")),
     ADAMANTIUM(Tiers.IRON.getLevel(), 1150, 14F, 3F, 3, DelightfulItems.getIngot("adamantium")),
     ONYX(Tiers.NETHERITE.getLevel(), 3280, 10F, 5F, 15, DelightfulItems.getIngot("onyx")),
