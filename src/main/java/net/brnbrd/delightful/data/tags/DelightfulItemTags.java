@@ -15,28 +15,10 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> COMPAT_PIES = Util.it(Delightful.MODID, "compat_pies");
 	public static final TagKey<Item> FIRE_KNIVES = Util.it(Delightful.MODID, "fire_knives");
 
-	// Farmers Delight
-	public static final TagKey<Item> CABINETS_STONE = Util.it(FarmersDelight.MODID, "cabinets/stone");
-
-	// Nethers Delight
-	public static final TagKey<Item> MEAL_ITEM = Util.it("nethersdelight", "meal_item");
-
-	// Ecologics
-	public static final TagKey<Item> COOKED_PRICKLY_PEAR = Util.it("ecologics", "cooked_prickly_pear");
-
-	// Collector's Reap
-	public static final TagKey<Item> GUMMIES = Util.it("collectorsreap", "gummies");
-
 	// Minecraft
 	public static final TagKey<Item> FLOWERS_AZALEA = Util.it("minecraft", "flowers/azalea");
 
 	// Forge
-	public static final TagKey<Item> LAVENDER = forge("lavender");
-	public static final TagKey<Item> CLOVER = forge("clover");
-	public static final TagKey<Item> MATCHA = forge("matcha");
-	public static final TagKey<Item> TOOLS_SCAVENGING = forge("tools/scavenging");
-	public static final TagKey<Item> TOOLS_MACHETES = forge("tools/machetes");
-	public static final TagKey<Item> DOUGH_CORN = forge("dough/corn");
 	public static final TagKey<Item> FRUITS = forge("fruits");
 	public static final TagKey<Item> FRUITS_APPLE = forge("fruits/apple");
 	public static final TagKey<Item> FRUITS_KIWI = forge("fruits/kiwi");
@@ -120,12 +102,30 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> ICE_CUBES = forge("ice_cubes");
 	public static final TagKey<Item> TORTILLA = forge("tortilla");
 	public static final TagKey<Item> SYRUP = forge("syrup");
+	public static final TagKey<Item> LAVENDER = forge("lavender");
+	public static final TagKey<Item> CLOVER = forge("clover");
+	public static final TagKey<Item> MATCHA = forge("matcha");
+	public static final TagKey<Item> DOUGH_CORN = forge("dough/corn");
 	public static final TagKey<Item> GEMS_ROSE_QUARTZ = forge("gems/rose_quartz");
 	public static final TagKey<Item> GEMS_ZANITE = forge("gems/zanite");
 	public static final TagKey<Item> INGOTS_STEEL = DelightfulItems.ingot("steel");
 	public static final TagKey<Item> INGOTS_ZINC = DelightfulItems.ingot("zinc");
+	public static final TagKey<Item> TOOLS_SCAVENGING = forge("tools/scavenging");
+	public static final TagKey<Item> TOOLS_MACHETES = forge("tools/machetes");
 	public static final TagKey<Item> SEEDS_SALMONBERRY = forge("seeds/salmonberry");
 	public static final TagKey<Item> SEEDS_CANTALOUPE = forge("seeds/cantaloupe");
+
+	// Farmers Delight
+	public static final TagKey<Item> CABINETS_STONE = Util.it(FarmersDelight.MODID, "cabinets/stone");
+
+	// Collector's Reap
+	public static final TagKey<Item> GUMMIES = Util.it("collectorsreap", "gummies");
+
+	// Nethers Delight
+	public static final TagKey<Item> MEAL_ITEM = Util.it("nethersdelight", "meal_item");
+
+	// Ecologics
+	public static final TagKey<Item> COOKED_PRICKLY_PEAR = Util.it("ecologics", "cooked_prickly_pear");
 
 	// Forbidden and Arcanus
 	public static final TagKey<Item> DRAGON_SCALE = Util.it("forbidden_arcanus", "dragon_scale");
