@@ -19,7 +19,7 @@
             "tag": "forge:dough"
           },
           {
-            "tag": "forge:pumpkins"
+            "item": "farmersdelight:pumpkin_slice"
           },
           {
             "tag": "forge:syrup"
