@@ -99,7 +99,8 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 			.addOptional(Util.rl(Mods.BOP, "tall_lavender"));
 		tag(DelightfulItemTags.CLOVER)
 			.addOptional(Util.rl(Mods.BOP, "clover"))
-			.addOptional(Util.rl(Mods.TF, "clover_patch"));
+			.addOptional(Util.rl(Mods.TF, "clover_patch"))
+			.addOptional(Util.rl("buzzier_bees", "four_leaf_clover"));
 		tag(DelightfulItemTags.MATCHA)
 			.add(DelightfulItems.MATCHA.get());
 		tag(DelightfulItemTags.DOUGH_CORN)

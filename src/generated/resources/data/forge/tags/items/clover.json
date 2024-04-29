@@ -7,6 +7,10 @@
     {
       "id": "twilightforest:clover_patch",
       "required": false
+    },
+    {
+      "id": "buzzier_bees:four_leaf_clover",
+      "required": false
     }
   ]
 }
