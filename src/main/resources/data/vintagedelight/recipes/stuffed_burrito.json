@@ -7,16 +7,12 @@
           "type": "forge:and",
           "values": [
             {
-              "type": "forge:item_exists",
-              "item": "miners_delight:vegan_hamburger"
-            },
-            {
               "type": "forge:tag_empty",
-              "tag": "some_assembly_required:burger_bun"
+              "tag": "forge:tortilla"
             },
             {
               "type": "forge:mod_loaded",
-              "modid": "miners_delight"
+              "modid": "vintagedelight"
             }
           ]
         }
@@ -29,7 +25,7 @@
             "tag": "forge:bread"
           },
           {
-            "item": "miners_delight:vegan_patty"
+            "item": "farmersdelight:beef_patty"
           },
           {
             "tag": "forge:salad_ingredients"
@@ -38,11 +34,14 @@
             "tag": "forge:crops/tomato"
           },
           {
-            "tag": "forge:crops/onion"
+            "tag": "forge:cheese"
+          },
+          {
+            "tag": "forge:vegetables/ghost_pepper"
           }
         ],
         "result": {
-          "item": "miners_delight:vegan_hamburger"
+          "item": "vintagedelight:stuffed_burrito"
         }
       }
     }
