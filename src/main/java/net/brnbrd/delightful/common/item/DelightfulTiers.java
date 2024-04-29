@@ -109,6 +109,10 @@ public enum DelightfulTiers implements Tier {
         this.repairIngredient = repairIngredient;
     }
 
+    public int getLevel() {
+        return this.level;
+    }
+
     public int getUses() {
         return this.uses;
     }
@@ -119,10 +123,6 @@ public enum DelightfulTiers implements Tier {
 
     public float getAttackDamageBonus() {
         return this.damage;
-    }
-
-    public int getLevel() {
-        return this.level;
     }
 
     public int getEnchantmentValue() {

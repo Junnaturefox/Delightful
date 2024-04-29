@@ -1,4 +1,4 @@
-// 1.20.1	2024-04-22T11:31:05.3501936	Recipes
+// 1.20.1	2024-04-23T12:31:59.8509662	Recipes
 6c217dd6477efa10f6042809ba959d53036ab5e2 data/delightful/advancements/recipes/cabinets/basalt_cabinet.json
 5b82f87851220644287d771121677deac66b3b89 data/delightful/advancements/recipes/cabinets/quartz_cabinet.json
 cf29033c1c919355c261025df529938e6ebc73f8 data/delightful/advancements/recipes/campfire/cactus_steak.json
@@ -56,7 +56,7 @@ b572b3d7bc39f57b2d6c2b50b6e9ed911aaa24d6 data/delightful/advancements/recipes/fo
 c28a3acc20f3f995de383ba35ea72f36f261a1d0 data/delightful/advancements/recipes/knives/adamantium_knife.json
 5bd89a995b19c8600ee2603cb6984f1760168ab7 data/delightful/advancements/recipes/knives/allthemodium_knife.json
 6d2a01500c3d3eea8727fb1d170283ee20f1ec6a data/delightful/advancements/recipes/knives/amethyst_knife.json
-3c776b535fcdb64930680876b49dbc7e3ebcb6cf data/delightful/advancements/recipes/knives/black_opal_knife.json
+dd1c662df1d1d8a0b58e521c8de75a054677e205 data/delightful/advancements/recipes/knives/black_opal_knife.json
 9e6761271a0506281e11ebeb88f05368c974e15c data/delightful/advancements/recipes/knives/blasting/bone/knife_minecraft.json
 932e6eae4ae6cbfa0fb1de92f9168c2add06ecb5 data/delightful/advancements/recipes/knives/bone_knife.json
 67d6ab01a5ba3ebc3f5f9c2c84cb244e3e17c3b5 data/delightful/advancements/recipes/knives/brass_knife.json
@@ -198,7 +198,7 @@ c3229fc3da44f90577d87890775c5a620b1d3a28 data/delightful/recipes/food/wrapped_ca
 2202b71dd39c45a70d88365379f4f7e18325a9fa data/delightful/recipes/knives/adamantium_knife.json
 d6641eb559963cb0f59a806b730360a993535a5e data/delightful/recipes/knives/allthemodium_knife.json
 dda3bf3f9ef80af9bdd44e82f6d5199a2ceffac9 data/delightful/recipes/knives/amethyst_knife.json
-f83deb283dd4e6ac692c0d65849a8c3100043df6 data/delightful/recipes/knives/black_opal_knife.json
+f8ce8dafb03bb2fbb1d4eec23df5d4da980b917e data/delightful/recipes/knives/black_opal_knife.json
 0823399ef926ae8a7e8e53f9b86eb9a9a145619d data/delightful/recipes/knives/blasting/bone/knife_minecraft.json
 cd5eb1e1d195673c74d40926148b62e5c1730f69 data/delightful/recipes/knives/bone_knife.json
 54047e51519994438f03e17cadc0d468f4af8d3c data/delightful/recipes/knives/brass_knife.json

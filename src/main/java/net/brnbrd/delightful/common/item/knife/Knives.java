@@ -27,6 +27,7 @@ import net.brnbrd.delightful.common.item.knife.compat.lolenderite.ObsdianInfused
 import net.brnbrd.delightful.common.item.knife.compat.mythicbotany.AlfKnifeItem;
 import net.brnbrd.delightful.common.item.knife.compat.nethers_exoticism.KiwanoKnifeItem;
 import net.brnbrd.delightful.common.item.knife.compat.nourished_nether.NecroniumKnifeItem;
+import net.brnbrd.delightful.common.item.knife.compat.oresabovediamonds.BlackOpalKnifeItem;
 import net.brnbrd.delightful.common.item.knife.compat.oresabovediamonds.LargeAmethystKnifeItem;
 import net.brnbrd.delightful.common.item.knife.compat.oresabovediamonds.NetheriteOpalKnifeItem;
 import net.brnbrd.delightful.common.item.knife.compat.rootsclassic.LivingKnifeItem;
@@ -62,7 +63,6 @@ public class Knives extends DelightfulItems {
 	public static final RegistryObject<Item> EMERALD = registerGemKnife("emerald");
 	public static final RegistryObject<Item> COPPER = registerIngotKnife("copper");
 
-	public static final RegistryObject<Item> BLACK_OPAL = registerGemKnife("black_opal");
 	public static final RegistryObject<Item> TIN = registerIngotKnife("tin");
 	public static final RegistryObject<Item> STEEL = registerIngotKnife("steel");
 	public static final RegistryObject<Item> SILVER = registerIngotKnife("silver");
@@ -86,6 +86,7 @@ public class Knives extends DelightfulItems {
 	public static final RegistryObject<Item> REFINED_GLOWSTONE = registerCompatIngotKnife("refined_glowstone", Mods.MEKT);
 	public static final RegistryObject<Item> REFINED_OBSIDIAN = registerCompatIngotKnife("refined_obsidian", Mods.MEKT);
 	public static final RegistryObject<Item> OBSIDIAN_INFUSED_ENDERITE = registerItem("obsidian_infused_enderite_knife", () -> new ObsdianInfusedEnderiteKnifeItem(props()));
+	public static final RegistryObject<Item> BLACK_OPAL = registerItem("black_opal_knife", () -> new BlackOpalKnifeItem(props()));
 	public static final RegistryObject<Item> NETHERITE_OPAL = registerItem("netherite_opal_knife", () -> new NetheriteOpalKnifeItem(props()));
 	public static final RegistryObject<Item> LARGE_AMETHYST = registerItem("large_amethyst_knife", () -> new LargeAmethystKnifeItem(props()));
 	public static final RegistryObject<Item> FIERY = registerItem("fiery_knife", () -> new FieryKnifeItem(props()));
