@@ -5,7 +5,7 @@
       "conditions": [
         {
           "type": "forge:item_exists",
-          "item": "neapolitan:banana_bread"
+          "item": "neapolitan:adzuki_bun"
         }
       ],
       "recipe": {
@@ -16,14 +16,14 @@
             "tag": "forge:dough"
           },
           {
-            "item": "neapolitan:banana"
+            "item": "neapolitan:roasted_adzuki_beans"
           },
           {
-            "tag": "forge:sugar"
+            "tag": "forge:milk"
           }
         ],
         "result": {
-          "item": "neapolitan:banana_bread"
+          "item": "neapolitan:adzuki_bun"
         }
       }
     }

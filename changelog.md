@@ -1,5 +1,15 @@
 # Changelog
 
+# 3.5.4
+
+### Updates
+- More clover recipe compat (specifically Buzzier Bees)
+- Dough recipe compat
+- Tortilla recipe compat
+
+### Fixes
+- Removed some old, uncraftable knives
+
 
 # 3.5.3
 

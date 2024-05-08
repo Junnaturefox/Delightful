@@ -5,7 +5,7 @@
       "conditions": [
         {
           "type": "forge:item_exists",
-          "item": "neapolitan:banana_bread"
+          "item": "neapolitan:strawberry_scones"
         }
       ],
       "recipe": {
@@ -16,14 +16,18 @@
             "tag": "forge:dough"
           },
           {
-            "item": "neapolitan:banana"
+            "tag": "forge:dough"
+          },
+          {
+            "tag": "forge:fruits/strawberries"
           },
           {
             "tag": "forge:sugar"
           }
         ],
         "result": {
-          "item": "neapolitan:banana_bread"
+          "item": "neapolitan:strawberry_scones",
+          "count": 2
         }
       }
     }

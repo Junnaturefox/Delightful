@@ -5,7 +5,7 @@
       "conditions": [
         {
           "type": "forge:item_exists",
-          "item": "neapolitan:banana_bread"
+          "item": "some_assembly_required:burger_bun"
         }
       ],
       "recipe": {
@@ -16,14 +16,14 @@
             "tag": "forge:dough"
           },
           {
-            "item": "neapolitan:banana"
+            "tag": "forge:dough"
           },
           {
-            "tag": "forge:sugar"
+            "tag": "forge:seeds"
           }
         ],
         "result": {
-          "item": "neapolitan:banana_bread"
+          "item": "some_assembly_required:burger_bun"
         }
       }
     }
