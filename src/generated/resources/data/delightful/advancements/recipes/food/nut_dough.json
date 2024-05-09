@@ -16,7 +16,7 @@
           },
           "has_the_recipe": {
             "conditions": {
-              "recipe": "delightful:food/cooking/nut_milk"
+              "recipe": "delightful:food/nut_dough"
             },
             "trigger": "minecraft:recipe_unlocked"
           }
@@ -29,27 +29,15 @@
         ],
         "rewards": {
           "recipes": [
-            "delightful:food/cooking/nut_milk"
+            "delightful:food/nut_dough"
           ]
         },
-        "sends_telemetry_event": true
+        "sends_telemetry_event": false
       },
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "nut_milk"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:mod_loaded",
-                "modid": "vintagedelight"
-              }
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "nut_dough"
         }
       ]
     }

@@ -106,6 +106,7 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> CLOVER = forge("clover");
 	public static final TagKey<Item> MATCHA = forge("matcha");
 	public static final TagKey<Item> DOUGH_CORN = forge("dough/corn");
+	public static final TagKey<Item> DOUGH_NUT = forge("dough/nut");
 	public static final TagKey<Item> GEMS_ROSE_QUARTZ = forge("gems/rose_quartz");
 	public static final TagKey<Item> GEMS_ZANITE = forge("gems/zanite");
 	public static final TagKey<Item> INGOTS_STEEL = DelightfulItems.ingot("steel");

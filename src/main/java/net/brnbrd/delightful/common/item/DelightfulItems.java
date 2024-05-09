@@ -92,6 +92,8 @@ public class DelightfulItems {
     public static final RegistryObject<Item> ANIMAL_OIL_BOTTLE = registerItem("animal_oil_bottle",
         () -> new FurnaceFuelItem((new Item.Properties()).craftRemainder(Items.GLASS_BOTTLE), 3200));
     public static final RegistryObject<Item> ACORN = registerFood("acorn", Nutrition.ACORN);
+    public static final RegistryObject<Item> ROASTED_ACORN = registerFood("roasted_acorn", Nutrition.ROASTED_ACORN);
+    public static final RegistryObject<Item> NUT_DOUGH = registerFood("nut_dough", Nutrition.NUT_DOUGH);
     public static final RegistryObject<Item> COCONUT_CURRY = registerItem("coconut_curry",
         () -> new CoconutCurryItem((new Item.Properties()).food(Nutrition.COCONUT_CURRY).stacksTo(16).craftRemainder(Items.BOWL)));
     public static final RegistryObject<Item> SINIGANG = registerItem("sinigang", () -> new ConsumableItem((new Item.Properties()).food(Nutrition.SINIGANG).craftRemainder(Items.BOWL).stacksTo(16), true, true));

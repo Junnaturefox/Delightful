@@ -1,0 +1,23 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "delightful:enabled",
+          "value": "roasted_acorn"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:smoking",
+        "category": "food",
+        "cookingtime": 100,
+        "experience": 0.35,
+        "ingredient": {
+          "item": "delightful:acorn"
+        },
+        "result": "delightful:roasted_acorn"
+      }
+    }
+  ]
+}

@@ -31,7 +31,7 @@
             "tag": "forge:fruits/salmonberries"
           },
           {
-            "tag": "forge:nuts/acorn"
+            "item": "delightful:roasted_acorn"
           }
         ],
         "result": {

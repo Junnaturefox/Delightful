@@ -34,6 +34,7 @@ import org.jetbrains.annotations.NotNull;
 import vectorwing.farmersdelight.common.registry.ModBlocks;
 import vectorwing.farmersdelight.common.registry.ModItems;
 import vectorwing.farmersdelight.common.tag.ForgeTags;
+import vectorwing.farmersdelight.common.tag.ModTags;
 import vectorwing.farmersdelight.data.builder.CookingPotRecipeBuilder;
 import vectorwing.farmersdelight.data.builder.CuttingBoardRecipeBuilder;
 import vectorwing.farmersdelight.data.recipe.CookingRecipes;
@@ -66,6 +67,7 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
         foodSmeltingRecipes("cactus_steak", DelightfulItems.CACTUS_FLESH.get(), DelightfulItems.CACTUS_STEAK.get(), 0.35F, finished);
         foodSmeltingRecipes("cooked_venison_chops", DelightfulItems.VENISON_CHOPS.get(), DelightfulItems.COOKED_VENISON_CHOPS.get(), 0.35F, finished);
         foodSmeltingRecipes("cooked_goat", DelightfulItems.RAW_GOAT.get(), DelightfulItems.COOKED_GOAT.get(), 0.35F, finished);
+        foodSmeltingRecipes("roasted_acorn", DelightfulItems.ACORN.get(), DelightfulItems.ROASTED_ACORN.get(), 0.35F, finished);
 
         // Foods
         wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DelightfulItems.NUT_BUTTER_AND_JELLY_SANDWICH.get())
@@ -205,9 +207,17 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
                 .requires(DelightfulItems.CACTUS_STEAK.get())
                 .requires(DelightfulItemTags.CROPS_CARROT)
                 .requires(DelightfulItemTags.FRUITS_SALMONBERRIES)
-                .requires(DelightfulItemTags.NUTS_ACORN)
+                .requires(DelightfulItems.ROASTED_ACORN.get())
                 .unlockedBy("has_cactus_steak", has(DelightfulItems.CACTUS_STEAK.get())),
             "food/field_salad", finished, enabled("field_salad"));
+        wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DelightfulItems.NUT_DOUGH.get(), 2)
+                .requires(ForgeTags.EGGS)
+                .requires(Items.BONE_MEAL)
+                .requires(DelightfulItemTags.NUT_BUTTER)
+                .requires(DelightfulItemTags.NUT_BUTTER)
+                .unlockedBy("has_nut_butter", has(DelightfulItemTags.NUT_BUTTER)),
+            "food/nut_dough", finished, enabled("nut_dough"));
+
         sack(DelightfulItems.ACORN_SACK, DelightfulItems.ACORN, "acorn", finished);
         sack(DelightfulItems.SALMONBERRY_SACK, DelightfulItems.SALMONBERRIES, "salmonberry", finished);
         wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DelightfulItems.SALMONBERRY_ICE_CREAM.get(), 1)
@@ -421,10 +431,9 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
             "food/cooking/crab_rangoon_from_milk", finished, enabled("crab_rangoon"), not(tagEmpty(DelightfulItemTags.CRAB_MEAT)), tagEmpty(DelightfulItemTags.CHEESES));
         wrap(CookingPotRecipeBuilder.cookingPotRecipe(
                     Items.MILK_BUCKET, 1, CookingRecipes.NORMAL_COOKING, 0.35F, Items.WATER_BUCKET)
-                .addIngredient(DelightfulItemTags.NUTS)
-                .addIngredient(DelightfulItemTags.NUTS)
-                .addIngredient(DelightfulItemTags.SUGAR)
-                .unlockedBy("has_nuts", has(DelightfulItemTags.NUTS)),
+                .addIngredient(DelightfulItemTags.NUT_BUTTER)
+                .addIngredient(DelightfulItemTags.NUT_BUTTER)
+                .unlockedBy("has_nut_butter", has(DelightfulItemTags.NUT_BUTTER)),
             "food/cooking/nut_milk", finished, enabled("nut_milk"), not(modLoaded("vintagedelight")));
         wrap(CookingPotRecipeBuilder.cookingPotRecipe(
                     Items.HONEY_BOTTLE, 3, CookingRecipes.NORMAL_COOKING, 0.35F)

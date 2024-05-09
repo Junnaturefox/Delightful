@@ -28,7 +28,11 @@ public class Nutrition {
     public static final FoodProperties NUT_BUTTER_AND_JELLY_SANDWICH = (new FoodProperties.Builder()).nutrition(10).saturationMod(0.5F)
         .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), 3600, 0), 1.0F).build();
     public static final FoodProperties HONEY_GLAZED_WALNUT = (new FoodProperties.Builder()).nutrition(6).saturationMod(1.0F).build();
-    public static final FoodProperties ACORN = (new FoodProperties.Builder()).nutrition(2).saturationMod(0.1F).build();
+    public static final FoodProperties ACORN = (new FoodProperties.Builder()).nutrition(2).saturationMod(0.1F)
+        .effect(() -> new MobEffectInstance(MobEffects.HUNGER, 200, 0), 1.0F).build();
+    public static final FoodProperties ROASTED_ACORN = (new FoodProperties.Builder()).nutrition(4).saturationMod(0.5F).build();
+    public static final FoodProperties NUT_DOUGH = (new FoodProperties.Builder()).nutrition(2).saturationMod(0.3F)
+        .effect(() -> new MobEffectInstance(MobEffects.HUNGER, 600, 0), 0.3F).build();
     public static final FoodProperties GREEN_TEA_LEAF = (new FoodProperties.Builder()).nutrition(1).saturationMod(0.2F)
         .effect(() -> new MobEffectInstance(Mods.getGreenTeaEffect().get(), 60, 0), 1.0F).build();
     public static final FoodProperties MATCHA = (new FoodProperties.Builder()).nutrition(1).saturationMod(0.4F)

@@ -1,0 +1,35 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "delightful:enabled",
+          "value": "nut_dough"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          {
+            "tag": "forge:eggs"
+          },
+          {
+            "item": "minecraft:bone_meal"
+          },
+          {
+            "tag": "forge:nut_butter"
+          },
+          {
+            "tag": "forge:nut_butter"
+          }
+        ],
+        "result": {
+          "count": 2,
+          "item": "delightful:nut_dough"
+        }
+      }
+    }
+  ]
+}

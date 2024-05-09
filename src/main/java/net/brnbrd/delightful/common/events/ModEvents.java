@@ -35,6 +35,7 @@ public class ModEvents {
 
             // Compostables
             ComposterBlock.COMPOSTABLES.put(DelightfulItems.ACORN.get(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(DelightfulItems.ROASTED_ACORN.get(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(DelightfulItems.SALMONBERRIES.get(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(DelightfulItems.SALMONBERRY_PIPS.get(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(DelightfulItems.SALMONBERRY_PIE.get(), 1.0F);

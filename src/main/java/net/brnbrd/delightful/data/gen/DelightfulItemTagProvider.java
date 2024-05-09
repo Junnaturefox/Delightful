@@ -105,7 +105,10 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 			.add(DelightfulItems.MATCHA.get());
 		tag(DelightfulItemTags.DOUGH_CORN)
 			.addOptional(Util.rl("culturaldelights", "corn_dough"));
+		tag(DelightfulItemTags.DOUGH_NUT)
+			.add(DelightfulItems.NUT_DOUGH.get());
 		tag(ForgeTags.DOUGH)
+			.addTag(DelightfulItemTags.DOUGH_NUT)
 			.addTag(DelightfulItemTags.DOUGH_CORN);
 		tag(DelightfulItemTags.TOOLS_MACHETES)
 			.addOptionalTag(Util.rl("nethersdelight", "tools/machetes"));
