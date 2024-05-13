@@ -20,12 +20,9 @@ public class DelightfulConfig {
     public static ForgeConfigSpec.BooleanValue MELON_JUICING;
     private static final ImmutableList<String> DEFAULT_DISABLED = ImmutableList.of(
         Util.name(Knives.COPPER),
-        Util.name(Knives.BONE),
         Util.name(Knives.AMETHYST),
         Util.name(Knives.EMERALD),
-        Util.name(Knives.LAPIS_LAZULI),
-        Util.name(DelightfulItems.RAW_GOAT),
-        Util.name(DelightfulItems.COOKED_GOAT)
+        Util.name(Knives.LAPIS_LAZULI)
     );
 
     DelightfulConfig(ForgeConfigSpec.Builder builder) {

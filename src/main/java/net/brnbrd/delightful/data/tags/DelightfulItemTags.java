@@ -92,6 +92,7 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> RAW_VENISON_COMPAT = forge("raw_venison_compat");
 	public static final TagKey<Item> COOKED_VENISON = forge("cooked_venison");
 	public static final TagKey<Item> COOKED_VENISON_COMPAT = forge("cooked_venison_compat");
+	public static final TagKey<Item> RAW_GOAT_COMPAT = forge("raw_goat_compat");
 	public static final TagKey<Item> RAW_GOAT = forge("raw_goat");
 	public static final TagKey<Item> COOKED_GOAT = forge("cooked_goat");
 	public static final TagKey<Item> RAW_FROG = forge("raw_frog");
