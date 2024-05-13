@@ -1,5 +1,6 @@
 package net.brnbrd.delightful.common.item;
 
+import joptsimple.internal.Strings;
 import net.brnbrd.delightful.compat.Mods;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
@@ -27,11 +28,7 @@ public interface ICompat extends IConfigured {
 	default boolean enabledText(List<Component> comps) {
 		if (!this.isLoaded()) {
 			comps.add(Component.translatable("tooltip.requires_modid"));
-			StringBuilder ids = new StringBuilder();
-			for (String s : this.getModid()) {
-				ids.append(s).append(", ");
-			}
-			comps.add(Component.literal(ids.substring(0, ids.length() - 2)).withStyle(ChatFormatting.UNDERLINE));
+			comps.add(Component.literal(Strings.join(this.getModid(), ", ")).withStyle(ChatFormatting.UNDERLINE));
 			return false;
 		}
 		return IConfigured.super.enabledText(comps);
