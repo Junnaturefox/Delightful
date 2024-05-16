@@ -79,7 +79,8 @@ public class DelightfulItems {
         () -> new BlockItem(DelightfulBlocks.SALMONBERRY_PIE.get(), ModItems.basicItem()));
     public static final RegistryObject<Item> SALMONBERRY_PIE_SLICE = registerItem("salmonberry_pie_slice",
         () -> new DItem((new Item.Properties()).food(Nutrition.SALMONBERRY_PIE_SLICE), true));
-    public static final RegistryObject<Item> PUMPKIN_PIE_SLICE = registerFood("pumpkin_pie_slice", FoodValues.PIE_SLICE);
+    public static final RegistryObject<Item> PUMPKIN_PIE_SLICE = registerItem("pumpkin_pie_slice",
+        () -> new PumpkinPieSliceItem((new Item.Properties()).food(FoodValues.PIE_SLICE)));
     public static final RegistryObject<Item> SOURCE_BERRY_PIE_SLICE = registerCompatPieSlice(ArsNouveauCompat.pie + "_slice", ArsNouveauCompat.SOURCE_BERRY_PIE_SLICE,
         Mods.AN);
     public static final RegistryObject<Item> GLOOMGOURD_PIE_SLICE = registerCompatPieSlice(UndergardenCompat.pie + "_slice", UndergardenCompat.GLOOMGOURD_PIE_SLICE.get(),

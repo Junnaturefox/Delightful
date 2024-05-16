@@ -20,6 +20,11 @@ public class AetherKnifeItem extends CompatKnifeItem {
 	}
 
 	@Override
+	public Strategy getStrategy() {
+		return Strategy.AND;
+	}
+
+	@Override
 	public Ingredient getRod() {
 		return Ingredient.of(DelightfulItemTags.SKYROOT_STICK);
 	}

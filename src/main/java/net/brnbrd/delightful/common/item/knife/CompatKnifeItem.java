@@ -26,6 +26,7 @@ public class CompatKnifeItem extends DelightfulKnifeItem implements ICompat {
         this.formatting = formatting;
     }
 
+
     @Override
     public String[] getModid() {
         return this.modid;

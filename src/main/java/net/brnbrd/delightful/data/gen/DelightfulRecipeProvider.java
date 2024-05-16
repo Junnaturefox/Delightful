@@ -288,11 +288,11 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
                 .define('e', ForgeTags.EGGS)
                 .define('O', ModItems.PIE_CRUST.get())
                 .unlockedBy("has_pie_crust", has(ModItems.PIE_CRUST.get())),
-            "food/pumpkin_pie", finished, enabled("pumpkin_pie_slice"));
+            "food/pumpkin_pie", finished, enabled("pumpkin_pie_slice"), not(modLoaded("create_central_kitchen")));
         wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.PUMPKIN_PIE, 1)
                 .requires(DelightfulItems.PUMPKIN_PIE_SLICE.get(), 4)
                 .unlockedBy("has_pumpkin_pie_slice", has(DelightfulItems.PUMPKIN_PIE_SLICE.get())),
-            "food/pumpkin_pie_from_slices", finished, enabled("pumpkin_pie_slice"));
+            "food/pumpkin_pie_from_slices", finished, enabled("pumpkin_pie_slice"), not(modLoaded("create_central_kitchen")));
         wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DelightfulItems.SALMONBERRY_PIPS.get())
                 .requires(DelightfulItems.SALMONBERRIES.get())
                 .unlockedBy("has_salmonberries", has(DelightfulItemTags.FRUITS_SALMONBERRIES)),
