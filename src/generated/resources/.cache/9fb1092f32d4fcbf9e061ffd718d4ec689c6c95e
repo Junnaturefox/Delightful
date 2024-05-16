@@ -1,4 +1,4 @@
-// 1.20.1	2024-05-13T10:30:29.8589992	Recipes
+// 1.20.1	2024-05-14T09:49:41.3837671	Recipes
 6c217dd6477efa10f6042809ba959d53036ab5e2 data/delightful/advancements/recipes/cabinets/basalt_cabinet.json
 5b82f87851220644287d771121677deac66b3b89 data/delightful/advancements/recipes/cabinets/quartz_cabinet.json
 cf29033c1c919355c261025df529938e6ebc73f8 data/delightful/advancements/recipes/campfire/cactus_steak.json
@@ -54,6 +54,8 @@ c72c410c7199d0febc4e1b2ae0cfe62f161da419 data/delightful/advancements/recipes/fo
 723650ddfd623b25f93e6c559baa72ed19fe8364 data/delightful/advancements/recipes/food/smore.json
 b572b3d7bc39f57b2d6c2b50b6e9ed911aaa24d6 data/delightful/advancements/recipes/food/smore_from_chocolate.json
 5e877983babd45159fe6d7b07f0f81dd91be7b91 data/delightful/advancements/recipes/food/wrapped_cantaloupe.json
+2028f4824141a488d97cbb973e8d8c4e0be0c5e2 data/delightful/advancements/recipes/gummy/cantaloupe.json
+c488530788d495b8724a4b4ce4ef405d1f75f751 data/delightful/advancements/recipes/gummy/matcha.json
 5e8d1765598d7ee23b71bb65bec95df15a9bd9c1 data/delightful/advancements/recipes/gummy/salmonberries.json
 c28a3acc20f3f995de383ba35ea72f36f261a1d0 data/delightful/advancements/recipes/knives/adamantium_knife.json
 5bd89a995b19c8600ee2603cb6984f1760168ab7 data/delightful/advancements/recipes/knives/allthemodium_knife.json
@@ -200,6 +202,8 @@ a2e9f0e4267bb80d0c14683a4e4b3b248fc88d0f data/delightful/recipes/food/salmonberr
 53e9ce9c0c30ad50f54c759b345c01f2f600cd9c data/delightful/recipes/food/smore.json
 33cf96153cca86d2eb0d4c3e7e4d5f8c16dea0ec data/delightful/recipes/food/smore_from_chocolate.json
 c3229fc3da44f90577d87890775c5a620b1d3a28 data/delightful/recipes/food/wrapped_cantaloupe.json
+49a6fd329f85b62b673814610518d11f2282e1bc data/delightful/recipes/gummy/cantaloupe.json
+28f4344d2e67ec92fdd46855396f7b81ad0450c3 data/delightful/recipes/gummy/matcha.json
 59c021a7a890231bb5fc05980b2981699f93a8ff data/delightful/recipes/gummy/salmonberries.json
 2202b71dd39c45a70d88365379f4f7e18325a9fa data/delightful/recipes/knives/adamantium_knife.json
 d6641eb559963cb0f59a806b730360a993535a5e data/delightful/recipes/knives/allthemodium_knife.json

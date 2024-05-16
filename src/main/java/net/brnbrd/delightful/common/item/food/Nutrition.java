@@ -61,7 +61,7 @@ public class Nutrition {
         .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 0), 1.0F).build();
     public static final FoodProperties STUFFED_CANTALOUPE = (new FoodProperties.Builder()).nutrition(14).saturationMod(0.75F)
         .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), 4800, 0), 1.0F)
-        .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 900, 1), 1.0F).build();
+        .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 1), 1.0F).build();
     public static final FoodProperties COCONUT_CURRY = (new FoodProperties.Builder()).nutrition(15).saturationMod(0.9F)
         .effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), 6000, 0), 1.0F)
         .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 0), 1.0F).build();
@@ -103,4 +103,10 @@ public class Nutrition {
     public static final FoodProperties SALMONBERRY_GUMMY = (new FoodProperties.Builder())
         .nutrition(2).saturationMod(0.0F).alwaysEat()
         .effect(() -> new MobEffectInstance(MobEffects.WATER_BREATHING, 400, 0), 1.0F).build();
+    public static final FoodProperties MATCHA_GUMMY = (new FoodProperties.Builder())
+        .nutrition(2).saturationMod(0.0F).alwaysEat()
+        .effect(() -> new MobEffectInstance(Mods.getGreenTeaEffect().get(), 400, 0), 1.0F).build();
+    public static final FoodProperties CANTALOUPE_GUMMY = (new FoodProperties.Builder())
+        .nutrition(2).saturationMod(0.0F).alwaysEat()
+        .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 300, 1), 1.0F).build();
 }

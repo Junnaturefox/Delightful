@@ -489,13 +489,6 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
                 .requires(DelightfulItems.MINI_MELON.get())
                 .unlockedBy("has_mini_melon", has(DelightfulItems.MINI_MELON.get())),
             "melon_slice", finished, enabled("mini_melon"));
-        wrap(CookingPotRecipeBuilder.cookingPotRecipe(DelightfulItems.SALMONBERRY_GUMMY.get(), 1, 200, 1.0F)
-                .addIngredient(DelightfulItemTags.FRUITS_SALMONBERRIES)
-                .addIngredient(Items.SUGAR)
-                .addIngredient(Items.HONEY_BOTTLE)
-                .addIngredient(Items.KELP)
-                .unlockedBy("has_salmonberries", has(DelightfulItemTags.FRUITS_SALMONBERRIES)),
-            "gummy/salmonberries", finished, enabled(DelightfulItems.SALMONBERRIES), enabled(DelightfulItems.SALMONBERRY_GUMMY));
         wrap(shaped(RecipeCategory.BUILDING_BLOCKS, DelightfulItems.SALMONBERRY_ICE_CREAM_BLOCK, 8)
                 .pattern("sss")
                 .pattern("sis")
@@ -512,6 +505,27 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
                 .define('i', DelightfulItems.MATCHA_ICE_CREAM.get())
                 .unlockedBy("has_matcha_ice_cream", has(DelightfulItems.MATCHA_ICE_CREAM.get())),
             "matcha_ice_cream_block", finished, enabled(DelightfulItems.MATCHA_ICE_CREAM_BLOCK), enabled(DelightfulItems.MATCHA_ICE_CREAM), enabled(DelightfulItems.MATCHA), modLoaded(Mods.N));
+        wrap(CookingPotRecipeBuilder.cookingPotRecipe(DelightfulItems.SALMONBERRY_GUMMY.get(), 1, 200, 1.0F)
+                .addIngredient(DelightfulItemTags.FRUITS_SALMONBERRIES)
+                .addIngredient(Items.SUGAR)
+                .addIngredient(Items.HONEY_BOTTLE)
+                .addIngredient(Items.KELP)
+                .unlockedBy("has_salmonberries", has(DelightfulItemTags.FRUITS_SALMONBERRIES)),
+            "gummy/salmonberries", finished, enabled(DelightfulItems.SALMONBERRIES), enabled(DelightfulItems.SALMONBERRY_GUMMY));
+        wrap(CookingPotRecipeBuilder.cookingPotRecipe(DelightfulItems.MATCHA_GUMMY.get(), 1, 200, 1.0F)
+                .addIngredient(DelightfulItemTags.MATCHA)
+                .addIngredient(Items.SUGAR)
+                .addIngredient(Items.HONEY_BOTTLE)
+                .addIngredient(Items.KELP)
+                .unlockedBy("has_matcha", has(DelightfulItemTags.MATCHA)),
+            "gummy/matcha", finished, enabled(DelightfulItems.MATCHA), enabled(DelightfulItems.MATCHA_GUMMY));
+        wrap(CookingPotRecipeBuilder.cookingPotRecipe(DelightfulItems.CANTALOUPE_GUMMY.get(), 1, 200, 1.0F)
+                .addIngredient(DelightfulItemTags.FRUITS_CANTALOUPE)
+                .addIngredient(Items.SUGAR)
+                .addIngredient(Items.HONEY_BOTTLE)
+                .addIngredient(Items.KELP)
+                .unlockedBy("has_cantaloupe", has(DelightfulItemTags.FRUITS_CANTALOUPE)),
+            "gummy/cantaloupe", finished, enabled(DelightfulItems.CANTALOUPE), enabled(DelightfulItems.CANTALOUPE_GUMMY));
 
         // Unwrappables
         ConditionalRecipe.builder()

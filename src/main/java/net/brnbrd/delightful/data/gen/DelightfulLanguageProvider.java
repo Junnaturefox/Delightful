@@ -56,7 +56,6 @@ public class DelightfulLanguageProvider extends LanguageProvider {
         addItem(DelightfulItems.GREEN_TEA_LEAF, "Green Tea Leaves");
         addItem(DelightfulItems.SALMONBERRIES, "Salmonberries");
         addItem(DelightfulItems.SALMONBERRY_PIPS, "Salmonberry Pips");
-        addItem(DelightfulItems.SALMONBERRY_GUMMY, "Salmonberry Gummy");
         addItem(DelightfulItems.SALMONBERRY_PIE_SLICE, "Slice of Salmonberry Pie");
         addItem(DelightfulItems.PUMPKIN_PIE_SLICE, "Slice of Pumpkin Pie");
         addItem(DelightfulItems.SOURCE_BERRY_PIE_SLICE, "Slice of Source Berry Pie");
@@ -93,6 +92,9 @@ public class DelightfulLanguageProvider extends LanguageProvider {
         addItem(DelightfulItems.COOKED_GOAT, "Cooked Chevon");
         addItem(DelightfulItems.COCONUT_CURRY, "Coconut Curry");
         addItem(DelightfulItems.SINIGANG, "Sinigang");
+        addItem(DelightfulItems.SALMONBERRY_GUMMY, "Salmonberry Gummy");
+        addItem(DelightfulItems.MATCHA_GUMMY, "Matcha Gummy");
+        addItem(DelightfulItems.CANTALOUPE_GUMMY, "Cantaloupe Gummy");
         addBlock(DelightfulBlocks.MINI_MELON, "Mini Melon");
         addBlock(DelightfulBlocks.SLICED_MINI_MELON, "Sliced Mini Melon");
         addBlock(DelightfulBlocks.CANTALOUPE, "Cantaloupe");

@@ -91,7 +91,9 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 
 		// Collector's Reap
 		tag(DelightfulItemTags.GUMMIES)
-			.add(DelightfulItems.SALMONBERRY_GUMMY.get());
+			.add(DelightfulItems.SALMONBERRY_GUMMY.get())
+			.add(DelightfulItems.MATCHA_GUMMY.get())
+			.add(DelightfulItems.CANTALOUPE_GUMMY.get());
 
 		// Forge
 		tag(DelightfulItemTags.LAVENDER)
@@ -530,6 +532,9 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 
 		// Ancient Aether
 		this.addSelf(Util.it("ancient_aether", "valkyrum"));
+
+		// Aether: Lost Content Addon
+		this.tag(DelightfulItemTags.PHOENIX_TOOLS).add(Knives.PHOENIX.get());
 
 		// AE2
 		this.addSelf(DelightfulItemTags.FLUIX_BLOCK);

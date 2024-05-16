@@ -68,6 +68,7 @@ public enum DelightfulTiers implements Tier {
     HOLYSTONE(1, 131, 4.0F, 1.0F, 5, Ingredient.of(Util.it(Mods.AE, "holystone_repairing"))),
     ZANITE(2, 250, 6.0F, 2.0F, 14, Ingredient.of(Util.it(Mods.AE, "zanite_repairing"))),
     GRAVITITE(3, 1561, 8.0F, 3.0F, 10, Ingredient.of(Util.it(Mods.AE, "gravitite_repairing"))),
+    PHOENIX(3, 1561, 8.0F, 4.0F, 12, Ingredient.EMPTY),
     VERIDIUM(2, 750, 2.25F, 1.0F, 0, Ingredient.of(DelightfulItemTags.INGOTS_VERIDIUM)),
     INFUSED_VERIDIUM(2, 750, 7.0F, 1.0F, 0, Ingredient.of(DelightfulItemTags.INGOTS_VERIDIUM)),
     VALKYRUM(5, 2031, 9.0F, 4.0F, 15, Ingredient.of(Util.it("ancient_aether", "valkyrum_repairing"))),

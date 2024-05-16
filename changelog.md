@@ -1,5 +1,13 @@
 # Changelog
 
+# 3.5.5
+
+### Updates
+- Added Roasted Acorn and Acorn Dough
+- Acorns now have a short hunger effect
+- Added Matcha and Cantaloupe Gummies
+- Added Phoenix Knife (for [Aether: Lost Content Addon](https://www.curseforge.com/minecraft/mc-mods/aether-lost-content))
+
 # 3.5.4
 
 ### Updates

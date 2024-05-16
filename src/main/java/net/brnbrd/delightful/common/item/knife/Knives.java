@@ -24,6 +24,7 @@ import net.brnbrd.delightful.common.item.knife.compat.deeperdarker.WardenKnifeIt
 import net.brnbrd.delightful.common.item.knife.compat.forbidden_arcanus.DracoArcanusKnifeItem;
 import net.brnbrd.delightful.common.item.knife.compat.lolenderite.EnderiteKnifeItem;
 import net.brnbrd.delightful.common.item.knife.compat.lolenderite.ObsdianInfusedEnderiteKnifeItem;
+import net.brnbrd.delightful.common.item.knife.compat.lost_aether_content.PhoenixKnifeItem;
 import net.brnbrd.delightful.common.item.knife.compat.mythicbotany.AlfKnifeItem;
 import net.brnbrd.delightful.common.item.knife.compat.nethers_exoticism.KiwanoKnifeItem;
 import net.brnbrd.delightful.common.item.knife.compat.nourished_nether.NecroniumKnifeItem;
@@ -114,6 +115,7 @@ public class Knives extends DelightfulItems {
 	public static final RegistryObject<Item> HOLYSTONE = registerItem("holystone_knife", () -> new HolystoneKnifeItem(props()));
 	public static final RegistryObject<Item> SKYROOT = registerItem("skyroot_knife", () -> new SkyrootKnifeItem(props()));
 	public static final RegistryObject<Item> ZANITE = registerItem("zanite_knife", () -> new ZaniteKnifeItem(props()));
+	public static final RegistryObject<Item> PHOENIX = registerItem("phoenix_knife", () -> new PhoenixKnifeItem(props()));
 	public static final RegistryObject<Item> MANASTEEL = registerItem("manasteel_knife",() -> new ManasteelKnifeItem(
 		props(),
 		DelightfulItems.ingot("manasteel"),

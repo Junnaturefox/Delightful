@@ -216,6 +216,9 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> INGOTS_STRATUS = DelightfulItems.ingot("stratus");
 	public final static TagKey<Item> STRATUS_UPGRADE = Util.it("deep_aether", "stratus_smithing_template");
 
+	// Aether: Lost Content Addon
+	public static final TagKey<Item> PHOENIX_TOOLS = Util.it("lost_aether_content", "phoenix_tools");
+
 	private static TagKey<Item> forge(String name) {
 		return Util.it("forge", name);
 	}

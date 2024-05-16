@@ -637,6 +637,18 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+    "phoenix_knife": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "delightful:phoenix_knife"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "refined_glowstone_knife": {
       "conditions": {
         "items": [
@@ -957,6 +969,7 @@
       "holystone_knife",
       "skyroot_knife",
       "zanite_knife",
+      "phoenix_knife",
       "manasteel_knife",
       "elementium_knife",
       "terra_knife",
