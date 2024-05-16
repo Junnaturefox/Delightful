@@ -11,11 +11,8 @@
               "item": "ecologics:tropical_stew"
             },
             {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:coconut"
-              }
+              "type": "forge:item_exists",
+              "item": "ecologics:coconut_slice"
             },
             {
               "type": "forge:not",
