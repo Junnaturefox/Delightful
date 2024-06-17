@@ -60,6 +60,13 @@ configBackground="farmersdelight:textures/block/tatami_mat_half.png"
     side="BOTH"
 
 [[dependencies.delightful]]
+    modId="create_central_kitchen"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.delightful]]
     modId="duckling"
     mandatory=false
     versionRange="[0,)"

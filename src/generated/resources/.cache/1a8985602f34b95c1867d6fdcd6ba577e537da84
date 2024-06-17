@@ -1,4 +1,4 @@
-// 1.20.1	2024-05-16T11:24:48.1122455	delightful
+// 1.20.1	2024-06-17T13:47:34.2763034	delightful
 8980358a7235536580c6b076956e78e18eca38e9 data/additionaladditions/tags/items/gilded_netherite_upgrade.json
 251ab39f668c15d972d4630264e39f06ec646606 data/additionaladditions/tags/items/gold_ring.json
 9136930399e99d219f34c05a02844b699ef0873a data/additionaladditions/tags/items/rose_gold_alloy.json
@@ -57,7 +57,7 @@ c464a45fa61577982bb9df35b5cac169eb26e7f3 data/forge/tags/items/dough.json
 99b0d5003d08c1f6c9d41d27b464d4a911dde6f1 data/forge/tags/items/dough/nut.json
 4daddade2cc94b1b00c95f3c5bb1d3ad147eca4b data/forge/tags/items/eggs.json
 2bc728dc60343f5b07e9e47386ba9fc94143168c data/forge/tags/items/food/meat.json
-48524746f58037cbef71588d706cc15c10c6ca0b data/forge/tags/items/fruits.json
+f515704e28860fbda97734ffaa7656688730d081 data/forge/tags/items/fruits.json
 b33dde3cf95c3f821d49bc84b8c46f9fd65289e8 data/forge/tags/items/fruits/apple.json
 731ca67ac60192e9e45681303589c863b7d3ef83 data/forge/tags/items/fruits/banana.json
 ad700a43700050836a829c9ef4c67681e84e2c98 data/forge/tags/items/fruits/blackberries.json

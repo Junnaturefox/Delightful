@@ -19,6 +19,14 @@
     {
       "id": "ars_nouveau:frostaya_pod",
       "required": false
+    },
+    {
+      "id": "undergarden:droopvine_item",
+      "required": false
+    },
+    {
+      "id": "phantasm:oblifruit",
+      "required": false
     }
   ]
 }

@@ -178,9 +178,9 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 			.addOptionalTag(Util.rl("forge", "fruits/bayberry"))
 			.addOptional(Util.rl("aether_redux", "chromaberry"))
 			.addOptional(Util.rl("deep_aether", "goldenleaf_berries"))
-			.addOptional(Util.rl("undergarden", "blisterberry"))
-			.addOptional(Util.rl("enlightened_end", "zure_berry"))
-			.addOptional(Util.rl("phantasm", "pream_berry"));
+			.addOptional(Util.rl(Mods.UG, "blisterberry"))
+			.addOptional(Util.rl(Mods.EN, "zure_berry"))
+			.addOptional(Util.rl(Mods.EP, "pream_berry"));
 		tag(DelightfulItemTags.FRUITS)
 			.addTag(ForgeTags.BERRIES)
 			.addTag(DelightfulItemTags.FRUITS_CITRUS)
@@ -189,7 +189,9 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 			.addOptional(Util.rl(Mods.AN, "mendosteen_pod"))
 			.addOptional(Util.rl(Mods.AN, "bastion_pod"))
 			.addOptional(Util.rl(Mods.AN, "bombegranate_pod"))
-			.addOptional(Util.rl(Mods.AN, "frostaya_pod"));
+			.addOptional(Util.rl(Mods.AN, "frostaya_pod"))
+			.addOptional(Util.rl(Mods.UG, "droopvine_item"))
+			.addOptional(Util.rl(Mods.EP, "oblifruit"));
 		tag(DelightfulItemTags.FRUITS_CITRUS)
 			.addTag(DelightfulItemTags.FRUITS_CITRON)
 			.addOptionalTag(DelightfulItemTags.FRUITS_MANDARIN.location())

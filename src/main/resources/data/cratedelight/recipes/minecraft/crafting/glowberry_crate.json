@@ -10,14 +10,14 @@
               "type": "forge:not",
               "value": {
                 "type": "forge:item_exists",
-                "item": "fruitsdelight:apple_crate"
+                "item": "berry_good:glow_berry_basket"
               }
             },
             {
               "type": "forge:not",
               "value": {
                 "type": "forge:item_exists",
-                "item": "quark:apple_crate"
+                "item": "quark:glowberry_sack"
               }
             }
           ]
@@ -32,11 +32,11 @@
         ],
         "key": {
           "#": {
-            "item": "minecraft:apple"
+            "item": "minecraft:glow_berries"
           }
         },
         "result": {
-          "item": "cratedelight:apple_crate"
+          "item": "cratedelight:glowberry_crate"
         }
       }
     }

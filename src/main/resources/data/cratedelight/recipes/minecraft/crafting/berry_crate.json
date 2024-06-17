@@ -4,11 +4,23 @@
     {
       "conditions": [
         {
-          "type": "forge:not",
-          "value": {
-            "type": "forge:item_exists",
-            "item": "berry_good:sweet_berry_basket"
-          }
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:not",
+              "value": {
+                "type": "forge:item_exists",
+                "item": "berry_good:sweet_berry_basket"
+              }
+            },
+            {
+              "type": "forge:not",
+              "value": {
+                "type": "forge:item_exists",
+                "item": "quark:berry_sack"
+              }
+            }
+          ]
         }
       ],
       "recipe": {
