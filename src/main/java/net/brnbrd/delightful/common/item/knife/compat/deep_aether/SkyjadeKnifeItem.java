@@ -10,7 +10,7 @@ import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.NotNull;
 import teamrazor.deepaether.DeepAetherConfig;
 import teamrazor.deepaether.init.DATiers;
-import teamrazor.deepaether.tags.SkyjadeWeapon;
+import teamrazor.deepaether.item.gear.skyjade.SkyjadeWeapon;
 
 public class SkyjadeKnifeItem extends AetherKnifeItem implements SkyjadeWeapon {
 	public SkyjadeKnifeItem(Properties properties) {

@@ -139,7 +139,7 @@ configBackground="farmersdelight:textures/block/tatami_mat_half.png"
 [[dependencies.delightful]]
     modId="deep_aether"
     mandatory=false
-    versionRange="[0,)"
+    versionRange="[1.20.1-1.0.4,)"
     ordering="AFTER"
     side="BOTH"
 
