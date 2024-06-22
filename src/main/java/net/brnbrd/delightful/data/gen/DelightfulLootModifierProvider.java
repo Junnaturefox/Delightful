@@ -14,7 +14,6 @@ import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.predicates.*;
 import net.minecraftforge.common.Tags;
-import net.minecraftforge.common.crafting.conditions.ModLoadedCondition;
 import net.minecraftforge.common.data.GlobalLootModifierProvider;
 import vectorwing.farmersdelight.common.registry.ModItems;
 

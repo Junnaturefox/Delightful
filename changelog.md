@@ -1,6 +1,15 @@
 # Changelog
 
 
+# 3.5.6
+
+### Updates
+- More tags
+
+### Fixes
+- Updated to latest versions of some compat dependencies
+
+
 # 3.5.5
 
 ### Updates
