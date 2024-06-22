@@ -8,6 +8,7 @@
 
 ### Fixes
 - Updated to latest versions of some compat dependencies
+- Optimized all textures
 
 
 # 3.5.5
