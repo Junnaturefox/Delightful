@@ -23,7 +23,7 @@ public class ObsdianInfusedEnderiteKnifeItem extends CompatKnifeItem {
 	}
 
 	@Override
-	public boolean hasCustomName() {
-		return true;
+	public String getTranslation() {
+		return "Obsidian-Infused Enderite Knife";
 	}
 }

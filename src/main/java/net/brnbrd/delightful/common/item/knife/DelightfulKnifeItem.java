@@ -1,5 +1,6 @@
 package net.brnbrd.delightful.common.item.knife;
 
+import net.brnbrd.delightful.Delightful;
 import net.brnbrd.delightful.Util;
 import net.brnbrd.delightful.common.item.ICompat;
 import net.brnbrd.delightful.common.item.IConfigured;
@@ -14,11 +15,13 @@ import net.minecraftforge.common.Tags;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.tags.ITagManager;
 import org.apache.commons.lang3.tuple.ImmutablePair;
+import org.codehaus.plexus.util.StringUtils;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import vectorwing.farmersdelight.common.item.KnifeItem;
 import java.util.Collections;
 import java.util.List;
+import java.util.Locale;
 
 public class DelightfulKnifeItem extends KnifeItem implements IConfigured {
     private final TagKey<Item> tag;
@@ -84,8 +87,10 @@ public class DelightfulKnifeItem extends KnifeItem implements IConfigured {
         return getSmithing().equals(ImmutablePair.nullPair()) ? RecipeType.CRAFTING : RecipeType.SMITHING;
     }
 
-    public boolean hasCustomName() {
-        return false;
+    public String getTranslation() {
+        return StringUtils.capitaliseAllWords(this.getDescriptionId().toLowerCase(Locale.ROOT)
+            .replace("item." + Delightful.MODID.toLowerCase(Locale.ROOT) + ".", "").replace("_", " ")
+        );
     }
 
     public List<Component> getTools() {

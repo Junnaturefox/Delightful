@@ -11,7 +11,7 @@ public class LargeAmethystKnifeItem extends CompatKnifeItem {
 	}
 
 	@Override
-	public boolean hasCustomName() {
-		return true;
+	public String getTranslation() {
+		return "Amethyst Knife";
 	}
 }

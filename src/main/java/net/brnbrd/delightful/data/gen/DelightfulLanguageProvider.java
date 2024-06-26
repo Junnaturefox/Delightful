@@ -4,12 +4,8 @@ import net.brnbrd.delightful.Delightful;
 import net.brnbrd.delightful.common.block.DelightfulBlocks;
 import net.brnbrd.delightful.common.item.DelightfulItems;
 import net.brnbrd.delightful.common.item.knife.DelightfulKnifeItem;
-import net.brnbrd.delightful.common.item.knife.Knives;
 import net.minecraft.data.PackOutput;
-import net.minecraft.util.Tuple;
 import net.minecraftforge.common.data.LanguageProvider;
-import org.codehaus.plexus.util.StringUtils;
-import java.util.Locale;
 
 public class DelightfulLanguageProvider extends LanguageProvider {
     public DelightfulLanguageProvider(PackOutput output) {
@@ -19,18 +15,9 @@ public class DelightfulLanguageProvider extends LanguageProvider {
     @Override
     protected void addTranslations() {
         DelightfulItems.ITEMS.getEntries().stream()
-            .map(k -> new Tuple<>(k.get(), k.getId().getPath()))
-            .filter(tuple -> tuple.getA() instanceof DelightfulKnifeItem)
-            .map(tuple -> new Tuple<>((DelightfulKnifeItem)tuple.getA(), tuple.getB()))
-            .filter(t -> !t.getA().hasCustomName())
-            .forEach(t -> knife(t.getA(), t.getB()));
-        addItem(Knives.OBSIDIAN_INFUSED_ENDERITE, "Obsidian-Infused Enderite Knife");
-        addItem(Knives.LARGE_AMETHYST, "Amethyst Knife");
+            .filter(reg -> reg.get() instanceof DelightfulKnifeItem)
+            .forEach(knife -> addItem(knife, ((DelightfulKnifeItem) knife.get()).getTranslation()));
         addItems();
-    }
-
-    private void knife(DelightfulKnifeItem knife, String translate) {
-        this.addItem(() -> knife, StringUtils.capitaliseAllWords(translate.toLowerCase(Locale.ROOT).replace("_", " ")));
     }
     
     private void addItems() {
