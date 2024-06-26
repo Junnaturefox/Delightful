@@ -44,10 +44,7 @@
           "to_place": {
             "type": "minecraft:simple_state_provider",
             "state": {
-              "Name": "delightful:cantaloupe_plant",
-              "Properties": {
-                "age": "3"
-              }
+              "Name": "farmersdelight:sandy_shrub"
             }
           }
         }
@@ -76,8 +73,8 @@
         }
       ]
     },
-    "tries": 60,
-    "xz_spread": 3,
-    "y_spread": 3
+    "tries": 40,
+    "xz_spread": 4,
+    "y_spread": 2
   }
 }
