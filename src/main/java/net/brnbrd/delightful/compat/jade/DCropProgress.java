@@ -21,16 +21,16 @@ public enum DCropProgress implements IBlockComponentProvider {
 		BlockState state = blockAccessor.getBlockState();
 		Block block = state.getBlock();
 		if (block instanceof SalmonberryBushBlock) {
-			addMaturityTooltip(tooltip, state.getValue(SalmonberryBushBlock.AGE) / (float) SalmonberryBushBlock.MAX_AGE);
+			addMaturityTooltip(tooltip, 100.0F * state.getValue(SalmonberryBushBlock.AGE) / SalmonberryBushBlock.MAX_AGE);
 		}
 	}
 
 	private static void addMaturityTooltip(ITooltip tooltip, float growthValue) {
-		growthValue *= 100.0F;
-		if (growthValue < 100.0F)
-			tooltip.add(Component.translatable("tooltip.jade.crop_growth", String.format("%.0f%%", growthValue)));
-		else
-			tooltip.add(Component.translatable("tooltip.jade.crop_growth", Component.translatable("tooltip.jade.crop_mature").withStyle(ChatFormatting.GREEN)));
+		tooltip.add(Component.translatable("tooltip.jade.crop_growth",
+			(growthValue < 100.0F) ?
+			Component.literal(String.format("%.0f%%", growthValue)).withStyle(ChatFormatting.WHITE) :
+			Component.translatable("tooltip.jade.crop_mature").withStyle(ChatFormatting.GREEN)
+		));
 	}
 
 	@Override

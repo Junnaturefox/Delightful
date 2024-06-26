@@ -1,4 +1,4 @@
-// 1.20.1	2024-06-22T13:41:28.6757323	delightful
+// 1.20.1	2024-06-24T15:04:40.2735452	delightful
 8980358a7235536580c6b076956e78e18eca38e9 data/additionaladditions/tags/items/gilded_netherite_upgrade.json
 251ab39f668c15d972d4630264e39f06ec646606 data/additionaladditions/tags/items/gold_ring.json
 9136930399e99d219f34c05a02844b699ef0873a data/additionaladditions/tags/items/rose_gold_alloy.json
@@ -30,7 +30,7 @@ d74ce8344a88381660e30e19cdffd508a6ac6951 data/farmersdelight/tags/items/cabinets
 46f279b6acd03b06ea14e9f62be7d48e200c002c data/farmersdelight/tags/items/wild_crops.json
 a1edebb3bd4f7f3d7e73d53c915b2fe3203614aa data/forbidden_arcanus/tags/items/draco_arcanus_staff.json
 67b8f22c3fbfa7142b71a6a27d583be2b01e8ceb data/forbidden_arcanus/tags/items/dragon_scale.json
-7817031f97a8b7a33c050db6733dc0de55bd9d94 data/forge/tags/items/berries.json
+baacc4170ed19da69aa23797dd5e47a153c7b199 data/forge/tags/items/berries.json
 cfa01c68f0a165ee8f4cb2ffdf3c84d288224411 data/forge/tags/items/bread_slices.json
 72eaab1ff623df1fd6d815418fec865bb72c52ac data/forge/tags/items/cattail.json
 3515355d242e52882e52cf196c32cfd649793047 data/forge/tags/items/cheese.json

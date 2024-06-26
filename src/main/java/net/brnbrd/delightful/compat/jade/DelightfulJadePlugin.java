@@ -12,7 +12,7 @@ public class DelightfulJadePlugin implements IWailaPlugin {
 
 	@Override
 	public void register(IWailaCommonRegistration registration) {
-		// TODO Register data providers and config options here
+		// Register data providers and config options here
 	}
 
 	@Override

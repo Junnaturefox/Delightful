@@ -176,11 +176,11 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 			.addOptionalTag(Util.rl("forge", "fruits/mulberry"))
 			.addOptionalTag(Util.rl("forge", "fruits/hawberry"))
 			.addOptionalTag(Util.rl("forge", "fruits/bayberry"))
-			.addOptional(Util.rl("aether_redux", "chromaberry"))
-			.addOptional(Util.rl("deep_aether", "goldenleaf_berries"))
 			.addOptional(Util.rl(Mods.UG, "blisterberry"))
 			.addOptional(Util.rl(Mods.EN, "zure_berry"))
-			.addOptional(Util.rl(Mods.EP, "pream_berry"));
+			.addOptional(Util.rl(Mods.EP, "pream_berry"))
+			.addOptional(Util.rl("deep_aether", "goldenleaf_berries"))
+			.addOptional(Util.rl("aether_redux", "zanberry"));
 		tag(DelightfulItemTags.FRUITS)
 			.addTag(ForgeTags.BERRIES)
 			.addTag(DelightfulItemTags.FRUITS_CITRUS)
