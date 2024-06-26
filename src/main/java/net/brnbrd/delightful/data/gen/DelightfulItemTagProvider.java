@@ -225,6 +225,13 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 			.addOptionalTag(Util.rl("forge", "fruits/redlove"));
 		tag(DelightfulItemTags.FRUITS_GREEN_APPLE)
 			.addOptional(Util.rl(Mods.BYG, BYGCompat.green_apple));
+		tag(DelightfulItemTags.PUMPKINS_CARVED)
+			.add(Items.CARVED_PUMPKIN)
+			.addOptional(Util.rl("autumnity", "carved_large_pumpkin_slice"));
+		tag(DelightfulItemTags.PUMPKINS)
+			.addTag(DelightfulItemTags.PUMPKINS_CARVED)
+			.add(Items.PUMPKIN)
+			.addOptional(Util.rl("autumnity", "large_pumpkin_slice"));
 		tag(DelightfulItemTags.COCONUT).addOptional(Util.rl(Mods.ECO, "coconut_slice"));
 		tag(DelightfulItemTags.NUTS_WALNUT)
 			.addOptional(Util.rl(Mods.ECO, "walnut"))

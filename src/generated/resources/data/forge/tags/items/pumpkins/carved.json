@@ -1,0 +1,9 @@
+{
+  "values": [
+    "minecraft:carved_pumpkin",
+    {
+      "id": "autumnity:carved_large_pumpkin_slice",
+      "required": false
+    }
+  ]
+}

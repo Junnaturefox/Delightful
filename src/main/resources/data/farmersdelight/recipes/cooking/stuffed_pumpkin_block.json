@@ -1,0 +1,85 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:tag_empty",
+          "tag": "forge:bread/corn"
+        }
+      ],
+      "recipe": {
+        "type": "farmersdelight:cooking",
+        "container": {
+          "item": "minecraft:pumpkin"
+        },
+        "cookingtime": 400,
+        "experience": 2.0,
+        "ingredients": [
+          {
+            "tag": "forge:crops/rice"
+          },
+          {
+            "tag": "forge:vegetables"
+          },
+          {
+            "tag": "forge:crops/onion"
+          },
+          {
+            "item": "minecraft:brown_mushroom"
+          },
+          {
+            "tag": "forge:crops/potato"
+          },
+          {
+            "tag": "forge:berries"
+          }
+        ],
+        "recipe_book_tab": "meals",
+        "result": {
+          "item": "farmersdelight:stuffed_pumpkin_block"
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:bread/corn"
+          }
+        }
+      ],
+      "recipe": {
+        "type": "farmersdelight:cooking",
+        "container": {
+          "item": "minecraft:pumpkin"
+        },
+        "cookingtime": 400,
+        "experience": 2.0,
+        "ingredients": [
+          {
+            "tag": "forge:bread/corn"
+          },
+          {
+            "tag": "forge:vegetables"
+          },
+          {
+            "tag": "forge:crops/onion"
+          },
+          {
+            "item": "minecraft:brown_mushroom"
+          },
+          {
+            "tag": "forge:berries"
+          }
+        ],
+        "recipe_book_tab": "meals",
+        "result": {
+          "item": "farmersdelight:stuffed_pumpkin_block"
+        }
+      }
+    }
+  ]
+}
