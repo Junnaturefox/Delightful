@@ -121,7 +121,6 @@ public class DelightfulLanguageProvider extends LanguageProvider {
         add("farmersdelight.tooltip.matcha_latte", "Minor Instant Health");
         add("farmersdelight.tooltip.berry_matcha_latte", "Minor Instant Health");
         add("farmersdelight.tooltip.ender_nectar", "Otherworldly");
-        add("farmersdelight.tooltip.sinigang", "Sour Fish Stew");
         add("delightful.matcha.desc", "Green Tea Powder");
         add("delightful.green_tea_leaf.desc", "Get lucky using a Knife on any Leaves block.");
         add("delightful.animal_fat.desc", "Can be scavenged from some dead animals.");
