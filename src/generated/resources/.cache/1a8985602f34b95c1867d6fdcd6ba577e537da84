@@ -1,4 +1,4 @@
-// 1.20.1	2024-06-28T08:04:46.7589387	delightful
+// 1.20.1	2024-06-28T08:17:20.0898813	delightful
 8980358a7235536580c6b076956e78e18eca38e9 data/additionaladditions/tags/items/gilded_netherite_upgrade.json
 251ab39f668c15d972d4630264e39f06ec646606 data/additionaladditions/tags/items/gold_ring.json
 9136930399e99d219f34c05a02844b699ef0873a data/additionaladditions/tags/items/rose_gold_alloy.json
@@ -126,6 +126,7 @@ a7a8eaefd81f0196c2ad1de9179abc8641a726c5 data/forge/tags/items/peanut_butter.jso
 c73bbf3e77db2da1be1a030628742d1b1bb3b6f6 data/forge/tags/items/raw_goat.json
 da20014e08a0b65e939b4344e9370ca740376689 data/forge/tags/items/raw_venison.json
 6726a35f18817c8903be9e14318a84f6dd47d4bd data/forge/tags/items/raw_venison_compat.json
+eede30f09088aaf8a642eb4ea1ebc60e3b69e020 data/forge/tags/items/ropes.json
 0d7690c4ede992c93d728b1587f6e8452f47c199 data/forge/tags/items/salad_ingredients.json
 a09b42ac27e237ab7a07cef195745960d786fca5 data/forge/tags/items/seeds.json
 9b41a77626703e8e0afcfac6855ec3e6bc967180 data/forge/tags/items/seeds/cantaloupe.json

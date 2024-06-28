@@ -411,6 +411,10 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 			.addOptional(Util.rl("fruitsdelight", "bayberry_cookie"));
 		tag(DelightfulItemTags.SUPP_COOKIES)
 			.addTag(DelightfulItemTags.COOKIES);
+		tag(DelightfulItemTags.ROPES)
+			.add(ModItems.ROPE.get())
+			.addOptionalTag(Util.rl("supplementaries", "ropes"))
+			.addOptional(Util.rl(Mods.AA, "rope"));
 
 		// Minecraft
 		tag(ItemTags.SMALL_FLOWERS)

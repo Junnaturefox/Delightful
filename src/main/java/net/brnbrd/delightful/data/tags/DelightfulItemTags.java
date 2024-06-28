@@ -119,6 +119,7 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> SEEDS_SALMONBERRY = forge("seeds/salmonberry");
 	public static final TagKey<Item> SEEDS_CANTALOUPE = forge("seeds/cantaloupe");
 	public static final TagKey<Item> COOKIES = forge("cookies");
+	public static final TagKey<Item> ROPES = forge("ropes");
 
 	// Farmers Delight
 	public static final TagKey<Item> CABINETS_STONE = Util.it(FarmersDelight.MODID, "cabinets/stone");
