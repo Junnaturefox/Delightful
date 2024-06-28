@@ -118,6 +118,7 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> TOOLS_MACHETES = forge("tools/machetes");
 	public static final TagKey<Item> SEEDS_SALMONBERRY = forge("seeds/salmonberry");
 	public static final TagKey<Item> SEEDS_CANTALOUPE = forge("seeds/cantaloupe");
+	public static final TagKey<Item> COOKIES = forge("cookies");
 
 	// Farmers Delight
 	public static final TagKey<Item> CABINETS_STONE = Util.it(FarmersDelight.MODID, "cabinets/stone");
@@ -220,6 +221,9 @@ public class DelightfulItemTags {
 
 	// Aether: Lost Content Addon
 	public static final TagKey<Item> PHOENIX_TOOLS = Util.it("lost_aether_content", "phoenix_tools");
+
+	// Supplementaries
+	public static final TagKey<Item> SUPP_COOKIES = Util.it("supplementaries", "cookies");
 
 	private static TagKey<Item> forge(String name) {
 		return Util.it("forge", name);

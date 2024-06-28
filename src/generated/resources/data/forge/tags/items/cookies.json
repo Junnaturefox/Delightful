@@ -1,0 +1,55 @@
+{
+  "values": [
+    "minecraft:cookie",
+    "farmersdelight:honey_cookie",
+    "farmersdelight:sweet_berry_cookie",
+    {
+      "id": "snowyspirit:gingerbread_cookie",
+      "required": false
+    },
+    {
+      "id": "abnormals_delight:mulberry_cookie",
+      "required": false
+    },
+    {
+      "id": "abnormals_delight:maple_cookie",
+      "required": false
+    },
+    {
+      "id": "exquisito:chorus_cookie",
+      "required": false
+    },
+    {
+      "id": "ends_delight:chorus_cookie",
+      "required": false
+    },
+    {
+      "id": "miners_delight:bat_cookie",
+      "required": false
+    },
+    {
+      "id": "sunflowerdelight:shortbread_cookie",
+      "required": false
+    },
+    {
+      "id": "vintagedelight:oatmeal_cookie",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:persimmon_cookie",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:lemon_cookie",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:cranberry_cookie",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:bayberry_cookie",
+      "required": false
+    }
+  ]
+}

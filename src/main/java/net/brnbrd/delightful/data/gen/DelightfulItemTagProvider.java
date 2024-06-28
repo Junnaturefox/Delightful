@@ -393,6 +393,24 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		tag(DelightfulItemTags.SYRUP)
 			.addOptionalTag(Util.rl("supplementaries", "pancake_syrup"))
 			.addOptional(Util.rl("autumnity", "syrup_bottle"));
+		tag(DelightfulItemTags.COOKIES)
+			.add(Items.COOKIE)
+			.add(ModItems.HONEY_COOKIE.get())
+			.add(ModItems.SWEET_BERRY_COOKIE.get())
+			.addOptional(Util.rl("snowyspirit", "gingerbread_cookie"))
+			.addOptional(Util.rl("abnormals_delight", "mulberry_cookie"))
+			.addOptional(Util.rl("abnormals_delight", "maple_cookie"))
+			.addOptional(Util.rl("exquisito", "chorus_cookie"))
+			.addOptional(Util.rl("ends_delight", "chorus_cookie"))
+			.addOptional(Util.rl("miners_delight", "bat_cookie"))
+			.addOptional(Util.rl("sunflowerdelight", "shortbread_cookie"))
+			.addOptional(Util.rl("vintagedelight", "oatmeal_cookie"))
+			.addOptional(Util.rl("fruitsdelight", "persimmon_cookie"))
+			.addOptional(Util.rl("fruitsdelight", "lemon_cookie"))
+			.addOptional(Util.rl("fruitsdelight", "cranberry_cookie"))
+			.addOptional(Util.rl("fruitsdelight", "bayberry_cookie"));
+		tag(DelightfulItemTags.SUPP_COOKIES)
+			.addTag(DelightfulItemTags.COOKIES);
 
 		// Minecraft
 		tag(ItemTags.SMALL_FLOWERS)
