@@ -1,5 +1,10 @@
 {
   "values": [
+    "#forge:eggs/bird",
+    {
+      "id": "sullysmod:tortoise_egg",
+      "required": false
+    },
     {
       "id": "deep_aether:quail_egg",
       "required": false

@@ -30,7 +30,7 @@
             "tag": "forge:fruits/green_apple"
           },
           "e": {
-            "tag": "forge:eggs"
+            "tag": "forge:eggs/bird"
           },
           "x": {
             "tag": "forge:sugar"
@@ -75,7 +75,7 @@
             "tag": "forge:sugar"
           },
           {
-            "tag": "forge:eggs"
+            "tag": "forge:eggs/bird"
           }
         ],
         "result": {

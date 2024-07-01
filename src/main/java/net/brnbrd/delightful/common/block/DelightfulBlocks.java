@@ -48,26 +48,24 @@ public class DelightfulBlocks {
         new FeastBlock(BlockBehaviour.Properties.copy(DelightfulBlocks.CANTALOUPE.get()), DelightfulItems.STUFFED_CANTALOUPE, false));
     public static final RegistryObject<Block> SLICED_MELON = BLOCKS.register("sliced_melon",
         () -> new SlicedMelonBlock(Block.Properties.copy(Blocks.MELON), () -> Items.MELON_SLICE, ModItems.MELON_JUICE));
-    public static final RegistryObject<Block> SLICED_PUMPKIN = BLOCKS.register("sliced_pumpkin",
-        () -> new SlicedGourdBlock(
+    public static final RegistryObject<Block> SLICED_PUMPKIN = BLOCKS.register("sliced_pumpkin", () -> new SlicedGourdBlock(
             Block.Properties.copy(Blocks.PUMPKIN),
             ModItems.PUMPKIN_SLICE,
             () -> Blocks.PUMPKIN_STEM,
             () -> Blocks.ATTACHED_PUMPKIN_STEM)
     );
     public static final RegistryObject<Block> SLICED_GLOOMGOURD = BLOCKS.register("sliced_gloomgourd",
-        Mods.loaded(Mods.UG) ?
-        () -> new SlicedGourdBlock(
+        Mods.loaded(Mods.UG) ? () -> new SlicedGourdBlock(
             Block.Properties.copy(UndergardenCompat.gloomgourd().get()),
             UndergardenCompat.gloomgourd_slice(),
             UndergardenCompat.gloomgourd_stem(),
-            UndergardenCompat.gloomgourd_attached_stem())
-        :
-        () -> new SlicedGourdBlock(
+            UndergardenCompat.gloomgourd_attached_stem()
+        ) : () -> new SlicedGourdBlock(
             Block.Properties.copy(Blocks.PUMPKIN),
             ModItems.PUMPKIN_SLICE,
             () -> Blocks.PUMPKIN_STEM,
-            () -> Blocks.ATTACHED_PUMPKIN_STEM)
+            () -> Blocks.ATTACHED_PUMPKIN_STEM
+        )
     );
     public static final RegistryObject<Block> SALMONBERRY_SACK = BLOCKS.register("salmonberry_sack",
       () -> new Block(Block.Properties.copy(Blocks.ORANGE_WOOL).strength(.5f).sound(SoundType.WOOL)));

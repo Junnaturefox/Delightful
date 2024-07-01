@@ -54,7 +54,10 @@ public class Util {
   }
 
   @Nullable public static Item item(ResourceLocation rl) {
-    return ForgeRegistries.ITEMS.getValue(rl);
+    if (ForgeRegistries.ITEMS.containsKey(rl)) {
+      return ForgeRegistries.ITEMS.getValue(rl);
+    }
+    return null;
   }
 
   @Nullable public static Block block(String modid, String path) {

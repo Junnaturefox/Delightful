@@ -21,7 +21,7 @@ public class FroststeelKnifeItem extends CompatKnifeItem {
 
 	@Override
 	public String[] getConflicts() {
-		return new String[]{"undergardendelight"};
+		return new String[]{ Mods.UGD };
 	}
 
 	@Override

@@ -210,7 +210,7 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
                 .unlockedBy("has_cactus_steak", has(DelightfulItems.CACTUS_STEAK.get())),
             "food/field_salad", finished, enabled("field_salad"));
         wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DelightfulItems.NUT_DOUGH.get(), 2)
-                .requires(ForgeTags.EGGS)
+                .requires(DelightfulItemTags.EGGS_BIRD)
                 .requires(Items.BONE_MEAL)
                 .requires(DelightfulItemTags.NUT_BUTTER)
                 .requires(DelightfulItemTags.NUT_BUTTER)
@@ -282,9 +282,9 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
                 .pattern("aaa")
                 .pattern("xOe")
                 .define('#', ForgeTags.GRAIN_WHEAT)
-                .define('a', Items.PUMPKIN)
+                .define('a', DelightfulItemTags.PUMPKINS)
                 .define('x', DelightfulItemTags.SUGAR)
-                .define('e', ForgeTags.EGGS)
+                .define('e', DelightfulItemTags.EGGS_BIRD)
                 .define('O', ModItems.PIE_CRUST.get())
                 .unlockedBy("has_pie_crust", has(ModItems.PIE_CRUST.get())),
             "food/pumpkin_pie", finished, enabled("pumpkin_pie_slice"), not(modLoaded("create_central_kitchen")));

@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-01T00:34:01.9765149	Recipes
+// 1.20.1	2024-07-01T08:17:54.5942157	Recipes
 6c217dd6477efa10f6042809ba959d53036ab5e2 data/delightful/advancements/recipes/cabinets/basalt_cabinet.json
 5b82f87851220644287d771121677deac66b3b89 data/delightful/advancements/recipes/cabinets/quartz_cabinet.json
 cf29033c1c919355c261025df529938e6ebc73f8 data/delightful/advancements/recipes/campfire/cactus_steak.json
@@ -191,8 +191,8 @@ f9afe3ac50b630d7362667ebd93e4f472746bef6 data/delightful/recipes/food/honey_glaz
 5f366bb7380a27fcd304089088e8c59d1828563d data/delightful/recipes/food/matcha_milkshake.json
 1ed6f918b370a4909e489f06827f128d78ad29cb data/delightful/recipes/food/nut_butter_and_jelly_sandwich.json
 63be136997a169276974a27a0774cbe7aae23153 data/delightful/recipes/food/nut_butter_and_jelly_sandwich_from_bread_slice.json
-3ea1d1a19ec8f2de8a6d49c2e4a32fe519110026 data/delightful/recipes/food/nut_dough.json
-0745094eb21f6d53113a91b3a6ea730d269b081c data/delightful/recipes/food/pumpkin_pie.json
+d768e9b44afc686d7bfdab848004cefaf39c55ae data/delightful/recipes/food/nut_dough.json
+09abafdf6beecaec817cc20a1257f9fbdb03549c data/delightful/recipes/food/pumpkin_pie.json
 db97f7d67a2a8a4e07ecaf496db2874bfe2c7b8b data/delightful/recipes/food/pumpkin_pie_from_slices.json
 7383d7c5c25d6ff0777e1d826b79a6ec8bb0efd9 data/delightful/recipes/food/salmonberry_ice_cream.json
 c23ee610f970f5d8133c59721dbf07e82be21db4 data/delightful/recipes/food/salmonberry_ice_cream_no_neapolitan.json

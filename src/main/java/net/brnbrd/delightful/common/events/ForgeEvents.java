@@ -57,7 +57,7 @@ public class ForgeEvents {
 				SlicedGourdBlock sliced = (SlicedGourdBlock) DelightfulBlocks.SLICED_PUMPKIN.get();
 				slice(sliced.defaultBlockState(), sliced.getSliceItem(), world, pos, SoundEvents.BAMBOO_BREAK, e, client);
 			} else if (
-				Mods.loaded("undergardendelight") &&
+				Mods.loaded(Mods.UGD) &&
 				Objects.equals(ForgeRegistries.BLOCKS.getKey(current.getBlock()), Util.rl(Mods.UG, "gloomgourd"))
 			) {
 				SlicedGourdBlock sliced = (SlicedGourdBlock) DelightfulBlocks.SLICED_GLOOMGOURD.get();
@@ -65,7 +65,7 @@ public class ForgeEvents {
 			} else if (Mods.loaded(Mods.FU, Mods.FUD) &&
 				Util.name(current.getBlock()).equals("truffle_cake")) {
 				int currentBites = current.getValue(BlockStateProperties.BITES);
-				ItemStack slice = Objects.requireNonNull(Util.item("frozen_delight", "truffle_cake_slice")).getDefaultInstance();
+				ItemStack slice = Objects.requireNonNull(Util.item(Mods.FUD, "truffle_cake_slice")).getDefaultInstance();
 				if (currentBites >= 3) {
 					world.removeBlock(pos, false);
 					world.gameEvent(e.getEntity(), GameEvent.BLOCK_DESTROY, pos);

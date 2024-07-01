@@ -5,6 +5,10 @@
 
 ### Updates
 - Stuffed Pumpkin recipe fixes for Autumnity and corn
+- Hide disabled/conflicting items in JEI viewer
+
+### Fixes
+- Fix Nature Staff & Zanite Knife (Aether) conflict
 
 
 # 3.5.6

@@ -20,11 +20,11 @@
         ],
         "key": {
           "#": {
-            "item": "minecraft:sugar"
+            "item": "minecraft:cocoa_beans"
           }
         },
         "result": {
-          "item": "cratedelight:sugar_bag"
+          "item": "cratedelight:cocoabeans_bag"
         }
       }
     }

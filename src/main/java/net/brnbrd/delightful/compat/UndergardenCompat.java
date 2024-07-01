@@ -16,8 +16,8 @@ public class UndergardenCompat {
 	public static final String pie = "gloomgourd_pie";
 
 	public static Supplier<Item> gloomgourd_slice() {
-		return Mods.loaded("undergardendelight") ?
-			() -> Util.item("undergardendelight", "gloomgourd_slice") :
+		return Mods.loaded(Mods.UGD) ?
+			() -> Util.item(Mods.UGD, "gloomgourd_slice") :
 			ModItems.PUMPKIN_SLICE;
 	}
 

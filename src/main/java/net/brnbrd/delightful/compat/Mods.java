@@ -33,6 +33,7 @@ public class Mods {
 	public static final String MEKT = "mekanismtools";
 	public static final String MD = "moredelight";
 	public static final String N = "neapolitan";
+	public static final String ND = "nethersdelight";
 	public static final String RC = "rootsclassic";
 	public static final String RF = "respiteful";
 	public static final String RL = "rottenleather";
@@ -41,6 +42,7 @@ public class Mods {
 	public static final String SUP = "supplementaries";
 	public static final String TF = "twilightforest";
 	public static final String UG = "undergarden";
+	public static final String UGD = "undergardendelight";
 	public static final String VD = "vintagedelight";
 	public static final String WB = "wildberries";
 	public static final String YH = "youkaishomecoming";

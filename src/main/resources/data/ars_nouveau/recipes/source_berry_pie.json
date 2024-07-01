@@ -30,7 +30,7 @@
             "tag": "forge:fruits/sourceberry"
           },
           "e": {
-            "tag": "forge:eggs"
+            "tag": "forge:eggs/bird"
           },
           "m": {
             "item": "ars_nouveau:magebloom"
@@ -72,10 +72,10 @@
         "type": "minecraft:crafting_shapeless",
         "ingredients": [
           {
-            "tag": "forge:eggs"
+            "tag": "forge:eggs/bird"
           },
           {
-            "item": "minecraft:sugar"
+            "tag": "forge:sugar"
           },
           {
             "item": "ars_nouveau:magebloom"

@@ -37,7 +37,7 @@
             "tag": "forge:fruits/blueberries"
           },
           "e": {
-            "tag": "forge:eggs"
+            "tag": "forge:eggs/bird"
           },
           "x": {
             "tag": "forge:sugar"
@@ -82,7 +82,7 @@
             "tag": "forge:sugar"
           },
           {
-            "tag": "forge:eggs"
+            "tag": "forge:eggs/bird"
           }
         ],
         "result": {

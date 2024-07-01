@@ -21,7 +21,7 @@
             "tag": "forge:fruits"
           },
           {
-            "tag": "forge:eggs"
+            "tag": "forge:eggs/bird"
           }
         ],
         "result": {

@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "quark:egg_parrot_red_blue",
+      "required": false
+    },
+    {
+      "id": "quark:egg_parrot_blue",
+      "required": false
+    },
+    {
+      "id": "quark:egg_parrot_green",
+      "required": false
+    },
+    {
+      "id": "quark:egg_parrot_yellow_blue",
+      "required": false
+    },
+    {
+      "id": "quark:egg_parrot_grey",
+      "required": false
+    }
+  ]
+}

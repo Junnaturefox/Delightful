@@ -31,10 +31,10 @@
             "item": "farmersdelight:pie_crust"
           },
           "a": {
-            "item": "minecraft:pumpkin"
+            "tag": "forge:pumpkins"
           },
           "e": {
-            "tag": "forge:eggs"
+            "tag": "forge:eggs/bird"
           },
           "x": {
             "tag": "forge:sugar"
