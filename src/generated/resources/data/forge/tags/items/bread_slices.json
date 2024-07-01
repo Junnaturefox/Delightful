@@ -1,8 +1,5 @@
 {
   "values": [
-    {
-      "id": "forge:bread_slices",
-      "required": false
-    }
+    "#forge:bread_slices/toasted"
   ]
 }

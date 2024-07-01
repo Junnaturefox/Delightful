@@ -161,7 +161,9 @@ public class DelightfulItemTags {
 
 	// SAS
 	public static final TagKey<Item> BURGER_BUN = Util.it("some_assembly_required", "burger_bun");
-	public static final TagKey<Item> BREAD_SLICE = forge("bread_slices");
+	public static final TagKey<Item> SANDWICH_BREAD = Util.it("some_assembly_required", "sandwich_bread");
+	public static final TagKey<Item> BREAD_SLICES = forge("bread_slices");
+	public static final TagKey<Item> BREAD_SLICES_TOASTED = forge("bread_slices/toasted");
 
 	// Create
 	public static final TagKey<Item> UPRIGHT_ON_BELT = Util.it("create", "upright_on_belt");

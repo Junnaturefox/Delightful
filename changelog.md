@@ -1,6 +1,12 @@
 # Changelog
 
 
+# 3.5.7
+
+### Updates
+- Stuffed Pumpkin recipe fixes for Autumnity and corn
+
+
 # 3.5.6
 
 ### Updates

@@ -410,7 +410,8 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 			.addOptional(Util.rl("fruitsdelight", "cranberry_cookie"))
 			.addOptional(Util.rl("fruitsdelight", "bayberry_cookie"));
 		tag(DelightfulItemTags.SUPP_COOKIES)
-			.addTag(DelightfulItemTags.COOKIES);
+			.addTag(DelightfulItemTags.COOKIES)
+			.addTag(DelightfulItemTags.BREAD_SLICES);
 		tag(DelightfulItemTags.ROPES)
 			.add(ModItems.ROPE.get())
 			.addOptionalTag(Util.rl("supplementaries", "ropes"))
@@ -461,6 +462,8 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		// Seeds
 		this.addSelf(DelightfulItemTags.SHARP_LEAF);
 
+		// Supplementaries
+
 		// Nether's Exoticism
 		this.addSelf(DelightfulItemTags.KIWANO_PEEL);
 		tag(DelightfulItemTags.FRUITS_CITRON).addOptional(Util.rl("nethers_exoticism", "bouddha_s_hand"));
@@ -474,7 +477,13 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 
 		// SAS
 		this.addSelf(DelightfulItemTags.BURGER_BUN);
-		this.addSelf(DelightfulItemTags.BREAD_SLICE);
+		this.tag(DelightfulItemTags.BREAD_SLICES_TOASTED)
+			.addOptional(Util.rl("some_assembly_required", "toasted_bread_slice"))
+			.addOptional(Util.rl("moredelight", "toast"));
+		this.tag(DelightfulItemTags.BREAD_SLICES)
+			.addTag(DelightfulItemTags.BREAD_SLICES_TOASTED);
+		this.tag(DelightfulItemTags.SANDWICH_BREAD)
+			.addTag(DelightfulItemTags.BREAD_SLICES);
 
 		// Create
 		tag(DelightfulItemTags.UPRIGHT_ON_BELT)

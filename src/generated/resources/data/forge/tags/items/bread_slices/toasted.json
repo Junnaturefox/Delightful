@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "some_assembly_required:toasted_bread_slice",
+      "required": false
+    },
+    {
+      "id": "moredelight:toast",
+      "required": false
+    }
+  ]
+}
