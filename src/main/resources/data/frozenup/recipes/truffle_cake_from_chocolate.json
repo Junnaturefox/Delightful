@@ -8,7 +8,7 @@
             {
               "type": "forge:not",
               "value": {
-                "tag": "forge:bars/chocolate",
+                "tag": "forge:chocolate",
                 "type": "forge:tag_empty"
               }
             },
@@ -29,13 +29,13 @@
         ],
         "key": {
           "#": {
-            "tag": "forge:bars/chocolate"
+            "tag": "forge:chocolate"
           },
           "E": {
             "tag": "forge:eggs"
           },
           "W": {
-            "item": "minecraft:wheat"
+            "tag": "forge:grain/wheat"
           },
           "B": {
             "item": "frozenup:truffle"

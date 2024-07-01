@@ -1,0 +1,88 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:item_exists",
+              "item": "moredelight:chocolate_popsicle"
+            },
+            {
+              "type": "forge:not",
+              "value": {
+                "type": "forge:tag_empty",
+                "tag": "forge:chocolate"
+              }
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          " CC",
+          "ICC",
+          "SI "
+        ],
+        "key": {
+          "C": {
+            "tag": "forge:chocolate"
+          },
+          "I": {
+            "item": "minecraft:ice"
+          },
+          "S": {
+            "tag": "forge:rods/wooden"
+          }
+        },
+        "result": {
+          "item": "moredelight:chocolate_popsicle"
+        },
+        "show_notification": true
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:item_exists",
+              "item": "moredelight:chocolate_popsicle"
+            },
+            {
+              "type": "forge:tag_empty",
+              "tag": "forge:chocolate"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          " CC",
+          "ICC",
+          "SI "
+        ],
+        "key": {
+          "C": {
+            "item": "minecraft:cocoa_beans"
+          },
+          "I": {
+            "item": "minecraft:ice"
+          },
+          "S": {
+            "tag": "forge:rods/wooden"
+          }
+        },
+        "result": {
+          "item": "moredelight:chocolate_popsicle"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

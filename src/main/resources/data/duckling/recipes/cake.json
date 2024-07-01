@@ -22,7 +22,7 @@
             "item": "minecraft:sugar"
           },
           "C": {
-            "item": "minecraft:wheat"
+            "tag": "forge:grain/wheat"
           },
           "E": {
             "item": "duckling:duck_egg"

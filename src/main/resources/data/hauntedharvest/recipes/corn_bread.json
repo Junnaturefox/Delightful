@@ -9,22 +9,23 @@
         }
       ],
       "recipe": {
-        "type": "minecraft:crafting_shapeless",
-        "category": "misc",
+        "type": "farmersdelight:cooking",
+        "cookingtime": 200,
+        "experience": 1.0,
         "ingredients": [
           {
-            "tag": "forge:dough"
+            "tag": "forge:vegetables/corn"
           },
           {
-            "tag": "forge:dough"
+            "tag": "forge:vegetables/corn"
           },
           {
-            "tag": "forge:crops/corn"
+            "tag": "forge:grain/wheat"
           }
         ],
         "result": {
           "item": "hauntedharvest:cornbread",
-          "count": 3
+          "count": 2
         }
       }
     }

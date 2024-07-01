@@ -22,7 +22,7 @@
             "tag": "forge:salad_ingredients"
           },
           {
-            "tag": "forge:crops/tomato"
+            "tag": "forge:vegetables/tomato"
           }
         ],
         "result": {
@@ -54,7 +54,7 @@
             "tag": "forge:salad_ingredients"
           },
           {
-            "tag": "forge:crops/tomato"
+            "tag": "forge:vegetables/tomato"
           },
           {
             "tag": "forge:bread_slices"

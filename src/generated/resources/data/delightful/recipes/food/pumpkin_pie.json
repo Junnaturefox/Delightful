@@ -25,7 +25,7 @@
         "category": "misc",
         "key": {
           "#": {
-            "item": "minecraft:wheat"
+            "tag": "forge:grain/wheat"
           },
           "O": {
             "item": "farmersdelight:pie_crust"

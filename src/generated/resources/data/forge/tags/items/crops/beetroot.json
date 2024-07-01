@@ -1,9 +1,5 @@
 {
   "values": [
-    "minecraft:beetroot",
-    {
-      "id": "some_assembly_required:chopped_beetroot",
-      "required": false
-    }
+    "minecraft:beetroot"
   ]
 }

@@ -1,5 +1,7 @@
 package net.brnbrd.delightful.common.item.food;
 
+import net.brnbrd.delightful.compat.Mods;
+
 public class NutButterBottleItem extends DConsumableItem {
 	public NutButterBottleItem(Properties properties) {
 		super(properties, false, false);
@@ -7,6 +9,6 @@ public class NutButterBottleItem extends DConsumableItem {
 
 	@Override
 	public String[] getConflicts() {
-		return new String[]{"vintagedelight"};
+		return new String[]{Mods.VD };
 	}
 }

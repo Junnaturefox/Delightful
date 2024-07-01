@@ -15,6 +15,10 @@
     {
       "id": "aether:enchanted_berry",
       "required": false
+    },
+    {
+      "id": "nutritious_feast:blueberries",
+      "required": false
     }
   ]
 }

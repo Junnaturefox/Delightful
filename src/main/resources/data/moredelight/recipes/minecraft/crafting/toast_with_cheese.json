@@ -1,0 +1,28 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:item_exists",
+          "item": "moredelight:toast_with_cheese"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "tag": "forge:bread_slices/toasted"
+          },
+          {
+            "tag": "forge:cheese"
+          }
+        ],
+        "result": {
+          "item": "moredelight:toast_with_cheese"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

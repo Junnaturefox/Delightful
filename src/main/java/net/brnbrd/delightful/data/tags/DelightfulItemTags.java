@@ -62,10 +62,11 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> PUMPKINS = forge("pumpkins");
 	public static final TagKey<Item> PUMPKINS_CARVED = forge("pumpkins/carved");
 	public static final TagKey<Item> CHOCOLATE = forge("chocolate");
-	public static final TagKey<Item> CHEESES = forge("cheeses");
 	public static final TagKey<Item> CHEESE = forge("cheese");
 	public static final TagKey<Item> CRAB_LEGS = forge("crab_legs");
 	public static final TagKey<Item> CRAB_MEAT = forge("crab_meat");
+	public static final TagKey<Item> VEGETABLES_CORN = forge("vegetables/corn");
+	public static final TagKey<Item> VEGETABLES_GINGER = forge("vegetables/ginger");
 	public static final TagKey<Item> CROPS_GINGER = forge("crops/ginger");
 	public static final TagKey<Item> CROPS_CARROT = forge("crops/carrot");
 	public static final TagKey<Item> CROPS_BEETROOT = forge("crops/beetroot");
@@ -108,8 +109,6 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> LAVENDER = forge("lavender");
 	public static final TagKey<Item> CLOVER = forge("clover");
 	public static final TagKey<Item> MATCHA = forge("matcha");
-	public static final TagKey<Item> DOUGH_CORN = forge("dough/corn");
-	public static final TagKey<Item> DOUGH_NUT = forge("dough/nut");
 	public static final TagKey<Item> GEMS_ROSE_QUARTZ = forge("gems/rose_quartz");
 	public static final TagKey<Item> GEMS_ZANITE = forge("gems/zanite");
 	public static final TagKey<Item> INGOTS_STEEL = DelightfulItems.ingot("steel");
@@ -118,6 +117,13 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> TOOLS_MACHETES = forge("tools/machetes");
 	public static final TagKey<Item> SEEDS_SALMONBERRY = forge("seeds/salmonberry");
 	public static final TagKey<Item> SEEDS_CANTALOUPE = forge("seeds/cantaloupe");
+	public static final TagKey<Item> DOUGH_CORN = forge("dough/corn");
+	public static final TagKey<Item> DOUGH_NUT = forge("dough/nut");
+	public static final TagKey<Item> BREAD = forge("bread");
+	public static final TagKey<Item> BREAD_WHEAT = forge("bread/wheat");
+	public static final TagKey<Item> BREAD_CORN = forge("bread/corn");
+	public static final TagKey<Item> BREAD_SLICES = forge("bread_slices");
+	public static final TagKey<Item> BREAD_SLICES_TOASTED = forge("bread_slices/toasted");
 	public static final TagKey<Item> COOKIES = forge("cookies");
 	public static final TagKey<Item> ROPES = forge("ropes");
 
@@ -160,10 +166,8 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> SWEETENED_CHUNK = Util.it("rottenleather", "sweetened_chunk");
 
 	// SAS
-	public static final TagKey<Item> BURGER_BUN = Util.it("some_assembly_required", "burger_bun");
-	public static final TagKey<Item> SANDWICH_BREAD = Util.it("some_assembly_required", "sandwich_bread");
-	public static final TagKey<Item> BREAD_SLICES = forge("bread_slices");
-	public static final TagKey<Item> BREAD_SLICES_TOASTED = forge("bread_slices/toasted");
+	public static final TagKey<Item> BURGER_BUN = Util.it(Mods.SAS, "burger_bun");
+	public static final TagKey<Item> SANDWICH_BREAD = Util.it(Mods.SAS, "sandwich_bread");
 
 	// Create
 	public static final TagKey<Item> UPRIGHT_ON_BELT = Util.it("create", "upright_on_belt");
@@ -196,8 +200,8 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> MANA_ITEMS = Util.it(Mods.BTA, "mana_using_items");
 
 	// Additional Additions
-	public static final TagKey<Item> ROSE_GOLD_ALLOY = Util.it("additionaladditions", "rose_gold_alloy");
-	public static final TagKey<Item> GOLD_RING = Util.it("additionaladditions", "gold_ring");
+	public static final TagKey<Item> ROSE_GOLD_ALLOY = Util.it(Mods.AA, "rose_gold_alloy");
+	public static final TagKey<Item> GOLD_RING = Util.it(Mods.AA, "gold_ring");
 
 	// Nourished Nether
 	public static final TagKey<Item> NECRONIUM_INGOT = DelightfulItems.ingot("necronium");
@@ -226,7 +230,7 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> PHOENIX_TOOLS = Util.it("lost_aether_content", "phoenix_tools");
 
 	// Supplementaries
-	public static final TagKey<Item> SUPP_COOKIES = Util.it("supplementaries", "cookies");
+	public static final TagKey<Item> SUPP_COOKIES = Util.it(Mods.SUP, "cookies");
 
 	private static TagKey<Item> forge(String name) {
 		return Util.it("forge", name);

@@ -13,12 +13,15 @@ import net.brnbrd.delightful.common.item.knife.DelightfulKnifeItem;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.NotNull;
 import vectorwing.farmersdelight.common.utility.TextUtils;
 import javax.annotation.ParametersAreNonnullByDefault;
+import java.util.ArrayList;
 import java.util.List;
 
 @JeiPlugin
@@ -29,15 +32,34 @@ public class JEIPlugin implements IModPlugin
     private static final ResourceLocation ID = Util.rl(Delightful.MODID, "jei_plugin");
     private static final Minecraft MC = Minecraft.getInstance();
 
+    private void remove(List<ItemStack> removalList, String modid, String item) {
+        if (!Mods.loaded(modid)) {
+            return;
+        }
+        ResourceLocation location = Util.rl(modid, item);
+        if (ForgeRegistries.ITEMS.containsKey(location)) {
+            Item found = ForgeRegistries.ITEMS.getValue(location);
+            if (found != null) {
+                removalList.add(found.getDefaultInstance());
+            }
+        }
+    }
+
     @Override
     public void registerRecipes(IRecipeRegistration registration) {
         // Remove all disabled Items from JEI
-        registration.getIngredientManager().removeIngredientsAtRuntime(VanillaTypes.ITEM_STACK,
-            DelightfulItems.ITEMS.getEntries().stream()
-                .filter(i -> (i.get() instanceof IConfigured c) ? !c.enabled() : !Util.enabled(i)) // Keep items not enabled
-                .map(Util::gs) // Get ItemStack
-                .toList()
-        );
+        List<ItemStack> removal = new ArrayList<>(DelightfulItems.ITEMS.getEntries().stream()
+            .filter(i -> (i.get() instanceof IConfigured c) ? !c.enabled() : !Util.enabled(i)) // Keep items not enabled
+            .map(Util::gs) // Get ItemStack
+            .toList());
+        this.remove(removal, Mods.AA, "fried_egg");
+        this.remove(removal, Mods.IN, "fried_egg");
+        this.remove(removal, Mods.MD, "bread_slice");
+        this.remove(removal, Mods.MD, "toast");
+        this.remove(removal, Mods.VD, "pb_j");
+        if (removal.size() > 0) {
+            registration.getIngredientManager().removeIngredientsAtRuntime(VanillaTypes.ITEM_STACK, removal);
+        }
 
         // Add Knife translations
         DelightfulItems.ITEMS.getEntries().stream()

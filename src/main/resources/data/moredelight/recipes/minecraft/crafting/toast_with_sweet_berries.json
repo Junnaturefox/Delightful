@@ -1,0 +1,28 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:item_exists",
+          "item": "moredelight:toast_with_sweet_berries"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "tag": "forge:bread_slices/toasted"
+          },
+          {
+            "tag": "forge:fruits/sweet_berries"
+          }
+        ],
+        "result": {
+          "item": "moredelight:toast_with_sweet_berries"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

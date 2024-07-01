@@ -8,7 +8,7 @@
             {
               "type": "forge:not",
               "value": {
-                "tag": "forge:bars/chocolate",
+                "tag": "forge:chocolate",
                 "type": "forge:tag_empty"
               }
             },
@@ -27,7 +27,7 @@
             "item": "frozenup:mug_of_milk"
           },
           {
-            "tag": "forge:bars/chocolate"
+            "tag": "forge:chocolate"
           }
         ],
         "result": {

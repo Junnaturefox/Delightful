@@ -85,42 +85,42 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
         wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DelightfulItems.CHEESEBURGER.get())
                 .requires(ForgeTags.BREAD)
                 .requires(ModItems.BEEF_PATTY.get())
-                .requires(DelightfulItemTags.CHEESES)
-                .requires(ForgeTags.SALAD_INGREDIENTS)
-                .requires(ForgeTags.CROPS_TOMATO)
-                .requires(ForgeTags.CROPS_ONION)
-                .unlockedBy("has_cheese", has(DelightfulItemTags.CHEESES)),
-            "food/cheeseburger", finished, enabled("cheeseburger"), tagEmpty(DelightfulItemTags.BURGER_BUN), not(tagEmpty(DelightfulItemTags.CHEESES)), not(modLoaded("vintagedelight")));
+                .requires(DelightfulItemTags.CHEESE)
+                .requires(ForgeTags.SALAD_INGREDIENTS_CABBAGE)
+                .requires(ForgeTags.VEGETABLES_TOMATO)
+                .requires(ForgeTags.VEGETABLES_ONION)
+                .unlockedBy("has_cheese", has(DelightfulItemTags.CHEESE)),
+            "food/cheeseburger", finished, enabled("cheeseburger"), tagEmpty(DelightfulItemTags.BURGER_BUN), not(tagEmpty(DelightfulItemTags.CHEESE)), not(modLoaded(Mods.VD)));
         wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DelightfulItems.CHEESEBURGER.get())
                 .requires(ForgeTags.BREAD)
                 .requires(ModItems.BEEF_PATTY.get())
                 .requires(ForgeTags.MILK)
-                .requires(ForgeTags.SALAD_INGREDIENTS)
-                .requires(ForgeTags.CROPS_TOMATO)
-                .requires(ForgeTags.CROPS_ONION)
+                .requires(ForgeTags.SALAD_INGREDIENTS_CABBAGE)
+                .requires(ForgeTags.VEGETABLES_TOMATO)
+                .requires(ForgeTags.VEGETABLES_ONION)
                 .unlockedBy("has_beef_patty_and_cheese", has(ModItems.BEEF_PATTY.get(), Items.MILK_BUCKET)),
-            "food/cheeseburger_from_milk", finished, enabled("cheeseburger"), tagEmpty(DelightfulItemTags.CHEESES));
+            "food/cheeseburger_from_milk", finished, enabled("cheeseburger"), tagEmpty(DelightfulItemTags.CHEESE));
         wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DelightfulItems.CHEESEBURGER.get())
                 .requires(DelightfulItemTags.BURGER_BUN)
                 .requires(ModItems.BEEF_PATTY.get())
-                .requires(DelightfulItemTags.CHEESES)
-                .requires(ForgeTags.SALAD_INGREDIENTS)
-                .requires(ForgeTags.CROPS_TOMATO)
-                .requires(ForgeTags.CROPS_ONION)
+                .requires(DelightfulItemTags.CHEESE)
+                .requires(ForgeTags.SALAD_INGREDIENTS_CABBAGE)
+                .requires(ForgeTags.VEGETABLES_TOMATO)
+                .requires(ForgeTags.VEGETABLES_ONION)
                 .unlockedBy("has_beef_patty_and_cheese", has(ModItems.BEEF_PATTY.get(), Items.MILK_BUCKET)),
-            "food/cheeseburger_from_bun", finished, enabled("cheeseburger"), not(tagEmpty(DelightfulItemTags.BURGER_BUN)), not(tagEmpty(DelightfulItemTags.CHEESES)), not(modLoaded("vintagedelight")));
+            "food/cheeseburger_from_bun", finished, enabled("cheeseburger"), not(tagEmpty(DelightfulItemTags.BURGER_BUN)), not(tagEmpty(DelightfulItemTags.CHEESE)), not(modLoaded(Mods.VD)));
         wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DelightfulItems.DELUXE_CHEESEBURGER.get())
                 .requires(ForgeTags.BREAD)
                 .requires(ModItems.BEEF_PATTY.get())
-                .requires(DelightfulItemTags.CHEESES)
+                .requires(DelightfulItemTags.CHEESE)
                 .requires(ModItems.BEEF_PATTY.get())
-                .requires(DelightfulItemTags.CHEESES)
+                .requires(DelightfulItemTags.CHEESE)
                 .requires(ModItems.COOKED_BACON.get())
-                .requires(ForgeTags.SALAD_INGREDIENTS)
-                .requires(ForgeTags.CROPS_TOMATO)
-                .requires(ForgeTags.CROPS_ONION)
+                .requires(ForgeTags.SALAD_INGREDIENTS_CABBAGE)
+                .requires(ForgeTags.VEGETABLES_TOMATO)
+                .requires(ForgeTags.VEGETABLES_ONION)
                 .unlockedBy("has_bacon", has(ModItems.COOKED_BACON.get())),
-            "food/deluxe_cheeseburger", finished, enabled("deluxe_cheeseburger"), tagEmpty(DelightfulItemTags.BURGER_BUN), not(tagEmpty(DelightfulItemTags.CHEESES)));
+            "food/deluxe_cheeseburger", finished, enabled("deluxe_cheeseburger"), tagEmpty(DelightfulItemTags.BURGER_BUN), not(tagEmpty(DelightfulItemTags.CHEESE)));
         wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DelightfulItems.DELUXE_CHEESEBURGER.get())
                 .requires(ForgeTags.BREAD)
                 .requires(ModItems.BEEF_PATTY.get())
@@ -128,23 +128,23 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
                 .requires(ModItems.BEEF_PATTY.get())
                 .requires(ForgeTags.MILK)
                 .requires(ModItems.COOKED_BACON.get())
-                .requires(ForgeTags.SALAD_INGREDIENTS)
-                .requires(ForgeTags.CROPS_TOMATO)
-                .requires(ForgeTags.CROPS_ONION)
+                .requires(ForgeTags.SALAD_INGREDIENTS_CABBAGE)
+                .requires(ForgeTags.VEGETABLES_TOMATO)
+                .requires(ForgeTags.VEGETABLES_ONION)
                 .unlockedBy("has_bacon", has(ModItems.COOKED_BACON.get())),
-            "food/deluxe_cheeseburger_from_milk", finished, enabled("deluxe_cheeseburger"), tagEmpty(DelightfulItemTags.CHEESES));
+            "food/deluxe_cheeseburger_from_milk", finished, enabled("deluxe_cheeseburger"), tagEmpty(DelightfulItemTags.CHEESE));
         wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DelightfulItems.DELUXE_CHEESEBURGER.get())
                 .requires(DelightfulItemTags.BURGER_BUN)
                 .requires(ModItems.BEEF_PATTY.get())
-                .requires(DelightfulItemTags.CHEESES)
+                .requires(DelightfulItemTags.CHEESE)
                 .requires(ModItems.BEEF_PATTY.get())
-                .requires(DelightfulItemTags.CHEESES)
+                .requires(DelightfulItemTags.CHEESE)
                 .requires(ModItems.COOKED_BACON.get())
-                .requires(ForgeTags.SALAD_INGREDIENTS)
-                .requires(ForgeTags.CROPS_TOMATO)
-                .requires(ForgeTags.CROPS_ONION)
+                .requires(ForgeTags.SALAD_INGREDIENTS_CABBAGE)
+                .requires(ForgeTags.VEGETABLES_TOMATO)
+                .requires(ForgeTags.VEGETABLES_ONION)
                 .unlockedBy("has_bacon", has(ModItems.COOKED_BACON.get())),
-            "food/deluxe_cheeseburger_from_bun", finished, enabled("deluxe_cheeseburger"), not(tagEmpty(DelightfulItemTags.BURGER_BUN)), not(tagEmpty(DelightfulItemTags.CHEESES)));
+            "food/deluxe_cheeseburger_from_bun", finished, enabled("deluxe_cheeseburger"), not(tagEmpty(DelightfulItemTags.BURGER_BUN)), not(tagEmpty(DelightfulItemTags.CHEESE)));
         wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DelightfulItems.MARSHMALLOW_STICK.get(), 2)
                 .requires(DelightfulItemTags.SUGAR)
                 .requires(DelightfulItemTags.WATER)
@@ -204,7 +204,7 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
                 .requires(Items.BOWL)
                 .requires(Ingredient.of(ForgeTags.SALAD_INGREDIENTS), 2)
                 .requires(DelightfulItems.CACTUS_STEAK.get())
-                .requires(DelightfulItemTags.CROPS_CARROT)
+                .requires(ForgeTags.VEGETABLES_CARROT)
                 .requires(DelightfulItemTags.FRUITS_SALMONBERRIES)
                 .requires(DelightfulItems.ROASTED_ACORN.get())
                 .unlockedBy("has_cactus_steak", has(DelightfulItems.CACTUS_STEAK.get())),
@@ -267,7 +267,7 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
                 .pattern("###")
                 .pattern("aaa")
                 .pattern("xOx")
-                .define('#', Items.WHEAT)
+                .define('#', ForgeTags.GRAIN_WHEAT)
                 .define('a', DelightfulItemTags.FRUITS_SALMONBERRIES)
                 .define('x', DelightfulItemTags.SUGAR)
                 .define('O', ModItems.PIE_CRUST.get())
@@ -281,7 +281,7 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
                 .pattern("###")
                 .pattern("aaa")
                 .pattern("xOe")
-                .define('#', Items.WHEAT)
+                .define('#', ForgeTags.GRAIN_WHEAT)
                 .define('a', Items.PUMPKIN)
                 .define('x', DelightfulItemTags.SUGAR)
                 .define('e', ForgeTags.EGGS)
@@ -311,9 +311,9 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
             "cantaloupe_seeds", finished, enabled(DelightfulItems.CANTALOUPE_SEEDS));
         wrap(CookingPotRecipeBuilder.cookingPotRecipe(DelightfulItems.STUFFED_CANTALOUPE_BLOCK.get(), 1,
                     CookingRecipes.SLOW_COOKING, 0.35F, DelightfulItems.CANTALOUPE.get())
-                .addIngredient(ForgeTags.CROPS_RICE)
+                .addIngredient(ForgeTags.GRAIN_RICE)
                 .addIngredient(ForgeTags.COOKED_MUTTON)
-                .addIngredient(ForgeTags.CROPS_ONION)
+                .addIngredient(ForgeTags.VEGETABLES_ONION)
                 .addIngredient(ForgeTags.BERRIES)
                 .addIngredient(ForgeTags.SEEDS)
                 .unlockedBy("has_cantaloupe", has(DelightfulItems.CANTALOUPE.get())),
@@ -373,67 +373,67 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
                 .addIngredient(DelightfulItemTags.NUTS)
                 .addIngredient(DelightfulItemTags.SUGAR)
                 .unlockedBy("has_nuts", has(DelightfulItemTags.NUTS)),
-            "food/cooking/nut_butter_bottle", finished, enabled("nut_butter_bottle"), not(tagEmpty(DelightfulItemTags.NUTS)), not(modLoaded("vintagedelight")));
+            "food/cooking/nut_butter_bottle", finished, enabled("nut_butter_bottle"), not(tagEmpty(DelightfulItemTags.NUTS)), not(modLoaded(Mods.VD)));
         wrap(CookingPotRecipeBuilder.cookingPotRecipe(
                     DelightfulItems.COCONUT_CURRY.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F)
                 .addIngredient(DelightfulItemTags.COCONUT)
                 .addIngredient(ForgeTags.RAW_CHICKEN)
-                .addIngredient(ForgeTags.CROPS_TOMATO)
+                .addIngredient(ForgeTags.VEGETABLES_TOMATO)
                 .addIngredient(DelightfulItemTags.TEA_LEAVES_GREEN)
                 .addIngredient(ForgeTags.SALAD_INGREDIENTS_CABBAGE)
-                .addIngredient(ForgeTags.CROPS_ONION)
+                .addIngredient(ForgeTags.VEGETABLES_ONION)
                 .unlockedBy("has_tea", has(DelightfulItemTags.TEA_LEAVES_GREEN)),
-            "food/cooking/coconut_curry_no_ginger", finished, enabled("coconut_curry"), not(tagEmpty(DelightfulItemTags.COCONUT)), tagEmpty(DelightfulItemTags.CROPS_GINGER));
+            "food/cooking/coconut_curry_no_ginger", finished, enabled("coconut_curry"), not(tagEmpty(DelightfulItemTags.COCONUT)), tagEmpty(DelightfulItemTags.VEGETABLES_GINGER));
         wrap(CookingPotRecipeBuilder.cookingPotRecipe(
                     DelightfulItems.COCONUT_CURRY.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F)
                 .addIngredient(DelightfulItemTags.COCONUT)
                 .addIngredient(ForgeTags.RAW_CHICKEN)
-                .addIngredient(ForgeTags.CROPS_TOMATO)
+                .addIngredient(ForgeTags.VEGETABLES_TOMATO)
                 .addIngredient(DelightfulItemTags.TEA_LEAVES_GREEN)
-                .addIngredient(DelightfulItemTags.CROPS_GINGER)
-                .addIngredient(ForgeTags.CROPS_ONION)
+                .addIngredient(DelightfulItemTags.VEGETABLES_GINGER)
+                .addIngredient(ForgeTags.VEGETABLES_ONION)
                 .unlockedBy("has_coconut", has(DelightfulItemTags.COCONUT)),
-            "food/cooking/coconut_curry", finished, enabled("coconut_curry"), not(tagEmpty(DelightfulItemTags.COCONUT)), not(tagEmpty(DelightfulItemTags.CROPS_GINGER)));
+            "food/cooking/coconut_curry", finished, enabled("coconut_curry"), not(tagEmpty(DelightfulItemTags.COCONUT)), not(tagEmpty(DelightfulItemTags.VEGETABLES_GINGER)));
         wrap(CookingPotRecipeBuilder.cookingPotRecipe(
                     DelightfulItems.SINIGANG.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F)
                 .addIngredient(ForgeTags.RAW_FISHES)
                 .addIngredient(ModItems.TOMATO_SAUCE.get())
-                .addIngredient(ForgeTags.CROPS_ONION)
+                .addIngredient(ForgeTags.VEGETABLES_ONION)
                 .addIngredient(ForgeTags.RAW_PORK)
-                .addIngredient(DelightfulItemTags.CROPS_GINGER)
+                .addIngredient(DelightfulItemTags.VEGETABLES_GINGER)
                 .addIngredient(DelightfulItemTags.FRUITS_CITRUS)
-                .unlockedBy("has_ginger", has(DelightfulItemTags.CROPS_GINGER)),
-            "food/cooking/sinigang", finished, enabled("sinigang"), not(tagEmpty(DelightfulItemTags.CROPS_GINGER)), not(tagEmpty(DelightfulItemTags.FRUITS_CITRUS)));
+                .unlockedBy("has_ginger", has(DelightfulItemTags.VEGETABLES_GINGER)),
+            "food/cooking/sinigang", finished, enabled("sinigang"), not(tagEmpty(DelightfulItemTags.VEGETABLES_GINGER)), not(tagEmpty(DelightfulItemTags.FRUITS_CITRUS)));
         wrap(CookingPotRecipeBuilder.cookingPotRecipe(
                     DelightfulItems.SINIGANG.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F)
                 .addIngredient(ForgeTags.RAW_PORK)
                 .addIngredient(ForgeTags.RAW_FISHES)
-                .addIngredient(ForgeTags.CROPS_RICE)
-                .addIngredient(ForgeTags.CROPS_TOMATO)
+                .addIngredient(ForgeTags.GRAIN_RICE)
+                .addIngredient(ForgeTags.VEGETABLES_TOMATO)
                 .addIngredient(DelightfulItemTags.FRUITS)
-                .addIngredient(ForgeTags.CROPS_ONION)
+                .addIngredient(ForgeTags.VEGETABLES_ONION)
                 .unlockedBy("has_ginger", has(DelightfulItemTags.FRUITS)),
-            "food/cooking/sinigang_no_ginger_citrus", finished, enabled("sinigang"), or(tagEmpty(DelightfulItemTags.CROPS_GINGER), tagEmpty(DelightfulItemTags.FRUITS_CITRUS)));
+            "food/cooking/sinigang_no_ginger_citrus", finished, enabled("sinigang"), or(tagEmpty(DelightfulItemTags.VEGETABLES_GINGER), tagEmpty(DelightfulItemTags.FRUITS_CITRUS)));
         wrap(CookingPotRecipeBuilder.cookingPotRecipe(
                     DelightfulItems.CRAB_RANGOON.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F)
                 .addIngredient(ForgeTags.DOUGH)
-                .addIngredient(DelightfulItemTags.CHEESES)
+                .addIngredient(DelightfulItemTags.CHEESE)
                 .addIngredient(DelightfulItemTags.CRAB_MEAT)
                 .unlockedBy("has_cooked_crab", has(DelightfulItemTags.CRAB_MEAT)),
-            "food/cooking/crab_rangoon", finished, enabled("crab_rangoon"), not(tagEmpty(DelightfulItemTags.CRAB_MEAT)), not(tagEmpty(DelightfulItemTags.CHEESES)));
+            "food/cooking/crab_rangoon", finished, enabled("crab_rangoon"), not(tagEmpty(DelightfulItemTags.CRAB_MEAT)), not(tagEmpty(DelightfulItemTags.CHEESE)));
         wrap(CookingPotRecipeBuilder.cookingPotRecipe(
                     DelightfulItems.CRAB_RANGOON.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F)
                 .addIngredient(ForgeTags.DOUGH)
                 .addIngredient(ForgeTags.MILK)
                 .addIngredient(DelightfulItemTags.CRAB_MEAT)
                 .unlockedBy("has_cooked_crab", has(DelightfulItemTags.CRAB_MEAT)),
-            "food/cooking/crab_rangoon_from_milk", finished, enabled("crab_rangoon"), not(tagEmpty(DelightfulItemTags.CRAB_MEAT)), tagEmpty(DelightfulItemTags.CHEESES));
+            "food/cooking/crab_rangoon_from_milk", finished, enabled("crab_rangoon"), not(tagEmpty(DelightfulItemTags.CRAB_MEAT)), tagEmpty(DelightfulItemTags.CHEESE));
         wrap(CookingPotRecipeBuilder.cookingPotRecipe(
                     Items.MILK_BUCKET, 1, CookingRecipes.NORMAL_COOKING, 0.35F, Items.WATER_BUCKET)
                 .addIngredient(DelightfulItemTags.NUT_BUTTER)
                 .addIngredient(DelightfulItemTags.NUT_BUTTER)
                 .unlockedBy("has_nut_butter", has(DelightfulItemTags.NUT_BUTTER)),
-            "food/cooking/nut_milk", finished, enabled("nut_milk"), not(modLoaded("vintagedelight")));
+            "food/cooking/nut_milk", finished, enabled("nut_milk"), not(modLoaded(Mods.VD)));
         wrap(CookingPotRecipeBuilder.cookingPotRecipe(
                     Items.HONEY_BOTTLE, 3, CookingRecipes.NORMAL_COOKING, 0.35F)
                 .addIngredient(Items.HONEY_BOTTLE, 2)

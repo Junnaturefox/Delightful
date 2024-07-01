@@ -17,19 +17,19 @@
         "experience": 2.0,
         "ingredients": [
           {
-            "tag": "forge:crops/rice"
+            "tag": "forge:grain/rice"
           },
           {
             "tag": "forge:vegetables"
           },
           {
-            "tag": "forge:crops/onion"
+            "tag": "forge:vegetables/onion"
           },
           {
             "item": "minecraft:brown_mushroom"
           },
           {
-            "tag": "forge:crops/potato"
+            "tag": "forge:vegetables/potato"
           },
           {
             "tag": "forge:berries"
@@ -66,7 +66,7 @@
             "tag": "forge:vegetables"
           },
           {
-            "tag": "forge:crops/onion"
+            "tag": "forge:vegetables/onion"
           },
           {
             "item": "minecraft:brown_mushroom"

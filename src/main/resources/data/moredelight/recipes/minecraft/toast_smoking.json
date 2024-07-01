@@ -1,0 +1,26 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:item_exists",
+            "item": "some_assembly_required:toasted_bread_slice"
+          }
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:smoking",
+        "category": "food",
+        "cookingtime": 100,
+        "experience": 0.5,
+        "ingredient": {
+          "tag": "forge:bread_slices/wheat"
+        },
+        "result": "moredelight:toast"
+      }
+    }
+  ]
+}

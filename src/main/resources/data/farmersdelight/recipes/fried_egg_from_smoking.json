@@ -1,10 +1,26 @@
 {
-  "type": "minecraft:smoking",
-  "category": "food",
-  "cookingtime": 100,
-  "experience": 0.35,
-  "ingredient": {
-    "tag": "forge:eggs"
-  },
-  "result": "farmersdelight:fried_egg"
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:mod_loaded",
+            "modid": "abnormals_delight"
+          }
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:smoking",
+        "category": "food",
+        "cookingtime": 100,
+        "experience": 0.35,
+        "ingredient": {
+          "item": "minecraft:egg"
+        },
+        "result": "farmersdelight:fried_egg"
+      }
+    }
+  ]
 }

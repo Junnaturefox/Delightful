@@ -22,10 +22,10 @@
             "tag": "forge:salad_ingredients"
           },
           {
-            "tag": "forge:crops/tomato"
+            "tag": "forge:vegetables/tomato"
           },
           {
-            "tag": "forge:crops/onion"
+            "tag": "forge:vegetables/onion"
           }
         ],
         "result": {
@@ -57,10 +57,10 @@
             "tag": "forge:salad_ingredients"
           },
           {
-            "tag": "forge:crops/tomato"
+            "tag": "forge:vegetables/tomato"
           },
           {
-            "tag": "forge:crops/onion"
+            "tag": "forge:vegetables/onion"
           }
         ],
         "result": {

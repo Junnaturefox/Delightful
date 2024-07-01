@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "#forge:grain/corn",
+      "required": false
+    },
+    {
+      "id": "hauntedharvest:corn",
+      "required": false
+    },
+    {
+      "id": "corn_delight:corn",
+      "required": false
+    }
+  ]
+}

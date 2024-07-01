@@ -12,6 +12,7 @@ import java.util.function.Supplier;
 
 public class Mods {
 	public static final String AA = "additionaladditions";
+	public static final String AD = "abnormals_delight";
 	public static final String AE = "aether";
 	public static final String AE2 = "ae2";
 	public static final String AN = "ars_nouveau";
@@ -27,15 +28,20 @@ public class Mods {
 	public static final String FU = "frozenup";
 	public static final String FUD = "frozen_delight";
 	public static final String FUS = "fusion";
+	public static final String IN = "incubation";
 	public static final String LE = "lolenderite";
 	public static final String MEKT = "mekanismtools";
+	public static final String MD = "moredelight";
 	public static final String N = "neapolitan";
 	public static final String RC = "rootsclassic";
 	public static final String RF = "respiteful";
 	public static final String RL = "rottenleather";
+	public static final String SAS = "some_assembly_required";
 	public static final String SO = "simpleores";
+	public static final String SUP = "supplementaries";
 	public static final String TF = "twilightforest";
 	public static final String UG = "undergarden";
+	public static final String VD = "vintagedelight";
 	public static final String WB = "wildberries";
 	public static final String YH = "youkaishomecoming";
 

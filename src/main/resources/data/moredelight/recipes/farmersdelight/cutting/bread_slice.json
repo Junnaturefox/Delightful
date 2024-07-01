@@ -1,0 +1,33 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:item_exists",
+            "item": "some_assembly_required:bread_slice"
+          }
+        }
+      ],
+      "recipe": {
+        "type": "farmersdelight:cutting",
+        "ingredients": [
+          {
+            "tag": "forge:bread/wheat"
+          }
+        ],
+        "tool": {
+          "tag": "forge:tools/knives"
+        },
+        "result": [
+          {
+            "item": "moredelight:bread_slice",
+            "count": 4
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -15,7 +15,7 @@
               "values": [
                 {
                   "type": "forge:tag_empty",
-                  "tag": "forge:crops/ginger"
+                  "tag": "forge:vegetables/ginger"
                 },
                 {
                   "type": "forge:tag_empty",
@@ -38,16 +38,16 @@
             "tag": "forge:raw_fishes"
           },
           {
-            "tag": "forge:crops/rice"
+            "tag": "forge:grain/rice"
           },
           {
-            "tag": "forge:crops/tomato"
+            "tag": "forge:vegetables/tomato"
           },
           {
             "tag": "forge:fruits"
           },
           {
-            "tag": "forge:crops/onion"
+            "tag": "forge:vegetables/onion"
           }
         ],
         "result": {

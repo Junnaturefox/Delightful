@@ -6,7 +6,9 @@ import net.brnbrd.delightful.common.crafting.EnabledCondition;
 import net.brnbrd.delightful.common.item.DelightfulItems;
 import net.brnbrd.delightful.common.item.IConfigured;
 import net.brnbrd.delightful.compat.Mods;
+import net.brnbrd.delightful.data.tags.DelightfulItemTags;
 import net.brnbrd.delightful.network.DPacketHandler;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.animal.Chicken;
 import net.minecraft.world.entity.animal.Parrot;
 import net.minecraft.world.item.CreativeModeTab;
@@ -103,6 +105,10 @@ public class ModEvents {
 
     @SubscribeEvent
     public void buildContents(BuildCreativeModeTabContentsEvent event) {
+        var tags = ForgeRegistries.ITEMS.tags();
+        ResourceLocation TOAST_WITH_BLUEBERRIES = Util.rl(Mods.MD, "toast_with_blueberries");
+        ResourceLocation TOAST_WITH_CHEESE = Util.rl(Mods.MD, "toast_with_cheese");
+        // Delightful Items
         if (event.getTabKey() == ModCreativeTabs.TAB_FARMERS_DELIGHT.getKey()) {
             DelightfulItems.ITEMS.getEntries().stream().filter(RegistryObject::isPresent).forEach((item) -> {
                 Item i = item.get();
@@ -114,6 +120,26 @@ public class ModEvents {
                     event.accept(inst, CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                 }
             });
+        } else if (
+            Mods.loaded(Mods.MD) &&
+            event.getTabKey().location().getNamespace().equals(Mods.MD) &&
+            tags != null
+        ) {
+            if (
+                !Mods.loaded("nutritious_feast") &&
+                ForgeRegistries.ITEMS.containsKey(TOAST_WITH_BLUEBERRIES) &&
+                tags.isKnownTagName(DelightfulItemTags.FRUITS_BLUEBERRIES)
+            ) {
+                event.accept(ForgeRegistries.ITEMS.getValue(TOAST_WITH_BLUEBERRIES));
+            }
+            if (
+                !Mods.loaded("casualness_delight") &&
+                ForgeRegistries.ITEMS.containsKey(TOAST_WITH_CHEESE) &&
+                tags.isKnownTagName(DelightfulItemTags.CHEESE)
+            ) {
+                event.accept(ForgeRegistries.ITEMS.getValue(TOAST_WITH_CHEESE));
+            }
         }
     }
+
 }
