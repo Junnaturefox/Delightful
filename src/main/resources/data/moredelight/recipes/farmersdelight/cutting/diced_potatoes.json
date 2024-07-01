@@ -1,0 +1,34 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:item_exists",
+          "item": "moredelight:diced_potatoes"
+        }
+      ],
+      "recipe": {
+        "type": "farmersdelight:cutting",
+        "ingredients": [
+          {
+            "item": "minecraft:potato"
+          }
+        ],
+        "tool": {
+          "tag": "forge:tools/knives"
+        },
+        "result": [
+          {
+            "item": "moredelight:diced_potatoes",
+            "count": 1
+          },
+          {
+            "item": "moredelight:diced_potatoes",
+            "chance": 0.15
+          }
+        ]
+      }
+    }
+  ]
+}

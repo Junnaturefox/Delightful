@@ -1,0 +1,72 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:item_exists",
+              "item": "moredelight:toast_with_chocolate"
+            },
+            {
+              "type": "forge:not",
+              "value": {
+                "type": "forge:tag_empty",
+                "tag": "forge:chocolate"
+              }
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "tag": "forge:bread_slices/toasted"
+          },
+          {
+            "tag": "forge:chocolate"
+          }
+        ],
+        "result": {
+          "item": "moredelight:toast_with_chocolate"
+        },
+        "show_notification": true
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:item_exists",
+              "item": "moredelight:toast_with_chocolate"
+            },
+            {
+              "type": "forge:tag_empty",
+              "tag": "forge:chocolate"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "tag": "forge:bread_slices/toasted"
+          },
+          {
+            "item": "minecraft:cocoa_beans"
+          }
+        ],
+        "result": {
+          "item": "moredelight:toast_with_chocolate"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}
