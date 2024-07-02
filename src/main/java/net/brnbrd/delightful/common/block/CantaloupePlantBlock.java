@@ -150,17 +150,12 @@ public class CantaloupePlantBlock extends BushBlock implements BonemealableBlock
 		pLevel.setBlock(pPos, pState.setValue(AGE, Math.min(MAX_AGE, pState.getValue(AGE) + 1)), 2);
 	}
 
-	@Override
-	public net.minecraftforge.common.PlantType getPlantType(BlockGetter world, BlockPos pos) {
-		return PlantType.BEACH;
-	}
-
-	@Override
-	public @NotNull BlockState getPlant(@NotNull BlockGetter world, @NotNull BlockPos pos) {
-		return this.defaultBlockState();
-	}
-
 	public boolean isMaxAge(BlockState state) {
 		return state.getValue(AGE) >= MAX_AGE;
+	}
+
+	@Override
+	public PlantType getPlantType(BlockGetter world, BlockPos pos) {
+		return PlantType.BEACH;
 	}
 }

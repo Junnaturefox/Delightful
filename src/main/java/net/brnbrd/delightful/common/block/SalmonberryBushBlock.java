@@ -29,6 +29,7 @@ import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.common.ForgeHooks;
+import net.minecraftforge.common.PlantType;
 import org.jetbrains.annotations.NotNull;
 
 public class SalmonberryBushBlock extends BushBlock implements BonemealableBlock {
@@ -93,25 +94,25 @@ public class SalmonberryBushBlock extends BushBlock implements BonemealableBlock
 
   @SuppressWarnings("deprecation")
   @Override
-  public @NotNull InteractionResult use(@NotNull BlockState state, @NotNull Level pLevel, @NotNull BlockPos pPos, @NotNull Player pPlayer, @NotNull InteractionHand pHand, @NotNull BlockHitResult pHit) {
+  public @NotNull InteractionResult use(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull Player player, @NotNull InteractionHand hand, @NotNull BlockHitResult hit) {
     boolean flag = this.isMaxAge(state);
-    if (!flag && pPlayer.getItemInHand(pHand).is(Items.BONE_MEAL)) {
+    if (!flag && player.getItemInHand(hand).is(Items.BONE_MEAL)) {
       return InteractionResult.PASS;
     } else if (state.getValue(AGE) > 2) {
-      popResource(pLevel, pPos, new ItemStack(DelightfulItems.SALMONBERRIES.get(), (flag ? 2 + pLevel.random.nextInt(2) : 1)));
-      pLevel.playSound(null, pPos, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.BLOCKS, 1.0F, 0.8F + pLevel.random.nextFloat() * 0.4F);
+      popResource(level, pos, new ItemStack(DelightfulItems.SALMONBERRIES.get(), (flag ? 2 + level.random.nextInt(2) : 1)));
+      level.playSound(null, pos, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.BLOCKS, 1.0F, 0.8F + level.random.nextFloat() * 0.4F);
       BlockState blockstate = state.setValue(AGE, 1);
-      pLevel.setBlock(pPos, blockstate, 2);
-      pLevel.gameEvent(GameEvent.BLOCK_CHANGE, pPos, GameEvent.Context.of(pPlayer, blockstate));
-      return InteractionResult.sidedSuccess(pLevel.isClientSide);
+      level.setBlock(pos, blockstate, 2);
+      level.gameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Context.of(player, blockstate));
+      return InteractionResult.sidedSuccess(level.isClientSide());
     } else {
-      return super.use(state, pLevel, pPos, pPlayer, pHand, pHit);
+      return super.use(state, level, pos, player, hand, hit);
     }
   }
 
   @Override
-  protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
-    pBuilder.add(AGE);
+  protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+    builder.add(AGE);
   }
 
   @Override
@@ -131,5 +132,10 @@ public class SalmonberryBushBlock extends BushBlock implements BonemealableBlock
 
   public boolean isMaxAge(BlockState state) {
     return state.getValue(AGE) >= MAX_AGE;
+  }
+
+  @Override
+  public PlantType getPlantType(BlockGetter world, BlockPos pos) {
+    return PlantType.CROP;
   }
 }
