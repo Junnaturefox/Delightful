@@ -1,5 +1,6 @@
 package net.brnbrd.delightful.compat.jade;
 
+import net.brnbrd.delightful.common.block.CantaloupePlantBlock;
 import net.brnbrd.delightful.common.block.DPieBlock;
 import net.brnbrd.delightful.common.block.SalmonberryBushBlock;
 import snownee.jade.api.IWailaClientRegistration;
@@ -18,6 +19,7 @@ public class DelightfulJadePlugin implements IWailaPlugin {
 	@Override
 	public void registerClient(IWailaClientRegistration registration) {
 		registration.registerBlockComponent(DCropProgress.INSTANCE, SalmonberryBushBlock.class);
+		registration.registerBlockComponent(DCropProgress.INSTANCE, CantaloupePlantBlock.class);
 		registration.registerBlockComponent(DPieIcons.INSTANCE, DPieBlock.class);
 	}
 }
