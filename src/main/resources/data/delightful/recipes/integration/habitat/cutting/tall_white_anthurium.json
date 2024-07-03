@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:item_exists",
+          "item": "habitat:tall_white_anthurium"
+        }
+      ],
+      "recipe": {
+        "type": "farmersdelight:cutting",
+        "ingredients": [
+          {
+            "item": "habitat:tall_white_anthurium"
+          }
+        ],
+        "result": [
+          {
+            "item": "minecraft:white_dye",
+            "count": 4
+          }
+        ],
+        "tool": {
+          "tag": "forge:tools/knives"
+        }
+      }
+    }
+  ]
+}

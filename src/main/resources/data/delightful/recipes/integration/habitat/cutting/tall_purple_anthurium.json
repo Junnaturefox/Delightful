@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:item_exists",
+          "item": "habitat:tall_purple_anthurium"
+        }
+      ],
+      "recipe": {
+        "type": "farmersdelight:cutting",
+        "ingredients": [
+          {
+            "item": "habitat:tall_purple_anthurium"
+          }
+        ],
+        "result": [
+          {
+            "item": "minecraft:purple_dye",
+            "count": 4
+          }
+        ],
+        "tool": {
+          "tag": "forge:tools/knives"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:item_exists",
+              "item": "habitat:kabloom_fruit"
+            },
+            {
+              "type": "forge:item_exists",
+              "item": "habitat:kabloom_pulp"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "farmersdelight:cutting",
+        "ingredients": [
+          {
+            "item": "habitat:kabloom_fruit"
+          }
+        ],
+        "result": [
+          {
+            "item": "habitat:kabloom_pulp"
+          },
+          {
+            "item": "minecraft:green_dye"
+          }
+        ],
+        "tool": {
+          "tag": "forge:tools/knives"
+        }
+      }
+    }
+  ]
+}

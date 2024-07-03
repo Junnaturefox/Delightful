@@ -1,0 +1,41 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "delightful:enabled",
+              "value": "cactus_flesh"
+            },
+            {
+              "type": "forge:not",
+              "value": {
+                "type": "forge:tag_empty",
+                "tag": "habitat:ball_cacti"
+              }
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "farmersdelight:cutting",
+        "ingredients": [
+          {
+            "tag": "habitat:ball_cacti"
+          }
+        ],
+        "result": [
+          {
+            "item": "delightful:cactus_flesh"
+          }
+        ],
+        "tool": {
+          "tag": "forge:tools/knives"
+        }
+      }
+    }
+  ]
+}
