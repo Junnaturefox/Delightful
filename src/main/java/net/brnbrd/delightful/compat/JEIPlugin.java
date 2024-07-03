@@ -39,13 +39,21 @@ public class JEIPlugin implements IModPlugin
             .filter(i -> (i.get() instanceof IConfigured c) ? !c.enabled() : !Util.enabled(i)) // Keep items not enabled
             .map(Util::gs) // Get ItemStack
             .toList());
+
+        // FD conflicts
         this.hide(hidden, Mods.AA, "fried_egg");
         this.hide(hidden, Mods.IN, "fried_egg");
         this.hide(hidden, Mods.NA, "cooked_egg");
-        this.hide(hidden, Mods.MD, "bread_slice");
-        this.hide(hidden, Mods.MD, "toast");
+
+        // Delightful conflicts
         this.hide(hidden, Mods.VD, "pb_j");
         this.hide(hidden, Mods.UGD, "gloomgourd_pie_slice");
+
+        // Other
+        this.hideIfLoaded(hidden, Mods.MD, "bread_slice", Mods.SAS);
+        this.hideIfLoaded(hidden, Mods.MD, "toast", Mods.SAS);
+        this.hideIfLoaded(hidden, Mods.AA, "honeyed_apple", "buzzier_bees");
+
         if (hidden.size() > 0) {
             registration.getIngredientManager().removeIngredientsAtRuntime(VanillaTypes.ITEM_STACK, hidden);
         }
@@ -102,6 +110,12 @@ public class JEIPlugin implements IModPlugin
             if (found != null) {
                 hiddenList.add(found.getDefaultInstance());
             }
+        }
+    }
+
+    private void hideIfLoaded(List<ItemStack> hiddenList, String modid, String item, String... conflict) {
+        if (Mods.orLoaded(conflict)) {
+            hide(hiddenList, modid, item);
         }
     }
 
