@@ -4,6 +4,7 @@
 # 3.5.7
 
 ### Updates
+- Jade support for Salmonberries & Cantaloupes
 - Stuffed Pumpkin recipe fixes for Autumnity and corn
 - Hide disabled/conflicting items in JEI viewer
 
