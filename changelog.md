@@ -5,11 +5,12 @@
 
 ### Updates
 - Jade support for Salmonberries & Cantaloupes
-- Stuffed Pumpkin recipe fixes for Autumnity and corn
+- Added "forge:cooked_nuts" tag, mainly for Vintage Delight compat
 - Hide disabled/conflicting items in JEI viewer
 
 ### Fixes
 - Fix Nature Staff & Zanite Knife (Aether) conflict
+- Stuffed Pumpkin recipe fixes for Autumnity/"forge:bread/corn"
 
 
 # 3.5.6

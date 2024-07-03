@@ -274,6 +274,9 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 			.addTag(DelightfulItemTags.NUTS_WALNUT)
 			.addTag(DelightfulItemTags.NUTS_PEANUT)
 			.addTag(DelightfulItemTags.NUTS_CHESTNUT);
+		this.tag(DelightfulItemTags.COOKED_NUTS)
+			.add(DelightfulItems.ROASTED_ACORN.get())
+			.addOptional(Util.rl(Mods.VD, "roasted_peanut"));
 		this.tag(DelightfulItemTags.CROPS_GINGER).addOptional(Util.rl("snowyspirit", "ginger"));
 		this.tag(DelightfulItemTags.VEGETABLES_CORN)
 			.addOptionalTag(Util.rl("forge", "grain/corn"))
