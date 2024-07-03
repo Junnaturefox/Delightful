@@ -102,7 +102,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		this.tag(DelightfulItemTags.MATCHA)
 			.add(DelightfulItems.MATCHA.get());
 		this.tag(DelightfulItemTags.EGGS_DUCK)
-			.addOptional(Util.rl("naturalist", "duck_egg"));
+			.addOptional(Util.rl(Mods.NA, "duck_egg"));
 		this.tag(DelightfulItemTags.EGGS_PARROT)
 			.addOptional(Util.rl("quark", "egg_parrot_red_blue"))
 			.addOptional(Util.rl("quark", "egg_parrot_blue"))
@@ -309,16 +309,30 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		this.tag(ForgeTags.EGGS)
 			.addOptional(Util.rl("deep_aether", "quail_egg"))
 			.addOptional(Util.rl("etcetera", "eggple"))
-			.addOptional(Util.rl("naturalist", "tortoise_egg"))
-			.addOptional(Util.rl("naturalist", "alligator_egg"));
+			.addOptional(Util.rl(Mods.NA, "tortoise_egg"))
+			.addOptional(Util.rl(Mods.NA, "alligator_egg"));
 		this.tag(ForgeTags.COOKED_EGGS)
 			.addOptional(Util.rl(Mods.AA, "fried_egg"));
+		this.tag(DelightfulItemTags.RAW_CRAB)
+			.addOptional(Util.rl("crabbersdelight", "crab"))
+			.addOptionalTag(Util.rl("finsandtails", "spindly_gem_crabs"));
+		this.tag(DelightfulItemTags.COOKED_CRAB)
+			.addOptional(Util.rl("crabbersdelight", "cooked_crab"));
 		this.tag(DelightfulItemTags.CRAB_LEGS)
 			.addOptional(Util.rl("quark", "cooked_crab_leg"))
 			.addOptional(Util.rl("crabbersdelight", "crab_legs"));
 		this.tag(DelightfulItemTags.CRAB_MEAT)
 			.addTag(DelightfulItemTags.CRAB_LEGS)
 			.addOptional(Util.rl(Mods.ECO, "crab_meat"));
+		this.tag(DelightfulItemTags.CRAB_CLAW_COOKED)
+			.addOptional(Util.rl("collectorsreap", "chieftain_claw"))
+			.addOptional(Util.rl("finsandtails", "cooked_bull_crab_claw"));
+		this.tag(DelightfulItemTags.CRAB_CLAW)
+			.addTag(DelightfulItemTags.CRAB_CLAW_COOKED)
+			.addOptional(Util.rl("crabbersdelight", "crab_claw"))
+			.addOptional(Util.rl(Mods.ECO, "crab_claw"))
+			.addOptional(Util.rl("finsandtails", "red_bull_crab_claw"))
+			.addOptional(Util.rl("finsandtails", "white_bull_crab_claw"));
 		this.tag(DelightfulItemTags.CHEESE)
 			.addOptionalTag(Util.rl("forge", "cheeses"))
 			.addOptional(Util.rl("brewinandchewin", "flaxen_cheese_wedge"))
@@ -355,7 +369,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 			.addOptional(Util.rl("deep_aether", "cooked_aerglow_fish"));
 		this.tag(DelightfulItemTags.TD_VENISON_RAW)
 			.addOptional(Util.rl(Mods.TF, "raw_venison"))
-			.addOptional(Util.rl("naturalist", "venison"))
+			.addOptional(Util.rl(Mods.NA, "venison"))
 			.addOptional(Util.rl("goodall", "raw_venison"))
 			.addOptional(Util.rl("blue_skies", "venison"));
 		this.tag(DelightfulItemTags.RAW_VENISON_COMPAT)
@@ -365,7 +379,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 			.addTag(DelightfulItemTags.RAW_VENISON_COMPAT);
 		this.tag(DelightfulItemTags.TD_VENISON_COOKED)
 			.addOptional(Util.rl(Mods.TF, "cooked_venison"))
-			.addOptional(Util.rl("naturalist", "cooked_venison"))
+			.addOptional(Util.rl(Mods.NA, "cooked_venison"))
 			.addOptional(Util.rl("goodall", "cooked_venison"))
 			.addOptional(Util.rl("blue_skies", "cooked_venison"));
 		this.tag(DelightfulItemTags.COOKED_VENISON_COMPAT)
@@ -612,7 +626,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 			.add(Knives.CERTUS_QUARTZ.get());
 
 		// Naturalist
-		this.tag(Util.it("naturalist", "bird_food_items")).addTag(Tags.Items.SEEDS);
+		this.tag(Util.it(Mods.NA, "bird_food_items")).addTag(Tags.Items.SEEDS);
 
 		// Neapolitan
 		this.tag(Util.it(Mods.N, "ice_cream"))

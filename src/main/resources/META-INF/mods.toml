@@ -32,6 +32,13 @@ configBackground="farmersdelight:textures/block/tatami_mat_half.png"
     side="BOTH"
 
 [[dependencies.delightful]]
+    modId="everycomp"
+    mandatory=false
+    versionRange="[1.20,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.delightful]]
     modId="miners_delight"
     mandatory=false
     versionRange="[0,)"
@@ -118,7 +125,14 @@ configBackground="farmersdelight:textures/block/tatami_mat_half.png"
 [[dependencies.delightful]]
     modId="spawn"
     mandatory=false
-    versionRange="[0,)"
+    versionRange="[1.20.1-1,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.delightful]]
+    modId="finsandtails"
+    mandatory=false
+    versionRange="[1.20.1-1,)"
     ordering="AFTER"
     side="BOTH"
 

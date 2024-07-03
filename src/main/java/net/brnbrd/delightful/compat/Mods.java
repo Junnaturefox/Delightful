@@ -33,6 +33,7 @@ public class Mods {
 	public static final String MEKT = "mekanismtools";
 	public static final String MD = "moredelight";
 	public static final String N = "neapolitan";
+	public static final String NA = "naturalist";
 	public static final String ND = "nethersdelight";
 	public static final String RC = "rootsclassic";
 	public static final String RF = "respiteful";

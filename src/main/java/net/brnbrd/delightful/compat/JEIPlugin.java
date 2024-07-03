@@ -41,6 +41,7 @@ public class JEIPlugin implements IModPlugin
             .toList());
         this.hide(hidden, Mods.AA, "fried_egg");
         this.hide(hidden, Mods.IN, "fried_egg");
+        this.hide(hidden, Mods.NA, "cooked_egg");
         this.hide(hidden, Mods.MD, "bread_slice");
         this.hide(hidden, Mods.MD, "toast");
         this.hide(hidden, Mods.VD, "pb_j");
