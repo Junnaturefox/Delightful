@@ -138,11 +138,15 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 			.addTag(DelightfulItemTags.BREAD_CORN);
 		this.tag(DelightfulItemTags.BREAD_SLICES_TOASTED)
 			.addOptional(Util.rl(Mods.SAS, "toasted_bread_slice"))
-			.addOptional(Util.rl("moredelight", "toast"));
+			.addOptional(Util.rl(Mods.MD, "toast"));
 		this.tag(DelightfulItemTags.BREAD_SLICES)
-			.addTag(DelightfulItemTags.BREAD_SLICES_TOASTED);
-		this.tag(DelightfulItemTags.SANDWICH_BREAD)
+			.addTag(DelightfulItemTags.BREAD_SLICES_TOASTED)
+			.addOptional(Util.rl(Mods.SAS, "bread_slice"))
+			.addOptional(Util.rl(Mods.MD, "bread_slice"));
+		this.tag(DelightfulItemTags.BREAD_SLICED)
 			.addTag(DelightfulItemTags.BREAD_SLICES);
+		this.tag(DelightfulItemTags.SANDWICH_BREAD)
+			.addTag(DelightfulItemTags.BREAD_SLICED);
 		this.tag(DelightfulItemTags.TOOLS_MACHETES)
 			.addOptionalTag(Util.rl(Mods.ND, "tools/machetes"));
 		this.tag(DelightfulItemTags.TOOLS_SCAVENGING)
@@ -466,7 +470,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 			.addOptional(Util.rl(Mods.FRD, "bayberry_cookie"));
 		this.tag(DelightfulItemTags.SUPP_COOKIES)
 			.addTag(DelightfulItemTags.COOKIES)
-			.addTag(DelightfulItemTags.BREAD_SLICES);
+			.addTag(DelightfulItemTags.BREAD_SLICED);
 		this.tag(DelightfulItemTags.ROPES)
 			.add(ModItems.ROPE.get())
 			.addOptionalTag(Util.rl(Mods.SUP, "ropes"))

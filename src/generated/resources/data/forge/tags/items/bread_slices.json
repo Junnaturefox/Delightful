@@ -1,5 +1,13 @@
 {
   "values": [
-    "#forge:bread_slices/toasted"
+    "#forge:bread_slices/toasted",
+    {
+      "id": "some_assembly_required:bread_slice",
+      "required": false
+    },
+    {
+      "id": "moredelight:bread_slice",
+      "required": false
+    }
   ]
 }
