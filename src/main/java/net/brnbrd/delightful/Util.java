@@ -28,6 +28,8 @@ import java.util.function.Supplier;
 
 public class Util {
 
+  public static final String LOADER = "forge";
+
   public static ResourceLocation rl(String modid, String path) {
     return new ResourceLocation(modid, path);
   }

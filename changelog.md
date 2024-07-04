@@ -6,6 +6,7 @@
 ### Updates
 - Jade support for Salmonberries & Cantaloupes
 - Remove wood stripping recipes covered by Every Compat (highly recommend)
+- Added Cactus Chunk recipes from Habitat's cacti
 - Added "forge:cooked_nuts" tag, mainly for Vintage Delight compat
 - Hide disabled/conflicting items in JEI viewer
 

@@ -31,6 +31,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.apache.commons.lang3.ArrayUtils;
 import org.jetbrains.annotations.NotNull;
+import vectorwing.farmersdelight.FarmersDelight;
 import vectorwing.farmersdelight.common.registry.ModBlocks;
 import vectorwing.farmersdelight.common.registry.ModItems;
 import vectorwing.farmersdelight.common.tag.ForgeTags;
@@ -359,7 +360,7 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
                 .addIngredient(Ingredient.of(DelightfulItemTags.FRUITS_SWEET), 2)
                 .addIngredient(Ingredient.of(DelightfulItemTags.SUGAR), 2)
                 .unlockedBy("has_sweet_fruit", has(DelightfulItemTags.FRUITS_SWEET)),
-            "food/cooking/jelly_bottle", finished, enabled("jelly_bottle"), not(modLoaded("fruitsdelight")));
+            "food/cooking/jelly_bottle", finished, enabled("jelly_bottle"), not(modLoaded(Mods.FRD)));
         wrap(CookingPotRecipeBuilder.cookingPotRecipe(
             DelightfulItems.GLOW_JELLY_BOTTLE.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F)
                 .addIngredient(DelightfulItemTags.FRUITS_GLOW_BERRIES)
@@ -367,7 +368,7 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
                 .addIngredient(Tags.Items.DUSTS_GLOWSTONE)
                 .addIngredient(Ingredient.of(DelightfulItemTags.SUGAR), 2)
                 .unlockedBy("has_glow_berries", has(DelightfulItemTags.FRUITS_GLOW_BERRIES)),
-            "food/cooking/glow_jelly_bottle", finished, enabled("glow_jelly_bottle"), not(modLoaded("fruitsdelight")));
+            "food/cooking/glow_jelly_bottle", finished, enabled("glow_jelly_bottle"), not(modLoaded(Mods.FRD)));
         wrap(CookingPotRecipeBuilder.cookingPotRecipe(
             DelightfulItems.NUT_BUTTER_BOTTLE.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F)
                 .addIngredient(DelightfulItemTags.NUTS)
@@ -562,12 +563,14 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
             .requires(Items.BOWL)
             .unlockedBy("has_fruits", has(Items.MELON_SLICE, Items.SWEET_BERRIES, Items.APPLE, ModItems.PUMPKIN_SLICE.get()))
             .save(finished, ModItems.FRUIT_SALAD.getId());
-        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(Items.SUGAR_CANE), Ingredient.of(ForgeTags.TOOLS_KNIVES), Items.SUGAR, 1)
-            .addResultWithChance(Items.SUGAR, 0.5F, 1)
-            .build(finished, Util.rl(Delightful.MODID, "cutting/sugar_cane"));
         CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(DelightfulItems.WILD_SALMONBERRIES.get()), Ingredient.of(ForgeTags.TOOLS_KNIVES), DelightfulItems.SALMONBERRIES.get(), 1)
             .addResult(Items.ORANGE_DYE, 1)
             .build(finished, Util.rl(Delightful.MODID, "cutting/wild_salmonberries"));
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(Items.SUGAR_CANE),
+            Ingredient.of(ForgeTags.TOOLS_KNIVES),
+            Items.SUGAR, 1)
+            .addResultWithChance(Items.SUGAR, 0.5F, 1)
+            .build(finished, Util.rl(Delightful.MODID, "cutting/sugar_cane"));
         }
 
     private InventoryChangeTrigger.TriggerInstance has(ItemLike... items) {

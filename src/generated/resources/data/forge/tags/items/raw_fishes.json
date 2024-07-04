@@ -13,6 +13,10 @@
     {
       "id": "spawn:angler_fish",
       "required": false
+    },
+    {
+      "id": "bettas:betta_fish",
+      "required": false
     }
   ]
 }

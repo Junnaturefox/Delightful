@@ -19,12 +19,14 @@ public class Mods {
 	public static final String BOP = "biomesoplenty";
 	public static final String BTA = "botania";
 	public static final String BYG = "byg";
+	public static final String CR = "collectorsreap";
 	public static final String DD = "deeperdarker";
 	public static final String ECO = "ecologics";
 	public static final String EP = "phantasm";
 	public static final String EN = "enlightened_end";
 	public static final String FA = "forbidden_arcanus";
 	public static final String FR = "farmersrespite";
+	public static final String FRD = "fruitsdelight";
 	public static final String FU = "frozenup";
 	public static final String FUD = "frozen_delight";
 	public static final String FUS = "fusion";

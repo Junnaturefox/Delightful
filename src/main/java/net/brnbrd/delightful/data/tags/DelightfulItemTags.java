@@ -135,15 +135,16 @@ public class DelightfulItemTags {
 
 	// Farmers Delight
 	public static final TagKey<Item> CABINETS_STONE = Util.it(FarmersDelight.MODID, "cabinets/stone");
+	public static final TagKey<Item> STRAW_PLANTS = Util.it(FarmersDelight.MODID, "straw_plants");
 
 	// Collector's Reap
-	public static final TagKey<Item> GUMMIES = Util.it("collectorsreap", "gummies");
+	public static final TagKey<Item> GUMMIES = Util.it(Mods.CR, "gummies");
 
 	// Nethers Delight
 	public static final TagKey<Item> MEAL_ITEM = Util.it(Mods.ND, "meal_item");
 
 	// Ecologics
-	public static final TagKey<Item> COOKED_PRICKLY_PEAR = Util.it("ecologics", "cooked_prickly_pear");
+	public static final TagKey<Item> COOKED_PRICKLY_PEAR = Util.it(Mods.ECO, "cooked_prickly_pear");
 
 	// Forbidden and Arcanus
 	public static final TagKey<Item> DRAGON_SCALE = Util.it("forbidden_arcanus", "dragon_scale");
@@ -238,7 +239,7 @@ public class DelightfulItemTags {
 	// Supplementaries
 	public static final TagKey<Item> SUPP_COOKIES = Util.it(Mods.SUP, "cookies");
 
-	private static TagKey<Item> forge(String name) {
-		return Util.it("forge", name);
+	public static TagKey<Item> forge(String name) {
+		return Util.it(Util.LOADER, name);
 	}
 }
