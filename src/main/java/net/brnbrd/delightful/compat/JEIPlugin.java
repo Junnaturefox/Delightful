@@ -17,11 +17,10 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.registries.RegistryObject;
-import org.jetbrains.annotations.NotNull;
 import vectorwing.farmersdelight.common.utility.TextUtils;
 import javax.annotation.ParametersAreNonnullByDefault;
-import java.util.ArrayList;
 import java.util.List;
+import org.jetbrains.annotations.NotNull;
 
 @JeiPlugin
 @ParametersAreNonnullByDefault
@@ -34,25 +33,23 @@ public class JEIPlugin implements IModPlugin
     @Override
     public void registerRecipes(IRecipeRegistration registration) {
         // Hide all disabled items from JEI
-        List<ItemStack> hidden = new ArrayList<>(DelightfulItems.ITEMS.getEntries()
-            .stream()
+        List<ItemStack> hidden = DelightfulItems.ITEMS.getEntries().stream()
             .filter(i -> (i.get() instanceof IConfigured c) ? !c.enabled() : !Util.enabled(i)) // Keep items not enabled
-            .map(Util::gs) // Get ItemStack
-            .toList());
-
-        // FD conflicts
-        this.hide(hidden, Mods.AA, "fried_egg");
-        this.hide(hidden, Mods.IN, "fried_egg");
-        this.hide(hidden, Mods.NA, "cooked_egg");
+            .map(Util::gs).toList();
 
         // Delightful conflicts
         this.hide(hidden, Mods.VD, "pb_j");
         this.hide(hidden, Mods.UGD, "gloomgourd_pie_slice");
 
+        // FD conflicts
+        this.hide(hidden, Mods.IN, "fried_egg");
+        this.hide(hidden, Mods.NA, "cooked_egg");
+        this.hide(hidden, Mods.AA, "fried_egg");
+
         // Other
-        this.hideIfLoaded(hidden, Mods.MD, "bread_slice", Mods.SAS);
-        this.hideIfLoaded(hidden, Mods.MD, "toast", Mods.SAS);
-        this.hideIfLoaded(hidden, Mods.AA, "honeyed_apple", "buzzier_bees");
+        this.hide(hidden, Mods.AA, "honeyed_apple", Mods.BB);
+        this.hide(hidden, Mods.MD, "bread_slice", Mods.SAS);
+        this.hide(hidden, Mods.MD, "toast", Mods.SAS);
 
         if (hidden.size() > 0) {
             registration.getIngredientManager().removeIngredientsAtRuntime(VanillaTypes.ITEM_STACK, hidden);
@@ -103,19 +100,12 @@ public class JEIPlugin implements IModPlugin
         registration.addIngredientInfo(Items.PUMPKIN.getDefaultInstance(), VanillaTypes.ITEM_STACK, Component.translatable(Delightful.MODID + ".sliceable.desc"));
     }
 
-    private void hide(List<ItemStack> hiddenList, String modid, String item) {
-        if (Mods.loaded(modid)) {
-            ResourceLocation location = Util.rl(modid, item);
-            Item found = Util.item(location);
+    private void hide(List<ItemStack> hiddenList, String modid, String item, String... conflicts) {
+        if (Mods.loaded(modid) && (conflicts.length < 1 || Mods.orLoaded(conflicts))) {
+            Item found = Util.item(modid, item);
             if (found != null) {
                 hiddenList.add(found.getDefaultInstance());
             }
-        }
-    }
-
-    private void hideIfLoaded(List<ItemStack> hiddenList, String modid, String item, String... conflict) {
-        if (Mods.orLoaded(conflict)) {
-            hide(hiddenList, modid, item);
         }
     }
 

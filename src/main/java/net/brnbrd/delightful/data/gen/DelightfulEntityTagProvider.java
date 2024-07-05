@@ -9,9 +9,8 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.EntityTypeTagsProvider;
 import net.minecraft.world.entity.EntityType;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import org.jetbrains.annotations.NotNull;
-
 import java.util.concurrent.CompletableFuture;
+import org.jetbrains.annotations.NotNull;
 
 public class DelightfulEntityTagProvider extends EntityTypeTagsProvider {
 	public DelightfulEntityTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> provider, ExistingFileHelper existingFileHelper) {
@@ -56,8 +55,8 @@ public class DelightfulEntityTagProvider extends EntityTypeTagsProvider {
 			.addOptional(Util.rl("aqcaracal", "caracal"))
 			.addOptional(Util.rl("babyfat", "ranchu"))
 			.addOptional(Util.rl("bettas", "betta_fish"))
-			.addOptional(Util.rl("buzzier_bees", "moobloom"))
-			.addOptional(Util.rl("buzzier_bees", "grizzly_bear"))
+			.addOptional(Util.rl(Mods.BB, "moobloom"))
+			.addOptional(Util.rl(Mods.BB, "grizzly_bear"))
 			.addOptional(Util.rl("crittersandcompanions", "dumbo_octopus"))
 			.addOptional(Util.rl("crittersandcompanions", "ferret"))
 			.addOptional(Util.rl("crittersandcompanions", "koi_fish"))

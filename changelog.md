@@ -4,7 +4,7 @@
 # 3.5.7
 
 ### Updates
-- Jade support for Salmonberries & Cantaloupes
+- Jade support for Mushroom Colonies, Salmonberries & Cantaloupes
 - Remove wood stripping recipes covered by Every Compat (highly recommend)
 - Added Cactus Chunk recipes from Habitat's cacti
 - Added "forge:cooked_nuts" tag, mainly for Vintage Delight compat

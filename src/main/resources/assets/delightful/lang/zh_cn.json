@@ -183,6 +183,7 @@
   "item.delightful.zinc_knife": "锌刀",
   "tooltip.config_disabled": "已禁用",
   "tooltip.furnace_fuel_burn_time": "燃烧时间",
+  "tooltip.jade.age": "Age: %s",
   "tooltip.requires_modid": "需安装模组：",
   "tooltip.requires_tag": "需要包含此标签的物品：",
   "tooltip.sneak_right": "潜行并右键来："

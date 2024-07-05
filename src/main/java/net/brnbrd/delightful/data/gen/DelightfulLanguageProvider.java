@@ -137,6 +137,7 @@ public class DelightfulLanguageProvider extends LanguageProvider {
         add("tooltip.requires_modid", "Requires modid:");
         add("tooltip.sneak_right", "Sneak R-Click for:");
         add("tooltip.furnace_fuel_burn_time", "s of burn time");
+        add("tooltip.jade.age", "Age: %s");
         add("config.jade.plugin_delightful.crop_progress", "Crop Progress");
         add("config.jade.plugin_delightful.pie_icons", "Pie Icons");
     }

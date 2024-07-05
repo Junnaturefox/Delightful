@@ -31,7 +31,6 @@ import org.jetbrains.annotations.Nullable;
 import vectorwing.farmersdelight.common.registry.ModItems;
 import vectorwing.farmersdelight.common.tag.ForgeTags;
 import vectorwing.farmersdelight.common.tag.ModTags;
-
 import java.util.concurrent.CompletableFuture;
 
 public class DelightfulItemTagProvider extends ItemTagsProvider {
@@ -104,7 +103,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		this.tag(DelightfulItemTags.CLOVER)
 			.addOptional(Util.rl(Mods.BOP, "clover"))
 			.addOptional(Util.rl(Mods.TF, "clover_patch"))
-			.addOptional(Util.rl("buzzier_bees", "four_leaf_clover"));
+			.addOptional(Util.rl(Mods.BB, "four_leaf_clover"));
 		this.tag(DelightfulItemTags.MATCHA)
 			.add(DelightfulItems.MATCHA.get());
 		this.tag(DelightfulItemTags.EGGS_DUCK)
