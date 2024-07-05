@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-04T13:18:19.8981538	delightful
+// 1.20.1	2024-07-05T08:27:20.6453845	delightful
 8980358a7235536580c6b076956e78e18eca38e9 data/additionaladditions/tags/items/gilded_netherite_upgrade.json
 251ab39f668c15d972d4630264e39f06ec646606 data/additionaladditions/tags/items/gold_ring.json
 9136930399e99d219f34c05a02844b699ef0873a data/additionaladditions/tags/items/rose_gold_alloy.json
@@ -43,7 +43,7 @@ f86d3d72a2a9e39da6be2e2a4313097d906fcdb3 data/forge/tags/items/cheese.json
 050c11e2627b364ef210907def7972b43be90e8d data/forge/tags/items/clover.json
 b660f1a0311fc2203d72ff4458a59fc12bbc7db2 data/forge/tags/items/coconut.json
 3ad83477875b5877dfa420e18a6667735a239b44 data/forge/tags/items/cooked_crab.json
-8566226bd0564c68d7eef073f7cafd55d24c51c2 data/forge/tags/items/cooked_eggs.json
+5b067065b0eeff7839dcf6dbb72efcdfaa6826ee data/forge/tags/items/cooked_eggs.json
 3bdd3f494645eb479237e608dc388ce706852bca data/forge/tags/items/cooked_fishes.json
 48e602c6f4f273972ce8f4a41af2bf1a7c1e42b5 data/forge/tags/items/cooked_fishes/tuna.json
 00e918264f91150bfbf5329246b99cf630f9a8c7 data/forge/tags/items/cooked_frog.json
@@ -62,8 +62,8 @@ ce0cca03b997a0f5c8225b24a328f87ad007c76a data/forge/tags/items/crops/ginger.json
 c464a45fa61577982bb9df35b5cac169eb26e7f3 data/forge/tags/items/dough.json
 7640d02b3c85e174322059097d96b529ba37ac78 data/forge/tags/items/dough/corn.json
 99b0d5003d08c1f6c9d41d27b464d4a911dde6f1 data/forge/tags/items/dough/nut.json
-6fd2d49203bd79bd78c07b26f42a897238cadf51 data/forge/tags/items/eggs.json
-7702222223e93877e76d4b75308d97eacb8c0578 data/forge/tags/items/eggs/bird.json
+b75c39e56031365b9eac0069ae345320f4d15046 data/forge/tags/items/eggs.json
+25074101dc4414506f2729bc4a3aa828abd9c57b data/forge/tags/items/eggs/bird.json
 d14b7fd0ffa1d02061af04a98bee393723aec65d data/forge/tags/items/eggs/duck.json
 0865a614c62af1d47156dd82fce56f56fcabcb88 data/forge/tags/items/eggs/parrot.json
 2bc728dc60343f5b07e9e47386ba9fc94143168c data/forge/tags/items/food/meat.json
@@ -118,7 +118,7 @@ d5ffcc8297d71c323fa8dfbde30eeaa4ad441fb8 data/forge/tags/items/jellies.json
 2ced55ee289f73daaeeb1ecd8ecd5197cd759dbc data/forge/tags/items/lavender.json
 5160d3e42adb69a7a3e121df7fe653817a5d6b1b data/forge/tags/items/matcha.json
 cb32dc7ec073cb5f8ad2cd8c61bd9003968dfbfe data/forge/tags/items/meat.json
-cf117be3f8853ef5f7d2b40c16edbf1eae3951f2 data/forge/tags/items/milk.json
+f75e891b9cb5a6081e44eb8398b26d5304798c68 data/forge/tags/items/milk.json
 8a3c2977c79d8942e1c12afaceec80b345fd3d92 data/forge/tags/items/nuts.json
 6af11aa5504f33d9e620a7cb9b7bc797476c0a7f data/forge/tags/items/nuts/acorn.json
 94b6847f07f6f126dce1fd83b01efdf67a2ffab7 data/forge/tags/items/nuts/chestnut.json

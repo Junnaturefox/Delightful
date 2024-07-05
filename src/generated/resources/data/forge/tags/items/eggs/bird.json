@@ -10,6 +10,14 @@
     {
       "id": "deep_aether:quail_egg",
       "required": false
+    },
+    {
+      "id": "farmlife:galliraptor_egg",
+      "required": false
+    },
+    {
+      "id": "etcetera:eggple",
+      "required": false
     }
   ]
 }

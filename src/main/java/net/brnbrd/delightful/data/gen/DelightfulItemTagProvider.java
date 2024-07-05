@@ -110,20 +110,28 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		this.tag(DelightfulItemTags.EGGS_DUCK)
 			.addOptional(Util.rl(Mods.NA, "duck_egg"));
 		this.tag(DelightfulItemTags.EGGS_PARROT)
-			.addOptional(Util.rl("quark", "egg_parrot_red_blue"))
-			.addOptional(Util.rl("quark", "egg_parrot_blue"))
-			.addOptional(Util.rl("quark", "egg_parrot_green"))
-			.addOptional(Util.rl("quark", "egg_parrot_yellow_blue"))
-			.addOptional(Util.rl("quark", "egg_parrot_grey"));
+			.addOptional(Util.rl(Mods.Q, "egg_parrot_red_blue"))
+			.addOptional(Util.rl(Mods.Q, "egg_parrot_blue"))
+			.addOptional(Util.rl(Mods.Q, "egg_parrot_green"))
+			.addOptional(Util.rl(Mods.Q, "egg_parrot_yellow_blue"))
+			.addOptional(Util.rl(Mods.Q, "egg_parrot_grey"));
 		this.tag(DelightfulItemTags.EGGS_BIRD)
 			.add(Items.EGG)
 			.addTag(DelightfulItemTags.EGGS_DUCK)
 			.addTag(DelightfulItemTags.EGGS_PARROT)
 			.addOptional(Util.rl("autumnity", "turkey_egg"))
-			.addOptional(Util.rl("deep_aether", "quail_egg"));
+			.addOptional(Util.rl("deep_aether", "quail_egg"))
+			.addOptional(Util.rl("farmlife", "galliraptor_egg"))
+			.addOptional(Util.rl("etcetera", "eggple"));
 		this.tag(ForgeTags.EGGS)
 			.addTag(DelightfulItemTags.EGGS_BIRD)
+			.addOptional(Util.rl(Mods.NA, "alligator_egg"))
+			.addOptional(Util.rl(Mods.NA, "tortoise_egg"))
 			.addOptional(Util.rl("sullysmod", "tortoise_egg"));
+		this.tag(ForgeTags.COOKED_EGGS)
+			.addOptional(Util.rl(Mods.AA, "fried_egg"))
+			.addOptional(Util.rl(Mods.IN, "fried_egg"))
+			.addOptional(Util.rl(Mods.NA, "cooked_egg"));
 		this.tag(DelightfulItemTags.DOUGH_CORN)
 			.addOptional(Util.rl("culturaldelights", "corn_dough"));
 		this.tag(DelightfulItemTags.DOUGH_NUT)
@@ -316,20 +324,13 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 			.add(DelightfulItems.NUT_BUTTER_BOTTLE.get())
 			.addOptional(Util.rl(Mods.VD, "nut_mash_bottle"));
 		this.tag(DelightfulItemTags.SUGAR).add(Items.SUGAR);
-		this.tag(ForgeTags.EGGS)
-			.addOptional(Util.rl("deep_aether", "quail_egg"))
-			.addOptional(Util.rl("etcetera", "eggple"))
-			.addOptional(Util.rl(Mods.NA, "tortoise_egg"))
-			.addOptional(Util.rl(Mods.NA, "alligator_egg"));
-		this.tag(ForgeTags.COOKED_EGGS)
-			.addOptional(Util.rl(Mods.AA, "fried_egg"));
 		this.tag(DelightfulItemTags.RAW_CRAB)
 			.addOptional(Util.rl("crabbersdelight", "crab"))
 			.addOptionalTag(Util.rl("finsandtails", "spindly_gem_crabs"));
 		this.tag(DelightfulItemTags.COOKED_CRAB)
 			.addOptional(Util.rl("crabbersdelight", "cooked_crab"));
 		this.tag(DelightfulItemTags.CRAB_LEGS)
-			.addOptional(Util.rl("quark", "cooked_crab_leg"))
+			.addOptional(Util.rl(Mods.Q, "cooked_crab_leg"))
 			.addOptional(Util.rl("crabbersdelight", "crab_legs"));
 		this.tag(DelightfulItemTags.CRAB_MEAT)
 			.addTag(DelightfulItemTags.CRAB_LEGS)
@@ -351,8 +352,9 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 			.addOptional(Util.rl("thermal", "cheese_wedge"))
 			.addOptional(Util.rl("casualness_delight", "cheese_wheel_slice"));
 		this.tag(ForgeTags.MILK)
-			.addOptional(Util.rl("dracovitadelight", "tribull_milk"))
-			.addOptional(Util.rl(Mods.AE, "skyroot_milk_bucket"));
+			.addOptional(Util.rl(Mods.AE, "skyroot_milk_bucket"))
+			.addOptional(Util.rl("farmlife", "tribull_milk"))
+			.addOptional(Util.rl("dracovitadelight", "tribull_milk"));
 		this.tag(DelightfulItemTags.TEA_LEAVES_GREEN)
 			.add(DelightfulItems.GREEN_TEA_LEAF.get())
 			.addOptional(Util.rl(Mods.FR, "green_tea_leaves"))

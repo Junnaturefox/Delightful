@@ -1,11 +1,15 @@
 {
   "values": [
     {
-      "id": "dracovitadelight:tribull_milk",
+      "id": "aether:skyroot_milk_bucket",
       "required": false
     },
     {
-      "id": "aether:skyroot_milk_bucket",
+      "id": "farmlife:tribull_milk",
+      "required": false
+    },
+    {
+      "id": "dracovitadelight:tribull_milk",
       "required": false
     }
   ]

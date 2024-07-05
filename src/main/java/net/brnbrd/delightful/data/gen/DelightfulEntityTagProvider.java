@@ -108,9 +108,9 @@ public class DelightfulEntityTagProvider extends EntityTypeTagsProvider {
 			.addOptional(Util.rl(Mods.NA, "rhino"))
 			.addOptional(Util.rl(Mods.NA, "zebra"))
 			.addOptional(Util.rl(Mods.N, "chimpanzee"))
-			.addOptional(Util.rl("quark", "crab"))
-			.addOptional(Util.rl("quark", "foxhound"))
-			.addOptional(Util.rl("quark", "shiba"))
+			.addOptional(Util.rl(Mods.Q, "crab"))
+			.addOptional(Util.rl(Mods.Q, "foxhound"))
+			.addOptional(Util.rl(Mods.Q, "shiba"))
 			.addOptional(Util.rl("snowpig", "snow_pig"))
 			.addOptional(Util.rl("sprout", "elephant"))
 			.addOptional(Util.rl("wandering_trapper", "trapper_dog"));

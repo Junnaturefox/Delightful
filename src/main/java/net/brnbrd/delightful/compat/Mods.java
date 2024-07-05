@@ -37,6 +37,7 @@ public class Mods {
 	public static final String N = "neapolitan";
 	public static final String NA = "naturalist";
 	public static final String ND = "nethersdelight";
+	public static final String Q = "quark";
 	public static final String RC = "rootsclassic";
 	public static final String RF = "respiteful";
 	public static final String RL = "rottenleather";

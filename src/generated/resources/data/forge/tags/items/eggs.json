@@ -2,15 +2,7 @@
   "values": [
     "#forge:eggs/bird",
     {
-      "id": "sullysmod:tortoise_egg",
-      "required": false
-    },
-    {
-      "id": "deep_aether:quail_egg",
-      "required": false
-    },
-    {
-      "id": "etcetera:eggple",
+      "id": "naturalist:alligator_egg",
       "required": false
     },
     {
@@ -18,7 +10,7 @@
       "required": false
     },
     {
-      "id": "naturalist:alligator_egg",
+      "id": "sullysmod:tortoise_egg",
       "required": false
     }
   ]
