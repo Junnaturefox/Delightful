@@ -51,6 +51,7 @@
             "tag": "forge:fruits/citrus"
           }
         ],
+        "recipe_book_tab": "meals",
         "result": {
           "item": "delightful:sinigang"
         }

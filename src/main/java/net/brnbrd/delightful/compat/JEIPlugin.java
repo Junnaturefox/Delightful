@@ -19,6 +19,7 @@ import net.minecraft.world.item.Items;
 import net.minecraftforge.registries.RegistryObject;
 import vectorwing.farmersdelight.common.utility.TextUtils;
 import javax.annotation.ParametersAreNonnullByDefault;
+import java.util.ArrayList;
 import java.util.List;
 import org.jetbrains.annotations.NotNull;
 
@@ -33,9 +34,10 @@ public class JEIPlugin implements IModPlugin
     @Override
     public void registerRecipes(IRecipeRegistration registration) {
         // Hide all disabled items from JEI
-        List<ItemStack> hidden = DelightfulItems.ITEMS.getEntries().stream()
+        List<ItemStack> hidden = new ArrayList<>(DelightfulItems.ITEMS.getEntries().stream()
             .filter(i -> (i.get() instanceof IConfigured c) ? !c.enabled() : !Util.enabled(i)) // Keep items not enabled
-            .map(Util::gs).toList();
+            .map(Util::gs).toList());
+        hidden.clear();
 
         // Delightful conflicts
         this.hide(hidden, Mods.VD, "pb_j");
@@ -48,8 +50,15 @@ public class JEIPlugin implements IModPlugin
 
         // Other
         this.hide(hidden, Mods.AA, "honeyed_apple", Mods.BB);
-        this.hide(hidden, Mods.MD, "bread_slice", Mods.SAS);
-        this.hide(hidden, Mods.MD, "toast", Mods.SAS);
+        this.hide(hidden, Mods.MOD, "bread_slice", Mods.SAS);
+        this.hide(hidden, Mods.MOD, "toast", Mods.SAS);
+        this.hide(hidden, "cratedelight", "berry_crate", "berry_good");
+        this.hide(hidden, "cratedelight", "glowberry_crate", "berry_good");
+        this.hide(hidden, "cratedelight", "cod_crate", "crabbersdelight");
+        this.hide(hidden, "cratedelight", "salmon_crate", "crabbersdelight");
+        this.hide(hidden, "cratedelight", "egg_crate", "incubation");
+        this.hide(hidden, "cratedelight", "sugar_bag", "supplementaries");
+        this.hide(hidden, "cratedelight", "apple_crate", "fruitsdelight");
 
         if (hidden.size() > 0) {
             registration.getIngredientManager().removeIngredientsAtRuntime(VanillaTypes.ITEM_STACK, hidden);
@@ -104,7 +113,7 @@ public class JEIPlugin implements IModPlugin
         if (Mods.loaded(modid) && (conflicts.length < 1 || Mods.orLoaded(conflicts))) {
             Item found = Util.item(modid, item);
             if (found != null) {
-                hiddenList.add(found.getDefaultInstance());
+                hiddenList.add(new ItemStack(found));
             }
         }
     }

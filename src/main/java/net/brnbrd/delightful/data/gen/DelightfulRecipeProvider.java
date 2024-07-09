@@ -1,5 +1,6 @@
 package net.brnbrd.delightful.data.gen;
 
+import com.sammy.minersdelight.setup.MDItems;
 import net.brnbrd.delightful.Delightful;
 import net.brnbrd.delightful.Util;
 import net.brnbrd.delightful.common.block.DelightfulBlocks;
@@ -32,6 +33,7 @@ import net.minecraftforge.registries.RegistryObject;
 import org.apache.commons.lang3.ArrayUtils;
 import org.jetbrains.annotations.NotNull;
 import vectorwing.farmersdelight.FarmersDelight;
+import vectorwing.farmersdelight.client.recipebook.CookingPotRecipeBookTab;
 import vectorwing.farmersdelight.common.registry.ModBlocks;
 import vectorwing.farmersdelight.common.registry.ModItems;
 import vectorwing.farmersdelight.common.tag.ForgeTags;
@@ -279,16 +281,15 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
                 .unlockedBy("has_salmonberry_pie_slice", has(DelightfulItems.SALMONBERRY_PIE_SLICE.get())),
             "food/salmonberry_pie_from_slices", finished, enabled("salmonberry_pie"));
         wrap(ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, Items.PUMPKIN_PIE, 1)
-                .pattern("###")
-                .pattern("aaa")
-                .pattern("xOe")
-                .define('#', ForgeTags.GRAIN_WHEAT)
-                .define('a', DelightfulItemTags.PUMPKINS)
-                .define('x', DelightfulItemTags.SUGAR)
+                .pattern("ppp")
+                .pattern("pep")
+                .pattern("scs")
+                .define('p', ModItems.PUMPKIN_SLICE.get())
                 .define('e', DelightfulItemTags.EGGS_BIRD)
-                .define('O', ModItems.PIE_CRUST.get())
+                .define('s', DelightfulItemTags.SUGAR)
+                .define('c', ModItems.PIE_CRUST.get())
                 .unlockedBy("has_pie_crust", has(ModItems.PIE_CRUST.get())),
-            "food/pumpkin_pie", finished, enabled("pumpkin_pie_slice"), not(modLoaded("create_central_kitchen")));
+            "food/pumpkin_pie", finished, not(modLoaded("create_central_kitchen")));
         wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, Items.PUMPKIN_PIE, 1)
                 .requires(DelightfulItems.PUMPKIN_PIE_SLICE.get(), 4)
                 .unlockedBy("has_pumpkin_pie_slice", has(DelightfulItems.PUMPKIN_PIE_SLICE.get())),
@@ -324,15 +325,6 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
                 .requires(ForgeTags.COOKED_BACON)
                 .unlockedBy("has_cantaloupe_slice", has(DelightfulItemTags.FRUITS_CANTALOUPE)),
             "food/wrapped_cantaloupe", finished, enabled("wrapped_cantaloupe"));
-        wrap(ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, DelightfulItems.CANTALOUPE_POPSICLE.get(), 1)
-                .define('s', Tags.Items.RODS_WOODEN)
-                .define('i', Items.ICE)
-                .define('c', DelightfulItemTags.FRUITS_CANTALOUPE)
-                .pattern(" cc")
-                .pattern("icc")
-                .pattern("si ")
-                .unlockedBy("has_cantaloupe_slice", has(DelightfulItemTags.FRUITS_CANTALOUPE)),
-            "food/cantaloupe_popsicle", finished, enabled("cantaloupe_popsicle"));
         wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DelightfulItems.CANTALOUPE_BREAD.get(), 1)
                 .requires(ForgeTags.DOUGH)
                 .requires(DelightfulItemTags.FRUITS_CANTALOUPE)
@@ -376,6 +368,24 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
                 .unlockedBy("has_nuts", has(DelightfulItemTags.NUTS)),
             "food/cooking/nut_butter_bottle", finished, enabled("nut_butter_bottle"), not(tagEmpty(DelightfulItemTags.NUTS)), not(modLoaded(Mods.VD)));
         wrap(CookingPotRecipeBuilder.cookingPotRecipe(
+                    DelightfulItems.CACTUS_CHILI.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F, Items.BOWL)
+                .addIngredient(ForgeTags.RAW_PORK)
+                .addIngredient(ModItems.TOMATO_SAUCE.get())
+                .addIngredient(DelightfulItems.CACTUS_FLESH.get())
+                .addIngredient(ForgeTags.VEGETABLES_ONION)
+                .unlockedBy("has_cactus_chunk", has(DelightfulItems.CACTUS_FLESH.get()))
+                .setRecipeBookTab(CookingPotRecipeBookTab.MEALS),
+            "food/cooking/cactus_chili", finished, enabled(DelightfulItems.CACTUS_CHILI), enabled(DelightfulItems.CACTUS_FLESH));
+        wrap(CookingPotRecipeBuilder.cookingPotRecipe(
+                    DelightfulItems.CACTUS_SOUP.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F, Items.BOWL)
+                .addIngredient(DelightfulItems.CACTUS_FLESH.get())
+                .addIngredient(ForgeTags.VEGETABLES_TOMATO)
+                .addIngredient(DelightfulItemTags.HOT_SPICE)
+                .addIngredient(ForgeTags.GRAIN_RICE)
+                .unlockedBy("has_cactus_chunk", has(DelightfulItems.CACTUS_FLESH.get()))
+                .setRecipeBookTab(CookingPotRecipeBookTab.MEALS),
+            "food/cooking/cactus_soup", finished, enabled(DelightfulItems.CACTUS_SOUP), enabled(DelightfulItems.CACTUS_FLESH));
+        wrap(CookingPotRecipeBuilder.cookingPotRecipe(
                     DelightfulItems.COCONUT_CURRY.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F)
                 .addIngredient(DelightfulItemTags.COCONUT)
                 .addIngredient(ForgeTags.RAW_CHICKEN)
@@ -383,7 +393,8 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
                 .addIngredient(DelightfulItemTags.TEA_LEAVES_GREEN)
                 .addIngredient(ForgeTags.SALAD_INGREDIENTS_CABBAGE)
                 .addIngredient(ForgeTags.VEGETABLES_ONION)
-                .unlockedBy("has_tea", has(DelightfulItemTags.TEA_LEAVES_GREEN)),
+                .unlockedBy("has_tea", has(DelightfulItemTags.TEA_LEAVES_GREEN))
+                .setRecipeBookTab(CookingPotRecipeBookTab.MEALS),
             "food/cooking/coconut_curry_no_ginger", finished, enabled("coconut_curry"), not(tagEmpty(DelightfulItemTags.COCONUT)), tagEmpty(DelightfulItemTags.VEGETABLES_GINGER));
         wrap(CookingPotRecipeBuilder.cookingPotRecipe(
                     DelightfulItems.COCONUT_CURRY.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F)
@@ -393,7 +404,8 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
                 .addIngredient(DelightfulItemTags.TEA_LEAVES_GREEN)
                 .addIngredient(DelightfulItemTags.VEGETABLES_GINGER)
                 .addIngredient(ForgeTags.VEGETABLES_ONION)
-                .unlockedBy("has_coconut", has(DelightfulItemTags.COCONUT)),
+                .unlockedBy("has_coconut", has(DelightfulItemTags.COCONUT))
+                .setRecipeBookTab(CookingPotRecipeBookTab.MEALS),
             "food/cooking/coconut_curry", finished, enabled("coconut_curry"), not(tagEmpty(DelightfulItemTags.COCONUT)), not(tagEmpty(DelightfulItemTags.VEGETABLES_GINGER)));
         wrap(CookingPotRecipeBuilder.cookingPotRecipe(
                     DelightfulItems.SINIGANG.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F)
@@ -403,7 +415,8 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
                 .addIngredient(ForgeTags.RAW_PORK)
                 .addIngredient(DelightfulItemTags.VEGETABLES_GINGER)
                 .addIngredient(DelightfulItemTags.FRUITS_CITRUS)
-                .unlockedBy("has_ginger", has(DelightfulItemTags.VEGETABLES_GINGER)),
+                .unlockedBy("has_ginger", has(DelightfulItemTags.VEGETABLES_GINGER))
+                .setRecipeBookTab(CookingPotRecipeBookTab.MEALS),
             "food/cooking/sinigang", finished, enabled("sinigang"), not(tagEmpty(DelightfulItemTags.VEGETABLES_GINGER)), not(tagEmpty(DelightfulItemTags.FRUITS_CITRUS)));
         wrap(CookingPotRecipeBuilder.cookingPotRecipe(
                     DelightfulItems.SINIGANG.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F)
@@ -413,7 +426,8 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
                 .addIngredient(ForgeTags.VEGETABLES_TOMATO)
                 .addIngredient(DelightfulItemTags.FRUITS)
                 .addIngredient(ForgeTags.VEGETABLES_ONION)
-                .unlockedBy("has_ginger", has(DelightfulItemTags.FRUITS)),
+                .unlockedBy("has_ginger", has(DelightfulItemTags.FRUITS))
+                .setRecipeBookTab(CookingPotRecipeBookTab.MEALS),
             "food/cooking/sinigang_no_ginger_citrus", finished, enabled("sinigang"), or(tagEmpty(DelightfulItemTags.VEGETABLES_GINGER), tagEmpty(DelightfulItemTags.FRUITS_CITRUS)));
         wrap(CookingPotRecipeBuilder.cookingPotRecipe(
                     DelightfulItems.CRAB_RANGOON.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F)

@@ -10,7 +10,7 @@
               "type": "forge:not",
               "value": {
                 "type": "forge:tag_empty",
-                "tag": "some_assembly_required:burger_bun"
+                "tag": "forge:burger_bun"
               }
             },
             {
@@ -25,7 +25,7 @@
         "category": "misc",
         "ingredients": [
           {
-            "tag": "some_assembly_required:burger_bun"
+            "tag": "forge:burger_bun"
           },
           {
             "tag": "twilightdelight:hydra_meat"

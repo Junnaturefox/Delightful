@@ -4,11 +4,13 @@
       "advancement": {
         "parent": "minecraft:recipes/root",
         "criteria": {
-          "has_cantaloupe_slice": {
+          "has_cactus_chunk": {
             "conditions": {
               "items": [
                 {
-                  "tag": "forge:fruits/cantaloupe"
+                  "items": [
+                    "delightful:cactus_flesh"
+                  ]
                 }
               ]
             },
@@ -16,28 +18,37 @@
           },
           "has_the_recipe": {
             "conditions": {
-              "recipe": "delightful:food/cantaloupe_popsicle"
+              "recipe": "delightful:food/cooking/cactus_soup"
             },
             "trigger": "minecraft:recipe_unlocked"
           }
         },
         "requirements": [
           [
-            "has_cantaloupe_slice",
+            "has_cactus_chunk",
             "has_the_recipe"
           ]
         ],
         "rewards": {
           "recipes": [
-            "delightful:food/cantaloupe_popsicle"
+            "delightful:food/cooking/cactus_soup"
           ]
         },
-        "sends_telemetry_event": false
+        "sends_telemetry_event": true
       },
       "conditions": [
         {
-          "type": "delightful:enabled",
-          "value": "cantaloupe_popsicle"
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "delightful:enabled",
+              "value": "cactus_soup"
+            },
+            {
+              "type": "delightful:enabled",
+              "value": "cactus_flesh"
+            }
+          ]
         }
       ]
     }

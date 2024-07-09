@@ -24,6 +24,7 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> FRUITS_KIWI = forge("fruits/kiwi");
 	public static final TagKey<Item> FRUITS_MELON = forge("fruits/melon");
 	public static final TagKey<Item> FRUITS_CANTALOUPE = forge("fruits/cantaloupe");
+	public static final TagKey<Item> FRUITS_HAMIMELON = forge("fruits/hamimelon");
 	public static final TagKey<Item> FRUITS_CHORUS = forge("fruits/chorus");
 	public static final TagKey<Item> FRUITS_SWEET_BERRIES = forge("fruits/sweet_berries");
 	public static final TagKey<Item> FRUITS_GLOW_BERRIES = forge("fruits/glow_berries");
@@ -59,6 +60,14 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> FRUITS_SWEET = forge("fruits/sweet");
 	public static final TagKey<Item> FRUITS_PRICKLY_PEAR = forge("fruits/prickly_pear");
 	public static final TagKey<Item> FRUITS_CITRUS = forge("fruits/citrus");
+	public static final TagKey<Item> VEGETABLES_CORN = forge("vegetables/corn");
+	public static final TagKey<Item> VEGETABLES_GINGER = forge("vegetables/ginger");
+	public static final TagKey<Item> VEGETABLES_CUCUMBER = forge("vegetables/cucumber");
+	public static final TagKey<Item> VEGETABLES_SPICY = forge("vegetables/spicy");
+	public static final TagKey<Item> CROPS_CARROT = forge("crops/carrot");
+	public static final TagKey<Item> CROPS_BEETROOT = forge("crops/beetroot");
+	public static final TagKey<Item> CROPS_GINGER = forge("crops/ginger");
+	public static final TagKey<Item> HOT_SPICE = forge("hot_spice");
 	public static final TagKey<Item> PUMPKINS = forge("pumpkins");
 	public static final TagKey<Item> PUMPKINS_CARVED = forge("pumpkins/carved");
 	public static final TagKey<Item> CHOCOLATE = forge("chocolate");
@@ -69,11 +78,6 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> CRAB_MEAT = forge("crab_meat");
 	public static final TagKey<Item> CRAB_CLAW = forge("crab_claw");
 	public static final TagKey<Item> CRAB_CLAW_COOKED = forge("crab_claw/cooked");
-	public static final TagKey<Item> VEGETABLES_CORN = forge("vegetables/corn");
-	public static final TagKey<Item> VEGETABLES_GINGER = forge("vegetables/ginger");
-	public static final TagKey<Item> CROPS_GINGER = forge("crops/ginger");
-	public static final TagKey<Item> CROPS_CARROT = forge("crops/carrot");
-	public static final TagKey<Item> CROPS_BEETROOT = forge("crops/beetroot");
 	public static final TagKey<Item> COCONUT = forge("coconut");
 	public static final TagKey<Item> NUTS = forge("nuts");
 	public static final TagKey<Item> NUTS_WALNUT = forge("nuts/walnut");
@@ -107,6 +111,7 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> COOKED_FROG = forge("cooked_frog");
 	public static final TagKey<Item> FOOD_MEAT = forge("food/meat");
 	public static final TagKey<Item> MEAT = forge("meat");
+	public static final TagKey<Item> PROTEIN_PATTY = forge("protein_patty");
 	public static final TagKey<Item> CATTAIL = forge("cattail");
 	public static final TagKey<Item> ICE_CUBES = forge("ice_cubes");
 	public static final TagKey<Item> TORTILLA = forge("tortilla");
@@ -130,7 +135,8 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> BREAD_CORN = forge("bread/corn");
 	public static final TagKey<Item> BREAD_SLICES = forge("bread_slices");
 	public static final TagKey<Item> BREAD_SLICES_TOASTED = forge("bread_slices/toasted");
-	public static final TagKey<Item> BREAD_SLICED = forge("bread/sliced");
+	public static final TagKey<Item> BURGER_BUN = forge("burger_bun");
+	public static final TagKey<Item> BREAD_OR_BUN = forge("bread_or_bun");
 	public static final TagKey<Item> COOKIES = forge("cookies");
 	public static final TagKey<Item> ROPES = forge("ropes");
 
@@ -162,7 +168,7 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> REINFORCED_ECHO_SHARD = Util.it("deeperdarker", "reinforced_echo_shard");
 
 	// Create
-	public static final TagKey<Item> POLISHED_ROSE_QUARTZ = Util.it("create", "polished_rose_quartz");
+	public static final TagKey<Item> POLISHED_ROSE_QUARTZ = Util.it(Mods.C, "polished_rose_quartz");
 
 	// MCreator mods
 	public static final TagKey<Item> HEAP_EXPERIENCE = Util.it("create_sa", "heap_of_experience");
@@ -174,11 +180,10 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> SWEETENED_CHUNK = Util.it("rottenleather", "sweetened_chunk");
 
 	// SAS
-	public static final TagKey<Item> BURGER_BUN = Util.it(Mods.SAS, "burger_bun");
 	public static final TagKey<Item> SANDWICH_BREAD = Util.it(Mods.SAS, "sandwich_bread");
 
 	// Create
-	public static final TagKey<Item> UPRIGHT_ON_BELT = Util.it("create", "upright_on_belt");
+	public static final TagKey<Item> UPRIGHT_ON_BELT = Util.it(Mods.C, "upright_on_belt");
 
 	// Serene Seasons
 	public static final TagKey<Item> WINTER_CROPS = Util.it("sereneseasons", "winter_crops");

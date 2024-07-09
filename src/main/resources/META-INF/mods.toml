@@ -48,7 +48,7 @@ configBackground="farmersdelight:textures/block/tatami_mat_half.png"
 [[dependencies.delightful]]
     modId="miners_delight"
     mandatory=false
-    versionRange="[0,)"
+    versionRange="[1.20.1-1.2,)"
     ordering="AFTER"
     side="BOTH"
 
@@ -96,6 +96,27 @@ configBackground="farmersdelight:textures/block/tatami_mat_half.png"
 
 [[dependencies.delightful]]
     modId="abnormals_delight"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.delightful]]
+    modId="neapolitan"
+    mandatory=false
+    versionRange="[5,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.delightful]]
+    modId="incubation"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.delightful]]
+    modId="autumnity"
     mandatory=false
     versionRange="[0,)"
     ordering="AFTER"
@@ -165,6 +186,27 @@ configBackground="farmersdelight:textures/block/tatami_mat_half.png"
     side="BOTH"
 
 [[dependencies.delightful]]
+    modId="vampirism"
+    mandatory=false
+    versionRange="[1.10,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.delightful]]
+    modId="vampiresdelight"
+    mandatory=false
+    versionRange="[0.1,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.delightful]]
+    modId="fruitsdelight"
+    mandatory=false
+    versionRange="[1,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.delightful]]
     modId="twilightforest"
     mandatory=false
     versionRange="[0,)"
@@ -186,6 +228,13 @@ configBackground="farmersdelight:textures/block/tatami_mat_half.png"
     side="BOTH"
 
 [[dependencies.delightful]]
+    modId="culturaldelights"
+    mandatory=false
+    versionRange="[0.16,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.delightful]]
     modId="sunflowerdelight"
     mandatory=false
     versionRange="[0,)"
@@ -194,27 +243,6 @@ configBackground="farmersdelight:textures/block/tatami_mat_half.png"
 
 [[dependencies.delightful]]
     modId="moredelight"
-    mandatory=false
-    versionRange="[0,)"
-    ordering="AFTER"
-    side="BOTH"
-
-[[dependencies.delightful]]
-    modId="neapolitan"
-    mandatory=false
-    versionRange="[0,)"
-    ordering="AFTER"
-    side="BOTH"
-
-[[dependencies.delightful]]
-    modId="incubation"
-    mandatory=false
-    versionRange="[0,)"
-    ordering="AFTER"
-    side="BOTH"
-
-[[dependencies.delightful]]
-    modId="autumnity"
     mandatory=false
     versionRange="[0,)"
     ordering="AFTER"

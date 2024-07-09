@@ -1,0 +1,9 @@
+{
+  "values": [
+    "farmersdelight:beef_patty",
+    {
+      "id": "miners_delight:vegan_patty",
+      "required": false
+    }
+  ]
+}

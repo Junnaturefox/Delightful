@@ -71,6 +71,9 @@ public class DelightfulLanguageProvider extends LanguageProvider {
         addItem(DelightfulItems.CHOPPED_CLOVER, "Chopped Clover");
         addItem(DelightfulItems.CACTUS_FLESH, "Cactus Chunk");
         addItem(DelightfulItems.CACTUS_STEAK, "Cactus Steak");
+        addItem(DelightfulItems.CACTUS_CHILI, "Cactus Chili");
+        addItem(DelightfulItems.CACTUS_SOUP, "Cactus Soup");
+        addItem(DelightfulItems.CACTUS_SOUP_CUP, "Cactus Soup Cup");
         addItem(DelightfulItems.FIELD_SALAD, "Field Salad");
         addItem(DelightfulItems.ROCK_CANDY, "Rock Candy");
         addItem(DelightfulItems.VENISON_CHOPS, "Raw Venison Chops");
@@ -130,7 +133,7 @@ public class DelightfulLanguageProvider extends LanguageProvider {
         add("delightful.mini_melon.desc", "Mini Melons can be commonly found in plains. Can grow into a big Melon or be sliced with a Knife.");
         add("delightful.cantaloupe.desc", "Cantaloupes can be commonly found on beaches.");
         add("delightful.cantaloupe_seeds.desc", "Cantaloupe Seeds will sprout when planted in sand.");
-        add("delightful.sliceable.desc", "Can be sliced with a Knife.");
+        add("delightful.sliceable.desc", "Sliceable with a Knife.");
         add("delightful.placeable.desc", "Placeable");
         add("tooltip.config_disabled", "Disabled");
         add("tooltip.requires_tag", "Requires non-empty tag:");
@@ -139,6 +142,7 @@ public class DelightfulLanguageProvider extends LanguageProvider {
         add("tooltip.furnace_fuel_burn_time", "s of burn time");
         add("tooltip.jade.age", "Age: %s");
         add("config.jade.plugin_delightful.crop_progress", "Crop Progress");
+        add("config.jade.plugin_delightful.mushroom_colony", "Mushroom Colony");
         add("config.jade.plugin_delightful.pie_icons", "Pie Icons");
     }
 }

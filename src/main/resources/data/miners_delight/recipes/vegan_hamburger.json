@@ -12,7 +12,7 @@
             },
             {
               "type": "forge:tag_empty",
-              "tag": "some_assembly_required:burger_bun"
+              "tag": "forge:burger_bun"
             },
             {
               "type": "forge:mod_loaded",

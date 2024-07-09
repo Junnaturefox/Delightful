@@ -1,6 +1,10 @@
 {
   "values": [
     {
+      "id": "fruitsdelight:kiwi",
+      "required": false
+    },
+    {
       "id": "hedgehog:kiwi",
       "required": false
     }

@@ -6,9 +6,9 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.registries.ForgeRegistries;
-import org.jetbrains.annotations.NotNull;
 import java.util.Optional;
 import java.util.function.Supplier;
+import org.jetbrains.annotations.NotNull;
 
 public class Mods {
 	public static final String AA = "additionaladditions";
@@ -20,6 +20,8 @@ public class Mods {
 	public static final String BOP = "biomesoplenty";
 	public static final String BTA = "botania";
 	public static final String BYG = "byg";
+	public static final String C = "create";
+	public static final String CD = "culturaldelights";
 	public static final String CR = "collectorsreap";
 	public static final String DD = "deeperdarker";
 	public static final String ECO = "ecologics";
@@ -34,7 +36,9 @@ public class Mods {
 	public static final String IN = "incubation";
 	public static final String LE = "lolenderite";
 	public static final String MEKT = "mekanismtools";
-	public static final String MD = "moredelight";
+	public static final String MD = "miners_delight";
+	public static final String MND = "mynethersdelight";
+	public static final String MOD = "moredelight";
 	public static final String N = "neapolitan";
 	public static final String NA = "naturalist";
 	public static final String ND = "nethersdelight";

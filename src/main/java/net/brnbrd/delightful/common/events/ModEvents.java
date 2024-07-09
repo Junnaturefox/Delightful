@@ -106,8 +106,8 @@ public class ModEvents {
     @SubscribeEvent
     public void buildContents(BuildCreativeModeTabContentsEvent event) {
         var tags = ForgeRegistries.ITEMS.tags();
-        ResourceLocation TOAST_WITH_BLUEBERRIES = Util.rl(Mods.MD, "toast_with_blueberries");
-        ResourceLocation TOAST_WITH_CHEESE = Util.rl(Mods.MD, "toast_with_cheese");
+        ResourceLocation TOAST_WITH_BLUEBERRIES = Util.rl(Mods.MOD, "toast_with_blueberries");
+        ResourceLocation TOAST_WITH_CHEESE = Util.rl(Mods.MOD, "toast_with_cheese");
         // Delightful Items
         if (event.getTabKey() == ModCreativeTabs.TAB_FARMERS_DELIGHT.getKey()) {
             DelightfulItems.ITEMS.getEntries().stream().filter(RegistryObject::isPresent).forEach((item) -> {
@@ -121,8 +121,8 @@ public class ModEvents {
                 }
             });
         } else if (
-            Mods.loaded(Mods.MD) &&
-            event.getTabKey().location().getNamespace().equals(Mods.MD) &&
+            Mods.loaded(Mods.MOD) &&
+            event.getTabKey().location().getNamespace().equals(Mods.MOD) &&
             tags != null
         ) {
             if (

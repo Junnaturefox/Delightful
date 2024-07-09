@@ -50,6 +50,10 @@
     {
       "id": "fruitsdelight:bayberry_cookie",
       "required": false
+    },
+    {
+      "id": "vampiresdelight:orchid_cookie",
+      "required": false
     }
   ]
 }

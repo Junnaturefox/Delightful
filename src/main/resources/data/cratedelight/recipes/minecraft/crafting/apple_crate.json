@@ -4,23 +4,11 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:item_exists",
-                "item": "fruitsdelight:apple_crate"
-              }
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:item_exists",
-                "item": "quark:apple_crate"
-              }
-            }
-          ]
+          "type": "forge:not",
+          "value": {
+            "type": "forge:item_exists",
+            "item": "fruitsdelight:apple_crate"
+          }
         }
       ],
       "recipe": {

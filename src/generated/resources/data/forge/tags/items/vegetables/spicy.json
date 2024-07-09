@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "#forge:chilipepper",
+      "required": false
+    },
+    {
+      "id": "#forge:vegetables/ghost_pepper",
+      "required": false
+    },
+    {
+      "id": "#collectorsreap:hot_nether_fruit",
+      "required": false
+    },
+    {
+      "id": "mynethersdelight:bullet_pepper",
+      "required": false
+    }
+  ]
+}

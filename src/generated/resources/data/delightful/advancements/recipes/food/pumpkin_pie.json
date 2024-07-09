@@ -38,20 +38,11 @@
       },
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "pumpkin_pie_slice"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:mod_loaded",
-                "modid": "create_central_kitchen"
-              }
-            }
-          ]
+          "type": "forge:not",
+          "value": {
+            "type": "forge:mod_loaded",
+            "modid": "create_central_kitchen"
+          }
         }
       ]
     }

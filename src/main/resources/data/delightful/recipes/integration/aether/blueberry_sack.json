@@ -13,6 +13,13 @@
             {
               "type": "delightful:enabled",
               "value": "blueberry_sack"
+            },
+            {
+              "type": "forge:not",
+              "value":             {
+                "type": "forge:item_exists",
+                "item": "ascended_quark:blue_berry_crate"
+              }
             }
           ]
         }

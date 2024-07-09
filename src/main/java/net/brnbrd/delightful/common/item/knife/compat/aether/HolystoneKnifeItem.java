@@ -21,9 +21,11 @@ public class HolystoneKnifeItem extends AetherKnifeItem {
 	public boolean hurtEnemy(@NotNull ItemStack stack, @NotNull LivingEntity target, @NotNull LivingEntity attacker) {
 		if (!(attacker instanceof Player player) || player.getAttackStrengthScale(1.0F) == 1.0F) {
 			if (!target.getType().is(DelightfulEntityTags.NO_AMBROSIUM_DROPS) && target.level().getRandom().nextInt(25) == 0) {
-				Item ambrosium = ForgeRegistries.ITEMS.getValue(Util.rl(Mods.AE, "ambrosium_shard"));
-				if (Mods.loaded(Mods.AE) && ambrosium != null) {
-					target.spawnAtLocation(ambrosium);
+				if (Mods.loaded(Mods.AE)) {
+					Item ambrosium = ForgeRegistries.ITEMS.getValue(Util.rl(Mods.AE, "ambrosium_shard"));
+					if (ambrosium != null) {
+						target.spawnAtLocation(ambrosium);
+					}
 				}
 			}
 		}

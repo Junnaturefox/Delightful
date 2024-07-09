@@ -51,6 +51,7 @@
             "tag": "forge:vegetables/onion"
           }
         ],
+        "recipe_book_tab": "meals",
         "result": {
           "item": "delightful:coconut_curry"
         }

@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-04T11:38:22.3151063	Item Models: delightful
+// 1.20.1	2024-07-09T09:34:08.2188766	Item Models: delightful
 f9af973b19b45f34017d8db4e6e54de90668031e assets/delightful/models/item/acorn.json
 9b4daf24b0d8e447735c5836d7ab76a3df1b3c1d assets/delightful/models/item/acorn_sack.json
 5d9531a6795e7d2281f99609672d866743329211 assets/delightful/models/item/adamantium_knife.json
@@ -20,7 +20,10 @@ e87e16b8cbc3975086eb5d2bbffac3d927b54306 assets/delightful/models/item/bombegran
 c438745d5ec4d59ac6559f8b91a2060f3b04bed4 assets/delightful/models/item/bone_knife.json
 3a71b2b0ad6b8a76a6b54878a885cc3bb7ed6938 assets/delightful/models/item/brass_knife.json
 5ea05e6b269ead2d3116d0e108373a28fadf641e assets/delightful/models/item/bronze_knife.json
+02bafaa30aee446750de493b90bd2d7d0d6b3452 assets/delightful/models/item/cactus_chili.json
 22fe76d7f03570240cf257a29f52ab1fbaa2c121 assets/delightful/models/item/cactus_flesh.json
+38d871c182a820e4b520edc83a455931bbd8c8a5 assets/delightful/models/item/cactus_soup.json
+47a441864614cbd6065c16e2ab2e9519d99eb527 assets/delightful/models/item/cactus_soup_cup.json
 93c2e681be221d6845388544480e718e884fef69 assets/delightful/models/item/cactus_steak.json
 bda86a27e8b358834ae68ceaae0750bacccfee0f assets/delightful/models/item/cantaloupe.json
 c086142da53f90fe1c1d65bd20d3b625173ad239 assets/delightful/models/item/cantaloupe_bread.json

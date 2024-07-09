@@ -25,7 +25,7 @@ public class Nutrition {
     public static final FoodProperties GLOW_JELLY_BOTTLE = (new FoodProperties.Builder()).nutrition(5).saturationMod(0.3F)
         .effect(() -> new MobEffectInstance(MobEffects.GLOWING, 900, 0), 1.0F).build();
     public static final FoodProperties NUT_BUTTER_BOTTLE = (new FoodProperties.Builder()).nutrition(5).saturationMod(0.3F).build();
-    public static final FoodProperties NUT_BUTTER_AND_JELLY_SANDWICH = (new FoodProperties.Builder()).nutrition(10).saturationMod(0.5F)
+    public static final FoodProperties NUT_BUTTER_AND_JELLY_SANDWICH = (new FoodProperties.Builder()).nutrition(11).saturationMod(0.65F)
         .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), 3600, 0), 1.0F).build();
     public static final FoodProperties HONEY_GLAZED_WALNUT = (new FoodProperties.Builder()).nutrition(6).saturationMod(1.0F).build();
     public static final FoodProperties ACORN = (new FoodProperties.Builder()).nutrition(2).saturationMod(0.1F)
@@ -41,6 +41,13 @@ public class Nutrition {
     public static final FoodProperties CHOPPED_CLOVER = (new FoodProperties.Builder()).nutrition(1).saturationMod(0.35F).fast().build();
     public static final FoodProperties CACTUS_FLESH = (new FoodProperties.Builder()).nutrition(3).saturationMod(0.3F).build();
     public static final FoodProperties CACTUS_STEAK = (new FoodProperties.Builder()).nutrition(4).saturationMod(0.5F).build();
+    public static final FoodProperties CACTUS_CHILI = (new FoodProperties.Builder()).nutrition(11).saturationMod(0.9F)
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 3600, 0), 1.0F)
+            .effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), 3600, 0), 1.0F).build();
+    public static final FoodProperties CACTUS_SOUP = (new FoodProperties.Builder()).nutrition(12).saturationMod(0.8F)
+            .effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), 3600, 0), 1.0F).build();
+    public static final FoodProperties CACTUS_SOUP_CUP = (new FoodProperties.Builder()).nutrition(6).saturationMod(0.75F)
+            .effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), 1800, 0), 1.0F).build();
     public static final FoodProperties FIELD_SALAD = (new FoodProperties.Builder()).nutrition(10).saturationMod(0.55F)
         .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 100, 0), 1.0F)
         .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), 600, 0), 1.0F).build();
