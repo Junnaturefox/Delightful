@@ -14,7 +14,7 @@
 
 ### Fixes
 - Fix Nature Staff & Zanite Knife (Aether) conflict
-- Stuffed Pumpkin recipe fixes for Autumnity/"forge:bread/corn"
+- Stuffed Pumpkin recipe fixes for Autumnity
 
 
 # 3.5.6
