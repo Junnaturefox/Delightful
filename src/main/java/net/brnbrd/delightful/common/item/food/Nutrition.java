@@ -41,7 +41,7 @@ public class Nutrition {
     public static final FoodProperties CHOPPED_CLOVER = (new FoodProperties.Builder()).nutrition(1).saturationMod(0.35F).fast().build();
     public static final FoodProperties CACTUS_FLESH = (new FoodProperties.Builder()).nutrition(3).saturationMod(0.3F).build();
     public static final FoodProperties CACTUS_STEAK = (new FoodProperties.Builder()).nutrition(4).saturationMod(0.5F).build();
-    public static final FoodProperties CACTUS_CHILI = (new FoodProperties.Builder()).nutrition(11).saturationMod(0.9F)
+    public static final FoodProperties CACTUS_CHILI = (new FoodProperties.Builder()).nutrition(10).saturationMod(0.85F)
             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_BOOST, 3600, 0), 1.0F)
             .effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), 3600, 0), 1.0F).build();
     public static final FoodProperties CACTUS_SOUP = (new FoodProperties.Builder()).nutrition(12).saturationMod(0.8F)

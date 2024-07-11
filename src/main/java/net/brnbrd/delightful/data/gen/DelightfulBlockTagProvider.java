@@ -85,6 +85,12 @@ public class DelightfulBlockTagProvider extends BlockTagsProvider {
 			.add(DelightfulBlocks.GREEN_APPLE_CRATE.get())
 			.add(DelightfulBlocks.JOSHUA_FRUIT_CRATE.get())
 			.add(DelightfulBlocks.BAOBAB_FRUIT_CRATE.get())
+			.addOptional(Util.rl(Mods.CD, "avocado_crate"))
+			.addOptional(Util.rl(Mods.CD, "cucumber_crate"))
+			.addOptional(Util.rl(Mods.CD, "pickle_crate"))
+			.addOptional(Util.rl(Mods.CD, "corn_cob_crate"))
+			.addOptional(Util.rl(Mods.CD, "eggplant_crate"))
+			.addOptional(Util.rl(Mods.CD, "white_eggplant_crate"))
 			.addOptional(Util.rl("fruittrees", "citrus_cabinet"))
 			.addOptional(Util.rl("fruittrees", "cherry_cabinet"));
 		this.tag(BlockTags.MINEABLE_WITH_SHOVEL)
@@ -98,7 +104,11 @@ public class DelightfulBlockTagProvider extends BlockTagsProvider {
 			.add(DelightfulBlocks.NIGHTSHADE_BERRY_SACK.get())
 			.addOptional(Util.rl(Mods.AN, "sourceberry_sack"));
 		this.tag(BlockTags.SMALL_FLOWERS)
-			.add(DelightfulBlocks.WILD_SALMONBERRIES.get());
+			.add(DelightfulBlocks.WILD_SALMONBERRIES.get())
+			.addOptional(Util.rl(Mods.CD, "wild_cucumbers"))
+			.addOptional(Util.rl(Mods.CD, "wild_corn"))
+			.addOptional(Util.rl(Mods.CD, "wild_eggplants"));
+
 		this.tag(BlockTags.CAULDRONS)
 			.add(DelightfulBlocks.SALMONBERRY_MILKSHAKE_CAULDRON.get())
 			.add(DelightfulBlocks.MATCHA_MILKSHAKE_CAULDRON.get());

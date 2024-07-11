@@ -63,6 +63,7 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> VEGETABLES_CORN = forge("vegetables/corn");
 	public static final TagKey<Item> VEGETABLES_GINGER = forge("vegetables/ginger");
 	public static final TagKey<Item> VEGETABLES_CUCUMBER = forge("vegetables/cucumber");
+	public static final TagKey<Item> CUCUMBER = forge("cucumber");
 	public static final TagKey<Item> VEGETABLES_SPICY = forge("vegetables/spicy");
 	public static final TagKey<Item> CROPS_CARROT = forge("crops/carrot");
 	public static final TagKey<Item> CROPS_BEETROOT = forge("crops/beetroot");

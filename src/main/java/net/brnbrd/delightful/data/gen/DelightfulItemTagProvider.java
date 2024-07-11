@@ -279,7 +279,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 			.addOptionalTag(Util.rl(Util.LOADER, "chilipepper"))
 			.addOptionalTag(Util.rl(Util.LOADER, "vegetables/ghost_pepper"))
 			.addOptionalTag(Util.rl(Mods.CR, "hot_nether_fruit"))
-			.addOptional(Util.rl("mynethersdelight", "bullet_pepper"));
+			.addOptional(Util.rl(Mods.MND, "bullet_pepper"));
 		this.tag(DelightfulItemTags.VEGETABLES_CORN)
 			.addOptionalTag(Util.rl(Util.LOADER, "grain/corn"))
 			.addOptional(Util.rl("hauntedharvest", "corn"))
@@ -288,10 +288,11 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 			.addTag(DelightfulItemTags.CROPS_GINGER);
 		this.tag(DelightfulItemTags.VEGETABLES_CUCUMBER)
 			.addOptional(Util.rl(Mods.CD, "cucumber"));
+		this.tag(DelightfulItemTags.CUCUMBER).addTag(DelightfulItemTags.VEGETABLES_CUCUMBER);
 		this.tag(DelightfulItemTags.HOT_SPICE)
 			.add(Items.BLAZE_POWDER)
 			.addTag(DelightfulItemTags.VEGETABLES_SPICY)
-			.addOptionalTag(Util.rl("mynethersdelight", "hot_spice"));
+			.addOptionalTag(Util.rl(Mods.MND, "hot_spice"));
 		this.tag(DelightfulItemTags.PUMPKINS_CARVED)
 			.add(Items.CARVED_PUMPKIN)
 			.addOptional(Util.rl("autumnity", "carved_large_pumpkin_slice"));
