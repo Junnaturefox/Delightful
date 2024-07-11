@@ -663,6 +663,9 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		this.tag(Util.it(Mods.N, "ice_cream"))
 			.add(DelightfulItems.MATCHA_ICE_CREAM.get())
 			.add(DelightfulItems.SALMONBERRY_ICE_CREAM.get());
+
+		// Ars Nouveau
+		this.tag(Util.it(Mods.AN, "magic_food")).add(DelightfulItems.SOURCE_BERRY_PIE_SLICE.get());
 	}
 
 	/**

@@ -12,12 +12,11 @@ import org.jetbrains.annotations.Nullable;
 public class Pies {
 
 	public static boolean enabled(ItemStack stack) {
-		if (stack.is(DelightfulItemTags.COMPAT_PIES)) {
-			if (!(stack.is(Items.PUMPKIN_PIE) && Mods.loaded(Mods.CCK))) {
-				return Util.enabled(Util.name(stack.getItem()) + "_slice");
-			}
-		}
-		return false;
+		return (
+			stack.is(DelightfulItemTags.COMPAT_PIES) &&
+			!(stack.is(Items.PUMPKIN_PIE) && Mods.loaded(Mods.CCK)) &&
+			Util.enabled(Util.name(stack.getItem()) + "_slice")
+		);
 	}
 
 	@Nullable public static PieBlock get(ItemStack stack) {
