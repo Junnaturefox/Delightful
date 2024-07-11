@@ -16,6 +16,7 @@ public class Mods {
 	public static final String AE = "aether";
 	public static final String AE2 = "ae2";
 	public static final String AN = "ars_nouveau";
+	public static final String AS = "appleskin";
 	public static final String BB = "buzzier_bees";
 	public static final String BOP = "biomesoplenty";
 	public static final String BTA = "botania";
