@@ -1,6 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
+	"render_type": "minecraft:cutout",
 	"texture_size": [12, 10],
 	"textures": {
 		"1": "delightful:block/cantaloupe_top",
