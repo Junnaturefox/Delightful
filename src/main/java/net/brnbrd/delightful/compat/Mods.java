@@ -21,6 +21,7 @@ public class Mods {
 	public static final String BTA = "botania";
 	public static final String BYG = "byg";
 	public static final String C = "create";
+	public static final String CCK = "create_central_kitchen";
 	public static final String CD = "culturaldelights";
 	public static final String CR = "collectorsreap";
 	public static final String DD = "deeperdarker";

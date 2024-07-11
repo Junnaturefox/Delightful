@@ -6,14 +6,14 @@ import net.brnbrd.delightful.compat.Mods;
 import net.brnbrd.delightful.data.tags.DelightfulItemTags;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import org.jetbrains.annotations.Nullable;
 import vectorwing.farmersdelight.common.block.PieBlock;
+import org.jetbrains.annotations.Nullable;
 
 public class Pies {
 
 	public static boolean enabled(ItemStack stack) {
 		if (stack.is(DelightfulItemTags.COMPAT_PIES)) {
-			if (!(stack.is(Items.PUMPKIN_PIE) && Mods.loaded("create_central_kitchen"))) {
+			if (!(stack.is(Items.PUMPKIN_PIE) && Mods.loaded(Mods.CCK))) {
 				return Util.enabled(Util.name(stack.getItem()) + "_slice");
 			}
 		}
