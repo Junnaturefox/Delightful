@@ -11,23 +11,10 @@
               "value": "azalea_tea"
             },
             {
-              "type": "forge:or",
-              "values": [
-                {
-                  "type": "forge:mod_loaded",
-                  "modid": "ecologics"
-                },
-                {
-                  "type": "forge:mod_loaded",
-                  "modid": "twigs"
-                }
-              ]
-            },
-            {
               "type": "forge:not",
               "value": {
-                "type": "forge:mod_loaded",
-                "modid": "farmersrespite"
+                "type": "forge:tag_empty",
+                "tag": "minecraft:flowers/azalea"
               }
             },
             {

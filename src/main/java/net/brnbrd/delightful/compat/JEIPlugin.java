@@ -10,7 +10,6 @@ import net.brnbrd.delightful.common.item.DelightfulItems;
 import net.brnbrd.delightful.common.item.IConfigured;
 import net.brnbrd.delightful.common.item.food.GreenTeaLeavesItem;
 import net.brnbrd.delightful.common.item.knife.DelightfulKnifeItem;
-import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -29,7 +28,6 @@ import org.jetbrains.annotations.NotNull;
 public class JEIPlugin implements IModPlugin
 {
     private static final ResourceLocation ID = Util.rl(Delightful.MODID, "jei_plugin");
-    private static final Minecraft MC = Minecraft.getInstance();
 
     @Override
     public void registerRecipes(IRecipeRegistration registration) {
@@ -37,7 +35,6 @@ public class JEIPlugin implements IModPlugin
         List<ItemStack> hidden = new ArrayList<>(DelightfulItems.ITEMS.getEntries().stream()
             .filter(i -> (i.get() instanceof IConfigured c) ? !c.enabled() : !Util.enabled(i)) // Keep items not enabled
             .map(Util::gs).toList());
-        hidden.clear();
 
         // Delightful conflicts
         this.hide(hidden, Mods.VD, "pb_j");

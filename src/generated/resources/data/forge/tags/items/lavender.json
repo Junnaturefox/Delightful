@@ -1,6 +1,10 @@
 {
   "values": [
     {
+      "id": "#forge:flowers/lavender",
+      "required": false
+    },
+    {
       "id": "biomesoplenty:lavender",
       "required": false
     },

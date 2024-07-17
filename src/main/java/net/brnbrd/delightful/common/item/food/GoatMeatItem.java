@@ -11,6 +11,6 @@ public class GoatMeatItem extends TagItem {
 
 	@Override
 	public boolean enabled() {
-		return !Mods.loaded("goated", "dropthemeat") && super.enabled();
+		return !Mods.orLoaded("goated", "dropthemeat") && super.enabled();
 	}
 }

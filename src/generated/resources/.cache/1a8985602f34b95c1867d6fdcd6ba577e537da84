@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-11T12:56:30.3692242	delightful
+// 1.20.1	2024-07-17T14:45:13.2264135	delightful
 8980358a7235536580c6b076956e78e18eca38e9 data/additionaladditions/tags/items/gilded_netherite_upgrade.json
 251ab39f668c15d972d4630264e39f06ec646606 data/additionaladditions/tags/items/gold_ring.json
 9136930399e99d219f34c05a02844b699ef0873a data/additionaladditions/tags/items/rose_gold_alloy.json
@@ -120,7 +120,7 @@ d554ed3f6b8762427d8c40a172c78361952260ed data/forge/tags/items/ingots/veridium.j
 53a93b794cd70691e583c5344ce5e830153c8847 data/forge/tags/items/jams.json
 d5ffcc8297d71c323fa8dfbde30eeaa4ad441fb8 data/forge/tags/items/jellies.json
 141ced3812a57c60e6bc14245cea3118b7c7a7e4 data/forge/tags/items/jelly.json
-2ced55ee289f73daaeeb1ecd8ecd5197cd759dbc data/forge/tags/items/lavender.json
+52d821c48dd4653008d93009d83156469191b18c data/forge/tags/items/lavender.json
 5160d3e42adb69a7a3e121df7fe653817a5d6b1b data/forge/tags/items/matcha.json
 cb32dc7ec073cb5f8ad2cd8c61bd9003968dfbfe data/forge/tags/items/meat.json
 f75e891b9cb5a6081e44eb8398b26d5304798c68 data/forge/tags/items/milk.json

@@ -22,18 +22,16 @@ public enum DCropProgress implements IBlockComponentProvider {
 		BlockState state = blockAccessor.getBlockState();
 		Block block = state.getBlock();
 		if (block instanceof SalmonberryBushBlock) {
-			addMaturityTooltip(tooltip, (float) state.getValue(SalmonberryBushBlock.AGE) / SalmonberryBushBlock.MAX_AGE);
+			addMaturityTooltip(tooltip, state.getValue(SalmonberryBushBlock.AGE), SalmonberryBushBlock.MAX_AGE);
 		} else if (block instanceof CantaloupePlantBlock) {
-			addMaturityTooltip(tooltip, (float) state.getValue(CantaloupePlantBlock.AGE) / CantaloupePlantBlock.MAX_AGE);
+			addMaturityTooltip(tooltip, state.getValue(CantaloupePlantBlock.AGE), CantaloupePlantBlock.MAX_AGE);
 		}
 	}
 
-	private static void addMaturityTooltip(ITooltip tooltip, float growthValue) {
-		growthValue *= 100.0F;
-		tooltip.add(Component.translatable("tooltip.jade.crop_growth",
-			(growthValue < 100.0F) ?
-			Component.literal(String.format("%.0f%%", growthValue)).withStyle(ChatFormatting.WHITE) :
-			Component.translatable("tooltip.jade.crop_mature").withStyle(ChatFormatting.GREEN)
+	private static void addMaturityTooltip(ITooltip tooltip, int age, int maxAge) {
+		tooltip.add(Component.translatable("tooltip.jade.crop_growth", age == maxAge ?
+			Component.translatable("tooltip.jade.crop_mature").withStyle(ChatFormatting.GREEN) :
+			Component.literal(String.format("%.0f%%", (age / (float) maxAge) * 100.0F)).withStyle(ChatFormatting.WHITE)
 		));
 	}
 

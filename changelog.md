@@ -1,6 +1,14 @@
 # Changelog
 
 
+# 3.5.8
+
+### Fixes
+- Removed Farmer's Respite recipe support to be revisited shortly
+- Fix JEI plugin again
+- Fix Chevon not disabling in some contexts
+
+
 # 3.5.7
 
 ### Updates
