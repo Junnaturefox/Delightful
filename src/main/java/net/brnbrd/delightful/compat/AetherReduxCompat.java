@@ -7,6 +7,6 @@ import net.zepalesque.redux.item.util.ReduxItemTiers;
 import java.util.function.Supplier;
 
 public class AetherReduxCompat {
-	public static Supplier<Item> VERIDIUM = () -> new VeridiumKnifeItem(ReduxItemTiers.VERIDIUM, Knives.props());
-	public static Supplier<Item> INFUSED_VERIDIUM = () -> new VeridiumKnifeItem(ReduxItemTiers.INFUSED_VERIDIUM, Knives.props());
+	public static Supplier<VeridiumKnifeItem.Uninfused> VERIDIUM = () -> new VeridiumKnifeItem.Uninfused(ReduxItemTiers.VERIDIUM, Knives.props());
+	public static Supplier<VeridiumKnifeItem> INFUSED_VERIDIUM = () -> new VeridiumKnifeItem(ReduxItemTiers.INFUSED_VERIDIUM, Knives.props(), VERIDIUM);
 }
