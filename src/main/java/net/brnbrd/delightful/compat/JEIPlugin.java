@@ -76,14 +76,14 @@ public class JEIPlugin implements IModPlugin
             );
         }
         if (((GreenTeaLeavesItem)DelightfulItems.GREEN_TEA_LEAF.get()).enabled()) {
-            registration.addIngredientInfo(DelightfulItems.GREEN_TEA_LEAF.get().getDefaultInstance(), VanillaTypes.ITEM_STACK, Component.translatable(Delightful.MODID + ".green_tea_leaf.desc"));
+            registration.addIngredientInfo(Util.gs(DelightfulItems.GREEN_TEA_LEAF), VanillaTypes.ITEM_STACK, Component.translatable(Delightful.MODID + ".green_tea_leaf.desc"));
         }
         if (Util.enabled(DelightfulItems.ACORN)) {
             registration.addIngredientInfo(Util.gs(DelightfulItems.ACORN), VanillaTypes.ITEM_STACK, Component.translatable(Delightful.MODID + ".acorn.desc"));
         }
         if (Util.enabled(DelightfulItems.MINI_MELON)) {
             registration.addIngredientInfo(
-                List.of(Items.MELON_SLICE.getDefaultInstance(), Util.gs(DelightfulItems.MINI_MELON)),
+                List.of(new ItemStack(Items.MELON_SLICE), Util.gs(DelightfulItems.MINI_MELON)),
                 VanillaTypes.ITEM_STACK, Component.translatable(Delightful.MODID + ".mini_melon.desc"));
         }
         if (Util.enabled(DelightfulItems.CANTALOUPE)) {
@@ -102,8 +102,8 @@ public class JEIPlugin implements IModPlugin
         if (Util.enabled(DelightfulItems.ANIMAL_OIL_BOTTLE)) {
             registration.addIngredientInfo(Util.gs(DelightfulItems.ANIMAL_OIL_BOTTLE), VanillaTypes.ITEM_STACK, Component.translatable(Delightful.MODID + ".animal_oil_bottle.desc"));
         }
-        registration.addIngredientInfo(Items.MELON.getDefaultInstance(), VanillaTypes.ITEM_STACK, Component.translatable(Delightful.MODID + ".sliceable.desc"));
-        registration.addIngredientInfo(Items.PUMPKIN.getDefaultInstance(), VanillaTypes.ITEM_STACK, Component.translatable(Delightful.MODID + ".sliceable.desc"));
+        registration.addIngredientInfo(new ItemStack(Items.MELON), VanillaTypes.ITEM_STACK, Component.translatable(Delightful.MODID + ".sliceable.desc"));
+        registration.addIngredientInfo(new ItemStack(Items.PUMPKIN), VanillaTypes.ITEM_STACK, Component.translatable(Delightful.MODID + ".sliceable.desc"));
     }
 
     private void hide(List<ItemStack> hiddenList, String modid, String item, String... conflicts) {

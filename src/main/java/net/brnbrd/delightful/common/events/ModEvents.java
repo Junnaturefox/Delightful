@@ -5,6 +5,7 @@ import net.brnbrd.delightful.common.block.DelightfulCauldronInteractions;
 import net.brnbrd.delightful.common.crafting.EnabledCondition;
 import net.brnbrd.delightful.common.item.DelightfulItems;
 import net.brnbrd.delightful.common.item.IConfigured;
+import net.brnbrd.delightful.common.item.knife.DelightfulKnifeItem;
 import net.brnbrd.delightful.compat.Mods;
 import net.brnbrd.delightful.data.tags.DelightfulItemTags;
 import net.brnbrd.delightful.network.DPacketHandler;
@@ -112,7 +113,8 @@ public class ModEvents {
         if (event.getTabKey() == ModCreativeTabs.TAB_FARMERS_DELIGHT.getKey()) {
             DelightfulItems.ITEMS.getEntries().stream().filter(RegistryObject::isPresent).forEach((item) -> {
                 Item i = item.get();
-                ItemStack inst = i.getDefaultInstance();
+                ItemStack inst = i instanceof DelightfulKnifeItem ?
+                        ((DelightfulKnifeItem) i).getCreativeItem() : new ItemStack(i);
                 if (
                     (i instanceof IConfigured conf && conf.enabled() && !inst.isEmpty()) ||
                     !(i instanceof IConfigured))

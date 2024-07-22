@@ -16,12 +16,12 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.tags.ITagManager;
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.codehaus.plexus.util.StringUtils;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 import vectorwing.farmersdelight.common.item.KnifeItem;
 import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 public class DelightfulKnifeItem extends KnifeItem implements IConfigured {
     private final TagKey<Item> tag;
@@ -77,6 +77,10 @@ public class DelightfulKnifeItem extends KnifeItem implements IConfigured {
 
     public Ingredient getRod() {
         return Ingredient.of(Tags.Items.RODS_WOODEN);
+    }
+
+    public @NotNull ItemStack getCreativeItem() {
+        return new ItemStack(this);
     }
 
     public ImmutablePair<Ingredient, Ingredient> getSmithing() {

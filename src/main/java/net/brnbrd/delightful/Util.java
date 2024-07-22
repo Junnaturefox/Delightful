@@ -70,8 +70,12 @@ public class Util {
     return ForgeRegistries.BLOCKS.getValue(rl);
   }
 
+  public static ItemStack gs(RegistryObject<Item> r, int count) {
+    return new ItemStack(r.get(), count);
+  }
+
   public static ItemStack gs(RegistryObject<Item> r) {
-    return r.get().getDefaultInstance();
+    return gs(r, 1);
   }
 
   public static String name(Item item) {

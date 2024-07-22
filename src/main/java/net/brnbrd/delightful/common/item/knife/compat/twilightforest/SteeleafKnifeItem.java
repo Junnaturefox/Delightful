@@ -27,7 +27,7 @@ public class SteeleafKnifeItem extends CompatKnifeItem {
   }
 
   @Override
-  public @NotNull ItemStack getDefaultInstance() {
-    return Util.enchant(super.getDefaultInstance(), Enchantments.SMITE, 2);
+  public @NotNull ItemStack getCreativeItem() {
+    return Util.enchant(super.getCreativeItem(), Enchantments.SMITE, 2);
   }
 }

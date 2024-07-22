@@ -77,7 +77,7 @@ public class SlicedMelonBlock extends MelonBlock implements ISliceable {
   }
 
   public ItemStack getJuiceItem() {
-    return this.juiceItem.get().getDefaultInstance();
+    return new ItemStack(this.juiceItem.get());
   }
 
   @Override

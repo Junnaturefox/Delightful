@@ -1,5 +1,6 @@
 package net.brnbrd.delightful.common.block;
 
+import net.brnbrd.delightful.Util;
 import net.brnbrd.delightful.common.item.DelightfulItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
@@ -45,7 +46,7 @@ public class SalmonberryBushBlock extends BushBlock implements BonemealableBlock
 
   @Override
   public ItemStack getCloneItemStack(BlockState state, HitResult target, BlockGetter level, BlockPos pos, Player player) {
-    return state.getValue(AGE) <= 2 ? DelightfulItems.SALMONBERRY_PIPS.get().getDefaultInstance() : DelightfulItems.SALMONBERRIES.get().getDefaultInstance();
+    return state.getValue(AGE) <= 2 ? Util.gs(DelightfulItems.SALMONBERRY_PIPS) : DelightfulItems.SALMONBERRIES.get().getDefaultInstance();
   }
 
   @SuppressWarnings("deprecation")
@@ -99,7 +100,7 @@ public class SalmonberryBushBlock extends BushBlock implements BonemealableBlock
     if (!flag && player.getItemInHand(hand).is(Items.BONE_MEAL)) {
       return InteractionResult.PASS;
     } else if (state.getValue(AGE) > 2) {
-      popResource(level, pos, new ItemStack(DelightfulItems.SALMONBERRIES.get(), (flag ? 2 + level.random.nextInt(2) : 1)));
+      popResource(level, pos, Util.gs(DelightfulItems.SALMONBERRIES, (flag ? 2 + level.random.nextInt(2) : 1)));
       level.playSound(null, pos, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.BLOCKS, 1.0F, 0.8F + level.random.nextFloat() * 0.4F);
       BlockState blockstate = state.setValue(AGE, 1);
       level.setBlock(pos, blockstate, 2);

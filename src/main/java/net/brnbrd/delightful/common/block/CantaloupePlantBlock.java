@@ -1,5 +1,6 @@
 package net.brnbrd.delightful.common.block;
 
+import net.brnbrd.delightful.Util;
 import net.brnbrd.delightful.common.item.DelightfulItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -48,9 +49,7 @@ public class CantaloupePlantBlock extends BushBlock implements BonemealableBlock
 
 	@Override
 	public ItemStack getCloneItemStack(BlockState state, HitResult target, BlockGetter level, BlockPos pos, Player player) {
-		return this.isMaxAge(state) ?
-			DelightfulItems.CANTALOUPE.get().getDefaultInstance() :
-			DelightfulItems.CANTALOUPE_SEEDS.get().getDefaultInstance();
+		return Util.gs(this.isMaxAge(state) ? DelightfulItems.CANTALOUPE : DelightfulItems.CANTALOUPE_SEEDS);
 	}
 
 	@Override
@@ -119,7 +118,7 @@ public class CantaloupePlantBlock extends BushBlock implements BonemealableBlock
 		if (!flag && pPlayer.getItemInHand(pHand).is(Items.BONE_MEAL)) {
 			return InteractionResult.PASS;
 		} else if (flag) {
-			popResource(pLevel, pPos, new ItemStack(DelightfulItems.CANTALOUPE.get(), 1));
+			popResource(pLevel, pPos, Util.gs(DelightfulItems.CANTALOUPE));
 			pLevel.playSound(null, pPos, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.BLOCKS, 1.0F, 0.8F + pLevel.random.nextFloat() * 0.4F);
 			BlockState blockstate = state.setValue(AGE, 0);
 			pLevel.setBlock(pPos, blockstate, 2);

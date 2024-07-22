@@ -28,7 +28,7 @@ public class IronwoodKnifeItem extends CompatKnifeItem {
   }
 
   @Override
-  public @NotNull ItemStack getDefaultInstance() {
-    return Util.enchant(super.getDefaultInstance(), ModEnchantments.BACKSTABBING.get(), 1);
+  public @NotNull ItemStack getCreativeItem() {
+    return Util.enchant(super.getCreativeItem(), ModEnchantments.BACKSTABBING.get(), 1);
   }
 }

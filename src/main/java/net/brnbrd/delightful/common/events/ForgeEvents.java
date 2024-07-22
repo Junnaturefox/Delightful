@@ -38,7 +38,7 @@ public class ForgeEvents {
 			trades.add((ent, r) -> new MerchantOffer(new ItemStack(Items.EMERALD, 1), Util.gs(DelightfulItems.SALMONBERRY_PIPS), 5, 1, 1));
 		}
 		if (Util.enabled(DelightfulItems.CANTALOUPE) && Util.enabled(DelightfulItems.CANTALOUPE_SLICE)) {
-			trades.add((ent, r) -> new MerchantOffer(new ItemStack(Items.EMERALD, 2), new ItemStack(DelightfulItems.CANTALOUPE_SLICE.get(), 8), 5, 1, 1));
+			trades.add((ent, r) -> new MerchantOffer(new ItemStack(Items.EMERALD, 2), Util.gs(DelightfulItems.CANTALOUPE_SLICE, 8), 5, 1, 1));
 		}
 	}
 
@@ -62,10 +62,13 @@ public class ForgeEvents {
 			) {
 				SlicedGourdBlock sliced = (SlicedGourdBlock) DelightfulBlocks.SLICED_GLOOMGOURD.get();
 				slice(sliced.defaultBlockState(), sliced.getSliceItem(), world, pos, SoundEvents.BAMBOO_BREAK, e, client);
-			} else if (Mods.loaded(Mods.FU, Mods.FUD) &&
-				Util.name(current.getBlock()).equals("truffle_cake")) {
+			} else if (
+				Mods.loaded(Mods.FU, Mods.FUD) &&
+				Util.name(current.getBlock()).equals("truffle_cake") &&
+				ForgeRegistries.ITEMS.containsKey(Util.rl(Mods.FUD, "truffle_cake_slice"))
+			) {
 				int currentBites = current.getValue(BlockStateProperties.BITES);
-				ItemStack slice = Objects.requireNonNull(Util.item(Mods.FUD, "truffle_cake_slice")).getDefaultInstance();
+				ItemStack slice = new ItemStack(Objects.requireNonNull(Util.item(Mods.FUD, "truffle_cake_slice")));
 				if (currentBites >= 3) {
 					world.removeBlock(pos, false);
 					world.gameEvent(e.getEntity(), GameEvent.BLOCK_DESTROY, pos);

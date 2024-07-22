@@ -34,7 +34,7 @@ public class DPieBlock extends PieBlock {
 
 	public @NotNull ItemStack getStack() {
 		if (ForgeRegistries.ITEMS.containsKey(this.pie)) {
-			return this.asItem().getDefaultInstance();
+			return new ItemStack(this.asItem());
 		}
 		return ItemStack.EMPTY;
 	}

@@ -73,12 +73,12 @@ public class SlicedMiniMelonBlock extends MelonBlock implements ISliceable {
 
   @Override
   public ItemStack getSliceItem() {
-    return this.sliceItem.get().getDefaultInstance();
+    return new ItemStack(this.sliceItem.get());
   }
 
   @Nullable
   public ItemStack getJuiceItem() {
-    return this.juiceItem.get().getDefaultInstance();
+    return new ItemStack(this.juiceItem.get());
   }
 
   @Override
