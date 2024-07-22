@@ -1,6 +1,12 @@
 # Changelog
 
 
+# 3.5.9
+
+### Fixes
+- Veridium Knife refactor for latest Aether: Redux (thanks Zepalesque)
+
+
 # 3.5.8
 
 ### Fixes

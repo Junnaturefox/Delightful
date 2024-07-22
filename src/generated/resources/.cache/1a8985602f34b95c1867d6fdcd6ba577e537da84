@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-17T14:45:13.2264135	delightful
+// 1.20.1	2024-07-22T08:07:49.8732048	delightful
 8980358a7235536580c6b076956e78e18eca38e9 data/additionaladditions/tags/items/gilded_netherite_upgrade.json
 251ab39f668c15d972d4630264e39f06ec646606 data/additionaladditions/tags/items/gold_ring.json
 9136930399e99d219f34c05a02844b699ef0873a data/additionaladditions/tags/items/rose_gold_alloy.json
@@ -7,6 +7,8 @@ f8bc43f71708124232dc9002ceb83dd0b286222a data/ae2/tags/items/fluix_block.json
 71d48bd1c220aafe720f2d5f74198349bf342483 data/ae2/tags/items/fluix_upgrade_smithing_template.json
 a8d075b0065e714d94ccf3f4156592d9ca7c743a data/aether/tags/items/enchanted_gravitite.json
 a60ec42053ef8dd4bb252bc03dea45003dbd8f12 data/aether/tags/items/holystone.json
+e8ef8f8eef92496a83b1e7d33919a11e16cfbf70 data/aether_redux/tags/items/infused_veridium_items.json
+6fcc510eb227815a2bbaa4c6005c372f75eaf029 data/aether_redux/tags/items/veridium_advancement_infusable.json
 e7d157a15ec173a498e93edde6b67f3558f0c698 data/ancient_aether/tags/items/valkyrum.json
 f122224f3c716290caaf9d8de177c00d3b8cf372 data/ars_nouveau/tags/items/magic_food.json
 459ce97cdbc0fe7825ed7b320441d23013d6ab4c data/botania/tags/items/dreamwood_twig.json

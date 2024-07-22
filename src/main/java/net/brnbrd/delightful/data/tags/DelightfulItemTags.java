@@ -234,6 +234,8 @@ public class DelightfulItemTags {
 
 	// Aether Redux
 	public static final TagKey<Item> INGOTS_VERIDIUM = DelightfulItems.ingot("veridium");
+	public static final TagKey<Item> VERIDIUM_ADVANCEMENT_INFUSABLE = Util.it(Mods.AER, "veridium_advancement_infusable");
+	public static final TagKey<Item> INFUSED_VERIDIUM_ITEMS = Util.it(Mods.AER, "infused_veridium_items");
 
 	// Deep Aether
 	public static final TagKey<Item> GEMS_SKYJADE = DelightfulItems.gem("skyjade");

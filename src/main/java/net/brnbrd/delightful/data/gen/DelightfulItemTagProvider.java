@@ -232,7 +232,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 			.addOptional(Util.rl(Mods.EN, "zure_berry"))
 			.addOptional(Util.rl(Mods.EP, "pream_berry"))
 			.addOptional(Util.rl("deep_aether", "goldenleaf_berries"))
-			.addOptional(Util.rl("aether_redux", "zanberry"));
+			.addOptional(Util.rl(Mods.AER, "zanberry"));
 		this.tag(DelightfulItemTags.FRUITS)
 			.addTag(ForgeTags.BERRIES)
 			.addTag(DelightfulItemTags.FRUITS_CITRUS)
@@ -634,7 +634,11 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 
 		// Aether Redux
 		this.tag(DelightfulItemTags.INGOTS_VERIDIUM)
-			.addOptional(Util.rl("aether_redux", "veridium_ingot"));
+			.addOptional(Util.rl(Mods.AER, "veridium_ingot"));
+		this.tag(DelightfulItemTags.VERIDIUM_ADVANCEMENT_INFUSABLE)
+			.add(Knives.VERIDIUM.get());
+		this.tag(DelightfulItemTags.INFUSED_VERIDIUM_ITEMS)
+			.add(Knives.INFUSED_VERIDIUM.get());
 
 		// Deep Aether
 		this.tag(DelightfulItemTags.GEMS_SKYJADE)

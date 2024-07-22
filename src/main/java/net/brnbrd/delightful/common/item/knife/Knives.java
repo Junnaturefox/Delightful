@@ -136,15 +136,15 @@ public class Knives extends DelightfulItems {
 		props()
 	));
 	public static final RegistryObject<Item> VERIDIUM = registerItem("veridium_knife",
-		() -> Mods.loaded("aether_redux") ?
+		() -> Mods.loaded(Mods.AER) ?
 		AetherReduxCompat.VERIDIUM.get() :
-		new DummyKnifeItem(new String[] { Mods.AE, "aether_redux" },
+		new DummyKnifeItem(new String[] { Mods.AE, Mods.AER },
 		DelightfulItemTags.INGOTS_VERIDIUM, Ingredient.of(DelightfulItemTags.SKYROOT_STICK))
 	);
 	public static final RegistryObject<Item> INFUSED_VERIDIUM = registerItem("infused_veridium_knife",
-		() -> Mods.loaded("aether_redux") ?
+		() -> Mods.loaded(Mods.AER) ?
 		AetherReduxCompat.INFUSED_VERIDIUM.get() :
-		new DummyKnifeItem(new String[] { Mods.AE, "aether_redux" },
+		new DummyKnifeItem(new String[] { Mods.AE, Mods.AER },
 		DelightfulItemTags.INGOTS_VERIDIUM, Ingredient.of(DelightfulItemTags.SKYROOT_STICK), false)
 	);
 	public static final RegistryObject<Item> SKYJADE = registerItem("skyjade_knife",

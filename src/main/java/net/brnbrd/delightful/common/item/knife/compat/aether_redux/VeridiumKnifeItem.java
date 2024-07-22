@@ -2,6 +2,7 @@ package net.brnbrd.delightful.common.item.knife.compat.aether_redux;
 
 import net.brnbrd.delightful.common.item.DelightfulItems;
 import net.brnbrd.delightful.common.item.knife.compat.aether.AetherKnifeItem;
+import net.brnbrd.delightful.compat.Mods;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -11,24 +12,23 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
-import net.zepalesque.redux.item.tools.VeridiumItem;
-import net.zepalesque.redux.item.util.TooltipUtils;
-import org.jetbrains.annotations.Nullable;
-
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+import net.zepalesque.redux.item.tools.VeridiumItem;
+import net.zepalesque.redux.item.util.TooltipUtils;
 
 public class VeridiumKnifeItem extends AetherKnifeItem implements VeridiumItem {
     private final Supplier<? extends Item> uninfused;
 
     public VeridiumKnifeItem(Tier tier, Properties properties, Supplier<? extends Item> uninfused) {
-        super("aether_redux", DelightfulItems.ingot("veridium"), tier, properties);
+        super(Mods.AER, DelightfulItems.ingot("veridium"), tier, properties);
         this.uninfused = uninfused;
     }
 
@@ -38,9 +38,10 @@ public class VeridiumKnifeItem extends AetherKnifeItem implements VeridiumItem {
     }
 
     @Override
-    public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltips, TooltipFlag advanced) {
-        MutableComponent infusion = Component.translatable("tooltip.aether_redux.infusion_charge", stack.getTag() == null ? 0 : stack.getTag().getByte(VeridiumItem.NBT_KEY)).withStyle(ChatFormatting.GRAY);
-
+    public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltips, @NotNull TooltipFlag advanced) {
+        MutableComponent infusion = Component.translatable("tooltip.aether_redux.infusion_charge",
+            stack.getTag() == null ? 0 : stack.getTag().getByte(VeridiumItem.NBT_KEY)
+        ).withStyle(ChatFormatting.GRAY);
         tooltips.add(infusion);
         Component info = TooltipUtils.TOOLTIP_SHIFT_FOR_INFO.apply(Component.translatable("gui.aether_redux.infusion_info"));
         tooltips.add(info);
@@ -48,7 +49,7 @@ public class VeridiumKnifeItem extends AetherKnifeItem implements VeridiumItem {
     }
 
     @Override
-    public boolean mineBlock(ItemStack stack, Level level, BlockState state, BlockPos pos, LivingEntity user) {
+    public boolean mineBlock(@NotNull ItemStack stack, @NotNull Level level, @NotNull BlockState state, @NotNull BlockPos pos, @NotNull LivingEntity user) {
         // Call the vanilla method do do things like tool damaging
         boolean bool = super.mineBlock(stack, level, state, pos, user);
         if (!user.level().isClientSide()) {
@@ -73,15 +74,14 @@ public class VeridiumKnifeItem extends AetherKnifeItem implements VeridiumItem {
         return super.damageItem(stack, amount, entity, onBroken) * VeridiumItem.DURABILITY_DMG_MULTIPLIER;
     }
 
-
     public static class Uninfused extends AetherKnifeItem {
 
         public Uninfused(Tier tier, Properties properties) {
-            super("aether_redux", DelightfulItems.ingot("veridium"), tier, properties);
+            super(Mods.AER, DelightfulItems.ingot("veridium"), tier, properties);
         }
 
         @Override
-        public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltips, TooltipFlag advanced) {
+        public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, List<Component> tooltips, @NotNull TooltipFlag advanced) {
             Component info = TooltipUtils.TOOLTIP_SHIFT_FOR_INFO.apply(Component.translatable("gui.aether_redux.infusion_info"));
             tooltips.add(info);
             super.appendHoverText(stack, level, tooltips, advanced);

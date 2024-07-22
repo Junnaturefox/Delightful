@@ -19,13 +19,16 @@
       ],
       "recipe": {
         "type": "aether_redux:infusion",
-        "infusion_increase": 8,
+        "additional": {
+          "added_infusion": 4
+        },
         "ingredient": {
-          "item": "delightful:veridium_knife"
+          "item": "delightful:infused_veridium_knife"
         },
         "result": {
           "item": "delightful:infused_veridium_knife"
-        }
+        },
+        "sound": "aether_redux:item.sfx.infuse"
       }
     }
   ]
