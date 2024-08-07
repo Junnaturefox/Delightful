@@ -1,6 +1,12 @@
 # Changelog
 
 
+# 3.6
+
+### Updates
+- Oh the Biomes We've Gone is now supported and replaces the legacy BYG module
+
+
 # 3.5.9
 
 ### Fixes

@@ -46,8 +46,6 @@ public class ModEvents {
             ComposterBlock.COMPOSTABLES.put(DelightfulItems.PUMPKIN_PIE_SLICE.get(), 0.85F);
             ComposterBlock.COMPOSTABLES.put(DelightfulItems.SOURCE_BERRY_PIE_SLICE.get(), 0.85F);
             ComposterBlock.COMPOSTABLES.put(DelightfulItems.GLOOMGOURD_PIE_SLICE.get(), 0.85F);
-            ComposterBlock.COMPOSTABLES.put(DelightfulItems.CRIMSON_BERRY_PIE_SLICE.get(), 0.85F);
-            ComposterBlock.COMPOSTABLES.put(DelightfulItems.NIGHTSHADE_BERRY_PIE_SLICE.get(), 0.85F);
             ComposterBlock.COMPOSTABLES.put(DelightfulItems.BLUEBERRY_PIE_SLICE.get(), 0.85F);
             ComposterBlock.COMPOSTABLES.put(DelightfulItems.GREEN_APPLE_PIE_SLICE.get(), 0.85F);
             ComposterBlock.COMPOSTABLES.put(DelightfulItems.GREEN_TEA_LEAF.get(), 0.3F);
@@ -63,15 +61,13 @@ public class ModEvents {
             ComposterBlock.COMPOSTABLES.put(DelightfulItems.SMORE.get(), 1.0F);
             ComposterBlock.COMPOSTABLES.put(DelightfulItems.ACORN_SACK.get(), 1.0F);
             ComposterBlock.COMPOSTABLES.put(DelightfulItems.SALMONBERRY_SACK.get(), 1.0F);
-            ComposterBlock.COMPOSTABLES.put(DelightfulItems.NIGHTSHADE_BERRY_SACK.get(), 1.0F);
             ComposterBlock.COMPOSTABLES.put(DelightfulItems.BLUEBERRY_SACK.get(), 1.0F);
-            ComposterBlock.COMPOSTABLES.put(DelightfulItems.CRIMSON_BERRY_SACK.get(), 1.0F);
             ComposterBlock.COMPOSTABLES.put(DelightfulItems.MENDOSTEEN_CRATE.get(), 1.0F);
             ComposterBlock.COMPOSTABLES.put(DelightfulItems.BASTION_FRUIT_CRATE.get(), 1.0F);
             ComposterBlock.COMPOSTABLES.put(DelightfulItems.FROSTAYA_CRATE.get(), 1.0F);
             ComposterBlock.COMPOSTABLES.put(DelightfulItems.BOMBEGRANATE_CRATE.get(), 1.0F);
             ComposterBlock.COMPOSTABLES.put(DelightfulItems.GREEN_APPLE_CRATE.get(), 1.0F);
-            ComposterBlock.COMPOSTABLES.put(DelightfulItems.JOSHUA_FRUIT_CRATE.get(), 1.0F);
+            ComposterBlock.COMPOSTABLES.put(DelightfulItems.YUCCA_FRUIT_CRATE.get(), 1.0F);
             ComposterBlock.COMPOSTABLES.put(DelightfulItems.BAOBAB_FRUIT_CRATE.get(), 1.0F);
             ComposterBlock.COMPOSTABLES.put(DelightfulItems.CANTALOUPE_BREAD.get(), 1.0F);
             ComposterBlock.COMPOSTABLES.put(DelightfulItems.STUFFED_CANTALOUPE_BLOCK.get(), 1.0F);

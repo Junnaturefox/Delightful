@@ -490,10 +490,15 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
                 DelightfulItems.PUMPKIN_PIE_SLICE.get(), 4),
             "cutting/pumpkin_pie", finished, enabled("pumpkin_pie_slice"));
         wrap(CuttingBoardRecipeBuilder.cuttingRecipe(
-                Ingredient.of(Items.CACTUS),
+                Ingredient.of(DelightfulItemTags.CACTI),
                 Ingredient.of(ForgeTags.TOOLS_KNIVES),
                 DelightfulItems.CACTUS_FLESH.get(), 2),
             "cutting/cactus", finished, enabled("cactus_flesh"));
+        wrap(CuttingBoardRecipeBuilder.cuttingRecipe(
+                Ingredient.of(DelightfulItemTags.SMALL_CACTI),
+                Ingredient.of(ForgeTags.TOOLS_KNIVES),
+                DelightfulItems.CACTUS_FLESH.get(), 1),
+            "cutting/small_cactus", finished, enabled("cactus_flesh"));
         wrap(CuttingBoardRecipeBuilder.cuttingRecipe(
                 Ingredient.of(DelightfulItems.MINI_MELON.get()),
                 Ingredient.of(ForgeTags.TOOLS_KNIVES),

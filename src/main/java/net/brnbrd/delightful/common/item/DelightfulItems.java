@@ -1,11 +1,10 @@
 package net.brnbrd.delightful.common.item;
 
 import net.brnbrd.delightful.Delightful;
-import net.brnbrd.delightful.Util;
 import net.brnbrd.delightful.common.block.DelightfulBlocks;
 import net.brnbrd.delightful.common.item.food.*;
 import net.brnbrd.delightful.compat.ArsNouveauCompat;
-import net.brnbrd.delightful.compat.BYGCompat;
+import net.brnbrd.delightful.compat.BWGCompat;
 import net.brnbrd.delightful.compat.Mods;
 import net.brnbrd.delightful.compat.UndergardenCompat;
 import net.brnbrd.delightful.data.tags.DelightfulItemTags;
@@ -37,7 +36,7 @@ public class DelightfulItems {
     public static final RegistryObject<Item> ACORN_SACK = registerItem("acorn_sack", () ->
         new BlockItem(DelightfulBlocks.ACORN_SACK.get(), ModItems.basicItem()));
     public static final RegistryObject<Item> BLUEBERRY_SACK = registerItem("blueberry_sack", () ->
-        new CompatBlockItem(DelightfulBlocks.BLUEBERRY_SACK.get(), (new Item.Properties()), Mods.BYG, Mods.WB, Mods.AE));
+        new CompatBlockItem(DelightfulBlocks.BLUEBERRY_SACK.get(), (new Item.Properties()), Mods.BWG, Mods.WB, Mods.AE));
     public static final RegistryObject<Item> MENDOSTEEN_CRATE = registerItem("mendosteen_crate", () ->
         new CompatBlockItem(DelightfulBlocks.MENDOSTEEN_CRATE.get(), (new Item.Properties()), Mods.AN));
     public static final RegistryObject<Item> BASTION_FRUIT_CRATE = registerItem("bastion_fruit_crate", () ->
@@ -46,16 +45,12 @@ public class DelightfulItems {
         new CompatBlockItem(DelightfulBlocks.FROSTAYA_CRATE.get(), (new Item.Properties()), Mods.AN));
     public static final RegistryObject<Item> BOMBEGRANATE_CRATE = registerItem("bombegranate_crate", () ->
         new CompatBlockItem(DelightfulBlocks.BOMBEGRANATE_CRATE.get(), (new Item.Properties()), Mods.AN));
-    public static final RegistryObject<Item> CRIMSON_BERRY_SACK = registerItem("crimson_berry_sack", () ->
-        new CompatBlockItem(DelightfulBlocks.CRIMSON_BERRY_SACK.get(), (new Item.Properties()), Mods.BYG));
-    public static final RegistryObject<Item> NIGHTSHADE_BERRY_SACK = registerItem("nightshade_berry_sack", () ->
-        new CompatBlockItem(DelightfulBlocks.NIGHTSHADE_BERRY_SACK.get(), (new Item.Properties()), Mods.BYG));
     public static final RegistryObject<Item> GREEN_APPLE_CRATE = registerItem("green_apple_crate", () ->
-        new CompatBlockItem(DelightfulBlocks.GREEN_APPLE_CRATE.get(), (new Item.Properties()), Mods.BYG));
-    public static final RegistryObject<Item> JOSHUA_FRUIT_CRATE = registerItem("joshua_fruit_crate", () ->
-        new CompatBlockItem(DelightfulBlocks.JOSHUA_FRUIT_CRATE.get(), (new Item.Properties()), Mods.BYG));
+        new CompatBlockItem(DelightfulBlocks.GREEN_APPLE_CRATE.get(), (new Item.Properties()), Mods.BWG));
+    public static final RegistryObject<Item> YUCCA_FRUIT_CRATE = registerItem("yucca_fruit_crate", () ->
+            new CompatBlockItem(DelightfulBlocks.YUCCA_FRUIT_CRATE.get(), (new Item.Properties()), Mods.BWG));
     public static final RegistryObject<Item> BAOBAB_FRUIT_CRATE = registerItem("baobab_fruit_crate", () ->
-        new CompatBlockItem(DelightfulBlocks.BAOBAB_FRUIT_CRATE.get(), (new Item.Properties()), Mods.BYG));
+            new CompatBlockItem(DelightfulBlocks.BAOBAB_FRUIT_CRATE.get(), (new Item.Properties()), Mods.BWG));
 
     public static final RegistryObject<Item> MATCHA_ICE_CREAM_BLOCK = registerItem("matcha_ice_cream_block", () ->
         new CompatBlockItem(DelightfulBlocks.MATCHA_ICE_CREAM_BLOCK.get(), (new Item.Properties()), Mods.N));
@@ -85,14 +80,10 @@ public class DelightfulItems {
         Mods.AN);
     public static final RegistryObject<Item> GLOOMGOURD_PIE_SLICE = registerCompatPieSlice(UndergardenCompat.pie + "_slice", UndergardenCompat.GLOOMGOURD_PIE_SLICE.get(),
         Mods.UG);
-    public static final RegistryObject<Item> BLUEBERRY_PIE_SLICE = registerCompatPieSlice(BYGCompat.blueberry_pie + "_slice", BYGCompat.BLUEBERRY_PIE_SLICE.get(),
-        Mods.BYG);
-    public static final RegistryObject<Item> GREEN_APPLE_PIE_SLICE = registerCompatPieSlice(BYGCompat.green_apple_pie + "_slice", BYGCompat.GREEN_APPLE_PIE_SLICE.get(),
-        Mods.BYG);
-    public static final RegistryObject<Item> NIGHTSHADE_BERRY_PIE_SLICE = registerCompatPieSlice(BYGCompat.nightshade_berry_pie + "_slice", BYGCompat.NIGHTSHADE_BERRY_PIE_SLICE.get(),
-        Mods.BYG);
-    public static final RegistryObject<Item> CRIMSON_BERRY_PIE_SLICE = registerCompatPieSlice(BYGCompat.crimson_berry_pie + "_slice", BYGCompat.CRIMSON_BERRY_PIE_SLICE.get(),
-        Mods.BYG);
+    public static final RegistryObject<Item> BLUEBERRY_PIE_SLICE = registerCompatPieSlice(BWGCompat.blueberry_pie + "_slice", BWGCompat.BLUEBERRY_PIE_SLICE.get(),
+        Mods.BWG);
+    public static final RegistryObject<Item> GREEN_APPLE_PIE_SLICE = registerCompatPieSlice(BWGCompat.green_apple_pie + "_slice", BWGCompat.GREEN_APPLE_PIE_SLICE.get(),
+        Mods.BWG);
     public static final RegistryObject<Item> ANIMAL_FAT = registerFood("animal_fat", Nutrition.ANIMAL_FAT);
     public static final RegistryObject<Item> ANIMAL_OIL_BOTTLE = registerItem("animal_oil_bottle",
         () -> new FurnaceFuelItem((new Item.Properties()).craftRemainder(Items.GLASS_BOTTLE), 3200));

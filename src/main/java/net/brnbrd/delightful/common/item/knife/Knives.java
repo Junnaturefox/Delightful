@@ -15,7 +15,6 @@ import net.brnbrd.delightful.common.item.knife.compat.ancient_aether.ValkyrumKni
 import net.brnbrd.delightful.common.item.knife.compat.botania.ElementiumKnifeItem;
 import net.brnbrd.delightful.common.item.knife.compat.botania.ManasteelKnifeItem;
 import net.brnbrd.delightful.common.item.knife.compat.botania.TerraKnifeItem;
-import net.brnbrd.delightful.common.item.knife.compat.byg.PendoriteKnifeItem;
 import net.brnbrd.delightful.common.item.knife.compat.create_sa.BlazingKnifeItem;
 import net.brnbrd.delightful.common.item.knife.compat.create_sa.ExperienceKnifeItem;
 import net.brnbrd.delightful.common.item.knife.compat.create_sa.GildedQuartzKnifeItem;
@@ -95,7 +94,6 @@ public class Knives extends DelightfulItems {
 	public static final RegistryObject<Item> KNIGHTMETAL = registerItem("knightmetal_knife", () -> new KnightmetalKnifeItem(props()));
 	public static final RegistryObject<Item> STEELEAF = registerItem("steeleaf_knife", () -> new SteeleafKnifeItem(props()));
 	public static final RegistryObject<Item> LIVING = registerItem("living_knife", () -> new LivingKnifeItem(props()));
-	public static final RegistryObject<Item> PENDORITE = registerItem("pendorite_knife", () -> new PendoriteKnifeItem(props()));
 	public static final RegistryObject<Item> WARDEN = registerItem("warden_knife", () -> new WardenKnifeItem(props()));
 	public static final RegistryObject<Item> EXPERIENCE = registerItem("experience_knife", () -> new ExperienceKnifeItem(props()));
 	public static final RegistryObject<Item> GILDED_QUARTZ = registerItem("gilded_quartz_knife", () -> new GildedQuartzKnifeItem(props()));

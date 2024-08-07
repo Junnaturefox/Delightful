@@ -12,7 +12,7 @@
         "type": "farmersdelight:cutting",
         "ingredients": [
           {
-            "item": "minecraft:cactus"
+            "tag": "forge:cacti"
           }
         ],
         "result": [

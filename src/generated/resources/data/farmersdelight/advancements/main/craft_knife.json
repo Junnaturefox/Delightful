@@ -625,18 +625,6 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "pendorite_knife": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "delightful:pendorite_knife"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "phoenix_knife": {
       "conditions": {
         "items": [
@@ -949,7 +937,6 @@
       "knightmetal_knife",
       "steeleaf_knife",
       "living_knife",
-      "pendorite_knife",
       "warden_knife",
       "experience_knife",
       "gilded_quartz_knife",

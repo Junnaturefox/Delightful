@@ -40,10 +40,10 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> FRUITS_RASPBERRIES = forge("fruits/raspberries");
 	public static final TagKey<Item> FRUITS_BLACKBERRIES = forge("fruits/blackberries");
 	public static final TagKey<Item> FRUITS_CRANBERRIES = forge("fruits/cranberries");
-	public static final TagKey<Item> FRUITS_NIGHTSHADE_BERRIES = forge("fruits/nightshade_berries");
-	public static final TagKey<Item> FRUITS_CRIMSON_BERRIES = forge("fruits/crimson_berries");
 	public static final TagKey<Item> FRUITS_WILD_BERRIES = forge("fruits/wild_berries");
 	public static final TagKey<Item> FRUITS_GREEN_APPLE = forge("fruits/green_apple");
+	public static final TagKey<Item> FRUITS_YUCCA = forge("fruits/yucca");
+	public static final TagKey<Item> FRUITS_BAOBAB = forge("fruits/baobab");
 	public static final TagKey<Item> FRUITS_BANANA = forge("fruits/banana");
 	public static final TagKey<Item> FRUITS_MANDARIN = forge("fruits/mandarin");
 	public static final TagKey<Item> FRUITS_ORANGE = forge("fruits/orange");
@@ -119,6 +119,8 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> SYRUP = forge("syrup");
 	public static final TagKey<Item> LAVENDER = forge("lavender");
 	public static final TagKey<Item> CLOVER = forge("clover");
+	public static final TagKey<Item> CACTI = forge("cacti");
+	public static final TagKey<Item> SMALL_CACTI = forge("small_cacti");
 	public static final TagKey<Item> MATCHA = forge("matcha");
 	public static final TagKey<Item> GEMS_ROSE_QUARTZ = forge("gems/rose_quartz");
 	public static final TagKey<Item> GEMS_ZANITE = forge("gems/zanite");
@@ -161,9 +163,6 @@ public class DelightfulItemTags {
 	// Allthemodium
 	public static final TagKey<Item> PLATES_ALLTHEMODIUM = forge("plates/allthemodium");
 	public static final TagKey<Item> RODS_ALLTHEMODIUM = forge("rods/allthemodium");
-
-	// Byg
-	public static final TagKey<Item> INGOTS_PENDORITE = DelightfulItems.ingot("pendorite");
 
 	// Deeper and Darker
 	public static final TagKey<Item> REINFORCED_ECHO_SHARD = Util.it("deeperdarker", "reinforced_echo_shard");

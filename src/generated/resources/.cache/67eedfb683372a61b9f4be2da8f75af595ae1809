@@ -1,4 +1,4 @@
-// 1.20.1	2024-07-22T07:23:11.2079644	Item Models: delightful
+// 1.20.1	2024-08-07T09:22:19.6840596	Item Models: delightful
 f9af973b19b45f34017d8db4e6e54de90668031e assets/delightful/models/item/acorn.json
 9b4daf24b0d8e447735c5836d7ab76a3df1b3c1d assets/delightful/models/item/acorn_sack.json
 5d9531a6795e7d2281f99609672d866743329211 assets/delightful/models/item/adamantium_knife.json
@@ -44,8 +44,6 @@ daae20918d102a64c9a5640874194768968a1b67 assets/delightful/models/item/cooked_ma
 e920d5a427106cffc7537868c68c064515f70af8 assets/delightful/models/item/cooked_venison_chops.json
 1d708f56a97d1d713bd45fd75a1ed429c24fe0b5 assets/delightful/models/item/copper_knife.json
 f8c415a412361a11d9969ce96c931d9ece975c0f assets/delightful/models/item/crab_rangoon.json
-b09be90fc7ceb0963c4ab0532d9ccdc5474ebdff assets/delightful/models/item/crimson_berry_pie_slice.json
-7ba0f73851ed6d3b0c489c4724c6bb1e664befb4 assets/delightful/models/item/crimson_berry_sack.json
 cf3fd3306f69fd4411233a7d642e7ed6ce9bd268 assets/delightful/models/item/crystalline_knife.json
 178e937739c494c695ad811e18919cd7a743d1c2 assets/delightful/models/item/deluxe_cheeseburger.json
 b06cd1ddc4fc9b1fa65a1a2a85b37a20b22765b0 assets/delightful/models/item/draco_arcanus_knife.json
@@ -75,7 +73,6 @@ cfe7f3be1cc214160bdcc612a9251effbf6eb38f assets/delightful/models/item/holystone
 adeecc6b0c51bb6fe5eb52b9a9c5d1316af4be89 assets/delightful/models/item/invar_knife.json
 d316dea5e47a284d4deccc18a1a50c9fb9eea827 assets/delightful/models/item/ironwood_knife.json
 8e30bb14f99175982513cfc8f3f36782c9a55f34 assets/delightful/models/item/jelly_bottle.json
-92c1b3663e399e72554dc1ae571e10efc4891675 assets/delightful/models/item/joshua_fruit_crate.json
 424867447d3659d5068fb8fc017afb68656312ac assets/delightful/models/item/kiwano_knife.json
 89388f0d6b7fbbc2123011c418679acf67ef7bc7 assets/delightful/models/item/knightmetal_knife.json
 df73ea6435bad3a1cbf99c21569c823f8fb9722f assets/delightful/models/item/lapis_lazuli_knife.json
@@ -99,15 +96,12 @@ bcc3a4d6799c7f5d26555ca871c235617345d02b assets/delightful/models/item/matcha_ic
 e592b7e3c27553e971c245a5e0f04bc97ee718ad assets/delightful/models/item/netherite_opal_knife.json
 fa1b8cee1e1087f53e82a61050563b4bd8bb6b00 assets/delightful/models/item/nether_quartz_knife.json
 5166514c549151d9207fbc07ec584f25a54547c2 assets/delightful/models/item/nickel_knife.json
-a3d461529c77df58c6a6f71e8eccd29beb1a720b assets/delightful/models/item/nightshade_berry_pie_slice.json
-2bcc02295d4f852a286d1a52a709fce4b2b992c3 assets/delightful/models/item/nightshade_berry_sack.json
 51f5b063ab383f22017242420caaec4dd3fe2f4c assets/delightful/models/item/nut_butter_and_jelly_sandwich.json
 f0fa3adff07c0b4805fcac17318e3dbe799382c6 assets/delightful/models/item/nut_butter_bottle.json
 0bae2831f07d319e2de1bf04101fd028fc909bae assets/delightful/models/item/nut_dough.json
 08cffa18d5d86b71d461ab2d7976b9dd7d3e6c81 assets/delightful/models/item/obsidian_infused_enderite_knife.json
 bfb194f14b8c0cf29440783fe036d0b71c25bdd8 assets/delightful/models/item/onyx_knife.json
 acc7cb022e4ad04c083832f7703edf99376165f2 assets/delightful/models/item/osmium_knife.json
-5c16dd0ef50e8996aeccf3651332dfa730cdb255 assets/delightful/models/item/pendorite_knife.json
 3e4183f89dfed26f2ecfaf24b0d1e93443b94250 assets/delightful/models/item/phoenix_knife.json
 3711520c40b1c14a1096463050b5316bb9505845 assets/delightful/models/item/prickly_pear_juice.json
 0d7ce4d8871dd294ac6d18a6cfa6090cf10d667a assets/delightful/models/item/pumpkin_pie_slice.json
@@ -150,5 +144,6 @@ f0543eb99987aa98c2b8dda8ee428f7e18dd8cbd assets/delightful/models/item/valkyrum_
 a339c4a4abeeb4baaa9ba1fd326a49e291764d35 assets/delightful/models/item/warden_knife.json
 07df64491163fda8fd808620466fa94b3e4db71b assets/delightful/models/item/wild_salmonberries.json
 8a934f8acb38bdb42be0c421828ffdc371c7382d assets/delightful/models/item/wrapped_cantaloupe.json
+ae897e9f31156a1c477b62f5cf2078e3d8b64591 assets/delightful/models/item/yucca_fruit_crate.json
 69522200bf73a3dd449146360573aaa37e261e6a assets/delightful/models/item/zanite_knife.json
 19fbec2b8862be5e5d63dcd723a6197e62299482 assets/delightful/models/item/zinc_knife.json

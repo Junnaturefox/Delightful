@@ -1,0 +1,17 @@
+{
+  "values": [
+    "minecraft:cactus",
+    {
+      "id": "biomeswevegone:barrel_cactus",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:prickly_pear_cactus",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:golden_spined_cactus",
+      "required": false
+    }
+  ]
+}

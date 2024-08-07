@@ -46,8 +46,6 @@ public class DelightfulBlockLoot extends BlockLootSubProvider {
         this.empty(DelightfulBlocks.GLOOMGOURD_PIE);
         this.empty(DelightfulBlocks.GREEN_APPLE_PIE);
         this.empty(DelightfulBlocks.BLUEBERRY_PIE);
-        this.empty(DelightfulBlocks.CRIMSON_BERRY_PIE);
-        this.empty(DelightfulBlocks.NIGHTSHADE_BERRY_PIE);
 
         // Whole melons
         this.dropSelf(DelightfulBlocks.MINI_MELON.get());
@@ -158,10 +156,8 @@ public class DelightfulBlockLoot extends BlockLootSubProvider {
         this.dropSelf(DelightfulBlocks.BASTION_FRUIT_CRATE.get());
         this.dropSelf(DelightfulBlocks.FROSTAYA_CRATE.get());
         this.dropSelf(DelightfulBlocks.BOMBEGRANATE_CRATE.get());
-        this.dropSelf(DelightfulBlocks.CRIMSON_BERRY_SACK.get());
-        this.dropSelf(DelightfulBlocks.NIGHTSHADE_BERRY_SACK.get());
         this.dropSelf(DelightfulBlocks.GREEN_APPLE_CRATE.get());
-        this.dropSelf(DelightfulBlocks.JOSHUA_FRUIT_CRATE.get());
+        this.dropSelf(DelightfulBlocks.YUCCA_FRUIT_CRATE.get());
         this.dropSelf(DelightfulBlocks.BAOBAB_FRUIT_CRATE.get());
 
         // Ice Cream Blocks

@@ -20,6 +20,7 @@
     "#forge:fruits/jabuticaba",
     "#forge:fruits/kiwano",
     "#forge:fruits/hamimelon",
+    "#forge:fruits/baobab",
     {
       "id": "#forge:fruits/orange",
       "required": false

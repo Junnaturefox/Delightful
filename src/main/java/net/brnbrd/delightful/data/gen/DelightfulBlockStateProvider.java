@@ -55,8 +55,6 @@ public class DelightfulBlockStateProvider extends BlockStateProvider {
         this.pieBlock(DelightfulBlocks.GLOOMGOURD_PIE);
         this.pieBlock(DelightfulBlocks.GREEN_APPLE_PIE);
         this.pieBlock(DelightfulBlocks.BLUEBERRY_PIE);
-        this.pieBlock(DelightfulBlocks.CRIMSON_BERRY_PIE);
-        this.pieBlock(DelightfulBlocks.NIGHTSHADE_BERRY_PIE);
         this.cabinet(DelightfulBlocks.BASALT_CABINET.get());
         this.cabinet(DelightfulBlocks.QUARTZ_CABINET.get());
         this.simpleBlock(DelightfulBlocks.SALMONBERRY_ICE_CREAM_BLOCK.get());
@@ -66,10 +64,8 @@ public class DelightfulBlockStateProvider extends BlockStateProvider {
         this.crateBlock(DelightfulBlocks.BASTION_FRUIT_CRATE.get(), "bastion_fruit", false);
         this.crateBlock(DelightfulBlocks.FROSTAYA_CRATE.get(), "frostaya", false);
         this.crateBlock(DelightfulBlocks.BOMBEGRANATE_CRATE.get(), "bombegranate", false);
-        this.sackBlock(DelightfulBlocks.CRIMSON_BERRY_SACK.get(), "crimson_berry");
-        this.sackBlock(DelightfulBlocks.NIGHTSHADE_BERRY_SACK.get(), "nightshade_berry");
         this.crateBlock(DelightfulBlocks.GREEN_APPLE_CRATE.get(), "green_apple", true);
-        this.crateBlock(DelightfulBlocks.JOSHUA_FRUIT_CRATE.get(), "joshua_fruit", false);
+        this.crateBlock(DelightfulBlocks.YUCCA_FRUIT_CRATE.get(), "yucca_fruit", false);
         this.crateBlock(DelightfulBlocks.BAOBAB_FRUIT_CRATE.get(), "baobab_fruit", false);
         this.feastBlock(DelightfulBlocks.STUFFED_CANTALOUPE_BLOCK.get());
     }

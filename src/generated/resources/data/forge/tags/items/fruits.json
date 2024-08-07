@@ -4,6 +4,8 @@
     "#forge:fruits/citrus",
     "#forge:fruits/sweet",
     "#forge:fruits/chorus",
+    "#forge:fruits/green_apple",
+    "#forge:fruits/yucca",
     {
       "id": "ars_nouveau:mendosteen_pod",
       "required": false

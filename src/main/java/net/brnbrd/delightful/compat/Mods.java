@@ -21,7 +21,7 @@ public class Mods {
 	public static final String BB = "buzzier_bees";
 	public static final String BOP = "biomesoplenty";
 	public static final String BTA = "botania";
-	public static final String BYG = "byg";
+	public static final String BWG = "biomeswevegone";
 	public static final String C = "create";
 	public static final String CCK = "create_central_kitchen";
 	public static final String CD = "culturaldelights";

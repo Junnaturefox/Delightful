@@ -10,19 +10,11 @@
       "required": false
     },
     {
-      "id": "byg:blueberry_pie",
+      "id": "biomeswevegone:blueberry_pie",
       "required": false
     },
     {
-      "id": "byg:crimson_berry_pie",
-      "required": false
-    },
-    {
-      "id": "byg:green_apple_pie",
-      "required": false
-    },
-    {
-      "id": "byg:nightshade_berry_pie",
+      "id": "biomeswevegone:green_apple_pie",
       "required": false
     }
   ]

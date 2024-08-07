@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "#habitat:ball_cacti",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:mini_cactus",
+      "required": false
+    }
+  ]
+}

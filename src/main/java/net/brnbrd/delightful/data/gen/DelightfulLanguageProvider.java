@@ -49,8 +49,6 @@ public class DelightfulLanguageProvider extends LanguageProvider {
         addItem(DelightfulItems.GLOOMGOURD_PIE_SLICE, "Slice of Gloomgourd Pie");
         addItem(DelightfulItems.GREEN_APPLE_PIE_SLICE, "Slice of Green Apple Pie");
         addItem(DelightfulItems.BLUEBERRY_PIE_SLICE, "Slice of Blueberry Pie");
-        addItem(DelightfulItems.NIGHTSHADE_BERRY_PIE_SLICE, "Slice of Nightshade Berry Pie");
-        addItem(DelightfulItems.CRIMSON_BERRY_PIE_SLICE, "Slice of Crimson Berry Pie");
         addItem(DelightfulItems.CANTALOUPE_SLICE, "Cantaloupe Slice");
         addItem(DelightfulItems.CANTALOUPE_SEEDS, "Cantaloupe Seeds");
         addItem(DelightfulItems.CANTALOUPE_BREAD, "Cantaloupe Bread");
@@ -98,8 +96,6 @@ public class DelightfulLanguageProvider extends LanguageProvider {
         addBlock(DelightfulBlocks.GLOOMGOURD_PIE, "Gloomgourd Pie");
         addBlock(DelightfulBlocks.GREEN_APPLE_PIE, "Green Apple Pie");
         addBlock(DelightfulBlocks.BLUEBERRY_PIE, "Blueberry Pie");
-        addBlock(DelightfulBlocks.NIGHTSHADE_BERRY_PIE, "Nightshade Berry Pie");
-        addBlock(DelightfulBlocks.CRIMSON_BERRY_PIE, "Crimson Berry Pie");
         addBlock(DelightfulBlocks.SALMONBERRY_PIE, "Salmonberry Pie");
         addBlock(DelightfulBlocks.SALMONBERRY_BUSH, "Salmonberry Bush");
         addBlock(DelightfulBlocks.WILD_SALMONBERRIES, "Wild Salmonberries");
@@ -116,10 +112,8 @@ public class DelightfulLanguageProvider extends LanguageProvider {
         addBlock(DelightfulBlocks.BASTION_FRUIT_CRATE, "Bastion Fruit Crate");
         addBlock(DelightfulBlocks.FROSTAYA_CRATE, "Frostaya Crate");
         addBlock(DelightfulBlocks.BOMBEGRANATE_CRATE, "Bombegranate Crate");
-        addBlock(DelightfulBlocks.CRIMSON_BERRY_SACK, "Crimson Berry Sack");
-        addBlock(DelightfulBlocks.NIGHTSHADE_BERRY_SACK, "Nightshade Berry Sack");
         addBlock(DelightfulBlocks.GREEN_APPLE_CRATE, "Green Apple Crate");
-        addBlock(DelightfulBlocks.JOSHUA_FRUIT_CRATE, "Joshua Fruit Crate");
+        addBlock(DelightfulBlocks.YUCCA_FRUIT_CRATE, "Yucca Fruit Crate");
         addBlock(DelightfulBlocks.BAOBAB_FRUIT_CRATE, "Baobab Fruit Crate");
         add("farmersdelight.tooltip.matcha_latte", "Minor Instant Health");
         add("farmersdelight.tooltip.berry_matcha_latte", "Minor Instant Health");
