@@ -1,0 +1,50 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "delightful:enabled",
+              "value": "lavender_tea"
+            },
+            {
+              "type": "forge:not",
+              "value": {
+                "type": "forge:tag_empty",
+                "tag": "forge:lavender"
+              }
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "farmersrespite"
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "create"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "create:emptying",
+        "ingredients": [
+          {
+            "item": "delightful:lavender_tea"
+          }
+        ],
+        "results": [
+          {
+            "item": "minecraft:glass_bottle"
+          },
+          {
+            "amount": 250,
+            "fluid": "delightful:lavender_tea"
+          }
+        ]
+      }
+    }
+  ]
+}

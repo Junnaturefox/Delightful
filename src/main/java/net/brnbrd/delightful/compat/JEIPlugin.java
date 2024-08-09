@@ -3,9 +3,11 @@ package net.brnbrd.delightful.compat;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.constants.VanillaTypes;
+import mezz.jei.api.forge.ForgeTypes;
 import mezz.jei.api.registration.IRecipeRegistration;
 import net.brnbrd.delightful.Delightful;
 import net.brnbrd.delightful.Util;
+import net.brnbrd.delightful.common.fluid.DelightfulFluids;
 import net.brnbrd.delightful.common.item.DelightfulItems;
 import net.brnbrd.delightful.common.item.IConfigured;
 import net.brnbrd.delightful.common.item.food.GreenTeaLeavesItem;
@@ -15,6 +17,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.registries.RegistryObject;
 import vectorwing.farmersdelight.common.utility.TextUtils;
 import javax.annotation.ParametersAreNonnullByDefault;
@@ -59,6 +62,13 @@ public class JEIPlugin implements IModPlugin
 
         if (hidden.size() > 0) {
             registration.getIngredientManager().removeIngredientsAtRuntime(VanillaTypes.ITEM_STACK, hidden);
+        }
+
+        if (!Mods.loaded(Mods.FR)) {
+            registration.getIngredientManager().removeIngredientsAtRuntime(ForgeTypes.FLUID_STACK, List.of(
+                new FluidStack(DelightfulFluids.AZALEA_TEA.get(), 1000),
+                new FluidStack(DelightfulFluids.LAVENDER_TEA.get(), 1000)
+            ));
         }
 
         // Add Knife translations

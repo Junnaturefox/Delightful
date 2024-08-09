@@ -23,6 +23,13 @@
                 "type": "forge:mod_loaded",
                 "modid": "youkaishomecoming"
               }
+            },
+            {
+              "type": "forge:not",
+              "value": {
+                "type": "forge:mod_loaded",
+                "modid": "farmersrespite"
+              }
             }
           ]
         }

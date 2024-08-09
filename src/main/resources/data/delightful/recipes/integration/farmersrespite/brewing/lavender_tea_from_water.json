@@ -1,0 +1,50 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "delightful:enabled",
+              "value": "lavender_tea"
+            },
+            {
+              "type": "forge:not",
+              "value": {
+                "type": "forge:tag_empty",
+                "tag": "forge:lavender"
+              }
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "farmersrespite"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "farmersrespite:brewing",
+        "base": {
+          "count": 1000,
+          "fluid": "minecraft:water"
+        },
+        "cookingtime": 2400,
+        "experience": 0.35,
+        "ingredients": [
+          {
+            "tag": "forge:lavender"
+          },
+          {
+            "tag": "forge:tea_leaves"
+          }
+        ],
+        "result": {
+          "count": 1000,
+          "fluid": "delightful:lavender_tea"
+        }
+      }
+    }
+  ]
+}
