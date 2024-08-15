@@ -4,6 +4,7 @@
 # 3.6
 
 ### Updates
+- Tea recipes updated for latest Farmer's Respite
 - Oh the Biomes We've Gone is now supported and replaces the legacy BYG module
 
 

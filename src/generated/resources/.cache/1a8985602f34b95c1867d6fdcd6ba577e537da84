@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-08T15:55:43.0802666	delightful
+// 1.20.1	2024-08-15T00:21:56.4374015	delightful
 8980358a7235536580c6b076956e78e18eca38e9 data/additionaladditions/tags/items/gilded_netherite_upgrade.json
 251ab39f668c15d972d4630264e39f06ec646606 data/additionaladditions/tags/items/gold_ring.json
 9136930399e99d219f34c05a02844b699ef0873a data/additionaladditions/tags/items/rose_gold_alloy.json
@@ -184,7 +184,6 @@ a95df2279e05baa5f0608937c6c66f68c44ebf2d data/nethersdelight/tags/items/meal_ite
 bd03c94c3be4df3a7a6a198d6d729fad9fb4311f data/phantasm/tags/items/crystal_spike_tips.json
 61d64c77058e1625c2e3b99ed4a928eea28f624e data/phantasm/tags/items/gets_xp_speed_boost.json
 a8f06d7dc1646ce181a8dc82c1d2a179064212a9 data/phantasm/tags/items/void_crystal_block.json
-8fb4a10772e5f59518db4645cea4422e851560b0 data/rottenleather/tags/items/sweetened_chunk.json
 6ee15734ac9331c3a1b186bd12a7cfc07d71273b data/seeds/tags/items/sharp_leaf.json
 e8907bb6383992d824e326f554fcbab430f7e5ce data/sereneseasons/tags/items/summer_crops.json
 b8b87fc750df00b052331af73140b09a01a8c7dc data/some_assembly_required/tags/items/sandwich_bread.json

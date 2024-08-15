@@ -29,7 +29,6 @@ public class DelightfulLanguageProvider extends LanguageProvider {
         addItem(DelightfulItems.CRAB_RANGOON, "Crab Rangoon");
         addItem(DelightfulItems.PRICKLY_PEAR_JUICE, "Prickly Pear Juice");
         addItem(DelightfulItems.CHUNKWICH, "Chunkwich");
-        addItem(DelightfulItems.CHUNK_NUGGET, "Chunk Nugget");
         addItem(DelightfulItems.JELLY_BOTTLE, "Jam Jar");
         addItem(DelightfulItems.GLOW_JELLY_BOTTLE, "Glow Jam Jar");
         addItem(DelightfulItems.NUT_BUTTER_BOTTLE, "Nut Butter Bottle");

@@ -176,9 +176,6 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> SHARP_LEAF = Util.it("seeds", "sharp_leaf");
 	public static final TagKey<Item> KIWANO_PEEL = Util.it("nethers_exoticism", "kiwano_peel");
 
-	// RL
-	public static final TagKey<Item> SWEETENED_CHUNK = Util.it("rottenleather", "sweetened_chunk");
-
 	// SAS
 	public static final TagKey<Item> SANDWICH_BREAD = Util.it(Mods.SAS, "sandwich_bread");
 

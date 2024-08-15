@@ -559,9 +559,6 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		this.tag(DelightfulItemTags.FRUITS_RAMBUTAN).addOptional(Util.rl("nethers_exoticism", "ramboutan"));
 		this.tag(DelightfulItemTags.FRUITS_KIWANO).addOptional(Util.rl("nethers_exoticism", "kiwano"));
 
-		// RL
-		this.addSelf(DelightfulItemTags.SWEETENED_CHUNK);
-
 		// Create
 		this.tag(DelightfulItemTags.UPRIGHT_ON_BELT)
 			.addTag(DelightfulItemTags.JAMS)

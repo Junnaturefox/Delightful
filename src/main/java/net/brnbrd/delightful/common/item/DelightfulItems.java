@@ -116,8 +116,6 @@ public class DelightfulItems {
     public static final RegistryObject<Item> DELUXE_CHEESEBURGER = registerConsumable("deluxe_cheeseburger", Nutrition.DELUXE_CHEESEBURGER, null, true, false);
     public static final RegistryObject<Item> CHUNKWICH = registerCompatFood("chunkwich", Nutrition.CHUNKWICH,
         Mods.RL);
-    public static final RegistryObject<Item> CHUNK_NUGGET = registerCompatFood("chunk_nugget", Nutrition.CHUNK_NUGGET,
-        Mods.RL);
     public static final RegistryObject<Item> ROCK_CANDY = registerItem("rock_candy",
         () -> new RockCandyItem((new Item.Properties()).food(Nutrition.ROCK_CANDY).craftRemainder(Items.STICK)));
     public static final RegistryObject<Item> MARSHMALLOW_STICK = registerFood("marshmallow_stick", Nutrition.MARSHMALLOW_STICK, Items.STICK);

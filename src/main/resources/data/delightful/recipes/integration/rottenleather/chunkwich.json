@@ -11,11 +11,8 @@
               "value": "chunkwich"
             },
             {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "rottenleather:sweetened_chunk"
-              }
+              "type": "forge:item_exists",
+              "item": "rottenleather:sweetened_chunk"
             },
             {
               "type": "forge:not",
@@ -34,7 +31,10 @@
             "tag": "forge:burger_bun"
           },
           {
-            "tag": "rottenleather:sweetened_chunk"
+            "item": "rottenleather:sweetened_chunk"
+          },
+          {
+            "tag": "forge:sugar"
           }
         ],
         "result": {
@@ -52,11 +52,8 @@
               "value": "chunkwich"
             },
             {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "rottenleather:sweetened_chunk"
-              }
+              "type": "forge:item_exists",
+              "item": "rottenleather:sweetened_chunk"
             },
             {
               "type": "forge:tag_empty",
@@ -72,7 +69,10 @@
             "tag": "forge:bread"
           },
           {
-            "tag": "rottenleather:sweetened_chunk"
+            "item": "rottenleather:sweetened_chunk"
+          },
+          {
+            "tag": "forge:sugar"
           }
         ],
         "result": {
