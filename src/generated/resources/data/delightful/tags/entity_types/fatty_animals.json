@@ -44,6 +44,30 @@
       "required": false
     },
     {
+      "id": "autumnity:turkey",
+      "required": false
+    },
+    {
+      "id": "upgrade_aquatic:thrasher",
+      "required": false
+    },
+    {
+      "id": "upgrade_aquatic:great_thrasher",
+      "required": false
+    },
+    {
+      "id": "upgrade_aquatic:lionfish",
+      "required": false
+    },
+    {
+      "id": "upgrade_aquatic:perch",
+      "required": false
+    },
+    {
+      "id": "upgrade_aquatic:pike",
+      "required": false
+    },
+    {
       "id": "ars_nouveau:starbuncle",
       "required": false
     },
@@ -57,6 +81,10 @@
     },
     {
       "id": "bettas:betta_fish",
+      "required": false
+    },
+    {
+      "id": "farmlife:domestic_tribull",
       "required": false
     },
     {
@@ -180,6 +208,14 @@
       "required": false
     },
     {
+      "id": "sullysmod:lanternfish",
+      "required": false
+    },
+    {
+      "id": "sullysmod:tortoise",
+      "required": false
+    },
+    {
       "id": "goodall:deer",
       "required": false
     },
@@ -228,6 +264,14 @@
       "required": false
     },
     {
+      "id": "naturalist:alligator",
+      "required": false
+    },
+    {
+      "id": "naturalist:bass",
+      "required": false
+    },
+    {
       "id": "naturalist:bear",
       "required": false
     },
@@ -236,7 +280,15 @@
       "required": false
     },
     {
+      "id": "naturalist:catfish",
+      "required": false
+    },
+    {
       "id": "naturalist:deer",
+      "required": false
+    },
+    {
+      "id": "naturalist:duck",
       "required": false
     },
     {
@@ -277,6 +329,10 @@
     },
     {
       "id": "quark:shiba",
+      "required": false
+    },
+    {
+      "id": "goated:geep",
       "required": false
     },
     {

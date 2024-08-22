@@ -1,0 +1,33 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:item_exists",
+          "item": "ecologics:coconut_husk"
+        }
+      ],
+      "recipe": {
+        "type": "farmersdelight:cooking",
+        "container": {
+          "item": "ecologics:coconut_husk"
+        },
+        "cookingtime": 200,
+        "experience": 1.0,
+        "ingredients": [
+          {
+            "item": "minecraft:brown_mushroom"
+          },
+          {
+            "item": "minecraft:red_mushroom"
+          }
+        ],
+        "recipe_book_tab": "meals",
+        "result": {
+          "item": "minecraft:mushroom_stew"
+        }
+      }
+    }
+  ]
+}

@@ -4,8 +4,12 @@
 # 3.6
 
 ### Updates
-- Tea recipes updated for latest Farmer's Respite
+- Adjust Tea recipes for latest Farmer's Respite
 - Oh the Biomes We've Gone is now supported and replaces the legacy BYG module
+- Remove Chunk Nugget and add sugar to Chunkwich recipe (for Rotten Leather)
+- More compat mobs drop Animal Fat
+- Add Soap (from Supplementaries) crafting recipe from Animal Fat
+- Add Dog Food crafting recipe from Animal Fat
 
 
 # 3.5.9

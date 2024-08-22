@@ -508,6 +508,8 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 			.add(ModItems.ROPE.get())
 			.addOptionalTag(Util.rl(Mods.SUP, "ropes"))
 			.addOptional(Util.rl(Mods.AA, "rope"));
+		this.tag(DelightfulItemTags.FEATHERS)
+			.addOptional(Util.rl(Mods.ECO, "penguin_feather"));
 
 		// Minecraft
 		this.tag(ItemTags.SMALL_FLOWERS)

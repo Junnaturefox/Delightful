@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-15T00:21:56.4374015	delightful
+// 1.20.1	2024-08-22T13:09:11.5120308	delightful
 8980358a7235536580c6b076956e78e18eca38e9 data/additionaladditions/tags/items/gilded_netherite_upgrade.json
 251ab39f668c15d972d4630264e39f06ec646606 data/additionaladditions/tags/items/gold_ring.json
 9136930399e99d219f34c05a02844b699ef0873a data/additionaladditions/tags/items/rose_gold_alloy.json
@@ -73,6 +73,7 @@ b75c39e56031365b9eac0069ae345320f4d15046 data/forge/tags/items/eggs.json
 25074101dc4414506f2729bc4a3aa828abd9c57b data/forge/tags/items/eggs/bird.json
 d14b7fd0ffa1d02061af04a98bee393723aec65d data/forge/tags/items/eggs/duck.json
 0865a614c62af1d47156dd82fce56f56fcabcb88 data/forge/tags/items/eggs/parrot.json
+1941d8504a5ebb376af1643b1d982523f383ca3d data/forge/tags/items/feathers.json
 2bc728dc60343f5b07e9e47386ba9fc94143168c data/forge/tags/items/food/meat.json
 fb916935a8804fb7b18b9dd7777fc83d6e45791e data/forge/tags/items/fruits.json
 b33dde3cf95c3f821d49bc84b8c46f9fd65289e8 data/forge/tags/items/fruits/apple.json
