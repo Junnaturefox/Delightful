@@ -7,12 +7,12 @@
           "type": "forge:and",
           "values": [
             {
-              "type": "forge:tag_empty",
-              "tag": "forge:bread_slices"
+              "type": "forge:item_exists",
+              "item": "miners_delight:insect_sandwich"
             },
             {
-              "type": "forge:mod_loaded",
-              "modid": "miners_delight"
+              "type": "forge:tag_empty",
+              "tag": "forge:bread_slices"
             }
           ]
         }
@@ -29,6 +29,47 @@
           },
           {
             "tag": "miners_delight:cooked_insect_meat"
+          }
+        ],
+        "result": {
+          "item": "miners_delight:insect_sandwich"
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:item_exists",
+              "item": "miners_delight:insect_sandwich"
+            },
+            {
+              "type": "forge:not",
+              "value": {
+                "type": "forge:tag_empty",
+                "tag": "forge:bread_slices"
+              }
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          {
+            "tag": "forge:bread_slices"
+          },
+          {
+            "tag": "miners_delight:cooked_insect_meat"
+          },
+          {
+            "tag": "miners_delight:cooked_insect_meat"
+          },
+          {
+            "tag": "forge:bread_slices"
           }
         ],
         "result": {

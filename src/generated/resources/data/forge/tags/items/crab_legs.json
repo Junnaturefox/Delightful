@@ -7,6 +7,10 @@
     {
       "id": "crabbersdelight:crab_legs",
       "required": false
+    },
+    {
+      "id": "untameddelight:king_crab_legs",
+      "required": false
     }
   ]
 }

@@ -19,7 +19,7 @@
             "item": "farmersdelight:beef_patty"
           },
           {
-            "tag": "forge:salad_ingredients"
+            "tag": "forge:salad_ingredients/cabbage"
           },
           {
             "tag": "forge:vegetables/tomato"
@@ -54,7 +54,7 @@
             "item": "farmersdelight:beef_patty"
           },
           {
-            "tag": "forge:salad_ingredients"
+            "tag": "forge:salad_ingredients/cabbage"
           },
           {
             "tag": "forge:vegetables/tomato"

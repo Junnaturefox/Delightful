@@ -7,12 +7,12 @@
           "type": "forge:and",
           "values": [
             {
-              "type": "forge:tag_empty",
-              "tag": "forge:burger_bun"
+              "type": "forge:item_exists",
+              "item": "untameddelight:boar_hamburger"
             },
             {
-              "type": "forge:mod_loaded",
-              "modid": "twilightdelight"
+              "type": "forge:tag_empty",
+              "tag": "forge:burger_bun"
             }
           ]
         }
@@ -25,7 +25,7 @@
             "tag": "forge:bread"
           },
           {
-            "tag": "twilightdelight:hydra_meat"
+            "item": "untameddelight:cooked_boar_chop"
           },
           {
             "tag": "forge:salad_ingredients/cabbage"
@@ -38,7 +38,7 @@
           }
         ],
         "result": {
-          "item": "twilightdelight:hydra_burger"
+          "item": "untameddelight:boar_hamburger"
         }
       }
     },
@@ -48,15 +48,15 @@
           "type": "forge:and",
           "values": [
             {
+              "type": "forge:item_exists",
+              "item": "untameddelight:boar_hamburger"
+            },
+            {
               "type": "forge:not",
               "value": {
                 "type": "forge:tag_empty",
                 "tag": "forge:burger_bun"
               }
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "twilightdelight"
             }
           ]
         }
@@ -69,7 +69,7 @@
             "tag": "forge:burger_bun"
           },
           {
-            "tag": "twilightdelight:hydra_meat"
+            "item": "untameddelight:cooked_boar_chop"
           },
           {
             "tag": "forge:salad_ingredients/cabbage"
@@ -82,7 +82,7 @@
           }
         ],
         "result": {
-          "item": "twilightdelight:hydra_burger"
+          "item": "untameddelight:boar_hamburger"
         }
       }
     }

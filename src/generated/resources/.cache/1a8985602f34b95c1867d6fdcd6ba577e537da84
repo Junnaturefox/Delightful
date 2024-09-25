@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-22T13:09:11.5120308	delightful
+// 1.20.1	2024-09-25T08:38:04.0847785	delightful
 8980358a7235536580c6b076956e78e18eca38e9 data/additionaladditions/tags/items/gilded_netherite_upgrade.json
 251ab39f668c15d972d4630264e39f06ec646606 data/additionaladditions/tags/items/gold_ring.json
 9136930399e99d219f34c05a02844b699ef0873a data/additionaladditions/tags/items/rose_gold_alloy.json
@@ -59,7 +59,7 @@ e08198559f958b742fad0449e0c6c7f0a3d2df90 data/forge/tags/items/cooked_venison.js
 59a1a4f4d14a2aa4580d27d88b293e1dfe33ccf1 data/forge/tags/items/cookies.json
 7c0edbb702d3fbe9e1c68f07804da13ef22fe6ea data/forge/tags/items/crab_claw.json
 a588e76ea799ddafa0f942b8750ac4644597b2bd data/forge/tags/items/crab_claw/cooked.json
-1f26f8777d393c3369244c78ef4df146d3d8aa4e data/forge/tags/items/crab_legs.json
+f4dbc12c060705ec198a92b1edd6baed1a0f999e data/forge/tags/items/crab_legs.json
 5d20ec50cdd02593b25bcd29072d771edc381b17 data/forge/tags/items/crab_meat.json
 f9570db096e701a0b8872dddbb31d8dffea2a204 data/forge/tags/items/crops/beetroot.json
 3a6049fdf6a247720cef5ea417a0c9519f707e01 data/forge/tags/items/crops/carrot.json

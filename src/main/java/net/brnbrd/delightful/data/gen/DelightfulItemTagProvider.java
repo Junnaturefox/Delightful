@@ -358,7 +358,8 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 			.addOptional(Util.rl("crabbersdelight", "cooked_crab"));
 		this.tag(DelightfulItemTags.CRAB_LEGS)
 			.addOptional(Util.rl(Mods.Q, "cooked_crab_leg"))
-			.addOptional(Util.rl("crabbersdelight", "crab_legs"));
+			.addOptional(Util.rl("crabbersdelight", "crab_legs"))
+			.addOptional(Util.rl("untameddelight", "king_crab_legs"));
 		this.tag(DelightfulItemTags.CRAB_MEAT)
 			.addTag(DelightfulItemTags.CRAB_LEGS)
 			.addOptional(Util.rl(Mods.ECO, "crab_meat"));

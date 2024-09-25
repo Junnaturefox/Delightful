@@ -41,6 +41,50 @@
           "item": "twilightdelight:ghast_burger"
         }
       }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:not",
+              "value": {
+                "type": "forge:tag_empty",
+                "tag": "forge:burger_bun"
+              }
+            },
+            {
+              "type": "forge:mod_loaded",
+              "modid": "twilightdelight"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          {
+            "tag": "forge:burger_bun"
+          },
+          {
+            "item": "twilightforest:experiment_115"
+          },
+          {
+            "tag": "forge:vegetables/beetroot"
+          },
+          {
+            "tag": "forge:vegetables/tomato"
+          },
+          {
+            "tag": "forge:vegetables/onion"
+          }
+        ],
+        "result": {
+          "item": "twilightdelight:ghast_burger"
+        }
+      }
     }
   ]
 }

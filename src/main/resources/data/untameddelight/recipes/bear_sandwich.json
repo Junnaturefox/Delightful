@@ -7,12 +7,12 @@
           "type": "forge:and",
           "values": [
             {
-              "type": "forge:tag_empty",
-              "tag": "forge:burger_bun"
+              "type": "forge:item_exists",
+              "item": "untameddelight:bear_sandwich"
             },
             {
-              "type": "forge:mod_loaded",
-              "modid": "twilightdelight"
+              "type": "forge:tag_empty",
+              "tag": "forge:bread_slices"
             }
           ]
         }
@@ -24,21 +24,23 @@
           {
             "tag": "forge:bread"
           },
-          {
-            "tag": "twilightdelight:hydra_meat"
-          },
+          [
+            {
+              "item": "untameddelight:bear_steak"
+            },
+            {
+              "item": "untamedwilds:food_bear_cooked"
+            }
+          ],
           {
             "tag": "forge:salad_ingredients/cabbage"
           },
           {
             "tag": "forge:vegetables/tomato"
-          },
-          {
-            "tag": "forge:vegetables/onion"
           }
         ],
         "result": {
-          "item": "twilightdelight:hydra_burger"
+          "item": "untameddelight:bear_sandwich"
         }
       }
     },
@@ -48,15 +50,15 @@
           "type": "forge:and",
           "values": [
             {
+              "type": "forge:item_exists",
+              "item": "untameddelight:bear_sandwich"
+            },
+            {
               "type": "forge:not",
               "value": {
                 "type": "forge:tag_empty",
-                "tag": "forge:burger_bun"
+                "tag": "forge:bread_slices"
               }
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "twilightdelight"
             }
           ]
         }
@@ -66,11 +68,16 @@
         "category": "misc",
         "ingredients": [
           {
-            "tag": "forge:burger_bun"
+            "tag": "forge:bread_slices"
           },
-          {
-            "tag": "twilightdelight:hydra_meat"
-          },
+          [
+            {
+              "item": "untameddelight:bear_steak"
+            },
+            {
+              "item": "untamedwilds:food_bear_cooked"
+            }
+          ],
           {
             "tag": "forge:salad_ingredients/cabbage"
           },
@@ -78,11 +85,11 @@
             "tag": "forge:vegetables/tomato"
           },
           {
-            "tag": "forge:vegetables/onion"
+            "tag": "forge:bread_slices"
           }
         ],
         "result": {
-          "item": "twilightdelight:hydra_burger"
+          "item": "untameddelight:bear_sandwich"
         }
       }
     }

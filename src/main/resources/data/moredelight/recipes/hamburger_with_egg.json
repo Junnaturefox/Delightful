@@ -7,12 +7,12 @@
           "type": "forge:and",
           "values": [
             {
-              "type": "forge:tag_empty",
-              "tag": "forge:burger_bun"
+              "type": "forge:item_exists",
+              "item": "moredelight:hamburger_with_egg"
             },
             {
-              "type": "forge:mod_loaded",
-              "modid": "twilightdelight"
+              "type": "forge:tag_empty",
+              "tag": "forge:burger_bun"
             }
           ]
         }
@@ -25,20 +25,14 @@
             "tag": "forge:bread"
           },
           {
-            "tag": "twilightdelight:hydra_meat"
+            "item": "farmersdelight:beef_patty"
           },
           {
-            "tag": "forge:salad_ingredients/cabbage"
-          },
-          {
-            "tag": "forge:vegetables/tomato"
-          },
-          {
-            "tag": "forge:vegetables/onion"
+            "tag": "forge:cooked_eggs"
           }
         ],
         "result": {
-          "item": "twilightdelight:hydra_burger"
+          "item": "moredelight:hamburger_with_egg"
         }
       }
     },
@@ -48,15 +42,15 @@
           "type": "forge:and",
           "values": [
             {
+              "type": "forge:item_exists",
+              "item": "moredelight:hamburger_with_egg"
+            },
+            {
               "type": "forge:not",
               "value": {
                 "type": "forge:tag_empty",
                 "tag": "forge:burger_bun"
               }
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "twilightdelight"
             }
           ]
         }
@@ -69,20 +63,14 @@
             "tag": "forge:burger_bun"
           },
           {
-            "tag": "twilightdelight:hydra_meat"
+            "item": "farmersdelight:beef_patty"
           },
           {
-            "tag": "forge:salad_ingredients/cabbage"
-          },
-          {
-            "tag": "forge:vegetables/tomato"
-          },
-          {
-            "tag": "forge:vegetables/onion"
+            "tag": "forge:cooked_eggs"
           }
         ],
         "result": {
-          "item": "twilightdelight:hydra_burger"
+          "item": "moredelight:hamburger_with_egg"
         }
       }
     }

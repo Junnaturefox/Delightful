@@ -7,12 +7,12 @@
           "type": "forge:and",
           "values": [
             {
-              "type": "forge:tag_empty",
-              "tag": "forge:burger_bun"
+              "type": "forge:item_exists",
+              "item": "untameddelight:kebab_wrap"
             },
             {
-              "type": "forge:mod_loaded",
-              "modid": "twilightdelight"
+              "type": "forge:tag_empty",
+              "tag": "forge:tortilla"
             }
           ]
         }
@@ -25,20 +25,17 @@
             "tag": "forge:bread"
           },
           {
-            "tag": "twilightdelight:hydra_meat"
+            "item": "untameddelight:doner_kebab"
           },
           {
-            "tag": "forge:salad_ingredients/cabbage"
-          },
-          {
-            "tag": "forge:vegetables/tomato"
+            "tag": "forge:salad_ingredients"
           },
           {
             "tag": "forge:vegetables/onion"
           }
         ],
         "result": {
-          "item": "twilightdelight:hydra_burger"
+          "item": "untameddelight:kebab_wrap"
         }
       }
     },
@@ -48,15 +45,15 @@
           "type": "forge:and",
           "values": [
             {
+              "type": "forge:item_exists",
+              "item": "untameddelight:kebab_wrap"
+            },
+            {
               "type": "forge:not",
               "value": {
                 "type": "forge:tag_empty",
-                "tag": "forge:burger_bun"
+                "tag": "forge:tortilla"
               }
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "twilightdelight"
             }
           ]
         }
@@ -66,23 +63,20 @@
         "category": "misc",
         "ingredients": [
           {
-            "tag": "forge:burger_bun"
+            "tag": "forge:tortilla"
           },
           {
-            "tag": "twilightdelight:hydra_meat"
+            "item": "untameddelight:doner_kebab"
           },
           {
-            "tag": "forge:salad_ingredients/cabbage"
-          },
-          {
-            "tag": "forge:vegetables/tomato"
+            "tag": "forge:salad_ingredients"
           },
           {
             "tag": "forge:vegetables/onion"
           }
         ],
         "result": {
-          "item": "twilightdelight:hydra_burger"
+          "item": "untameddelight:kebab_wrap"
         }
       }
     }
