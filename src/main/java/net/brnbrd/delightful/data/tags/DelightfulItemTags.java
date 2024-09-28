@@ -130,6 +130,7 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> TOOLS_MACHETES = forge("tools/machetes");
 	public static final TagKey<Item> SEEDS_SALMONBERRY = forge("seeds/salmonberry");
 	public static final TagKey<Item> SEEDS_CANTALOUPE = forge("seeds/cantaloupe");
+	public static final TagKey<Item> BONES = forge("bones");
 	public static final TagKey<Item> EGGS_BIRD = forge("eggs/bird");
 	public static final TagKey<Item> EGGS_DUCK = forge("eggs/duck");
 	public static final TagKey<Item> EGGS_PARROT = forge("eggs/parrot");
@@ -220,8 +221,8 @@ public class DelightfulItemTags {
 
 	// Undergarden
 	public static final TagKey<Item> CLOGGRUM_ITEMS = Util.it(Mods.UG, "cloggrum_items");
-	public static final TagKey<Item> FROSTSTEEL_ITEMS  = Util.it(Mods.UG, "froststeel_items");
-	public static final TagKey<Item> UTHERIUM_ITEMS  = Util.it(Mods.UG, "utherium_items");
+	public static final TagKey<Item> FROSTSTEEL_ITEMS = Util.it(Mods.UG, "froststeel_items");
+	public static final TagKey<Item> UTHERIUM_ITEMS = Util.it(Mods.UG, "utherium_items");
 
 	// Aether
 	public static final TagKey<Item> SKYROOT_STICK = Util.it(Mods.AE, "skyroot_stick");

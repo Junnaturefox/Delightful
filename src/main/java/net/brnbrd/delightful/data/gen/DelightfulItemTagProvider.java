@@ -482,6 +482,8 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 			.addOptional(Util.rl(Mods.VD, "cucumber_seeds"))
 			.addOptional(Util.rl(Mods.FRD, "lemon_seeds"))
 			.addOptional(Util.rl(Mods.FRD, "hamimelon_seeds"));
+		this.tag(DelightfulItemTags.BONES)
+			.addOptional(Util.rl(Mods.DD, "sculk_bone"));
 		this.tag(DelightfulItemTags.SYRUP)
 			.addOptionalTag(Util.rl(Mods.SUP, "pancake_syrup"))
 			.addOptional(Util.rl("autumnity", "syrup_bottle"));
