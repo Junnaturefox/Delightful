@@ -9,6 +9,6 @@ public class NutButterBottleItem extends DConsumableItem {
 
 	@Override
 	public String[] getConflicts() {
-		return new String[]{Mods.VD };
+		return new String[]{Mods.VD};
 	}
 }

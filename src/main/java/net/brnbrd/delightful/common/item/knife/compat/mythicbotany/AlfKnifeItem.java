@@ -36,20 +36,20 @@ public class AlfKnifeItem extends TerraKnifeItem {
 	@Override
 	public Multimap<Attribute, AttributeModifier> getAttributeModifiers(@NotNull EquipmentSlot slot, @NotNull ItemStack stack) {
 		return (enabled() && slot == EquipmentSlot.MAINHAND) ?
-			this.defaultModifiers.get() :
-			super.getDefaultAttributeModifiers(slot);
+				this.defaultModifiers.get() :
+				super.getDefaultAttributeModifiers(slot);
 	}
 
 	@Override
 	public String[] getModid() {
-		return new String[] { "mythicbotany" };
+		return new String[]{"mythicbotany"};
 	}
 
 	@Override
 	public ImmutablePair<Ingredient, Ingredient> getSmithing() {
 		return new ImmutablePair<>(
-			Ingredient.of(Util.it("mythicbotany", "alf_upgrade")),
-			Util.ing(Knives.TERRA)
+				Ingredient.of(Util.it("mythicbotany", "alf_upgrade")),
+				Util.ing(Knives.TERRA)
 		);
 	}
 

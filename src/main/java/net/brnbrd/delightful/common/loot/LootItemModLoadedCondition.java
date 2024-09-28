@@ -13,6 +13,7 @@ import org.jetbrains.annotations.NotNull;
 public class LootItemModLoadedCondition implements LootItemCondition {
 
 	final String modid;
+
 	LootItemModLoadedCondition(String modid) {
 		this.modid = modid;
 	}

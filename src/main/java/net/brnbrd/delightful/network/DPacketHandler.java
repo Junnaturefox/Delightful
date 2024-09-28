@@ -15,23 +15,19 @@ import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 public class DPacketHandler {
-	interface TriConsumer<T, U, R> {
-		void accept(T var1, U var2, R var3);
-	}
-
 	private static final String PROTOCOL_VERSION = "1";
 	public static final SimpleChannel INSTANCE = NetworkRegistry.newSimpleChannel(
-		Util.rl(Delightful.MODID, "main"),
-		() -> PROTOCOL_VERSION,
-		PROTOCOL_VERSION::equals,
-		PROTOCOL_VERSION::equals
+			Util.rl(Delightful.MODID, "main"),
+			() -> PROTOCOL_VERSION,
+			PROTOCOL_VERSION::equals,
+			PROTOCOL_VERSION::equals
 	);
 
 	public static void init() {
 		// Serverbound
 		if (Mods.loaded(Mods.BTA)) {
 			INSTANCE.registerMessage(0, BotaniaLCP.class, BotaniaLCP::encode, BotaniaLCP::decode,
-				makeServerBoundHandler(BotaniaLCP::handle));
+					makeServerBoundHandler(BotaniaLCP::handle));
 		}
 	}
 
@@ -47,5 +43,9 @@ public class DPacketHandler {
 			consumer.accept(m);
 			ctx.get().setPacketHandled(true);
 		};
+	}
+
+	interface TriConsumer<T, U, R> {
+		void accept(T var1, U var2, R var3);
 	}
 }

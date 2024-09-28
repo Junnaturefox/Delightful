@@ -43,7 +43,7 @@ public class ForgeEvents {
 	}
 
 	// Right slick slicing an Item from a Block
-	@SubscribeEvent (priority = EventPriority.HIGHEST)
+	@SubscribeEvent(priority = EventPriority.HIGHEST)
 	void onInteract(PlayerInteractEvent.RightClickBlock e) {
 		Level world = e.getLevel();
 		BlockPos pos = e.getPos();
@@ -57,15 +57,15 @@ public class ForgeEvents {
 				SlicedGourdBlock sliced = (SlicedGourdBlock) DelightfulBlocks.SLICED_PUMPKIN.get();
 				slice(sliced.defaultBlockState(), sliced.getSliceItem(), world, pos, SoundEvents.BAMBOO_BREAK, e, client);
 			} else if (
-				Mods.loaded(Mods.UGD) &&
-				Objects.equals(ForgeRegistries.BLOCKS.getKey(current.getBlock()), Util.rl(Mods.UG, "gloomgourd"))
+					Mods.loaded(Mods.UGD) &&
+							Objects.equals(ForgeRegistries.BLOCKS.getKey(current.getBlock()), Util.rl(Mods.UG, "gloomgourd"))
 			) {
 				SlicedGourdBlock sliced = (SlicedGourdBlock) DelightfulBlocks.SLICED_GLOOMGOURD.get();
 				slice(sliced.defaultBlockState(), sliced.getSliceItem(), world, pos, SoundEvents.BAMBOO_BREAK, e, client);
 			} else if (
-				Mods.loaded(Mods.FU, Mods.FUD) &&
-				Util.name(current.getBlock()).equals("truffle_cake") &&
-				ForgeRegistries.ITEMS.containsKey(Util.rl(Mods.FUD, "truffle_cake_slice"))
+					Mods.loaded(Mods.FU, Mods.FUD) &&
+							Util.name(current.getBlock()).equals("truffle_cake") &&
+							ForgeRegistries.ITEMS.containsKey(Util.rl(Mods.FUD, "truffle_cake_slice"))
 			) {
 				int currentBites = current.getValue(BlockStateProperties.BITES);
 				ItemStack slice = new ItemStack(Objects.requireNonNull(Util.item(Mods.FUD, "truffle_cake_slice")));
@@ -74,7 +74,8 @@ public class ForgeEvents {
 					world.gameEvent(e.getEntity(), GameEvent.BLOCK_DESTROY, pos);
 					Util.dropOrGive(slice, world, pos, e.getEntity());
 					world.playSound(null, pos, SoundEvents.WOOL_PLACE, SoundSource.PLAYERS, 0.8F, 0.8F);
-					e.getEntity().getItemInHand(e.getHand()).hurtAndBreak(1, e.getEntity(), onBroken -> {});
+					e.getEntity().getItemInHand(e.getHand()).hurtAndBreak(1, e.getEntity(), onBroken -> {
+					});
 					e.setCancellationResult(InteractionResult.sidedSuccess(client));
 					e.setCanceled(true);
 					return;
@@ -90,7 +91,8 @@ public class ForgeEvents {
 			world.setBlock(pos, block, 2);
 			Util.dropOrGive(slice, world, pos, e.getEntity());
 			world.playSound(null, pos, sound, SoundSource.PLAYERS, 0.8F, 0.8F);
-			e.getEntity().getItemInHand(e.getHand()).hurtAndBreak(1, e.getEntity(), onBroken -> {});
+			e.getEntity().getItemInHand(e.getHand()).hurtAndBreak(1, e.getEntity(), onBroken -> {
+			});
 		}
 		e.setCancellationResult(InteractionResult.sidedSuccess(client));
 		e.setCanceled(true);

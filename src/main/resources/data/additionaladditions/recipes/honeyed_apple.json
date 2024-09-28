@@ -9,7 +9,7 @@
             {
               "type": "forge:item_exists",
               "item": "additionaladditions:honeyed_apple"
-            } ,
+            },
             {
               "type": "forge:not",
               "value": {

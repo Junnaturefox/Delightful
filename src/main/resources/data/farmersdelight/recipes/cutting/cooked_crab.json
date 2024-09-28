@@ -9,7 +9,7 @@
         },
         {
           "type": "forge:not",
-          "value":         {
+          "value": {
             "type": "forge:item_exists",
             "item": "ecologics:crab_meat"
           }

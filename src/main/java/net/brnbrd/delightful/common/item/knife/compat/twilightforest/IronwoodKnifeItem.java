@@ -13,22 +13,22 @@ import org.jetbrains.annotations.Nullable;
 import vectorwing.farmersdelight.common.registry.ModEnchantments;
 
 public class IronwoodKnifeItem extends CompatKnifeItem {
-  public IronwoodKnifeItem(Item.Properties properties) {
-    super("twilightforest", DelightfulItems.ingot("ironwood"), DelightfulTiers.IRONWOOD, properties, ChatFormatting.AQUA);
-  }
+	public IronwoodKnifeItem(Item.Properties properties) {
+		super("twilightforest", DelightfulItems.ingot("ironwood"), DelightfulTiers.IRONWOOD, properties, ChatFormatting.AQUA);
+	}
 
-  @Override
-  public String[] getConflicts() {
-    return new String[]{"twilightdelight"};
-  }
+	@Override
+	public String[] getConflicts() {
+		return new String[]{"twilightdelight"};
+	}
 
-  @Override
-  public @Nullable RecipeType<?> getRecipeType() {
-    return null;
-  }
+	@Override
+	public @Nullable RecipeType<?> getRecipeType() {
+		return null;
+	}
 
-  @Override
-  public @NotNull ItemStack getCreativeItem() {
-    return Util.enchant(super.getCreativeItem(), ModEnchantments.BACKSTABBING.get(), 1);
-  }
+	@Override
+	public @NotNull ItemStack getCreativeItem() {
+		return Util.enchant(super.getCreativeItem(), ModEnchantments.BACKSTABBING.get(), 1);
+	}
 }

@@ -15,7 +15,10 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.AttachedStemBlock;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.StemBlock;
+import net.minecraft.world.level.block.StemGrownBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
@@ -26,7 +29,6 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
 import vectorwing.farmersdelight.common.tag.ForgeTags;
-
 import java.util.function.Supplier;
 
 public class SlicedGourdBlock extends StemGrownBlock implements ISliceable {
@@ -131,7 +133,7 @@ public class SlicedGourdBlock extends StemGrownBlock implements ISliceable {
 			int bites = state.getValue(BITES);
 			if (bites == this.getMaxBites()) {
 				level.removeBlock(pos, false);
-			} else if (bites < this.getMaxBites()){
+			} else if (bites < this.getMaxBites()) {
 				level.setBlock(pos, state.setValue(BITES, bites + 1), 3);
 			}
 			level.playSound(null, pos, SoundEvents.GENERIC_EAT, SoundSource.PLAYERS, 0.8F, 0.8F);

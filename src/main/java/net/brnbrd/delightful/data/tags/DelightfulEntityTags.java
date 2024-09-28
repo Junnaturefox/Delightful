@@ -14,8 +14,8 @@ public class DelightfulEntityTags {
 	public static final TagKey<EntityType<?>> DROPS_RAW_GOAT = create("drops_raw_goat");
 
 	// Aether
-	public static final TagKey<EntityType<?>> NO_AMBROSIUM_DROPS  = Util.et(Mods.AE, "no_ambrosium_drops");
-	public static final TagKey<EntityType<?>> UNLAUNCHABLE  = Util.et(Mods.AE, "unlaunchable");
+	public static final TagKey<EntityType<?>> NO_AMBROSIUM_DROPS = Util.et(Mods.AE, "no_ambrosium_drops");
+	public static final TagKey<EntityType<?>> UNLAUNCHABLE = Util.et(Mods.AE, "unlaunchable");
 
 	private static TagKey<EntityType<?>> create(String pName) {
 		return Util.et(Delightful.MODID, pName);

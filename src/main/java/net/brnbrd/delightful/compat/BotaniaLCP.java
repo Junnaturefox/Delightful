@@ -11,6 +11,10 @@ import vazkii.botania.network.BotaniaPacket;
 public class BotaniaLCP implements BotaniaPacket {
 	public static final BotaniaLCP INSTANCE = new BotaniaLCP();
 
+	public static BotaniaLCP decode(FriendlyByteBuf buf) {
+		return INSTANCE;
+	}
+
 	public void handle(MinecraftServer server, ServerPlayer player) {
 		// The swing packet will run immediately, so fetch the strength ahead
 		float strengthScale = player.getAttackStrengthScale(0F);
@@ -18,10 +22,6 @@ public class BotaniaLCP implements BotaniaPacket {
 		if (stack.getItem() instanceof TerraKnifeItem terra) {
 			server.execute(() -> terra.handle(player, stack, strengthScale));
 		}
-	}
-
-	public static BotaniaLCP decode(FriendlyByteBuf buf) {
-		return INSTANCE;
 	}
 
 	@Override

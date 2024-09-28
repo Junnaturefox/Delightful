@@ -18,8 +18,8 @@ public class NetheriteOpalKnifeItem extends CompatKnifeItem {
 	@Override
 	public ImmutablePair<Ingredient, Ingredient> getSmithing() {
 		return new ImmutablePair<>(
-			Util.ing(() -> Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
-			Util.ing(Knives.BLACK_OPAL)
+				Util.ing(() -> Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+				Util.ing(Knives.BLACK_OPAL)
 		);
 	}
 }

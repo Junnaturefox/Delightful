@@ -7,7 +7,10 @@ import net.brnbrd.delightful.common.item.IConfigured;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.tags.TagKey;
-import net.minecraft.world.item.*;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
@@ -16,88 +19,88 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.tags.ITagManager;
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.codehaus.plexus.util.StringUtils;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import vectorwing.farmersdelight.common.item.KnifeItem;
 import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 public class DelightfulKnifeItem extends KnifeItem implements IConfigured {
-    private final TagKey<Item> tag;
+	private final TagKey<Item> tag;
 
-    public DelightfulKnifeItem(TagKey<Item> tag, Tier tier, Properties properties) {
-        super(tier, 0.5F, -2.0F, properties);
-        this.tag = tag;
-    }
+	public DelightfulKnifeItem(TagKey<Item> tag, Tier tier, Properties properties) {
+		super(tier, 0.5F, -2.0F, properties);
+		this.tag = tag;
+	}
 
-    @Override
-    public boolean isValidRepairItem(@NotNull ItemStack pToRepair, @NotNull ItemStack pRepair) {
-        return this.enabled() && super.isValidRepairItem(pToRepair, pRepair);
-    }
+	@Override
+	public boolean isValidRepairItem(@NotNull ItemStack pToRepair, @NotNull ItemStack pRepair) {
+		return this.enabled() && super.isValidRepairItem(pToRepair, pRepair);
+	}
 
-    @Override
-    public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, @NotNull List<Component> comps, @NotNull TooltipFlag pIsAdvanced) {
-        if (
-            this.enabledText(comps) &&
-            !(this instanceof ICompat) &&
-            Util.enabled(this) &&
-            !this.isTag() &&
-            this.getTag() != null
-        ) {
-            comps.add(Component.translatable("tooltip.requires_tag"));
-            comps.add(Component.literal(this.getTag().location().toString()).withStyle(ChatFormatting.UNDERLINE));
-        }
-        super.appendHoverText(stack, level, comps, pIsAdvanced);
-    }
+	@Override
+	public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, @NotNull List<Component> comps, @NotNull TooltipFlag pIsAdvanced) {
+		if (
+				this.enabledText(comps) &&
+						!(this instanceof ICompat) &&
+						Util.enabled(this) &&
+						!this.isTag() &&
+						this.getTag() != null
+		) {
+			comps.add(Component.translatable("tooltip.requires_tag"));
+			comps.add(Component.literal(this.getTag().location().toString()).withStyle(ChatFormatting.UNDERLINE));
+		}
+		super.appendHoverText(stack, level, comps, pIsAdvanced);
+	}
 
-    @Nullable
-    public TagKey<Item> getTag() {
-        return this.tag;
-    }
+	@Nullable
+	public TagKey<Item> getTag() {
+		return this.tag;
+	}
 
-    // Returns true if there is an entry within the tag
-    public boolean isTag() {
-        TagKey<Item> materialTag = this.getTag();
-        if (materialTag == null) {
-            return true;
-        }
-        ITagManager<Item> tags = ForgeRegistries.ITEMS.tags();
-        return (
-            tags != null &&
-            tags.isKnownTagName(materialTag) &&
-            !tags.getTag(materialTag).isEmpty()
-        );
-    }
+	// Returns true if there is an entry within the tag
+	public boolean isTag() {
+		TagKey<Item> materialTag = this.getTag();
+		if (materialTag == null) {
+			return true;
+		}
+		ITagManager<Item> tags = ForgeRegistries.ITEMS.tags();
+		return (
+				tags != null &&
+						tags.isKnownTagName(materialTag) &&
+						!tags.getTag(materialTag).isEmpty()
+		);
+	}
 
-    @Override
-    public boolean enabled() {
-        return IConfigured.super.enabled() && this.isTag();
-    }
+	@Override
+	public boolean enabled() {
+		return IConfigured.super.enabled() && this.isTag();
+	}
 
-    public Ingredient getRod() {
-        return Ingredient.of(Tags.Items.RODS_WOODEN);
-    }
+	public Ingredient getRod() {
+		return Ingredient.of(Tags.Items.RODS_WOODEN);
+	}
 
-    public @NotNull ItemStack getCreativeItem() {
-        return new ItemStack(this);
-    }
+	public @NotNull ItemStack getCreativeItem() {
+		return new ItemStack(this);
+	}
 
-    public ImmutablePair<Ingredient, Ingredient> getSmithing() {
-        return ImmutablePair.nullPair();
-    }
+	public ImmutablePair<Ingredient, Ingredient> getSmithing() {
+		return ImmutablePair.nullPair();
+	}
 
-    public @Nullable RecipeType<?> getRecipeType() {
-        return getSmithing().equals(ImmutablePair.nullPair()) ? RecipeType.CRAFTING : RecipeType.SMITHING;
-    }
+	public @Nullable RecipeType<?> getRecipeType() {
+		return getSmithing().equals(ImmutablePair.nullPair()) ? RecipeType.CRAFTING : RecipeType.SMITHING;
+	}
 
-    public String getTranslation() {
-        return StringUtils.capitaliseAllWords(this.getDescriptionId().toLowerCase(Locale.ROOT)
-            .replace("item." + Delightful.MODID.toLowerCase(Locale.ROOT) + ".", "").replace("_", " ")
-        );
-    }
+	public String getTranslation() {
+		return StringUtils.capitaliseAllWords(this.getDescriptionId().toLowerCase(Locale.ROOT)
+				.replace("item." + Delightful.MODID.toLowerCase(Locale.ROOT) + ".", "").replace("_", " ")
+		);
+	}
 
-    public List<Component> getTools() {
-        return Collections.emptyList();
-    }
+	public List<Component> getTools() {
+		return Collections.emptyList();
+	}
 }

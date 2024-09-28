@@ -21,7 +21,7 @@ public class FroststeelKnifeItem extends CompatKnifeItem {
 
 	@Override
 	public String[] getConflicts() {
-		return new String[]{ Mods.UGD };
+		return new String[]{Mods.UGD};
 	}
 
 	@Override
@@ -31,9 +31,9 @@ public class FroststeelKnifeItem extends CompatKnifeItem {
 
 	private void onHurt(LivingHurtEvent e) {
 		if (
-			this.enabled() &&
-			e.getSource().getEntity() instanceof Player player &&
-			player.getMainHandItem().is(this)
+				this.enabled() &&
+						e.getSource().getEntity() instanceof Player player &&
+						player.getMainHandItem().is(this)
 		) {
 			e.getEntity().addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 600, 1));
 		}

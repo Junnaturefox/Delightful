@@ -17,10 +17,10 @@ public class TerraKnifeItem extends ManasteelKnifeItem {
 
 	public TerraKnifeItem(Properties properties, TagKey<Item> tag, Tier tier, ChatFormatting... formatting) {
 		super(
-			properties,
-			tag,
-			tier,
-			formatting
+				properties,
+				tag,
+				tier,
+				formatting
 		);
 		if (isLoaded()) {
 			MinecraftForge.EVENT_BUS.addListener(this::onLeftClick);
@@ -29,10 +29,10 @@ public class TerraKnifeItem extends ManasteelKnifeItem {
 
 	public void onLeftClick(PlayerInteractEvent.LeftClickEmpty e) {
 		if (
-			enabled() &&
-			e.getEntity().level().isClientSide() &&
-			!e.getItemStack().isEmpty() &&
-			e.getItemStack().is(this)
+				enabled() &&
+						e.getEntity().level().isClientSide() &&
+						!e.getItemStack().isEmpty() &&
+						e.getItemStack().is(this)
 		) {
 			BotaniaCompat.sendServerMessage();
 		}
@@ -40,10 +40,10 @@ public class TerraKnifeItem extends ManasteelKnifeItem {
 
 	public void handle(Player p, ItemStack stack, float scale) {
 		if (
-			enabled() &&
-			stack.is(this) &&
-			!p.level().isClientSide() &&
-			!p.isSpectator()
+				enabled() &&
+						stack.is(this) &&
+						!p.level().isClientSide() &&
+						!p.isSpectator()
 		) {
 			BotaniaCompat.trySpawnBurst(p, stack, this.getManaPerDamage(), scale, this instanceof AlfKnifeItem);
 		}

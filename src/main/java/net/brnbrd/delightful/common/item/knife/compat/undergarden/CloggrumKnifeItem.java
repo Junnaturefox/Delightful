@@ -12,6 +12,6 @@ public class CloggrumKnifeItem extends CompatKnifeItem {
 
 	@Override
 	public String[] getConflicts() {
-		return new String[]{ Mods.UGD };
+		return new String[]{Mods.UGD};
 	}
 }

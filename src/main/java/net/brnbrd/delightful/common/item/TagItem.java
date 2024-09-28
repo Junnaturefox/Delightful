@@ -10,7 +10,6 @@ import net.minecraft.world.level.Level;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-
 import java.util.List;
 
 // Item is enabled if tag is empty
@@ -30,8 +29,8 @@ public class TagItem extends DItem {
 	public boolean isTag() {
 		var tags = ForgeRegistries.ITEMS.tags();
 		return tags != null && (
-			!tags.isKnownTagName(this.tag) ||
-			(tags.isKnownTagName(this.tag) && tags.getTag(this.tag).isEmpty())
+				!tags.isKnownTagName(this.tag) ||
+						(tags.isKnownTagName(this.tag) && tags.getTag(this.tag).isEmpty())
 		);
 	}
 

@@ -7,16 +7,16 @@ import net.minecraft.network.chat.Component;
 import java.util.List;
 
 public interface ICompat extends IConfigured {
-	enum Strategy { AND, OR }
 	default Strategy getStrategy() {
 		return Strategy.OR;
 	}
+
 	String[] getModid();
 
 	default boolean isLoaded() {
 		return (this.getStrategy() == Strategy.AND) ?
-			Mods.loaded(this.getModid()) :
-			Mods.orLoaded(this.getModid());
+				Mods.loaded(this.getModid()) :
+				Mods.orLoaded(this.getModid());
 	}
 
 	@Override
@@ -33,4 +33,6 @@ public interface ICompat extends IConfigured {
 		}
 		return IConfigured.super.enabledText(comps);
 	}
+
+	enum Strategy {AND, OR}
 }

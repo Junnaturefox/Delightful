@@ -33,7 +33,7 @@ public class ZaniteKnifeItem extends AetherKnifeItem {
 
 	private int calculateIncrease(Multimap<Attribute, AttributeModifier> map, ItemStack stack) {
 		double baseDamage = 0.0;
-		for (Iterator<AttributeModifier> it = map.get(Attributes.ATTACK_DAMAGE).stream().iterator(); it.hasNext();) {
+		for (Iterator<AttributeModifier> it = map.get(Attributes.ATTACK_DAMAGE).stream().iterator(); it.hasNext(); ) {
 			AttributeModifier modifier = it.next();
 			baseDamage += modifier.getAmount();
 		}

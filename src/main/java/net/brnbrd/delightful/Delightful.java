@@ -11,21 +11,20 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 @Mod(Delightful.MODID)
-public class Delightful
-{
-    public static final String MODID = "delightful";
-    public static Delightful instance;
-    public static CommonProxy proxy;
-    private static final Logger LOGGER = LogManager.getLogger();
+public class Delightful {
+	public static final String MODID = "delightful";
+	private static final Logger LOGGER = LogManager.getLogger();
+	public static Delightful instance;
+	public static CommonProxy proxy;
 
-    public Delightful() {
-        instance = this;
-        proxy = DistExecutor.safeRunForDist(() -> ClientProxy::new, () -> CommonProxy::new);
-        proxy.start();
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, DelightfulConfig.SPEC);
-    }
+	public Delightful() {
+		instance = this;
+		proxy = DistExecutor.safeRunForDist(() -> ClientProxy::new, () -> CommonProxy::new);
+		proxy.start();
+		ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, DelightfulConfig.SPEC);
+	}
 
-    public static Logger getLogger() {
-        return LOGGER;
-    }
+	public static Logger getLogger() {
+		return LOGGER;
+	}
 }

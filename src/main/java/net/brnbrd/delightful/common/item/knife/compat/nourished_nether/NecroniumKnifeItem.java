@@ -23,12 +23,12 @@ public class NecroniumKnifeItem extends CompatKnifeItem {
 	@Override
 	public List<Component> getTools() {
 		return List.of(
-			Component.literal("Afterlife").withStyle(ChatFormatting.AQUA)
+				Component.literal("Afterlife").withStyle(ChatFormatting.AQUA)
 		);
 	}
 
 	@Override
-	public boolean hurtEnemy(@NotNull ItemStack stack,  @NotNull LivingEntity target, @NotNull LivingEntity attacker) {
+	public boolean hurtEnemy(@NotNull ItemStack stack, @NotNull LivingEntity target, @NotNull LivingEntity attacker) {
 		ResourceLocation stasis = Util.rl("nourished_nether", "stasis");
 		if (super.hurtEnemy(stack, target, attacker) && target.getRandom().nextInt(1, 4) == 1) {
 			if (ForgeRegistries.MOB_EFFECTS.containsKey(stasis)) {

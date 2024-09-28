@@ -6,19 +6,19 @@ import net.minecraft.world.item.crafting.Ingredient;
 import vectorwing.farmersdelight.common.block.CabinetBlock;
 
 public class DelightfulCabinetBlock extends CabinetBlock implements IConfigured {
-    private final Ingredient ingredient;
+	private final Ingredient ingredient;
 
-    public DelightfulCabinetBlock(Ingredient ingredient, Properties properties) {
-        super(properties);
-        this.ingredient = ingredient;
-    }
+	public DelightfulCabinetBlock(Ingredient ingredient, Properties properties) {
+		super(properties);
+		this.ingredient = ingredient;
+	}
 
-    public Ingredient getIngredient() {
-        return this.ingredient;
-    }
+	public Ingredient getIngredient() {
+		return this.ingredient;
+	}
 
-    @Override
-    public boolean enabled() {
-        return Util.enabled(Util.name(this));
-    }
+	@Override
+	public boolean enabled() {
+		return Util.enabled(Util.name(this));
+	}
 }

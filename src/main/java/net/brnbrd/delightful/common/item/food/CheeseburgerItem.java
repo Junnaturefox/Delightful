@@ -9,6 +9,6 @@ public class CheeseburgerItem extends DConsumableItem {
 
 	@Override
 	public String[] getConflicts() {
-		return new String[]{ Mods.VD };
+		return new String[]{Mods.VD};
 	}
 }

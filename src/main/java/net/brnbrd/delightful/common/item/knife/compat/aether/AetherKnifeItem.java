@@ -12,7 +12,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class AetherKnifeItem extends CompatKnifeItem {
 	public AetherKnifeItem(String modid, @Nullable TagKey<Item> tag, Tier tier, Properties properties, ChatFormatting... formatting) {
-		super(new String[]{ modid, Mods.AE }, tag, tier, properties, formatting);
+		super(new String[]{modid, Mods.AE}, tag, tier, properties, formatting);
 	}
 
 	public AetherKnifeItem(@Nullable TagKey<Item> tag, Tier tier, Properties properties, ChatFormatting... formatting) {

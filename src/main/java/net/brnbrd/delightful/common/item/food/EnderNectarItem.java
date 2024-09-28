@@ -15,23 +15,23 @@ import net.minecraftforge.network.NetworkHooks;
 import org.jetbrains.annotations.NotNull;
 
 public class EnderNectarItem extends DrinkItem {
-    public EnderNectarItem(Properties properties) {
-        super(properties, 0.0F, false, true);
-    }
+	public EnderNectarItem(Properties properties) {
+		super(properties, 0.0F, false, true);
+	}
 
-    @Override
-    public void affectConsumer(@NotNull ItemStack stack, @NotNull Level worldIn, @NotNull LivingEntity consumer) {
-        super.affectConsumer(stack, worldIn, consumer);
-        if (consumer instanceof ServerPlayer player) {
-            NetworkHooks.openScreen(player, new SimpleMenuProvider((i, inv, p) ->
-                new ChestMenu(MenuType.GENERIC_9x3, i, inv, p.getEnderChestInventory(), 3) {
-                    @Override
-                    public boolean stillValid(@NotNull Player pPlayer) {
-                        return true;
-                    }
-            }, Component.translatable("container.enderchest")));
-            player.awardStat(Stats.OPEN_ENDERCHEST);
-            PiglinAi.angerNearbyPiglins(player, true);
-        }
-    }
+	@Override
+	public void affectConsumer(@NotNull ItemStack stack, @NotNull Level worldIn, @NotNull LivingEntity consumer) {
+		super.affectConsumer(stack, worldIn, consumer);
+		if (consumer instanceof ServerPlayer player) {
+			NetworkHooks.openScreen(player, new SimpleMenuProvider((i, inv, p) ->
+					new ChestMenu(MenuType.GENERIC_9x3, i, inv, p.getEnderChestInventory(), 3) {
+						@Override
+						public boolean stillValid(@NotNull Player pPlayer) {
+							return true;
+						}
+					}, Component.translatable("container.enderchest")));
+			player.awardStat(Stats.OPEN_ENDERCHEST);
+			PiglinAi.angerNearbyPiglins(player, true);
+		}
+	}
 }

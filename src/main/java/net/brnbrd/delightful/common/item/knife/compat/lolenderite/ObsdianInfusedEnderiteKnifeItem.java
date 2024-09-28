@@ -17,8 +17,8 @@ public class ObsdianInfusedEnderiteKnifeItem extends CompatKnifeItem {
 	@Override
 	public ImmutablePair<Ingredient, Ingredient> getSmithing() {
 		return new ImmutablePair<>(
-			Ingredient.of(EnderiteKnifeItem.upgrade),
-			Util.ing(Knives.ENDERITE)
+				Ingredient.of(EnderiteKnifeItem.upgrade),
+				Util.ing(Knives.ENDERITE)
 		);
 	}
 

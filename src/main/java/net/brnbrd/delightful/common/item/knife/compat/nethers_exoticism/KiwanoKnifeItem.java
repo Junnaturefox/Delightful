@@ -15,7 +15,7 @@ public class KiwanoKnifeItem extends CompatKnifeItem {
 	@Override
 	public List<Component> getTools() {
 		return List.of(
-			Component.literal("Burning").withStyle(ChatFormatting.BLUE)
+				Component.literal("Burning").withStyle(ChatFormatting.BLUE)
 		);
 	}
 }

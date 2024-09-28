@@ -22,111 +22,114 @@ import net.minecraftforge.items.ItemHandlerHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.Nullable;
-
 import java.util.Objects;
 import java.util.function.Supplier;
 
 public class Util {
 
-  public static final String LOADER = "forge";
+	public static final String LOADER = "forge";
 
-  public static ResourceLocation rl(String modid, String path) {
-    return new ResourceLocation(modid, path);
-  }
+	public static ResourceLocation rl(String modid, String path) {
+		return new ResourceLocation(modid, path);
+	}
 
-  public static ResourceLocation rl(String separated) {
-    return new ResourceLocation(separated);
-  }
+	public static ResourceLocation rl(String separated) {
+		return new ResourceLocation(separated);
+	}
 
-  public static TagKey<Item> it(String modid, String path) {
-    return ItemTags.create(rl(modid, path));
-  }
+	public static TagKey<Item> it(String modid, String path) {
+		return ItemTags.create(rl(modid, path));
+	}
 
-  public static TagKey<EntityType<?>> et(String modid, String path) {
-    return TagKey.create(Registries.ENTITY_TYPE, rl(modid, path));
-  }
+	public static TagKey<EntityType<?>> et(String modid, String path) {
+		return TagKey.create(Registries.ENTITY_TYPE, rl(modid, path));
+	}
 
-  public static ObjectArrayList<ItemStack> with(ObjectArrayList<ItemStack> before, ItemStack addition) {
-    before.add(addition);
-    return before;
-  }
+	public static ObjectArrayList<ItemStack> with(ObjectArrayList<ItemStack> before, ItemStack addition) {
+		before.add(addition);
+		return before;
+	}
 
-  @Nullable public static Item item(String modid, String path) {
-    return item(rl(modid, path));
-  }
+	@Nullable
+	public static Item item(String modid, String path) {
+		return item(rl(modid, path));
+	}
 
-  @Nullable public static Item item(ResourceLocation rl) {
-    if (ForgeRegistries.ITEMS.containsKey(rl)) {
-      return ForgeRegistries.ITEMS.getValue(rl);
-    }
-    return null;
-  }
+	@Nullable
+	public static Item item(ResourceLocation rl) {
+		if (ForgeRegistries.ITEMS.containsKey(rl)) {
+			return ForgeRegistries.ITEMS.getValue(rl);
+		}
+		return null;
+	}
 
-  @Nullable public static Block block(String modid, String path) {
-    return block(rl(modid, path));
-  }
+	@Nullable
+	public static Block block(String modid, String path) {
+		return block(rl(modid, path));
+	}
 
-  @Nullable public static Block block(ResourceLocation rl) {
-    return ForgeRegistries.BLOCKS.getValue(rl);
-  }
+	@Nullable
+	public static Block block(ResourceLocation rl) {
+		return ForgeRegistries.BLOCKS.getValue(rl);
+	}
 
-  public static ItemStack gs(RegistryObject<Item> r, int count) {
-    return new ItemStack(r.get(), count);
-  }
+	public static ItemStack gs(RegistryObject<Item> r, int count) {
+		return new ItemStack(r.get(), count);
+	}
 
-  public static ItemStack gs(RegistryObject<Item> r) {
-    return gs(r, 1);
-  }
+	public static ItemStack gs(RegistryObject<Item> r) {
+		return gs(r, 1);
+	}
 
-  public static String name(Item item) {
-    return (ForgeRegistries.ITEMS.containsValue(item)) ?
-      Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(item)).getPath() : "";
-  }
+	public static String name(Item item) {
+		return (ForgeRegistries.ITEMS.containsValue(item)) ?
+				Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(item)).getPath() : "";
+	}
 
-  public static String name(Block block) {
-    return (ForgeRegistries.BLOCKS.containsValue(block)) ?
-      Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(block)).getPath() : "";
-  }
+	public static String name(Block block) {
+		return (ForgeRegistries.BLOCKS.containsValue(block)) ?
+				Objects.requireNonNull(ForgeRegistries.BLOCKS.getKey(block)).getPath() : "";
+	}
 
-  public static String name(RegistryObject<?> reg) {
-    return reg.getId().getPath();
-  }
+	public static String name(RegistryObject<?> reg) {
+		return reg.getId().getPath();
+	}
 
-  public static Ingredient ing(Supplier<? extends ItemLike> i) {
-    return Ingredient.of(i.get());
-  }
+	public static Ingredient ing(Supplier<? extends ItemLike> i) {
+		return Ingredient.of(i.get());
+	}
 
-  public static ItemStack enchant(ItemStack stack, Enchantment enchantment, int level) {
-    ItemStack enchanted = stack.copy();
-    enchanted.enchant(enchantment, level);
-    return enchanted;
-  }
+	public static ItemStack enchant(ItemStack stack, Enchantment enchantment, int level) {
+		ItemStack enchanted = stack.copy();
+		enchanted.enchant(enchantment, level);
+		return enchanted;
+	}
 
-  public static void dropOrGive(ItemStack stack, Level world, BlockPos drop, Player give) {
-    if (DelightfulConfig.GIVE_SLICED_DIRECTLY.get()) {
-      ItemHandlerHelper.giveItemToPlayer(give, stack, 0);
-    } else {
-      Containers.dropItemStack(world, drop.getX(), drop.getY() + 0.25F, drop.getZ(), stack);
-    }
-  }
+	public static void dropOrGive(ItemStack stack, Level world, BlockPos drop, Player give) {
+		if (DelightfulConfig.GIVE_SLICED_DIRECTLY.get()) {
+			ItemHandlerHelper.giveItemToPlayer(give, stack, 0);
+		} else {
+			Containers.dropItemStack(world, drop.getX(), drop.getY() + 0.25F, drop.getZ(), stack);
+		}
+	}
 
-  public static boolean hasTagString(ItemStack stack, String key, String value) {
-    if (stack.hasTag()) {
-      CompoundTag tag = stack.getTag();
-      return tag != null && tag.contains(key) && tag.getString(key).equals(value);
-    }
-    return false;
-  }
+	public static boolean hasTagString(ItemStack stack, String key, String value) {
+		if (stack.hasTag()) {
+			CompoundTag tag = stack.getTag();
+			return tag != null && tag.contains(key) && tag.getString(key).equals(value);
+		}
+		return false;
+	}
 
-  public static boolean enabled(String item) {
-    return DelightfulConfig.CONFIG.verify(item);
-  }
+	public static boolean enabled(String item) {
+		return DelightfulConfig.CONFIG.verify(item);
+	}
 
-  public static boolean enabled(RegistryObject<Item> item) {
-    return enabled(item.getId().getPath());
-  }
+	public static boolean enabled(RegistryObject<Item> item) {
+		return enabled(item.getId().getPath());
+	}
 
-  public static boolean enabled(Item item) {
-    return enabled(Util.name(item));
-  }
+	public static boolean enabled(Item item) {
+		return enabled(Util.name(item));
+	}
 }

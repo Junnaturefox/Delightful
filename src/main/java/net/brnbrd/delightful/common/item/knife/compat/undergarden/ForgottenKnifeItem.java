@@ -12,15 +12,12 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.apache.commons.lang3.tuple.ImmutablePair;
-import org.jetbrains.annotations.Nullable;
-
 import java.util.List;
 
 public class ForgottenKnifeItem extends CompatKnifeItem {
@@ -34,7 +31,7 @@ public class ForgottenKnifeItem extends CompatKnifeItem {
 
 	@Override
 	public String[] getConflicts() {
-		return new String[]{ Mods.UGD };
+		return new String[]{Mods.UGD};
 	}
 
 	@Override
@@ -45,18 +42,18 @@ public class ForgottenKnifeItem extends CompatKnifeItem {
 	@Override
 	public ImmutablePair<Ingredient, Ingredient> getSmithing() {
 		return new ImmutablePair<>(
-			Ingredient.of(upgrade),
-			Util.ing(Knives.CLOGGRUM)
+				Ingredient.of(upgrade),
+				Util.ing(Knives.CLOGGRUM)
 		);
 	}
 
 	void onHurt(LivingHurtEvent e) {
 		if (
-			this.enabled() &&
-			e.getSource().getEntity() instanceof Player player &&
-			player.getMainHandItem().is(this) &&
-			ForgeRegistries.ENTITY_TYPES.getKey(e.getEntity().getType()).getNamespace().equals(Mods.UG) &&
-			e.getEntity().canChangeDimensions()
+				this.enabled() &&
+						e.getSource().getEntity() instanceof Player player &&
+						player.getMainHandItem().is(this) &&
+						ForgeRegistries.ENTITY_TYPES.getKey(e.getEntity().getType()).getNamespace().equals(Mods.UG) &&
+						e.getEntity().canChangeDimensions()
 		) {
 			e.setAmount(e.getAmount() * 1.5F);
 		}
@@ -65,10 +62,10 @@ public class ForgottenKnifeItem extends CompatKnifeItem {
 	void onDig(PlayerEvent.BreakSpeed e) {
 		BlockState state = e.getState();
 		if (
-			this.enabled() &&
-			e.getEntity().getMainHandItem().is(this) &&
-			state != null &&
-			ForgeRegistries.BLOCKS.getKey(state.getBlock()).getNamespace().equals(Mods.UG)
+				this.enabled() &&
+						e.getEntity().getMainHandItem().is(this) &&
+						state != null &&
+						ForgeRegistries.BLOCKS.getKey(state.getBlock()).getNamespace().equals(Mods.UG)
 		) {
 			e.setNewSpeed(e.getOriginalSpeed() * 1.5F);
 		}

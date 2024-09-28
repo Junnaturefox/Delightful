@@ -12,22 +12,22 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public class SteeleafKnifeItem extends CompatKnifeItem {
-  public SteeleafKnifeItem(Properties properties) {
-    super("twilightforest", DelightfulItems.ingot("steeleaf"), DelightfulTiers.STEELEAF, properties, ChatFormatting.AQUA);
-  }
+	public SteeleafKnifeItem(Properties properties) {
+		super("twilightforest", DelightfulItems.ingot("steeleaf"), DelightfulTiers.STEELEAF, properties, ChatFormatting.AQUA);
+	}
 
-  @Override
-  public String[] getConflicts() {
-    return new String[]{"twilightdelight"};
-  }
+	@Override
+	public String[] getConflicts() {
+		return new String[]{"twilightdelight"};
+	}
 
-  @Override
-  public @Nullable RecipeType<?> getRecipeType() {
-    return null;
-  }
+	@Override
+	public @Nullable RecipeType<?> getRecipeType() {
+		return null;
+	}
 
-  @Override
-  public @NotNull ItemStack getCreativeItem() {
-    return Util.enchant(super.getCreativeItem(), Enchantments.SMITE, 2);
-  }
+	@Override
+	public @NotNull ItemStack getCreativeItem() {
+		return Util.enchant(super.getCreativeItem(), Enchantments.SMITE, 2);
+	}
 }

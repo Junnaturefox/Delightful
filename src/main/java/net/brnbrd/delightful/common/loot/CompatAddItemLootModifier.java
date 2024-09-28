@@ -13,13 +13,13 @@ import org.jetbrains.annotations.NotNull;
 
 public class CompatAddItemLootModifier extends AddItemLootModifier {
 	public static final Codec<CompatAddItemLootModifier> CODEC = RecordCodecBuilder.create(inst -> codecStart(inst)
-		.and(ForgeRegistries.ITEMS.getCodec().fieldOf("item").forGetter(g -> g.item))
-		.and(Codec.INT.fieldOf("minAmount").forGetter(g -> g.minAmount))
-		.and(Codec.INT.fieldOf("maxAmount").forGetter(g -> g.maxAmount))
-		.and(Codec.BOOL.fieldOf("unique").forGetter(g -> g.unique))
-		.and(Codec.STRING.fieldOf("modid").forGetter(g -> g.modid))
-		.and(Codec.BOOL.fieldOf("enable").forGetter(g -> g.enable))
-		.apply(inst, CompatAddItemLootModifier::new));
+			.and(ForgeRegistries.ITEMS.getCodec().fieldOf("item").forGetter(g -> g.item))
+			.and(Codec.INT.fieldOf("minAmount").forGetter(g -> g.minAmount))
+			.and(Codec.INT.fieldOf("maxAmount").forGetter(g -> g.maxAmount))
+			.and(Codec.BOOL.fieldOf("unique").forGetter(g -> g.unique))
+			.and(Codec.STRING.fieldOf("modid").forGetter(g -> g.modid))
+			.and(Codec.BOOL.fieldOf("enable").forGetter(g -> g.enable))
+			.apply(inst, CompatAddItemLootModifier::new));
 	String modid;
 	boolean enable;
 

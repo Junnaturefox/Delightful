@@ -6,9 +6,9 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.registries.ForgeRegistries;
+import org.jetbrains.annotations.NotNull;
 import java.util.Optional;
 import java.util.function.Supplier;
-import org.jetbrains.annotations.NotNull;
 
 public class Mods {
 	public static final String AA = "additionaladditions";

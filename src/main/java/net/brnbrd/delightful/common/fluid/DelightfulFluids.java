@@ -16,24 +16,25 @@ public class DelightfulFluids {
 	public static final DeferredRegister<FluidType> TYPES = DeferredRegister.create(ForgeRegistries.Keys.FLUID_TYPES, Delightful.MODID);
 
 	public static final RegistryObject<FluidType> AZALEA_TEA_TYPE = TYPES.register("azalea_tea_type",
-		() -> new TeaFluidType(0xffd3619c));
-	public static final RegistryObject<FlowingFluid> AZALEA_TEA = FLUIDS.register("azalea_tea",
-		() -> new ForgeFlowingFluid.Source(DelightfulFluids.AZALEA_TEA_PROPERTIES));
-	public static final RegistryObject<FlowingFluid> FLOWING_AZALEA_TEA = FLUIDS.register("flowing_azalea_tea",
-		() -> new ForgeFlowingFluid.Flowing(DelightfulFluids.AZALEA_TEA_PROPERTIES));
-
+			() -> new TeaFluidType(0xffd3619c));
 	public static final RegistryObject<FluidType> LAVENDER_TEA_TYPE = TYPES.register("lavender_tea_type",
-		() -> new TeaFluidType(0xff9e79a2));
-	public static final RegistryObject<FlowingFluid> LAVENDER_TEA = FLUIDS.register("lavender_tea",
-		() -> new ForgeFlowingFluid.Source(DelightfulFluids.LAVENDER_TEA_PROPERTIES));
-	public static final RegistryObject<FlowingFluid> FLOWING_LAVENDER_TEA = FLUIDS.register("flowing_lavender_tea",
-		() -> new ForgeFlowingFluid.Flowing(DelightfulFluids.LAVENDER_TEA_PROPERTIES));
-
-	public static final ForgeFlowingFluid.Properties AZALEA_TEA_PROPERTIES = new ForgeFlowingFluid.Properties(AZALEA_TEA_TYPE, AZALEA_TEA, FLOWING_AZALEA_TEA);
-	public static final ForgeFlowingFluid.Properties LAVENDER_TEA_PROPERTIES = new ForgeFlowingFluid.Properties(LAVENDER_TEA_TYPE, LAVENDER_TEA, FLOWING_LAVENDER_TEA);
+			() -> new TeaFluidType(0xff9e79a2));	public static final RegistryObject<FlowingFluid> AZALEA_TEA = FLUIDS.register("azalea_tea",
+			() -> new ForgeFlowingFluid.Source(DelightfulFluids.AZALEA_TEA_PROPERTIES));
 
 	public static void create(IEventBus bus) {
 		FLUIDS.register(bus);
 		TYPES.register(bus);
-	}
+	}	public static final RegistryObject<FlowingFluid> FLOWING_AZALEA_TEA = FLUIDS.register("flowing_azalea_tea",
+			() -> new ForgeFlowingFluid.Flowing(DelightfulFluids.AZALEA_TEA_PROPERTIES));
+
+
+	public static final RegistryObject<FlowingFluid> LAVENDER_TEA = FLUIDS.register("lavender_tea",
+			() -> new ForgeFlowingFluid.Source(DelightfulFluids.LAVENDER_TEA_PROPERTIES));
+	public static final RegistryObject<FlowingFluid> FLOWING_LAVENDER_TEA = FLUIDS.register("flowing_lavender_tea",
+			() -> new ForgeFlowingFluid.Flowing(DelightfulFluids.LAVENDER_TEA_PROPERTIES));
+
+	public static final ForgeFlowingFluid.Properties AZALEA_TEA_PROPERTIES = new ForgeFlowingFluid.Properties(AZALEA_TEA_TYPE, AZALEA_TEA, FLOWING_AZALEA_TEA);
+	public static final ForgeFlowingFluid.Properties LAVENDER_TEA_PROPERTIES = new ForgeFlowingFluid.Properties(LAVENDER_TEA_TYPE, LAVENDER_TEA, FLOWING_LAVENDER_TEA);
+
+
 }

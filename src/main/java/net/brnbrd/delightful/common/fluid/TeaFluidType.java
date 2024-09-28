@@ -13,8 +13,8 @@ public class TeaFluidType extends FluidType {
 
 	public TeaFluidType(int tint) {
 		super(FluidType.Properties.create()
-			.sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
-			.sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY)
+				.sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
+				.sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY)
 		);
 		this.tint = tint;
 	}

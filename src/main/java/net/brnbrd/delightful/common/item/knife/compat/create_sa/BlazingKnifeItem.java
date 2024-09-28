@@ -35,8 +35,8 @@ public class BlazingKnifeItem extends CompatKnifeItem {
 	@Override
 	public List<Component> getTools() {
 		return List.of(
-			Component.literal("As hot as an authentic blaze!").withStyle(ChatFormatting.DARK_PURPLE),
-			Component.literal("Burns the mob the tool hits").withStyle(ChatFormatting.DARK_PURPLE)
+				Component.literal("As hot as an authentic blaze!").withStyle(ChatFormatting.DARK_PURPLE),
+				Component.literal("Burns the mob the tool hits").withStyle(ChatFormatting.DARK_PURPLE)
 		);
 	}
 }

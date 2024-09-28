@@ -1,7 +1,5 @@
 package net.brnbrd.delightful.common.block;
 
-import java.util.Objects;
-import java.util.function.Supplier;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Player;
@@ -12,9 +10,11 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.HitResult;
 import net.minecraftforge.registries.ForgeRegistries;
+import org.jetbrains.annotations.NotNull;
 import vectorwing.farmersdelight.common.block.PieBlock;
 import vectorwing.farmersdelight.common.registry.ModBlocks;
-import org.jetbrains.annotations.NotNull;
+import java.util.Objects;
+import java.util.function.Supplier;
 
 public class DPieBlock extends PieBlock {
 	private final ResourceLocation pie;

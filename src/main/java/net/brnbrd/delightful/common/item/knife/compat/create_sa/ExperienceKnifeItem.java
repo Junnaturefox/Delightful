@@ -34,8 +34,8 @@ public class ExperienceKnifeItem extends CompatKnifeItem {
 	@Override
 	public List<Component> getTools() {
 		return List.of(
-			Component.literal("This tool gradually crumbles;").withStyle(ChatFormatting.DARK_PURPLE),
-			Component.literal("if you are lucky it will spawn xp orbs").withStyle(ChatFormatting.DARK_PURPLE)
+				Component.literal("This tool gradually crumbles;").withStyle(ChatFormatting.DARK_PURPLE),
+				Component.literal("if you are lucky it will spawn xp orbs").withStyle(ChatFormatting.DARK_PURPLE)
 		);
 	}
 

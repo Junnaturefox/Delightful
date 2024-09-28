@@ -12,20 +12,21 @@ import org.jetbrains.annotations.NotNull;
 
 public class MiniBlock extends MelonBlock {
 
-  private static final VoxelShape SHAPE = Block.box(3.0D, 0.0D, 3.0D, 13.0D, 10.0D, 13.0D);
-  public MiniBlock(Properties pProperties) {
-    super(pProperties);
-  }
+	private static final VoxelShape SHAPE = Block.box(3.0D, 0.0D, 3.0D, 13.0D, 10.0D, 13.0D);
 
-  @SuppressWarnings("deprecation")
-  @Override
-  public @NotNull VoxelShape getShape(@NotNull BlockState pState, @NotNull BlockGetter pLevel, @NotNull BlockPos pPos, @NotNull CollisionContext pContext) {
-    return SHAPE;
-  }
+	public MiniBlock(Properties pProperties) {
+		super(pProperties);
+	}
 
-  @SuppressWarnings("deprecation")
-  @Override
-  public @NotNull VoxelShape getOcclusionShape(@NotNull BlockState pState, @NotNull BlockGetter pLevel, @NotNull BlockPos pPos) {
-    return Shapes.empty();
-  }
+	@SuppressWarnings("deprecation")
+	@Override
+	public @NotNull VoxelShape getShape(@NotNull BlockState pState, @NotNull BlockGetter pLevel, @NotNull BlockPos pPos, @NotNull CollisionContext pContext) {
+		return SHAPE;
+	}
+
+	@SuppressWarnings("deprecation")
+	@Override
+	public @NotNull VoxelShape getOcclusionShape(@NotNull BlockState pState, @NotNull BlockGetter pLevel, @NotNull BlockPos pPos) {
+		return Shapes.empty();
+	}
 }

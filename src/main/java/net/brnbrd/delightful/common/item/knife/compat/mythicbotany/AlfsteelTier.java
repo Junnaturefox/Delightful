@@ -6,7 +6,6 @@ import net.brnbrd.delightful.compat.BotaniaCompat;
 import net.brnbrd.delightful.compat.Mods;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraftforge.common.TierSortingRegistry;
 import org.jetbrains.annotations.NotNull;
 import java.util.function.Supplier;
 

@@ -11,8 +11,8 @@ public class KnifeEvents {
 	@SubscribeEvent
 	void onFireKnife(LivingAttackEvent e) {
 		if (e.getSource().getEntity() instanceof LivingEntity living &&
-			living.getMainHandItem().is(DelightfulItemTags.FIRE_KNIVES) &&
-			!e.getEntity().fireImmune()) {
+				living.getMainHandItem().is(DelightfulItemTags.FIRE_KNIVES) &&
+				!e.getEntity().fireImmune()) {
 			e.getEntity().setSecondsOnFire(15);
 		}
 	}

@@ -2,7 +2,6 @@ package net.brnbrd.delightful.compat;
 
 import net.brnbrd.delightful.common.item.knife.Knives;
 import net.brnbrd.delightful.common.item.knife.compat.aether_redux.VeridiumKnifeItem;
-import net.minecraft.world.item.Item;
 import net.zepalesque.redux.item.util.ReduxItemTiers;
 import java.util.function.Supplier;
 

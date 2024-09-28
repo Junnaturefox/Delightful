@@ -9,6 +9,6 @@ public class PumpkinPieSliceItem extends DItem {
 
 	@Override
 	public String[] getConflicts() {
-		return new String[]{ "create_central_kitchen" };
+		return new String[]{"create_central_kitchen"};
 	}
 }

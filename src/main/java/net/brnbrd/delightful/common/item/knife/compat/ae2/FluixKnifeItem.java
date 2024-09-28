@@ -27,8 +27,8 @@ public class FluixKnifeItem extends CompatKnifeItem {
 	@Override
 	public ImmutablePair<Ingredient, Ingredient> getSmithing() {
 		return ImmutablePair.of(
-			Ingredient.of(DelightfulItemTags.FLUIX_UPGRADE_SMITHING_TEMPLATE),
-			Ingredient.of(DelightfulItemTags.QUARTZ_KNIFE));
+				Ingredient.of(DelightfulItemTags.FLUIX_UPGRADE_SMITHING_TEMPLATE),
+				Ingredient.of(DelightfulItemTags.QUARTZ_KNIFE));
 	}
 
 	@Override

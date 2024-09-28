@@ -20,7 +20,7 @@ public class AllthemodiumKnifeItem extends CompatKnifeItem {
 	@Override
 	public List<Component> getTools() {
 		return List.of(
-			Component.translatable("indestructible").withStyle(ChatFormatting.GOLD)
+				Component.translatable("indestructible").withStyle(ChatFormatting.GOLD)
 		);
 	}
 

@@ -17,7 +17,10 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
-import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.BonemealableBlock;
+import net.minecraft.world.level.block.BushBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -36,10 +39,10 @@ public class CantaloupePlantBlock extends BushBlock implements BonemealableBlock
 	public static final int MAX_AGE = 3;
 	public static final IntegerProperty AGE = BlockStateProperties.AGE_3;
 	private static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[]{
-		Block.box(3.0D, 0.0D, 3.0D, 13.0D, 2.0D, 13.0D),
-		Block.box(2.0D, 0.0D, 2.0D, 14.0D, 5.0D, 14.0D),
-		Block.box(0.0D, 0.0D, 0.0D, 16.0D, 6.0D, 16.0D),
-		Block.box(0.0D, 0.0D, 0.0D, 16.0D, 8.0D, 16.0D)
+			Block.box(3.0D, 0.0D, 3.0D, 13.0D, 2.0D, 13.0D),
+			Block.box(2.0D, 0.0D, 2.0D, 14.0D, 5.0D, 14.0D),
+			Block.box(0.0D, 0.0D, 0.0D, 16.0D, 6.0D, 16.0D),
+			Block.box(0.0D, 0.0D, 0.0D, 16.0D, 8.0D, 16.0D)
 	};
 
 	public CantaloupePlantBlock(BlockBehaviour.Properties pProperties) {
@@ -81,9 +84,9 @@ public class CantaloupePlantBlock extends BushBlock implements BonemealableBlock
 	public void randomTick(BlockState pState, @NotNull ServerLevel pLevel, @NotNull BlockPos pPos, @NotNull RandomSource pRandom) {
 		int i = pState.getValue(AGE);
 		if (
-			i < MAX_AGE &&
-			pLevel.getRawBrightness(pPos.above(), 0) >= 8 &&
-			ForgeHooks.onCropsGrowPre(pLevel, pPos, pState, pRandom.nextInt(16) == 0)
+				i < MAX_AGE &&
+						pLevel.getRawBrightness(pPos.above(), 0) >= 8 &&
+						ForgeHooks.onCropsGrowPre(pLevel, pPos, pState, pRandom.nextInt(16) == 0)
 		) {
 			BlockState blockstate = pState.setValue(AGE, i + 1);
 			pLevel.setBlock(pPos, blockstate, 2);
@@ -102,8 +105,8 @@ public class CantaloupePlantBlock extends BushBlock implements BonemealableBlock
 			BlockPos blockpos = pPos.below();
 			for (Direction direction : Direction.Plane.HORIZONTAL) {
 				if (
-					pState.canBeHydrated(pLevel, pPos, pLevel.getFluidState(blockpos.relative(direction)), blockpos.relative(direction)) ||
-					pLevel.getBlockState(blockpos.relative(direction)).is(Blocks.FROSTED_ICE)
+						pState.canBeHydrated(pLevel, pPos, pLevel.getFluidState(blockpos.relative(direction)), blockpos.relative(direction)) ||
+								pLevel.getBlockState(blockpos.relative(direction)).is(Blocks.FROSTED_ICE)
 				) {
 					return true;
 				}

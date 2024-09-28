@@ -16,75 +16,75 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
+import net.zepalesque.redux.item.tools.VeridiumItem;
+import net.zepalesque.redux.item.util.TooltipUtils;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
-import net.zepalesque.redux.item.tools.VeridiumItem;
-import net.zepalesque.redux.item.util.TooltipUtils;
 
 public class VeridiumKnifeItem extends AetherKnifeItem implements VeridiumItem {
-    private final Supplier<? extends Item> uninfused;
+	private final Supplier<? extends Item> uninfused;
 
-    public VeridiumKnifeItem(Tier tier, Properties properties, Supplier<? extends Item> uninfused) {
-        super(Mods.AER, DelightfulItems.ingot("veridium"), tier, properties);
-        this.uninfused = uninfused;
-    }
+	public VeridiumKnifeItem(Tier tier, Properties properties, Supplier<? extends Item> uninfused) {
+		super(Mods.AER, DelightfulItems.ingot("veridium"), tier, properties);
+		this.uninfused = uninfused;
+	}
 
-    @Override
-    public Item getUninfusedItem(ItemStack stack) {
-        return this.uninfused.get();
-    }
+	@Override
+	public Item getUninfusedItem(ItemStack stack) {
+		return this.uninfused.get();
+	}
 
-    @Override
-    public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltips, @NotNull TooltipFlag advanced) {
-        MutableComponent infusion = Component.translatable("tooltip.aether_redux.infusion_charge",
-            stack.getTag() == null ? 0 : stack.getTag().getByte(VeridiumItem.NBT_KEY)
-        ).withStyle(ChatFormatting.GRAY);
-        tooltips.add(infusion);
-        Component info = TooltipUtils.TOOLTIP_SHIFT_FOR_INFO.apply(Component.translatable("gui.aether_redux.infusion_info"));
-        tooltips.add(info);
-        super.appendHoverText(stack, level, tooltips, advanced);
-    }
+	@Override
+	public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltips, @NotNull TooltipFlag advanced) {
+		MutableComponent infusion = Component.translatable("tooltip.aether_redux.infusion_charge",
+				stack.getTag() == null ? 0 : stack.getTag().getByte(VeridiumItem.NBT_KEY)
+		).withStyle(ChatFormatting.GRAY);
+		tooltips.add(infusion);
+		Component info = TooltipUtils.TOOLTIP_SHIFT_FOR_INFO.apply(Component.translatable("gui.aether_redux.infusion_info"));
+		tooltips.add(info);
+		super.appendHoverText(stack, level, tooltips, advanced);
+	}
 
-    @Override
-    public boolean mineBlock(@NotNull ItemStack stack, @NotNull Level level, @NotNull BlockState state, @NotNull BlockPos pos, @NotNull LivingEntity user) {
-        // Call the vanilla method do do things like tool damaging
-        boolean bool = super.mineBlock(stack, level, state, pos, user);
-        if (!user.level().isClientSide()) {
-            boolean instaBreak = state.getDestroySpeed(level, pos) <= 0.0F;
-            // Avoid decreasing infusion on insta-break blocks
-            if (!instaBreak) {
-                int amount = stack.isCorrectToolForDrops(state) ? 1 : 2;
-                ItemStack transform = this.deplete(stack, user, amount);
-                if (!user.level().isClientSide() && transform != null && transform != stack) {
-                    user.setItemSlot(EquipmentSlot.MAINHAND, transform);
-                    if (user instanceof ServerPlayer sp) {
-                        this.sendSound(sp);
-                    }
-                }
-            }
-        }
-        return bool;
-    }
+	@Override
+	public boolean mineBlock(@NotNull ItemStack stack, @NotNull Level level, @NotNull BlockState state, @NotNull BlockPos pos, @NotNull LivingEntity user) {
+		// Call the vanilla method do do things like tool damaging
+		boolean bool = super.mineBlock(stack, level, state, pos, user);
+		if (!user.level().isClientSide()) {
+			boolean instaBreak = state.getDestroySpeed(level, pos) <= 0.0F;
+			// Avoid decreasing infusion on insta-break blocks
+			if (!instaBreak) {
+				int amount = stack.isCorrectToolForDrops(state) ? 1 : 2;
+				ItemStack transform = this.deplete(stack, user, amount);
+				if (!user.level().isClientSide() && transform != null && transform != stack) {
+					user.setItemSlot(EquipmentSlot.MAINHAND, transform);
+					if (user instanceof ServerPlayer sp) {
+						this.sendSound(sp);
+					}
+				}
+			}
+		}
+		return bool;
+	}
 
-    @Override
-    public <T extends LivingEntity> int damageItem(ItemStack stack, int amount, T entity, Consumer<T> onBroken) {
-        return super.damageItem(stack, amount, entity, onBroken) * VeridiumItem.DURABILITY_DMG_MULTIPLIER;
-    }
+	@Override
+	public <T extends LivingEntity> int damageItem(ItemStack stack, int amount, T entity, Consumer<T> onBroken) {
+		return super.damageItem(stack, amount, entity, onBroken) * VeridiumItem.DURABILITY_DMG_MULTIPLIER;
+	}
 
-    public static class Uninfused extends AetherKnifeItem {
+	public static class Uninfused extends AetherKnifeItem {
 
-        public Uninfused(Tier tier, Properties properties) {
-            super(Mods.AER, DelightfulItems.ingot("veridium"), tier, properties);
-        }
+		public Uninfused(Tier tier, Properties properties) {
+			super(Mods.AER, DelightfulItems.ingot("veridium"), tier, properties);
+		}
 
-        @Override
-        public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, List<Component> tooltips, @NotNull TooltipFlag advanced) {
-            Component info = TooltipUtils.TOOLTIP_SHIFT_FOR_INFO.apply(Component.translatable("gui.aether_redux.infusion_info"));
-            tooltips.add(info);
-            super.appendHoverText(stack, level, tooltips, advanced);
-        }
-    }
+		@Override
+		public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, List<Component> tooltips, @NotNull TooltipFlag advanced) {
+			Component info = TooltipUtils.TOOLTIP_SHIFT_FOR_INFO.apply(Component.translatable("gui.aether_redux.infusion_info"));
+			tooltips.add(info);
+			super.appendHoverText(stack, level, tooltips, advanced);
+		}
+	}
 }

@@ -21,8 +21,8 @@ public class RoseGoldKnifeItem extends CompatKnifeItem {
 	@Override
 	public ImmutablePair<Ingredient, Ingredient> getSmithing() {
 		return new ImmutablePair<>(
-			Ingredient.of(upgrade),
-			Util.ing(ModItems.IRON_KNIFE)
+				Ingredient.of(upgrade),
+				Util.ing(ModItems.IRON_KNIFE)
 		);
 	}
 }

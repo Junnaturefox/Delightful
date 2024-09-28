@@ -15,7 +15,7 @@ public class LeafKnifeItem extends CompatKnifeItem {
 	@Override
 	public List<Component> getTools() {
 		return List.of(
-			Component.literal("Very sharp").withStyle(ChatFormatting.GRAY)
+				Component.literal("Very sharp").withStyle(ChatFormatting.GRAY)
 		);
 	}
 }
