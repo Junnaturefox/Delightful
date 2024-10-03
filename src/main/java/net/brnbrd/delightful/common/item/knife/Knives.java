@@ -62,6 +62,8 @@ public class Knives extends DelightfulItems {
 	public static final RegistryObject<Item> AMETHYST = registerGemKnife("amethyst");
 	public static final RegistryObject<Item> EMERALD = registerGemKnife("emerald");
 	public static final RegistryObject<Item> COPPER = registerIngotKnife("copper");
+	public static final RegistryObject<Item> NETHER_QUARTZ = registerItem("nether_quartz_knife", () ->
+			new DelightfulKnifeItem(Tags.Items.GEMS_QUARTZ, DelightfulTiers.NETHER_QUARTZ, props()));
 
 	public static final RegistryObject<Item> TIN = registerIngotKnife("tin");
 	public static final RegistryObject<Item> STEEL = registerIngotKnife("steel");
@@ -158,8 +160,6 @@ public class Knives extends DelightfulItems {
 					new DummyStratusKnifeItem(props(), Tiers.IRON)
 	);
 	public static final RegistryObject<Item> VALKYRUM = registerItem("valkyrum_knife", () -> new ValkyrumKnifeItem(props()));
-	public static final RegistryObject<Item> NETHER_QUARTZ = registerItem("nether_quartz_knife", () ->
-			new CompatKnifeItem(Mods.AE2, Tags.Items.GEMS_QUARTZ, DelightfulTiers.NETHER_QUARTZ, props()));
 	public static final RegistryObject<Item> CERTUS_QUARTZ = registerItem("certus_quartz_knife", () ->
 			new CompatKnifeItem(Mods.AE2, DelightfulItemTags.CERTUS_QUARTZ, DelightfulTiers.CERTUS_QUARTZ, props()));
 	public static final RegistryObject<Item> FLUIX = registerItem("fluix_knife", () ->

@@ -906,6 +906,7 @@
       "amethyst_knife",
       "emerald_knife",
       "copper_knife",
+      "nether_quartz_knife",
       "tin_knife",
       "steel_knife",
       "silver_knife",
@@ -966,7 +967,6 @@
       "skyjade_knife",
       "stratus_knife",
       "valkyrum_knife",
-      "nether_quartz_knife",
       "certus_quartz_knife",
       "fluix_knife"
     ]

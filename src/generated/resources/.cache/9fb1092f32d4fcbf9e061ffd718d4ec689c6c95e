@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-15T00:21:56.4384024	Recipes
+// 1.20.1	2024-10-03T09:02:55.7770274	Recipes
 6c217dd6477efa10f6042809ba959d53036ab5e2 data/delightful/advancements/recipes/cabinets/basalt_cabinet.json
 5b82f87851220644287d771121677deac66b3b89 data/delightful/advancements/recipes/cabinets/quartz_cabinet.json
 cf29033c1c919355c261025df529938e6ebc73f8 data/delightful/advancements/recipes/campfire/cactus_steak.json
@@ -90,7 +90,7 @@ e78605aea639e3e2a841b18b42a0e948a31e7b99 data/delightful/advancements/recipes/kn
 6d0af0e486151c2034c832f30777e895d04f25b6 data/delightful/advancements/recipes/knives/manasteel_knife.json
 ad799041b2d8a4b7c59894344c15a3d50a6e94be data/delightful/advancements/recipes/knives/mythril_knife.json
 14d28f2230ee29b9857af24da6369afbc63d7f0f data/delightful/advancements/recipes/knives/necronium_knife.json
-74ac2d906f0ae0d39f495ebb29d3a2794885fefb data/delightful/advancements/recipes/knives/nether_quartz_knife.json
+2a75228b1d5f9ac067d7b6b624c05000c191a114 data/delightful/advancements/recipes/knives/nether_quartz_knife.json
 9907ace548d221bd6ac0e8b66580bf5e04a1f836 data/delightful/advancements/recipes/knives/nickel_knife.json
 e826aad1fbd61704a144f5bb8b39bd4fd83f6ec8 data/delightful/advancements/recipes/knives/onyx_knife.json
 cba8826bb72edde5b40729c87dbf81baecdf38c4 data/delightful/advancements/recipes/knives/osmium_knife.json
@@ -239,7 +239,7 @@ a8b2865647ac28c301c99e6ef20171c7ac1debf6 data/delightful/recipes/knives/lead_kni
 293d4abd845691a53fe98b58f598cb63014bddd1 data/delightful/recipes/knives/manasteel_knife.json
 59c8a4998b048aa83c83ae466da46f602c850af1 data/delightful/recipes/knives/mythril_knife.json
 06d3d2d214572f82ed5c3d0363a50effc0539925 data/delightful/recipes/knives/necronium_knife.json
-b2aaa93c134eb08496ef073e90ae0544a0a5d9cf data/delightful/recipes/knives/nether_quartz_knife.json
+6806bc80781370bb34a03f0b8fcca1eae5b59e07 data/delightful/recipes/knives/nether_quartz_knife.json
 7dfbb6001ff3f97836dc752dfbe2d6aebb95c407 data/delightful/recipes/knives/nickel_knife.json
 eddd9b510f064512c5fe89b09759018033610be6 data/delightful/recipes/knives/onyx_knife.json
 e4d2930d0c2c2d7224a9b7e4d464b06062a2aa3c data/delightful/recipes/knives/osmium_knife.json

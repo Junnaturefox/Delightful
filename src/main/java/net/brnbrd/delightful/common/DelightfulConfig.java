@@ -17,7 +17,8 @@ public class DelightfulConfig {
 			Util.name(Knives.COPPER),
 			Util.name(Knives.AMETHYST),
 			Util.name(Knives.EMERALD),
-			Util.name(Knives.LAPIS_LAZULI)
+			Util.name(Knives.LAPIS_LAZULI),
+			Util.name(Knives.NETHER_QUARTZ)
 	);
 	public static ForgeConfigSpec.BooleanValue CRAFT_NUT_MILK;
 	public static ForgeConfigSpec.BooleanValue COOK_CLOVER_HONEY;
