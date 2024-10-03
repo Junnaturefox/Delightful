@@ -1,6 +1,14 @@
 # Changelog
 
 
+# 3.6.1
+
+### Updates
+- Nether Quartz Knife no longer requires AE2
+  - Disabled in config by default, re-generation is recommended
+- Removed unused assets
+
+
 # 3.6
 
 ### Updates
