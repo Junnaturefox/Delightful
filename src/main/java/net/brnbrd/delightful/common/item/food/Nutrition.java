@@ -82,7 +82,7 @@ public class Nutrition {
 			.effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), 600, 0), 1.0F)
 			.effect(() -> new MobEffectInstance(Mods.getCaffeinated().get(), 300, 0), 1.0F).build();
 	public static final FoodProperties AZALEA_TEA = (new FoodProperties.Builder()).alwaysEat()
-			.effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), 900, 0), 1.0F)
+			.effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), 600, 0), 1.0F)
 			.effect(() -> new MobEffectInstance(Mods.getCaffeinated().get(), 300, 0), 1.0F).build();
 	public static final FoodProperties MATCHA_LATTE = (new FoodProperties.Builder()).alwaysEat().nutrition(6).saturationMod(0.5F)
 			.effect(() -> new MobEffectInstance(Mods.getGreenTeaEffect().get(), 400, 0), 1.0F)

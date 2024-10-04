@@ -6,6 +6,7 @@
 ### Updates
 - Nether Quartz Knife no longer requires AE2
   - Disabled in config by default, re-generation is recommended
+- Reduced Nourishment effect on Azalea Tea to 30 seconds
 - Removed unused assets
 
 
