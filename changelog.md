@@ -7,6 +7,9 @@
 - Nether Quartz Knife no longer requires AE2
   - Disabled in config by default, re-generation is recommended
 - Reduced Nourishment effect on Azalea Tea to 30 seconds
+- Reduced Saturation effect on Prickly Pear Juice to 15 seconds
+- Ender Nectar recipe requires a Honey Bottle instead of Sugar
+- Renamed Jam item ids to match English translations
 - Removed unused assets
 
 

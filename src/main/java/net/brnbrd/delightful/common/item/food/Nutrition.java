@@ -77,7 +77,7 @@ public class Nutrition {
 	public static final FoodProperties ENDER_NECTAR = (new FoodProperties.Builder()).nutrition(4).saturationMod(0.1F).alwaysEat()
 			.effect(() -> new MobEffectInstance(MobEffects.BLINDNESS, 60, 0), 1.0F).build();
 	public static final FoodProperties PRICKLY_PEAR_JUICE = (new FoodProperties.Builder())
-			.effect(() -> new MobEffectInstance(MobEffects.SATURATION, 400, 0), 1.0F).build();
+			.effect(() -> new MobEffectInstance(MobEffects.SATURATION, 300, 0), 1.0F).build();
 	public static final FoodProperties LAVENDER_TEA = (new FoodProperties.Builder()).alwaysEat()
 			.effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), 600, 0), 1.0F)
 			.effect(() -> new MobEffectInstance(Mods.getCaffeinated().get(), 300, 0), 1.0F).build();
