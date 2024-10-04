@@ -114,8 +114,7 @@ public class DelightfulItems {
 	public static final RegistryObject<Item> NUT_BUTTER_AND_JAM_SANDWICH = registerConsumable("nut_butter_and_jam_sandwich", Nutrition.NUT_BUTTER_AND_JAM_SANDWICH, null, true, false);
 	public static final RegistryObject<Item> CHEESEBURGER = registerItem("cheeseburger", () -> new CheeseburgerItem((new Item.Properties()).food(Nutrition.CHEESEBURGER)));
 	public static final RegistryObject<Item> DELUXE_CHEESEBURGER = registerConsumable("deluxe_cheeseburger", Nutrition.DELUXE_CHEESEBURGER, null, true, false);
-	public static final RegistryObject<Item> CHUNKWICH = registerCompatFood("chunkwich", Nutrition.CHUNKWICH,
-			Mods.RL);
+	public static final RegistryObject<Item> CHUNKWICH = registerCompatFood("chunkwich", Nutrition.CHUNKWICH, Mods.RL, true);
 	public static final RegistryObject<Item> ROCK_CANDY = registerItem("rock_candy",
 			() -> new RockCandyItem((new Item.Properties()).food(Nutrition.ROCK_CANDY).craftRemainder(Items.STICK)));
 	public static final RegistryObject<Item> MARSHMALLOW_STICK = registerFood("marshmallow_stick", Nutrition.MARSHMALLOW_STICK, Items.STICK);
@@ -176,8 +175,8 @@ public class DelightfulItems {
 		return registerItem(name, () -> new CompatItem((new Item.Properties().food(food)), false, modid));
 	}
 
-	public static RegistryObject<Item> registerCompatFood(String name, FoodProperties food, String modid) {
-		return registerItem(name, () -> new CompatItem((new Item.Properties().food(food)), modid));
+	public static RegistryObject<Item> registerCompatFood(String name, FoodProperties food, String modid, boolean hasFoodEffectTooltip) {
+		return registerItem(name, () -> new CompatItem((new Item.Properties().food(food)), hasFoodEffectTooltip, modid));
 	}
 
 	public static RegistryObject<Item> registerItem(String name, Supplier<Item> item) {
