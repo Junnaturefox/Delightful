@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:item_exists",
+              "item": "twigs:azalea_flowers"
+            },
+            {
+              "type": "forge:item_exists",
+              "item": "ecologics:azalea_flower"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "farmersdelight:cutting",
+        "ingredients": [
+          {
+            "item": "ecologics:azalea_flower"
+          }
+        ],
+        "result": [
+          {
+            "item": "twigs:azalea_flowers",
+            "count": 1
+          }
+        ],
+        "tool": {
+          "tag": "forge:tools/knives"
+        }
+      }
+    }
+  ]
+}
