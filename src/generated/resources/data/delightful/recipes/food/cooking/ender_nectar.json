@@ -10,17 +10,17 @@
       ],
       "recipe": {
         "type": "farmersdelight:cooking",
+        "container": {
+          "item": "minecraft:honey_bottle"
+        },
         "cookingtime": 200,
         "experience": 0.35,
         "ingredients": [
           {
-            "item": "minecraft:ender_eye"
-          },
-          {
             "tag": "forge:milk"
           },
           {
-            "item": "minecraft:honey_bottle"
+            "item": "minecraft:ender_eye"
           }
         ],
         "result": {

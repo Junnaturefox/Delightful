@@ -1,4 +1,4 @@
-// 1.20.1	2024-10-04T08:30:04.3098368	Recipes
+// 1.20.1	2024-10-04T10:56:27.849649	Recipes
 6c217dd6477efa10f6042809ba959d53036ab5e2 data/delightful/advancements/recipes/cabinets/basalt_cabinet.json
 5b82f87851220644287d771121677deac66b3b89 data/delightful/advancements/recipes/cabinets/quartz_cabinet.json
 cf29033c1c919355c261025df529938e6ebc73f8 data/delightful/advancements/recipes/campfire/cactus_steak.json
@@ -173,7 +173,7 @@ dc56beffae534e3b8948d40f505019267a1c6d7f data/delightful/recipes/food/cooking/co
 30bbc4f0a088c14a26588e7432008ce7410de406 data/delightful/recipes/food/cooking/coconut_curry_no_ginger.json
 ddb169330c7a9bf7062a0b0c72df8f58066b7bfe data/delightful/recipes/food/cooking/crab_rangoon.json
 593a662f3510368d8f66fc2a0129ddda4f92738d data/delightful/recipes/food/cooking/crab_rangoon_from_milk.json
-07febb3835fd1bfebb39b9f46d2647687fa2aab5 data/delightful/recipes/food/cooking/ender_nectar.json
+b65cc57bafa4bd64bfe59e5f14d5eaeefc944363 data/delightful/recipes/food/cooking/ender_nectar.json
 6a52d9dea03f02c654dd70e7ada1e4a80992645d data/delightful/recipes/food/cooking/glow_jam_jar.json
 f2009c01a1e38dd3325e2f70a31a1558b90bd5d3 data/delightful/recipes/food/cooking/jam_jar.json
 bc2568adede6c6b1ef62407596548e7737eca2a6 data/delightful/recipes/food/cooking/nut_butter_bottle.json
