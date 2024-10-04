@@ -1,4 +1,4 @@
-// 1.20.1	2024-10-04T09:47:27.1497057	delightful
+// 1.20.1	2024-10-04T13:23:17.3724417	delightful
 8980358a7235536580c6b076956e78e18eca38e9 data/additionaladditions/tags/items/gilded_netherite_upgrade.json
 251ab39f668c15d972d4630264e39f06ec646606 data/additionaladditions/tags/items/gold_ring.json
 9136930399e99d219f34c05a02844b699ef0873a data/additionaladditions/tags/items/rose_gold_alloy.json
@@ -10,7 +10,7 @@ a60ec42053ef8dd4bb252bc03dea45003dbd8f12 data/aether/tags/items/holystone.json
 e8ef8f8eef92496a83b1e7d33919a11e16cfbf70 data/aether_redux/tags/items/infused_veridium_items.json
 6fcc510eb227815a2bbaa4c6005c372f75eaf029 data/aether_redux/tags/items/veridium_advancement_infusable.json
 e7d157a15ec173a498e93edde6b67f3558f0c698 data/ancient_aether/tags/items/valkyrum.json
-f122224f3c716290caaf9d8de177c00d3b8cf372 data/ars_nouveau/tags/items/magic_food.json
+a9b40088b36eac2e359452a3881b0f413e086f41 data/ars_nouveau/tags/items/magic_food.json
 459ce97cdbc0fe7825ed7b320441d23013d6ab4c data/botania/tags/items/dreamwood_twig.json
 252e55d4f597c2456076ab8efb95e65cbae9a337 data/botania/tags/items/livingwood_twig.json
 cc3ce1c9ecfdd40d917db77aeff124be1dd856b4 data/botania/tags/items/mana_using_items.json
@@ -57,7 +57,7 @@ b660f1a0311fc2203d72ff4458a59fc12bbc7db2 data/forge/tags/items/coconut.json
 d0b63fd9fa268a9c720c2a89a19e5eacf59a05a1 data/forge/tags/items/cooked_nuts.json
 e08198559f958b742fad0449e0c6c7f0a3d2df90 data/forge/tags/items/cooked_venison.json
 4363ceab8e6a6fb56dccef3e5c43e4fc66821bab data/forge/tags/items/cooked_venison_compat.json
-73e180952a1969bfdc83be3679df86b46c6a0c6e data/forge/tags/items/cookies.json
+10e3d2263969e0efee53417beba52eec00cbb18b data/forge/tags/items/cookies.json
 7c0edbb702d3fbe9e1c68f07804da13ef22fe6ea data/forge/tags/items/crab_claw.json
 a588e76ea799ddafa0f942b8750ac4644597b2bd data/forge/tags/items/crab_claw/cooked.json
 f4dbc12c060705ec198a92b1edd6baed1a0f999e data/forge/tags/items/crab_legs.json

@@ -485,6 +485,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addOptional(Util.rl("autumnity", "syrup_bottle"));
 		this.tag(DelightfulItemTags.COOKIES)
 				.add(Items.COOKIE)
+				.add(DelightfulItems.SOURCE_BERRY_COOKIE.get())
 				.add(ModItems.HONEY_COOKIE.get())
 				.add(ModItems.SWEET_BERRY_COOKIE.get())
 				.addOptional(Util.rl(Mods.FR, "green_tea_cookie"))
@@ -674,7 +675,8 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 
 		// Ars Nouveau
 		this.tag(Util.it(Mods.AN, "magic_food"))
-				.add(DelightfulItems.SOURCE_BERRY_PIE_SLICE.get());
+				.add(DelightfulItems.SOURCE_BERRY_PIE_SLICE.get())
+				.add(DelightfulItems.SOURCE_BERRY_COOKIE.get());
 
 		// Sully's Mod
 		this.tag(Util.it("sullysmod", "tortoise_food"))
