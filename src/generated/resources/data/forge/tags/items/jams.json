@@ -1,12 +1,37 @@
 {
   "values": [
-    "#forge:jam",
+    "delightful:jelly_bottle",
+    "delightful:glow_jelly_bottle",
+    {
+      "id": "#forge:jelly",
+      "required": false
+    },
+    {
+      "id": "#forge:jellies",
+      "required": false
+    },
+    {
+      "id": "#forge:jam",
+      "required": false
+    },
+    {
+      "id": "#forge:jam_bottles",
+      "required": false
+    },
+    {
+      "id": "#fruitsdelight:jelly",
+      "required": false
+    },
     {
       "id": "#wildberries:berry_jams",
       "required": false
     },
     {
       "id": "#vintagedelight:sweet_jam_bottles",
+      "required": false
+    },
+    {
+      "id": "upgrade_aquatic:mulberry_jam_bottle",
       "required": false
     }
   ]

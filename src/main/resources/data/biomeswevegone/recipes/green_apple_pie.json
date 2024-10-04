@@ -29,9 +29,6 @@
           "a": {
             "tag": "forge:fruits/green_apple"
           },
-          "e": {
-            "tag": "forge:eggs/bird"
-          },
           "x": {
             "tag": "forge:sugar"
           }
@@ -39,7 +36,7 @@
         "pattern": [
           "###",
           "aaa",
-          "xOe"
+          "xOx"
         ],
         "result": {
           "item": "biomeswevegone:green_apple_pie"

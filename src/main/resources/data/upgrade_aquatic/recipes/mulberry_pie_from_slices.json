@@ -1,0 +1,43 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:item_exists",
+              "item": "upgrade_aquatic:mulberry_pie"
+            },
+            {
+              "type": "forge:item_exists",
+              "item": "create_central_kitchen:mulberry_pie_slice"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          {
+            "item": "create_central_kitchen:mulberry_pie_slice"
+          },
+          {
+            "item": "create_central_kitchen:mulberry_pie_slice"
+          },
+          {
+            "item": "create_central_kitchen:mulberry_pie_slice"
+          },
+          {
+            "item": "create_central_kitchen:mulberry_pie_slice"
+          }
+        ],
+        "result": {
+          "item": "upgrade_aquatic:mulberry_pie"
+        }
+      }
+    }
+  ]
+}

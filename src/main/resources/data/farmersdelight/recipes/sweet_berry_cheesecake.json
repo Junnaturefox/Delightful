@@ -20,12 +20,15 @@
           },
           "s": {
             "item": "minecraft:sweet_berries"
+          },
+          "e": {
+            "tag": "forge:eggs/bird"
           }
         },
         "pattern": [
           "sss",
           "sss",
-          "mOm"
+          "mOe"
         ],
         "result": {
           "item": "farmersdelight:sweet_berry_cheesecake"
@@ -53,17 +56,17 @@
           "c": {
             "tag": "forge:cheese"
           },
-          "m": {
-            "tag": "forge:milk"
-          },
           "s": {
             "item": "minecraft:sweet_berries"
+          },
+          "e": {
+            "tag": "forge:eggs/bird"
           }
         },
         "pattern": [
           "sss",
           "sss",
-          "cOm"
+          "cOe"
         ],
         "result": {
           "item": "farmersdelight:sweet_berry_cheesecake"

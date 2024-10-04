@@ -29,9 +29,6 @@
           "a": {
             "tag": "forge:fruits/sourceberry"
           },
-          "e": {
-            "tag": "forge:eggs/bird"
-          },
           "m": {
             "item": "ars_nouveau:magebloom"
           },
@@ -42,7 +39,7 @@
         "pattern": [
           "#m#",
           "aaa",
-          "xOe"
+          "xOx"
         ],
         "result": {
           "item": "ars_nouveau:source_berry_pie"

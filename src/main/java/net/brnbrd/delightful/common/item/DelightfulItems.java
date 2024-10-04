@@ -80,7 +80,7 @@ public class DelightfulItems {
 			Mods.AN);
 	public static final RegistryObject<Item> GLOOMGOURD_PIE_SLICE = registerCompatPieSlice(UndergardenCompat.pie + "_slice", UndergardenCompat.GLOOMGOURD_PIE_SLICE.get(),
 			Mods.UG);
-	public static final RegistryObject<Item> BLUEBERRY_PIE_SLICE = registerCompatPieSlice(BWGCompat.blueberry_pie + "_slice", BWGCompat.BLUEBERRY_PIE_SLICE.get(),
+	public static final RegistryObject<Item> BLUEBERRY_PIE_SLICE = registerCompatPieSlice(BWGCompat.blueberry_pie + "_slice", FoodValues.PIE_SLICE,
 			Mods.BWG);
 	public static final RegistryObject<Item> GREEN_APPLE_PIE_SLICE = registerCompatPieSlice(BWGCompat.green_apple_pie + "_slice", BWGCompat.GREEN_APPLE_PIE_SLICE.get(),
 			Mods.BWG);

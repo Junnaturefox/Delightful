@@ -1,0 +1,70 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:item_exists",
+              "item": "upgrade_aquatic:mulberry_pie"
+            },
+            {
+              "type": "forge:item_exists",
+              "item": "create_central_kitchen:mulberry_pie_slice"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "item": "this_item:does_not_exist"
+          }
+        ],
+        "result": {
+          "item": "this_item:does_not_exist"
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:item_exists",
+              "item": "upgrade_aquatic:mulberry_pie"
+            },
+            {
+              "type": "forge:not",
+              "value": {
+                "type": "forge:item_exists",
+                "item": "create_central_kitchen:mulberry_pie_slice"
+              }
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "tag": "forge:fruits/mulberry"
+          },
+          {
+            "tag": "forge:sugar"
+          },
+          {
+            "tag": "forge:eggs/bird"
+          }
+        ],
+        "result": {
+          "item": "upgrade_aquatic:mulberry_pie"
+        }
+      }
+    }
+  ]
+}

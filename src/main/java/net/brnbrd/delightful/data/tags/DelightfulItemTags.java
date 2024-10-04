@@ -90,9 +90,6 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> WATER = forge("water");
 	public static final TagKey<Item> TEA_LEAVES = forge("tea_leaves");
 	public static final TagKey<Item> TEA_LEAVES_GREEN = forge("tea_leaves/green");
-	public static final TagKey<Item> JELLY = forge("jelly");
-	public static final TagKey<Item> JELLIES = forge("jellies");
-	public static final TagKey<Item> JAM = forge("jam");
 	public static final TagKey<Item> JAMS = forge("jams");
 	public static final TagKey<Item> PEANUT_BUTTER = forge("peanut_butter");
 	public static final TagKey<Item> NUT_BUTTER = forge("nut_butter");

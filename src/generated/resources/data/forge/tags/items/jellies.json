@@ -1,9 +1,0 @@
-{
-  "values": [
-    "#forge:jelly",
-    {
-      "id": "#fruitsdelight:jelly",
-      "required": false
-    }
-  ]
-}

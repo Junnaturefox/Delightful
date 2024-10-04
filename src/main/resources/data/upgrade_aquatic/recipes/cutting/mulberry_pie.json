@@ -1,0 +1,39 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:item_exists",
+              "item": "upgrade_aquatic:mulberry_pie"
+            },
+            {
+              "type": "forge:item_exists",
+              "item": "create_central_kitchen:mulberry_pie_slice"
+            }
+          ]
+        }
+      ],
+      "recipe": {
+        "type": "farmersdelight:cutting",
+        "ingredients": [
+          {
+            "item": "upgrade_aquatic:mulberry_pie"
+          }
+        ],
+        "result": [
+          {
+            "count": 4,
+            "item": "create_central_kitchen:mulberry_pie_slice"
+          }
+        ],
+        "tool": {
+          "tag": "forge:tools/knives"
+        }
+      }
+    }
+  ]
+}

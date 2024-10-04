@@ -331,18 +331,17 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addOptional(Util.rl(Mods.VD, "roasted_peanut"));
 		this.tag(DelightfulItemTags.INGOTS_STEEL).addOptional(Util.rl("simplysteel", "steel_ingot"));
 		this.tag(DelightfulItemTags.WATER).add(Items.WATER_BUCKET);
-		this.tag(DelightfulItemTags.JELLY)
-				.add(DelightfulItems.JELLY_BOTTLE.get())
-				.add(DelightfulItems.GLOW_JELLY_BOTTLE.get());
-		this.tag(DelightfulItemTags.JELLIES)
-				.addTag(DelightfulItemTags.JELLY)
-				.addOptionalTag(Util.rl(Mods.FRD, "jelly"));
-		this.tag(DelightfulItemTags.JAM)
-				.addTag(DelightfulItemTags.JELLIES);
 		this.tag(DelightfulItemTags.JAMS)
-				.addTag(DelightfulItemTags.JAM)
+				.add(DelightfulItems.JELLY_BOTTLE.get())
+				.add(DelightfulItems.GLOW_JELLY_BOTTLE.get())
+				.addOptionalTag(Util.rl("forge", "jelly"))
+				.addOptionalTag(Util.rl("forge", "jellies"))
+				.addOptionalTag(Util.rl("forge", "jam"))
+				.addOptionalTag(Util.rl("forge", "jam_bottles"))
+				.addOptionalTag(Util.rl(Mods.FRD, "jelly"))
 				.addOptionalTag(Util.rl(Mods.WB, "berry_jams"))
-				.addOptionalTag(Util.rl(Mods.VD, "sweet_jam_bottles"));
+				.addOptionalTag(Util.rl(Mods.VD, "sweet_jam_bottles"))
+				.addOptional(Util.rl("upgrade_aquatic", "mulberry_jam_bottle"));
 		this.tag(DelightfulItemTags.PEANUT_BUTTER)
 				.addOptional(Util.rl("thermal", "peanut_butter"))
 				.addOptional(Util.rl("croptopia", "peanut_butter"));
