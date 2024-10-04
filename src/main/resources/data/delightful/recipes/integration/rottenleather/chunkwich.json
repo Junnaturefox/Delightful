@@ -34,7 +34,7 @@
             "item": "rottenleather:sweetened_chunk"
           },
           {
-            "tag": "forge:sugar"
+            "tag": "forge:vegetables/onion"
           }
         ],
         "result": {
@@ -72,7 +72,7 @@
             "item": "rottenleather:sweetened_chunk"
           },
           {
-            "tag": "forge:sugar"
+            "tag": "forge:vegetables/onion"
           }
         ],
         "result": {
