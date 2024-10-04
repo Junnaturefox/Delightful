@@ -8,38 +8,38 @@
           "values": [
             {
               "type": "delightful:enabled",
-              "value": "nut_butter_and_jelly_sandwich"
+              "value": "jam_jar"
             },
             {
               "type": "forge:not",
               "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:nuts"
+                "type": "forge:mod_loaded",
+                "modid": "fruitsdelight"
               }
-            },
-            {
-              "type": "forge:tag_empty",
-              "tag": "forge:bread_slices"
             }
           ]
         }
       ],
       "recipe": {
-        "type": "minecraft:crafting_shapeless",
-        "category": "misc",
+        "type": "farmersdelight:cooking",
+        "cookingtime": 200,
+        "experience": 0.35,
         "ingredients": [
           {
-            "tag": "forge:bread"
+            "tag": "forge:fruits/sweet"
           },
           {
-            "tag": "forge:nut_butter"
+            "tag": "forge:fruits/sweet"
           },
           {
-            "tag": "forge:jams"
+            "tag": "forge:sugar"
+          },
+          {
+            "tag": "forge:sugar"
           }
         ],
         "result": {
-          "item": "delightful:nut_butter_and_jelly_sandwich"
+          "item": "delightful:jam_jar"
         }
       }
     }

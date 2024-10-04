@@ -8,7 +8,7 @@
           "values": [
             {
               "type": "delightful:enabled",
-              "value": "nut_butter_and_jelly_sandwich"
+              "value": "nut_butter_and_jam_sandwich"
             },
             {
               "type": "forge:not",
@@ -45,7 +45,7 @@
           }
         ],
         "result": {
-          "item": "delightful:nut_butter_and_jelly_sandwich"
+          "item": "delightful:nut_butter_and_jam_sandwich"
         }
       }
     }

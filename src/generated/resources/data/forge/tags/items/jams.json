@@ -1,25 +1,13 @@
 {
   "values": [
-    "delightful:jelly_bottle",
-    "delightful:glow_jelly_bottle",
-    {
-      "id": "#forge:jelly",
-      "required": false
-    },
-    {
-      "id": "#forge:jellies",
-      "required": false
-    },
+    "delightful:jam_jar",
+    "delightful:glow_jam_jar",
     {
       "id": "#forge:jam",
       "required": false
     },
     {
       "id": "#forge:jam_bottles",
-      "required": false
-    },
-    {
-      "id": "#fruitsdelight:jelly",
       "required": false
     },
     {

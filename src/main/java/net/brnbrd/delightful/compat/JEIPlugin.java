@@ -53,13 +53,13 @@ public class JEIPlugin implements IModPlugin {
 		this.hide(hidden, Mods.MOD, "toast", Mods.SAS);
 		this.hide(hidden, "cratedelight", "berry_crate", "berry_good");
 		this.hide(hidden, "cratedelight", "glowberry_crate", "berry_good");
-		this.hide(hidden, "cratedelight", "cod_crate", "crabbersdelight");
-		this.hide(hidden, "cratedelight", "salmon_crate", "crabbersdelight");
-		this.hide(hidden, "cratedelight", "egg_crate", "incubation");
-		this.hide(hidden, "cratedelight", "sugar_bag", "supplementaries");
-		this.hide(hidden, "cratedelight", "apple_crate", "fruitsdelight");
+		this.hide(hidden, "cratedelight", "cod_crate", Mods.CRAB);
+		this.hide(hidden, "cratedelight", "salmon_crate", Mods.CRAB);
+		this.hide(hidden, "cratedelight", "egg_crate", Mods.IN);
+		this.hide(hidden, "cratedelight", "sugar_bag", Mods.SUP);
+		this.hide(hidden, "cratedelight", "apple_crate", Mods.FRD);
 
-		if (hidden.size() > 0) {
+		if (!hidden.isEmpty()) {
 			registration.getIngredientManager().removeIngredientsAtRuntime(VanillaTypes.ITEM_STACK, hidden);
 		}
 

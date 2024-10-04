@@ -1,5 +1,6 @@
 package net.brnbrd.delightful.common.events;
 
+import net.brnbrd.delightful.Delightful;
 import net.brnbrd.delightful.Util;
 import net.brnbrd.delightful.common.block.DelightfulBlocks;
 import net.brnbrd.delightful.common.block.SlicedGourdBlock;
@@ -25,11 +26,28 @@ import net.minecraftforge.event.village.WandererTradesEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.MissingMappingsEvent;
 import vectorwing.farmersdelight.common.tag.ForgeTags;
 import java.util.List;
 import java.util.Objects;
 
 public class ForgeEvents {
+
+	@SubscribeEvent
+	public static void onMissingMappings(MissingMappingsEvent e) {
+		if (e.getRegistry() == ForgeRegistries.ITEMS) {
+			for (var map : e.getMappings(ForgeRegistries.ITEMS.getRegistryKey(), Delightful.MODID)) {
+				var remap = Util.rl(map.getKey().getNamespace(), map.getKey().getPath()
+						.replace("jelly_bottle", "jam_jar")
+						.replace("jelly", "jam"));
+				if (ForgeRegistries.ITEMS.containsKey(remap)) {
+					map.remap(ForgeRegistries.ITEMS.getValue(remap));
+				} else {
+					map.warn();
+				}
+			}
+		}
+	}
 
 	@SubscribeEvent
 	void onWanderingTrader(WandererTradesEvent e) {

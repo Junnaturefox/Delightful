@@ -11,14 +11,14 @@
     "s": {
       "tag": "forge:sugar"
     },
-    "w": {
-      "tag": "forge:grain/wheat"
+    "d": {
+      "tag": "forge:dough"
     }
   },
   "pattern": [
     "mmm",
     "ses",
-    "www"
+    " d "
   ],
   "result": {
     "item": "minecraft:cake"

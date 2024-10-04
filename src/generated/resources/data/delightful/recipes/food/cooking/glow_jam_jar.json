@@ -8,7 +8,7 @@
           "values": [
             {
               "type": "delightful:enabled",
-              "value": "glow_jelly_bottle"
+              "value": "glow_jam_jar"
             },
             {
               "type": "forge:not",
@@ -42,7 +42,7 @@
           }
         ],
         "result": {
-          "item": "delightful:glow_jelly_bottle"
+          "item": "delightful:glow_jam_jar"
         }
       }
     }

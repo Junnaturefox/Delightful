@@ -3,6 +3,10 @@
     {
       "id": "deeperdarker:sculk_bone",
       "required": false
+    },
+    {
+      "id": "alexscaves:heavy_bone",
+      "required": false
     }
   ]
 }

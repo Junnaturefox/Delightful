@@ -4,11 +4,13 @@
       "advancement": {
         "parent": "minecraft:recipes/root",
         "criteria": {
-          "has_glow_berries": {
+          "has_nut_butter": {
             "conditions": {
               "items": [
                 {
-                  "tag": "forge:fruits/glow_berries"
+                  "items": [
+                    "delightful:nut_butter_bottle"
+                  ]
                 }
               ]
             },
@@ -16,23 +18,23 @@
           },
           "has_the_recipe": {
             "conditions": {
-              "recipe": "delightful:food/cooking/glow_jelly_bottle"
+              "recipe": "delightful:food/nut_butter_and_jam_sandwich"
             },
             "trigger": "minecraft:recipe_unlocked"
           }
         },
         "requirements": [
           [
-            "has_glow_berries",
+            "has_nut_butter",
             "has_the_recipe"
           ]
         ],
         "rewards": {
           "recipes": [
-            "delightful:food/cooking/glow_jelly_bottle"
+            "delightful:food/nut_butter_and_jam_sandwich"
           ]
         },
-        "sends_telemetry_event": true
+        "sends_telemetry_event": false
       },
       "conditions": [
         {
@@ -40,14 +42,18 @@
           "values": [
             {
               "type": "delightful:enabled",
-              "value": "glow_jelly_bottle"
+              "value": "nut_butter_and_jam_sandwich"
             },
             {
               "type": "forge:not",
               "value": {
-                "type": "forge:mod_loaded",
-                "modid": "fruitsdelight"
+                "type": "forge:tag_empty",
+                "tag": "forge:nuts"
               }
+            },
+            {
+              "type": "forge:tag_empty",
+              "tag": "forge:bread_slices"
             }
           ]
         }

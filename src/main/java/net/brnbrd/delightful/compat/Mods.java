@@ -26,6 +26,7 @@ public class Mods {
 	public static final String CCK = "create_central_kitchen";
 	public static final String CD = "culturaldelights";
 	public static final String CR = "collectorsreap";
+	public static final String CRAB = "crabbersdelight";
 	public static final String DD = "deeperdarker";
 	public static final String ECO = "ecologics";
 	public static final String EP = "phantasm";

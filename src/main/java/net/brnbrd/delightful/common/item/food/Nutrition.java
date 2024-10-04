@@ -20,11 +20,11 @@ public class Nutrition {
 	public static final FoodProperties CRAB_RANGOON = (new FoodProperties.Builder()).nutrition(9).saturationMod(0.4F).build();
 	public static final FoodProperties CHUNKWICH = (new FoodProperties.Builder()).nutrition(11).saturationMod(0.4F)
 			.effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), 600, 0), 1.0F).build();
-	public static final FoodProperties JELLY_BOTTLE = (new FoodProperties.Builder()).nutrition(5).saturationMod(0.3F).build();
-	public static final FoodProperties GLOW_JELLY_BOTTLE = (new FoodProperties.Builder()).nutrition(5).saturationMod(0.3F)
+	public static final FoodProperties JAM_JAR = (new FoodProperties.Builder()).nutrition(5).saturationMod(0.3F).build();
+	public static final FoodProperties GLOW_JAM_JAR = (new FoodProperties.Builder()).nutrition(5).saturationMod(0.3F)
 			.effect(() -> new MobEffectInstance(MobEffects.GLOWING, 900, 0), 1.0F).build();
 	public static final FoodProperties NUT_BUTTER_BOTTLE = (new FoodProperties.Builder()).nutrition(5).saturationMod(0.3F).build();
-	public static final FoodProperties NUT_BUTTER_AND_JELLY_SANDWICH = (new FoodProperties.Builder()).nutrition(11).saturationMod(0.65F)
+	public static final FoodProperties NUT_BUTTER_AND_JAM_SANDWICH = (new FoodProperties.Builder()).nutrition(11).saturationMod(0.65F)
 			.effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), 3600, 0), 1.0F).build();
 	public static final FoodProperties HONEY_GLAZED_WALNUT = (new FoodProperties.Builder()).nutrition(6).saturationMod(1.0F).build();
 	public static final FoodProperties ACORN = (new FoodProperties.Builder()).nutrition(2).saturationMod(0.1F)

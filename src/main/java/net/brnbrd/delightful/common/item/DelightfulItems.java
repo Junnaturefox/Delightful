@@ -108,10 +108,10 @@ public class DelightfulItems {
 	public static final RegistryObject<Item> ENDER_NECTAR = registerItem("ender_nectar", () -> new EnderNectarItem((new Item.Properties()).food(Nutrition.ENDER_NECTAR).craftRemainder(Items.GLASS_BOTTLE).stacksTo(16)));
 	public static final RegistryObject<Item> MATCHA_LATTE = registerItem("matcha_latte", () -> new DrinkItem((new Item.Properties()).food(Nutrition.MATCHA_LATTE).craftRemainder(Items.GLASS_BOTTLE).stacksTo(16), 2.0F, true, true));
 	public static final RegistryObject<Item> BERRY_MATCHA_LATTE = registerItem("berry_matcha_latte", () -> new DrinkItem((new Item.Properties()).food(Nutrition.BERRY_MATCHA_LATTE).craftRemainder(Items.GLASS_BOTTLE).stacksTo(16), 2.0F, true, true));
-	public static final RegistryObject<Item> JELLY_BOTTLE = registerItem("jelly_bottle", () -> new JamJarItem((new Item.Properties()).food(Nutrition.JELLY_BOTTLE).craftRemainder(Items.GLASS_BOTTLE), false, false));
-	public static final RegistryObject<Item> GLOW_JELLY_BOTTLE = registerItem("glow_jelly_bottle", () -> new JamJarItem((new Item.Properties()).food(Nutrition.GLOW_JELLY_BOTTLE).craftRemainder(Items.GLASS_BOTTLE), true, false));
+	public static final RegistryObject<Item> JAM_JAR = registerItem("jam_jar", () -> new JamJarItem((new Item.Properties()).food(Nutrition.JAM_JAR).craftRemainder(Items.GLASS_BOTTLE), false, false));
+	public static final RegistryObject<Item> GLOW_JAM_JAR = registerItem("glow_jam_jar", () -> new JamJarItem((new Item.Properties()).food(Nutrition.GLOW_JAM_JAR).craftRemainder(Items.GLASS_BOTTLE), true, false));
 	public static final RegistryObject<Item> NUT_BUTTER_BOTTLE = registerItem("nut_butter_bottle", () -> new NutButterBottleItem(((new Item.Properties()).food(Nutrition.NUT_BUTTER_BOTTLE).craftRemainder(Items.GLASS_BOTTLE))));
-	public static final RegistryObject<Item> NUT_BUTTER_AND_JELLY_SANDWICH = registerConsumable("nut_butter_and_jelly_sandwich", Nutrition.NUT_BUTTER_AND_JELLY_SANDWICH, null, true, false);
+	public static final RegistryObject<Item> NUT_BUTTER_AND_JAM_SANDWICH = registerConsumable("nut_butter_and_jam_sandwich", Nutrition.NUT_BUTTER_AND_JAM_SANDWICH, null, true, false);
 	public static final RegistryObject<Item> CHEESEBURGER = registerItem("cheeseburger", () -> new CheeseburgerItem((new Item.Properties()).food(Nutrition.CHEESEBURGER)));
 	public static final RegistryObject<Item> DELUXE_CHEESEBURGER = registerConsumable("deluxe_cheeseburger", Nutrition.DELUXE_CHEESEBURGER, null, true, false);
 	public static final RegistryObject<Item> CHUNKWICH = registerCompatFood("chunkwich", Nutrition.CHUNKWICH,

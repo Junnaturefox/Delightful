@@ -4,11 +4,11 @@
       "advancement": {
         "parent": "minecraft:recipes/root",
         "criteria": {
-          "has_sweet_fruit": {
+          "has_glow_berries": {
             "conditions": {
               "items": [
                 {
-                  "tag": "forge:fruits/sweet"
+                  "tag": "forge:fruits/glow_berries"
                 }
               ]
             },
@@ -16,20 +16,20 @@
           },
           "has_the_recipe": {
             "conditions": {
-              "recipe": "delightful:food/cooking/jelly_bottle"
+              "recipe": "delightful:food/cooking/glow_jam_jar"
             },
             "trigger": "minecraft:recipe_unlocked"
           }
         },
         "requirements": [
           [
-            "has_sweet_fruit",
+            "has_glow_berries",
             "has_the_recipe"
           ]
         ],
         "rewards": {
           "recipes": [
-            "delightful:food/cooking/jelly_bottle"
+            "delightful:food/cooking/glow_jam_jar"
           ]
         },
         "sends_telemetry_event": true
@@ -40,7 +40,7 @@
           "values": [
             {
               "type": "delightful:enabled",
-              "value": "jelly_bottle"
+              "value": "glow_jam_jar"
             },
             {
               "type": "forge:not",

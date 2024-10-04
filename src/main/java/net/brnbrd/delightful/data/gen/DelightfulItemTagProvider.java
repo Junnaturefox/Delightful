@@ -317,28 +317,24 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		this.tag(DelightfulItemTags.NUTS_PEANUT)
 				.addOptionalTag(Util.rl(Util.LOADER, "peanut"))
 				.addOptional(Util.rl("sprout", "peanut"));
-		this.tag(DelightfulItemTags.NUTS_CHESTNUT)
-				.addOptional(Util.rl("windswept", "chestnuts"));
 		this.tag(DelightfulItemTags.NUTS_ACORN)
 				.add(DelightfulItems.ACORN.get());
 		this.tag(DelightfulItemTags.NUTS)
 				.addTag(DelightfulItemTags.NUTS_ACORN)
 				.addTag(DelightfulItemTags.NUTS_WALNUT)
 				.addTag(DelightfulItemTags.NUTS_PEANUT)
-				.addTag(DelightfulItemTags.NUTS_CHESTNUT);
+				.addOptional(Util.rl("windswept", "chestnuts"))
+				.addOptional(Util.rl("alexscaves", "pine_nuts"));
 		this.tag(DelightfulItemTags.COOKED_NUTS)
 				.add(DelightfulItems.ROASTED_ACORN.get())
 				.addOptional(Util.rl(Mods.VD, "roasted_peanut"));
 		this.tag(DelightfulItemTags.INGOTS_STEEL).addOptional(Util.rl("simplysteel", "steel_ingot"));
 		this.tag(DelightfulItemTags.WATER).add(Items.WATER_BUCKET);
 		this.tag(DelightfulItemTags.JAMS)
-				.add(DelightfulItems.JELLY_BOTTLE.get())
-				.add(DelightfulItems.GLOW_JELLY_BOTTLE.get())
-				.addOptionalTag(Util.rl("forge", "jelly"))
-				.addOptionalTag(Util.rl("forge", "jellies"))
-				.addOptionalTag(Util.rl("forge", "jam"))
-				.addOptionalTag(Util.rl("forge", "jam_bottles"))
-				.addOptionalTag(Util.rl(Mods.FRD, "jelly"))
+				.add(DelightfulItems.JAM_JAR.get())
+				.add(DelightfulItems.GLOW_JAM_JAR.get())
+				.addOptionalTag(Util.rl(Util.LOADER, "jam"))
+				.addOptionalTag(Util.rl(Util.LOADER, "jam_bottles"))
 				.addOptionalTag(Util.rl(Mods.WB, "berry_jams"))
 				.addOptionalTag(Util.rl(Mods.VD, "sweet_jam_bottles"))
 				.addOptional(Util.rl("upgrade_aquatic", "mulberry_jam_bottle"));
@@ -351,13 +347,13 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addOptional(Util.rl(Mods.VD, "nut_mash_bottle"));
 		this.tag(DelightfulItemTags.SUGAR).add(Items.SUGAR);
 		this.tag(DelightfulItemTags.RAW_CRAB)
-				.addOptional(Util.rl("crabbersdelight", "crab"))
+				.addOptional(Util.rl(Mods.CRAB, "crab"))
 				.addOptionalTag(Util.rl("finsandtails", "spindly_gem_crabs"));
 		this.tag(DelightfulItemTags.COOKED_CRAB)
-				.addOptional(Util.rl("crabbersdelight", "cooked_crab"));
+				.addOptional(Util.rl(Mods.CRAB, "cooked_crab"));
 		this.tag(DelightfulItemTags.CRAB_LEGS)
 				.addOptional(Util.rl(Mods.Q, "cooked_crab_leg"))
-				.addOptional(Util.rl("crabbersdelight", "crab_legs"))
+				.addOptional(Util.rl(Mods.CRAB, "crab_legs"))
 				.addOptional(Util.rl("untameddelight", "king_crab_legs"));
 		this.tag(DelightfulItemTags.CRAB_MEAT)
 				.addTag(DelightfulItemTags.CRAB_LEGS)
@@ -367,7 +363,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addOptional(Util.rl("finsandtails", "cooked_bull_crab_claw"));
 		this.tag(DelightfulItemTags.CRAB_CLAW)
 				.addTag(DelightfulItemTags.CRAB_CLAW_COOKED)
-				.addOptional(Util.rl("crabbersdelight", "crab_claw"))
+				.addOptional(Util.rl(Mods.CRAB, "crab_claw"))
 				.addOptional(Util.rl(Mods.ECO, "crab_claw"))
 				.addOptional(Util.rl("finsandtails", "red_bull_crab_claw"))
 				.addOptional(Util.rl("finsandtails", "white_bull_crab_claw"));
@@ -482,7 +478,8 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addOptional(Util.rl(Mods.FRD, "lemon_seeds"))
 				.addOptional(Util.rl(Mods.FRD, "hamimelon_seeds"));
 		this.tag(DelightfulItemTags.BONES)
-				.addOptional(Util.rl(Mods.DD, "sculk_bone"));
+				.addOptional(Util.rl(Mods.DD, "sculk_bone"))
+				.addOptional(Util.rl("alexscaves", "heavy_bone"));
 		this.tag(DelightfulItemTags.SYRUP)
 				.addOptionalTag(Util.rl(Mods.SUP, "pancake_syrup"))
 				.addOptional(Util.rl("autumnity", "syrup_bottle"));

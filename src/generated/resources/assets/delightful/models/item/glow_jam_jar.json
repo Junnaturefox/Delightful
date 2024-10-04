@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "delightful:item/jelly_bottle"
+    "layer0": "delightful:item/glow_jam_jar"
   }
 }

@@ -3,6 +3,13 @@
     "#forge:nuts/acorn",
     "#forge:nuts/walnut",
     "#forge:nuts/peanut",
-    "#forge:nuts/chestnut"
+    {
+      "id": "windswept:chestnuts",
+      "required": false
+    },
+    {
+      "id": "alexscaves:pine_nuts",
+      "required": false
+    }
   ]
 }

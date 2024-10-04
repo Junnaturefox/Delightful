@@ -4,13 +4,11 @@
       "advancement": {
         "parent": "minecraft:recipes/root",
         "criteria": {
-          "has_nut_butter": {
+          "has_sweet_fruit": {
             "conditions": {
               "items": [
                 {
-                  "items": [
-                    "delightful:nut_butter_bottle"
-                  ]
+                  "tag": "forge:fruits/sweet"
                 }
               ]
             },
@@ -18,23 +16,23 @@
           },
           "has_the_recipe": {
             "conditions": {
-              "recipe": "delightful:food/nut_butter_and_jelly_sandwich"
+              "recipe": "delightful:food/cooking/jam_jar"
             },
             "trigger": "minecraft:recipe_unlocked"
           }
         },
         "requirements": [
           [
-            "has_nut_butter",
+            "has_sweet_fruit",
             "has_the_recipe"
           ]
         ],
         "rewards": {
           "recipes": [
-            "delightful:food/nut_butter_and_jelly_sandwich"
+            "delightful:food/cooking/jam_jar"
           ]
         },
-        "sends_telemetry_event": false
+        "sends_telemetry_event": true
       },
       "conditions": [
         {
@@ -42,18 +40,14 @@
           "values": [
             {
               "type": "delightful:enabled",
-              "value": "nut_butter_and_jelly_sandwich"
+              "value": "jam_jar"
             },
             {
               "type": "forge:not",
               "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:nuts"
+                "type": "forge:mod_loaded",
+                "modid": "fruitsdelight"
               }
-            },
-            {
-              "type": "forge:tag_empty",
-              "tag": "forge:bread_slices"
             }
           ]
         }

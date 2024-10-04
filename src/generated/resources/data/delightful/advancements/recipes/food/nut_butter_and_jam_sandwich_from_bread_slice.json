@@ -18,7 +18,7 @@
           },
           "has_the_recipe": {
             "conditions": {
-              "recipe": "delightful:food/nut_butter_and_jelly_sandwich_from_bread_slice"
+              "recipe": "delightful:food/nut_butter_and_jam_sandwich_from_bread_slice"
             },
             "trigger": "minecraft:recipe_unlocked"
           }
@@ -31,7 +31,7 @@
         ],
         "rewards": {
           "recipes": [
-            "delightful:food/nut_butter_and_jelly_sandwich_from_bread_slice"
+            "delightful:food/nut_butter_and_jam_sandwich_from_bread_slice"
           ]
         },
         "sends_telemetry_event": false
@@ -42,7 +42,7 @@
           "values": [
             {
               "type": "delightful:enabled",
-              "value": "nut_butter_and_jelly_sandwich"
+              "value": "nut_butter_and_jam_sandwich"
             },
             {
               "type": "forge:not",
