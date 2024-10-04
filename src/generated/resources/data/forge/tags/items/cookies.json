@@ -4,6 +4,10 @@
     "farmersdelight:honey_cookie",
     "farmersdelight:sweet_berry_cookie",
     {
+      "id": "farmersrespite:green_tea_cookie",
+      "required": false
+    },
+    {
       "id": "snowyspirit:gingerbread_cookie",
       "required": false
     },

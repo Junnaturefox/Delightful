@@ -1,0 +1,15 @@
+{
+  "values": [
+    "#forge:berries",
+    "farmersdelight:pumpkin_slice",
+    "delightful:cantaloupe_slice",
+    {
+      "id": "#forge:fruits/hamimelon",
+      "required": false
+    },
+    {
+      "id": "undergardendelight:gloomgourd_slice",
+      "required": false
+    }
+  ]
+}

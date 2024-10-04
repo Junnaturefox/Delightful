@@ -96,16 +96,6 @@ public class Mods {
 		return false;
 	}
 
-	public static Supplier<MobEffect> getManaRegen() {
-		if (loaded(AN)) {
-			Optional<Holder<MobEffect>> manaRegen = ForgeRegistries.MOB_EFFECTS.getHolder(Util.rl(Mods.AN, "mana_regen"));
-			if (manaRegen.isPresent()) {
-				return manaRegen.get();
-			}
-		}
-		return () -> MobEffects.ABSORPTION;
-	}
-
 	public static Supplier<MobEffect> getGreenTeaEffect() {
 		if (loaded(RF)) {
 			Optional<Holder<MobEffect>> vitality = ForgeRegistries.MOB_EFFECTS.getHolder(Util.rl(Mods.RF, "vitality"));
@@ -134,15 +124,5 @@ public class Mods {
 			}
 		}
 		return () -> MobEffects.DIG_SPEED;
-	}
-
-	public static Supplier<MobEffect> getVirulentResistance() {
-		if (loaded(UG)) {
-			Optional<Holder<MobEffect>> virulent = ForgeRegistries.MOB_EFFECTS.getHolder(Util.rl(Mods.UG, "virulent_resistance"));
-			if (virulent.isPresent()) {
-				return virulent.get();
-			}
-		}
-		return () -> MobEffects.FIRE_RESISTANCE;
 	}
 }

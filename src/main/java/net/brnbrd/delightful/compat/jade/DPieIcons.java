@@ -24,8 +24,7 @@ public enum DPieIcons implements IBlockComponentProvider {
 	}
 
 	@Override
-	public void appendTooltip(ITooltip iTooltip, BlockAccessor blockAccessor, IPluginConfig iPluginConfig) {
-	}
+	public void appendTooltip(ITooltip iTooltip, BlockAccessor blockAccessor, IPluginConfig iPluginConfig) {}
 
 	@Override
 	public ResourceLocation getUid() {

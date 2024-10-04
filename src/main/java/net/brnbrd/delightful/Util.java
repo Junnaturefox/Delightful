@@ -2,6 +2,7 @@ package net.brnbrd.delightful;
 
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import net.brnbrd.delightful.common.DelightfulConfig;
+import net.brnbrd.delightful.compat.Mods;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.nbt.CompoundTag;
@@ -9,6 +10,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.Containers;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -21,6 +24,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.items.ItemHandlerHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import java.util.Objects;
 import java.util.function.Supplier;
@@ -51,16 +55,23 @@ public class Util {
 	}
 
 	@Nullable
+	public static Item item(ResourceLocation rl) {
+		return ForgeRegistries.ITEMS.getValue(rl);
+	}
+
+	@Nullable
 	public static Item item(String modid, String path) {
 		return item(rl(modid, path));
 	}
 
-	@Nullable
-	public static Item item(ResourceLocation rl) {
-		if (ForgeRegistries.ITEMS.containsKey(rl)) {
-			return ForgeRegistries.ITEMS.getValue(rl);
-		}
-		return null;
+	@NotNull
+	public static Item item(ResourceLocation rl, @NotNull Item backup) {
+		return ForgeRegistries.ITEMS.containsKey(rl) ? Objects.requireNonNull(item(rl)) : backup;
+	}
+
+	@NotNull
+	public static Item item(ResourceLocation rl, @NotNull Supplier<Item> backup) {
+		return item(rl, backup.get());
 	}
 
 	@Nullable
@@ -71,6 +82,15 @@ public class Util {
 	@Nullable
 	public static Block block(ResourceLocation rl) {
 		return ForgeRegistries.BLOCKS.getValue(rl);
+	}
+
+	@NotNull
+	public static MobEffect effect(String modid, String name, MobEffect backup) {
+		ResourceLocation effLocation = Util.rl(modid, name);
+		if (Mods.loaded(modid) && ForgeRegistries.MOB_EFFECTS.containsKey(effLocation)) {
+			return Objects.requireNonNull(ForgeRegistries.MOB_EFFECTS.getValue(effLocation));
+		}
+		return backup;
 	}
 
 	public static ItemStack gs(RegistryObject<Item> r, int count) {

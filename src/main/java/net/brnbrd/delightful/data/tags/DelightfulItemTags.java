@@ -228,19 +228,11 @@ public class DelightfulItemTags {
 
 	// Aether Redux
 	public static final TagKey<Item> INGOTS_VERIDIUM = DelightfulItems.ingot("veridium");
-	public static final TagKey<Item> VERIDIUM_ADVANCEMENT_INFUSABLE = Util.it(Mods.AER, "veridium_advancement_infusable");
-	public static final TagKey<Item> INFUSED_VERIDIUM_ITEMS = Util.it(Mods.AER, "infused_veridium_items");
 
 	// Deep Aether
 	public static final TagKey<Item> GEMS_SKYJADE = DelightfulItems.gem("skyjade");
 	public static final TagKey<Item> INGOTS_STRATUS = DelightfulItems.ingot("stratus");
 	public final static TagKey<Item> STRATUS_UPGRADE = Util.it("deep_aether", "stratus_smithing_template");
-
-	// Aether: Lost Content Addon
-	public static final TagKey<Item> PHOENIX_TOOLS = Util.it("lost_aether_content", "phoenix_tools");
-
-	// Supplementaries
-	public static final TagKey<Item> SUPP_COOKIES = Util.it(Mods.SUP, "cookies");
 
 	public static TagKey<Item> forge(String name) {
 		return Util.it(Util.LOADER, name);

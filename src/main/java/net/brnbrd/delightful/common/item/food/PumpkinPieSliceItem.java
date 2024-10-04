@@ -4,7 +4,7 @@ import net.brnbrd.delightful.common.item.DItem;
 
 public class PumpkinPieSliceItem extends DItem {
 	public PumpkinPieSliceItem(Properties prop) {
-		super(prop);
+		super(prop, false);
 	}
 
 	@Override

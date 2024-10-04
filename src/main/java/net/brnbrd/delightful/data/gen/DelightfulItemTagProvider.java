@@ -44,8 +44,8 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		// Delightful
 		this.tag(DelightfulItemTags.COMPAT_PIES)
 				.add(Items.PUMPKIN_PIE)
-				.addOptional(Util.rl(Mods.AN, ArsNouveauCompat.pie))
-				.addOptional(Util.rl(Mods.UG, UndergardenCompat.pie))
+				.addOptional(Util.rl(Mods.AN, "source_berry_pie"))
+				.addOptional(Util.rl(Mods.UG, "gloomgourd_pie"))
 				.addOptional(Util.rl(Mods.BWG, BWGCompat.blueberry_pie))
 				.addOptional(Util.rl(Mods.BWG, BWGCompat.green_apple_pie));
 		this.tag(DelightfulItemTags.FIRE_KNIVES)
@@ -487,6 +487,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.add(Items.COOKIE)
 				.add(ModItems.HONEY_COOKIE.get())
 				.add(ModItems.SWEET_BERRY_COOKIE.get())
+				.addOptional(Util.rl(Mods.FR, "green_tea_cookie"))
 				.addOptional(Util.rl("snowyspirit", "gingerbread_cookie"))
 				.addOptional(Util.rl(Mods.AD, "mulberry_cookie"))
 				.addOptional(Util.rl(Mods.AD, "maple_cookie"))
@@ -500,7 +501,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addOptional(Util.rl(Mods.FRD, "cranberry_cookie"))
 				.addOptional(Util.rl(Mods.FRD, "bayberry_cookie"))
 				.addOptional(Util.rl("vampiresdelight", "orchid_cookie"));
-		this.tag(DelightfulItemTags.SUPP_COOKIES)
+		this.tag(Util.it(Mods.SUP, "cookies"))
 				.addTag(DelightfulItemTags.COOKIES)
 				.addTag(DelightfulItemTags.BREAD_SLICES);
 		this.tag(DelightfulItemTags.ROPES)
@@ -637,9 +638,9 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		// Aether Redux
 		this.tag(DelightfulItemTags.INGOTS_VERIDIUM)
 				.addOptional(Util.rl(Mods.AER, "veridium_ingot"));
-		this.tag(DelightfulItemTags.VERIDIUM_ADVANCEMENT_INFUSABLE)
+		this.tag(Util.it(Mods.AER, "veridium_advancement_infusable"))
 				.add(Knives.VERIDIUM.get());
-		this.tag(DelightfulItemTags.INFUSED_VERIDIUM_ITEMS)
+		this.tag(Util.it(Mods.AER, "infused_veridium_items"))
 				.add(Knives.INFUSED_VERIDIUM.get());
 
 		// Deep Aether
@@ -653,7 +654,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		this.addSelf(Util.it("ancient_aether", "valkyrum"));
 
 		// Aether: Lost Content Addon
-		this.tag(DelightfulItemTags.PHOENIX_TOOLS).add(Knives.PHOENIX.get());
+		this.tag(Util.it("lost_aether_content", "phoenix_tools")).add(Knives.PHOENIX.get());
 
 		// AE2
 		this.addSelf(DelightfulItemTags.FLUIX_BLOCK);
@@ -672,7 +673,17 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.add(DelightfulItems.SALMONBERRY_ICE_CREAM.get());
 
 		// Ars Nouveau
-		this.tag(Util.it(Mods.AN, "magic_food")).add(DelightfulItems.SOURCE_BERRY_PIE_SLICE.get());
+		this.tag(Util.it(Mods.AN, "magic_food"))
+				.add(DelightfulItems.SOURCE_BERRY_PIE_SLICE.get());
+
+		// Sully's Mod
+		this.tag(Util.it("sullysmod", "tortoise_food"))
+				.addTag(ForgeTags.BERRIES)
+				.add(ModItems.PUMPKIN_SLICE.get())
+				.add(DelightfulItems.CANTALOUPE_SLICE.get())
+				.addOptionalTag(Util.rl(Util.LOADER, "fruits/hamimelon"))
+				.addOptional(Util.rl(Mods.UGD, "gloomgourd_slice"));
+
 	}
 
 	/**

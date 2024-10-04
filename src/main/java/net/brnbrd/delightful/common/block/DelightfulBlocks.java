@@ -8,9 +8,7 @@ import net.brnbrd.delightful.compat.UndergardenCompat;
 import net.minecraft.core.cauldron.CauldronInteraction;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
@@ -23,6 +21,7 @@ import vectorwing.farmersdelight.common.block.FeastBlock;
 import vectorwing.farmersdelight.common.block.PieBlock;
 import vectorwing.farmersdelight.common.registry.ModBlocks;
 import vectorwing.farmersdelight.common.registry.ModItems;
+import java.util.Objects;
 import java.util.function.Supplier;
 
 public class DelightfulBlocks {
@@ -58,10 +57,10 @@ public class DelightfulBlocks {
 	);
 	public static final RegistryObject<Block> SLICED_GLOOMGOURD = BLOCKS.register("sliced_gloomgourd",
 			Mods.loaded(Mods.UG) ? () -> new SlicedGourdBlock(
-					Block.Properties.copy(UndergardenCompat.gloomgourd().get()),
-					UndergardenCompat.gloomgourd_slice(),
-					UndergardenCompat.gloomgourd_stem(),
-					UndergardenCompat.gloomgourd_attached_stem()
+					Block.Properties.copy(Objects.requireNonNull(Util.block(Mods.UG, "gloomgourd"))),
+					() -> Util.item(Util.rl(Mods.UGD, "gloomgourd_slice"), ModItems.PUMPKIN_SLICE),
+					() -> Util.block(Mods.UG, "gloomgourd_stem"),
+					() -> Util.block(Mods.UG, "gloomgourd_stem_attached")
 			) : () -> new SlicedGourdBlock(
 					Block.Properties.copy(Blocks.PUMPKIN),
 					ModItems.PUMPKIN_SLICE,
