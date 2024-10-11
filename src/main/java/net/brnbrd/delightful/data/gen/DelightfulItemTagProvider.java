@@ -10,10 +10,8 @@ import net.brnbrd.delightful.common.item.knife.compat.additionaladditions.RoseGo
 import net.brnbrd.delightful.common.item.knife.compat.deeperdarker.WardenKnifeItem;
 import net.brnbrd.delightful.common.item.knife.compat.lolenderite.EnderiteKnifeItem;
 import net.brnbrd.delightful.common.item.knife.compat.undergarden.ForgottenKnifeItem;
-import net.brnbrd.delightful.compat.ArsNouveauCompat;
 import net.brnbrd.delightful.compat.BWGCompat;
 import net.brnbrd.delightful.compat.Mods;
-import net.brnbrd.delightful.compat.UndergardenCompat;
 import net.brnbrd.delightful.data.tags.DelightfulItemTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -95,7 +93,8 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		this.tag(DelightfulItemTags.GUMMIES)
 				.add(DelightfulItems.SALMONBERRY_GUMMY.get())
 				.add(DelightfulItems.MATCHA_GUMMY.get())
-				.add(DelightfulItems.CANTALOUPE_GUMMY.get());
+				.add(DelightfulItems.CANTALOUPE_GUMMY.get())
+				.add(DelightfulItems.SOURCE_BERRY_GUMMY.get());
 
 		// Forge
 		this.tag(DelightfulItemTags.LAVENDER)
@@ -428,22 +427,35 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.add(DelightfulItems.RAW_GOAT.get());
 		this.tag(DelightfulItemTags.COOKED_GOAT)
 				.add(DelightfulItems.COOKED_GOAT.get());
-		this.tag(DelightfulItemTags.RAW_FROG)
+		this.tag(DelightfulItemTags.RAW_MEAT)
+				.addTag(ForgeTags.RAW_FISHES)
+				.addTag(ForgeTags.RAW_CHICKEN)
+				.addTag(ForgeTags.RAW_BEEF)
+				.addTag(ForgeTags.RAW_PORK)
+				.addTag(ForgeTags.RAW_MUTTON)
+				.addTag(DelightfulItemTags.RAW_VENISON)
+				.addTag(DelightfulItemTags.RAW_CRAB)
+				.addTag(DelightfulItemTags.RAW_GOAT)
 				.addOptional(Util.rl("frog_legs", "frog_legs"));
-		this.tag(DelightfulItemTags.COOKED_FROG)
+		this.tag(DelightfulItemTags.COOKED_MEAT)
+				.addTag(ForgeTags.COOKED_FISHES)
+				.addTag(ForgeTags.COOKED_CHICKEN)
+				.addTag(ForgeTags.COOKED_BEEF)
+				.addTag(ForgeTags.COOKED_PORK)
+				.addTag(ForgeTags.COOKED_MUTTON)
+				.addTag(DelightfulItemTags.COOKED_VENISON)
+				.addTag(DelightfulItemTags.COOKED_CRAB)
+				.addTag(DelightfulItemTags.COOKED_GOAT)
 				.addOptional(Util.rl("frog_legs", "cooked_frog_legs"));
 		this.tag(DelightfulItemTags.FOOD_MEAT)
-				.addTag(DelightfulItemTags.RAW_VENISON)
-				.addTag(DelightfulItemTags.COOKED_VENISON)
-				.addTag(DelightfulItemTags.RAW_GOAT)
-				.addTag(DelightfulItemTags.COOKED_GOAT)
-				.addTag(DelightfulItemTags.RAW_FROG)
-				.addTag(DelightfulItemTags.COOKED_FROG);
-		this.tag(DelightfulItemTags.MEAT)
-				.addTag(DelightfulItemTags.FOOD_MEAT);
+				.addTag(DelightfulItemTags.RAW_MEAT)
+				.addTag(DelightfulItemTags.COOKED_MEAT);
 		this.tag(DelightfulItemTags.PROTEIN_PATTY)
 				.add(ModItems.BEEF_PATTY.get())
 				.addOptional(Util.rl(Mods.MD, "vegan_patty"));
+		this.tag(DelightfulItemTags.COOKED_BEEF_OR_VEGAN)
+				.addTag(ForgeTags.COOKED_BEEF)
+				.addTag(DelightfulItemTags.PROTEIN_PATTY);
 		this.tag(DelightfulItemTags.CATTAIL)
 				.addOptional(Util.rl("sprout", "cattail"))
 				.addOptional(Util.rl(Mods.BOP, "cattail"))
@@ -664,23 +676,28 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.add(Knives.NETHER_QUARTZ.get())
 				.add(Knives.CERTUS_QUARTZ.get());
 
-		// Naturalist
-		this.tag(Util.it(Mods.NA, "bird_food_items")).addTag(Tags.Items.SEEDS);
-		this.tag(Util.it(Mods.NA, "tortoise_tempt_items")).add(DelightfulItems.CACTUS_FLESH.get());
-
 		// Neapolitan
 		this.tag(Util.it(Mods.N, "ice_cream"))
 				.add(DelightfulItems.MATCHA_ICE_CREAM.get())
-				.add(DelightfulItems.SALMONBERRY_ICE_CREAM.get());
+				.add(DelightfulItems.SALMONBERRY_ICE_CREAM.get())
+				.add(DelightfulItems.SOURCE_BERRY_ICE_CREAM.get());
 
 		// Ars Nouveau
 		this.tag(Util.it(Mods.AN, "magic_food"))
 				.add(DelightfulItems.SOURCE_BERRY_PIE_SLICE.get())
-				.add(DelightfulItems.SOURCE_BERRY_COOKIE.get());
+				.add(DelightfulItems.SOURCE_BERRY_COOKIE.get())
+				.add(DelightfulItems.SOURCE_BERRY_GUMMY.get())
+				.add(DelightfulItems.SOURCE_BERRY_ICE_CREAM.get())
+				.add(DelightfulItems.SOURCE_BERRY_MILKSHAKE.get());
+
+		// Naturalist
+		this.tag(Util.it(Mods.NA, "bird_food_items")).addTag(Tags.Items.SEEDS);
+		this.tag(Util.it(Mods.NA, "tortoise_tempt_items")).add(DelightfulItems.CACTUS_FLESH.get());
 
 		// Sully's Mod
 		this.tag(Util.it("sullysmod", "tortoise_food"))
 				.addTag(ForgeTags.BERRIES)
+				.add(DelightfulItems.CACTUS_FLESH.get())
 				.add(ModItems.PUMPKIN_SLICE.get())
 				.add(DelightfulItems.CANTALOUPE_SLICE.get())
 				.addOptionalTag(Util.rl(Util.LOADER, "fruits/hamimelon"))

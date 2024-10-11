@@ -88,6 +88,8 @@ public class DelightfulBlocks {
 			() -> new Block(Block.Properties.copy(Blocks.SNOW_BLOCK).mapColor(MapColor.COLOR_ORANGE).strength(0.2F).sound(SoundType.SNOW)));
 	public static final RegistryObject<Block> MATCHA_ICE_CREAM_BLOCK = BLOCKS.register("matcha_ice_cream_block",
 			() -> new Block(Block.Properties.copy(Blocks.SNOW_BLOCK).mapColor(MapColor.COLOR_LIGHT_GREEN).strength(0.2F).sound(SoundType.SNOW)));
+	public static final RegistryObject<Block> SOURCE_BERRY_ICE_CREAM_BLOCK = BLOCKS.register("source_berry_ice_cream_block",
+			() -> new Block(Block.Properties.copy(Blocks.SNOW_BLOCK).mapColor(MapColor.COLOR_PURPLE).strength(0.2F).sound(SoundType.SNOW)));
 	public static final RegistryObject<Block> SALMONBERRY_MILKSHAKE_CAULDRON = BLOCKS.register("salmonberry_milkshake_cauldron",
 			() -> new DelightfulMilkshakeCauldronBlock(
 					ModList.get().isLoaded(Mods.N) ?
@@ -98,6 +100,12 @@ public class DelightfulBlocks {
 			() -> new DelightfulMilkshakeCauldronBlock(
 					ModList.get().isLoaded(Mods.N) ?
 							DelightfulCauldronInteractions.MATCHA_MILKSHAKE.map() :
+							CauldronInteraction.newInteractionMap())
+	);
+	public static final RegistryObject<Block> SOURCE_BERRY_MILKSHAKE_CAULDRON = BLOCKS.register("source_berry_milkshake_cauldron",
+			() -> new DelightfulMilkshakeCauldronBlock(
+					ModList.get().isLoaded(Mods.N) ?
+							DelightfulCauldronInteractions.SOURCE_BERRY_MILKSHAKE.map() :
 							CauldronInteraction.newInteractionMap())
 	);
 	public static final RegistryObject<Block> BLUEBERRY_SACK = BLOCKS.register("blueberry_sack",

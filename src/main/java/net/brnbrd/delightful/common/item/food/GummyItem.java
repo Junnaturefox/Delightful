@@ -7,7 +7,7 @@ import org.jetbrains.annotations.NotNull;
 public class GummyItem extends DItem {
 
 	public GummyItem(Properties prop) {
-		super(prop);
+		super(prop, false);
 	}
 
 	@Override

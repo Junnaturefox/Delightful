@@ -104,11 +104,11 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> RAW_GOAT_COMPAT = forge("raw_goat_compat");
 	public static final TagKey<Item> RAW_GOAT = forge("raw_goat");
 	public static final TagKey<Item> COOKED_GOAT = forge("cooked_goat");
-	public static final TagKey<Item> RAW_FROG = forge("raw_frog");
-	public static final TagKey<Item> COOKED_FROG = forge("cooked_frog");
+	public static final TagKey<Item> RAW_MEAT = forge("raw_meat");
+	public static final TagKey<Item> COOKED_MEAT = forge("cooked_meat");
 	public static final TagKey<Item> FOOD_MEAT = forge("food/meat");
-	public static final TagKey<Item> MEAT = forge("meat");
 	public static final TagKey<Item> PROTEIN_PATTY = forge("protein_patty");
+	public static final TagKey<Item> COOKED_BEEF_OR_VEGAN = forge("cooked_beef_or_vegan");
 	public static final TagKey<Item> CATTAIL = forge("cattail");
 	public static final TagKey<Item> ICE_CUBES = forge("ice_cubes");
 	public static final TagKey<Item> TORTILLA = forge("tortilla");

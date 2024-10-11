@@ -59,6 +59,8 @@ public class DelightfulLanguageProvider extends LanguageProvider {
 		addItem(DelightfulItems.MATCHA_MILKSHAKE, "Matcha Milkshake");
 		addItem(DelightfulItems.SALMONBERRY_ICE_CREAM, "Salmonberry Ice Cream");
 		addItem(DelightfulItems.SALMONBERRY_MILKSHAKE, "Salmonberry Milkshake");
+		addItem(DelightfulItems.SOURCE_BERRY_ICE_CREAM, "Source Berry Ice Cream");
+		addItem(DelightfulItems.SOURCE_BERRY_MILKSHAKE, "Source Berry Milkshake");
 		addItem(DelightfulItems.ACORN, "Acorn");
 		addItem(DelightfulItems.ROASTED_ACORN, "Roasted Acorn");
 		addItem(DelightfulItems.NUT_DOUGH, "Nut Dough");
@@ -81,6 +83,7 @@ public class DelightfulLanguageProvider extends LanguageProvider {
 		addItem(DelightfulItems.SALMONBERRY_GUMMY, "Salmonberry Gummy");
 		addItem(DelightfulItems.MATCHA_GUMMY, "Matcha Gummy");
 		addItem(DelightfulItems.CANTALOUPE_GUMMY, "Cantaloupe Gummy");
+		addItem(DelightfulItems.SOURCE_BERRY_GUMMY, "Source Berry Gummy");
 		addBlock(DelightfulBlocks.MINI_MELON, "Mini Melon");
 		addBlock(DelightfulBlocks.SLICED_MINI_MELON, "Sliced Mini Melon");
 		addBlock(DelightfulBlocks.CANTALOUPE, "Cantaloupe");
@@ -103,6 +106,8 @@ public class DelightfulLanguageProvider extends LanguageProvider {
 		addBlock(DelightfulBlocks.SALMONBERRY_MILKSHAKE_CAULDRON, "Salmonberry Milkshake Cauldron");
 		addBlock(DelightfulBlocks.MATCHA_ICE_CREAM_BLOCK, "Matcha Ice Cream Block");
 		addBlock(DelightfulBlocks.MATCHA_MILKSHAKE_CAULDRON, "Matcha Milkshake Cauldron");
+		addBlock(DelightfulBlocks.SOURCE_BERRY_ICE_CREAM_BLOCK, "Source Berry Ice Cream Block");
+		addBlock(DelightfulBlocks.SOURCE_BERRY_MILKSHAKE_CAULDRON, "Source Berry Milkshake Cauldron");
 		addBlock(DelightfulBlocks.ACORN_SACK, "Acorn Sack");
 		addBlock(DelightfulBlocks.SALMONBERRY_SACK, "Salmonberry Sack");
 		addBlock(DelightfulBlocks.BLUEBERRY_SACK, "Blueberry Sack");

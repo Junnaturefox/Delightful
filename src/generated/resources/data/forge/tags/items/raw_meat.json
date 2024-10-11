@@ -1,0 +1,16 @@
+{
+  "values": [
+    "#forge:raw_fishes",
+    "#forge:raw_chicken",
+    "#forge:raw_beef",
+    "#forge:raw_pork",
+    "#forge:raw_mutton",
+    "#forge:raw_venison",
+    "#forge:raw_crab",
+    "#forge:raw_goat",
+    {
+      "id": "frog_legs:frog_legs",
+      "required": false
+    }
+  ]
+}

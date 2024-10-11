@@ -104,7 +104,7 @@ configBackground="farmersdelight:textures/block/tatami_mat_half.png"
 [[dependencies.delightful]]
     modId="abnormals_delight"
     mandatory=false
-    versionRange="[0,)"
+    versionRange="[5,)"
     ordering="AFTER"
     side="BOTH"
 

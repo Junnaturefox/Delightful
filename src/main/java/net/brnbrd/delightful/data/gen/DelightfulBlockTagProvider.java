@@ -93,7 +93,8 @@ public class DelightfulBlockTagProvider extends BlockTagsProvider {
 				.addOptional(Util.rl("fruittrees", "cherry_cabinet"));
 		this.tag(BlockTags.MINEABLE_WITH_SHOVEL)
 				.add(DelightfulBlocks.MATCHA_ICE_CREAM_BLOCK.get())
-				.add(DelightfulBlocks.SALMONBERRY_ICE_CREAM_BLOCK.get());
+				.add(DelightfulBlocks.SALMONBERRY_ICE_CREAM_BLOCK.get())
+				.add(DelightfulBlocks.SOURCE_BERRY_ICE_CREAM_BLOCK.get());
 		this.tag(BlockTags.MINEABLE_WITH_HOE)
 				.add(DelightfulBlocks.ACORN_SACK.get())
 				.add(DelightfulBlocks.SALMONBERRY_SACK.get())

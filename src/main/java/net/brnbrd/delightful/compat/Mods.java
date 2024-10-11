@@ -1,5 +1,6 @@
 package net.brnbrd.delightful.compat;
 
+import net.brnbrd.delightful.Delightful;
 import net.brnbrd.delightful.Util;
 import net.minecraft.core.Holder;
 import net.minecraft.world.effect.MobEffect;
@@ -61,7 +62,7 @@ public class Mods {
 	public static final String YH = "youkaishomecoming";
 
 	public static boolean loaded(@NotNull String modid) {
-		return ModList.get().isLoaded(modid);
+		return (modid.equals(Delightful.MODID)) || ModList.get().isLoaded(modid);
 	}
 
 	// All must be loaded
@@ -82,18 +83,20 @@ public class Mods {
 
 	// One must be loaded
 	public static boolean orLoaded(@NotNull String... modids) {
-		if (modids.length < 1) {
-			return false;
-		} else if (modids.length == 1) {
+		return orLoaded(false, modids);
+	}
+
+	public static boolean orLoaded(boolean fallback, @NotNull String... modids) {
+		if (modids.length == 1) {
 			return loaded(modids[0]);
-		} else {
+		} else if (modids.length > 0) {
 			for (String mod : modids) {
 				if (loaded(mod)) {
 					return true;
 				}
 			}
 		}
-		return false;
+		return fallback;
 	}
 
 	public static Supplier<MobEffect> getGreenTeaEffect() {

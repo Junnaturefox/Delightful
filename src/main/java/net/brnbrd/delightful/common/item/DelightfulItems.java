@@ -3,7 +3,7 @@ package net.brnbrd.delightful.common.item;
 import net.brnbrd.delightful.Delightful;
 import net.brnbrd.delightful.common.block.DelightfulBlocks;
 import net.brnbrd.delightful.common.item.food.*;
-import net.brnbrd.delightful.compat.ArsNouveauCompat;
+import net.brnbrd.delightful.compat.ars_nouveau.*;
 import net.brnbrd.delightful.compat.BWGCompat;
 import net.brnbrd.delightful.compat.Mods;
 import net.brnbrd.delightful.compat.UndergardenCompat;
@@ -56,13 +56,18 @@ public class DelightfulItems {
 			new CompatBlockItem(DelightfulBlocks.MATCHA_ICE_CREAM_BLOCK.get(), (new Item.Properties()), Mods.N));
 	public static final RegistryObject<Item> SALMONBERRY_ICE_CREAM_BLOCK = registerItem("salmonberry_ice_cream_block", () ->
 			new CompatBlockItem(DelightfulBlocks.SALMONBERRY_ICE_CREAM_BLOCK.get(), (new Item.Properties()), Mods.N));
+	public static final RegistryObject<Item> SOURCE_BERRY_ICE_CREAM_BLOCK = registerItem("source_berry_ice_cream_block", () ->
+			new SourceBerryIceCreamBlockItem(DelightfulBlocks.SOURCE_BERRY_ICE_CREAM_BLOCK.get(),  (new Item.Properties())));
 
 	public static final RegistryObject<Item> MATCHA_ICE_CREAM = registerItem("matcha_ice_cream", () -> new IceCreamItem((new Item.Properties()).food(Nutrition.MATCHA_ICE_CREAM)));
 	public static final RegistryObject<Item> SALMONBERRY_ICE_CREAM = registerItem("salmonberry_ice_cream", () -> new IceCreamItem((new Item.Properties()).food(Nutrition.SALMONBERRY_ICE_CREAM)));
+	public static final RegistryObject<Item> SOURCE_BERRY_ICE_CREAM = registerItem("source_berry_ice_cream", () -> new SourceBerryIceCreamItem((new Item.Properties()).food(ArsNouveauCompat.SOURCE_BERRY_ICE_CREAM)));
 	public static final RegistryObject<Item> MATCHA_MILKSHAKE = registerItem("matcha_milkshake",
 			() -> new ShakeItem(new Item.Properties().food(Nutrition.MATCHA_MILKSHAKE)));
 	public static final RegistryObject<Item> SALMONBERRY_MILKSHAKE = registerItem("salmonberry_milkshake",
 			() -> new ShakeItem(new Item.Properties().food(Nutrition.SALMONBERRY_MILKSHAKE)));
+	public static final RegistryObject<Item> SOURCE_BERRY_MILKSHAKE = registerItem("source_berry_milkshake",
+			() -> new SourceBerryShakeItem(new Item.Properties().food(ArsNouveauCompat.SOURCE_BERRY_MILKSHAKE)));
 	public static final RegistryObject<Item> MATCHA = registerItem("matcha", () -> new MatchaItem(new Item.Properties().food(Nutrition.MATCHA)));
 	public static final RegistryObject<Item> GREEN_TEA_LEAF = registerItem("green_tea_leaf", () -> new GreenTeaLeavesItem(new Item.Properties().food(Nutrition.GREEN_TEA_LEAF)));
 	public static final RegistryObject<Item> SALMONBERRIES = registerFood("salmonberries", Nutrition.SALMONBERRIES);
@@ -154,6 +159,8 @@ public class DelightfulItems {
 			() -> new GummyItem((new Item.Properties()).food(Nutrition.MATCHA_GUMMY)));
 	public static final RegistryObject<Item> CANTALOUPE_GUMMY = registerItem("cantaloupe_gummy",
 			() -> new GummyItem((new Item.Properties()).food(Nutrition.CANTALOUPE_GUMMY)));
+	public static final RegistryObject<Item> SOURCE_BERRY_GUMMY = registerItem("source_berry_gummy",
+			() -> new SourceBerryGummyItem((new Item.Properties()).food(ArsNouveauCompat.SOURCE_BERRY_GUMMY)));
 
 	// Registers food, optional craftRemainder
 	public static RegistryObject<Item> registerFood(String name, FoodProperties food, Item... remainder) {

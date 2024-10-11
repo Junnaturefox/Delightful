@@ -1,6 +1,9 @@
 {
   "values": [
     "delightful:source_berry_pie_slice",
-    "delightful:source_berry_cookie"
+    "delightful:source_berry_cookie",
+    "delightful:source_berry_gummy",
+    "delightful:source_berry_ice_cream",
+    "delightful:source_berry_milkshake"
   ]
 }

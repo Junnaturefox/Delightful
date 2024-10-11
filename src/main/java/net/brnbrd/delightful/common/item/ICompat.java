@@ -14,9 +14,12 @@ public interface ICompat extends IConfigured {
 	String[] getModid();
 
 	default boolean isLoaded() {
-		return (this.getStrategy() == Strategy.AND) ?
-				Mods.loaded(this.getModid()) :
-				Mods.orLoaded(this.getModid());
+		if (this.getModid().length < 1) {
+			return true;
+		}
+		return this.getStrategy() == Strategy.AND ?
+			Mods.loaded(this.getModid()) :
+			Mods.orLoaded(true, this.getModid());
 	}
 
 	@Override

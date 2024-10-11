@@ -12,7 +12,11 @@ public class CompatItem extends DItem implements ICompat {
 
 	public CompatItem(Item.Properties properties, boolean hasFoodEffectTooltip, String... modid) {
 		super(properties, hasFoodEffectTooltip);
-		this.modid = modid;
+		if (modid.length > 0) {
+			this.modid = modid.clone();
+		} else {
+			this.modid = new String[]{};
+		}
 	}
 
 	@Override

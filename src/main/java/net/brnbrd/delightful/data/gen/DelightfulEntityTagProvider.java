@@ -19,6 +19,7 @@ public class DelightfulEntityTagProvider extends EntityTypeTagsProvider {
 
 	@Override
 	protected void addTags(HolderLookup.@NotNull Provider provider) {
+		// Delightful
 		this.tag(DelightfulEntityTags.FATTY_ANIMALS)
 				.add(EntityType.CAT)
 				.add(EntityType.WOLF)

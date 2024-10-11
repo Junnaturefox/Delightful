@@ -1,4 +1,4 @@
-// 1.20.1	2024-10-04T01:33:07.8623952	Block States: delightful
+// 1.20.1	2024-10-10T09:14:38.0187416	Block States: delightful
 145873edaa6daa864281813f124aa4243f0ecdb0 assets/delightful/blockstates/acorn_sack.json
 5a39134df9dc1c66d66496452c41a49e9660d397 assets/delightful/blockstates/baobab_fruit_crate.json
 395f9101d711fd7836c168976f3357cadf13597d assets/delightful/blockstates/basalt_cabinet.json
@@ -26,6 +26,7 @@ a05d9fdeed7b19b38918830b83bb651ec166b8da assets/delightful/blockstates/sliced_gl
 794508863a11429b66be94ee3e63194fefb125d0 assets/delightful/blockstates/sliced_melon.json
 019ba45d9a7bb790f16567f51619edc94e7b3fbb assets/delightful/blockstates/sliced_mini_melon.json
 f307f05d30a1b06d5b9f0f281557e93288421d6f assets/delightful/blockstates/sliced_pumpkin.json
+303adf6265862e77d71ce53f1a94b977a1c7de97 assets/delightful/blockstates/source_berry_ice_cream_block.json
 a579ceb297a78da5c7b86686811bf50c98458bf4 assets/delightful/blockstates/source_berry_pie.json
 5ef5f07520559662a3c03345b8b4c6dff9358d54 assets/delightful/blockstates/stuffed_cantaloupe_block.json
 bb391ea35e7293199e6269f60c85b986db5533b0 assets/delightful/blockstates/wild_salmonberries.json
@@ -96,6 +97,7 @@ ce9b821affdbaee09a081d71a688f407240d4f18 assets/delightful/models/block/sliced_m
 090d0ce70ff285b107dee82fc89baa3f3479b9d3 assets/delightful/models/block/sliced_pumpkin_bite1.json
 1b595e191a91eaf87d363f4e49da69de62319b55 assets/delightful/models/block/sliced_pumpkin_bite2.json
 8383fb134417156020559196304445fb4f23e684 assets/delightful/models/block/sliced_pumpkin_bite3.json
+c09963d5d280a2ca135e9f719fa430eb5b3fb3c2 assets/delightful/models/block/source_berry_ice_cream_block.json
 21417199e6606009aa5273f856fa57ef35821e94 assets/delightful/models/block/source_berry_pie.json
 b3a8c8e9034824a7271399154b280063fa6d858e assets/delightful/models/block/source_berry_pie_slice1.json
 f0727be922f070f8a66fe8d4a34b77992af41b7f assets/delightful/models/block/source_berry_pie_slice2.json

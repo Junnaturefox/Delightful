@@ -116,7 +116,10 @@ public class JEIPlugin implements IModPlugin {
 	}
 
 	private void hide(List<ItemStack> hiddenList, String modid, String item, String... conflicts) {
-		if (Mods.loaded(modid) && (conflicts.length < 1 || Mods.orLoaded(conflicts))) {
+		if (
+				Mods.loaded(modid) &&
+				Mods.orLoaded(false, conflicts)
+		) {
 			Item found = Util.item(modid, item);
 			if (found != null) {
 				hiddenList.add(new ItemStack(found));

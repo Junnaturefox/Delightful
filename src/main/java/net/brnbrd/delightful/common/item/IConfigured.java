@@ -13,8 +13,12 @@ public interface IConfigured extends ItemLike {
 		return new String[0];
 	}
 
+	default boolean hasConflict() {
+		return this.getConflicts().length > 0 && Mods.orLoaded(false, this.getConflicts());
+	}
+
 	default boolean enabled() {
-		return Util.enabled(this.asItem()) && !Mods.orLoaded(this.getConflicts());
+		return Util.enabled(this.asItem()) && !this.hasConflict();
 	}
 
 	default boolean enabledText(List<Component> comps) {

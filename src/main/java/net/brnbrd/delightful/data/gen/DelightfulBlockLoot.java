@@ -45,6 +45,7 @@ public class DelightfulBlockLoot extends BlockLootSubProvider {
 		this.empty(DelightfulBlocks.GLOOMGOURD_PIE);
 		this.empty(DelightfulBlocks.GREEN_APPLE_PIE);
 		this.empty(DelightfulBlocks.BLUEBERRY_PIE);
+		this.empty(DelightfulBlocks.SOURCE_BERRY_PIE);
 
 		// Whole melons
 		this.dropSelf(DelightfulBlocks.MINI_MELON.get());
@@ -162,10 +163,12 @@ public class DelightfulBlockLoot extends BlockLootSubProvider {
 		// Ice Cream Blocks
 		this.dropSelf(DelightfulBlocks.SALMONBERRY_ICE_CREAM_BLOCK.get());
 		this.dropSelf(DelightfulBlocks.MATCHA_ICE_CREAM_BLOCK.get());
+		this.dropSelf(DelightfulBlocks.SOURCE_BERRY_ICE_CREAM_BLOCK.get());
 
 		// Milkshake Cauldrons
 		this.dropOther(DelightfulBlocks.SALMONBERRY_MILKSHAKE_CAULDRON.get(), Blocks.CAULDRON);
 		this.dropOther(DelightfulBlocks.MATCHA_MILKSHAKE_CAULDRON.get(), Blocks.CAULDRON);
+		this.dropOther(DelightfulBlocks.SOURCE_BERRY_MILKSHAKE_CAULDRON.get(), Blocks.CAULDRON);
 
 		this.add(DelightfulBlocks.STUFFED_CANTALOUPE_BLOCK.get(), (b) -> {
 			LootTable.Builder loot = LootTable.lootTable().withPool(LootPool.lootPool()

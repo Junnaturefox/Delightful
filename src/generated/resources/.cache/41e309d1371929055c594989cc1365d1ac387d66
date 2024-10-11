@@ -1,4 +1,4 @@
-// 1.20.1	2024-10-04T01:33:07.860888	Tags for minecraft:block mod id delightful
+// 1.20.1	2024-10-10T09:14:38.0187416	Tags for minecraft:block mod id delightful
 2469f55332d27164e5aade020a5d1f0d44c68df5 data/delightful/tags/blocks/add_acorn.json
 c1b2a217bb3fcb7e1d67f5bc45409796720bd171 data/delightful/tags/blocks/cantaloupe_spawns.json
 ba6ef28da1fcd146a5a73f41f83db71fb06d65f0 data/delightful/tags/blocks/drops_acorn.json
@@ -10,7 +10,7 @@ c7cbd868b80f2a96c1442a45ac361caee67e6839 data/minecraft/tags/blocks/cauldrons.js
 fef841082f0d645fbb3356a2d1f1083b700b0357 data/minecraft/tags/blocks/mineable/axe.json
 15a81cf818fe8de5312419610dce2f6b33776b7c data/minecraft/tags/blocks/mineable/hoe.json
 56652c93f5e1505b2c4875c8d14635f2a2c72350 data/minecraft/tags/blocks/mineable/pickaxe.json
-29368e834a67871eea4c932b990cc8cea8873f23 data/minecraft/tags/blocks/mineable/shovel.json
+631ba79d80459337b3933cc2f0ec7af095ceb533 data/minecraft/tags/blocks/mineable/shovel.json
 ed2c2757f59849017bb6717aa71e58742f546890 data/minecraft/tags/blocks/small_flowers.json
 3f82c0fba13b9614af9c1f7982c09688859a6669 data/minecraft/tags/blocks/sword_efficient.json
 70f4933801abb0d395b9a5b4f114e870c9402935 data/sereneseasons/tags/blocks/summer_crops.json
