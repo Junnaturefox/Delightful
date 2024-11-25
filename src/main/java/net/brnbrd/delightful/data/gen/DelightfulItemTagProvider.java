@@ -194,6 +194,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		this.tag(DelightfulItemTags.FRUITS_BLACKCURRANT).addOptional(Util.rl(Mods.RC, "blackcurrant"));
 		this.tag(DelightfulItemTags.FRUITS_REDCURRANT).addOptional(Util.rl(Mods.RC, "redcurrant"));
 		this.tag(DelightfulItemTags.FRUITS_WHITECURRANT).addOptional(Util.rl(Mods.RC, "whitecurrant"));
+		this.tag(DelightfulItemTags.FRUITS_GEARO_BERRY).addOptional(Util.rl(Mods.VD, "gearo_berry"));
 		this.tag(DelightfulItemTags.FRUITS_BLUEBERRIES)
 				.addOptional(Util.rl(Mods.BWG, "blueberries"))
 				.addOptional(Util.rl(Mods.WB, "blueberries"))
@@ -250,6 +251,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addTag(DelightfulItemTags.FRUITS_CHERRY)
 				.addTag(DelightfulItemTags.FRUITS_STRAWBERRIES)
 				.addTag(DelightfulItemTags.FRUITS_WILD_BERRIES)
+				.addTag(DelightfulItemTags.FRUITS_GEARO_BERRY)
 				.addOptionalTag(Util.rl(Util.LOADER, "fruits/mulberry"))
 				.addOptionalTag(Util.rl(Util.LOADER, "fruits/hawberry"))
 				.addOptionalTag(Util.rl(Util.LOADER, "fruits/bayberry"))
