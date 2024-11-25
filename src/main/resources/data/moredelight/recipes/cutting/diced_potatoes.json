@@ -4,18 +4,15 @@
     {
       "conditions": [
         {
-          "type": "forge:not",
-          "value": {
-            "type": "forge:item_exists",
-            "item": "some_assembly_required:bread_slice"
-          }
+          "type": "forge:item_exists",
+          "item": "moredelight:diced_potatoes"
         }
       ],
       "recipe": {
         "type": "farmersdelight:cutting",
         "ingredients": [
           {
-            "tag": "forge:bread/wheat"
+            "item": "minecraft:potato"
           }
         ],
         "tool": {
@@ -23,8 +20,8 @@
         },
         "result": [
           {
-            "item": "moredelight:bread_slice",
-            "count": 4
+            "item": "moredelight:diced_potatoes",
+            "count": 2
           }
         ]
       }
