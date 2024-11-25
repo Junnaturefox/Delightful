@@ -1,13 +1,13 @@
 {
   "values": [
     "#forge:fruits/apple",
-    "#forge:fruits/kiwi",
     "#forge:fruits/melon",
-    "#forge:fruits/cantaloupe",
-    "#forge:fruits/prickly_pear",
-    "#forge:fruits/banana",
     "#forge:fruits/sweet_berries",
     "#forge:fruits/salmonberries",
+    "#forge:fruits/cantaloupe",
+    "#forge:fruits/kiwi",
+    "#forge:fruits/prickly_pear",
+    "#forge:fruits/banana",
     "#forge:fruits/strawberries",
     "#forge:fruits/cherry",
     "#forge:fruits/blueberries",

@@ -569,16 +569,6 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
 						.save(f))
 				.generateAdvancement()
 				.build(finished, ModItems.CHOCOLATE_PIE.getId());
-		ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.FRUIT_SALAD.get(), 1)
-				.requires(Items.APPLE)
-				.requires(Items.MELON_SLICE)
-				.requires(ModItems.PUMPKIN_SLICE.get())
-				.requires(DelightfulItemTags.FRUITS)
-				.requires(ForgeTags.BERRIES)
-				.requires(ForgeTags.BERRIES)
-				.requires(Items.BOWL)
-				.unlockedBy("has_fruits", has(Items.MELON_SLICE, Items.SWEET_BERRIES, Items.APPLE, ModItems.PUMPKIN_SLICE.get()))
-				.save(finished, ModItems.FRUIT_SALAD.getId());
 		CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(DelightfulItems.WILD_SALMONBERRIES.get()), Ingredient.of(ForgeTags.TOOLS_KNIVES), DelightfulItems.SALMONBERRIES.get(), 1)
 				.addResult(Items.ORANGE_DYE, 1)
 				.build(finished, Util.rl(Delightful.MODID, "cutting/wild_salmonberries"));

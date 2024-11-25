@@ -1,4 +1,4 @@
-// 1.20.1	2024-10-10T09:14:38.016238	Recipes
+// 1.20.1	2024-11-25T09:19:00.5619823	Recipes
 6c217dd6477efa10f6042809ba959d53036ab5e2 data/delightful/advancements/recipes/cabinets/basalt_cabinet.json
 5b82f87851220644287d771121677deac66b3b89 data/delightful/advancements/recipes/cabinets/quartz_cabinet.json
 cf29033c1c919355c261025df529938e6ebc73f8 data/delightful/advancements/recipes/campfire/cactus_steak.json
@@ -288,6 +288,4 @@ be9d14908c8150cf746459b2c5819023a61cb097 data/delightful/recipes/storage/unpack_
 3c28f9c023f39e177df4a34d5ddaa9d5c2f648cc data/delightful/recipes/storage/unpack_salmonberry_storage_block.json
 658b06b05a8c0c5b84bcf8863ca5b065c367b27d data/delightful/recipes/torch_from_animal_oil_bottle.json
 04f4e0b0b003ad878805b3fbdc28ab1458929200 data/farmersdelight/advancements/recipes/chocolate_pie.json
-56b3dacd524c7bd54dab452bff5bdfdb134023dd data/farmersdelight/advancements/recipes/food/fruit_salad.json
 64b3ea11b16d30ff7cf9e2770037f625b4401ef2 data/farmersdelight/recipes/chocolate_pie.json
-8a55a7b562dfdc5277ba31e1177d7066a704a919 data/farmersdelight/recipes/fruit_salad.json

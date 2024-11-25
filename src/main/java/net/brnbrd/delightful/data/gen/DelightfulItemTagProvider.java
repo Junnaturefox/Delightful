@@ -175,18 +175,18 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		this.tag(DelightfulItemTags.CROPS_GINGER).addOptional(Util.rl("snowyspirit", "ginger"));
 		this.tag(DelightfulItemTags.FRUITS_APPLE).add(Items.APPLE);
 		this.tag(DelightfulItemTags.FRUITS_MELON).add(Items.MELON_SLICE);
-		this.tag(DelightfulItemTags.FRUITS_CANTALOUPE).add(DelightfulItems.CANTALOUPE_SLICE.get());
 		this.tag(DelightfulItemTags.FRUITS_CHORUS).add(Items.CHORUS_FRUIT);
 		this.tag(DelightfulItemTags.FRUITS_SWEET_BERRIES).add(Items.SWEET_BERRIES);
 		this.tag(DelightfulItemTags.FRUITS_GLOW_BERRIES).add(Items.GLOW_BERRIES);
+		this.tag(DelightfulItemTags.FRUITS_CANTALOUPE).add(DelightfulItems.CANTALOUPE_SLICE.get());
 		this.tag(DelightfulItemTags.FRUITS_SALMONBERRIES).add(DelightfulItems.SALMONBERRIES.get());
-		this.tag(DelightfulItemTags.FRUITS_GREEN_APPLE).addOptional(Util.rl(Mods.BWG, BWGCompat.green_apple));
-		this.tag(DelightfulItemTags.FRUITS_YUCCA).addOptional(Util.rl(Mods.BWG, BWGCompat.yucca));
-		this.tag(DelightfulItemTags.FRUITS_BAOBAB).addOptional(Util.rl(Mods.BWG, BWGCompat.baobab));
-		this.tag(DelightfulItemTags.FRUITS_HAMIMELON).addOptional(Util.rl(Mods.FRD, "hamimelon_slice"));
 		this.tag(DelightfulItemTags.FRUITS_KIWI)
 				.addOptional(Util.rl(Mods.FRD, "kiwi"))
 				.addOptional(Util.rl("hedgehog", "kiwi"));
+		this.tag(DelightfulItemTags.FRUITS_HAMIMELON).addOptional(Util.rl(Mods.FRD, "hamimelon_slice"));
+		this.tag(DelightfulItemTags.FRUITS_GREEN_APPLE).addOptional(Util.rl(Mods.BWG, BWGCompat.green_apple));
+		this.tag(DelightfulItemTags.FRUITS_YUCCA).addOptional(Util.rl(Mods.BWG, BWGCompat.yucca));
+		this.tag(DelightfulItemTags.FRUITS_BAOBAB).addOptional(Util.rl(Mods.BWG, BWGCompat.baobab));
 		this.tag(DelightfulItemTags.FRUITS_PRICKLY_PEAR).addOptional(Util.rl(Mods.ECO, "prickly_pear"));
 		this.tag(DelightfulItemTags.FRUITS_TORCHBERRIES).addOptional(Util.rl(Mods.TF, "torchberries"));
 		this.tag(DelightfulItemTags.FRUITS_SOURCEBERRY).addOptional(Util.rl(Mods.AN, "sourceberry_bush"));
@@ -221,10 +221,9 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addOptional(Util.rl(Mods.AN, "frostaya_pod"));
 		this.tag(DelightfulItemTags.FRUITS_BASTION)
 				.addOptional(Util.rl(Mods.AN, "bastion_pod"));
-		this.tag(DelightfulItemTags.FRUITS)
-				.addTag(ForgeTags.BERRIES)
-				.addTag(DelightfulItemTags.FRUITS_CITRUS)
+		this.tag(DelightfulItemTags.FRUITS).replace(false)
 				.addTag(DelightfulItemTags.FRUITS_SWEET)
+				.addTag(DelightfulItemTags.FRUITS_CITRUS)
 				.addTag(DelightfulItemTags.FRUITS_CHORUS)
 				.addTag(DelightfulItemTags.FRUITS_GREEN_APPLE)
 				.addTag(DelightfulItemTags.FRUITS_YUCCA)
@@ -234,7 +233,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addTag(DelightfulItemTags.FRUITS_BASTION)
 				.addOptional(Util.rl(Mods.UG, "droopvine_item"))
 				.addOptional(Util.rl(Mods.EP, "oblifruit"));
-		this.tag(ForgeTags.BERRIES)
+		this.tag(ForgeTags.BERRIES).replace(false)
 				.addTag(DelightfulItemTags.FRUITS_SWEET_BERRIES)
 				.addTag(DelightfulItemTags.FRUITS_GLOW_BERRIES)
 				.addTag(DelightfulItemTags.FRUITS_SALMONBERRIES)
@@ -259,7 +258,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addOptional(Util.rl(Mods.EP, "pream_berry"))
 				.addOptional(Util.rl("deep_aether", "goldenleaf_berries"))
 				.addOptional(Util.rl(Mods.AER, "zanberry"));
-		this.tag(DelightfulItemTags.FRUITS_CITRUS)
+		this.tag(DelightfulItemTags.FRUITS_CITRUS).replace(false)
 				.addTag(DelightfulItemTags.FRUITS_CITRON)
 				.addOptionalTag(DelightfulItemTags.FRUITS_MANDARIN.location())
 				.addOptionalTag(DelightfulItemTags.FRUITS_ORANGE.location())
@@ -267,15 +266,15 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addOptionalTag(DelightfulItemTags.FRUITS_LIME.location())
 				.addOptionalTag(DelightfulItemTags.FRUITS_GRAPEFRUIT.location())
 				.addOptionalTag(DelightfulItemTags.FRUITS_POMELO.location());
-		this.tag(DelightfulItemTags.FRUITS_SWEET)
+		this.tag(DelightfulItemTags.FRUITS_SWEET).replace(false)
 				.addTag(DelightfulItemTags.FRUITS_APPLE)
-				.addTag(DelightfulItemTags.FRUITS_KIWI)
 				.addTag(DelightfulItemTags.FRUITS_MELON)
-				.addTag(DelightfulItemTags.FRUITS_CANTALOUPE)
-				.addTag(DelightfulItemTags.FRUITS_PRICKLY_PEAR)
-				.addTag(DelightfulItemTags.FRUITS_BANANA)
 				.addTag(DelightfulItemTags.FRUITS_SWEET_BERRIES)
 				.addTag(DelightfulItemTags.FRUITS_SALMONBERRIES)
+				.addTag(DelightfulItemTags.FRUITS_CANTALOUPE)
+				.addTag(DelightfulItemTags.FRUITS_KIWI)
+				.addTag(DelightfulItemTags.FRUITS_PRICKLY_PEAR)
+				.addTag(DelightfulItemTags.FRUITS_BANANA)
 				.addTag(DelightfulItemTags.FRUITS_STRAWBERRIES)
 				.addTag(DelightfulItemTags.FRUITS_CHERRY)
 				.addTag(DelightfulItemTags.FRUITS_BLUEBERRIES)
@@ -539,7 +538,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addOptional(Util.rl(Mods.ECO, "azalea_flower"))
 				.addOptional(Util.rl("twigs", "azalea_flowers"));
 		this.tag(ItemTags.FOX_FOOD)
-				.addTag(DelightfulItemTags.FRUITS_SALMONBERRIES);
+				.addTag(ForgeTags.BERRIES);
 		this.tag(ItemTags.SMALL_FLOWERS)
 				.add(DelightfulItems.WILD_SALMONBERRIES.get());
 		this.tag(ItemTags.PIGLIN_LOVED).add(Knives.REFINED_GLOWSTONE.get());

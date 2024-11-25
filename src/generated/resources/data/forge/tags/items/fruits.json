@@ -1,8 +1,7 @@
 {
   "values": [
-    "#forge:berries",
-    "#forge:fruits/citrus",
     "#forge:fruits/sweet",
+    "#forge:fruits/citrus",
     "#forge:fruits/chorus",
     "#forge:fruits/green_apple",
     "#forge:fruits/yucca",

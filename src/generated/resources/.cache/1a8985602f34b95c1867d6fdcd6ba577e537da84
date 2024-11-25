@@ -1,4 +1,4 @@
-// 1.20.1	2024-11-22T12:04:22.8554554	delightful
+// 1.20.1	2024-11-25T09:19:00.5599795	delightful
 8980358a7235536580c6b076956e78e18eca38e9 data/additionaladditions/tags/items/gilded_netherite_upgrade.json
 251ab39f668c15d972d4630264e39f06ec646606 data/additionaladditions/tags/items/gold_ring.json
 9136930399e99d219f34c05a02844b699ef0873a data/additionaladditions/tags/items/rose_gold_alloy.json
@@ -77,7 +77,7 @@ d14b7fd0ffa1d02061af04a98bee393723aec65d data/forge/tags/items/eggs/duck.json
 0865a614c62af1d47156dd82fce56f56fcabcb88 data/forge/tags/items/eggs/parrot.json
 1941d8504a5ebb376af1643b1d982523f383ca3d data/forge/tags/items/feathers.json
 8933eaa1a05913d590f838fba721911e8f5df8df data/forge/tags/items/food/meat.json
-6ab2483a378a4552307fec9874522248956d9d56 data/forge/tags/items/fruits.json
+838e157e3b4b99480cae7f292d42883f682d5115 data/forge/tags/items/fruits.json
 b33dde3cf95c3f821d49bc84b8c46f9fd65289e8 data/forge/tags/items/fruits/apple.json
 731ca67ac60192e9e45681303589c863b7d3ef83 data/forge/tags/items/fruits/banana.json
 81dca03b7282b921e7f7a58f53ebda8eda0659d6 data/forge/tags/items/fruits/baobab.json
@@ -110,7 +110,7 @@ e63f4c3f380a4420a369bd6f1f2ccae1eda87135 data/forge/tags/items/fruits/prickly_pe
 bd88975064f14f57a6a7a33a5a2816ef2766c00f data/forge/tags/items/fruits/salmonberries.json
 d3ac5caff21a72e9cde16be715f916d249db85ef data/forge/tags/items/fruits/sourceberry.json
 07d741d5b697db5683b9373eb3a803310c8c8690 data/forge/tags/items/fruits/strawberries.json
-88ad6b6fd60a929690076ccf4b00fe22bed8a862 data/forge/tags/items/fruits/sweet.json
+ad8503c91ccf97c19208e3832b621388fc530b5f data/forge/tags/items/fruits/sweet.json
 65a948972be54d0dc9ce5ee6eb59a29341fd6ec0 data/forge/tags/items/fruits/sweet_berries.json
 ef58bcce9f0d3d6e68fdc0afe94d732282c43dba data/forge/tags/items/fruits/torchberries.json
 4fbda205b7c5ed3a2d9763485710d97ba308840f data/forge/tags/items/fruits/whitecurrant.json
@@ -174,7 +174,7 @@ c62b9be8a52938b166add3c15cf8fe7b6021f08a data/forge/tags/items/water.json
 e7a49e3763378f3280936775b47b91ea4a9b1c5f data/lolenderite/tags/items/enderite_upgrade_smithing_template.json
 2207c783edec132da40cf51fc673387de559ecdb data/lost_aether_content/tags/items/phoenix_tools.json
 0ea4f203dcbc5c8ed15973a08aa22975702cb9a1 data/minecraft/tags/items/flowers/azalea.json
-1a45ad0ba5868c124d0ff116f164f0a5119e7191 data/minecraft/tags/items/fox_food.json
+baf6ba0ee848c77356d8dcb20db8b78f5de1a72e data/minecraft/tags/items/fox_food.json
 7a5c9e6e4cea9e6eb6c39631ca0a4a686876331d data/minecraft/tags/items/piglin_loved.json
 5976aafe31fc50b3d28a25f087d42346c6fddfb9 data/minecraft/tags/items/small_flowers.json
 7dacce0ec9e5cbd0efc722b3fc437fb8ec9e813b data/naturalist/tags/items/bird_food_items.json
