@@ -218,8 +218,8 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
 						.unlockedBy("has_nut_butter", has(DelightfulItemTags.NUT_BUTTER)),
 				"food/nut_dough", finished, enabled("nut_dough"));
 
-		sack(DelightfulItems.ACORN_SACK, DelightfulItems.ACORN, "acorn", finished);
-		sack(DelightfulItems.SALMONBERRY_SACK, DelightfulItems.SALMONBERRIES, "salmonberry", finished);
+		sack(DelightfulItems.ACORN_SACK, DelightfulItems.ACORN.get(), "acorn", finished);
+		sack(DelightfulItems.SALMONBERRY_SACK, DelightfulItems.SALMONBERRIES.get(), "salmonberry", finished);
 		wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DelightfulItems.SALMONBERRY_ICE_CREAM.get(), 1)
 						.requires(Items.BOWL)
 						.requires(DelightfulItemTags.FRUITS_SALMONBERRIES)
@@ -668,12 +668,12 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
 				.build(consumer, loc);
 	}
 
-	private void sack(RegistryObject<Item> sack, Supplier<Item> ingredient, String name, Consumer<FinishedRecipe> finished) {
+	private void sack(RegistryObject<Item> sack, ItemLike ingredient, String name, Consumer<FinishedRecipe> finished) {
 		wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, sack.get(), 1)
-						.requires(ingredient.get(), 9)
-						.unlockedBy("has_" + name, has(ingredient.get())),
+						.requires(ingredient, 9)
+						.unlockedBy("has_" + name, has(ingredient)),
 				"storage/" + name + "_storage_block", finished, enabled(sack));
-		wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ingredient.get(), 9)
+		wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ingredient, 9)
 						.requires(sack.get(), 1)
 						.unlockedBy("has_" + name + "_storage_block", has(sack.get())),
 				"storage/unpack_" + name + "_storage_block", finished, enabled(sack));

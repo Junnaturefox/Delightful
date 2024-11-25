@@ -213,6 +213,14 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addOptional(Util.rl(Mods.N, "banana"));
 		this.tag(DelightfulItemTags.FRUITS_CHERRY)
 				.addOptional(Util.rl(Mods.FA, "cherry_peach"));
+		this.tag(DelightfulItemTags.FRUITS_MENDOSTEEN)
+				.addOptional(Util.rl(Mods.AN, "mendosteen_pod"));
+		this.tag(DelightfulItemTags.FRUITS_BOMBEGRANATE)
+				.addOptional(Util.rl(Mods.AN, "bombegranate_pod"));
+		this.tag(DelightfulItemTags.FRUITS_FROSTAYA)
+				.addOptional(Util.rl(Mods.AN, "frostaya_pod"));
+		this.tag(DelightfulItemTags.FRUITS_BASTION)
+				.addOptional(Util.rl(Mods.AN, "bastion_pod"));
 		this.tag(DelightfulItemTags.FRUITS)
 				.addTag(ForgeTags.BERRIES)
 				.addTag(DelightfulItemTags.FRUITS_CITRUS)
@@ -220,10 +228,10 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addTag(DelightfulItemTags.FRUITS_CHORUS)
 				.addTag(DelightfulItemTags.FRUITS_GREEN_APPLE)
 				.addTag(DelightfulItemTags.FRUITS_YUCCA)
-				.addOptional(Util.rl(Mods.AN, "mendosteen_pod"))
-				.addOptional(Util.rl(Mods.AN, "bastion_pod"))
-				.addOptional(Util.rl(Mods.AN, "bombegranate_pod"))
-				.addOptional(Util.rl(Mods.AN, "frostaya_pod"))
+				.addTag(DelightfulItemTags.FRUITS_MENDOSTEEN)
+				.addTag(DelightfulItemTags.FRUITS_BOMBEGRANATE)
+				.addTag(DelightfulItemTags.FRUITS_FROSTAYA)
+				.addTag(DelightfulItemTags.FRUITS_BASTION)
 				.addOptional(Util.rl(Mods.UG, "droopvine_item"))
 				.addOptional(Util.rl(Mods.EP, "oblifruit"));
 		this.tag(ForgeTags.BERRIES)

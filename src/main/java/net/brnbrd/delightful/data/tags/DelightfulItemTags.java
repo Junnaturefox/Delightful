@@ -60,6 +60,10 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> FRUITS_SWEET = forge("fruits/sweet");
 	public static final TagKey<Item> FRUITS_PRICKLY_PEAR = forge("fruits/prickly_pear");
 	public static final TagKey<Item> FRUITS_CITRUS = forge("fruits/citrus");
+	public static final TagKey<Item> FRUITS_BASTION = forge("fruits/bastion");
+	public static final TagKey<Item> FRUITS_MENDOSTEEN = forge("fruits/mendosteen");
+	public static final TagKey<Item> FRUITS_FROSTAYA = forge("fruits/frostaya");
+	public static final TagKey<Item> FRUITS_BOMBEGRANATE = forge("fruits/bomegranate");
 	public static final TagKey<Item> VEGETABLES_CORN = forge("vegetables/corn");
 	public static final TagKey<Item> VEGETABLES_GINGER = forge("vegetables/ginger");
 	public static final TagKey<Item> VEGETABLES_CUCUMBER = forge("vegetables/cucumber");

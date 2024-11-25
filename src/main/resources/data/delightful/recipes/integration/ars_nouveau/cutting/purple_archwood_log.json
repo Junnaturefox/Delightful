@@ -4,8 +4,20 @@
     {
       "conditions": [
         {
-          "type": "forge:item_exists",
-          "item": "ars_nouveau:purple_archwood_log"
+          "type": "forge:and",
+          "values": [
+            {
+              "type": "forge:item_exists",
+              "item": "ars_nouveau:purple_archwood_log"
+            },
+            {
+              "type": "forge:not",
+              "value": {
+                "type": "forge:mod_loaded",
+                "modid": "arsdelight"
+              }
+            }
+          ]
         }
       ],
       "recipe": {

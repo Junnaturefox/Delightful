@@ -13,6 +13,13 @@
             {
               "type": "delightful:enabled",
               "value": "frostaya_crate"
+            },
+            {
+              "type": "forge:not",
+              "value": {
+                "type": "forge:mod_loaded",
+                "modid": "arsdelight"
+              }
             }
           ]
         }

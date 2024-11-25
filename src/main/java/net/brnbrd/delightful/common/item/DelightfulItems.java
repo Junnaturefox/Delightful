@@ -38,13 +38,13 @@ public class DelightfulItems {
 	public static final RegistryObject<Item> BLUEBERRY_SACK = registerItem("blueberry_sack", () ->
 			new CompatBlockItem(DelightfulBlocks.BLUEBERRY_SACK.get(), (new Item.Properties()), Mods.BWG, Mods.WB, Mods.AE));
 	public static final RegistryObject<Item> MENDOSTEEN_CRATE = registerItem("mendosteen_crate", () ->
-			new CompatBlockItem(DelightfulBlocks.MENDOSTEEN_CRATE.get(), (new Item.Properties()), Mods.AN));
+			new ArsCrateBlockItem(DelightfulBlocks.MENDOSTEEN_CRATE.get(), (new Item.Properties())));
 	public static final RegistryObject<Item> BASTION_FRUIT_CRATE = registerItem("bastion_fruit_crate", () ->
-			new CompatBlockItem(DelightfulBlocks.BASTION_FRUIT_CRATE.get(), (new Item.Properties()), Mods.AN));
+			new ArsCrateBlockItem(DelightfulBlocks.BASTION_FRUIT_CRATE.get(), (new Item.Properties())));
 	public static final RegistryObject<Item> FROSTAYA_CRATE = registerItem("frostaya_crate", () ->
-			new CompatBlockItem(DelightfulBlocks.FROSTAYA_CRATE.get(), (new Item.Properties()), Mods.AN));
+			new ArsCrateBlockItem(DelightfulBlocks.FROSTAYA_CRATE.get(), (new Item.Properties())));
 	public static final RegistryObject<Item> BOMBEGRANATE_CRATE = registerItem("bombegranate_crate", () ->
-			new CompatBlockItem(DelightfulBlocks.BOMBEGRANATE_CRATE.get(), (new Item.Properties()), Mods.AN));
+			new ArsCrateBlockItem(DelightfulBlocks.BOMBEGRANATE_CRATE.get(), (new Item.Properties())));
 	public static final RegistryObject<Item> GREEN_APPLE_CRATE = registerItem("green_apple_crate", () ->
 			new CompatBlockItem(DelightfulBlocks.GREEN_APPLE_CRATE.get(), (new Item.Properties()), Mods.BWG));
 	public static final RegistryObject<Item> YUCCA_FRUIT_CRATE = registerItem("yucca_fruit_crate", () ->
@@ -87,10 +87,10 @@ public class DelightfulItems {
 			FoodValues.PIE_SLICE, Mods.BWG);
 	public static final RegistryObject<Item> GREEN_APPLE_PIE_SLICE = registerCompatPieSlice(BWGCompat.green_apple_pie + "_slice",
 			BWGCompat.GREEN_APPLE_PIE_SLICE.get(), Mods.BWG);
-	public static final RegistryObject<Item> SOURCE_BERRY_PIE_SLICE = registerCompatPieSlice("source_berry_pie_slice",
-			ArsNouveauCompat.SOURCE_BERRY_PIE_SLICE, Mods.AN);
-	public static final RegistryObject<Item> SOURCE_BERRY_COOKIE = registerCompatFood("source_berry_cookie",
-			ArsNouveauCompat.SOURCE_BERRY_COOKIE, Mods.AN, true);
+	public static final RegistryObject<Item> SOURCE_BERRY_PIE_SLICE = registerItem("source_berry_pie_slice",
+			() -> new CompatItem((new Item.Properties()).food(ArsNouveauCompat.SOURCE_BERRY_PIE_SLICE), true, Mods.AND, Mods.AN));
+	public static final RegistryObject<Item> SOURCE_BERRY_COOKIE = registerItem("source_berry_cookie",
+			() -> new CompatItem((new Item.Properties()).food(ArsNouveauCompat.SOURCE_BERRY_COOKIE), true, Mods.AND, Mods.AN));
 	public static final RegistryObject<Item> ANIMAL_FAT = registerFood("animal_fat", Nutrition.ANIMAL_FAT);
 	public static final RegistryObject<Item> ANIMAL_OIL_BOTTLE = registerItem("animal_oil_bottle",
 			() -> new FurnaceFuelItem((new Item.Properties()).craftRemainder(Items.GLASS_BOTTLE), 3200));
@@ -181,11 +181,11 @@ public class DelightfulItems {
 	}
 
 	public static RegistryObject<Item> registerCompatPieSlice(String name, FoodProperties food, String modid) {
-		return registerItem(name, () -> new CompatItem((new Item.Properties().food(food)), false, modid));
+		return registerItem(name, () -> new CompatItem((new Item.Properties().food(food)), false, null, modid));
 	}
 
 	public static RegistryObject<Item> registerCompatFood(String name, FoodProperties food, String modid, boolean hasFoodEffectTooltip) {
-		return registerItem(name, () -> new CompatItem((new Item.Properties().food(food)), hasFoodEffectTooltip, modid));
+		return registerItem(name, () -> new CompatItem((new Item.Properties().food(food)), hasFoodEffectTooltip, null, modid));
 	}
 
 	public static RegistryObject<Item> registerItem(String name, Supplier<Item> item) {
