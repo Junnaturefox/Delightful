@@ -14,6 +14,15 @@
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
+        "flags": {
+          "is_on_fire": false
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
         "type": "#delightful:drops_raw_goat"
       }
     }

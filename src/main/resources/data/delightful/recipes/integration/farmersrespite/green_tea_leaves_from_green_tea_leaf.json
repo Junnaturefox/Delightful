@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "values": [
-            {
-              "item": "farmersrespite:green_tea_leaves",
-              "type": "forge:item_exists"
-            },
-            {
-              "value": "green_tea_leaf",
-              "type": "delightful:enabled"
-            }
-          ],
-          "type": "forge:and"
+          "item": "farmersrespite:green_tea_leaves",
+          "type": "forge:item_exists"
+        },
+        {
+          "value": "green_tea_leaf",
+          "type": "delightful:enabled"
         }
       ],
       "recipe": {

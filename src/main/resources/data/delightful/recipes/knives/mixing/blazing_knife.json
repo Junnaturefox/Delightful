@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "blazing_knife"
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "create_sa"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "blazing_knife"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "create_sa"
         }
       ],
       "recipe": {

@@ -4,20 +4,15 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "brass_knife"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:ingots/brass"
-              }
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "brass_knife"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:ingots/brass"
+          }
         }
       ],
       "recipe": {

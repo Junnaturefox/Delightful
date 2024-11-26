@@ -4,28 +4,23 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "valkyrum_knife"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "ancient_aether:valkyrum"
-              }
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "ancient_aether"
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "aether"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "valkyrum_knife"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "ancient_aether:valkyrum"
+          }
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "ancient_aether"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "aether"
         }
       ],
       "recipe": {

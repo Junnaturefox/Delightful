@@ -2,6 +2,8 @@ package net.brnbrd.delightful;
 
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import net.brnbrd.delightful.common.DelightfulConfig;
+import net.brnbrd.delightful.common.item.DelightfulItems;
+import net.brnbrd.delightful.common.item.IConfigured;
 import net.brnbrd.delightful.compat.Mods;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
@@ -11,7 +13,6 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.Containers;
 import net.minecraft.world.effect.MobEffect;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -26,6 +27,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import java.util.List;
 import java.util.Objects;
 import java.util.function.Supplier;
 
@@ -141,15 +143,28 @@ public class Util {
 		return false;
 	}
 
-	public static boolean enabled(String item) {
+	public static boolean configEnabled(String item) {
 		return DelightfulConfig.CONFIG.verify(item);
 	}
 
-	public static boolean enabled(RegistryObject<Item> item) {
-		return enabled(item.getId().getPath());
+	public static boolean configEnabled(Item item) {
+		return configEnabled(Util.name(item));
 	}
 
 	public static boolean enabled(Item item) {
-		return enabled(Util.name(item));
+		return (item instanceof IConfigured conf) ? conf.enabled() : configEnabled(item);
+	}
+
+	public static boolean enabled(RegistryObject<Item> item) {
+		return enabled(item.get());
+	}
+
+	public static boolean enabled(String item) {
+		List<Item> found = DelightfulItems.ITEMS.getEntries()
+				.stream()
+				.filter(reg -> Objects.equals(reg.getId(), Util.rl(Delightful.MODID, item)))
+				.map(RegistryObject::get)
+				.toList();
+		return found.isEmpty() ? configEnabled(item) : enabled(found.get(0));
 	}
 }

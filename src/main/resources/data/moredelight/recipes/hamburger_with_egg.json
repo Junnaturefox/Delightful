@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:item_exists",
-              "item": "moredelight:hamburger_with_egg"
-            },
-            {
-              "type": "forge:tag_empty",
-              "tag": "forge:burger_bun"
-            }
-          ]
+          "type": "forge:item_exists",
+          "item": "moredelight:hamburger_with_egg"
+        },
+        {
+          "type": "forge:tag_empty",
+          "tag": "forge:burger_bun"
         }
       ],
       "recipe": {
@@ -39,20 +34,15 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:item_exists",
-              "item": "moredelight:hamburger_with_egg"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:burger_bun"
-              }
-            }
-          ]
+          "type": "forge:item_exists",
+          "item": "moredelight:hamburger_with_egg"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:burger_bun"
+          }
         }
       ],
       "recipe": {

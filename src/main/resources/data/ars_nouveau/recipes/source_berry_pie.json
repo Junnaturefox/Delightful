@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "source_berry_pie_slice"
-            },
-            {
-              "type": "forge:item_exists",
-              "item": "ars_nouveau:source_berry_pie"
-            }
-          ]
+          "type": "forge:item_exists",
+          "item": "ars_nouveau:source_berry_pie"
+        },
+        {
+          "type": "delightful:enabled",
+          "value": "source_berry_pie_slice"
         }
       ],
       "recipe": {
@@ -49,20 +44,15 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "delightful:enabled",
-                "value": "source_berry_pie_slice"
-              }
-            },
-            {
-              "type": "forge:item_exists",
-              "item": "ars_nouveau:source_berry_pie"
-            }
-          ]
+          "type": "forge:item_exists",
+          "item": "ars_nouveau:source_berry_pie"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "delightful:enabled",
+            "value": "source_berry_pie_slice"
+          }
         }
       ],
       "recipe": {

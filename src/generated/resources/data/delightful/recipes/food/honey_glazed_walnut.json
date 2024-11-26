@@ -4,20 +4,15 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "honey_glazed_walnut"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:nuts/walnut"
-              }
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "honey_glazed_walnut"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:nuts/walnut"
+          }
         }
       ],
       "recipe": {

@@ -44,7 +44,7 @@ public class DelightfulKnifeItem extends KnifeItem implements IConfigured {
 		if (
 				this.enabledText(comps) &&
 						!(this instanceof ICompat) &&
-						Util.enabled(this) &&
+						this.enabled() &&
 						!this.isTag() &&
 						this.getTag() != null
 		) {

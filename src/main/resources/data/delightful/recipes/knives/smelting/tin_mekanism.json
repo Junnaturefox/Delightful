@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "values": [
-            {
-              "value": "tin_knife",
-              "type": "delightful:enabled"
-            },
-            {
-              "item": "mekanism:nugget_tin",
-              "type": "forge:item_exists"
-            }
-          ],
-          "type": "forge:and"
+          "value": "tin_knife",
+          "type": "delightful:enabled"
+        },
+        {
+          "item": "mekanism:nugget_tin",
+          "type": "forge:item_exists"
         }
       ],
       "recipe": {

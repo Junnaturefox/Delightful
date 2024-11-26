@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "values": [
-            {
-              "value": "constantan_knife",
-              "type": "delightful:enabled"
-            },
-            {
-              "item": "thermal:constantan_nugget",
-              "type": "forge:item_exists"
-            }
-          ],
-          "type": "forge:and"
+          "value": "constantan_knife",
+          "type": "delightful:enabled"
+        },
+        {
+          "item": "thermal:constantan_nugget",
+          "type": "forge:item_exists"
         }
       ],
       "recipe": {

@@ -4,20 +4,15 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:item_exists",
-              "item": "twilightdelight:raw_venison_rib"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:raw_venison_compat"
-              }
-            }
-          ]
+          "type": "forge:item_exists",
+          "item": "twilightdelight:raw_venison_rib"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:raw_venison_compat"
+          }
         }
       ],
       "recipe": {

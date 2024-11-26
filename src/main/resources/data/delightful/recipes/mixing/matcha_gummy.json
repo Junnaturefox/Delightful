@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "matcha_gummy"
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "create"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "matcha_gummy"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "create"
         }
       ],
       "recipe": {

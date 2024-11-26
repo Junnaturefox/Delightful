@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "skyjade_knife"
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "deep_aether"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "skyjade_knife"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "deep_aether"
         }
       ],
       "recipe": {

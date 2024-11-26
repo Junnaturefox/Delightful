@@ -36,24 +36,19 @@
       },
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "allthemodium_knife"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:plates/allthemodium"
-              }
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "allthemodium"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "allthemodium_knife"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:plates/allthemodium"
+          }
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "allthemodium"
         }
       ]
     }

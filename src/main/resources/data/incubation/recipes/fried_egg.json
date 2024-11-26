@@ -4,16 +4,11 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:mod_loaded",
-              "modid": "incubation"
-            },
-            {
-              "type": "forge:false"
-            }
-          ]
+          "type": "forge:mod_loaded",
+          "modid": "incubation"
+        },
+        {
+          "type": "forge:false"
         }
       ],
       "recipe": {

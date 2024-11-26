@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "living_knife"
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "rootsclassic"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "living_knife"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "rootsclassic"
         }
       ],
       "recipe": {

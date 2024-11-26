@@ -4,28 +4,23 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "source_berry_milkshake"
-            },
-            {
-              "type": "delightful:enabled",
-              "value": "source_berry_ice_cream"
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "ars_nouveau"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:fruits/sourceberry"
-              }
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "source_berry_milkshake"
+        },
+        {
+          "type": "delightful:enabled",
+          "value": "source_berry_ice_cream"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "ars_nouveau"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:fruits/sourceberry"
+          }
         }
       ],
       "recipe": {

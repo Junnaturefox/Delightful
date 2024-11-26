@@ -23,7 +23,7 @@ public class EnabledCondition implements ICondition {
 
 	@Override
 	public boolean test(IContext context) {
-		return Util.enabled(this.value);
+		return Util.configEnabled(this.value);
 	}
 
 	@Override

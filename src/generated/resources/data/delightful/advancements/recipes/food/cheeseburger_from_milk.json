@@ -43,17 +43,12 @@
       },
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "cheeseburger"
-            },
-            {
-              "type": "forge:tag_empty",
-              "tag": "forge:cheese"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "cheeseburger"
+        },
+        {
+          "type": "forge:tag_empty",
+          "tag": "forge:cheese"
         }
       ]
     }

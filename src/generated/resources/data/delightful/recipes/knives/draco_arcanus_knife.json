@@ -4,24 +4,19 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "draco_arcanus_knife"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forbidden_arcanus:dragon_scale"
-              }
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "forbidden_arcanus"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "draco_arcanus_knife"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forbidden_arcanus:dragon_scale"
+          }
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "forbidden_arcanus"
         }
       ],
       "recipe": {

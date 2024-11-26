@@ -4,20 +4,15 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:item_exists",
-              "item": "additionaladditions:honeyed_apple"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:mod_loaded",
-                "modid": "buzzier_bees"
-              }
-            }
-          ]
+          "type": "forge:item_exists",
+          "item": "additionaladditions:honeyed_apple"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:mod_loaded",
+            "modid": "buzzier_bees"
+          }
         }
       ],
       "recipe": {

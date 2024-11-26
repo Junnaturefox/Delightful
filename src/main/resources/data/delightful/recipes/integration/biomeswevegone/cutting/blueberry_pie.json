@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "blueberry_pie_slice"
-            },
-            {
-              "type": "forge:item_exists",
-              "item": "biomeswevegone:blueberry_pie"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "blueberry_pie_slice"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "biomeswevegone:blueberry_pie"
         }
       ],
       "recipe": {

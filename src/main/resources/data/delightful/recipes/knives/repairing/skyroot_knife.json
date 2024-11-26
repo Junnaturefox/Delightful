@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "skyroot_knife"
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "aether"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "skyroot_knife"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "aether"
         }
       ],
       "recipe": {

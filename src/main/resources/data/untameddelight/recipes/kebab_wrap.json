@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:item_exists",
-              "item": "untameddelight:kebab_wrap"
-            },
-            {
-              "type": "forge:tag_empty",
-              "tag": "forge:tortilla"
-            }
-          ]
+          "type": "forge:item_exists",
+          "item": "untameddelight:kebab_wrap"
+        },
+        {
+          "type": "forge:tag_empty",
+          "tag": "forge:tortilla"
         }
       ],
       "recipe": {
@@ -42,20 +37,15 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:item_exists",
-              "item": "untameddelight:kebab_wrap"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:tortilla"
-              }
-            }
-          ]
+          "type": "forge:item_exists",
+          "item": "untameddelight:kebab_wrap"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:tortilla"
+          }
         }
       ],
       "recipe": {

@@ -4,20 +4,15 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "bone_knife"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:bones"
-              }
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "bone_knife"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:bones"
+          }
         }
       ],
       "recipe": {

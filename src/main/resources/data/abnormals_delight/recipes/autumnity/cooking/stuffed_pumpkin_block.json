@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:tag_empty",
-              "tag": "forge:bread/corn"
-            },
-            {
-              "type": "forge:item_exists",
-              "item": "autumnity:large_pumpkin_slice"
-            }
-          ]
+          "type": "forge:tag_empty",
+          "tag": "forge:bread/corn"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "autumnity:large_pumpkin_slice"
         }
       ],
       "recipe": {
@@ -53,20 +48,15 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:bread/corn"
-              }
-            },
-            {
-              "type": "forge:item_exists",
-              "item": "autumnity:large_pumpkin_slice"
-            }
-          ]
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:bread/corn"
+          }
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "autumnity:large_pumpkin_slice"
         }
       ],
       "recipe": {

@@ -4,20 +4,15 @@
     {
       "conditions": [
         {
-          "values": [
-            {
-              "modid": "create",
-              "type": "forge:mod_loaded"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:gems/rose_quartz"
-              }
-            }
-          ],
-          "type": "forge:and"
+          "modid": "create",
+          "type": "forge:mod_loaded"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:gems/rose_quartz"
+          }
         }
       ],
       "recipe": {

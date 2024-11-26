@@ -4,20 +4,15 @@
     {
       "conditions": [
         {
-          "values": [
-            {
-              "type": "forge:not",
-              "value": {
-                "tag": "forge:chocolate",
-                "type": "forge:tag_empty"
-              }
-            },
-            {
-              "type": "forge:item_exists",
-              "item": "frozenup:truffle_cake"
-            }
-          ],
-          "type": "forge:and"
+          "type": "forge:not",
+          "value": {
+            "tag": "forge:chocolate",
+            "type": "forge:tag_empty"
+          }
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "frozenup:truffle_cake"
         }
       ],
       "recipe": {

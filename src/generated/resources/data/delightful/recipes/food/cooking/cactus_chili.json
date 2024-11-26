@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "cactus_chili"
-            },
-            {
-              "type": "delightful:enabled",
-              "value": "cactus_flesh"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "cactus_chili"
+        },
+        {
+          "type": "delightful:enabled",
+          "value": "cactus_flesh"
         }
       ],
       "recipe": {

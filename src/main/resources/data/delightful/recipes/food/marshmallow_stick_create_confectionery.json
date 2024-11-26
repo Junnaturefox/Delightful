@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "marshmallow_stick"
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "create_confectionery"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "marshmallow_stick"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "create_confectionery"
         }
       ],
       "recipe": {

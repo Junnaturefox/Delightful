@@ -4,20 +4,15 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "glow_jam_jar"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:mod_loaded",
-                "modid": "fruitsdelight"
-              }
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "glow_jam_jar"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:mod_loaded",
+            "modid": "fruitsdelight"
+          }
         }
       ],
       "recipe": {

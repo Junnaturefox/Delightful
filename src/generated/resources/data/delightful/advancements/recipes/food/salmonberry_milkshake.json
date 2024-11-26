@@ -38,17 +38,12 @@
       },
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "salmonberry_milkshake"
-            },
-            {
-              "type": "delightful:enabled",
-              "value": "salmonberry_ice_cream"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "salmonberry_milkshake"
+        },
+        {
+          "type": "delightful:enabled",
+          "value": "salmonberry_ice_cream"
         }
       ]
     }

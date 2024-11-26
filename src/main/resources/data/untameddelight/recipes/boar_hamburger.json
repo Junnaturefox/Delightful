@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:item_exists",
-              "item": "untameddelight:boar_hamburger"
-            },
-            {
-              "type": "forge:tag_empty",
-              "tag": "forge:burger_bun"
-            }
-          ]
+          "type": "forge:item_exists",
+          "item": "untameddelight:boar_hamburger"
+        },
+        {
+          "type": "forge:tag_empty",
+          "tag": "forge:burger_bun"
         }
       ],
       "recipe": {
@@ -45,20 +40,15 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:item_exists",
-              "item": "untameddelight:boar_hamburger"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:burger_bun"
-              }
-            }
-          ]
+          "type": "forge:item_exists",
+          "item": "untameddelight:boar_hamburger"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:burger_bun"
+          }
         }
       ],
       "recipe": {

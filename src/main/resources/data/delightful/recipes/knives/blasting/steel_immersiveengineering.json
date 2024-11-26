@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "values": [
-            {
-              "value": "steel_knife",
-              "type": "delightful:enabled"
-            },
-            {
-              "item": "immersiveengineering:nugget_steel",
-              "type": "forge:item_exists"
-            }
-          ],
-          "type": "forge:and"
+          "value": "steel_knife",
+          "type": "delightful:enabled"
+        },
+        {
+          "item": "immersiveengineering:nugget_steel",
+          "type": "forge:item_exists"
         }
       ],
       "recipe": {

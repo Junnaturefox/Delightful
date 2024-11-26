@@ -36,20 +36,15 @@
       },
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "steel_knife"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:ingots/steel"
-              }
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "steel_knife"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:ingots/steel"
+          }
         }
       ]
     }

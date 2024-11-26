@@ -4,24 +4,19 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:item_exists",
-              "item": "ecologics:tropical_stew"
-            },
-            {
-              "type": "forge:item_exists",
-              "item": "ecologics:coconut_slice"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:crab_meat"
-              }
-            }
-          ]
+          "type": "forge:item_exists",
+          "item": "ecologics:tropical_stew"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "ecologics:coconut_slice"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:crab_meat"
+          }
         }
       ],
       "recipe": {

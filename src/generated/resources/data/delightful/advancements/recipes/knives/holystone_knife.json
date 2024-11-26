@@ -36,24 +36,19 @@
       },
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "holystone_knife"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "aether:holystone"
-              }
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "aether"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "holystone_knife"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "aether:holystone"
+          }
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "aether"
         }
       ]
     }

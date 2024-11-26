@@ -4,24 +4,19 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
+          "type": "delightful:enabled",
+          "value": "sinigang"
+        },
+        {
+          "type": "forge:or",
           "values": [
             {
-              "type": "delightful:enabled",
-              "value": "sinigang"
+              "type": "forge:tag_empty",
+              "tag": "forge:vegetables/ginger"
             },
             {
-              "type": "forge:or",
-              "values": [
-                {
-                  "type": "forge:tag_empty",
-                  "tag": "forge:vegetables/ginger"
-                },
-                {
-                  "type": "forge:tag_empty",
-                  "tag": "forge:fruits/citrus"
-                }
-              ]
+              "type": "forge:tag_empty",
+              "tag": "forge:fruits/citrus"
             }
           ]
         }

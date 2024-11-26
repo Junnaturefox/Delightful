@@ -38,17 +38,12 @@
       },
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "smore"
-            },
-            {
-              "type": "forge:tag_empty",
-              "tag": "forge:chocolate"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "smore"
+        },
+        {
+          "type": "forge:tag_empty",
+          "tag": "forge:chocolate"
         }
       ]
     }

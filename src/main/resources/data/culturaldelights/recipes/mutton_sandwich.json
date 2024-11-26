@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:item_exists",
-              "item": "culturaldelights:mutton_sandwich"
-            },
-            {
-              "type": "forge:tag_empty",
-              "tag": "forge:bread_slices"
-            }
-          ]
+          "type": "forge:item_exists",
+          "item": "culturaldelights:mutton_sandwich"
+        },
+        {
+          "type": "forge:tag_empty",
+          "tag": "forge:bread_slices"
         }
       ],
       "recipe": {
@@ -42,20 +37,15 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:item_exists",
-              "item": "culturaldelights:mutton_sandwich"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:bread_slices"
-              }
-            }
-          ]
+          "type": "forge:item_exists",
+          "item": "culturaldelights:mutton_sandwich"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:bread_slices"
+          }
         }
       ],
       "recipe": {

@@ -16,6 +16,7 @@
     "#forge:fruits/cherry",
     "#forge:fruits/strawberries",
     "#forge:fruits/wild_berries",
+    "#forge:fruits/gearo_berry",
     {
       "id": "#forge:fruits/mulberry",
       "required": false

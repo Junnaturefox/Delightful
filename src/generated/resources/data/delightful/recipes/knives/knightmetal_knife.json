@@ -4,31 +4,26 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "knightmetal_knife"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:ingots/knightmetal"
-              }
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:mod_loaded",
-                "modid": "twilightdelight"
-              }
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "twilightforest"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "knightmetal_knife"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:ingots/knightmetal"
+          }
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:mod_loaded",
+            "modid": "twilightdelight"
+          }
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "twilightforest"
         }
       ],
       "recipe": {

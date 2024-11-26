@@ -650,9 +650,6 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		this.tag(DelightfulItemTags.UTHERIUM_ITEMS).add(Knives.UTHERIUM.get());
 		this.addSelf(ForgottenKnifeItem.upgrade);
 
-		// Deeper and Darker
-		this.addSelf(WardenKnifeItem.upgrade);
-
 		// Aether
 		this.addSelf(DelightfulItemTags.ENCHANTED_GRAVITITE);
 		this.addSelf(DelightfulItemTags.HOLYSTONE);

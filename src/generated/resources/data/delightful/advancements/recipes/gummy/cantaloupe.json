@@ -36,17 +36,12 @@
       },
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "cantaloupe"
-            },
-            {
-              "type": "delightful:enabled",
-              "value": "cantaloupe_gummy"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "cantaloupe"
+        },
+        {
+          "type": "delightful:enabled",
+          "value": "cantaloupe_gummy"
         }
       ]
     }

@@ -4,20 +4,15 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:fruits/pomegranate"
-              }
-            },
-            {
-              "type": "forge:item_exists",
-              "item": "ars_nouveau:bombegranate_pod"
-            }
-          ]
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:fruits/pomegranate"
+          }
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "ars_nouveau:bombegranate_pod"
         }
       ],
       "recipe": {

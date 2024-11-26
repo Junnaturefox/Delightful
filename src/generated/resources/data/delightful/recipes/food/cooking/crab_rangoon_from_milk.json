@@ -4,24 +4,19 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "crab_rangoon"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:crab_meat"
-              }
-            },
-            {
-              "type": "forge:tag_empty",
-              "tag": "forge:cheese"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "crab_rangoon"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:crab_meat"
+          }
+        },
+        {
+          "type": "forge:tag_empty",
+          "tag": "forge:cheese"
         }
       ],
       "recipe": {

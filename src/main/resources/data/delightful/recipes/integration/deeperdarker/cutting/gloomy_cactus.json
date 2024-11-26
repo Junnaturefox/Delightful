@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "cactus_flesh"
-            },
-            {
-              "type": "forge:item_exists",
-              "item": "deeperdarker:gloomy_cactus"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "cactus_flesh"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "deeperdarker:gloomy_cactus"
         }
       ],
       "recipe": {

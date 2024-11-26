@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:tag_empty",
-              "tag": "forge:tortilla"
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "vintagedelight"
-            }
-          ]
+          "type": "forge:tag_empty",
+          "tag": "forge:tortilla"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "vintagedelight"
         }
       ],
       "recipe": {

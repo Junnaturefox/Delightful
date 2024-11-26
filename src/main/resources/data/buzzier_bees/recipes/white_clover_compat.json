@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "chopped_clover"
-            },
-            {
-              "type": "forge:item_exists",
-              "item": "buzzier_bees:white_clover"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "chopped_clover"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "buzzier_bees:white_clover"
         }
       ],
       "recipe": {

@@ -4,24 +4,19 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:item_exists",
-              "item": "ars_nouveau:frostaya_pod"
-            },
-            {
-              "type": "delightful:enabled",
-              "value": "frostaya_crate"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:mod_loaded",
-                "modid": "arsdelight"
-              }
-            }
-          ]
+          "type": "forge:item_exists",
+          "item": "ars_nouveau:frostaya_pod"
+        },
+        {
+          "type": "delightful:enabled",
+          "value": "frostaya_crate"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:mod_loaded",
+            "modid": "arsdelight"
+          }
         }
       ],
       "recipe": {

@@ -4,24 +4,19 @@
     {
       "conditions": [
         {
-          "values": [
-            {
-              "value": "lavender_tea",
-              "type": "delightful:enabled"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:lavender"
-              }
-            },
-            {
-              "modid": "youkaishomecoming",
-              "type": "forge:mod_loaded"
-            }
-          ],
-          "type": "forge:and"
+          "value": "lavender_tea",
+          "type": "delightful:enabled"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:lavender"
+          }
+        },
+        {
+          "modid": "youkaishomecoming",
+          "type": "forge:mod_loaded"
         }
       ],
       "recipe": {

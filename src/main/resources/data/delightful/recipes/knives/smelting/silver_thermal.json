@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "values": [
-            {
-              "value": "silver_knife",
-              "type": "delightful:enabled"
-            },
-            {
-              "item": "thermal:silver_nugget",
-              "type": "forge:item_exists"
-            }
-          ],
-          "type": "forge:and"
+          "value": "silver_knife",
+          "type": "delightful:enabled"
+        },
+        {
+          "item": "thermal:silver_nugget",
+          "type": "forge:item_exists"
         }
       ],
       "recipe": {

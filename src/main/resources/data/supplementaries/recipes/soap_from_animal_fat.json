@@ -4,21 +4,16 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "animal_fat"
-            },
-            {
-              "type": "forge:item_exists",
-              "item": "supplementaries:soap"
-            },
-            {
-              "type": "supplementaries:flag",
-              "flag": "soap"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "animal_fat"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "supplementaries:soap"
+        },
+        {
+          "type": "supplementaries:flag",
+          "flag": "soap"
         }
       ],
       "recipe": {

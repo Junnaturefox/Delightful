@@ -4,24 +4,19 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "gravitite_knife"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "aether:enchanted_gravitite"
-              }
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "aether"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "gravitite_knife"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "aether:enchanted_gravitite"
+          }
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "aether"
         }
       ],
       "recipe": {

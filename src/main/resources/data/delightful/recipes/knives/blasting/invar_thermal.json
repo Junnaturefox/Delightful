@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "values": [
-            {
-              "value": "invar_knife",
-              "type": "delightful:enabled"
-            },
-            {
-              "item": "thermal:invar_nugget",
-              "type": "forge:item_exists"
-            }
-          ],
-          "type": "forge:and"
+          "value": "invar_knife",
+          "type": "delightful:enabled"
+        },
+        {
+          "item": "thermal:invar_nugget",
+          "type": "forge:item_exists"
         }
       ],
       "recipe": {

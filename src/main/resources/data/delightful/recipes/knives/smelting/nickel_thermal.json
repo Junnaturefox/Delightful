@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "values": [
-            {
-              "value": "nickel_knife",
-              "type": "delightful:enabled"
-            },
-            {
-              "item": "thermal:nickel_nugget",
-              "type": "forge:item_exists"
-            }
-          ],
-          "type": "forge:and"
+          "value": "nickel_knife",
+          "type": "delightful:enabled"
+        },
+        {
+          "item": "thermal:nickel_nugget",
+          "type": "forge:item_exists"
         }
       ],
       "recipe": {

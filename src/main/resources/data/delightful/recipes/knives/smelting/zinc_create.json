@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "values": [
-            {
-              "value": "zinc_knife",
-              "type": "delightful:enabled"
-            },
-            {
-              "item": "create:zinc_nugget",
-              "type": "forge:item_exists"
-            }
-          ],
-          "type": "forge:and"
+          "value": "zinc_knife",
+          "type": "delightful:enabled"
+        },
+        {
+          "item": "create:zinc_nugget",
+          "type": "forge:item_exists"
         }
       ],
       "recipe": {

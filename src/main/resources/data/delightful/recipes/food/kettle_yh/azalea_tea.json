@@ -4,24 +4,19 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "azalea_tea"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "minecraft:flowers/azalea"
-              }
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "youkaishomecoming"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "azalea_tea"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "minecraft:flowers/azalea"
+          }
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "youkaishomecoming"
         }
       ],
       "recipe": {

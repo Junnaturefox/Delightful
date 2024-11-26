@@ -4,24 +4,19 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:item_exists",
-              "item": "undergardendelight:frosteel_knife"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:ingots/froststeel"
-              }
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "undergarden"
-            }
-          ]
+          "type": "forge:item_exists",
+          "item": "undergardendelight:frosteel_knife"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:ingots/froststeel"
+          }
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "undergarden"
         }
       ],
       "recipe": {

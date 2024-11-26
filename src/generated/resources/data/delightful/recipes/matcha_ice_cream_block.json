@@ -4,25 +4,20 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "matcha_ice_cream_block"
-            },
-            {
-              "type": "delightful:enabled",
-              "value": "matcha_ice_cream"
-            },
-            {
-              "type": "delightful:enabled",
-              "value": "matcha"
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "neapolitan"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "matcha_ice_cream_block"
+        },
+        {
+          "type": "delightful:enabled",
+          "value": "matcha_ice_cream"
+        },
+        {
+          "type": "delightful:enabled",
+          "value": "matcha"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "neapolitan"
         }
       ],
       "recipe": {

@@ -36,24 +36,19 @@
       },
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "certus_quartz_knife"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:gems/certus_quartz"
-              }
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "ae2"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "certus_quartz_knife"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:gems/certus_quartz"
+          }
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "ae2"
         }
       ]
     }

@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "values": [
-            {
-              "value": "brass_knife",
-              "type": "delightful:enabled"
-            },
-            {
-              "item": "create:brass_nugget",
-              "type": "forge:item_exists"
-            }
-          ],
-          "type": "forge:and"
+          "value": "brass_knife",
+          "type": "delightful:enabled"
+        },
+        {
+          "item": "create:brass_nugget",
+          "type": "forge:item_exists"
         }
       ],
       "recipe": {

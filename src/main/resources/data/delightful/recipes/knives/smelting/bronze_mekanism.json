@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "values": [
-            {
-              "value": "bronze_knife",
-              "type": "delightful:enabled"
-            },
-            {
-              "item": "mekanism:nugget_bronze",
-              "type": "forge:item_exists"
-            }
-          ],
-          "type": "forge:and"
+          "value": "bronze_knife",
+          "type": "delightful:enabled"
+        },
+        {
+          "item": "mekanism:nugget_bronze",
+          "type": "forge:item_exists"
         }
       ],
       "recipe": {

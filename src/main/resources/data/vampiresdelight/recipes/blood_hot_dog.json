@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:item_exists",
-              "item": "vampiresdelight:blood_hot_dog"
-            },
-            {
-              "type": "forge:item_exists",
-              "item": "vampiresdelight:blood_sausage"
-            }
-          ]
+          "type": "forge:item_exists",
+          "item": "vampiresdelight:blood_hot_dog"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "vampiresdelight:blood_sausage"
         }
       ],
       "recipe": {

@@ -4,21 +4,16 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "gloomgourd_pie_slice"
-            },
-            {
-              "type": "forge:item_exists",
-              "item": "undergarden:gloomgourd_pie"
-            },
-            {
-              "type": "forge:item_exists",
-              "item": "undergardendelight:gloomgourd_slice"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "gloomgourd_pie_slice"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "undergarden:gloomgourd_pie"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "undergardendelight:gloomgourd_slice"
         }
       ],
       "recipe": {
@@ -52,24 +47,19 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "gloomgourd_pie_slice"
-            },
-            {
-              "type": "forge:item_exists",
-              "item": "undergarden:gloomgourd_pie"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:item_exists",
-                "item": "undergardendelight:gloomgourd_slice"
-              }
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "gloomgourd_pie_slice"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "undergarden:gloomgourd_pie"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:item_exists",
+            "item": "undergardendelight:gloomgourd_slice"
+          }
         }
       ],
       "recipe": {
@@ -109,20 +99,15 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "delightful:enabled",
-                "value": "gloomgourd_pie_slice"
-              }
-            },
-            {
-              "type": "forge:item_exists",
-              "item": "undergarden:gloomgourd_pie"
-            }
-          ]
+          "type": "forge:not",
+          "value": {
+            "type": "delightful:enabled",
+            "value": "gloomgourd_pie_slice"
+          }
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "undergarden:gloomgourd_pie"
         }
       ],
       "recipe": {

@@ -36,17 +36,12 @@
       },
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "matcha"
-            },
-            {
-              "type": "delightful:enabled",
-              "value": "matcha_gummy"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "matcha"
+        },
+        {
+          "type": "delightful:enabled",
+          "value": "matcha_gummy"
         }
       ]
     }

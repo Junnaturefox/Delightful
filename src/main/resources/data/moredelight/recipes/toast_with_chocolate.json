@@ -4,20 +4,15 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:item_exists",
-              "item": "moredelight:toast_with_chocolate"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:chocolate"
-              }
-            }
-          ]
+          "type": "forge:item_exists",
+          "item": "moredelight:toast_with_chocolate"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:chocolate"
+          }
         }
       ],
       "recipe": {
@@ -39,17 +34,12 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:item_exists",
-              "item": "moredelight:toast_with_chocolate"
-            },
-            {
-              "type": "forge:tag_empty",
-              "tag": "forge:chocolate"
-            }
-          ]
+          "type": "forge:item_exists",
+          "item": "moredelight:toast_with_chocolate"
+        },
+        {
+          "type": "forge:tag_empty",
+          "tag": "forge:chocolate"
         }
       ],
       "recipe": {

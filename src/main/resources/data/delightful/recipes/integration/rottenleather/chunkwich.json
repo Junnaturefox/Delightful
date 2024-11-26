@@ -4,24 +4,19 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "chunkwich"
-            },
-            {
-              "type": "forge:item_exists",
-              "item": "rottenleather:sweetened_chunk"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:burger_bun"
-              }
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "chunkwich"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "rottenleather:sweetened_chunk"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:burger_bun"
+          }
         }
       ],
       "recipe": {
@@ -45,21 +40,16 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "chunkwich"
-            },
-            {
-              "type": "forge:item_exists",
-              "item": "rottenleather:sweetened_chunk"
-            },
-            {
-              "type": "forge:tag_empty",
-              "tag": "forge:burger_bun"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "chunkwich"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "rottenleather:sweetened_chunk"
+        },
+        {
+          "type": "forge:tag_empty",
+          "tag": "forge:burger_bun"
         }
       ],
       "recipe": {

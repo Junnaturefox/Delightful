@@ -4,24 +4,19 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:item_exists",
-              "item": "wildberries:blueberries"
-            },
-            {
-              "type": "delightful:enabled",
-              "value": "blueberry_sack"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:mod_loaded",
-                "modid": "biomeswevegone"
-              }
-            }
-          ]
+          "type": "forge:item_exists",
+          "item": "wildberries:blueberries"
+        },
+        {
+          "type": "delightful:enabled",
+          "value": "blueberry_sack"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:mod_loaded",
+            "modid": "biomeswevegone"
+          }
         }
       ],
       "recipe": {

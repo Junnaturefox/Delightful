@@ -76,7 +76,6 @@ public class DelightfulConfig {
 	}
 
 	public boolean verify(String item) {
-		return CONFIG.stuff.containsKey(item) ?
-				CONFIG.stuff.get(item).get() : false;
+		return CONFIG.stuff.containsKey(item) && CONFIG.stuff.get(item).get();
 	}
 }

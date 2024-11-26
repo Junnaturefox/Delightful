@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "salmonberries"
-            },
-            {
-              "type": "delightful:enabled",
-              "value": "salmonberry_gummy"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "salmonberries"
+        },
+        {
+          "type": "delightful:enabled",
+          "value": "salmonberry_gummy"
         }
       ],
       "recipe": {

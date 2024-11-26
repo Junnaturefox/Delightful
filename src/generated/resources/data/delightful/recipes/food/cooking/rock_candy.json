@@ -4,20 +4,15 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "rock_candy"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:gems/rose_quartz"
-              }
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "rock_candy"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:gems/rose_quartz"
+          }
         }
       ],
       "recipe": {

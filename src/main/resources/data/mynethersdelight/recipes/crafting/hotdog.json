@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:item_exists",
-              "item": "mynethersdelight:hotdog"
-            },
-            {
-              "type": "forge:item_exists",
-              "item": "mynethersdelight:roasted_sausage"
-            }
-          ]
+          "type": "forge:item_exists",
+          "item": "mynethersdelight:hotdog"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "mynethersdelight:roasted_sausage"
         }
       ],
       "recipe": {

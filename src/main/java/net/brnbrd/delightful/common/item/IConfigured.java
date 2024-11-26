@@ -18,7 +18,7 @@ public interface IConfigured extends ItemLike {
 	}
 
 	default boolean enabled() {
-		return Util.enabled(this.asItem()) && !this.hasConflict();
+		return Util.configEnabled(this.asItem()) && !this.hasConflict();
 	}
 
 	default boolean enabledText(List<Component> comps) {

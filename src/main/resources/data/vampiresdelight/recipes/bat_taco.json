@@ -4,20 +4,15 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:item_exists",
-              "item": "vampiresdelight:bat_taco"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:tortilla"
-              }
-            }
-          ]
+          "type": "forge:item_exists",
+          "item": "vampiresdelight:bat_taco"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:tortilla"
+          }
         }
       ],
       "recipe": {
@@ -45,17 +40,12 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:item_exists",
-              "item": "vampiresdelight:bat_taco"
-            },
-            {
-              "type": "forge:tag_empty",
-              "tag": "forge:tortilla"
-            }
-          ]
+          "type": "forge:item_exists",
+          "item": "vampiresdelight:bat_taco"
+        },
+        {
+          "type": "forge:tag_empty",
+          "tag": "forge:tortilla"
         }
       ],
       "recipe": {

@@ -4,24 +4,19 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "nut_butter_and_jam_sandwich"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:nuts"
-              }
-            },
-            {
-              "type": "forge:tag_empty",
-              "tag": "forge:bread_slices"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "nut_butter_and_jam_sandwich"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:nuts"
+          }
+        },
+        {
+          "type": "forge:tag_empty",
+          "tag": "forge:bread_slices"
         }
       ],
       "recipe": {

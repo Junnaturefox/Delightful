@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "values": [
-            {
-              "value": "emerald_knife",
-              "type": "delightful:enabled"
-            },
-            {
-              "item": "emeraldequipment:emerald_shard",
-              "type": "forge:item_exists"
-            }
-          ],
-          "type": "forge:and"
+          "value": "emerald_knife",
+          "type": "delightful:enabled"
+        },
+        {
+          "item": "emeraldequipment:emerald_shard",
+          "type": "forge:item_exists"
         }
       ],
       "recipe": {

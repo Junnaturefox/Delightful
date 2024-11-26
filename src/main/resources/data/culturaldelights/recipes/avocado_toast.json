@@ -4,20 +4,15 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:item_exists",
-              "item": "culturaldelights:avocado_toast"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:bread_slices/toasted"
-              }
-            }
-          ]
+          "type": "forge:item_exists",
+          "item": "culturaldelights:avocado_toast"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:bread_slices/toasted"
+          }
         }
       ],
       "recipe": {
@@ -39,17 +34,12 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:item_exists",
-              "item": "culturaldelights:avocado_toast"
-            },
-            {
-              "type": "forge:tag_empty",
-              "tag": "forge:bread_slices/toasted"
-            }
-          ]
+          "type": "forge:item_exists",
+          "item": "culturaldelights:avocado_toast"
+        },
+        {
+          "type": "forge:tag_empty",
+          "tag": "forge:bread_slices/toasted"
         }
       ],
       "recipe": {

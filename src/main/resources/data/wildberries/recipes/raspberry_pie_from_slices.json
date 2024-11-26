@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:item_exists",
-              "item": "wildberries:raspberry_pie"
-            },
-            {
-              "type": "forge:item_exists",
-              "item": "wildberries:raspberry_pie_slice"
-            }
-          ]
+          "type": "forge:item_exists",
+          "item": "wildberries:raspberry_pie"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "wildberries:raspberry_pie_slice"
         }
       ],
       "recipe": {

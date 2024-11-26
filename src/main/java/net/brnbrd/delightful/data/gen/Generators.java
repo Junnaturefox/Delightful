@@ -7,7 +7,6 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.common.data.ForgeAdvancementProvider;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -29,8 +28,6 @@ public class Generators {
 		gen.addProvider(e.includeServer(), new LootTableProvider(output, Collections.emptySet(),
 				List.of(new LootTableProvider.SubProviderEntry(DelightfulBlockLoot::new, LootContextParamSets.BLOCK))));
 		e.getGenerator().addProvider(e.includeServer(), new DelightfulRecipeProvider(output));
-		e.getGenerator().addProvider(e.includeServer(), new ForgeAdvancementProvider(output, lookup, helper,
-				List.of(new DelightfulAdvancementProvider())));
 		DelightfulBlockTagProvider blockTag = new DelightfulBlockTagProvider(output, lookup, helper);
 		e.getGenerator().addProvider(e.includeServer(), blockTag);
 		e.getGenerator().addProvider(e.includeServer(), new DelightfulItemTagProvider(output, lookup, blockTag.contentsGetter(), helper));

@@ -4,24 +4,19 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "gilded_quartz_knife"
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "create_sa"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "create:polished_rose_quartz"
-              }
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "gilded_quartz_knife"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "create_sa"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "create:polished_rose_quartz"
+          }
         }
       ],
       "recipe": {

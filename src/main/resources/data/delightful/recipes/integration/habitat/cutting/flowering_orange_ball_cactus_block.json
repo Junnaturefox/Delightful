@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "cactus_flesh"
-            },
-            {
-              "type": "forge:item_exists",
-              "item": "habitat:flowering_orange_ball_cactus_block"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "cactus_flesh"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "habitat:flowering_orange_ball_cactus_block"
         }
       ],
       "recipe": {

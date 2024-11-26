@@ -36,24 +36,19 @@
       },
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "refined_obsidian_knife"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:ingots/refined_obsidian"
-              }
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "mekanismtools"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "refined_obsidian_knife"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:ingots/refined_obsidian"
+          }
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mekanismtools"
         }
       ]
     }

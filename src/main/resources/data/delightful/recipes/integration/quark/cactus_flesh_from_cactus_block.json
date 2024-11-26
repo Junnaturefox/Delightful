@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "values": [
-            {
-              "value": "cactus_flesh",
-              "type": "delightful:enabled"
-            },
-            {
-              "item": "quark:cactus_block",
-              "type": "forge:item_exists"
-            }
-          ],
-          "type": "forge:and"
+          "value": "cactus_flesh",
+          "type": "delightful:enabled"
+        },
+        {
+          "item": "quark:cactus_block",
+          "type": "forge:item_exists"
         }
       ],
       "recipe": {

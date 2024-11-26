@@ -4,24 +4,19 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "leaf_knife"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "seeds:sharp_leaf"
-              }
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "seeds"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "leaf_knife"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "seeds:sharp_leaf"
+          }
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "seeds"
         }
       ],
       "recipe": {

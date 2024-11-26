@@ -36,24 +36,19 @@
       },
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "mythril_knife"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:ingots/mythril"
-              }
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "simpleores"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "mythril_knife"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:ingots/mythril"
+          }
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "simpleores"
         }
       ]
     }

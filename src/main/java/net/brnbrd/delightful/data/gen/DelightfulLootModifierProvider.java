@@ -23,27 +23,27 @@ public class DelightfulLootModifierProvider extends GlobalLootModifierProvider {
 
 	@Override
 	protected void start() {
-		add("green_tea_leaf", new CompatAddItemLootModifier(
+		add("green_tea_leaf", new AddItemLootModifier(
 				new LootItemCondition[]{
-						LootItemEnabledCondition.enabled("green_tea_leaf"),
-						LootItemRandomChanceCondition.randomChance(0.08F).build(),
+						LootItemEnabledCondition.enabled(DelightfulItems.GREEN_TEA_LEAF.getId().getPath()),
+						LootItemRandomChanceCondition.randomChance(0.8F).build(),
 						MatchTool.toolMatches(ItemPredicate.Builder.item().of(DelightfulItemTags.TOOLS_SCAVENGING)).build(),
 						LootItemBlockIsTagCondition.isTag(DelightfulBlockTags.DROPS_GREEN_TEA_LEAF)
 				},
-				DelightfulItems.GREEN_TEA_LEAF.get(), 1, 1, true, Mods.FR, false
+				DelightfulItems.GREEN_TEA_LEAF.get(), 1, 1, true
 		));
-		add("green_tea_leaf_rare", new CompatAddItemLootModifier(
+		add("green_tea_leaf_rare", new AddItemLootModifier(
 				new LootItemCondition[]{
-						LootItemEnabledCondition.enabled("green_tea_leaf"),
+						LootItemEnabledCondition.enabled(DelightfulItems.GREEN_TEA_LEAF.getId().getPath()),
 						LootItemRandomChanceCondition.randomChance(0.005F).build(),
 						MatchTool.toolMatches(ItemPredicate.Builder.item().of(DelightfulItemTags.TOOLS_SCAVENGING)).invert().build(),
 						LootItemBlockIsTagCondition.isTag(DelightfulBlockTags.DROPS_GREEN_TEA_LEAF)
 				},
-				DelightfulItems.GREEN_TEA_LEAF.get(), 1, 1, true, Mods.FR, false
+				DelightfulItems.GREEN_TEA_LEAF.get(), 1, 1, true
 		));
 		add("acorn", new AddItemLootModifier(
 				new LootItemCondition[]{
-						LootItemEnabledCondition.enabled("acorn"),
+						LootItemEnabledCondition.enabled(DelightfulItems.ACORN.getId().getPath()),
 						LootItemRandomChanceCondition.randomChance(0.01F).build(),
 						MatchTool.toolMatches(ItemPredicate.Builder.item().of(Tags.Items.SHEARS)).invert().build(),
 						MatchTool.toolMatches(ItemPredicate.Builder.item().hasEnchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, MinMaxBounds.Ints.ANY))).invert().build(),
@@ -53,7 +53,7 @@ public class DelightfulLootModifierProvider extends GlobalLootModifierProvider {
 		));
 		add("acorn_from_knife", new AddItemLootModifier(
 				new LootItemCondition[]{
-						LootItemEnabledCondition.enabled("acorn"),
+						LootItemEnabledCondition.enabled(DelightfulItems.ACORN.getId().getPath()),
 						LootItemRandomChanceCondition.randomChance(0.05F).build(),
 						MatchTool.toolMatches(ItemPredicate.Builder.item().of(DelightfulItemTags.TOOLS_SCAVENGING)).build(),
 						MatchTool.toolMatches(ItemPredicate.Builder.item().hasEnchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, MinMaxBounds.Ints.ANY))).invert().build(),
@@ -63,7 +63,7 @@ public class DelightfulLootModifierProvider extends GlobalLootModifierProvider {
 		));
 		add("acorn_from_squirrel", new AddItemLootModifier(
 				new LootItemCondition[]{
-						LootItemEnabledCondition.enabled("acorn"),
+						LootItemEnabledCondition.enabled(DelightfulItems.ACORN.getId().getPath()),
 						LootItemRandomChanceWithLootingCondition.randomChanceAndLootingBoost(0.4F, 2.0F).build(),
 						LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.THIS, EntityPredicate.Builder.entity().of(DelightfulEntityTags.DROPS_ACORN)).build()
 				},
@@ -71,7 +71,7 @@ public class DelightfulLootModifierProvider extends GlobalLootModifierProvider {
 		));
 		add("acorn_from_drops", new AddItemLootModifier(
 				new LootItemCondition[]{
-						LootItemEnabledCondition.enabled("acorn"),
+						LootItemEnabledCondition.enabled(DelightfulItems.ACORN.getId().getPath()),
 						LootItemRandomChanceWithLootingCondition.randomChanceAndLootingBoost(0.4F, 2.0F).build(),
 						LootItemBlockIsTagCondition.isTag(DelightfulBlockTags.ADD_ACORN)
 				},
@@ -79,7 +79,7 @@ public class DelightfulLootModifierProvider extends GlobalLootModifierProvider {
 		));
 		add("animal_fat", new AddItemLootModifier(
 				new LootItemCondition[]{
-						LootItemEnabledCondition.enabled("animal_fat"),
+						LootItemEnabledCondition.enabled(DelightfulItems.ANIMAL_FAT.getId().getPath()),
 						LootItemRandomChanceWithLootingCondition.randomChanceAndLootingBoost(0.6F, 2.0F).build(),
 						LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.KILLER_PLAYER,
 								EntityPredicate.Builder.entity().equipment(
@@ -90,11 +90,21 @@ public class DelightfulLootModifierProvider extends GlobalLootModifierProvider {
 		));
 		add("raw_goat", new AddItemLootModifier(
 				new LootItemCondition[]{
-						LootItemEnabledCondition.enabled("raw_goat"),
+						LootItemEnabledCondition.enabled(DelightfulItems.RAW_GOAT.getId().getPath()),
 						LootItemRandomChanceWithLootingCondition.randomChanceAndLootingBoost(1.0F, 2.0F).build(),
+						LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.THIS, EntityPredicate.Builder.entity().flags(EntityFlagsPredicate.Builder.flags().setOnFire(false).build())).build(),
 						LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.THIS, EntityPredicate.Builder.entity().of(DelightfulEntityTags.DROPS_RAW_GOAT)).build()
 				},
 				DelightfulItems.RAW_GOAT.get(), 1, 2, true
+		));
+		add("cooked_goat", new AddItemLootModifier(
+				new LootItemCondition[]{
+						LootItemEnabledCondition.enabled(DelightfulItems.COOKED_GOAT.getId().getPath()),
+						LootItemRandomChanceWithLootingCondition.randomChanceAndLootingBoost(1.0F, 2.0F).build(),
+						LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.THIS, EntityPredicate.Builder.entity().flags(EntityFlagsPredicate.Builder.flags().setOnFire(true).build())).build(),
+						LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.THIS, EntityPredicate.Builder.entity().of(DelightfulEntityTags.DROPS_RAW_GOAT)).build()
+				},
+				DelightfulItems.COOKED_GOAT.get(), 1, 2, true
 		));
 		add("straw_from_compat", new AddItemLootModifier(
 				new LootItemCondition[]{
@@ -106,7 +116,7 @@ public class DelightfulLootModifierProvider extends GlobalLootModifierProvider {
 		));
 		add("crab_legs_from_crab_crabbersdelight", new AddItemLootModifier(
 				new LootItemCondition[]{
-						LootItemModLoadedCondition.loaded("crabbersdelight"),
+						LootItemModLoadedCondition.loaded(Mods.CRAB),
 						LootItemRandomChanceWithLootingCondition.randomChanceAndLootingBoost(1.0F, 1.5F).build(),
 						LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.KILLER_PLAYER,
 								EntityPredicate.Builder.entity().equipment(

@@ -4,20 +4,15 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:item_exists",
-              "item": "moredelight:bread_slice"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:item_exists",
-                "item": "some_assembly_required:bread_slice"
-              }
-            }
-          ]
+          "type": "forge:item_exists",
+          "item": "moredelight:bread_slice"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:item_exists",
+            "item": "some_assembly_required:bread_slice"
+          }
         }
       ],
       "recipe": {

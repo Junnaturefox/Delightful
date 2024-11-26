@@ -36,24 +36,19 @@
       },
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "experience_knife"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "create_sa:heap_of_experience"
-              }
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "create_sa"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "experience_knife"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "create_sa:heap_of_experience"
+          }
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "create_sa"
         }
       ]
     }

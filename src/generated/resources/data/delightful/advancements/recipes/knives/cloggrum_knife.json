@@ -36,31 +36,26 @@
       },
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "cloggrum_knife"
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:tag_empty",
-                "tag": "forge:ingots/cloggrum"
-              }
-            },
-            {
-              "type": "forge:not",
-              "value": {
-                "type": "forge:mod_loaded",
-                "modid": "undergardendelight"
-              }
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "undergarden"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "cloggrum_knife"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:ingots/cloggrum"
+          }
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:mod_loaded",
+            "modid": "undergardendelight"
+          }
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "undergarden"
         }
       ]
     }

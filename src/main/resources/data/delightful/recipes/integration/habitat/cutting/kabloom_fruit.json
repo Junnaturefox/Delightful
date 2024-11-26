@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:item_exists",
-              "item": "habitat:kabloom_fruit"
-            },
-            {
-              "type": "forge:item_exists",
-              "item": "habitat:kabloom_pulp"
-            }
-          ]
+          "type": "forge:item_exists",
+          "item": "habitat:kabloom_fruit"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "habitat:kabloom_pulp"
         }
       ],
       "recipe": {

@@ -590,10 +590,10 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
 	private void wrap(RecipeBuilder builder, String modid, String name, Consumer<FinishedRecipe> consumer, ICondition... conds) {
 		ResourceLocation loc = Util.rl(modid, name);
 		ConditionalRecipe.Builder cond = ConditionalRecipe.builder();
-		if (conds.length > 1) {
-			cond.addCondition(and(conds));
-		} else if (conds.length == 1) {
-			cond.addCondition(conds[0]);
+		if (conds.length >= 1) {
+			for (ICondition currentCond : conds) {
+				cond.addCondition(currentCond);
+			}
 		}
 		FinishedRecipe[] recipe = new FinishedRecipe[1];
 		builder.save(f -> recipe[0] = f, loc);
@@ -605,10 +605,10 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
 	private void wrap(SmithingTransformRecipeBuilder builder, String name, Consumer<FinishedRecipe> consumer, ICondition... conds) {
 		ResourceLocation loc = Util.rl(Delightful.MODID, name);
 		ConditionalRecipe.Builder cond = ConditionalRecipe.builder();
-		if (conds.length > 1) {
-			cond.addCondition(and(conds));
-		} else if (conds.length == 1) {
-			cond.addCondition(conds[0]);
+		if (conds.length >= 1) {
+			for (ICondition currentCond : conds) {
+				cond.addCondition(currentCond);
+			}
 		}
 		FinishedRecipe[] recipe = new FinishedRecipe[1];
 		builder.save(f -> recipe[0] = f, loc);
@@ -623,13 +623,11 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
 
 	private void wrap(CuttingBoardRecipeBuilder builder, String modid, String name, Consumer<FinishedRecipe> consumer, ICondition... conds) {
 		ResourceLocation loc = Util.rl(modid, name);
-		ConditionalRecipe.Builder cond;
-		if (conds.length > 1) {
-			cond = ConditionalRecipe.builder().addCondition(and(conds));
-		} else if (conds.length == 1) {
-			cond = ConditionalRecipe.builder().addCondition(conds[0]);
-		} else {
-			cond = ConditionalRecipe.builder();
+		ConditionalRecipe.Builder cond = ConditionalRecipe.builder();
+		if (conds.length >= 1) {
+			for (ICondition currentCond : conds) {
+				cond.addCondition(currentCond);
+			}
 		}
 		FinishedRecipe[] recipe = new FinishedRecipe[1];
 		builder.build(f -> recipe[0] = f, loc);
@@ -643,13 +641,11 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
 
 	private void wrap(CookingPotRecipeBuilder builder, String modid, String name, Consumer<FinishedRecipe> consumer, ICondition... conds) {
 		ResourceLocation loc = Util.rl(modid, name);
-		ConditionalRecipe.Builder cond;
-		if (conds.length > 1) {
-			cond = ConditionalRecipe.builder().addCondition(and(conds));
-		} else if (conds.length == 1) {
-			cond = ConditionalRecipe.builder().addCondition(conds[0]);
-		} else {
-			cond = ConditionalRecipe.builder();
+		ConditionalRecipe.Builder cond = ConditionalRecipe.builder();
+		if (conds.length >= 1) {
+			for (ICondition currentCond : conds) {
+				cond.addCondition(currentCond);
+			}
 		}
 		FinishedRecipe[] recipe = new FinishedRecipe[1];
 		builder.build(f -> recipe[0] = f, loc);
@@ -701,11 +697,7 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
 			if (knife instanceof ICompat compat) {
 				conds = ArrayUtils.addAll(conds, Arrays.stream(compat.getModid()).map(this::modLoaded).toList().toArray(new ICondition[0]));
 			}
-			if (knife.getRecipeType() == RecipeType.SMITHING) {
-				wrap(SmithingTransformRecipeBuilder.smithing(knife.getSmithing().getLeft(), knife.getSmithing().getRight(), Ingredient.of(tag), RecipeCategory.COMBAT, knife)
-								.unlocks("has_" + tag.location().getPath(), has(tag)),
-						"knives/smithing/" + path, finished, conds);
-			} else {
+			if (knife.getRecipeType() == RecipeType.CRAFTING) {
 				wrap(ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, knife)
 								.define('m', Ingredient.of(tag))
 								.define('s', knife.getRod())

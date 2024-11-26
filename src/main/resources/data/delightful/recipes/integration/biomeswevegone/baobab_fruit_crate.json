@@ -4,17 +4,12 @@
     {
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "forge:item_exists",
-              "item": "biomeswevegone:baobab_fruit"
-            },
-            {
-              "type": "delightful:enabled",
-              "value": "baobab_fruit_crate"
-            }
-          ]
+          "type": "forge:item_exists",
+          "item": "biomeswevegone:baobab_fruit"
+        },
+        {
+          "type": "delightful:enabled",
+          "value": "baobab_fruit_crate"
         }
       ],
       "recipe": {

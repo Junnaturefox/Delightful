@@ -38,21 +38,16 @@
       },
       "conditions": [
         {
-          "type": "forge:and",
-          "values": [
-            {
-              "type": "delightful:enabled",
-              "value": "salmonberry_ice_cream_block"
-            },
-            {
-              "type": "delightful:enabled",
-              "value": "salmonberry_ice_cream"
-            },
-            {
-              "type": "forge:mod_loaded",
-              "modid": "neapolitan"
-            }
-          ]
+          "type": "delightful:enabled",
+          "value": "salmonberry_ice_cream_block"
+        },
+        {
+          "type": "delightful:enabled",
+          "value": "salmonberry_ice_cream"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "neapolitan"
         }
       ]
     }
