@@ -12,11 +12,13 @@
 - Reduced Saturation effect on Prickly Pear Juice to 15 seconds
 - Ender Nectar requires a Honey Bottle instead of Sugar
 - Chunkwich requires an Onion instead of Sugar
-- Goats on fire now drop Cooked Chevon when killed
 - Renamed Jam item ids to match English translations
+- Update dependencies (Farmer's Delight 1.2.5, etc.)
+
+### Fixes
+- Goats on fire now drop Cooked Chevon when killed
 - Fix detection for if item is disabled in certain contexts (such as loot modifiers)
 - Removed redundant uses of "forge:and" in recipe conditions
-- Update dependencies (Farmer's Delight 1.2.5, etc.)
 
 
 # 3.6
@@ -110,7 +112,7 @@
 - Nut Milk recipe compat for Miner's Delight's Copper Cup
 
 ### Fixes
-- Fixed Living Knife being disabled
+- Fix Living Knife being disabled
 - Immersive Engineering garden cloche compat fixes, and support for Cantaloupes
 
 
@@ -120,7 +122,7 @@
 - Added Valkyrum Knife (for [Ancient Aether](https://www.curseforge.com/minecraft/mc-mods/ancient-aether))
 
 ### Fixes
-- Fixed crash with Aether Redux
+- Fix crash with Aether Redux
 - Updated Veridium and Infused Veridium Knife textures for newer Aether Redux versions
 - Blazing Knife and Experience Knife now have their correct properties
 
@@ -131,7 +133,7 @@
 - Slightly adjusted Resistance potion effect length for some Cantaloupe foods
 
 ### Fixes
-- Fixed crash when interacting with some disabled items in GUI
+- Fix crash when interacting with some disabled items in GUI
 
 ### Translations
 - Updated:
