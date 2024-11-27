@@ -17,6 +17,7 @@
 
 ### Fixes
 - Goats on fire now drop Cooked Chevon when killed
+- Fix smithing recipe for some knives
 - Fix detection for if item is disabled in certain contexts (such as loot modifiers)
 - Removed redundant uses of "forge:and" in recipe conditions
 - Optimized file size of some assets
