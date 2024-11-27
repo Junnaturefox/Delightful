@@ -4,13 +4,18 @@
 # 3.6.1
 
 ### Updates
+- Added Source Berry Milkshake/Ice Cream/Blocks (for [Ars Nouveau](https://www.curseforge.com/minecraft/mc-mods/ars-nouveau))
+- Conflicting items with [Ars Nouveau's Flavors & Delight](https://www.curseforge.com/minecraft/mc-mods/ars-nouveaus-flavors-delight) will be disabled
 - Nether Quartz Knife no longer requires AE2
   - Disabled in config by default, re-generation is recommended
 - Reduced Nourishment effect on Azalea Tea to 30 seconds
 - Reduced Saturation effect on Prickly Pear Juice to 15 seconds
-- Ender Nectar recipe requires a Honey Bottle instead of Sugar
+- Ender Nectar requires a Honey Bottle instead of Sugar
+- Chunkwich requires an Onion instead of Sugar
+- Goats on fire now drop Cooked Chevon when killed
 - Renamed Jam item ids to match English translations
-- Removed unused assets
+- Fixed detection for if item is disabled in certain contexts (such as loot modifiers)
+- Update dependencies (Farmer's Delight 1.2.5, etc.)
 
 
 # 3.6
