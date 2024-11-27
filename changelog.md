@@ -14,7 +14,8 @@
 - Chunkwich requires an Onion instead of Sugar
 - Goats on fire now drop Cooked Chevon when killed
 - Renamed Jam item ids to match English translations
-- Fixed detection for if item is disabled in certain contexts (such as loot modifiers)
+- Fix detection for if item is disabled in certain contexts (such as loot modifiers)
+- Removed redundant uses of "forge:and" in recipe conditions
 - Update dependencies (Farmer's Delight 1.2.5, etc.)
 
 
@@ -23,10 +24,10 @@
 ### Updates
 - Adjust Tea recipes for latest Farmer's Respite
 - Oh the Biomes We've Gone is now supported and replaces the legacy BYG module
-- Remove Chunk Nugget and add sugar to Chunkwich recipe (for Rotten Leather)
+- Removed Chunk Nugget and add sugar to Chunkwich recipe (for Rotten Leather)
 - More compat mobs drop Animal Fat
-- Add Soap (from Supplementaries) crafting recipe from Animal Fat
-- Add Dog Food crafting recipe from Animal Fat
+- Added Soap (from Supplementaries) crafting recipe from Animal Fat
+- Added Dog Food crafting recipe from Animal Fat
 
 
 # 3.5.9
@@ -49,7 +50,7 @@
 - Added Cactus Chili
 - Added Cactus Soup (with Cup for Miner's Delight)
 - Jade support for Mushroom Colonies, Salmonberries & Cantaloupes
-- Remove wood stripping recipes covered by Every Compat (highly recommend)
+- Removed wood stripping recipes covered by Every Compat (highly recommend)
 - Added Cactus Chunk recipes from Habitat's cacti
 - More compat recipes and tags
 
