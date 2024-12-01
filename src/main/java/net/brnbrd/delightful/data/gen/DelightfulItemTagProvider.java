@@ -7,7 +7,6 @@ import net.brnbrd.delightful.common.item.knife.DelightfulKnifeItem;
 import net.brnbrd.delightful.common.item.knife.Knives;
 import net.brnbrd.delightful.common.item.knife.compat.additionaladditions.GildedNetheriteKnifeItem;
 import net.brnbrd.delightful.common.item.knife.compat.additionaladditions.RoseGoldKnifeItem;
-import net.brnbrd.delightful.common.item.knife.compat.deeperdarker.WardenKnifeItem;
 import net.brnbrd.delightful.common.item.knife.compat.lolenderite.EnderiteKnifeItem;
 import net.brnbrd.delightful.common.item.knife.compat.undergarden.ForgottenKnifeItem;
 import net.brnbrd.delightful.compat.BWGCompat;
@@ -258,6 +257,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addOptional(Util.rl(Mods.UG, "blisterberry"))
 				.addOptional(Util.rl(Mods.EN, "zure_berry"))
 				.addOptional(Util.rl(Mods.EP, "pream_berry"))
+				.addOptional(Util.rl(Mods.UE, "warped_berries"))
 				.addOptional(Util.rl("deep_aether", "goldenleaf_berries"))
 				.addOptional(Util.rl(Mods.AER, "zanberry"));
 		this.tag(DelightfulItemTags.FRUITS_CITRUS).replace(false)

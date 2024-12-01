@@ -167,7 +167,14 @@ configBackground="farmersdelight:textures/block/tatami_mat_half.png"
 [[dependencies.delightful]]
     modId="undergardendelight"
     mandatory=false
-    versionRange="[0,)"
+    versionRange="[1,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.delightful]]
+    modId="unusualend"
+    mandatory=false
+    versionRange="[2.2,)"
     ordering="AFTER"
     side="BOTH"
 
@@ -300,7 +307,7 @@ configBackground="farmersdelight:textures/block/tatami_mat_half.png"
 [[dependencies.delightful]]
     modId="untameddelight"
     mandatory=false
-    versionRange="[1.20.1-1.0.0,)"
+    versionRange="[1.20.1-1,)"
     ordering="AFTER"
     side="BOTH"
 

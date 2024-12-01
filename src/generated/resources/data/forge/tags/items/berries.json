@@ -42,6 +42,10 @@
       "required": false
     },
     {
+      "id": "unusualend:warped_berries",
+      "required": false
+    },
+    {
       "id": "deep_aether:goldenleaf_berries",
       "required": false
     },
