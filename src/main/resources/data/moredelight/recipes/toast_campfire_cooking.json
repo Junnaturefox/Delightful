@@ -19,7 +19,7 @@
         "type": "minecraft:campfire_cooking",
         "category": "food",
         "cookingtime": 600,
-        "experience": 0.5,
+        "experience": 0.35,
         "ingredient": {
           "tag": "forge:bread_slices/wheat"
         },
