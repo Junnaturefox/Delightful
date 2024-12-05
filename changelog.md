@@ -1,6 +1,11 @@
 # Changelog
 
 
+# 3.6.2
+
+### Updates
+- Update dependencies (Farmer's Delight 1.2.6)
+
 # 3.6.1
 
 ### Updates
