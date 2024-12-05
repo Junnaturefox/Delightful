@@ -71,7 +71,7 @@ public class Knives extends DelightfulItems {
 	public static final RegistryObject<Item> BRASS = registerIngotKnife("brass");
 	public static final RegistryObject<Item> BRONZE = registerIngotKnife("bronze");
 	public static final RegistryObject<Item> CONSTANTAN = registerIngotKnife("constantan");
-	public static final RegistryObject<Item> ELECTRUM = registerIngotKnife("electrum");
+	public static final RegistryObject<Item> ELECTRUM = registerItem("electrum_knife", () -> new ElectrumKnifeItem((new Item.Properties())));
 	public static final RegistryObject<Item> INVAR = registerIngotKnife("invar");
 	public static final RegistryObject<Item> LEAD = registerIngotKnife("lead");
 	public static final RegistryObject<Item> NICKEL = registerIngotKnife("nickel");
