@@ -1,0 +1,34 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:item_exists",
+          "item": "incubation:scrambled_eggs"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          {
+            "tag": "forge:eggs/bird"
+          },
+          {
+            "tag": "forge:eggs/bird"
+          },
+          {
+            "tag": "forge:milk"
+          },
+          {
+            "item": "minecraft:bowl"
+          }
+        ],
+        "result": {
+          "item": "incubation:scrambled_eggs"
+        }
+      }
+    }
+  ]
+}

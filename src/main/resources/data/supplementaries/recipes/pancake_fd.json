@@ -1,0 +1,38 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:item_exists",
+          "item": "supplementaries:pancake"
+        },
+        {
+          "type": "supplementaries:flag",
+          "flag": "pancake"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "tag": "forge:sugar"
+          },
+          {
+            "tag": "forge:milk"
+          },
+          {
+            "tag": "forge:dough"
+          },
+          {
+            "tag": "forge:eggs/bird"
+          }
+        ],
+        "result": {
+          "item": "supplementaries:pancake",
+          "count": 3
+        }
+      }
+    }
+  ]
+}
