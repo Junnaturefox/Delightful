@@ -59,7 +59,7 @@
         "type": "minecraft:crafting_shapeless",
         "ingredients": [
           {
-            "tag": "forge:eggs/bird"
+            "tag": "forge:eggs"
           },
           {
             "tag": "forge:sugar"

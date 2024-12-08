@@ -23,7 +23,7 @@
             "item": "minecraft:sweet_berries"
           },
           "e": {
-            "tag": "forge:eggs/bird"
+            "tag": "forge:eggs"
           }
         },
         "pattern": [
@@ -62,7 +62,7 @@
             "item": "minecraft:sweet_berries"
           },
           "e": {
-            "tag": "forge:eggs/bird"
+            "tag": "forge:eggs"
           }
         },
         "pattern": [

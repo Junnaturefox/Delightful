@@ -115,27 +115,17 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addOptional(Util.rl(Mods.BWG, "mini_cactus"));
 		this.tag(DelightfulItemTags.MATCHA)
 				.add(DelightfulItems.MATCHA.get());
-		this.tag(DelightfulItemTags.EGGS_DUCK)
-				.addOptional(Util.rl(Mods.NA, "duck_egg"));
-		this.tag(DelightfulItemTags.EGGS_PARROT)
+		this.tag(ForgeTags.EGGS)
+				.addOptional(Util.rl(Mods.NA, "duck_egg"))
 				.addOptional(Util.rl(Mods.Q, "egg_parrot_red_blue"))
 				.addOptional(Util.rl(Mods.Q, "egg_parrot_blue"))
 				.addOptional(Util.rl(Mods.Q, "egg_parrot_green"))
 				.addOptional(Util.rl(Mods.Q, "egg_parrot_yellow_blue"))
-				.addOptional(Util.rl(Mods.Q, "egg_parrot_grey"));
-		this.tag(DelightfulItemTags.EGGS_BIRD)
-				.add(Items.EGG)
-				.addTag(DelightfulItemTags.EGGS_DUCK)
-				.addTag(DelightfulItemTags.EGGS_PARROT)
+				.addOptional(Util.rl(Mods.Q, "egg_parrot_grey"))
 				.addOptional(Util.rl("autumnity", "turkey_egg"))
 				.addOptional(Util.rl("deep_aether", "quail_egg"))
 				.addOptional(Util.rl("farmlife", "galliraptor_egg"))
 				.addOptional(Util.rl("etcetera", "eggple"));
-		this.tag(ForgeTags.EGGS)
-				.addTag(DelightfulItemTags.EGGS_BIRD)
-				.addOptional(Util.rl(Mods.NA, "alligator_egg"))
-				.addOptional(Util.rl(Mods.NA, "tortoise_egg"))
-				.addOptional(Util.rl("sullysmod", "tortoise_egg"));
 		this.tag(ForgeTags.COOKED_EGGS)
 				.addOptional(Util.rl(Mods.AA, "fried_egg"))
 				.addOptional(Util.rl(Mods.IN, "fried_egg"))

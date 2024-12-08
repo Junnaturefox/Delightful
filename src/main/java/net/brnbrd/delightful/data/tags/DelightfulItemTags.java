@@ -132,9 +132,6 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> SEEDS_SALMONBERRY = forge("seeds/salmonberry");
 	public static final TagKey<Item> SEEDS_CANTALOUPE = forge("seeds/cantaloupe");
 	public static final TagKey<Item> BONES = forge("bones");
-	public static final TagKey<Item> EGGS_BIRD = forge("eggs/bird");
-	public static final TagKey<Item> EGGS_DUCK = forge("eggs/duck");
-	public static final TagKey<Item> EGGS_PARROT = forge("eggs/parrot");
 	public static final TagKey<Item> DOUGH_CORN = forge("dough/corn");
 	public static final TagKey<Item> DOUGH_NUT = forge("dough/nut");
 	public static final TagKey<Item> BREAD_CORN = forge("bread/corn");

@@ -62,7 +62,7 @@
             "tag": "forge:sugar"
           },
           {
-            "tag": "forge:eggs/bird"
+            "tag": "forge:eggs"
           }
         ],
         "result": {

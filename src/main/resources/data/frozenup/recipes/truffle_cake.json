@@ -27,7 +27,7 @@
             "item": "minecraft:cocoa_beans"
           },
           "E": {
-            "tag": "forge:eggs/bird"
+            "tag": "forge:eggs"
           },
           "W": {
             "tag": "forge:grain/wheat"
