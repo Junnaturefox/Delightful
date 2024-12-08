@@ -226,12 +226,13 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> UTHERIUM_ITEMS = Util.it(Mods.UG, "utherium_items");
 
 	// Aether
+	public static final TagKey<Item> HOLYSTONE = Util.it(Mods.AE, "holystone");
 	public static final TagKey<Item> SKYROOT_STICK = Util.it(Mods.AE, "skyroot_stick");
 	public static final TagKey<Item> SKYROOT_TOOL_CRAFTING = Util.it(Mods.AE, "skyroot_tool_crafting");
 	public static final TagKey<Item> ENCHANTED_GRAVITITE = Util.it(Mods.AE, "enchanted_gravitite");
-	public static final TagKey<Item> HOLYSTONE = Util.it(Mods.AE, "holystone");
 
 	// Aether Redux
+	public static final TagKey<Item> INGOTS_GRAVITITE = DelightfulItems.ingot("gravitite");
 	public static final TagKey<Item> INGOTS_VERIDIUM = DelightfulItems.ingot("veridium");
 
 	// Deep Aether

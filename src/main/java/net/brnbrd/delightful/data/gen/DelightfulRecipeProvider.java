@@ -41,7 +41,6 @@ import vectorwing.farmersdelight.data.recipe.CookingRecipes;
 import java.util.Arrays;
 import java.util.Objects;
 import java.util.function.Consumer;
-import java.util.function.Supplier;
 
 public class DelightfulRecipeProvider extends RecipeProvider implements IConditionBuilder {
 	public DelightfulRecipeProvider(PackOutput output) {

@@ -1,14 +1,19 @@
 package net.brnbrd.delightful.common.item.knife.compat.aether;
 
 import net.brnbrd.delightful.common.item.DelightfulTiers;
+import net.brnbrd.delightful.compat.Mods;
 import net.brnbrd.delightful.data.tags.DelightfulEntityTags;
 import net.brnbrd.delightful.data.tags.DelightfulItemTags;
 import net.minecraft.network.protocol.game.ClientboundSetEntityMotionPacket;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.RecipeType;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 public class GravititeKnifeItem extends AetherKnifeItem {
 	public GravititeKnifeItem(Properties properties) {
@@ -26,5 +31,15 @@ public class GravititeKnifeItem extends AetherKnifeItem {
 			}
 		}
 		return super.hurtEnemy(stack, target, attacker);
+	}
+
+	@Override
+	public @Nullable TagKey<Item> getTag() {
+		return (Mods.loaded(Mods.AER)) ? DelightfulItemTags.INGOTS_GRAVITITE : DelightfulItemTags.ENCHANTED_GRAVITITE;
+	}
+
+	@Override
+	public @Nullable RecipeType<?> getRecipeType() {
+		return null;
 	}
 }

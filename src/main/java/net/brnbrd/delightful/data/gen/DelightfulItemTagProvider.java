@@ -655,12 +655,14 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		this.addSelf(DelightfulItemTags.HOLYSTONE);
 
 		// Aether Redux
-		this.tag(DelightfulItemTags.INGOTS_VERIDIUM)
-				.addOptional(Util.rl(Mods.AER, "veridium_ingot"));
 		this.tag(Util.it(Mods.AER, "veridium_advancement_infusable"))
 				.add(Knives.VERIDIUM.get());
 		this.tag(Util.it(Mods.AER, "infused_veridium_items"))
 				.add(Knives.INFUSED_VERIDIUM.get());
+		this.tag(DelightfulItemTags.INGOTS_VERIDIUM)
+				.addOptional(Util.rl(Mods.AER, "veridium_ingot"));
+		this.tag(DelightfulItemTags.INGOTS_GRAVITITE)
+				.addOptional(Util.rl(Mods.AER, "gravitite_ingot"));
 
 		// Deep Aether
 		this.tag(DelightfulItemTags.GEMS_SKYJADE)

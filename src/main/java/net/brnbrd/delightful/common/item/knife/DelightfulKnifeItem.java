@@ -68,8 +68,8 @@ public class DelightfulKnifeItem extends KnifeItem implements IConfigured {
 		ITagManager<Item> tags = ForgeRegistries.ITEMS.tags();
 		return (
 				tags != null &&
-						tags.isKnownTagName(materialTag) &&
-						!tags.getTag(materialTag).isEmpty()
+				tags.isKnownTagName(materialTag) &&
+				!tags.getTag(materialTag).isEmpty()
 		);
 	}
 

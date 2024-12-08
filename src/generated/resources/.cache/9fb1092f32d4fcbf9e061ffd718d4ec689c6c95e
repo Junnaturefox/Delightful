@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-03T19:44:13.772668	Recipes
+// 1.20.1	2024-12-08T11:36:00.8806014	Recipes
 6c217dd6477efa10f6042809ba959d53036ab5e2 data/delightful/advancements/recipes/cabinets/basalt_cabinet.json
 5b82f87851220644287d771121677deac66b3b89 data/delightful/advancements/recipes/cabinets/quartz_cabinet.json
 cf29033c1c919355c261025df529938e6ebc73f8 data/delightful/advancements/recipes/campfire/cactus_steak.json
@@ -78,7 +78,6 @@ e4354831baf8f0f45a0cdf0ebc4099a20fd2a894 data/delightful/advancements/recipes/kn
 1bd5f0b931cf298f1c86e62576da287de7e6b8d1 data/delightful/advancements/recipes/knives/experience_knife.json
 2ffd4273023e01b2aa086d609d13a17c73650142 data/delightful/advancements/recipes/knives/fiery_knife.json
 b9743aef726697b1a086ad314713c3ba0e519f0d data/delightful/advancements/recipes/knives/froststeel_knife.json
-29d41046bc346a11d1cccfc11659459310e95484 data/delightful/advancements/recipes/knives/gravitite_knife.json
 b42e0e5c97b24edf4ec3c905eaa3f9a1f3eab49c data/delightful/advancements/recipes/knives/holystone_knife.json
 158c11691b48c2b76ced4094a132b812ede6e242 data/delightful/advancements/recipes/knives/invar_knife.json
 5c363bb6809ed8e9af2828a91d9b8ebc3e50ca66 data/delightful/advancements/recipes/knives/kiwano_knife.json
@@ -217,7 +216,6 @@ b7dd18aef42507bc58969b28e57cfa8e4b28e00f data/delightful/recipes/knives/electrum
 ea99d393f850b0fc6796d2477c3519059103f24f data/delightful/recipes/knives/experience_knife.json
 c3ae478d5273bbbd5d88b789b95bee451eb6e131 data/delightful/recipes/knives/fiery_knife.json
 9452e22e506118e327b64679353cd2479ced79cf data/delightful/recipes/knives/froststeel_knife.json
-002f3877abcb72ad28e4c85bb6d48ef5d8f81f47 data/delightful/recipes/knives/gravitite_knife.json
 11ab631b1078faf1ff524bd17f85e697716904d9 data/delightful/recipes/knives/holystone_knife.json
 51925cd18aace6875695ea8c19067b9cfca08057 data/delightful/recipes/knives/invar_knife.json
 c217053a20a82de356649816983efa102ea0861d data/delightful/recipes/knives/kiwano_knife.json
