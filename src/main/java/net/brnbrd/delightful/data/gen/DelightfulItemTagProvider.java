@@ -108,6 +108,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		this.tag(DelightfulItemTags.CACTI)
 				.add(Items.CACTUS)
 				.addOptional(Util.rl(Mods.BWG, "barrel_cactus"))
+				.addOptional(Util.rl(Mods.BWG, "flowering_barrel_cactus"))
 				.addOptional(Util.rl(Mods.BWG, "prickly_pear_cactus"))
 				.addOptional(Util.rl(Mods.BWG, "golden_spined_cactus"));
 		this.tag(DelightfulItemTags.SMALL_CACTI)

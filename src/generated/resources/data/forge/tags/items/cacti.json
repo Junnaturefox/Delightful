@@ -6,6 +6,10 @@
       "required": false
     },
     {
+      "id": "biomeswevegone:flowering_barrel_cactus",
+      "required": false
+    },
+    {
       "id": "biomeswevegone:prickly_pear_cactus",
       "required": false
     },
