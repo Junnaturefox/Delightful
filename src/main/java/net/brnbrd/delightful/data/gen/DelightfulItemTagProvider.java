@@ -116,6 +116,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		this.tag(DelightfulItemTags.MATCHA)
 				.add(DelightfulItems.MATCHA.get());
 		this.tag(ForgeTags.EGGS)
+				.add(Items.TURTLE_EGG)
 				.addOptional(Util.rl(Mods.NA, "duck_egg"))
 				.addOptional(Util.rl(Mods.Q, "egg_parrot_red_blue"))
 				.addOptional(Util.rl(Mods.Q, "egg_parrot_blue"))

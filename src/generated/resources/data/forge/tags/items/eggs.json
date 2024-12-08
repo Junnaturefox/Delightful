@@ -1,5 +1,6 @@
 {
   "values": [
+    "minecraft:turtle_egg",
     {
       "id": "naturalist:duck_egg",
       "required": false

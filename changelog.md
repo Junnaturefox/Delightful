@@ -4,6 +4,10 @@
 # 3.6.2
 
 ### Updates
+- Blueberry Sack is now solely compat for [Biomes We've Gone](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-weve-gone)
+- Electrum Knife will be disabled in presence of [Oreganized](https://www.curseforge.com/minecraft/mc-mods/oreganized)
+- Fix Gravitite Knife recipe in presence of [The Aether: Redux](https://www.curseforge.com/minecraft/mc-mods/aether-redux)
+- Update tags for some recipes involving eggs
 - Update dependencies (Farmer's Delight 1.2.6)
 
 # 3.6.1
