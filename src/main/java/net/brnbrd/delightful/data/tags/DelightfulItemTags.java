@@ -165,6 +165,8 @@ public class DelightfulItemTags {
 
 	// Deeper and Darker
 	public static final TagKey<Item> REINFORCED_ECHO_SHARD = Util.it("deeperdarker", "reinforced_echo_shard");
+	public static final TagKey<Item> RESONARIUM = Util.it("deeperdarker", "resonarium");
+	public static final TagKey<Item> RESONARIUM_PLATE = Util.it("deeperdarker", "resonarium_plate");
 
 	// Create
 	public static final TagKey<Item> POLISHED_ROSE_QUARTZ = Util.it(Mods.C, "polished_rose_quartz");

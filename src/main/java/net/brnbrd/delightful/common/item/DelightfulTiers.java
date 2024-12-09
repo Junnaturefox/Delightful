@@ -47,6 +47,7 @@ public enum DelightfulTiers implements Tier {
 	SINISITE(5, 4100, 18F, 8F, 11, DelightfulItems.getIngot("sinisite")),
 	ALLTHEMODIUM(5, 15000, 10, 11F, 85, Ingredient.of(DelightfulItemTags.PLATES_ALLTHEMODIUM)),
 	WARDEN(4, 2464, 11F, 7F, 21, Ingredient.of(DelightfulItemTags.REINFORCED_ECHO_SHARD)),
+	RESONARIUM(3, 1193, 8, 3, 15, Ingredient.of(DelightfulItemTags.RESONARIUM)),
 	ZINC(2, 250, 7F, 2F, 11, Ingredient.of(DelightfulItemTags.INGOTS_ZINC)),
 	GILDED_QUARTZ(3, 1644, 9F, 4F, 14, Ingredient.of(DelightfulItemTags.POLISHED_ROSE_QUARTZ)),
 	EXPERIENCE(2, 270, 7F, 1.5F, 800, Ingredient.of(DelightfulItemTags.HEAP_EXPERIENCE)),

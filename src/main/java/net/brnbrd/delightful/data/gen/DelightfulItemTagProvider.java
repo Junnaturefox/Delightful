@@ -551,7 +551,10 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		this.addSelf(DelightfulItemTags.DRACO_ARCANUS_STAFF);
 		this.addSelf(DelightfulItemTags.DRAGON_SCALE);
 
+		// Deeper and Darker
 		this.addSelf(DelightfulItemTags.REINFORCED_ECHO_SHARD);
+		this.addSelf(DelightfulItemTags.RESONARIUM);
+		this.addSelf(DelightfulItemTags.RESONARIUM_PLATE);
 
 		// Create
 		this.addSelf(DelightfulItemTags.POLISHED_ROSE_QUARTZ);

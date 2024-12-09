@@ -4,6 +4,7 @@
 # 3.6.2
 
 ### Updates
+- Added Resonarium Knife (for [Deeper and Darker](https://www.curseforge.com/minecraft/mc-mods/deeperdarker))
 - Blueberry Sack is now solely compat for [Biomes We've Gone](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-weve-gone)
 - Electrum Knife will be disabled in presence of [Oreganized](https://www.curseforge.com/minecraft/mc-mods/oreganized)
 - Fix Gravitite Knife recipe in presence of [The Aether: Redux](https://www.curseforge.com/minecraft/mc-mods/aether-redux)
