@@ -114,7 +114,7 @@ public class DelightfulLootModifierProvider extends GlobalLootModifierProvider {
 				},
 				ModItems.STRAW.get(), 1, 1, true
 		));
-		add("crab_legs_from_crab_crabbersdelight", new AddItemLootModifier(
+		add("crab_legs_from_crabbersdelight", new AddItemLootModifier(
 				new LootItemCondition[]{
 						LootItemModLoadedCondition.loaded(Mods.CRAB),
 						LootItemRandomChanceWithLootingCondition.randomChanceAndLootingBoost(1.0F, 1.5F).build(),

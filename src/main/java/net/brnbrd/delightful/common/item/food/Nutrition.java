@@ -117,18 +117,18 @@ public class Nutrition {
 			.effect(() -> new MobEffectInstance(MobEffects.SATURATION, 300, 0), 1.0F).build();
 	public static final FoodProperties LAVENDER_TEA = (new FoodProperties.Builder()).alwaysEat()
 			.effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), 600, 0), 1.0F)
-			.effect(() -> new MobEffectInstance(Mods.getCaffeinated().get(), 300, 0), 1.0F).build();
+			.effect(() -> new MobEffectInstance(Mods.getCaffeinated().get(), 3000, 0), 1.0F).build();
 	public static final FoodProperties AZALEA_TEA = (new FoodProperties.Builder()).alwaysEat()
 			.effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), 600, 0), 1.0F)
-			.effect(() -> new MobEffectInstance(Mods.getCaffeinated().get(), 300, 0), 1.0F).build();
+			.effect(() -> new MobEffectInstance(Mods.getCaffeinated().get(), 3000, 0), 1.0F).build();
 	public static final FoodProperties MATCHA_LATTE = (new FoodProperties.Builder()).alwaysEat()
 			.nutrition(6).saturationMod(0.5F)
 			.effect(() -> new MobEffectInstance(Mods.getGreenTeaEffect().get(), 400, 0), 1.0F)
-			.effect(() -> new MobEffectInstance(Mods.getCaffeinated().get(), 400, 1), 1.0F).build();
+			.effect(() -> new MobEffectInstance(Mods.getCaffeinated().get(), 3600, 1), 1.0F).build();
 	public static final FoodProperties BERRY_MATCHA_LATTE = (new FoodProperties.Builder()).alwaysEat()
 			.nutrition(8).saturationMod(0.65F)
 			.effect(() -> new MobEffectInstance(Mods.getGreenTeaEffect().get(), 400, 0), 1.0F)
-			.effect(() -> new MobEffectInstance(Mods.getCaffeinated().get(), 500, 1), 1.0F).build();
+			.effect(() -> new MobEffectInstance(Mods.getCaffeinated().get(), 4200, 1), 1.0F).build();
 	public static final FoodProperties MATCHA_ICE_CREAM = (new FoodProperties.Builder())
 			.nutrition(6).saturationMod(0.5F)
 			.effect(() -> new MobEffectInstance(Mods.getGreenTeaEffect().get(), 500, 0), 1.0F)

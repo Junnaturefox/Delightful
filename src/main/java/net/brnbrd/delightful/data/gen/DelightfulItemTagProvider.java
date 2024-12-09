@@ -346,17 +346,12 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.add(DelightfulItems.NUT_BUTTER_BOTTLE.get())
 				.addOptional(Util.rl(Mods.VD, "nut_mash_bottle"));
 		this.tag(DelightfulItemTags.SUGAR).add(Items.SUGAR);
-		this.tag(DelightfulItemTags.RAW_CRAB)
+		this.tag(DelightfulItemTags.RAW_CRAB) // Whole Crab
 				.addOptional(Util.rl(Mods.CRAB, "crab"))
 				.addOptionalTag(Util.rl("finsandtails", "spindly_gem_crabs"));
-		this.tag(DelightfulItemTags.COOKED_CRAB)
+		this.tag(DelightfulItemTags.COOKED_CRAB) // Whole Crab
 				.addOptional(Util.rl(Mods.CRAB, "cooked_crab"));
-		this.tag(DelightfulItemTags.CRAB_LEGS)
-				.addOptional(Util.rl(Mods.Q, "cooked_crab_leg"))
-				.addOptional(Util.rl(Mods.CRAB, "crab_legs"))
-				.addOptional(Util.rl("untameddelight", "king_crab_legs"));
 		this.tag(DelightfulItemTags.CRAB_MEAT)
-				.addTag(DelightfulItemTags.CRAB_LEGS)
 				.addOptional(Util.rl(Mods.ECO, "crab_meat"));
 		this.tag(DelightfulItemTags.CRAB_CLAW_COOKED)
 				.addOptional(Util.rl(Mods.CR, "chieftain_claw"))
