@@ -423,7 +423,6 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		this.tag(DelightfulItemTags.COOKED_VENISON)
 				.add(DelightfulItems.COOKED_VENISON_CHOPS.get())
 				.addTag(DelightfulItemTags.COOKED_VENISON_COMPAT);
-		//tag(DelightfulItemTags.RAW_GOAT_COMPAT).addOptional(Util.rl()) Goated and Drop the Meat are handled
 		this.tag(DelightfulItemTags.RAW_GOAT)
 				.add(DelightfulItems.RAW_GOAT.get());
 		this.tag(DelightfulItemTags.COOKED_GOAT)

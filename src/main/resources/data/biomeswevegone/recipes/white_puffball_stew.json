@@ -5,27 +5,24 @@
       "conditions": [
         {
           "type": "forge:item_exists",
-          "item": "ecologics:coconut_husk"
+          "item": "biomeswevegone:white_puffball_stew"
         }
       ],
       "recipe": {
         "type": "farmersdelight:cooking",
-        "container": {
-          "item": "ecologics:coconut_husk"
-        },
         "cookingtime": 200,
         "experience": 1.0,
         "ingredients": [
           {
-            "item": "minecraft:brown_mushroom"
+            "item": "biomeswevegone:white_puffball_cap"
           },
           {
-            "item": "minecraft:red_mushroom"
+            "item": "biomeswevegone:white_puffball_cap"
           }
         ],
         "recipe_book_tab": "meals",
         "result": {
-          "item": "minecraft:mushroom_stew"
+          "item": "biomeswevegone:white_puffball_stew"
         }
       }
     }

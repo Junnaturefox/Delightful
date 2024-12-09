@@ -104,7 +104,7 @@ public class Nutrition {
 			.effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 600, 1), 1.0F).build();
 	public static final FoodProperties COCONUT_CURRY = (new FoodProperties.Builder())
 			.nutrition(15).saturationMod(0.9F)
-			.effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), 6000, 0), 1.0F)
+			.effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), 3600, 0), 1.0F)
 			.effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 0), 1.0F).build();
 	public static final FoodProperties SINIGANG = (new FoodProperties.Builder())
 			.nutrition(15).saturationMod(0.9F)

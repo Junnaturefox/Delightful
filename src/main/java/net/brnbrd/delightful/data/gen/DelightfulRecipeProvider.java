@@ -384,25 +384,25 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
 		wrap(CookingPotRecipeBuilder.cookingPotRecipe(
 								DelightfulItems.COCONUT_CURRY.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F)
 						.addIngredient(DelightfulItemTags.COCONUT)
+						.addIngredient(ForgeTags.MILK)
 						.addIngredient(ForgeTags.RAW_CHICKEN)
-						.addIngredient(ForgeTags.VEGETABLES_TOMATO)
-						.addIngredient(DelightfulItemTags.TEA_LEAVES_GREEN)
-						.addIngredient(ForgeTags.SALAD_INGREDIENTS_CABBAGE)
+						.addIngredient(ModItems.TOMATO_SAUCE.get())
 						.addIngredient(ForgeTags.VEGETABLES_ONION)
-						.unlockedBy("has_tea", has(DelightfulItemTags.TEA_LEAVES_GREEN))
+						.addIngredient(DelightfulItemTags.TEA_LEAVES)
+						.unlockedBy("has_coconut", has(DelightfulItemTags.COCONUT))
 						.setRecipeBookTab(CookingPotRecipeBookTab.MEALS),
-				"food/cooking/coconut_curry_no_ginger", finished, enabled("coconut_curry"), not(tagEmpty(DelightfulItemTags.COCONUT)), tagEmpty(DelightfulItemTags.VEGETABLES_GINGER));
+				"food/cooking/coconut_curry_no_ginger", finished, enabled(DelightfulItems.COCONUT_CURRY), not(tagEmpty(DelightfulItemTags.COCONUT)), tagEmpty(DelightfulItemTags.VEGETABLES_GINGER));
 		wrap(CookingPotRecipeBuilder.cookingPotRecipe(
 								DelightfulItems.COCONUT_CURRY.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F)
 						.addIngredient(DelightfulItemTags.COCONUT)
+						.addIngredient(ForgeTags.MILK)
 						.addIngredient(ForgeTags.RAW_CHICKEN)
-						.addIngredient(ForgeTags.VEGETABLES_TOMATO)
-						.addIngredient(DelightfulItemTags.TEA_LEAVES_GREEN)
+						.addIngredient(ModItems.TOMATO_SAUCE.get())
 						.addIngredient(DelightfulItemTags.VEGETABLES_GINGER)
-						.addIngredient(ForgeTags.VEGETABLES_ONION)
+						.addIngredient(DelightfulItemTags.TEA_LEAVES)
 						.unlockedBy("has_coconut", has(DelightfulItemTags.COCONUT))
 						.setRecipeBookTab(CookingPotRecipeBookTab.MEALS),
-				"food/cooking/coconut_curry", finished, enabled("coconut_curry"), not(tagEmpty(DelightfulItemTags.COCONUT)), not(tagEmpty(DelightfulItemTags.VEGETABLES_GINGER)));
+				"food/cooking/coconut_curry", finished, enabled(DelightfulItems.COCONUT_CURRY), not(tagEmpty(DelightfulItemTags.COCONUT)), not(tagEmpty(DelightfulItemTags.VEGETABLES_GINGER)));
 		wrap(CookingPotRecipeBuilder.cookingPotRecipe(
 								DelightfulItems.SINIGANG.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F)
 						.addIngredient(ForgeTags.RAW_FISHES)

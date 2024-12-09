@@ -4,11 +4,11 @@
       "advancement": {
         "parent": "minecraft:recipes/root",
         "criteria": {
-          "has_tea": {
+          "has_coconut": {
             "conditions": {
               "items": [
                 {
-                  "tag": "forge:tea_leaves/green"
+                  "tag": "forge:coconut"
                 }
               ]
             },
@@ -23,7 +23,7 @@
         },
         "requirements": [
           [
-            "has_tea",
+            "has_coconut",
             "has_the_recipe"
           ]
         ],
