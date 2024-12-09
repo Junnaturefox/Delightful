@@ -33,6 +33,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.common.ForgeHooks;
 import net.minecraftforge.common.PlantType;
+import net.minecraftforge.common.Tags;
 import org.jetbrains.annotations.NotNull;
 
 public class CantaloupePlantBlock extends BushBlock implements BonemealableBlock {
@@ -57,7 +58,7 @@ public class CantaloupePlantBlock extends BushBlock implements BonemealableBlock
 
 	@Override
 	protected boolean mayPlaceOn(BlockState pState, @NotNull BlockGetter pLevel, @NotNull BlockPos pPos) {
-		return pState.is(BlockTags.SAND);
+		return pState.is(Tags.Blocks.SAND);
 	}
 
 	@Override
@@ -101,7 +102,7 @@ public class CantaloupePlantBlock extends BushBlock implements BonemealableBlock
 			return true;
 		}
 		BlockState blockstate = pLevel.getBlockState(pPos.below());
-		if (blockstate.is(BlockTags.SAND)) {
+		if (blockstate.is(Tags.Blocks.SAND)) {
 			BlockPos blockpos = pPos.below();
 			for (Direction direction : Direction.Plane.HORIZONTAL) {
 				if (

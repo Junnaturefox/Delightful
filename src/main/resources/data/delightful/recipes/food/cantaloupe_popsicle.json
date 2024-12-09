@@ -26,7 +26,7 @@
             "tag": "forge:ice_cubes"
           },
           "s": {
-            "item": "minecraft:stick"
+            "tag": "forge:rods/wooden"
           }
         },
         "pattern": [
@@ -62,7 +62,7 @@
             "item": "minecraft:ice"
           },
           "s": {
-            "item": "minecraft:stick"
+            "tag": "forge:rods/wooden"
           }
         },
         "pattern": [

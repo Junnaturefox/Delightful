@@ -39,7 +39,7 @@
             "tag": "forge:fruits/sweet_berries"
           },
           "t": {
-            "item": "minecraft:stick"
+            "tag": "forge:rods/wooden"
           }
         },
         "pattern": [
@@ -90,7 +90,7 @@
             "tag": "forge:fruits/sweet_berries"
           },
           "t": {
-            "item": "minecraft:stick"
+            "tag": "forge:rods/wooden"
           }
         },
         "pattern": [

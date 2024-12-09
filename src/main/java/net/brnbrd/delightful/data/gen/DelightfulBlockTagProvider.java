@@ -10,6 +10,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;
@@ -54,6 +55,10 @@ public class DelightfulBlockTagProvider extends BlockTagsProvider {
 		this.tag(DelightfulBlockTags.DROPS_GREEN_TEA_LEAF)
 				.addTag(BlockTags.LEAVES);
 		this.tag(DelightfulBlockTags.CANTALOUPE_SPAWNS)
+				.addTag(Tags.Blocks.SAND);
+
+		// Forge
+		this.tag(Tags.Blocks.SAND)
 				.addTag(BlockTags.SAND);
 
 		// Minecraft
