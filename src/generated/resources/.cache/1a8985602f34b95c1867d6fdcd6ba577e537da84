@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-09T12:11:28.4450193	delightful
+// 1.20.1	2024-12-10T13:20:53.7305757	delightful
 8980358a7235536580c6b076956e78e18eca38e9 data/additionaladditions/tags/items/gilded_netherite_upgrade.json
 251ab39f668c15d972d4630264e39f06ec646606 data/additionaladditions/tags/items/gold_ring.json
 9136930399e99d219f34c05a02844b699ef0873a data/additionaladditions/tags/items/rose_gold_alloy.json
@@ -71,7 +71,7 @@ ce0cca03b997a0f5c8225b24a328f87ad007c76a data/forge/tags/items/crops/ginger.json
 c464a45fa61577982bb9df35b5cac169eb26e7f3 data/forge/tags/items/dough.json
 7640d02b3c85e174322059097d96b529ba37ac78 data/forge/tags/items/dough/corn.json
 99b0d5003d08c1f6c9d41d27b464d4a911dde6f1 data/forge/tags/items/dough/nut.json
-0dade9468a77188a0195676d889385afc129d441 data/forge/tags/items/eggs.json
+6e8c1aa50f970b4f40ad5ead57a973c717f972d0 data/forge/tags/items/eggs.json
 1941d8504a5ebb376af1643b1d982523f383ca3d data/forge/tags/items/feathers.json
 8933eaa1a05913d590f838fba721911e8f5df8df data/forge/tags/items/food/meat.json
 838e157e3b4b99480cae7f292d42883f682d5115 data/forge/tags/items/fruits.json

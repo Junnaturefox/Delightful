@@ -1,34 +1,100 @@
 {
   "values": [
-    "minecraft:cat",
-    "minecraft:wolf",
     "minecraft:cod",
     "minecraft:salmon",
-    "minecraft:cow",
-    "minecraft:dolphin",
-    "minecraft:donkey",
-    "minecraft:fox",
-    "minecraft:glow_squid",
+    "minecraft:tropical_fish",
+    "minecraft:pufferfish",
+    "minecraft:turtle",
+    "minecraft:guardian",
+    "minecraft:elder_guardian",
     "minecraft:squid",
-    "minecraft:goat",
-    "minecraft:hoglin",
-    "minecraft:horse",
-    "minecraft:llama",
-    "minecraft:mooshroom",
-    "minecraft:mule",
+    "minecraft:glow_squid",
+    "minecraft:dolphin",
     "minecraft:ocelot",
-    "minecraft:panda",
+    "minecraft:cat",
+    "minecraft:horse",
+    "minecraft:donkey",
+    "minecraft:mule",
+    "minecraft:llama",
+    "minecraft:trader_llama",
     "minecraft:pig",
     "minecraft:piglin",
     "minecraft:piglin_brute",
-    "minecraft:polar_bear",
-    "minecraft:pufferfish",
-    "minecraft:rabbit",
+    "minecraft:hoglin",
+    "minecraft:cow",
+    "minecraft:mooshroom",
     "minecraft:sheep",
-    "minecraft:tropical_fish",
-    "minecraft:turtle",
+    "minecraft:goat",
+    "minecraft:panda",
+    "minecraft:polar_bear",
+    "minecraft:wolf",
+    "minecraft:fox",
+    "minecraft:camel",
+    "minecraft:rabbit",
+    "minecraft:frog",
+    "minecraft:sniffer",
     {
-      "id": "ecologics:camel",
+      "id": "collectorsreap:chieftain_crab",
+      "required": false
+    },
+    {
+      "id": "collectorsreap:platinum_bass",
+      "required": false
+    },
+    {
+      "id": "naturalist:alligator",
+      "required": false
+    },
+    {
+      "id": "naturalist:bass",
+      "required": false
+    },
+    {
+      "id": "naturalist:bear",
+      "required": false
+    },
+    {
+      "id": "naturalist:boar",
+      "required": false
+    },
+    {
+      "id": "naturalist:catfish",
+      "required": false
+    },
+    {
+      "id": "naturalist:deer",
+      "required": false
+    },
+    {
+      "id": "naturalist:duck",
+      "required": false
+    },
+    {
+      "id": "naturalist:elephant",
+      "required": false
+    },
+    {
+      "id": "naturalist:giraffe",
+      "required": false
+    },
+    {
+      "id": "naturalist:hippo",
+      "required": false
+    },
+    {
+      "id": "naturalist:lion",
+      "required": false
+    },
+    {
+      "id": "naturalist:rhino",
+      "required": false
+    },
+    {
+      "id": "naturalist:tortoise",
+      "required": false
+    },
+    {
+      "id": "naturalist:zebra",
       "required": false
     },
     {
@@ -44,15 +110,15 @@
       "required": false
     },
     {
-      "id": "autumnity:turkey",
-      "required": false
-    },
-    {
       "id": "upgrade_aquatic:thrasher",
       "required": false
     },
     {
       "id": "upgrade_aquatic:great_thrasher",
+      "required": false
+    },
+    {
+      "id": "upgrade_aquatic:goose",
       "required": false
     },
     {
@@ -68,7 +134,15 @@
       "required": false
     },
     {
+      "id": "autumnity:turkey",
+      "required": false
+    },
+    {
       "id": "ars_nouveau:starbuncle",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:angler_fish",
       "required": false
     },
     {
@@ -264,58 +338,6 @@
       "required": false
     },
     {
-      "id": "naturalist:alligator",
-      "required": false
-    },
-    {
-      "id": "naturalist:bass",
-      "required": false
-    },
-    {
-      "id": "naturalist:bear",
-      "required": false
-    },
-    {
-      "id": "naturalist:boar",
-      "required": false
-    },
-    {
-      "id": "naturalist:catfish",
-      "required": false
-    },
-    {
-      "id": "naturalist:deer",
-      "required": false
-    },
-    {
-      "id": "naturalist:duck",
-      "required": false
-    },
-    {
-      "id": "naturalist:elephant",
-      "required": false
-    },
-    {
-      "id": "naturalist:giraffe",
-      "required": false
-    },
-    {
-      "id": "naturalist:hippo",
-      "required": false
-    },
-    {
-      "id": "naturalist:lion",
-      "required": false
-    },
-    {
-      "id": "naturalist:rhino",
-      "required": false
-    },
-    {
-      "id": "naturalist:zebra",
-      "required": false
-    },
-    {
       "id": "neapolitan:chimpanzee",
       "required": false
     },
@@ -341,6 +363,10 @@
     },
     {
       "id": "sprout:elephant",
+      "required": false
+    },
+    {
+      "id": "habitat:pooka",
       "required": false
     },
     {
