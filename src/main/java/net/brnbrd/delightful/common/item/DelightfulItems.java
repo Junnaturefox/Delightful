@@ -81,6 +81,10 @@ public class DelightfulItems {
 			() -> new DItem((new Item.Properties()).food(Nutrition.SALMONBERRY_PIE_SLICE), false));
 	public static final RegistryObject<Item> PUMPKIN_PIE_SLICE = registerItem("pumpkin_pie_slice",
 			() -> new PumpkinPieSliceItem((new Item.Properties()).food(FoodValues.PIE_SLICE)));
+	public static final RegistryObject<Item> BAKLAVA = registerItem("baklava",
+			() -> new BlockItem(DelightfulBlocks.BAKLAVA.get(), ModItems.basicItem()));
+	public static final RegistryObject<Item> BAKLAVA_SLICE = registerItem("baklava_slice",
+			() -> new DItem((new Item.Properties()).food(Nutrition.BAKLAVA_SLICE)));
 	public static final RegistryObject<Item> GLOOMGOURD_PIE_SLICE = registerCompatPieSlice("gloomgourd_pie_slice",
 			UndergardenCompat.GLOOMGOURD_PIE_SLICE.get(), Mods.UG);
 	public static final RegistryObject<Item> BLUEBERRY_PIE_SLICE = registerCompatPieSlice(BWGCompat.blueberry_pie + "_slice",

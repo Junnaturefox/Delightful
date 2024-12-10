@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-10T13:20:53.7305757	delightful
+// 1.20.1	2024-12-10T15:01:38.9567065	delightful
 8980358a7235536580c6b076956e78e18eca38e9 data/additionaladditions/tags/items/gilded_netherite_upgrade.json
 251ab39f668c15d972d4630264e39f06ec646606 data/additionaladditions/tags/items/gold_ring.json
 9136930399e99d219f34c05a02844b699ef0873a data/additionaladditions/tags/items/rose_gold_alloy.json
@@ -16,7 +16,7 @@ e7d157a15ec173a498e93edde6b67f3558f0c698 data/ancient_aether/tags/items/valkyrum
 cc3ce1c9ecfdd40d917db77aeff124be1dd856b4 data/botania/tags/items/mana_using_items.json
 56a127b876ad84b0ed54e51b5da5b5e5bed5f0ac data/collectorsreap/tags/items/gummies.json
 ed89bd00684e45c4198269c0053267c257e784c6 data/create/tags/items/polished_rose_quartz.json
-0e0930ad8b0613e7e86da5163805a2153bf93d55 data/create/tags/items/upright_on_belt.json
+e7ff0fc4a95b9898768a82c2b8b1d8d240535204 data/create/tags/items/upright_on_belt.json
 3ec615c3b0619071ee2425164230a78256598991 data/create_sa/tags/items/heap_of_experience.json
 93e27377ca1c64c862cd4f76810c65106f132cea data/create_sa/tags/items/zinc_handle.json
 b306cd52d0a89b88fd149766a3ccc1f9d27d4e5f data/deeperdarker/tags/items/reinforced_echo_shard.json

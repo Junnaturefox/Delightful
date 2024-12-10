@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-09T10:07:04.4322119	Recipes
+// 1.20.1	2024-12-10T15:50:39.5641416	Recipes
 6c217dd6477efa10f6042809ba959d53036ab5e2 data/delightful/advancements/recipes/cabinets/basalt_cabinet.json
 5b82f87851220644287d771121677deac66b3b89 data/delightful/advancements/recipes/cabinets/quartz_cabinet.json
 cf29033c1c919355c261025df529938e6ebc73f8 data/delightful/advancements/recipes/campfire/cactus_steak.json
@@ -11,6 +11,9 @@ a88f9de32e7c5dc9b2ef1dc05fe9b2ad83b011ae data/delightful/advancements/recipes/ca
 280656e795db0c70c4cabbcc16b786fe134aade7 data/delightful/advancements/recipes/cantaloupe_slice.json
 ff94c8097c97eeb15909fa193291ff1088a7cd05 data/delightful/advancements/recipes/cooking/animal_oil_bottle.json
 b10b99a2dc63cc5bc06a866c8ab9674940ce670b data/delightful/advancements/recipes/cooking/matcha_latte.json
+433c97392260b9ac2cf22ab367c21d5910155e9b data/delightful/advancements/recipes/food/baklava.json
+453084de51d9505ade996777b17e09bcb260828a data/delightful/advancements/recipes/food/baklava_from_slices.json
+257ea1e2e74e09558aedc813d170ad988b891360 data/delightful/advancements/recipes/food/baklava_no_citrus.json
 4048e60a69340ab7a3636d60eceecd467f78896d data/delightful/advancements/recipes/food/berry_matcha_latte.json
 22b7504c519f110e4ba28804bc8233483a1a714b data/delightful/advancements/recipes/food/berry_matcha_latte_neapolitan.json
 d34719ea27ae8f748388cca48229a8895e2fbc5c data/delightful/advancements/recipes/food/cantaloupe_bread.json
@@ -139,6 +142,7 @@ d4e8be16b4790d9ade8903422ebeb7bc55fb6c75 data/delightful/recipes/campfire/marshm
 3969d709b683b3eabe48e75225a46529edfa71d4 data/delightful/recipes/cantaloupe_slice.json
 0ad070142d2c20cf6a500f88ba545b22206aabb8 data/delightful/recipes/cooking/animal_oil_bottle.json
 1b81cd56f336fdc01a31a5ca08a5ddfa8ae84e29 data/delightful/recipes/cooking/matcha_latte.json
+c92680cce5f1a7851ea35a25a9251e6401222767 data/delightful/recipes/cutting/baklava.json
 78f553a22ac586b5068eaa8153855233b416b4af data/delightful/recipes/cutting/cactus.json
 ef210c25b1a3d2453c0b37c587390bec5d6dadd0 data/delightful/recipes/cutting/cantaloupe.json
 6d83188833f8de6e476dff434874899ad77869fc data/delightful/recipes/cutting/clover.json
@@ -149,6 +153,9 @@ ef210c25b1a3d2453c0b37c587390bec5d6dadd0 data/delightful/recipes/cutting/cantalo
 2e43144fc7e9fe2ce35e787c6dc56f8dea7b7642 data/delightful/recipes/cutting/small_cactus.json
 8f93cb7f47ffb3a6b38c14fc5ad15d08f00fdeeb data/delightful/recipes/cutting/sugar_cane.json
 cc53eb45016965c4191782787b7e54aa46f3bb02 data/delightful/recipes/cutting/wild_salmonberries.json
+c392f819e504096074fde3f3514818b122c6bc4b data/delightful/recipes/food/baklava.json
+22387225a45f97abfab2701fa67bb94c0d3e916b data/delightful/recipes/food/baklava_from_slices.json
+a8c22495e5b39bbd0e55281fa2cfcd5e8a5c2fc7 data/delightful/recipes/food/baklava_no_citrus.json
 661e35158b708f1a6178a28eb6ec3a2b74d59737 data/delightful/recipes/food/berry_matcha_latte.json
 55199e6d7d48726c947757bd4bc22d5ab88246b3 data/delightful/recipes/food/berry_matcha_latte_neapolitan.json
 2c3b88e198418a8d3606432bca276ab2225c953f data/delightful/recipes/food/cantaloupe_bread.json

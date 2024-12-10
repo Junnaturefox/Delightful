@@ -263,6 +263,32 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
 						.requires(ForgeTags.MILK)
 						.unlockedBy("has_matcha_ice_cream", has(DelightfulItems.MATCHA_ICE_CREAM.get())),
 				"food/matcha_milkshake", finished, enabled(DelightfulItems.MATCHA_MILKSHAKE), enabled(DelightfulItems.MATCHA_ICE_CREAM));
+		wrap(ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, DelightfulItems.BAKLAVA.get(), 1)
+						.pattern(" h ")
+						.pattern("nnn")
+						.pattern("sdg")
+						.define('h', Items.HONEY_BOTTLE)
+						.define('n', DelightfulItemTags.NUTS)
+						.define('d', ForgeTags.DOUGH)
+						.define('s', DelightfulItemTags.FRUITS_CITRUS)
+						.define('g', DelightfulItemTags.HOT_SPICE)
+						.unlockedBy("has_nuts", has(DelightfulItemTags.NUTS)),
+				"food/baklava", finished, enabled(DelightfulItems.BAKLAVA), not(tagEmpty(DelightfulItemTags.FRUITS_CITRUS)));
+		wrap(ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, DelightfulItems.BAKLAVA.get(), 1)
+						.pattern(" h ")
+						.pattern("nnn")
+						.pattern("sdg")
+						.define('h', Items.HONEY_BOTTLE)
+						.define('n', DelightfulItemTags.NUTS)
+						.define('d', ForgeTags.DOUGH)
+						.define('s', DelightfulItemTags.SUGAR)
+						.define('g', DelightfulItemTags.HOT_SPICE)
+						.unlockedBy("has_nuts", has(DelightfulItemTags.NUTS)),
+				"food/baklava_no_citrus", finished, enabled(DelightfulItems.BAKLAVA), tagEmpty(DelightfulItemTags.FRUITS_CITRUS));
+		wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DelightfulItems.BAKLAVA.get(), 1)
+						.requires(DelightfulItems.BAKLAVA_SLICE.get(), 4)
+						.unlockedBy("has_baklava_slice", has(DelightfulItems.BAKLAVA_SLICE.get())),
+				"food/baklava_from_slices", finished, enabled(DelightfulItems.BAKLAVA));
 		wrap(ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, DelightfulItems.SALMONBERRY_PIE.get(), 1)
 						.pattern("###")
 						.pattern("aaa")
@@ -272,11 +298,11 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
 						.define('x', DelightfulItemTags.SUGAR)
 						.define('O', ModItems.PIE_CRUST.get())
 						.unlockedBy("has_pie_crust", has(ModItems.PIE_CRUST.get())),
-				"food/salmonberry_pie", finished, enabled("salmonberry_pie"));
+				"food/salmonberry_pie", finished, enabled(DelightfulItems.SALMONBERRY_PIE));
 		wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DelightfulItems.SALMONBERRY_PIE.get(), 1)
 						.requires(DelightfulItems.SALMONBERRY_PIE_SLICE.get(), 4)
 						.unlockedBy("has_salmonberry_pie_slice", has(DelightfulItems.SALMONBERRY_PIE_SLICE.get())),
-				"food/salmonberry_pie_from_slices", finished, enabled("salmonberry_pie"));
+				"food/salmonberry_pie_from_slices", finished, enabled(DelightfulItems.SALMONBERRY_PIE));
 		wrap(ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, Items.PUMPKIN_PIE, 1)
 						.pattern("ppp")
 						.pattern("pep")
@@ -475,6 +501,11 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
 						Ingredient.of(ForgeTags.TOOLS_KNIVES),
 						DelightfulItems.CHOPPED_CLOVER.get(), 2),
 				"cutting/clover", finished, enabled(DelightfulItems.CHOPPED_CLOVER), not(tagEmpty(DelightfulItemTags.CLOVER)));
+		wrap(CuttingBoardRecipeBuilder.cuttingRecipe(
+						Ingredient.of(DelightfulItems.BAKLAVA.get()),
+						Ingredient.of(ForgeTags.TOOLS_KNIVES),
+						DelightfulItems.BAKLAVA_SLICE.get(), 4),
+				"cutting/baklava", finished, enabled(DelightfulItems.BAKLAVA), enabled(DelightfulItems.BAKLAVA_SLICE));
 		wrap(CuttingBoardRecipeBuilder.cuttingRecipe(
 						Ingredient.of(DelightfulItems.SALMONBERRY_PIE.get()),
 						Ingredient.of(ForgeTags.TOOLS_KNIVES),

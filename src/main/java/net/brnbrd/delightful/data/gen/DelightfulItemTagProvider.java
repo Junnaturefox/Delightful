@@ -586,6 +586,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.add(DelightfulItems.BERRY_MATCHA_LATTE.get())
 				.add(DelightfulItems.ANIMAL_OIL_BOTTLE.get())
 				.add(DelightfulItems.SALMONBERRY_PIE.get())
+				.add(DelightfulItems.BAKLAVA.get())
 				.addOptional(Util.rl(Mods.FR, "green_tea"))
 				.addOptional(Util.rl(Mods.FR, "yellow_tea"))
 				.addOptional(Util.rl(Mods.FR, "black_tea"))

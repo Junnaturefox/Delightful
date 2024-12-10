@@ -1,0 +1,47 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "delightful:enabled",
+          "value": "baklava"
+        },
+        {
+          "type": "forge:tag_empty",
+          "tag": "forge:fruits/citrus"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "key": {
+          "d": {
+            "tag": "forge:dough"
+          },
+          "g": {
+            "tag": "forge:hot_spice"
+          },
+          "h": {
+            "item": "minecraft:honey_bottle"
+          },
+          "n": {
+            "tag": "forge:nuts"
+          },
+          "s": {
+            "tag": "forge:sugar"
+          }
+        },
+        "pattern": [
+          " h ",
+          "nnn",
+          "sdg"
+        ],
+        "result": {
+          "item": "delightful:baklava"
+        },
+        "show_notification": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "delightful:enabled",
+          "value": "baklava"
+        },
+        {
+          "type": "delightful:enabled",
+          "value": "baklava_slice"
+        }
+      ],
+      "recipe": {
+        "type": "farmersdelight:cutting",
+        "ingredients": [
+          {
+            "item": "delightful:baklava"
+          }
+        ],
+        "result": [
+          {
+            "count": 4,
+            "item": "delightful:baklava_slice"
+          }
+        ],
+        "tool": {
+          "tag": "forge:tools/knives"
+        }
+      }
+    }
+  ]
+}

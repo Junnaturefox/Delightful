@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-09T12:02:33.2584511	Item Models: delightful
+// 1.20.1	2024-12-10T15:01:38.953704	Item Models: delightful
 f9af973b19b45f34017d8db4e6e54de90668031e assets/delightful/models/item/acorn.json
 9b4daf24b0d8e447735c5836d7ab76a3df1b3c1d assets/delightful/models/item/acorn_sack.json
 5d9531a6795e7d2281f99609672d866743329211 assets/delightful/models/item/adamantium_knife.json
@@ -8,6 +8,8 @@ f9af973b19b45f34017d8db4e6e54de90668031e assets/delightful/models/item/acorn.jso
 10002ab669e30e6913dbadd7f1b102cbba1d50da assets/delightful/models/item/animal_fat.json
 2f8e763b0d8cf51b8f59eadb69a29192ac4c4cc6 assets/delightful/models/item/animal_oil_bottle.json
 8dedf79dc59783dee44fc9309ba04b9918316029 assets/delightful/models/item/azalea_tea.json
+cccf253d1b8b7751a41a927db06c521a47302ea7 assets/delightful/models/item/baklava.json
+4a5dc96044c07dd792a6dc10a5e9500ef7537d5f assets/delightful/models/item/baklava_slice.json
 3a63432b33f06a638c9816b5bdb42afb25510af9 assets/delightful/models/item/baobab_fruit_crate.json
 a13e7123646bd38af21b165c2bbbefdbe2cd72b5 assets/delightful/models/item/basalt_cabinet.json
 ae19f998fbd7e5a36bdb4c2fb84004d8a928f562 assets/delightful/models/item/bastion_fruit_crate.json

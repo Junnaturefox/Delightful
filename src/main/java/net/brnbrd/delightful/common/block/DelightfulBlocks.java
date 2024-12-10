@@ -4,7 +4,6 @@ import net.brnbrd.delightful.Delightful;
 import net.brnbrd.delightful.Util;
 import net.brnbrd.delightful.common.item.DelightfulItems;
 import net.brnbrd.delightful.compat.Mods;
-import net.brnbrd.delightful.compat.UndergardenCompat;
 import net.minecraft.core.cauldron.CauldronInteraction;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -74,6 +73,8 @@ public class DelightfulBlocks {
 			() -> new PieBlock(Block.Properties.copy(ModBlocks.APPLE_PIE.get()), DelightfulItems.SALMONBERRY_PIE_SLICE));
 	public static final RegistryObject<Block> PUMPKIN_PIE = BLOCKS.register("pumpkin_pie",
 			() -> new DPieBlock(DelightfulItems.PUMPKIN_PIE_SLICE, Util.rl("minecraft", "pumpkin_pie")));
+	public static final RegistryObject<Block> BAKLAVA = BLOCKS.register("baklava",
+			() -> new BaklavaBlock(Block.Properties.copy(ModBlocks.APPLE_PIE.get()), DelightfulItems.BAKLAVA_SLICE));
 	public static final RegistryObject<Block> SOURCE_BERRY_PIE = BLOCKS.register("source_berry_pie",
 			() -> new DPieBlock(DelightfulItems.SOURCE_BERRY_PIE_SLICE, Util.rl(Mods.AN, "source_berry_pie")));
 	public static final RegistryObject<Block> GLOOMGOURD_PIE = BLOCKS.register("gloomgourd_pie",

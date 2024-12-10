@@ -4,6 +4,7 @@
 # 3.6.2
 
 ### Updates
+- Added Baklava and Baklava Slice
 - Added Resonarium Knife (for [Deeper and Darker](https://www.curseforge.com/minecraft/mc-mods/deeperdarker))
 - Blueberry Sack is now solely compat for [Biomes We've Gone](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-weve-gone)
 - Increased Caffeinated effect length on teas and lattes

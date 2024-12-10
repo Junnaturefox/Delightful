@@ -1,0 +1,34 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "delightful:enabled",
+          "value": "baklava"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          {
+            "item": "delightful:baklava_slice"
+          },
+          {
+            "item": "delightful:baklava_slice"
+          },
+          {
+            "item": "delightful:baklava_slice"
+          },
+          {
+            "item": "delightful:baklava_slice"
+          }
+        ],
+        "result": {
+          "item": "delightful:baklava"
+        }
+      }
+    }
+  ]
+}
