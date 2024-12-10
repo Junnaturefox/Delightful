@@ -11,6 +11,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.Containers;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.entity.EntityType;
@@ -53,7 +54,19 @@ public class Util {
 
 	public static ObjectArrayList<ItemStack> with(ObjectArrayList<ItemStack> before, ItemStack addition) {
 		before.add(addition);
-		return before;
+		return before.clone();
+	}
+
+	public static ObjectArrayList<ItemStack> with(ObjectArrayList<ItemStack> before, Item addition, int count) {
+		return (count < 1) ? before : with(before, new ItemStack(addition, count));
+	}
+
+	public static ObjectArrayList<ItemStack> with(ObjectArrayList<ItemStack> before, Item addition, RandomSource rand, int min, int max) {
+		return (max <= min) ? before : with(before, addition, rand.nextIntBetweenInclusive(min, max));
+	}
+
+	public static ObjectArrayList<ItemStack> with(ObjectArrayList<ItemStack> before, Item addition) {
+		return with(before, addition, 1);
 	}
 
 	@Nullable

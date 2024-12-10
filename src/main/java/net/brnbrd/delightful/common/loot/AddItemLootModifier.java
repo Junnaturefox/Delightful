@@ -43,11 +43,11 @@ public class AddItemLootModifier extends LootModifier {
 	 */
 	@Override
 	protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
-		if ((this.unique && generatedLoot.stream().anyMatch(stack -> stack.getItem().equals(this.item))) || (this.maxAmount < 1)) {
-			return generatedLoot;
-		}
-		int amount = this.minAmount == this.maxAmount ? this.minAmount : context.getRandom().nextInt(this.maxAmount + 1 - this.minAmount) + this.minAmount;
-		return (amount >= 1) ? Util.with(generatedLoot, new ItemStack(this.item, amount)) : generatedLoot;
+		return (
+				(this.maxAmount < 1) ||
+				(this.minAmount < 0) ||
+				(this.unique && generatedLoot.stream().anyMatch(stack -> stack.getItem().equals(this.item)))
+		) ? generatedLoot : Util.with(generatedLoot, this.item, context.getRandom(), this.minAmount, this.maxAmount);
 	}
 
 	/**

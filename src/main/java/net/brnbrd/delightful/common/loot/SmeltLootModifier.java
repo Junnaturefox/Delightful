@@ -36,14 +36,15 @@ public class SmeltLootModifier extends LootModifier {
 	@Override
 	protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
 		return generatedLoot.stream().map(stack -> {
-			var smelted = context.getLevel().getRecipeManager().getRecipeFor(RecipeType.SMELTING, new SimpleContainer(stack), context.getLevel())
+			ItemStack smelted = context.getLevel().getRecipeManager().getRecipeFor(RecipeType.SMELTING, new SimpleContainer(stack), context.getLevel())
 					.map(recipe -> recipe.getResultItem(context.getLevel().registryAccess()))
 					.filter(itemStack -> !itemStack.isEmpty())
 					.map(itemStack -> ItemHandlerHelper.copyStackWithSize(itemStack, stack.getCount() * itemStack.getCount()))
 					.orElse(stack);
-			if (smelted != stack) {
-				ExperienceOrb.award(context.getLevel(), context.getParam(LootContextParams.ORIGIN), context.getRandom().nextInt(3) + 1);
+			if (smelted == stack) {
+				return stack;
 			}
+			ExperienceOrb.award(context.getLevel(), context.getParam(LootContextParams.ORIGIN), context.getRandom().nextInt(3) + 1);
 			return smelted;
 		}).collect(ObjectArrayList.toList());
 	}
