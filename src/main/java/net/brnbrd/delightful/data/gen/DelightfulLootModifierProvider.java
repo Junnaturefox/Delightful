@@ -2,8 +2,9 @@ package net.brnbrd.delightful.data.gen;
 
 import net.brnbrd.delightful.Delightful;
 import net.brnbrd.delightful.common.item.DelightfulItems;
-import net.brnbrd.delightful.common.loot.*;
-import net.brnbrd.delightful.compat.Mods;
+import net.brnbrd.delightful.common.loot.AddItemLootModifier;
+import net.brnbrd.delightful.common.loot.LootItemBlockIsTagCondition;
+import net.brnbrd.delightful.common.loot.LootItemEnabledCondition;
 import net.brnbrd.delightful.data.tags.DelightfulBlockTags;
 import net.brnbrd.delightful.data.tags.DelightfulEntityTags;
 import net.brnbrd.delightful.data.tags.DelightfulItemTags;
@@ -113,17 +114,6 @@ public class DelightfulLootModifierProvider extends GlobalLootModifierProvider {
 						LootItemBlockIsTagCondition.isTag(DelightfulBlockTags.DROPS_STRAW)
 				},
 				ModItems.STRAW.get(), 1, 1, true
-		));
-		add("crab_legs_from_crabbersdelight", new AddItemLootModifier(
-				new LootItemCondition[]{
-						LootItemModLoadedCondition.loaded(Mods.CRAB),
-						LootItemRandomChanceWithLootingCondition.randomChanceAndLootingBoost(1.0F, 1.5F).build(),
-						LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.KILLER_PLAYER,
-								EntityPredicate.Builder.entity().equipment(
-										EntityEquipmentPredicate.Builder.equipment().mainhand(ItemPredicate.Builder.item().of(DelightfulItemTags.TOOLS_SCAVENGING).build()).build()).build()).build(),
-						LootItemEntityPropertyCondition.hasProperties(LootContext.EntityTarget.THIS, EntityPredicate.Builder.entity().of(DelightfulEntityTags.DROPS_CRAB_LEGS)).build()
-				},
-				alabaster.crabbersdelight.common.registry.ModItems.CRAB_LEGS.get(), 1, 3, true
 		));
 	}
 }
