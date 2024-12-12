@@ -7,6 +7,10 @@
     {
       "id": "biomeswevegone:mini_cactus",
       "required": false
+    },
+    {
+      "id": "biomemakeover:barrel_cactus",
+      "required": false
     }
   ]
 }

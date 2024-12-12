@@ -110,10 +110,12 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addOptional(Util.rl(Mods.BWG, "barrel_cactus"))
 				.addOptional(Util.rl(Mods.BWG, "flowering_barrel_cactus"))
 				.addOptional(Util.rl(Mods.BWG, "prickly_pear_cactus"))
-				.addOptional(Util.rl(Mods.BWG, "golden_spined_cactus"));
+				.addOptional(Util.rl(Mods.BWG, "golden_spined_cactus"))
+				.addOptional(Util.rl("biomemakeover", "saguaro_cactus"));
 		this.tag(DelightfulItemTags.SMALL_CACTI)
 				.addOptionalTag(Util.rl("habitat", "ball_cacti"))
-				.addOptional(Util.rl(Mods.BWG, "mini_cactus"));
+				.addOptional(Util.rl(Mods.BWG, "mini_cactus"))
+				.addOptional(Util.rl("biomemakeover", "barrel_cactus"));
 		this.tag(DelightfulItemTags.MATCHA)
 				.add(DelightfulItems.MATCHA.get());
 		this.tag(ForgeTags.EGGS)

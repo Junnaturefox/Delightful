@@ -10,6 +10,7 @@ import net.minecraft.data.tags.EntityTypeTagsProvider;
 import net.minecraft.world.entity.EntityType;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;
+import vectorwing.farmersdelight.common.tag.ModTags;
 import java.util.concurrent.CompletableFuture;
 
 public class DelightfulEntityTagProvider extends EntityTypeTagsProvider {
@@ -19,6 +20,12 @@ public class DelightfulEntityTagProvider extends EntityTypeTagsProvider {
 
 	@Override
 	protected void addTags(HolderLookup.@NotNull Provider provider) {
+		// Farmer's Delight
+		this.tag(ModTags.HORSE_FEED_TEMPTED)
+				.addOptional(Util.rl(Mods.NA, "zebra"));
+		this.tag(ModTags.HORSE_FEED_USERS)
+				.addOptional(Util.rl(Mods.NA, "zebra"));
+
 		// Delightful
 		this.tag(DelightfulEntityTags.FATTY_ANIMALS)
 				.add(EntityType.COD)
