@@ -1,6 +1,7 @@
 {
   "values": [
     "delightful:venison_chops",
-    "#forge:raw_venison_compat"
+    "#delightful:raw_venison_chop_compat",
+    "#delightful:raw_venison_compat"
   ]
 }

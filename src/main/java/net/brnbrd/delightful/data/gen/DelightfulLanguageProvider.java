@@ -73,6 +73,8 @@ public class DelightfulLanguageProvider extends LanguageProvider {
 		addItem(DelightfulItems.CACTUS_CHILI, "Cactus Chili");
 		addItem(DelightfulItems.CACTUS_SOUP, "Cactus Soup");
 		addItem(DelightfulItems.CACTUS_SOUP_CUP, "Cactus Soup Cup");
+		addItem(DelightfulItems.VENISON_STEW, "Venison Stew");
+		addItem(DelightfulItems.VENISON_STEW_CUP, "Venison Stew Cup");
 		addItem(DelightfulItems.FIELD_SALAD, "Field Salad");
 		addItem(DelightfulItems.ROCK_CANDY, "Rock Candy");
 		addItem(DelightfulItems.VENISON_CHOPS, "Raw Venison Chops");
@@ -139,7 +141,8 @@ public class DelightfulLanguageProvider extends LanguageProvider {
 		add("delightful.sliceable.desc", "Sliceable with a Knife.");
 		add("delightful.placeable.desc", "Placeable");
 		add("tooltip.config_disabled", "Disabled");
-		add("tooltip.requires_tag", "Requires non-empty tag:");
+		add("tooltip.requires_tag", "Requires tag:");
+		add("tooltip.requires_empty_tag", "Empty tag:");
 		add("tooltip.requires_modid", "Requires modid:");
 		add("tooltip.sneak_right", "Sneak R-Click for:");
 		add("tooltip.furnace_fuel_burn_time", "s of burn time");

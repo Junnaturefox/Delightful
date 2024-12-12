@@ -1,16 +1,14 @@
 package net.brnbrd.delightful.common.item.food;
 
-import net.brnbrd.delightful.common.item.TagItem;
-import net.brnbrd.delightful.compat.Mods;
-import net.brnbrd.delightful.data.tags.DelightfulItemTags;
+import net.brnbrd.delightful.common.item.DItem;
 
-public class GoatMeatItem extends TagItem {
-	public GoatMeatItem(Properties prop) {
-		super(prop, DelightfulItemTags.RAW_GOAT_COMPAT);
+public class GoatMeatItem extends DItem {
+	public GoatMeatItem(Properties prop, boolean hasFoodEffectTooltip) {
+		super(prop, hasFoodEffectTooltip);
 	}
 
 	@Override
-	public boolean enabled() {
-		return !Mods.orLoaded("goated", "dropthemeat") && super.enabled();
+	public String[] getConflicts() {
+		return new String[]{"goated", "dropthemeat"};
 	}
 }

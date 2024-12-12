@@ -71,6 +71,12 @@ public class Nutrition {
 	public static final FoodProperties CACTUS_SOUP_CUP = (new FoodProperties.Builder())
 			.nutrition(6).saturationMod(0.75F)
 			.effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), 1800, 0), 1.0F).build();
+	public static final FoodProperties VENISON_STEW = (new FoodProperties.Builder())
+			.nutrition(12).saturationMod(0.8F)
+			.effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), 3600, 0), 1.0F).build();
+	public static final FoodProperties VENISON_STEW_CUP = (new FoodProperties.Builder())
+			.nutrition(6).saturationMod(0.75F)
+			.effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), 1800, 0), 1.0F).build();
 	public static final FoodProperties FIELD_SALAD = (new FoodProperties.Builder())
 			.nutrition(10).saturationMod(0.55F)
 			.effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 100, 0), 1.0F)

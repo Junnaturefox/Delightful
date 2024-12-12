@@ -402,26 +402,24 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addTag(DelightfulItemTags.COOKED_FISHES_TUNA)
 				.addOptional(Util.rl("biomemakeover", "cooked_glowfish"))
 				.addOptional(Util.rl("deep_aether", "cooked_aerglow_fish"));
-		this.tag(DelightfulItemTags.TD_VENISON_RAW)
-				.addOptional(Util.rl(Mods.TF, "raw_venison"))
+		this.tag(DelightfulItemTags.RAW_VENISON_COMPAT)
 				.addOptional(Util.rl(Mods.NA, "venison"))
+				.addOptional(Util.rl(Mods.TF, "raw_venison"))
 				.addOptional(Util.rl("goodall", "raw_venison"))
 				.addOptional(Util.rl("blue_skies", "venison"));
-		this.tag(DelightfulItemTags.RAW_VENISON_COMPAT)
-				.addTag(DelightfulItemTags.TD_VENISON_RAW);
+		this.tag(DelightfulItemTags.RAW_VENISON_CHOP_COMPAT)
+				.addOptional(Util.rl(Mods.TFD, "raw_venison_rib"));
 		this.tag(DelightfulItemTags.RAW_VENISON)
 				.add(DelightfulItems.VENISON_CHOPS.get())
+				.addTag(DelightfulItemTags.RAW_VENISON_CHOP_COMPAT)
 				.addTag(DelightfulItemTags.RAW_VENISON_COMPAT);
-		this.tag(DelightfulItemTags.TD_VENISON_COOKED)
-				.addOptional(Util.rl(Mods.TF, "cooked_venison"))
-				.addOptional(Util.rl(Mods.NA, "cooked_venison"))
-				.addOptional(Util.rl("goodall", "cooked_venison"))
-				.addOptional(Util.rl("blue_skies", "cooked_venison"));
-		this.tag(DelightfulItemTags.COOKED_VENISON_COMPAT)
-				.addTag(DelightfulItemTags.TD_VENISON_COOKED);
 		this.tag(DelightfulItemTags.COOKED_VENISON)
 				.add(DelightfulItems.COOKED_VENISON_CHOPS.get())
-				.addTag(DelightfulItemTags.COOKED_VENISON_COMPAT);
+				.addOptional(Util.rl(Mods.NA, "cooked_venison"))
+				.addOptional(Util.rl(Mods.TF, "cooked_venison"))
+				.addOptional(Util.rl(Mods.TFD, "cooked_venison_rib"))
+				.addOptional(Util.rl("goodall", "cooked_venison"))
+				.addOptional(Util.rl("blue_skies", "cooked_venison"));
 		this.tag(DelightfulItemTags.RAW_GOAT)
 				.add(DelightfulItems.RAW_GOAT.get());
 		this.tag(DelightfulItemTags.COOKED_GOAT)
@@ -695,6 +693,8 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		// Naturalist
 		this.tag(Util.it(Mods.NA, "bird_food_items")).addTag(Tags.Items.SEEDS);
 		this.tag(Util.it(Mods.NA, "tortoise_tempt_items")).add(DelightfulItems.CACTUS_FLESH.get());
+		this.tag(Util.it(Mods.NA, "bear_tempt_items"))
+				.addTag(DelightfulItemTags.RAW_VENISON);
 
 		// Sully's Mod
 		this.tag(Util.it("sullysmod", "tortoise_food"))

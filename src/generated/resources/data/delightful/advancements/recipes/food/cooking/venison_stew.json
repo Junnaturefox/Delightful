@@ -1,0 +1,52 @@
+{
+  "advancements": [
+    {
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "criteria": {
+          "has_raw_venison": {
+            "conditions": {
+              "items": [
+                {
+                  "tag": "forge:raw_venison"
+                }
+              ]
+            },
+            "trigger": "minecraft:inventory_changed"
+          },
+          "has_the_recipe": {
+            "conditions": {
+              "recipe": "delightful:food/cooking/venison_stew"
+            },
+            "trigger": "minecraft:recipe_unlocked"
+          }
+        },
+        "requirements": [
+          [
+            "has_raw_venison",
+            "has_the_recipe"
+          ]
+        ],
+        "rewards": {
+          "recipes": [
+            "delightful:food/cooking/venison_stew"
+          ]
+        },
+        "sends_telemetry_event": true
+      },
+      "conditions": [
+        {
+          "type": "delightful:enabled",
+          "value": "venison_stew"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:raw_venison"
+          }
+        }
+      ]
+    }
+  ]
+}

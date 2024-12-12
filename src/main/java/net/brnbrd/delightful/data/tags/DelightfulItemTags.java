@@ -12,8 +12,10 @@ import vectorwing.farmersdelight.FarmersDelight;
 public class DelightfulItemTags {
 
 	// Delightful
-	public static final TagKey<Item> COMPAT_PIES = Util.it(Delightful.MODID, "compat_pies");
-	public static final TagKey<Item> FIRE_KNIVES = Util.it(Delightful.MODID, "fire_knives");
+	public static final TagKey<Item> COMPAT_PIES = d("compat_pies");
+	public static final TagKey<Item> FIRE_KNIVES = d("fire_knives");
+	public static final TagKey<Item> RAW_VENISON_COMPAT = d("raw_venison_compat");
+	public static final TagKey<Item> RAW_VENISON_CHOP_COMPAT = d("raw_venison_chop_compat");
 
 	// Minecraft
 	public static final TagKey<Item> FLOWERS_AZALEA = Util.it("minecraft", "flowers/azalea");
@@ -99,13 +101,8 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> RAW_FISHES_KOI = forge("raw_fishes/koi");
 	public static final TagKey<Item> RAW_FISHES_TUNA = forge("raw_fishes/tuna");
 	public static final TagKey<Item> COOKED_FISHES_TUNA = forge("cooked_fishes/tuna");
-	public static final TagKey<Item> TD_VENISON_RAW = Util.it("twilightdelight", "venison_raw"); // Twilight Delight
-	public static final TagKey<Item> TD_VENISON_COOKED = Util.it("twilightdelight", "venison_cooked"); // Twilight Delight
 	public static final TagKey<Item> RAW_VENISON = forge("raw_venison");
-	public static final TagKey<Item> RAW_VENISON_COMPAT = forge("raw_venison_compat");
 	public static final TagKey<Item> COOKED_VENISON = forge("cooked_venison");
-	public static final TagKey<Item> COOKED_VENISON_COMPAT = forge("cooked_venison_compat");
-	public static final TagKey<Item> RAW_GOAT_COMPAT = forge("raw_goat_compat");
 	public static final TagKey<Item> RAW_GOAT = forge("raw_goat");
 	public static final TagKey<Item> COOKED_GOAT = forge("cooked_goat");
 	public static final TagKey<Item> RAW_MEAT = forge("raw_meat");
@@ -240,5 +237,9 @@ public class DelightfulItemTags {
 
 	public static TagKey<Item> forge(String name) {
 		return Util.it(Util.LOADER, name);
+	}
+
+	public static TagKey<Item> d(String name) {
+		return Util.it(Delightful.MODID, name);
 	}
 }

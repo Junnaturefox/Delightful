@@ -183,6 +183,8 @@
   "item.delightful.utherium_knife": "御腐刀",
   "item.delightful.valkyrum_knife": "武神金属刀",
   "item.delightful.venison_chops": "生鹿排",
+  "item.delightful.venison_stew": "Venison Stew",
+  "item.delightful.venison_stew_cup": "Venison Stew Cup",
   "item.delightful.veridium_knife": "维蓝铁刀",
   "item.delightful.warden_knife": "监守者刀",
   "item.delightful.wrapped_cantaloupe": "培根卷甜瓜",
@@ -191,6 +193,7 @@
   "tooltip.config_disabled": "已禁用",
   "tooltip.furnace_fuel_burn_time": "燃烧时间",
   "tooltip.jade.age": "生长阶段：%s",
+  "tooltip.requires_empty_tag": "Requires empty tag:",
   "tooltip.requires_modid": "需安装模组：",
   "tooltip.requires_tag": "需要包含此标签的物品：",
   "tooltip.sneak_right": "潜行并右键以使用："

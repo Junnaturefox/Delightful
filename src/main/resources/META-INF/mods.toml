@@ -202,6 +202,20 @@ configBackground="farmersdelight:textures/block/tatami_mat_half.png"
 [[dependencies.delightful]]
     modId="naturalist"
     mandatory=false
+    versionRange="[4,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.delightful]]
+    modId="goodall"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.delightful]]
+    modId="blue_skies"
+    mandatory=false
     versionRange="[0,)"
     ordering="AFTER"
     side="BOTH"
@@ -251,14 +265,14 @@ configBackground="farmersdelight:textures/block/tatami_mat_half.png"
 [[dependencies.delightful]]
     modId="twilightforest"
     mandatory=false
-    versionRange="[0,)"
+    versionRange="[4.3,)"
     ordering="AFTER"
     side="BOTH"
 
 [[dependencies.delightful]]
     modId="twilightdelight"
     mandatory=false
-    versionRange="[0,)"
+    versionRange="[2,)"
     ordering="AFTER"
     side="BOTH"
 

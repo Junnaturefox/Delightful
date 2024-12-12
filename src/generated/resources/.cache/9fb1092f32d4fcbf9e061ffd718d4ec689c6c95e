@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-10T20:48:08.572034	Recipes
+// 1.20.1	2024-12-12T07:58:23.7876494	Recipes
 6c217dd6477efa10f6042809ba959d53036ab5e2 data/delightful/advancements/recipes/cabinets/basalt_cabinet.json
 5b82f87851220644287d771121677deac66b3b89 data/delightful/advancements/recipes/cabinets/quartz_cabinet.json
 cf29033c1c919355c261025df529938e6ebc73f8 data/delightful/advancements/recipes/campfire/cactus_steak.json
@@ -36,6 +36,7 @@ f8b64cbc40cbbe4360b7223029d1758da01949bd data/delightful/advancements/recipes/fo
 808d57e73e80475c16702d38d56da6a1d9b17803 data/delightful/advancements/recipes/food/cooking/sinigang.json
 55de7ec53933bc4a9dc9c23c0eb64c8cb34a005e data/delightful/advancements/recipes/food/cooking/sinigang_no_ginger_citrus.json
 0c24f3bb80b09dc3d15ed4039fc49904db13cfd7 data/delightful/advancements/recipes/food/cooking/stuffed_cantaloupe.json
+657a010fb8c53ef6565ce385c689956de0bc0b79 data/delightful/advancements/recipes/food/cooking/venison_stew.json
 fa81f81acd56cbff1741ba952e94ed1ad90a31f4 data/delightful/advancements/recipes/food/deluxe_cheeseburger.json
 40aa1720793f8640778ef2c602a247282564a6bf data/delightful/advancements/recipes/food/deluxe_cheeseburger_from_bun.json
 d718a28228d94886e877b9425e33b81aa63f3c0a data/delightful/advancements/recipes/food/deluxe_cheeseburger_from_milk.json
@@ -163,10 +164,10 @@ af3129356f249ced73739accf5141965142dfce8 data/delightful/recipes/food/cheeseburg
 0f541c24483fd710f63f7b44865fb72683164c68 data/delightful/recipes/food/cheeseburger_from_bun.json
 3806a9c427efa067ed6426c92591234d9291b514 data/delightful/recipes/food/cheeseburger_from_milk.json
 1fc12510ae08945e7bc7e650bcfedc9512e5025d data/delightful/recipes/food/clover_honey.json
-4aa76f6263006cf10498cb1e23de652ccaacae1f data/delightful/recipes/food/cooking/cactus_chili.json
-540d0e4d5b008340c861d02d6d2a2e2a2dcba125 data/delightful/recipes/food/cooking/cactus_soup.json
-fb5d02a518b7cb6ba37847f662b29064c6de124a data/delightful/recipes/food/cooking/coconut_curry.json
-c5a7e2f71dc99640c6eed21e2582639350dd0437 data/delightful/recipes/food/cooking/coconut_curry_no_ginger.json
+f8660930570b15a8aae293ed0a3dd9212cbf0811 data/delightful/recipes/food/cooking/cactus_chili.json
+9e13e7d4964d1d98f1fc9766999265cc544ec745 data/delightful/recipes/food/cooking/cactus_soup.json
+daba62a3504783d89d6fe972f0ad14307775220c data/delightful/recipes/food/cooking/coconut_curry.json
+866ab4e55b3a47b487f7e4662d96b3aec17c385e data/delightful/recipes/food/cooking/coconut_curry_no_ginger.json
 49022ee58f367a5a877f416d57b1ba5061ff1fba data/delightful/recipes/food/cooking/crab_rangoon.json
 27c99a5c883cbd86ad0ced9cca2d2686ab99dc36 data/delightful/recipes/food/cooking/crab_rangoon_from_milk.json
 b65cc57bafa4bd64bfe59e5f14d5eaeefc944363 data/delightful/recipes/food/cooking/ender_nectar.json
@@ -175,9 +176,10 @@ b8826eeb6c30c987407c8b7eb40809f6d2be3845 data/delightful/recipes/food/cooking/gl
 08500e48997950e03ec99e3015a141000ff5afd4 data/delightful/recipes/food/cooking/nut_butter_bottle.json
 b57570b06b306e19aa181b259554f8790d74116f data/delightful/recipes/food/cooking/nut_milk.json
 7929dbfbb2c7919471522340fad0d0de6765bb54 data/delightful/recipes/food/cooking/rock_candy.json
-e6891dc11a6a34ff5b1faebf4569c39b3596a180 data/delightful/recipes/food/cooking/sinigang.json
-eb72f3d908ee8d20bdedc490519336002c8d983c data/delightful/recipes/food/cooking/sinigang_no_ginger_citrus.json
+5669fe676a9d22dc3017285592c75da51782f723 data/delightful/recipes/food/cooking/sinigang.json
+edc0bc9b6659e49b19b96be96487dc53ee228b76 data/delightful/recipes/food/cooking/sinigang_no_ginger_citrus.json
 0ab784cc0c508fa3f0348b2ef36cab6877c216e2 data/delightful/recipes/food/cooking/stuffed_cantaloupe.json
+da0eb4877041f3f1d6a9e825a694d3ad8223c072 data/delightful/recipes/food/cooking/venison_stew.json
 438fe3cec9d2cc56f5564379a9d068cda33c3645 data/delightful/recipes/food/deluxe_cheeseburger.json
 c8ad450326702e6db53e78b8f98d9ba4bd492d96 data/delightful/recipes/food/deluxe_cheeseburger_from_bun.json
 f1750cca1ba7ae28213ef203ef5031d86f26c267 data/delightful/recipes/food/deluxe_cheeseburger_from_milk.json

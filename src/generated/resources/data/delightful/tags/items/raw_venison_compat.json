@@ -1,19 +1,19 @@
 {
   "values": [
     {
-      "id": "twilightforest:cooked_venison",
+      "id": "naturalist:venison",
       "required": false
     },
     {
-      "id": "naturalist:cooked_venison",
+      "id": "twilightforest:raw_venison",
       "required": false
     },
     {
-      "id": "goodall:cooked_venison",
+      "id": "goodall:raw_venison",
       "required": false
     },
     {
-      "id": "blue_skies:cooked_venison",
+      "id": "blue_skies:venison",
       "required": false
     }
   ]

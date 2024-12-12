@@ -5,20 +5,13 @@
       "conditions": [
         {
           "type": "delightful:enabled",
-          "value": "coconut_curry"
+          "value": "venison_stew"
         },
         {
           "type": "forge:not",
           "value": {
             "type": "forge:tag_empty",
-            "tag": "forge:coconut"
-          }
-        },
-        {
-          "type": "forge:not",
-          "value": {
-            "type": "forge:tag_empty",
-            "tag": "forge:vegetables/ginger"
+            "tag": "forge:raw_venison"
           }
         }
       ],
@@ -31,27 +24,21 @@
         "experience": 1.0,
         "ingredients": [
           {
-            "tag": "forge:coconut"
+            "tag": "forge:raw_venison"
           },
           {
-            "tag": "forge:milk"
+            "tag": "forge:vegetables/carrot"
           },
           {
-            "tag": "forge:raw_chicken"
+            "tag": "forge:vegetables/potato"
           },
           {
-            "item": "farmersdelight:tomato_sauce"
-          },
-          {
-            "tag": "forge:vegetables/ginger"
-          },
-          {
-            "tag": "forge:tea_leaves"
+            "tag": "forge:vegetables/potato"
           }
         ],
         "recipe_book_tab": "meals",
         "result": {
-          "item": "delightful:coconut_curry"
+          "item": "delightful:venison_stew"
         }
       }
     }

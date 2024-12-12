@@ -3,6 +3,10 @@
     {
       "bowl": "delightful:cactus_soup",
       "cup": "delightful:cactus_soup_cup"
+    },
+    {
+      "bowl": "delightful:venison_stew",
+      "cup": "delightful:venison_stew_cup"
     }
   ]
 }
