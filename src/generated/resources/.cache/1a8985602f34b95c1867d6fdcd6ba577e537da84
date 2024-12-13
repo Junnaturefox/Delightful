@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-12T10:25:43.987093	delightful
+// 1.20.1	2024-12-12T12:46:37.045679	delightful
 8980358a7235536580c6b076956e78e18eca38e9 data/additionaladditions/tags/items/gilded_netherite_upgrade.json
 251ab39f668c15d972d4630264e39f06ec646606 data/additionaladditions/tags/items/gold_ring.json
 9136930399e99d219f34c05a02844b699ef0873a data/additionaladditions/tags/items/rose_gold_alloy.json
@@ -29,6 +29,7 @@ c635f7a0507d48b606bd3d26bfe43ade5cfe05ee data/delightful/tags/items/fire_knives.
 781f6eefbffeb0aefd6174c64ea4d6073b2aa169 data/delightful/tags/items/raw_venison_chop_compat.json
 3be99fdacf76fcf66f1c27a047319502ed883050 data/delightful/tags/items/raw_venison_compat.json
 c0cf341570512d0061c8b1d58e603b18fa4678bd data/ecologics/tags/items/cooked_prickly_pear.json
+46eeece99a577a8744d3cb244eda110c9fedf1c3 data/farmersdelight/tags/items/cabbage_roll_ingredients.json
 64a54c43e2fc2293d7ba623845ea037bf7b593b8 data/farmersdelight/tags/items/cabinets.json
 56652c93f5e1505b2c4875c8d14635f2a2c72350 data/farmersdelight/tags/items/cabinets/stone.json
 d74ce8344a88381660e30e19cdffd508a6ac6951 data/farmersdelight/tags/items/cabinets/wooden.json
@@ -176,6 +177,7 @@ e7a49e3763378f3280936775b47b91ea4a9b1c5f data/lolenderite/tags/items/enderite_up
 baf6ba0ee848c77356d8dcb20db8b78f5de1a72e data/minecraft/tags/items/fox_food.json
 7a5c9e6e4cea9e6eb6c39631ca0a4a686876331d data/minecraft/tags/items/piglin_loved.json
 5976aafe31fc50b3d28a25f087d42346c6fddfb9 data/minecraft/tags/items/small_flowers.json
+46eeece99a577a8744d3cb244eda110c9fedf1c3 data/mynethersdelight/tags/items/curry_meats.json
 46eeece99a577a8744d3cb244eda110c9fedf1c3 data/naturalist/tags/items/bear_tempt_items.json
 7dacce0ec9e5cbd0efc722b3fc437fb8ec9e813b data/naturalist/tags/items/bird_food_items.json
 45cb03f434ab8a2efc2e5dc31822f42acda1a683 data/naturalist/tags/items/tortoise_tempt_items.json

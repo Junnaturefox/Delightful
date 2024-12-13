@@ -87,9 +87,11 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.add(Items.BEETROOT);
 		this.tag(ForgeTags.VEGETABLES_BEETROOT)
 				.addOptional(Util.rl(Mods.SAS, "chopped_beetroot"));
+		this.tag(ModTags.CABBAGE_ROLL_INGREDIENTS)
+				.addTag(DelightfulItemTags.RAW_VENISON);
 
 		// Collector's Reap
-		this.tag(DelightfulItemTags.GUMMIES)
+		this.tag(Util.it(Mods.CR, "gummies"))
 				.add(DelightfulItems.SALMONBERRY_GUMMY.get())
 				.add(DelightfulItems.MATCHA_GUMMY.get())
 				.add(DelightfulItems.CANTALOUPE_GUMMY.get())
@@ -155,7 +157,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addTag(DelightfulItemTags.BREAD_SLICES_TOASTED)
 				.addOptional(Util.rl(Mods.SAS, "bread_slice"))
 				.addOptional(Util.rl(Mods.MOD, "bread_slice"));
-		this.tag(DelightfulItemTags.SANDWICH_BREAD)
+		this.tag(Util.it(Mods.SAS, "sandwich_bread"))
 				.addTag(DelightfulItemTags.BREAD_SLICES);
 		this.tag(DelightfulItemTags.BURGER_BUN)
 				.addOptional(Util.rl(Mods.SAS, "burger_bun"));
@@ -542,12 +544,16 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.forEach(build::add);
 
 		// Nether's Delight
-		this.tag(DelightfulItemTags.MEAL_ITEM)
+		this.tag(Util.it(Mods.ND, "meal_item"))
 				.add(DelightfulItems.STUFFED_CANTALOUPE.get())
 				.addOptional(Util.rl(Mods.MD, "bowl_of_stuffed_squid"));
 
+		// My Nether's Delight
+		this.tag(Util.it(Mods.MND, "curry_meats"))
+				.addTag(DelightfulItemTags.RAW_VENISON);
+
 		// Ecologics
-		this.addSelf(DelightfulItemTags.COOKED_PRICKLY_PEAR);
+		this.addSelf(Util.it(Mods.ECO, "cooked_prickly_pear"));
 
 		// Forbidden and Arcanus
 		this.addSelf(DelightfulItemTags.DRACO_ARCANUS_STAFF);

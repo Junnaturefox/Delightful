@@ -143,15 +143,6 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> CABINETS_STONE = Util.it(FarmersDelight.MODID, "cabinets/stone");
 	public static final TagKey<Item> STRAW_PLANTS = Util.it(FarmersDelight.MODID, "straw_plants");
 
-	// Collector's Reap
-	public static final TagKey<Item> GUMMIES = Util.it(Mods.CR, "gummies");
-
-	// Nethers Delight
-	public static final TagKey<Item> MEAL_ITEM = Util.it(Mods.ND, "meal_item");
-
-	// Ecologics
-	public static final TagKey<Item> COOKED_PRICKLY_PEAR = Util.it(Mods.ECO, "cooked_prickly_pear");
-
 	// Forbidden and Arcanus
 	public static final TagKey<Item> DRAGON_SCALE = Util.it("forbidden_arcanus", "dragon_scale");
 	public static final TagKey<Item> DRACO_ARCANUS_STAFF = Util.it("forbidden_arcanus", "draco_arcanus_staff");
@@ -166,6 +157,7 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> RESONARIUM_PLATE = Util.it("deeperdarker", "resonarium_plate");
 
 	// Create
+	public static final TagKey<Item> UPRIGHT_ON_BELT = Util.it(Mods.C, "upright_on_belt");
 	public static final TagKey<Item> POLISHED_ROSE_QUARTZ = Util.it(Mods.C, "polished_rose_quartz");
 
 	// MCreator mods
@@ -173,12 +165,6 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> ZINC_HANDLE = Util.it("create_sa", "zinc_handle");
 	public static final TagKey<Item> SHARP_LEAF = Util.it("seeds", "sharp_leaf");
 	public static final TagKey<Item> KIWANO_PEEL = Util.it("nethers_exoticism", "kiwano_peel");
-
-	// SAS
-	public static final TagKey<Item> SANDWICH_BREAD = Util.it(Mods.SAS, "sandwich_bread");
-
-	// Create
-	public static final TagKey<Item> UPRIGHT_ON_BELT = Util.it(Mods.C, "upright_on_belt");
 
 	// Serene Seasons
 	public static final TagKey<Item> WINTER_CROPS = Util.it("sereneseasons", "winter_crops");
