@@ -2,6 +2,10 @@
   "values": [
     "minecraft:turtle_egg",
     {
+      "id": "sullysmod:tortoise_egg",
+      "required": false
+    },
+    {
       "id": "naturalist:tortoise_egg",
       "required": false
     },
@@ -43,10 +47,6 @@
     },
     {
       "id": "etcetera:eggple",
-      "required": false
-    },
-    {
-      "id": "sullysmod:tortoise",
       "required": false
     }
   ]

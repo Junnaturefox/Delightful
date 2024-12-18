@@ -122,6 +122,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.add(DelightfulItems.MATCHA.get());
 		this.tag(ForgeTags.EGGS)
 				.add(Items.TURTLE_EGG)
+				.addOptional(Util.rl("sullysmod", "tortoise_egg"))
 				.addOptional(Util.rl(Mods.NA, "tortoise_egg"))
 				.addOptional(Util.rl(Mods.NA, "duck_egg"))
 				.addOptional(Util.rl(Mods.Q, "egg_parrot_red_blue"))
@@ -132,8 +133,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addOptional(Util.rl("autumnity", "turkey_egg"))
 				.addOptional(Util.rl("deep_aether", "quail_egg"))
 				.addOptional(Util.rl("farmlife", "galliraptor_egg"))
-				.addOptional(Util.rl("etcetera", "eggple"))
-				.addOptional(Util.rl("sullysmod", "tortoise"));
+				.addOptional(Util.rl("etcetera", "eggple"));
 		this.tag(ForgeTags.COOKED_EGGS)
 				.addOptional(Util.rl(Mods.AA, "fried_egg"))
 				.addOptional(Util.rl(Mods.IN, "fried_egg"))
