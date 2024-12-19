@@ -418,13 +418,15 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.add(DelightfulItems.VENISON_CHOPS.get())
 				.addTag(DelightfulItemTags.RAW_VENISON_CHOP_COMPAT)
 				.addTag(DelightfulItemTags.RAW_VENISON_COMPAT);
-		this.tag(DelightfulItemTags.COOKED_VENISON)
-				.add(DelightfulItems.COOKED_VENISON_CHOPS.get())
+		this.tag(DelightfulItemTags.COOKED_VENISON_COMPAT)
 				.addOptional(Util.rl(Mods.NA, "cooked_venison"))
 				.addOptional(Util.rl(Mods.TF, "cooked_venison"))
-				.addOptional(Util.rl(Mods.TFD, "cooked_venison_rib"))
 				.addOptional(Util.rl("goodall", "cooked_venison"))
 				.addOptional(Util.rl("blue_skies", "cooked_venison"));
+		this.tag(DelightfulItemTags.COOKED_VENISON)
+				.add(DelightfulItems.COOKED_VENISON_CHOPS.get())
+				.addTag(DelightfulItemTags.COOKED_VENISON_COMPAT)
+				.addOptional(Util.rl(Mods.TFD, "cooked_venison_rib"));
 		this.tag(DelightfulItemTags.RAW_GOAT)
 				.add(DelightfulItems.RAW_GOAT.get());
 		this.tag(DelightfulItemTags.COOKED_GOAT)
@@ -526,7 +528,9 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addOptional(Util.rl("snowyspirit", "gingerbread_cookie"));
 		this.tag(Util.it(Mods.SUP, "cookies"))
 				.addTag(DelightfulItemTags.COOKIES)
-				.addTag(DelightfulItemTags.BREAD_SLICES);
+				.addTag(DelightfulItemTags.BREAD_SLICES)
+				.addOptional(Util.rl(Mods.CD, "tortilla_chips"))
+				.addOptional(Util.rl("corn_delight", "tortilla_chip"));
 		this.tag(DelightfulItemTags.ROPES)
 				.add(ModItems.ROPE.get())
 				.addOptionalTag(Util.rl(Mods.SUP, "ropes"))

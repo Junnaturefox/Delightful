@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-18T18:52:47.8238276	delightful
+// 1.20.1	2024-12-19T00:10:44.2104444	delightful
 8980358a7235536580c6b076956e78e18eca38e9 data/additionaladditions/tags/items/gilded_netherite_upgrade.json
 251ab39f668c15d972d4630264e39f06ec646606 data/additionaladditions/tags/items/gold_ring.json
 9136930399e99d219f34c05a02844b699ef0873a data/additionaladditions/tags/items/rose_gold_alloy.json
@@ -24,6 +24,7 @@ ea08bf83fedea8a54423800d88b8e9df50cd0449 data/deeperdarker/tags/items/resonarium
 29b212520fec512acbe234302c31627d3339cadc data/deeperdarker/tags/items/resonarium_plate.json
 ed18beedb5068fe9f48327153c678096971fcd24 data/deep_aether/tags/items/stratus_smithing_template.json
 69e5fe4ffe45732eec62598a1cbc83398f1e70c6 data/delightful/tags/items/compat_pies.json
+b863203eddbba11534b547b6b67c52951ebf4f20 data/delightful/tags/items/cooked_venison_compat.json
 c635f7a0507d48b606bd3d26bfe43ade5cfe05ee data/delightful/tags/items/fire_knives.json
 25157ad740de48c4baa7d586db2ff57f50fe0a05 data/delightful/tags/items/quartz_knife.json
 781f6eefbffeb0aefd6174c64ea4d6073b2aa169 data/delightful/tags/items/raw_venison_chop_compat.json
@@ -60,7 +61,7 @@ ae1d52d3b6cc06fbbf712ec1afad143ebfc0a82c data/forge/tags/items/cooked_beef_or_ve
 1c85522976cad2572285f27729fe2cc7a683eeb9 data/forge/tags/items/cooked_goat.json
 dc78b2c332fc369de8b6dabe152028ff37e5503a data/forge/tags/items/cooked_meat.json
 d0b63fd9fa268a9c720c2a89a19e5eacf59a05a1 data/forge/tags/items/cooked_nuts.json
-9d10322ebd10d231068015a6fda8c918ad788fef data/forge/tags/items/cooked_venison.json
+ce499191d46479c4681bae49a15deb5076c8199d data/forge/tags/items/cooked_venison.json
 e33d18a42102aad6920aa8a791e753eda8c07d3c data/forge/tags/items/cookies.json
 7c0edbb702d3fbe9e1c68f07804da13ef22fe6ea data/forge/tags/items/crab_claw.json
 a588e76ea799ddafa0f942b8750ac4644597b2bd data/forge/tags/items/crab_claw/cooked.json
@@ -193,7 +194,7 @@ e8907bb6383992d824e326f554fcbab430f7e5ce data/sereneseasons/tags/items/summer_cr
 b8b87fc750df00b052331af73140b09a01a8c7dc data/some_assembly_required/tags/items/sandwich_bread.json
 5ca5c9750568ae0343de46dc7bae0316ddffd566 data/spirit/tags/items/soul_steel_mainhand.json
 43339d5953529bed9235da682e2cba1ad155fe71 data/sullysmod/tags/items/tortoise_food.json
-56a6bffe70872948dff42c1781157860372639f1 data/supplementaries/tags/items/cookies.json
+657639e3a22582ac66ed694575b4367021266c01 data/supplementaries/tags/items/cookies.json
 7c3909099c341f706262b4b4f435f526fb1dd27a data/undergarden/tags/items/cloggrum_items.json
 22b57d1edd6bf7fe04627e0b2bba1a01f62a9a11 data/undergarden/tags/items/forgotten_upgrade_smithing_template.json
 4892cca57979307b755da1e942f5ad115fe6e9d6 data/undergarden/tags/items/froststeel_items.json

@@ -81,10 +81,6 @@ public class DelightfulItems {
 			() -> new DItem((new Item.Properties()).food(Nutrition.SALMONBERRY_PIE_SLICE), false));
 	public static final RegistryObject<Item> PUMPKIN_PIE_SLICE = registerItem("pumpkin_pie_slice",
 			() -> new PumpkinPieSliceItem((new Item.Properties()).food(FoodValues.PIE_SLICE)));
-	public static final RegistryObject<Item> BAKLAVA = registerItem("baklava",
-			() -> new BlockItem(DelightfulBlocks.BAKLAVA.get(), ModItems.basicItem()));
-	public static final RegistryObject<Item> BAKLAVA_SLICE = registerItem("baklava_slice",
-			() -> new DItem((new Item.Properties()).food(Nutrition.BAKLAVA_SLICE)));
 	public static final RegistryObject<Item> GLOOMGOURD_PIE_SLICE = registerCompatPieSlice("gloomgourd_pie_slice",
 			UndergardenCompat.GLOOMGOURD_PIE_SLICE.get(), Mods.UG);
 	public static final RegistryObject<Item> BLUEBERRY_PIE_SLICE = registerCompatPieSlice(BWGCompat.blueberry_pie + "_slice",
@@ -95,6 +91,10 @@ public class DelightfulItems {
 			() -> new CompatItem((new Item.Properties()).food(ArsNouveauCompat.SOURCE_BERRY_PIE_SLICE), true, Mods.AND, Mods.AN));
 	public static final RegistryObject<Item> SOURCE_BERRY_COOKIE = registerItem("source_berry_cookie",
 			() -> new CompatItem((new Item.Properties()).food(ArsNouveauCompat.SOURCE_BERRY_COOKIE), true, Mods.AND, Mods.AN));
+	public static final RegistryObject<Item> BAKLAVA = registerItem("baklava",
+			() -> new BlockItem(DelightfulBlocks.BAKLAVA.get(), ModItems.basicItem()));
+	public static final RegistryObject<Item> BAKLAVA_SLICE = registerItem("baklava_slice",
+			() -> new DItem((new Item.Properties()).food(Nutrition.BAKLAVA_SLICE)));
 	public static final RegistryObject<Item> ANIMAL_FAT = registerFood("animal_fat", Nutrition.ANIMAL_FAT);
 	public static final RegistryObject<Item> ANIMAL_OIL_BOTTLE = registerItem("animal_oil_bottle",
 			() -> new FurnaceFuelItem((new Item.Properties()).craftRemainder(Items.GLASS_BOTTLE), 3200));

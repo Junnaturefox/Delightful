@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-18T18:57:32.4552218	Recipes
+// 1.20.1	2024-12-18T23:54:20.3662213	Recipes
 6c217dd6477efa10f6042809ba959d53036ab5e2 data/delightful/advancements/recipes/cabinets/basalt_cabinet.json
 5b82f87851220644287d771121677deac66b3b89 data/delightful/advancements/recipes/cabinets/quartz_cabinet.json
 cf29033c1c919355c261025df529938e6ebc73f8 data/delightful/advancements/recipes/campfire/cactus_steak.json
@@ -148,9 +148,11 @@ c92680cce5f1a7851ea35a25a9251e6401222767 data/delightful/recipes/cutting/baklava
 78f553a22ac586b5068eaa8153855233b416b4af data/delightful/recipes/cutting/cactus.json
 ef210c25b1a3d2453c0b37c587390bec5d6dadd0 data/delightful/recipes/cutting/cantaloupe.json
 6d83188833f8de6e476dff434874899ad77869fc data/delightful/recipes/cutting/clover.json
+ce393a92145b28c2999207e988a0db8f78ba0296 data/delightful/recipes/cutting/cooked_venison.json
 0d1501a802294f211d78d43f092ba855aebd2884 data/delightful/recipes/cutting/green_tea_leaves.json
 170a8e1f1ce519b51ee4ecd9a1735441b4436724 data/delightful/recipes/cutting/mini_melon.json
 94844bad124bf4c999bd39f9e661e44611b2db92 data/delightful/recipes/cutting/pumpkin_pie.json
+b5f5b4177cabb6f895e9d5d53201764e31b099c5 data/delightful/recipes/cutting/raw_venison.json
 66c0e664acd6c60912d049d9269ea0d5dddf2e64 data/delightful/recipes/cutting/salmonberry_pie.json
 2e43144fc7e9fe2ce35e787c6dc56f8dea7b7642 data/delightful/recipes/cutting/small_cactus.json
 8f93cb7f47ffb3a6b38c14fc5ad15d08f00fdeeb data/delightful/recipes/cutting/sugar_cane.json

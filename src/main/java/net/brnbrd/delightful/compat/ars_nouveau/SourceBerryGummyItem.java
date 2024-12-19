@@ -13,4 +13,9 @@ public class SourceBerryGummyItem extends GummyItem implements ICompat {
 	public String[] getModid() {
 		return new String[]{Mods.AN};
 	}
+
+	@Override
+	public boolean enabled() {
+		return super.enabled() && ICompat.super.enabled();
+	}
 }

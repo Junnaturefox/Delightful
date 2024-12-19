@@ -549,6 +549,16 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
 						Ingredient.of(ForgeTags.TOOLS_KNIVES),
 						Items.MELON_SLICE, 6),
 				"cutting/mini_melon", finished, enabled("mini_melon"));
+		wrap(CuttingBoardRecipeBuilder.cuttingRecipe(
+						Ingredient.of(DelightfulItemTags.RAW_VENISON_COMPAT),
+						Ingredient.of(ForgeTags.TOOLS_KNIVES),
+						DelightfulItems.VENISON_CHOPS.get(), 2),
+				"cutting/raw_venison", finished, enabled(DelightfulItems.VENISON_CHOPS), not(tagEmpty(DelightfulItemTags.RAW_VENISON_COMPAT)));
+		wrap(CuttingBoardRecipeBuilder.cuttingRecipe(
+						Ingredient.of(DelightfulItemTags.COOKED_VENISON_COMPAT),
+						Ingredient.of(ForgeTags.TOOLS_KNIVES),
+						DelightfulItems.COOKED_VENISON_CHOPS.get(), 2),
+				"cutting/cooked_venison", finished, enabled(DelightfulItems.COOKED_VENISON_CHOPS), not(tagEmpty(DelightfulItemTags.COOKED_VENISON_COMPAT)));
 		wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.MELON_SLICE, 3)
 						.requires(DelightfulItems.MINI_MELON.get())
 						.unlockedBy("has_mini_melon", has(DelightfulItems.MINI_MELON.get())),

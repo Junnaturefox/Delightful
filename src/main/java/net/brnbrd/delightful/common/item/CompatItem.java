@@ -34,4 +34,9 @@ public class CompatItem extends DItem implements ICompat {
 		}
 		return super.getConflicts();
 	}
+
+	@Override
+	public boolean enabled() {
+		return super.enabled() && ICompat.super.enabled();
+	}
 }
