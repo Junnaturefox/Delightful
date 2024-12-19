@@ -36,6 +36,7 @@ public class Mods {
 	public static final String FA = "forbidden_arcanus";
 	public static final String FR = "farmersrespite";
 	public static final String FRD = "fruitsdelight";
+	public static final String FRIGHT = "frightsdelight";
 	public static final String FU = "frozenup";
 	public static final String FUD = "frozen_delight";
 	public static final String FUS = "fusion";

@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-12T07:58:23.7876494	Recipes
+// 1.20.1	2024-12-18T18:57:32.4552218	Recipes
 6c217dd6477efa10f6042809ba959d53036ab5e2 data/delightful/advancements/recipes/cabinets/basalt_cabinet.json
 5b82f87851220644287d771121677deac66b3b89 data/delightful/advancements/recipes/cabinets/quartz_cabinet.json
 cf29033c1c919355c261025df529938e6ebc73f8 data/delightful/advancements/recipes/campfire/cactus_steak.json
@@ -36,7 +36,8 @@ f8b64cbc40cbbe4360b7223029d1758da01949bd data/delightful/advancements/recipes/fo
 808d57e73e80475c16702d38d56da6a1d9b17803 data/delightful/advancements/recipes/food/cooking/sinigang.json
 55de7ec53933bc4a9dc9c23c0eb64c8cb34a005e data/delightful/advancements/recipes/food/cooking/sinigang_no_ginger_citrus.json
 0c24f3bb80b09dc3d15ed4039fc49904db13cfd7 data/delightful/advancements/recipes/food/cooking/stuffed_cantaloupe.json
-657a010fb8c53ef6565ce385c689956de0bc0b79 data/delightful/advancements/recipes/food/cooking/venison_stew.json
+1ec258bf0bdd96bcb606a2b7b52acb927257c8b2 data/delightful/advancements/recipes/food/cooking/venison_stew.json
+60f019bfab507624f6971a5c8e08967be559576c data/delightful/advancements/recipes/food/cooking/venison_stew_no_animal_fat.json
 fa81f81acd56cbff1741ba952e94ed1ad90a31f4 data/delightful/advancements/recipes/food/deluxe_cheeseburger.json
 40aa1720793f8640778ef2c602a247282564a6bf data/delightful/advancements/recipes/food/deluxe_cheeseburger_from_bun.json
 d718a28228d94886e877b9425e33b81aa63f3c0a data/delightful/advancements/recipes/food/deluxe_cheeseburger_from_milk.json
@@ -179,7 +180,8 @@ b57570b06b306e19aa181b259554f8790d74116f data/delightful/recipes/food/cooking/nu
 5669fe676a9d22dc3017285592c75da51782f723 data/delightful/recipes/food/cooking/sinigang.json
 edc0bc9b6659e49b19b96be96487dc53ee228b76 data/delightful/recipes/food/cooking/sinigang_no_ginger_citrus.json
 0ab784cc0c508fa3f0348b2ef36cab6877c216e2 data/delightful/recipes/food/cooking/stuffed_cantaloupe.json
-da0eb4877041f3f1d6a9e825a694d3ad8223c072 data/delightful/recipes/food/cooking/venison_stew.json
+9fe3860225541d871c6bb03f145fe6fc3ef0fea7 data/delightful/recipes/food/cooking/venison_stew.json
+0f84d5316986c2596182d6756b9ff719e654d75a data/delightful/recipes/food/cooking/venison_stew_no_animal_fat.json
 438fe3cec9d2cc56f5564379a9d068cda33c3645 data/delightful/recipes/food/deluxe_cheeseburger.json
 c8ad450326702e6db53e78b8f98d9ba4bd492d96 data/delightful/recipes/food/deluxe_cheeseburger_from_bun.json
 f1750cca1ba7ae28213ef203ef5031d86f26c267 data/delightful/recipes/food/deluxe_cheeseburger_from_milk.json

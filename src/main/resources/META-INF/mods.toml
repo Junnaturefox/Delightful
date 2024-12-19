@@ -160,7 +160,7 @@ configBackground="farmersdelight:textures/block/tatami_mat_half.png"
 [[dependencies.delightful]]
     modId="biomeswevegone"
     mandatory=false
-    versionRange="[1.4,)"
+    versionRange="[1.4.4,)"
     ordering="AFTER"
     side="BOTH"
 

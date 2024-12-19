@@ -16,7 +16,7 @@
           },
           "has_the_recipe": {
             "conditions": {
-              "recipe": "delightful:food/cooking/venison_stew"
+              "recipe": "delightful:food/cooking/venison_stew_no_animal_fat"
             },
             "trigger": "minecraft:recipe_unlocked"
           }
@@ -29,7 +29,7 @@
         ],
         "rewards": {
           "recipes": [
-            "delightful:food/cooking/venison_stew"
+            "delightful:food/cooking/venison_stew_no_animal_fat"
           ]
         },
         "sends_telemetry_event": true
@@ -47,8 +47,11 @@
           }
         },
         {
-          "type": "delightful:enabled",
-          "value": "animal_fat"
+          "type": "forge:not",
+          "value": {
+            "type": "delightful:enabled",
+            "value": "animal_fat"
+          }
         }
       ]
     }

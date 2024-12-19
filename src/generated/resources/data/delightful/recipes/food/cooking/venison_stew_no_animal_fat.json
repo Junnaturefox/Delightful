@@ -15,8 +15,11 @@
           }
         },
         {
-          "type": "delightful:enabled",
-          "value": "animal_fat"
+          "type": "forge:not",
+          "value": {
+            "type": "delightful:enabled",
+            "value": "animal_fat"
+          }
         }
       ],
       "recipe": {
@@ -37,7 +40,7 @@
             "tag": "forge:vegetables/potato"
           },
           {
-            "item": "delightful:animal_fat"
+            "tag": "forge:vegetables/potato"
           }
         ],
         "recipe_book_tab": "meals",

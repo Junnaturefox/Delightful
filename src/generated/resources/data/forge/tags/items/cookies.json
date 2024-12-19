@@ -1,15 +1,11 @@
 {
   "values": [
     "minecraft:cookie",
-    "delightful:source_berry_cookie",
     "farmersdelight:honey_cookie",
     "farmersdelight:sweet_berry_cookie",
+    "delightful:source_berry_cookie",
     {
       "id": "farmersrespite:green_tea_cookie",
-      "required": false
-    },
-    {
-      "id": "snowyspirit:gingerbread_cookie",
       "required": false
     },
     {
@@ -21,19 +17,7 @@
       "required": false
     },
     {
-      "id": "exquisito:chorus_cookie",
-      "required": false
-    },
-    {
-      "id": "ends_delight:chorus_cookie",
-      "required": false
-    },
-    {
       "id": "miners_delight:bat_cookie",
-      "required": false
-    },
-    {
-      "id": "sunflowerdelight:shortbread_cookie",
       "required": false
     },
     {
@@ -57,7 +41,55 @@
       "required": false
     },
     {
+      "id": "frightsdelight:cookie_flesh",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:cookie_spidereye",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:cookie_slimeapple",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:cookie_slime",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:cookie_cobweb",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:cookie_ghast_tear",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:cookie_soul_berry",
+      "required": false
+    },
+    {
+      "id": "frightsdelight:cookie_wither_berry",
+      "required": false
+    },
+    {
+      "id": "ends_delight:chorus_cookie",
+      "required": false
+    },
+    {
+      "id": "exquisito:chorus_cookie",
+      "required": false
+    },
+    {
+      "id": "sunflowerdelight:shortbread_cookie",
+      "required": false
+    },
+    {
       "id": "vampiresdelight:orchid_cookie",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:gingerbread_cookie",
       "required": false
     }
   ]

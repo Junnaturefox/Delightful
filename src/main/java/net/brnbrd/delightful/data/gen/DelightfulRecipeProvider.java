@@ -412,10 +412,19 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
 						.addIngredient(DelightfulItemTags.RAW_VENISON)
 						.addIngredient(ForgeTags.VEGETABLES_CARROT)
 						.addIngredient(ForgeTags.VEGETABLES_POTATO)
+						.addIngredient(DelightfulItems.ANIMAL_FAT.get())
+						.unlockedBy("has_raw_venison", has(DelightfulItemTags.RAW_VENISON))
+						.setRecipeBookTab(CookingPotRecipeBookTab.MEALS),
+				"food/cooking/venison_stew", finished, enabled(DelightfulItems.VENISON_STEW), not(tagEmpty(DelightfulItemTags.RAW_VENISON_COMPAT)), enabled(DelightfulItems.ANIMAL_FAT));
+		wrap(CookingPotRecipeBuilder.cookingPotRecipe(
+								DelightfulItems.VENISON_STEW.get(), 1, CookingRecipes.NORMAL_COOKING, 1.0F, Items.BOWL)
+						.addIngredient(DelightfulItemTags.RAW_VENISON)
+						.addIngredient(ForgeTags.VEGETABLES_CARROT)
+						.addIngredient(ForgeTags.VEGETABLES_POTATO)
 						.addIngredient(ForgeTags.VEGETABLES_POTATO)
 						.unlockedBy("has_raw_venison", has(DelightfulItemTags.RAW_VENISON))
 						.setRecipeBookTab(CookingPotRecipeBookTab.MEALS),
-				"food/cooking/venison_stew", finished, enabled(DelightfulItems.VENISON_STEW), not(tagEmpty(DelightfulItemTags.RAW_VENISON)));
+				"food/cooking/venison_stew_no_animal_fat", finished, enabled(DelightfulItems.VENISON_STEW), not(tagEmpty(DelightfulItemTags.RAW_VENISON_COMPAT)), not(enabled(DelightfulItems.ANIMAL_FAT)));
 		wrap(CookingPotRecipeBuilder.cookingPotRecipe(
 								DelightfulItems.COCONUT_CURRY.get(), 1, CookingRecipes.NORMAL_COOKING, 1.0F, Items.BOWL)
 						.addIngredient(DelightfulItemTags.COCONUT)
