@@ -385,6 +385,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		this.tag(DelightfulItemTags.TEA_LEAVES_GREEN)
 				.add(DelightfulItems.GREEN_TEA_LEAF.get())
 				.addOptional(Util.rl(Mods.FR, "green_tea_leaves"))
+				.addOptional(Util.rl("thermal", "tea"))
 				.addOptional(Util.rl("croptopia", "tea_leaves"));
 		this.tag(DelightfulItemTags.TEA_LEAVES)
 				.addTag(DelightfulItemTags.TEA_LEAVES_GREEN)

@@ -28,13 +28,10 @@
         "experience": 0.35,
         "ingredients": [
           {
-            "tag": "forge:nuts"
+            "tag": "forge:nut_butter"
           },
           {
-            "tag": "forge:nuts"
-          },
-          {
-            "tag": "forge:sugar"
+            "tag": "forge:nut_butter"
           }
         ],
         "result": {

@@ -6,6 +6,10 @@
       "required": false
     },
     {
+      "id": "thermal:tea",
+      "required": false
+    },
+    {
       "id": "croptopia:tea_leaves",
       "required": false
     }
