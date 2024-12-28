@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-22T11:57:20.28841	delightful
+// 1.20.1	2024-12-27T23:52:44.369389	delightful
 8980358a7235536580c6b076956e78e18eca38e9 data/additionaladditions/tags/items/gilded_netherite_upgrade.json
 251ab39f668c15d972d4630264e39f06ec646606 data/additionaladditions/tags/items/gold_ring.json
 9136930399e99d219f34c05a02844b699ef0873a data/additionaladditions/tags/items/rose_gold_alloy.json
@@ -24,13 +24,14 @@ b306cd52d0a89b88fd149766a3ccc1f9d27d4e5f data/deeperdarker/tags/items/reinforced
 ea08bf83fedea8a54423800d88b8e9df50cd0449 data/deeperdarker/tags/items/resonarium.json
 29b212520fec512acbe234302c31627d3339cadc data/deeperdarker/tags/items/resonarium_plate.json
 69e5fe4ffe45732eec62598a1cbc83398f1e70c6 data/delightful/tags/items/compat_pies.json
+955770e86383b42839699e305e189e33939fda08 data/delightful/tags/items/cooked_venison_chop_compat.json
 b863203eddbba11534b547b6b67c52951ebf4f20 data/delightful/tags/items/cooked_venison_compat.json
 c635f7a0507d48b606bd3d26bfe43ade5cfe05ee data/delightful/tags/items/fire_knives.json
 25157ad740de48c4baa7d586db2ff57f50fe0a05 data/delightful/tags/items/quartz_knife.json
 781f6eefbffeb0aefd6174c64ea4d6073b2aa169 data/delightful/tags/items/raw_venison_chop_compat.json
 3be99fdacf76fcf66f1c27a047319502ed883050 data/delightful/tags/items/raw_venison_compat.json
 c0cf341570512d0061c8b1d58e603b18fa4678bd data/ecologics/tags/items/cooked_prickly_pear.json
-46eeece99a577a8744d3cb244eda110c9fedf1c3 data/farmersdelight/tags/items/cabbage_roll_ingredients.json
+37e63d30efc470b358d681dc34fc1f94d50bb480 data/farmersdelight/tags/items/cabbage_roll_ingredients.json
 64a54c43e2fc2293d7ba623845ea037bf7b593b8 data/farmersdelight/tags/items/cabinets.json
 56652c93f5e1505b2c4875c8d14635f2a2c72350 data/farmersdelight/tags/items/cabinets/stone.json
 d74ce8344a88381660e30e19cdffd508a6ac6951 data/farmersdelight/tags/items/cabinets/wooden.json
@@ -61,7 +62,7 @@ ae1d52d3b6cc06fbbf712ec1afad143ebfc0a82c data/forge/tags/items/cooked_beef_or_ve
 1c85522976cad2572285f27729fe2cc7a683eeb9 data/forge/tags/items/cooked_goat.json
 dc78b2c332fc369de8b6dabe152028ff37e5503a data/forge/tags/items/cooked_meat.json
 d0b63fd9fa268a9c720c2a89a19e5eacf59a05a1 data/forge/tags/items/cooked_nuts.json
-ce499191d46479c4681bae49a15deb5076c8199d data/forge/tags/items/cooked_venison.json
+522cf04b2689c42171edbe4fe3fa6e3fa9651b1f data/forge/tags/items/cooked_venison.json
 e33d18a42102aad6920aa8a791e753eda8c07d3c data/forge/tags/items/cookies.json
 7c0edbb702d3fbe9e1c68f07804da13ef22fe6ea data/forge/tags/items/crab_claw.json
 a588e76ea799ddafa0f942b8750ac4644597b2bd data/forge/tags/items/crab_claw/cooked.json
@@ -178,7 +179,7 @@ e7a49e3763378f3280936775b47b91ea4a9b1c5f data/lolenderite/tags/items/enderite_up
 baf6ba0ee848c77356d8dcb20db8b78f5de1a72e data/minecraft/tags/items/fox_food.json
 7a5c9e6e4cea9e6eb6c39631ca0a4a686876331d data/minecraft/tags/items/piglin_loved.json
 5976aafe31fc50b3d28a25f087d42346c6fddfb9 data/minecraft/tags/items/small_flowers.json
-46eeece99a577a8744d3cb244eda110c9fedf1c3 data/mynethersdelight/tags/items/curry_meats.json
+37e63d30efc470b358d681dc34fc1f94d50bb480 data/mynethersdelight/tags/items/curry_meats.json
 46eeece99a577a8744d3cb244eda110c9fedf1c3 data/naturalist/tags/items/bear_tempt_items.json
 7dacce0ec9e5cbd0efc722b3fc437fb8ec9e813b data/naturalist/tags/items/bird_food_items.json
 45cb03f434ab8a2efc2e5dc31822f42acda1a683 data/naturalist/tags/items/tortoise_tempt_items.json

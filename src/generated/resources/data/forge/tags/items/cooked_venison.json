@@ -1,10 +1,7 @@
 {
   "values": [
     "delightful:cooked_venison_chops",
-    "#delightful:cooked_venison_compat",
-    {
-      "id": "twilightdelight:cooked_venison_rib",
-      "required": false
-    }
+    "#delightful:cooked_venison_chop_compat",
+    "#delightful:cooked_venison_compat"
   ]
 }

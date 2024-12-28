@@ -4,8 +4,12 @@
     {
       "conditions": [
         {
-          "type": "delightful:enabled",
-          "value": "cooked_venison_chops"
+          "type": "forge:mod_loaded",
+          "modid": "twilightdelight"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "twilightdelight:cooked_venison_rib"
         },
         {
           "type": "forge:not",
@@ -13,10 +17,6 @@
             "type": "forge:tag_empty",
             "tag": "delightful:cooked_venison_compat"
           }
-        },
-        {
-          "type": "forge:tag_empty",
-          "tag": "delightful:cooked_venison_chop_compat"
         }
       ],
       "recipe": {
@@ -29,7 +29,7 @@
         "result": [
           {
             "count": 2,
-            "item": "delightful:cooked_venison_chops"
+            "item": "twilightdelight:cooked_venison_rib"
           }
         ],
         "tool": {

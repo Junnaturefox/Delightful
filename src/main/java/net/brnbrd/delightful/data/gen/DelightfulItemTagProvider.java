@@ -88,7 +88,8 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		this.tag(ForgeTags.VEGETABLES_BEETROOT)
 				.addOptional(Util.rl(Mods.SAS, "chopped_beetroot"));
 		this.tag(ModTags.CABBAGE_ROLL_INGREDIENTS)
-				.addTag(DelightfulItemTags.RAW_VENISON);
+				.addTag(DelightfulItemTags.RAW_VENISON)
+				.addTag(DelightfulItemTags.RAW_GOAT);
 
 		// Collector's Reap
 		this.tag(Util.it(Mods.CR, "gummies"))
@@ -424,10 +425,12 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addOptional(Util.rl(Mods.TF, "cooked_venison"))
 				.addOptional(Util.rl("goodall", "cooked_venison"))
 				.addOptional(Util.rl("blue_skies", "cooked_venison"));
+		this.tag(DelightfulItemTags.COOKED_VENISON_CHOP_COMPAT)
+			.addOptional(Util.rl(Mods.TFD, "cooked_venison_rib"));
 		this.tag(DelightfulItemTags.COOKED_VENISON)
 				.add(DelightfulItems.COOKED_VENISON_CHOPS.get())
-				.addTag(DelightfulItemTags.COOKED_VENISON_COMPAT)
-				.addOptional(Util.rl(Mods.TFD, "cooked_venison_rib"));
+				.addTag(DelightfulItemTags.COOKED_VENISON_CHOP_COMPAT)
+				.addTag(DelightfulItemTags.COOKED_VENISON_COMPAT);
 		this.tag(DelightfulItemTags.RAW_GOAT)
 				.add(DelightfulItems.RAW_GOAT.get());
 		this.tag(DelightfulItemTags.COOKED_GOAT)
@@ -566,7 +569,8 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 
 		// My Nether's Delight
 		this.tag(Util.it(Mods.MND, "curry_meats"))
-				.addTag(DelightfulItemTags.RAW_VENISON);
+				.addTag(DelightfulItemTags.RAW_VENISON)
+				.addTag(DelightfulItemTags.RAW_GOAT);
 
 		// Ecologics
 		this.addSelf(Util.it(Mods.ECO, "cooked_prickly_pear"));
