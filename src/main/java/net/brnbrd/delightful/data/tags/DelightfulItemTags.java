@@ -28,7 +28,6 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> FRUITS_KIWI = forge("fruits/kiwi");
 	public static final TagKey<Item> FRUITS_MELON = forge("fruits/melon");
 	public static final TagKey<Item> FRUITS_CANTALOUPE = forge("fruits/cantaloupe");
-	public static final TagKey<Item> FRUITS_HAMIMELON = forge("fruits/hamimelon");
 	public static final TagKey<Item> FRUITS_CHORUS = forge("fruits/chorus");
 	public static final TagKey<Item> FRUITS_SWEET_BERRIES = forge("fruits/sweet_berries");
 	public static final TagKey<Item> FRUITS_GLOW_BERRIES = forge("fruits/glow_berries");
@@ -65,10 +64,6 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> FRUITS_SWEET = forge("fruits/sweet");
 	public static final TagKey<Item> FRUITS_PRICKLY_PEAR = forge("fruits/prickly_pear");
 	public static final TagKey<Item> FRUITS_CITRUS = forge("fruits/citrus");
-	public static final TagKey<Item> FRUITS_BASTION = forge("fruits/bastion");
-	public static final TagKey<Item> FRUITS_MENDOSTEEN = forge("fruits/mendosteen");
-	public static final TagKey<Item> FRUITS_FROSTAYA = forge("fruits/frostaya");
-	public static final TagKey<Item> FRUITS_BOMBEGRANATE = forge("fruits/bomegranate");
 	public static final TagKey<Item> VEGETABLES_CORN = forge("vegetables/corn");
 	public static final TagKey<Item> VEGETABLES_GINGER = forge("vegetables/ginger");
 	public static final TagKey<Item> VEGETABLES_CUCUMBER = forge("vegetables/cucumber");
@@ -167,12 +162,6 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> ZINC_HANDLE = Util.it("create_sa", "zinc_handle");
 	public static final TagKey<Item> SHARP_LEAF = Util.it("seeds", "sharp_leaf");
 	public static final TagKey<Item> KIWANO_PEEL = Util.it("nethers_exoticism", "kiwano_peel");
-
-	// Serene Seasons
-	public static final TagKey<Item> WINTER_CROPS = Util.it("sereneseasons", "winter_crops");
-	public static final TagKey<Item> SUMMER_CROPS = Util.it("sereneseasons", "summer_crops");
-	public static final TagKey<Item> AUTUMN_CROPS = Util.it("sereneseasons", "autumn_crops");
-	public static final TagKey<Item> SPRING_CROPS = Util.it("sereneseasons", "spring_crops");
 
 	// Phantasm
 	public static final TagKey<Item> VOID_CRYSTAL_BLOCK = Util.it(Mods.EP, "void_crystal_block");

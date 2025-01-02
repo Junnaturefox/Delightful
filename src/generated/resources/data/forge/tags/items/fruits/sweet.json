@@ -19,7 +19,6 @@
     "#forge:fruits/pitaya",
     "#forge:fruits/jabuticaba",
     "#forge:fruits/kiwano",
-    "#forge:fruits/hamimelon",
     "#forge:fruits/baobab",
     {
       "id": "#forge:fruits/orange",
@@ -31,6 +30,10 @@
     },
     {
       "id": "#forge:fruits/redlove",
+      "required": false
+    },
+    {
+      "id": "fruitsdelight:hamimelon_slice",
       "required": false
     }
   ]

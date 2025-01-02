@@ -12,15 +12,17 @@ import net.brnbrd.delightful.common.item.DelightfulItems;
 import net.brnbrd.delightful.common.item.IConfigured;
 import net.brnbrd.delightful.common.item.food.GreenTeaLeavesItem;
 import net.brnbrd.delightful.common.item.knife.DelightfulKnifeItem;
+import net.brnbrd.delightful.data.tags.DelightfulItemTags;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.fluids.FluidStack;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import org.jetbrains.annotations.NotNull;
 import vectorwing.farmersdelight.common.utility.TextUtils;
+import org.jetbrains.annotations.NotNull;
 import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.ArrayList;
 import java.util.List;
@@ -37,6 +39,7 @@ public class JEIPlugin implements IModPlugin {
 		List<ItemStack> hidden = new ArrayList<>(DelightfulItems.ITEMS.getEntries().stream()
 				.filter(i -> (i.get() instanceof IConfigured c) ? !c.enabled() : !Util.enabled(i)) // Keep items not enabled
 				.map(Util::gs).toList());
+		List<FluidStack> hiddenFluids = new ArrayList<>();
 
 		// Delightful conflicts
 		this.hide(hidden, Mods.VD, "pb_j");
@@ -63,11 +66,12 @@ public class JEIPlugin implements IModPlugin {
 			registration.getIngredientManager().removeIngredientsAtRuntime(VanillaTypes.ITEM_STACK, hidden);
 		}
 
-		if (!Mods.loaded(Mods.FR)) {
-			registration.getIngredientManager().removeIngredientsAtRuntime(ForgeTypes.FLUID_STACK, List.of(
-					new FluidStack(DelightfulFluids.AZALEA_TEA.get(), 1000),
-					new FluidStack(DelightfulFluids.LAVENDER_TEA.get(), 1000)
-			));
+		// Hide fluids
+		if (!Mods.loaded(Mods.FR) || Util.tagEmpty(DelightfulItemTags.LAVENDER)) {
+			hiddenFluids.add(new FluidStack(DelightfulFluids.LAVENDER_TEA.get(), 1000));
+		}
+		if (!Mods.loaded(Mods.FR) || Util.tagEmpty(DelightfulItemTags.FLOWERS_AZALEA)) {
+			hiddenFluids.add(new FluidStack(DelightfulFluids.AZALEA_TEA.get(), 1000));
 		}
 
 		// Add Knife translations
@@ -113,6 +117,7 @@ public class JEIPlugin implements IModPlugin {
 		}
 		registration.addIngredientInfo(new ItemStack(Items.MELON), VanillaTypes.ITEM_STACK, Component.translatable(Delightful.MODID + ".sliceable.desc"));
 		registration.addIngredientInfo(new ItemStack(Items.PUMPKIN), VanillaTypes.ITEM_STACK, Component.translatable(Delightful.MODID + ".sliceable.desc"));
+		registration.getIngredientManager().removeIngredientsAtRuntime(ForgeTypes.FLUID_STACK, hiddenFluids);
 	}
 
 	private void hide(List<ItemStack> hiddenList, String modid, String item, String... conflicts) {

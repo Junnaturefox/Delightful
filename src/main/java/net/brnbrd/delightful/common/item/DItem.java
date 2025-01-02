@@ -1,5 +1,6 @@
 package net.brnbrd.delightful.common.item;
 
+import net.brnbrd.delightful.Util;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.tags.TagKey;
@@ -7,7 +8,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
-import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import vectorwing.farmersdelight.common.Configuration;
@@ -48,19 +48,14 @@ public class DItem extends Item implements IConfigured {
 	}
 
 	public boolean isEmptyTag() {
-		if (this.emptyTag == null) {
-			return true;
-		}
-		var tags = ForgeRegistries.ITEMS.tags();
-		return tags != null && (!tags.isKnownTagName(this.emptyTag) || tags.getTag(this.emptyTag).isEmpty());
+		return Util.tagEmpty(this.emptyTag);
 	}
 
 	public boolean isDependencyTag() {
 		if (this.dependencyTag == null) {
 			return true;
 		}
-		var tags = ForgeRegistries.ITEMS.tags();
-		return tags != null && tags.isKnownTagName(this.dependencyTag) && !tags.getTag(this.dependencyTag).isEmpty();
+		return Util.tagPopulated(this.dependencyTag);
 	}
 
 	public boolean isTag() {

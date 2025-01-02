@@ -178,10 +178,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		this.tag(DelightfulItemTags.FRUITS_GLOW_BERRIES).add(Items.GLOW_BERRIES);
 		this.tag(DelightfulItemTags.FRUITS_CANTALOUPE).add(DelightfulItems.CANTALOUPE_SLICE.get());
 		this.tag(DelightfulItemTags.FRUITS_SALMONBERRIES).add(DelightfulItems.SALMONBERRIES.get());
-		this.tag(DelightfulItemTags.FRUITS_KIWI)
-				.addOptional(Util.rl(Mods.FRD, "kiwi"))
-				.addOptional(Util.rl("hedgehog", "kiwi"));
-		this.tag(DelightfulItemTags.FRUITS_HAMIMELON).addOptional(Util.rl(Mods.FRD, "hamimelon_slice"));
+		this.tag(DelightfulItemTags.FRUITS_KIWI).addOptional(Util.rl("hedgehog", "kiwi"));
 		this.tag(DelightfulItemTags.FRUITS_GREEN_APPLE).addOptional(Util.rl(Mods.BWG, BWGCompat.green_apple));
 		this.tag(DelightfulItemTags.FRUITS_YUCCA).addOptional(Util.rl(Mods.BWG, BWGCompat.yucca));
 		this.tag(DelightfulItemTags.FRUITS_BAOBAB).addOptional(Util.rl(Mods.BWG, BWGCompat.baobab));
@@ -212,24 +209,16 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addOptional(Util.rl(Mods.N, "banana"));
 		this.tag(DelightfulItemTags.FRUITS_CHERRY)
 				.addOptional(Util.rl(Mods.FA, "cherry_peach"));
-		this.tag(DelightfulItemTags.FRUITS_MENDOSTEEN)
-				.addOptional(Util.rl(Mods.AN, "mendosteen_pod"));
-		this.tag(DelightfulItemTags.FRUITS_BOMBEGRANATE)
-				.addOptional(Util.rl(Mods.AN, "bombegranate_pod"));
-		this.tag(DelightfulItemTags.FRUITS_FROSTAYA)
-				.addOptional(Util.rl(Mods.AN, "frostaya_pod"));
-		this.tag(DelightfulItemTags.FRUITS_BASTION)
-				.addOptional(Util.rl(Mods.AN, "bastion_pod"));
 		this.tag(DelightfulItemTags.FRUITS).replace(false)
 				.addTag(DelightfulItemTags.FRUITS_SWEET)
 				.addTag(DelightfulItemTags.FRUITS_CITRUS)
 				.addTag(DelightfulItemTags.FRUITS_CHORUS)
 				.addTag(DelightfulItemTags.FRUITS_GREEN_APPLE)
 				.addTag(DelightfulItemTags.FRUITS_YUCCA)
-				.addTag(DelightfulItemTags.FRUITS_MENDOSTEEN)
-				.addTag(DelightfulItemTags.FRUITS_BOMBEGRANATE)
-				.addTag(DelightfulItemTags.FRUITS_FROSTAYA)
-				.addTag(DelightfulItemTags.FRUITS_BASTION)
+				.addOptional(Util.rl(Mods.AN, "mendosteen_pod"))
+				.addOptional(Util.rl(Mods.AN, "bombegranate_pod"))
+				.addOptional(Util.rl(Mods.AN, "frostaya_pod"))
+				.addOptional(Util.rl(Mods.AN, "bastion_pod"))
 				.addOptional(Util.rl(Mods.UG, "droopvine_item"))
 				.addOptional(Util.rl(Mods.EP, "oblifruit"));
 		this.tag(ForgeTags.BERRIES).replace(false)
@@ -290,11 +279,11 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addTag(DelightfulItemTags.FRUITS_PITAYA)
 				.addTag(DelightfulItemTags.FRUITS_JABUTICABA)
 				.addTag(DelightfulItemTags.FRUITS_KIWANO)
-				.addTag(DelightfulItemTags.FRUITS_HAMIMELON)
 				.addTag(DelightfulItemTags.FRUITS_BAOBAB)
 				.addOptionalTag(DelightfulItemTags.FRUITS_ORANGE.location())
 				.addOptionalTag(DelightfulItemTags.FRUITS_MANDARIN.location())
-				.addOptionalTag(Util.rl(Util.LOADER, "fruits/redlove"));
+				.addOptionalTag(Util.rl(Util.LOADER, "fruits/redlove"))
+				.addOptional(Util.rl(Mods.FRD, "hamimelon_slice"));
 		this.tag(DelightfulItemTags.VEGETABLES_SPICY)
 				.addOptionalTag(Util.rl(Util.LOADER, "chilipepper"))
 				.addOptionalTag(Util.rl(Util.LOADER, "vegetables/ghost_pepper"))
@@ -622,7 +611,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addOptional(Util.rl(Mods.FR, "gamblers_tea"));
 
 		// Serene Seasons
-		this.tag(DelightfulItemTags.SUMMER_CROPS)
+		this.tag(Util.it("sereneseasons", "summer_crops"))
 				.addTag(DelightfulItemTags.SEEDS_SALMONBERRY)
 				.addTag(DelightfulItemTags.SEEDS_CANTALOUPE);
 
@@ -719,16 +708,16 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		// Naturalist
 		this.tag(Util.it(Mods.NA, "bird_food_items")).addTag(Tags.Items.SEEDS);
 		this.tag(Util.it(Mods.NA, "tortoise_tempt_items")).add(DelightfulItems.CACTUS_FLESH.get());
-		this.tag(Util.it(Mods.NA, "bear_tempt_items"))
-				.addTag(DelightfulItemTags.RAW_VENISON);
+		this.tag(Util.it(Mods.NA, "bear_tempt_items")).addTag(DelightfulItemTags.RAW_VENISON);
 
 		// Sully's Mod
 		this.tag(Util.it("sullysmod", "tortoise_food"))
 				.addTag(ForgeTags.BERRIES)
+				.add(Items.BAMBOO)
 				.add(DelightfulItems.CACTUS_FLESH.get())
 				.add(ModItems.PUMPKIN_SLICE.get())
 				.add(DelightfulItems.CANTALOUPE_SLICE.get())
-				.addOptionalTag(Util.rl(Util.LOADER, "fruits/hamimelon"))
+				.addOptional(Util.rl(Mods.FRD, "hamimelon_slice"))
 				.addOptional(Util.rl(Mods.UGD, "gloomgourd_slice"));
 
 	}

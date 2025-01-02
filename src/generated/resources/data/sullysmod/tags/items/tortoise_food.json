@@ -1,11 +1,12 @@
 {
   "values": [
     "#forge:berries",
+    "minecraft:bamboo",
     "delightful:cactus_flesh",
     "farmersdelight:pumpkin_slice",
     "delightful:cantaloupe_slice",
     {
-      "id": "#forge:fruits/hamimelon",
+      "id": "fruitsdelight:hamimelon_slice",
       "required": false
     },
     {

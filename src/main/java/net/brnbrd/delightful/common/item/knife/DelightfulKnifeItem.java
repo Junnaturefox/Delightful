@@ -61,16 +61,7 @@ public class DelightfulKnifeItem extends KnifeItem implements IConfigured {
 
 	// Returns true if there is an entry within the tag
 	public boolean isTag() {
-		TagKey<Item> materialTag = this.getTag();
-		if (materialTag == null) {
-			return true;
-		}
-		ITagManager<Item> tags = ForgeRegistries.ITEMS.tags();
-		return (
-				tags != null &&
-				tags.isKnownTagName(materialTag) &&
-				!tags.getTag(materialTag).isEmpty()
-		);
+		return Util.tagPopulated(this.getTag());
 	}
 
 	@Override

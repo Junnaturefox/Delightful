@@ -26,6 +26,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.items.ItemHandlerHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.tags.ITagManager;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import java.util.List;
@@ -50,6 +51,24 @@ public class Util {
 
 	public static TagKey<EntityType<?>> et(String modid, String path) {
 		return TagKey.create(Registries.ENTITY_TYPE, rl(modid, path));
+	}
+
+	// Returns true if tag is empty or null
+	public static boolean tagEmpty(@Nullable TagKey<Item> tag) {
+		if (tag == null) {
+			return true;
+		}
+		ITagManager<Item> tags = ForgeRegistries.ITEMS.tags();
+		return tags != null && (!tags.isKnownTagName(tag) || tags.getTag(tag).isEmpty());
+	}
+
+	// Returns true if tag has an entry or is null
+	public static boolean tagPopulated(@Nullable TagKey<Item> tag) {
+		if (tag == null) {
+			return true;
+		}
+		ITagManager<Item> tags = ForgeRegistries.ITEMS.tags();
+		return tags != null && tags.isKnownTagName(tag) && !tags.getTag(tag).isEmpty();
 	}
 
 	public static ObjectArrayList<ItemStack> with(ObjectArrayList<ItemStack> before, ItemStack addition) {
