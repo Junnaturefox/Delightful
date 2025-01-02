@@ -372,6 +372,10 @@
     {
       "id": "wandering_trapper:trapper_dog",
       "required": false
+    },
+    {
+      "id": "rats:rat",
+      "required": false
     }
   ]
 }
