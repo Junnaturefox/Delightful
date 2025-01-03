@@ -9,6 +9,14 @@
     "#forge:cooked_crab",
     "#forge:cooked_goat",
     {
+      "id": "casualness_delight:cooked_donkey_meat",
+      "required": false
+    },
+    {
+      "id": "undergarden:dweller_steak",
+      "required": false
+    },
+    {
       "id": "phantasm:behemoth_steak",
       "required": false
     },

@@ -9,6 +9,14 @@
     "#forge:raw_crab",
     "#forge:raw_goat",
     {
+      "id": "casualness_delight:raw_donkey_meat",
+      "required": false
+    },
+    {
+      "id": "undergarden:raw_dweller_meat",
+      "required": false
+    },
+    {
       "id": "phantasm:behemoth_meat",
       "required": false
     },

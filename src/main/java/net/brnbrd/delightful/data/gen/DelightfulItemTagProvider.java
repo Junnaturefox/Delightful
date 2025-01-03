@@ -126,7 +126,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addOptional(Util.rl("biomemakeover", "barrel_cactus"));
 		this.tag(DelightfulItemTags.MATCHA)
 				.add(DelightfulItems.MATCHA.get());
-		this.tag(ForgeTags.EGGS)
+		this.tag(Tags.Items.EGGS)
 				.add(Items.TURTLE_EGG)
 				.addOptional(Util.rl("sullysmod", "tortoise_egg"))
 				.addOptional(Util.rl(Mods.NA, "tortoise_egg"))
@@ -440,6 +440,8 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addTag(DelightfulItemTags.RAW_VENISON)
 				.addTag(DelightfulItemTags.RAW_CRAB)
 				.addTag(DelightfulItemTags.RAW_GOAT)
+				.addOptional(Util.rl(Mods.CAD, "raw_donkey_meat"))
+				.addOptional(Util.rl(Mods.UG, "raw_dweller_meat"))
 				.addOptional(Util.rl(Mods.EP, "behemoth_meat"))
 				.addOptional(Util.rl("frog_legs", "frog_legs"));
 		this.tag(DelightfulItemTags.COOKED_MEAT)
@@ -451,6 +453,8 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addTag(DelightfulItemTags.COOKED_VENISON)
 				.addTag(DelightfulItemTags.COOKED_CRAB)
 				.addTag(DelightfulItemTags.COOKED_GOAT)
+				.addOptional(Util.rl(Mods.CAD, "cooked_donkey_meat"))
+				.addOptional(Util.rl(Mods.UG, "dweller_steak"))
 				.addOptional(Util.rl(Mods.EP, "behemoth_steak"))
 				.addOptional(Util.rl("frog_legs", "cooked_frog_legs"));
 		this.tag(DelightfulItemTags.FOOD_MEAT)

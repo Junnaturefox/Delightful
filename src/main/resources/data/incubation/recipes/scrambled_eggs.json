@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:item_exists",
+          "item": "incubation:scrambled_eggs"
+        }
+      ],
+      "recipe": {
+        "type": "farmersdelight:cooking",
+        "container": {
+          "item": "minecraft:bowl"
+        },
+        "cookingtime": 200,
+        "experience": 1.0,
+        "ingredients": [
+          {
+            "tag": "forge:eggs"
+          },
+          {
+            "tag": "forge:eggs"
+          },
+          {
+            "tag": "forge:milk"
+          }
+        ],
+        "recipe_book_tab": "misc",
+        "result": {
+          "item": "incubation:scrambled_eggs"
+        }
+      }
+    }
+  ]
+}
