@@ -10,11 +10,14 @@
 - Blueberry Sack is now solely compat for [Biomes We've Gone](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-weve-gone)
 - Increased Caffeinated effect length on teas and lattes
 - Update tags for some recipes involving eggs
+- More compat mobs drop Animal Fat
+- More compat recipes and tags
 - Update dependencies (Farmer's Delight 1.2.6)
 
 ### Fixes
 - Electrum Knife will be disabled in presence of [Oreganized](https://www.curseforge.com/minecraft/mc-mods/oreganized)
 - Fix Gravitite Knife recipe in presence of [The Aether: Redux](https://www.curseforge.com/minecraft/mc-mods/aether-redux)
+- Fix milk recipe from nuts using Copper Cup
 
 
 # 3.6.1
