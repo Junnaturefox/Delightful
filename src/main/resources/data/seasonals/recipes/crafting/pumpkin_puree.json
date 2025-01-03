@@ -1,0 +1,34 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:item_exists",
+          "item": "seasonals:pumpkin_puree"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          {
+            "tag": "forge:pumpkins"
+          },
+          {
+            "tag": "forge:sugar"
+          },
+          {
+            "tag": "forge:sugar"
+          },
+          {
+            "tag": "forge:sugar"
+          }
+        ],
+        "result": {
+          "item": "seasonals:pumpkin_puree"
+        }
+      }
+    }
+  ]
+}

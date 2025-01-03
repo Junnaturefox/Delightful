@@ -1,11 +1,15 @@
 {
   "values": [
     {
-      "id": "#sunflowerdelight:rosebud",
+      "id": "biomeswevegone:rose",
       "required": false
     },
     {
-      "id": "#farmersrespite:rose_hips",
+      "id": "farmersrespite:rose_hips",
+      "required": false
+    },
+    {
+      "id": "sunflowerdelight:rosebud",
       "required": false
     }
   ]

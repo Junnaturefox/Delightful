@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "sunflowerdelight"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "sunflowerdelight:rose_candy"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          {
+            "tag": "forge:rosey"
+          },
+          {
+            "tag": "forge:sugar"
+          },
+          {
+            "item": "minecraft:honey_bottle"
+          }
+        ],
+        "result": {
+          "count": 8,
+          "item": "sunflowerdelight:rose_candy"
+        }
+      }
+    }
+  ]
+}
