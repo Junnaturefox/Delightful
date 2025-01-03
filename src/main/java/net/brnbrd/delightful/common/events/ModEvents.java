@@ -109,7 +109,6 @@ public class ModEvents {
 	public void buildContents(BuildCreativeModeTabContentsEvent event) {
 		var tags = ForgeRegistries.ITEMS.tags();
 		ResourceLocation TOAST_WITH_BLUEBERRIES = Util.rl(Mods.MOD, "toast_with_blueberries");
-		ResourceLocation TOAST_WITH_CHEESE = Util.rl(Mods.MOD, "toast_with_cheese");
 		// Delightful Items
 		if (event.getTabKey() == ModCreativeTabs.TAB_FARMERS_DELIGHT.getKey()) {
 			DelightfulItems.ITEMS.getEntries().stream().filter(RegistryObject::isPresent).forEach((item) -> {
@@ -124,22 +123,15 @@ public class ModEvents {
 			});
 		} else if (
 				Mods.loaded(Mods.MOD) &&
-						event.getTabKey().location().getNamespace().equals(Mods.MOD) &&
-						tags != null
+				event.getTabKey().location().getNamespace().equals(Mods.MOD) &&
+				tags != null
 		) {
 			if (
 					!Mods.loaded("nutritious_feast") &&
-							ForgeRegistries.ITEMS.containsKey(TOAST_WITH_BLUEBERRIES) &&
-							tags.isKnownTagName(DelightfulItemTags.FRUITS_BLUEBERRIES)
+					ForgeRegistries.ITEMS.containsKey(TOAST_WITH_BLUEBERRIES) &&
+					tags.isKnownTagName(DelightfulItemTags.FRUITS_BLUEBERRIES)
 			) {
 				event.accept(ForgeRegistries.ITEMS.getValue(TOAST_WITH_BLUEBERRIES));
-			}
-			if (
-					!Mods.loaded("casualness_delight") &&
-							ForgeRegistries.ITEMS.containsKey(TOAST_WITH_CHEESE) &&
-							tags.isKnownTagName(DelightfulItemTags.CHEESE)
-			) {
-				event.accept(ForgeRegistries.ITEMS.getValue(TOAST_WITH_CHEESE));
 			}
 		}
 	}

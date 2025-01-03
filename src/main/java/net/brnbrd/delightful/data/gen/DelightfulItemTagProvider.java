@@ -55,6 +55,10 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.add(ModItems.SANDY_SHRUB.get())
 				.addOptional(Util.rl("upgrade_aquatic", "beachgrass"))
 				.addOptional(Util.rl("upgrade_aquatic", "tall_beachgrass"));
+		this.tag(DelightfulItemTags.ROTTEN)
+				.add(Items.ROTTEN_FLESH)
+				.addOptional(Util.rl(Mods.RL, "rotten_chunk"))
+				.addOptional(Util.rl(Mods.UG, "rotten_blisterberry"));
 
 		// Farmer's Delight
 		this.tag(ModTags.WOODEN_CABINETS)
@@ -71,7 +75,8 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		this.tag(ModTags.WILD_CROPS_ITEM)
 				.add(DelightfulItems.WILD_SALMONBERRIES.get());
 		this.tag(ForgeTags.VEGETABLES_POTATO)
-				.addOptional(Util.rl(Mods.MOD, "diced_potatoes"));
+				.addOptional(Util.rl(Mods.MOD, "diced_potatoes"))
+				.addOptional(Util.rl(Mods.CAD, "potato_slice"));
 		this.tag(ForgeTags.VEGETABLES_TOMATO)
 				.addOptional(Util.rl(Mods.SAS, "tomato_slices"));
 		this.tag(ForgeTags.CROPS_ONION)
@@ -242,15 +247,16 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addOptionalTag(Util.rl(Util.LOADER, "fruits/mulberry"))
 				.addOptionalTag(Util.rl(Util.LOADER, "fruits/hawberry"))
 				.addOptionalTag(Util.rl(Util.LOADER, "fruits/bayberry"))
-				.addOptional(Util.rl(Mods.UG, "blisterberry"))
-				.addOptional(Util.rl(Mods.DD, "bloom_berries"))
 				.addOptional(Util.rl(Mods.FRIGHT, "soul_berry"))
 				.addOptional(Util.rl(Mods.FRIGHT, "wither_berry"))
+				.addOptional(Util.rl(Mods.UG, "blisterberry"))
+				.addOptional(Util.rl(Mods.DD, "bloom_berries"))
 				.addOptional(Util.rl(Mods.EN, "zure_berry"))
 				.addOptional(Util.rl(Mods.EP, "pream_berry"))
 				.addOptional(Util.rl(Mods.UE, "warped_berries"))
-				.addOptional(Util.rl("deep_aether", "goldenleaf_berries"))
-				.addOptional(Util.rl(Mods.AER, "zanberry"));
+				.addOptional(Util.rl(Mods.AE, "blue_berry"))
+				.addOptional(Util.rl(Mods.AER, "zanberry"))
+				.addOptional(Util.rl("deep_aether", "goldenleaf_berries"));
 		this.tag(DelightfulItemTags.FRUITS_CITRUS).replace(false)
 				.addTag(DelightfulItemTags.FRUITS_CITRON)
 				.addOptionalTag(DelightfulItemTags.FRUITS_MANDARIN.location())
@@ -367,7 +373,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addOptional(Util.rl("farmlife", "tribull_cheese_wedge"))
 				.addOptional(Util.rl("croptopia", "cheese"))
 				.addOptional(Util.rl("thermal", "cheese_wedge"))
-				.addOptional(Util.rl("casualness_delight", "cheese_wheel_slice"));
+				.addOptional(Util.rl(Mods.CAD, "cheese_wheel_slice"));
 		this.tag(ForgeTags.MILK)
 				.addOptional(Util.rl(Mods.AE, "skyroot_milk_bucket"))
 				.addOptional(Util.rl("farmlife", "tribull_milk"))

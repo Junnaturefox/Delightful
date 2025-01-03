@@ -30,19 +30,19 @@
       "required": false
     },
     {
-      "id": "undergarden:blisterberry",
-      "required": false
-    },
-    {
-      "id": "deeperdarker:bloom_berries",
-      "required": false
-    },
-    {
       "id": "frightsdelight:soul_berry",
       "required": false
     },
     {
       "id": "frightsdelight:wither_berry",
+      "required": false
+    },
+    {
+      "id": "undergarden:blisterberry",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:bloom_berries",
       "required": false
     },
     {
@@ -58,11 +58,15 @@
       "required": false
     },
     {
-      "id": "deep_aether:goldenleaf_berries",
+      "id": "aether:blue_berry",
       "required": false
     },
     {
       "id": "aether_redux:zanberry",
+      "required": false
+    },
+    {
+      "id": "deep_aether:goldenleaf_berries",
       "required": false
     }
   ]

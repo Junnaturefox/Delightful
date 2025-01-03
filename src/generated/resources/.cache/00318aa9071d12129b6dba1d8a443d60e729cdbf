@@ -1,7 +1,7 @@
-// 1.20.1	2025-01-01T19:18:35.2897574	Tags for minecraft:entity_type mod id delightful
+// 1.20.1	2025-01-01T19:55:42.940537	Tags for minecraft:entity_type mod id delightful
 56dd5fb45d876faf2b72731f0d1531296baa5e35 data/delightful/tags/entity_types/drops_acorn.json
 d49647f002ef19b4681f9c4214422adbcf7c3d9e data/delightful/tags/entity_types/drops_crab_legs.json
 8402c24b8872a973f5f97bfec0ac81ef2b167b89 data/delightful/tags/entity_types/drops_raw_goat.json
-b73c42bf3b63e78ebb174916cb3caf83bb3c0c31 data/delightful/tags/entity_types/fatty_animals.json
+b8b9f408c56f5f8fffb094e2a1a4423cf9f3e699 data/delightful/tags/entity_types/fatty_animals.json
 70991f9a92e98df4ccfbe91cde1d3a4dde520b29 data/farmersdelight/tags/entity_types/horse_feed_tempted.json
 70991f9a92e98df4ccfbe91cde1d3a4dde520b29 data/farmersdelight/tags/entity_types/horse_feed_users.json

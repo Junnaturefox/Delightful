@@ -334,6 +334,18 @@
       "required": false
     },
     {
+      "id": "biomemakeover:glowfish",
+      "required": false
+    },
+    {
+      "id": "biomemakeover:helmit_crab",
+      "required": false
+    },
+    {
+      "id": "biomemakeover:toad",
+      "required": false
+    },
+    {
       "id": "hedgehog:hedgehog",
       "required": false
     },

@@ -5,28 +5,28 @@
       "conditions": [
         {
           "type": "forge:item_exists",
-          "item": "aether:golden_oak_wood"
+          "item": "casualness_delight:stargazy_pie"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "casualness_delight:stargazy_pie_slice"
         }
       ],
       "recipe": {
         "type": "farmersdelight:cutting",
         "ingredients": [
           {
-            "item": "aether:golden_oak_wood"
+            "item": "casualness_delight:stargazy_pie"
           }
         ],
         "result": [
           {
-            "item": "aether:stripped_skyroot_wood"
-          },
-          {
-            "item": "farmersdelight:tree_bark"
+            "count": 4,
+            "item": "casualness_delight:stargazy_pie_slice"
           }
         ],
-        "sound": "minecraft:item.axe.strip",
         "tool": {
-          "type": "farmersdelight:tool_action",
-          "action": "axe_strip"
+          "tag": "forge:tools/knives"
         }
       }
     }

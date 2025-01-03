@@ -14,7 +14,9 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.Containers;
 import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -118,13 +120,32 @@ public class Util {
 		return ForgeRegistries.BLOCKS.getValue(rl);
 	}
 
-	@NotNull
-	public static MobEffect effect(String modid, String name, MobEffect backup) {
+	public static boolean effectExists(ResourceLocation effect) {
+		return Mods.loaded(effect.getNamespace()) && ForgeRegistries.MOB_EFFECTS.containsKey(effect);
+	}
+
+	@Nullable
+	public static MobEffect effect(String modid, String name, @Nullable MobEffect backup) {
 		ResourceLocation effLocation = Util.rl(modid, name);
-		if (Mods.loaded(modid) && ForgeRegistries.MOB_EFFECTS.containsKey(effLocation)) {
-			return Objects.requireNonNull(ForgeRegistries.MOB_EFFECTS.getValue(effLocation));
+		return (
+			effectExists(effLocation) ?
+			ForgeRegistries.MOB_EFFECTS.getValue(effLocation) :
+			backup
+		);
+	}
+
+	public static void addEffect(LivingEntity entity, @Nullable MobEffect effect, int duration, int amp) {
+		if (effect == null) {
+			return;
 		}
-		return backup;
+		entity.addEffect(new MobEffectInstance(effect, duration, amp));
+	}
+
+	public static void addEffect(LivingEntity entity, String modid, String name, int duration, int amp, MobEffect... backup) {
+		MobEffect me = backup.length >= 1 ? effect(modid, name, backup[0]) : effect(modid, name, null);
+		if (me != null) {
+			addEffect(entity, me, duration, amp);
+		}
 	}
 
 	public static ItemStack gs(RegistryObject<Item> r, int count) {

@@ -18,6 +18,7 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> RAW_VENISON_CHOP_COMPAT = d("raw_venison_chop_compat");
 	public static final TagKey<Item> COOKED_VENISON_COMPAT = d("cooked_venison_compat");
 	public static final TagKey<Item> COOKED_VENISON_CHOP_COMPAT = d("cooked_venison_chop_compat");
+	public static final TagKey<Item> ROTTEN = d("rotten");
 
 	// Minecraft
 	public static final TagKey<Item> FLOWERS_AZALEA = Util.it("minecraft", "flowers/azalea");

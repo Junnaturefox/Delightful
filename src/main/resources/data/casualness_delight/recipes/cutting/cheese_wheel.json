@@ -5,28 +5,28 @@
       "conditions": [
         {
           "type": "forge:item_exists",
-          "item": "aether:golden_oak_log"
+          "item": "casualness_delight:cheese_wheel"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "casualness_delight:cheese_wheel_slice"
         }
       ],
       "recipe": {
         "type": "farmersdelight:cutting",
         "ingredients": [
           {
-            "item": "aether:golden_oak_log"
+            "item": "casualness_delight:cheese_wheel"
           }
         ],
         "result": [
           {
-            "item": "aether:stripped_skyroot_log"
-          },
-          {
-            "item": "farmersdelight:tree_bark"
+            "count": 7,
+            "item": "casualness_delight:cheese_wheel_slice"
           }
         ],
-        "sound": "minecraft:item.axe.strip",
         "tool": {
-          "type": "farmersdelight:tool_action",
-          "action": "axe_strip"
+          "tag": "forge:tools/knives"
         }
       }
     }
