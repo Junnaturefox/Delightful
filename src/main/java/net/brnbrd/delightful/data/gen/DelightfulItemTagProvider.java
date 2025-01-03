@@ -108,6 +108,9 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addOptionalTag(Util.rl(Util.LOADER, "flowers/lavender"))
 				.addOptional(Util.rl(Mods.BOP, "lavender"))
 				.addOptional(Util.rl(Mods.BOP, "tall_lavender"));
+		this.tag(DelightfulItemTags.ROSEY)
+				.addOptionalTag(Util.rl("sunflowerdelight", "rosebud"))
+				.addOptionalTag(Util.rl(Mods.FR, "rose_hips"));
 		this.tag(DelightfulItemTags.CLOVER)
 				.addOptional(Util.rl(Mods.BOP, "clover"))
 				.addOptional(Util.rl(Mods.BWG, "clover_patch"))

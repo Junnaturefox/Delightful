@@ -1,0 +1,28 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:item_exists",
+          "item": "sunflowerdelight:rosebud"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "farmersrespite"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "item": "sunflowerdelight:rosebud"
+          }
+        ],
+        "result": {
+          "item": "minecraft:red_dye"
+        }
+      }
+    }
+  ]
+}

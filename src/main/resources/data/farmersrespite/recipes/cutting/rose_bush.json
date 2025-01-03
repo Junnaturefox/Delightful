@@ -1,0 +1,82 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "farmersrespite"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "farmersrespite:rose_hips"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "sunflowerdelight"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "sunflowerdelight:rosebud"
+        }
+      ],
+      "recipe": {
+        "type": "farmersdelight:cutting",
+        "ingredients": [
+          {
+            "item": "minecraft:rose_bush"
+          }
+        ],
+        "result": [
+          {
+            "count": 1,
+            "item": "sunflowerdelight:rosebud"
+          },
+          {
+            "count": 1,
+            "item": "farmersrespite:rose_hips"
+          }
+        ],
+        "tool": {
+          "tag": "forge:tools/knives"
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "farmersrespite"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "farmersrespite:rose_hips"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:mod_loaded",
+            "modid": "sunflowerdelight"
+          }
+        }
+      ],
+      "recipe": {
+        "type": "farmersdelight:cutting",
+        "ingredients": [
+          {
+            "item": "minecraft:rose_bush"
+          }
+        ],
+        "result": [
+          {
+            "count": 2,
+            "item": "farmersrespite:rose_hips"
+          }
+        ],
+        "tool": {
+          "tag": "forge:tools/knives"
+        }
+      }
+    }
+  ]
+}

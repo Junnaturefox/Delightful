@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "#sunflowerdelight:rosebud",
+      "required": false
+    },
+    {
+      "id": "#farmersrespite:rose_hips",
+      "required": false
+    }
+  ]
+}

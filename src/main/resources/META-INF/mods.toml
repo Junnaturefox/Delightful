@@ -321,7 +321,7 @@ configBackground="farmersdelight:textures/block/tatami_mat_half.png"
 [[dependencies.delightful]]
     modId="sunflowerdelight"
     mandatory=false
-    versionRange="[0,)"
+    versionRange="[1.0.4,)"
     ordering="AFTER"
     side="BOTH"
 
