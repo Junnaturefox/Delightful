@@ -215,6 +215,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		this.tag(DelightfulItemTags.FRUITS_CHERRY)
 				.addOptional(Util.rl(Mods.FA, "cherry_peach"));
 		this.tag(DelightfulItemTags.FRUITS).replace(false)
+				.addTag(ForgeTags.BERRIES)
 				.addTag(DelightfulItemTags.FRUITS_SWEET)
 				.addTag(DelightfulItemTags.FRUITS_CITRUS)
 				.addTag(DelightfulItemTags.FRUITS_CHORUS)
@@ -439,6 +440,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addTag(DelightfulItemTags.RAW_VENISON)
 				.addTag(DelightfulItemTags.RAW_CRAB)
 				.addTag(DelightfulItemTags.RAW_GOAT)
+				.addOptional(Util.rl(Mods.EP, "behemoth_meat"))
 				.addOptional(Util.rl("frog_legs", "frog_legs"));
 		this.tag(DelightfulItemTags.COOKED_MEAT)
 				.addTag(ForgeTags.COOKED_FISHES)
@@ -449,6 +451,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addTag(DelightfulItemTags.COOKED_VENISON)
 				.addTag(DelightfulItemTags.COOKED_CRAB)
 				.addTag(DelightfulItemTags.COOKED_GOAT)
+				.addOptional(Util.rl(Mods.EP, "behemoth_steak"))
 				.addOptional(Util.rl("frog_legs", "cooked_frog_legs"));
 		this.tag(DelightfulItemTags.FOOD_MEAT)
 				.addTag(DelightfulItemTags.RAW_MEAT)

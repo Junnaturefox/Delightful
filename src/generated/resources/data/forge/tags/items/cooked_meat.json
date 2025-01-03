@@ -9,6 +9,10 @@
     "#forge:cooked_crab",
     "#forge:cooked_goat",
     {
+      "id": "phantasm:behemoth_steak",
+      "required": false
+    },
+    {
       "id": "frog_legs:cooked_frog_legs",
       "required": false
     }

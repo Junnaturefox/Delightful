@@ -9,6 +9,10 @@
     "#forge:raw_crab",
     "#forge:raw_goat",
     {
+      "id": "phantasm:behemoth_meat",
+      "required": false
+    },
+    {
       "id": "frog_legs:frog_legs",
       "required": false
     }
