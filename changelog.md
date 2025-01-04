@@ -17,6 +17,7 @@
 ### Fixes
 - Electrum Knife will be disabled in presence of [Oreganized](https://www.curseforge.com/minecraft/mc-mods/oreganized)
 - Fix Gravitite Knife recipe in presence of [The Aether: Redux](https://www.curseforge.com/minecraft/mc-mods/aether-redux)
+- Fix some stew recipes
 - Fix milk recipe from nuts using Copper Cup
 
 

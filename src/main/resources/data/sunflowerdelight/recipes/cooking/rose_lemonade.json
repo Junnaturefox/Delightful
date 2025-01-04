@@ -12,8 +12,11 @@
           "item": "sunflowerdelight:rose_lemonade"
         },
         {
-          "type": "forge:tag_empty",
-          "tag": "forge:fruits/lemon"
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:fruits/lemon"
+          }
         }
       ],
       "recipe": {
@@ -31,7 +34,7 @@
             "tag": "forge:sugar"
           },
           {
-            "tag": "forge:fruits/melon"
+            "tag": "forge:fruits/lemon"
           },
           {
             "tag": "forge:fruits/melon"
@@ -60,7 +63,7 @@
           "type": "forge:not",
           "value": {
             "type": "forge:tag_empty",
-            "tag": "forge:fruits/lemon"
+            "tag": "forge:fruits/citrus"
           }
         }
       ],
@@ -79,7 +82,52 @@
             "tag": "forge:sugar"
           },
           {
-            "tag": "forge:fruits/lemon"
+            "tag": "forge:fruits/citrus"
+          },
+          {
+            "tag": "forge:fruits/melon"
+          },
+          {
+            "item": "minecraft:nether_wart"
+          }
+        ],
+        "recipe_book_tab": "drinks",
+        "result": {
+          "item": "sunflowerdelight:rose_lemonade"
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "sunflowerdelight"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "sunflowerdelight:rose_lemonade"
+        },
+        {
+          "type": "forge:tag_empty",
+          "tag": "forge:fruits/lemon"
+        }
+      ],
+      "recipe": {
+        "type": "farmersdelight:cooking",
+        "container": {
+          "item": "minecraft:glass_bottle"
+        },
+        "cookingtime": 400,
+        "experience": 2.0,
+        "ingredients": [
+          {
+            "tag": "forge:rosey"
+          },
+          {
+            "tag": "forge:sugar"
+          },
+          {
+            "tag": "forge:fruits/melon"
           },
           {
             "tag": "forge:fruits/melon"
