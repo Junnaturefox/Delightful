@@ -1,6 +1,14 @@
 {
   "values": [
     "#forge:raw_venison",
-    "#forge:raw_goat"
+    "#forge:raw_goat",
+    {
+      "id": "#forge:raw_duck",
+      "required": false
+    },
+    {
+      "id": "#forge:raw_turkey",
+      "required": false
+    }
   ]
 }

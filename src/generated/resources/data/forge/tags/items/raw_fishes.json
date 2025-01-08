@@ -2,6 +2,11 @@
   "values": [
     "#forge:raw_fishes/koi",
     "#forge:raw_fishes/tuna",
+    "#forge:raw_fishes/squid",
+    {
+      "id": "undergarden:raw_gwibling",
+      "required": false
+    },
     {
       "id": "biomemakeover:glowfish",
       "required": false

@@ -23,7 +23,7 @@ public interface IConfigured extends ItemLike {
 
 	default boolean enabledText(List<Component> comps) {
 		if (!this.enabled()) {
-			comps.add(Component.translatable("tooltip.config_disabled").withStyle(ChatFormatting.UNDERLINE));
+			comps.add(Component.translatable("tooltip.disabled").withStyle(ChatFormatting.UNDERLINE));
 			return false;
 		}
 		return true;

@@ -69,19 +69,16 @@ public class DItem extends Item implements IConfigured {
 
 	@Override
 	public boolean enabledText(List<Component> comps) {
-		final boolean emp = this.isEmptyTag();
-		final boolean dep = this.isDependencyTag();
-		if (!emp && this.emptyTag != null) {
+		boolean enabledConfig = IConfigured.super.enabledText(comps);
+		if (!this.isEmptyTag() && this.emptyTag != null) {
 			comps.add(Component.translatable("tooltip.requires_empty_tag"));
 			comps.add(Component.literal(this.emptyTag.location().toString()).withStyle(ChatFormatting.UNDERLINE));
-		} if (!dep && this.dependencyTag != null) {
+		}
+		if (!this.isDependencyTag() && this.dependencyTag != null) {
 			comps.add(Component.translatable("tooltip.requires_tag"));
 			comps.add(Component.literal(this.dependencyTag.location().toString()).withStyle(ChatFormatting.UNDERLINE));
 		}
-		if (emp && dep) {
-			return IConfigured.super.enabledText(comps);
-		}
-		return false;
+		return enabledConfig;
 	}
 
 	@Override

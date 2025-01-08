@@ -1,6 +1,11 @@
 {
   "values": [
     "#forge:cooked_fishes/tuna",
+    "#forge:cooked_fishes/squid",
+    {
+      "id": "undergarden:cooked_gwibling",
+      "required": false
+    },
     {
       "id": "biomemakeover:cooked_glowfish",
       "required": false

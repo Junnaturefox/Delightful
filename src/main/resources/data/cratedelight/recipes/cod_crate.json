@@ -4,6 +4,10 @@
     {
       "conditions": [
         {
+          "type": "forge:item_exists",
+          "item": "cratedelight:cod_crate"
+        },
+        {
           "type": "forge:not",
           "value": {
             "type": "forge:item_exists",

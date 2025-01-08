@@ -22,7 +22,7 @@
             "tag": "forge:cheese"
           },
           "Q": {
-            "tag": "forge:cooked_meat"
+            "tag": "forge:foods/meat/cooked"
           }
         },
         "pattern": [

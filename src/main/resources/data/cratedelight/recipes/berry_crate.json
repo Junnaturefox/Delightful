@@ -4,11 +4,34 @@
     {
       "conditions": [
         {
+          "type": "forge:item_exists",
+          "item": "cratedelight:berry_crate"
+        },
+        {
           "type": "forge:not",
           "value": {
             "type": "forge:item_exists",
             "item": "berry_good:sweet_berry_basket"
           }
+        },
+        {
+          "type": "forge:or",
+          "values": [
+            {
+              "type": "forge:not",
+              "value": {
+                "type": "forge:mod_loaded",
+                "modid": "quark"
+              }
+            },
+            {
+              "type": "forge:not",
+              "value": {
+                "type": "quark:flag",
+                "flag": "berry_sack"
+              }
+            }
+          ]
         }
       ],
       "recipe": {

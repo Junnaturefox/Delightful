@@ -55,7 +55,7 @@ configBackground="farmersdelight:textures/block/tatami_mat_half.png"
 [[dependencies.delightful]]
     modId="miners_delight"
     mandatory=false
-    versionRange="[1.20.1-1.2,)"
+    versionRange="[1.20.1-1.2.3,)"
     ordering="AFTER"
     side="BOTH"
 
@@ -158,6 +158,13 @@ configBackground="farmersdelight:textures/block/tatami_mat_half.png"
     side="BOTH"
 
 [[dependencies.delightful]]
+    modId="atmospheric"
+    mandatory=false
+    versionRange="[6,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.delightful]]
     modId="upgrade_aquatic"
     mandatory=false
     versionRange="[6,)"
@@ -174,7 +181,7 @@ configBackground="farmersdelight:textures/block/tatami_mat_half.png"
 [[dependencies.delightful]]
     modId="biomeswevegone"
     mandatory=false
-    versionRange="[1.4.4,)"
+    versionRange="[1.5,)"
     ordering="AFTER"
     side="BOTH"
 
@@ -328,7 +335,7 @@ configBackground="farmersdelight:textures/block/tatami_mat_half.png"
 [[dependencies.delightful]]
     modId="culturaldelights"
     mandatory=false
-    versionRange="[0.16,)"
+    versionRange="[0.16.1,)"
     ordering="AFTER"
     side="BOTH"
 
@@ -406,5 +413,12 @@ configBackground="farmersdelight:textures/block/tatami_mat_half.png"
     modId="immersiveengineering"
     mandatory=false
     versionRange="[1.20.1-10,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.delightful]]
+    modId="quark"
+    mandatory=false
+    versionRange="[4.0-460,)"
     ordering="AFTER"
     side="BOTH"

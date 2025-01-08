@@ -140,9 +140,9 @@ public class DelightfulLanguageProvider extends LanguageProvider {
 		add("delightful.cantaloupe_seeds.desc", "Cantaloupe Seeds will sprout when planted in sand.");
 		add("delightful.sliceable.desc", "Sliceable with a Knife.");
 		add("delightful.placeable.desc", "Placeable");
-		add("tooltip.config_disabled", "Disabled");
+		add("tooltip.disabled", "Disabled");
 		add("tooltip.requires_tag", "Requires tag:");
-		add("tooltip.requires_empty_tag", "Empty tag:");
+		add("tooltip.requires_empty_tag", "Requires empty tag:");
 		add("tooltip.requires_modid", "Requires modid:");
 		add("tooltip.sneak_right", "Sneak R-Click for:");
 		add("tooltip.furnace_fuel_burn_time", "s of burn time");

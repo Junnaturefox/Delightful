@@ -34,6 +34,7 @@ public class Mods {
 	public static final String ECO = "ecologics";
 	public static final String EP = "phantasm";
 	public static final String EN = "enlightened_end";
+	public static final String ENV = "environmental";
 	public static final String FA = "forbidden_arcanus";
 	public static final String FR = "farmersrespite";
 	public static final String FRD = "fruitsdelight";
@@ -41,6 +42,7 @@ public class Mods {
 	public static final String FU = "frozenup";
 	public static final String FUD = "frozen_delight";
 	public static final String FUS = "fusion";
+	public static final String HAB = "habitat";
 	public static final String IN = "incubation";
 	public static final String LE = "lolenderite";
 	public static final String MEKT = "mekanismtools";
@@ -55,6 +57,7 @@ public class Mods {
 	public static final String RF = "respiteful";
 	public static final String RL = "rottenleather";
 	public static final String SAS = "some_assembly_required";
+	public static final String SM = "sullysmod";
 	public static final String SO = "simpleores";
 	public static final String SUP = "supplementaries";
 	public static final String TF = "twilightforest";

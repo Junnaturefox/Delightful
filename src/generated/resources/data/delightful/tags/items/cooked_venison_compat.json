@@ -1,6 +1,10 @@
 {
   "values": [
     {
+      "id": "environmental:cooked_venison",
+      "required": false
+    },
+    {
       "id": "naturalist:cooked_venison",
       "required": false
     },

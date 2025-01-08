@@ -8,36 +8,6 @@
           "item": "miners_delight:insect_sandwich"
         },
         {
-          "type": "forge:tag_empty",
-          "tag": "forge:bread_slices"
-        }
-      ],
-      "recipe": {
-        "type": "minecraft:crafting_shapeless",
-        "category": "misc",
-        "ingredients": [
-          {
-            "tag": "forge:bread"
-          },
-          {
-            "tag": "miners_delight:cooked_insect_meat"
-          },
-          {
-            "tag": "miners_delight:cooked_insect_meat"
-          }
-        ],
-        "result": {
-          "item": "miners_delight:insect_sandwich"
-        }
-      }
-    },
-    {
-      "conditions": [
-        {
-          "type": "forge:item_exists",
-          "item": "miners_delight:insect_sandwich"
-        },
-        {
           "type": "forge:not",
           "value": {
             "type": "forge:tag_empty",
@@ -55,12 +25,52 @@
           {
             "tag": "miners_delight:cooked_insect_meat"
           },
-          {
-            "tag": "miners_delight:cooked_insect_meat"
-          },
+          [
+            {
+              "tag": "forge:mushrooms"
+            },
+            {
+              "tag": "forge:vegetables/cave_carrot"
+            }
+          ],
           {
             "tag": "forge:bread_slices"
           }
+        ],
+        "result": {
+          "item": "miners_delight:insect_sandwich"
+        }
+      }
+    },
+    {
+      "conditions": [
+        {
+          "type": "forge:item_exists",
+          "item": "miners_delight:insect_sandwich"
+        },
+        {
+          "type": "forge:tag_empty",
+          "tag": "forge:bread_slices"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "category": "misc",
+        "ingredients": [
+          {
+            "tag": "forge:bread"
+          },
+          {
+            "tag": "miners_delight:cooked_insect_meat"
+          },
+          [
+            {
+              "tag": "forge:mushrooms"
+            },
+            {
+              "tag": "forge:vegetables/cave_carrot"
+            }
+          ]
         ],
         "result": {
           "item": "miners_delight:insect_sandwich"

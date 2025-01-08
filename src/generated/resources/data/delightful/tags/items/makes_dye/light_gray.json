@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "undergarden:miserabell",
+      "required": false
+    },
+    {
+      "id": "habitat:edelweiss",
+      "required": false
+    }
+  ]
+}

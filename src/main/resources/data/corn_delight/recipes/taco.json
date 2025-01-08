@@ -21,7 +21,7 @@
             "tag": "forge:vegetables/onion"
           },
           {
-            "tag": "forge:cooked_meat"
+            "tag": "forge:foods/meat/cooked"
           }
         ],
         "result": {

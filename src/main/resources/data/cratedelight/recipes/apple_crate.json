@@ -4,11 +4,34 @@
     {
       "conditions": [
         {
+          "type": "forge:item_exists",
+          "item": "cratedelight:apple_crate"
+        },
+        {
           "type": "forge:not",
           "value": {
             "type": "forge:item_exists",
             "item": "fruitsdelight:apple_crate"
           }
+        },
+        {
+          "type": "forge:or",
+          "values": [
+            {
+              "type": "forge:not",
+              "value": {
+                "type": "forge:mod_loaded",
+                "modid": "quark"
+              }
+            },
+            {
+              "type": "forge:not",
+              "value": {
+                "type": "quark:flag",
+                "flag": "apple_crate"
+              }
+            }
+          ]
         }
       ],
       "recipe": {

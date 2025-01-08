@@ -4,6 +4,10 @@
     {
       "conditions": [
         {
+          "type": "forge:item_exists",
+          "item": "cratedelight:gunpowder_bag"
+        },
+        {
           "type": "forge:or",
           "values": [
             {

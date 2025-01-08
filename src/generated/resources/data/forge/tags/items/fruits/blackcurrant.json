@@ -3,6 +3,10 @@
     {
       "id": "rootsclassic:blackcurrant",
       "required": false
+    },
+    {
+      "id": "#atmospheric:currant",
+      "required": false
     }
   ]
 }

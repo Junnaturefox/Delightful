@@ -7,6 +7,14 @@
     {
       "id": "alexscaves:heavy_bone",
       "required": false
+    },
+    {
+      "id": "upgrade_aquatic:thrasher_tooth",
+      "required": false
+    },
+    {
+      "id": "sullysmod:piranha_tooth",
+      "required": false
     }
   ]
 }

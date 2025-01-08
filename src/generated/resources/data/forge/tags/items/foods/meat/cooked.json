@@ -1,0 +1,45 @@
+{
+  "values": [
+    {
+      "id": "#forge:cooked_meat",
+      "required": false
+    },
+    "#forge:cooked_fishes",
+    "#forge:cooked_chicken",
+    "#forge:cooked_beef",
+    "#forge:cooked_pork",
+    "#forge:cooked_mutton",
+    "#forge:cooked_rabbit",
+    "#forge:cooked_venison",
+    "#forge:cooked_crab",
+    "#forge:cooked_goat",
+    {
+      "id": "#forge:cooked_duck",
+      "required": false
+    },
+    {
+      "id": "#forge:cooked_turkey",
+      "required": false
+    },
+    {
+      "id": "casualness_delight:cooked_donkey_meat",
+      "required": false
+    },
+    {
+      "id": "undergarden:dweller_steak",
+      "required": false
+    },
+    {
+      "id": "undergarden:gloomper_leg",
+      "required": false
+    },
+    {
+      "id": "phantasm:behemoth_steak",
+      "required": false
+    },
+    {
+      "id": "frog_legs:cooked_frog_legs",
+      "required": false
+    }
+  ]
+}

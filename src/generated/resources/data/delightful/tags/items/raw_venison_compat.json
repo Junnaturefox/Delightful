@@ -1,6 +1,10 @@
 {
   "values": [
     {
+      "id": "environmental:venison",
+      "required": false
+    },
+    {
       "id": "naturalist:venison",
       "required": false
     },

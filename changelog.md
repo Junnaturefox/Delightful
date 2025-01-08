@@ -10,8 +10,10 @@
 - Blueberry Sack is now solely compat for [Biomes We've Gone](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-weve-gone)
 - Increased Caffeinated effect length on teas and lattes
 - Update tags for some recipes involving eggs
+- Added recipe compatibility and overlap fixes for latest Abnormals Delight
+- Added recipe compatibility for squid products from Cultural Delights & Miner's Delight
 - More compat mobs drop Animal Fat
-- More compat recipes and tags
+- Add and fix compat recipes and tags
 - Update dependencies (Farmer's Delight 1.2.6)
 
 ### Fixes

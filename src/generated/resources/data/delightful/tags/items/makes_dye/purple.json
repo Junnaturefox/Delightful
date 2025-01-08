@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "#biomeswevegone:dye/makes_purple_dye",
+      "required": false
+    },
+    {
+      "id": "habitat:purple_anthurium",
+      "required": false
+    },
+    {
+      "id": "#biomeswevegone:dye/makes_magenta_dye",
+      "required": false
+    },
+    {
+      "id": "habitat:purple_anthurium",
+      "required": false
+    }
+  ]
+}

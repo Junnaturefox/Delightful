@@ -30,7 +30,6 @@ import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.apache.commons.lang3.ArrayUtils;
-import org.jetbrains.annotations.NotNull;
 import vectorwing.farmersdelight.client.recipebook.CookingPotRecipeBookTab;
 import vectorwing.farmersdelight.common.registry.ModBlocks;
 import vectorwing.farmersdelight.common.registry.ModItems;
@@ -41,6 +40,7 @@ import vectorwing.farmersdelight.data.recipe.CookingRecipes;
 import java.util.Arrays;
 import java.util.Objects;
 import java.util.function.Consumer;
+import org.jetbrains.annotations.NotNull;
 
 public class DelightfulRecipeProvider extends RecipeProvider implements IConditionBuilder {
 	public DelightfulRecipeProvider(PackOutput output) {
@@ -208,7 +208,7 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
 						.requires(DelightfulItemTags.FRUITS_SALMONBERRIES)
 						.requires(DelightfulItems.ROASTED_ACORN.get())
 						.unlockedBy("has_cactus_steak", has(DelightfulItems.CACTUS_STEAK.get())),
-				"food/field_salad", finished, enabled("field_salad"));
+				"food/field_salad", finished, enabled(DelightfulItems.CACTUS_STEAK), enabled(DelightfulItems.FIELD_SALAD));
 		wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DelightfulItems.NUT_DOUGH.get(), 2)
 						.requires(Tags.Items.EGGS)
 						.requires(Items.BONE_MEAL)
@@ -601,6 +601,83 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
 						.unlockedBy("has_cantaloupe", has(DelightfulItemTags.FRUITS_CANTALOUPE)),
 				"gummy/cantaloupe", finished, enabled(DelightfulItems.CANTALOUPE), enabled(DelightfulItems.CANTALOUPE_GUMMY));
 
+		// Dye Cutting
+		wrap(CuttingBoardRecipeBuilder.cuttingRecipe(
+						Ingredient.of(DelightfulItemTags.MAKES_DYE_RED),
+						Ingredient.of(ForgeTags.TOOLS_KNIVES),
+						Items.RED_DYE, 2),
+				"cutting/makes_dye/red", finished, not(tagEmpty(DelightfulItemTags.MAKES_DYE_RED)));
+		wrap(CuttingBoardRecipeBuilder.cuttingRecipe(
+						Ingredient.of(DelightfulItemTags.MAKES_DYE_YELLOW),
+						Ingredient.of(ForgeTags.TOOLS_KNIVES),
+						Items.YELLOW_DYE, 2),
+				"cutting/makes_dye/yellow", finished, not(tagEmpty(DelightfulItemTags.MAKES_DYE_YELLOW)));
+		wrap(CuttingBoardRecipeBuilder.cuttingRecipe(
+						Ingredient.of(DelightfulItemTags.MAKES_DYE_PURPLE),
+						Ingredient.of(ForgeTags.TOOLS_KNIVES),
+						Items.PURPLE_DYE, 2),
+				"cutting/makes_dye/purple", finished, not(tagEmpty(DelightfulItemTags.MAKES_DYE_PURPLE)));
+		wrap(CuttingBoardRecipeBuilder.cuttingRecipe(
+						Ingredient.of(DelightfulItemTags.MAKES_DYE_MAGENTA),
+						Ingredient.of(ForgeTags.TOOLS_KNIVES),
+						Items.MAGENTA_DYE, 2),
+				"cutting/makes_dye/magenta", finished, not(tagEmpty(DelightfulItemTags.MAKES_DYE_MAGENTA)));
+		wrap(CuttingBoardRecipeBuilder.cuttingRecipe(
+						Ingredient.of(DelightfulItemTags.MAKES_DYE_WHITE),
+						Ingredient.of(ForgeTags.TOOLS_KNIVES),
+						Items.WHITE_DYE, 2),
+				"cutting/makes_dye/white", finished, not(tagEmpty(DelightfulItemTags.MAKES_DYE_WHITE)));
+		wrap(CuttingBoardRecipeBuilder.cuttingRecipe(
+						Ingredient.of(DelightfulItemTags.MAKES_DYE_BLUE),
+						Ingredient.of(ForgeTags.TOOLS_KNIVES),
+						Items.BLUE_DYE, 2),
+				"cutting/makes_dye/blue", finished, not(tagEmpty(DelightfulItemTags.MAKES_DYE_BLUE)));
+		wrap(CuttingBoardRecipeBuilder.cuttingRecipe(
+						Ingredient.of(DelightfulItemTags.MAKES_DYE_BLACK),
+						Ingredient.of(ForgeTags.TOOLS_KNIVES),
+						Items.BLACK_DYE, 2),
+				"cutting/makes_dye/black", finished, not(tagEmpty(DelightfulItemTags.MAKES_DYE_BLACK)));
+		wrap(CuttingBoardRecipeBuilder.cuttingRecipe(
+						Ingredient.of(DelightfulItemTags.MAKES_DYE_ORANGE),
+						Ingredient.of(ForgeTags.TOOLS_KNIVES),
+						Items.ORANGE_DYE, 2),
+				"cutting/makes_dye/orange", finished, not(tagEmpty(DelightfulItemTags.MAKES_DYE_ORANGE)));
+		wrap(CuttingBoardRecipeBuilder.cuttingRecipe(
+						Ingredient.of(DelightfulItemTags.MAKES_DYE_PINK),
+						Ingredient.of(ForgeTags.TOOLS_KNIVES),
+						Items.PINK_DYE, 2),
+				"cutting/makes_dye/pink", finished, not(tagEmpty(DelightfulItemTags.MAKES_DYE_PINK)));
+		wrap(CuttingBoardRecipeBuilder.cuttingRecipe(
+						Ingredient.of(DelightfulItemTags.MAKES_DYE_GREEN),
+						Ingredient.of(ForgeTags.TOOLS_KNIVES),
+						Items.GREEN_DYE, 2),
+				"cutting/makes_dye/green", finished, not(tagEmpty(DelightfulItemTags.MAKES_DYE_GREEN)));
+		wrap(CuttingBoardRecipeBuilder.cuttingRecipe(
+						Ingredient.of(DelightfulItemTags.MAKES_DYE_LIME),
+						Ingredient.of(ForgeTags.TOOLS_KNIVES),
+						Items.LIME_DYE, 2),
+				"cutting/makes_dye/lime", finished, not(tagEmpty(DelightfulItemTags.MAKES_DYE_LIME)));
+		wrap(CuttingBoardRecipeBuilder.cuttingRecipe(
+						Ingredient.of(DelightfulItemTags.MAKES_DYE_CYAN),
+						Ingredient.of(ForgeTags.TOOLS_KNIVES),
+						Items.CYAN_DYE, 2),
+				"cutting/makes_dye/cyan", finished, not(tagEmpty(DelightfulItemTags.MAKES_DYE_CYAN)));
+		wrap(CuttingBoardRecipeBuilder.cuttingRecipe(
+						Ingredient.of(DelightfulItemTags.MAKES_DYE_LIGHT_GRAY),
+						Ingredient.of(ForgeTags.TOOLS_KNIVES),
+						Items.LIGHT_GRAY_DYE, 2),
+				"cutting/makes_dye/light_gray", finished, not(tagEmpty(DelightfulItemTags.MAKES_DYE_LIGHT_GRAY)));
+		wrap(CuttingBoardRecipeBuilder.cuttingRecipe(
+						Ingredient.of(DelightfulItemTags.MAKES_DYE_LIGHT_BLUE),
+						Ingredient.of(ForgeTags.TOOLS_KNIVES),
+						Items.LIGHT_BLUE_DYE, 2),
+				"cutting/makes_dye/light_blue", finished, not(tagEmpty(DelightfulItemTags.MAKES_DYE_LIGHT_BLUE)));
+		wrap(CuttingBoardRecipeBuilder.cuttingRecipe(
+						Ingredient.of(DelightfulItems.CACTUS_STEAK.get()),
+						Ingredient.of(ForgeTags.TOOLS_KNIVES),
+						Items.GREEN_DYE, 1),
+				"cutting/cactus_steak", finished, enabled(DelightfulItems.CACTUS_STEAK));
+
 		// Unwrappables
 		ConditionalRecipe.builder()
 				.addCondition(not(tagEmpty(DelightfulItemTags.CHOCOLATE)))
@@ -647,17 +724,17 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
 
 	private void wrap(RecipeBuilder builder, String modid, String name, Consumer<FinishedRecipe> consumer, ICondition... conds) {
 		ResourceLocation loc = Util.rl(modid, name);
+		FinishedRecipe[] recipe = new FinishedRecipe[1];
+		builder.save(f -> recipe[0] = f, loc);
 		ConditionalRecipe.Builder cond = ConditionalRecipe.builder();
 		if (conds.length >= 1) {
 			for (ICondition currentCond : conds) {
 				cond.addCondition(currentCond);
 			}
 		}
-		FinishedRecipe[] recipe = new FinishedRecipe[1];
-		builder.save(f -> recipe[0] = f, loc);
 		cond.addRecipe(recipe[0])
-				.generateAdvancement()
-				.build(consumer, loc);
+			.generateAdvancement()
+			.build(consumer, loc);
 	}
 
 	private void wrap(SmithingTransformRecipeBuilder builder, String name, Consumer<FinishedRecipe> consumer, ICondition... conds) {

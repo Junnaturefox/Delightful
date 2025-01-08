@@ -19,7 +19,7 @@
           },
           [
             {
-              "tag": "forge:raw_meat"
+              "tag": "forge:foods/meat/raw"
             },
             {
               "item": "minecraft:brown_mushroom"

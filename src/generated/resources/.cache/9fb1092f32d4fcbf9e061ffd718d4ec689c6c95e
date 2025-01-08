@@ -1,4 +1,4 @@
-// 1.20.1	2025-01-01T17:38:34.6439493	Recipes
+// 1.20.1	2025-01-07T07:57:35.1711701	Recipes
 6c217dd6477efa10f6042809ba959d53036ab5e2 data/delightful/advancements/recipes/cabinets/basalt_cabinet.json
 5b82f87851220644287d771121677deac66b3b89 data/delightful/advancements/recipes/cabinets/quartz_cabinet.json
 cf29033c1c919355c261025df529938e6ebc73f8 data/delightful/advancements/recipes/campfire/cactus_steak.json
@@ -41,7 +41,7 @@ f8b64cbc40cbbe4360b7223029d1758da01949bd data/delightful/advancements/recipes/fo
 fa81f81acd56cbff1741ba952e94ed1ad90a31f4 data/delightful/advancements/recipes/food/deluxe_cheeseburger.json
 40aa1720793f8640778ef2c602a247282564a6bf data/delightful/advancements/recipes/food/deluxe_cheeseburger_from_bun.json
 d718a28228d94886e877b9425e33b81aa63f3c0a data/delightful/advancements/recipes/food/deluxe_cheeseburger_from_milk.json
-0ac937f55a84f26e6b87af29702a0d6731a59531 data/delightful/advancements/recipes/food/field_salad.json
+6a585016183d9d7da3ac58132a263d56a8bed37f data/delightful/advancements/recipes/food/field_salad.json
 288e58dac40b665103a04733aa264f361c92d651 data/delightful/advancements/recipes/food/honey_glazed_walnut.json
 1b2e2ee468281ff91b03534f22f4445e0e0cb045 data/delightful/advancements/recipes/food/marshmallow_stick.json
 84d5d682a25ea9d62dafcc6d0cc00456dd26f352 data/delightful/advancements/recipes/food/matcha_ice_cream.json
@@ -146,10 +146,25 @@ d4e8be16b4790d9ade8903422ebeb7bc55fb6c75 data/delightful/recipes/campfire/marshm
 1b81cd56f336fdc01a31a5ca08a5ddfa8ae84e29 data/delightful/recipes/cooking/matcha_latte.json
 c92680cce5f1a7851ea35a25a9251e6401222767 data/delightful/recipes/cutting/baklava.json
 78f553a22ac586b5068eaa8153855233b416b4af data/delightful/recipes/cutting/cactus.json
+b1a086de89bbe413ddbc8ec067d97b06ab2e03b9 data/delightful/recipes/cutting/cactus_steak.json
 ef210c25b1a3d2453c0b37c587390bec5d6dadd0 data/delightful/recipes/cutting/cantaloupe.json
 6d83188833f8de6e476dff434874899ad77869fc data/delightful/recipes/cutting/clover.json
 3101fc62589432292872d0ff450c1d7c39c02cda data/delightful/recipes/cutting/cooked_venison.json
 0d1501a802294f211d78d43f092ba855aebd2884 data/delightful/recipes/cutting/green_tea_leaves.json
+f28887a77c87c0772500739bec64f2a10d0e5686 data/delightful/recipes/cutting/makes_dye/black.json
+c25b5b877eeb8b3d2becc1a258431e78be8cf4be data/delightful/recipes/cutting/makes_dye/blue.json
+f4de45690de5c390ce3394b0367979c219d848c9 data/delightful/recipes/cutting/makes_dye/cyan.json
+a5809397b7800a1262c098d127861f999123fdd6 data/delightful/recipes/cutting/makes_dye/green.json
+d4b8b4f56a39cb3cb4d2311a8dd3f43b2d0f5ce0 data/delightful/recipes/cutting/makes_dye/light_blue.json
+58907a572a5f4091321f257a3c9953ca14cedfac data/delightful/recipes/cutting/makes_dye/light_gray.json
+4d58be90c22d89e47a2f430497ee29af03f344f9 data/delightful/recipes/cutting/makes_dye/lime.json
+709fc60c7350652c3b5e70bc4995e721b001fa0a data/delightful/recipes/cutting/makes_dye/magenta.json
+1e650aed1ad7a798795f4b792e86d2fbabb1829f data/delightful/recipes/cutting/makes_dye/orange.json
+c20b4a9ed89cad7a6e421bddf7aa31362784ad25 data/delightful/recipes/cutting/makes_dye/pink.json
+e6ca19c0b22ff461eb58cd4328081b7565eab70d data/delightful/recipes/cutting/makes_dye/purple.json
+1754315d89d59d82e2870ec3b78490c0c3a9637a data/delightful/recipes/cutting/makes_dye/red.json
+03b9473769dbc7bc453d83eaa3b67f0112cdad6c data/delightful/recipes/cutting/makes_dye/white.json
+00de56e2d1cfd807c2c9f2e5180623f9b028ff1a data/delightful/recipes/cutting/makes_dye/yellow.json
 170a8e1f1ce519b51ee4ecd9a1735441b4436724 data/delightful/recipes/cutting/mini_melon.json
 94844bad124bf4c999bd39f9e661e44611b2db92 data/delightful/recipes/cutting/pumpkin_pie.json
 832d880fed642035591f4f852fe5b567d88d99e9 data/delightful/recipes/cutting/raw_venison.json
@@ -187,7 +202,7 @@ edc0bc9b6659e49b19b96be96487dc53ee228b76 data/delightful/recipes/food/cooking/si
 438fe3cec9d2cc56f5564379a9d068cda33c3645 data/delightful/recipes/food/deluxe_cheeseburger.json
 c8ad450326702e6db53e78b8f98d9ba4bd492d96 data/delightful/recipes/food/deluxe_cheeseburger_from_bun.json
 f1750cca1ba7ae28213ef203ef5031d86f26c267 data/delightful/recipes/food/deluxe_cheeseburger_from_milk.json
-cd5e69da406934d9e2e5f8a1ddb05457b9a7c823 data/delightful/recipes/food/field_salad.json
+5d2047611a76cc4c4c40f68b3d4139a4a904860e data/delightful/recipes/food/field_salad.json
 8c8deccb2ed5f53b4f428baa3fd4206b3a405756 data/delightful/recipes/food/honey_glazed_walnut.json
 ecacda72e28188ede9b1efe6573315a506414b08 data/delightful/recipes/food/marshmallow_stick.json
 24f634405d66ec9a19373dcc357e74961ca9623f data/delightful/recipes/food/matcha_ice_cream.json

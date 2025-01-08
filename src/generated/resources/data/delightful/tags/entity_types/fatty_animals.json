@@ -34,6 +34,86 @@
     "minecraft:frog",
     "minecraft:sniffer",
     {
+      "id": "quark:crab",
+      "required": false
+    },
+    {
+      "id": "quark:foxhound",
+      "required": false
+    },
+    {
+      "id": "quark:shiba",
+      "required": false
+    },
+    {
+      "id": "neapolitan:chimpanzee",
+      "required": false
+    },
+    {
+      "id": "buzzier_bees:moobloom",
+      "required": false
+    },
+    {
+      "id": "buzzier_bees:grizzly_bear",
+      "required": false
+    },
+    {
+      "id": "environmental:deer",
+      "required": false
+    },
+    {
+      "id": "environmental:duck",
+      "required": false
+    },
+    {
+      "id": "environmental:fennec_fox",
+      "required": false
+    },
+    {
+      "id": "environmental:koi",
+      "required": false
+    },
+    {
+      "id": "environmental:slabfish",
+      "required": false
+    },
+    {
+      "id": "environmental:tapir",
+      "required": false
+    },
+    {
+      "id": "environmental:yak",
+      "required": false
+    },
+    {
+      "id": "autumnity:turkey",
+      "required": false
+    },
+    {
+      "id": "upgrade_aquatic:thrasher",
+      "required": false
+    },
+    {
+      "id": "upgrade_aquatic:great_thrasher",
+      "required": false
+    },
+    {
+      "id": "upgrade_aquatic:goose",
+      "required": false
+    },
+    {
+      "id": "upgrade_aquatic:lionfish",
+      "required": false
+    },
+    {
+      "id": "upgrade_aquatic:perch",
+      "required": false
+    },
+    {
+      "id": "upgrade_aquatic:pike",
+      "required": false
+    },
+    {
       "id": "collectorsreap:chieftain_crab",
       "required": false
     },
@@ -110,131 +190,7 @@
       "required": false
     },
     {
-      "id": "upgrade_aquatic:thrasher",
-      "required": false
-    },
-    {
-      "id": "upgrade_aquatic:great_thrasher",
-      "required": false
-    },
-    {
-      "id": "upgrade_aquatic:goose",
-      "required": false
-    },
-    {
-      "id": "upgrade_aquatic:lionfish",
-      "required": false
-    },
-    {
-      "id": "upgrade_aquatic:perch",
-      "required": false
-    },
-    {
-      "id": "upgrade_aquatic:pike",
-      "required": false
-    },
-    {
-      "id": "autumnity:turkey",
-      "required": false
-    },
-    {
       "id": "ars_nouveau:starbuncle",
-      "required": false
-    },
-    {
-      "id": "aqcaracal:caracal",
-      "required": false
-    },
-    {
-      "id": "babyfat:ranchu",
-      "required": false
-    },
-    {
-      "id": "bettas:betta_fish",
-      "required": false
-    },
-    {
-      "id": "farmlife:domestic_tribull",
-      "required": false
-    },
-    {
-      "id": "buzzier_bees:moobloom",
-      "required": false
-    },
-    {
-      "id": "buzzier_bees:grizzly_bear",
-      "required": false
-    },
-    {
-      "id": "crittersandcompanions:dumbo_octopus",
-      "required": false
-    },
-    {
-      "id": "crittersandcompanions:ferret",
-      "required": false
-    },
-    {
-      "id": "crittersandcompanions:koi_fish",
-      "required": false
-    },
-    {
-      "id": "crittersandcompanions:otter",
-      "required": false
-    },
-    {
-      "id": "crittersandcompanions:red_panda",
-      "required": false
-    },
-    {
-      "id": "duckling:duck",
-      "required": false
-    },
-    {
-      "id": "duckling:quackling",
-      "required": false
-    },
-    {
-      "id": "environmental:deer",
-      "required": false
-    },
-    {
-      "id": "environmental:duck",
-      "required": false
-    },
-    {
-      "id": "environmental:fennec_fox",
-      "required": false
-    },
-    {
-      "id": "environmental:koi",
-      "required": false
-    },
-    {
-      "id": "environmental:slabfish",
-      "required": false
-    },
-    {
-      "id": "environmental:tapir",
-      "required": false
-    },
-    {
-      "id": "environmental:yak",
-      "required": false
-    },
-    {
-      "id": "friendsandfoes:moobloom",
-      "required": false
-    },
-    {
-      "id": "frozenup:chilloo",
-      "required": false
-    },
-    {
-      "id": "frozenup:penguin",
-      "required": false
-    },
-    {
-      "id": "frozenup:reindeer",
       "required": false
     },
     {
@@ -278,15 +234,27 @@
       "required": false
     },
     {
-      "id": "sullysmod:lanternfish",
+      "id": "crittersandcompanions:dumbo_octopus",
       "required": false
     },
     {
-      "id": "sullysmod:piranha",
+      "id": "crittersandcompanions:ferret",
       "required": false
     },
     {
-      "id": "sullysmod:tortoise",
+      "id": "crittersandcompanions:koi_fish",
+      "required": false
+    },
+    {
+      "id": "crittersandcompanions:otter",
+      "required": false
+    },
+    {
+      "id": "crittersandcompanions:red_panda",
+      "required": false
+    },
+    {
+      "id": "friendsandfoes:moobloom",
       "required": false
     },
     {
@@ -334,6 +302,30 @@
       "required": false
     },
     {
+      "id": "frozenup:chilloo",
+      "required": false
+    },
+    {
+      "id": "frozenup:penguin",
+      "required": false
+    },
+    {
+      "id": "frozenup:reindeer",
+      "required": false
+    },
+    {
+      "id": "sullysmod:lanternfish",
+      "required": false
+    },
+    {
+      "id": "sullysmod:piranha",
+      "required": false
+    },
+    {
+      "id": "sullysmod:tortoise",
+      "required": false
+    },
+    {
       "id": "biomemakeover:glowfish",
       "required": false
     },
@@ -346,27 +338,43 @@
       "required": false
     },
     {
-      "id": "hedgehog:hedgehog",
+      "id": "duckling:duck",
       "required": false
     },
     {
-      "id": "neapolitan:chimpanzee",
+      "id": "duckling:quackling",
       "required": false
     },
     {
-      "id": "quark:crab",
+      "id": "habitat:pooka",
       "required": false
     },
     {
-      "id": "quark:foxhound",
+      "id": "aqcaracal:caracal",
       "required": false
     },
     {
-      "id": "quark:shiba",
+      "id": "babyfat:ranchu",
+      "required": false
+    },
+    {
+      "id": "bettas:betta_fish",
+      "required": false
+    },
+    {
+      "id": "farmlife:domestic_tribull",
       "required": false
     },
     {
       "id": "goated:geep",
+      "required": false
+    },
+    {
+      "id": "hedgehog:hedgehog",
+      "required": false
+    },
+    {
+      "id": "rats:rat",
       "required": false
     },
     {
@@ -378,15 +386,7 @@
       "required": false
     },
     {
-      "id": "habitat:pooka",
-      "required": false
-    },
-    {
       "id": "wandering_trapper:trapper_dog",
-      "required": false
-    },
-    {
-      "id": "rats:rat",
       "required": false
     }
   ]

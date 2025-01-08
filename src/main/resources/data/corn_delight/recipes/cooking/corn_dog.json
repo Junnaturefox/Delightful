@@ -19,7 +19,7 @@
             "item": "corn_delight:cornbread_batter"
           },
           {
-            "tag": "forge:cooked_meat"
+            "tag": "forge:foods/meat/cooked"
           }
         ],
         "result": {

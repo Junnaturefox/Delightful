@@ -5,6 +5,10 @@
       "required": false
     },
     {
+      "id": "culturaldelights:corn_cob",
+      "required": false
+    },
+    {
       "id": "hauntedharvest:corn",
       "required": false
     },

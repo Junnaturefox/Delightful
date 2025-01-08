@@ -5,6 +5,10 @@
       "conditions": [
         {
           "type": "delightful:enabled",
+          "value": "cactus_steak"
+        },
+        {
+          "type": "delightful:enabled",
           "value": "field_salad"
         }
       ],
