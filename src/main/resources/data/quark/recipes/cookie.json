@@ -4,10 +4,14 @@
     {
       "conditions": [
         {
+          "type": "forge:mod_loaded",
+          "modid": "quark"
+        },
+        {
           "type": "forge:not",
           "value": {
-            "type": "forge:mod_loaded",
-            "modid": "quark"
+            "type": "quark:flag",
+            "flag": "bent_recipes"
           }
         }
       ],
