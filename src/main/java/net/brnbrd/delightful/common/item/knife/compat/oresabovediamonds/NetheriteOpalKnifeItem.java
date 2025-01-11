@@ -1,14 +1,11 @@
 package net.brnbrd.delightful.common.item.knife.compat.oresabovediamonds;
 
-import net.brnbrd.delightful.Util;
 import net.brnbrd.delightful.common.item.DelightfulTiers;
 import net.brnbrd.delightful.common.item.knife.CompatKnifeItem;
-import net.brnbrd.delightful.common.item.knife.Knives;
 import net.minecraft.ChatFormatting;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraftforge.common.Tags;
-import org.apache.commons.lang3.tuple.ImmutablePair;
+import org.jetbrains.annotations.Nullable;
 
 public class NetheriteOpalKnifeItem extends CompatKnifeItem {
 	public NetheriteOpalKnifeItem(Properties properties) {
@@ -16,10 +13,7 @@ public class NetheriteOpalKnifeItem extends CompatKnifeItem {
 	}
 
 	@Override
-	public ImmutablePair<Ingredient, Ingredient> getSmithing() {
-		return new ImmutablePair<>(
-				Util.ing(() -> Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
-				Util.ing(Knives.BLACK_OPAL)
-		);
+	public @Nullable RecipeType<?> getRecipeType() {
+		return RecipeType.SMITHING;
 	}
 }

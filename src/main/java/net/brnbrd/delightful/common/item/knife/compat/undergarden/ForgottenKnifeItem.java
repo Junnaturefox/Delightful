@@ -1,27 +1,22 @@
 package net.brnbrd.delightful.common.item.knife.compat.undergarden;
 
-import net.brnbrd.delightful.Util;
 import net.brnbrd.delightful.common.item.DelightfulItems;
 import net.brnbrd.delightful.common.item.DelightfulTiers;
 import net.brnbrd.delightful.common.item.knife.CompatKnifeItem;
-import net.brnbrd.delightful.common.item.knife.Knives;
 import net.brnbrd.delightful.compat.Mods;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
-import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.registries.ForgeRegistries;
-import org.apache.commons.lang3.tuple.ImmutablePair;
+import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 public class ForgottenKnifeItem extends CompatKnifeItem {
-	public final static TagKey<Item> upgrade = Util.it(Mods.UG, "forgotten_upgrade_smithing_template");
 
 	public ForgottenKnifeItem(Properties properties) {
 		super(Mods.UG, DelightfulItems.ingot("forgotten_metal"), DelightfulTiers.FORGOTTEN, properties, ChatFormatting.GREEN);
@@ -40,11 +35,8 @@ public class ForgottenKnifeItem extends CompatKnifeItem {
 	}
 
 	@Override
-	public ImmutablePair<Ingredient, Ingredient> getSmithing() {
-		return new ImmutablePair<>(
-				Ingredient.of(upgrade),
-				Util.ing(Knives.CLOGGRUM)
-		);
+	public @Nullable RecipeType<?> getRecipeType() {
+		return RecipeType.SMITHING;
 	}
 
 	void onHurt(LivingHurtEvent e) {

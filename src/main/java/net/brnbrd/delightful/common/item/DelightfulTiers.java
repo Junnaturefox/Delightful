@@ -93,7 +93,7 @@ public enum DelightfulTiers implements Tier {
 			Tiers.IRON.getSpeed() * 1.2F,
 			Tiers.IRON.getAttackDamageBonus() * 1.2F,
 			Tiers.IRON.getEnchantmentValue(),
-			Ingredient.of(DelightfulItemTags.FLUIX_CRYSTAL));
+			Ingredient.of(DelightfulItemTags.forge("gems/fluix")));
 
 	private final int level;
 	private final int uses;

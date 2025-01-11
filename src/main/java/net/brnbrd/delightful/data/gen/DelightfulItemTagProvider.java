@@ -755,22 +755,21 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		// Additional Additions
 		this.addSelf(DelightfulItemTags.ROSE_GOLD_ALLOY);
 		this.addSelf(DelightfulItemTags.GOLD_RING);
-		this.addSelf(GildedNetheriteKnifeItem.upgrade);
-		this.addSelf(RoseGoldKnifeItem.upgrade);
+		this.addSelf(Util.it(Mods.AA, "gilded_netherite_upgrade"));
+		this.addSelf(Util.it(Mods.AA, "rose_gold_upgrade"));
 
 		// Enderite
-		this.addSelf(EnderiteKnifeItem.upgrade);
+		this.addSelf(Util.it(Mods.LE, "enderite_upgrade_smithing_template"));
 
 		// Nourished Nether
-		this.tag(DelightfulItemTags.NECRONIUM_INGOT)
-				.addOptional(Util.rl("nourished_nether", "necronium_ingot"));
-		this.tag(DelightfulItemTags.NECRONIUM_TOOLS).add(Knives.NECRONIUM.get());
+		this.tag(DelightfulItems.ingot("necronium")).addOptional(Util.rl("nourished_nether", "necronium_ingot"));
+		this.tag(Util.it("nourished_nether", "necronium_tools")).add(Knives.NECRONIUM.get());
 
 		// Undergarden
-		this.tag(DelightfulItemTags.CLOGGRUM_ITEMS).add(Knives.CLOGGRUM.get());
-		this.tag(DelightfulItemTags.FROSTSTEEL_ITEMS).add(Knives.FROSTSTEEL.get());
-		this.tag(DelightfulItemTags.UTHERIUM_ITEMS).add(Knives.UTHERIUM.get());
-		this.addSelf(ForgottenKnifeItem.upgrade);
+		this.tag(Util.it(Mods.UG, "cloggrum_items")).add(Knives.CLOGGRUM.get());
+		this.tag(Util.it(Mods.UG, "froststeel_items")).add(Knives.FROSTSTEEL.get());
+		this.tag(Util.it(Mods.UG, "utherium_items")).add(Knives.UTHERIUM.get());
+		this.addSelf(Util.it(Mods.UG, "forgotten_upgrade_smithing_template"));
 
 		// Aether
 		this.addSelf(DelightfulItemTags.ENCHANTED_GRAVITITE);
@@ -801,8 +800,8 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 
 		// AE2
 		this.addSelf(DelightfulItemTags.FLUIX_BLOCK);
-		this.addSelf(DelightfulItemTags.FLUIX_UPGRADE_SMITHING_TEMPLATE);
-		this.tag(DelightfulItemTags.QUARTZ_KNIFE)
+		this.addSelf(Util.it(Mods.AE2, "fluix_upgrade_smithing_template"));
+		this.tag(Util.it(Delightful.MODID, "quartz_knife"))
 				.add(Knives.NETHER_QUARTZ.get())
 				.add(Knives.CERTUS_QUARTZ.get());
 

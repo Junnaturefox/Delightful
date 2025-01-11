@@ -1,5 +1,7 @@
 package net.brnbrd.delightful.common.item.knife;
 
+import com.google.common.collect.ImmutableMultimap;
+import com.google.common.collect.Multimap;
 import net.brnbrd.delightful.Delightful;
 import net.brnbrd.delightful.Util;
 import net.brnbrd.delightful.common.item.ICompat;
@@ -7,6 +9,9 @@ import net.brnbrd.delightful.common.item.IConfigured;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.ai.attributes.Attribute;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tier;
@@ -15,9 +20,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.common.Tags;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.tags.ITagManager;
-import org.apache.commons.lang3.tuple.ImmutablePair;
+import net.minecraftforge.common.util.Lazy;
 import org.codehaus.plexus.util.StringUtils;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -77,12 +80,26 @@ public class DelightfulKnifeItem extends KnifeItem implements IConfigured {
 		return new ItemStack(this);
 	}
 
-	public ImmutablePair<Ingredient, Ingredient> getSmithing() {
-		return ImmutablePair.nullPair();
+	public @Nullable RecipeType<?> getRecipeType() {
+		return RecipeType.CRAFTING;
 	}
 
-	public @Nullable RecipeType<?> getRecipeType() {
-		return getSmithing().equals(ImmutablePair.nullPair()) ? RecipeType.CRAFTING : RecipeType.SMITHING;
+	@Nullable
+	public Lazy<Multimap<Attribute, AttributeModifier>> getModifiers(EquipmentSlot slot, ItemStack stack) {
+		return null;
+	}
+
+	@Override
+	public Multimap<Attribute, AttributeModifier> getAttributeModifiers(EquipmentSlot slot, ItemStack stack) {
+		Multimap<Attribute, AttributeModifier> mods = super.getAttributeModifiers(slot, stack);
+		Lazy<Multimap<Attribute, AttributeModifier>> additional = this.getModifiers(slot, stack);
+		if (this.enabled() && slot == EquipmentSlot.MAINHAND && additional != null) {
+			ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
+			builder.putAll(mods);
+			builder.putAll(additional.get());
+			return builder.build();
+		}
+		return mods;
 	}
 
 	public String getTranslation() {

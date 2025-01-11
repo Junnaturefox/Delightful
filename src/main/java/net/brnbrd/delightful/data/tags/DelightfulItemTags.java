@@ -201,11 +201,8 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> INGOTS_PEARLESCENT = DelightfulItems.ingot("pearlescent");
 
 	// AE2
-	public static final TagKey<Item> QUARTZ_KNIFE = Util.it(Delightful.MODID, "quartz_knife");
 	public static final TagKey<Item> CERTUS_QUARTZ = Knives.gem("certus_quartz");
-	public static final TagKey<Item> FLUIX_CRYSTAL = Knives.gem("fluix");
 	public static final TagKey<Item> FLUIX_BLOCK = Util.it(Mods.AE2, "fluix_block");
-	public static final TagKey<Item> FLUIX_UPGRADE_SMITHING_TEMPLATE = Util.it(Mods.AE2, "fluix_upgrade_smithing_template");
 
 	// Spirit
 	public static final TagKey<Item> SOUL_STEEL_INGOT = DelightfulItems.ingot("soul_steel");
@@ -219,15 +216,6 @@ public class DelightfulItemTags {
 	// Additional Additions
 	public static final TagKey<Item> ROSE_GOLD_ALLOY = Util.it(Mods.AA, "rose_gold_alloy");
 	public static final TagKey<Item> GOLD_RING = Util.it(Mods.AA, "gold_ring");
-
-	// Nourished Nether
-	public static final TagKey<Item> NECRONIUM_INGOT = DelightfulItems.ingot("necronium");
-	public static final TagKey<Item> NECRONIUM_TOOLS = Util.it("nourished_nether", "necronium_tools");
-
-	// Undergarden
-	public static final TagKey<Item> CLOGGRUM_ITEMS = Util.it(Mods.UG, "cloggrum_items");
-	public static final TagKey<Item> FROSTSTEEL_ITEMS = Util.it(Mods.UG, "froststeel_items");
-	public static final TagKey<Item> UTHERIUM_ITEMS = Util.it(Mods.UG, "utherium_items");
 
 	// Aether
 	public static final TagKey<Item> HOLYSTONE = Util.it(Mods.AE, "holystone");

@@ -58,7 +58,7 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
 				.map(RegistryObject::get)
 				.filter(item -> item instanceof DelightfulKnifeItem)
 				.map(item -> (DelightfulKnifeItem) item)
-				.filter(knife -> knife.getTag() != null && knife.getRecipeType() != null)
+				.filter(knife -> knife.getTag() != null && knife.getRecipeType() == RecipeType.CRAFTING)
 				.forEach(k -> knife(k, finished));
 		knifeSmeltAndBlast((DelightfulKnifeItem) Knives.BONE.get(), "bone/knife", Objects.requireNonNull(ForgeRegistries.ITEMS.getKey(Items.BONE_MEAL)), finished);
 

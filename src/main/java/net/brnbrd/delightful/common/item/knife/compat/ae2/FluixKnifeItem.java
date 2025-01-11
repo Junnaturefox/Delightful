@@ -6,11 +6,9 @@ import net.brnbrd.delightful.compat.Mods;
 import net.brnbrd.delightful.data.tags.DelightfulItemTags;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
-import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
@@ -22,13 +20,6 @@ public class FluixKnifeItem extends CompatKnifeItem {
 	@Override
 	public @Nullable RecipeType<?> getRecipeType() {
 		return RecipeType.SMITHING;
-	}
-
-	@Override
-	public ImmutablePair<Ingredient, Ingredient> getSmithing() {
-		return ImmutablePair.of(
-				Ingredient.of(DelightfulItemTags.FLUIX_UPGRADE_SMITHING_TEMPLATE),
-				Ingredient.of(DelightfulItemTags.QUARTZ_KNIFE));
 	}
 
 	@Override
