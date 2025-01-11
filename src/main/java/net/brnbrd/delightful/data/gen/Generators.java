@@ -32,7 +32,7 @@ public class Generators {
 		e.getGenerator().addProvider(e.includeServer(), blockTag);
 		e.getGenerator().addProvider(e.includeServer(), new DelightfulItemTagProvider(output, lookup, blockTag.contentsGetter(), helper));
 		e.getGenerator().addProvider(e.includeServer(), new DelightfulEntityTagProvider(output, lookup, helper));
-		e.getGenerator().addProvider(e.includeServer(), new DelightfulLootModifierProvider(output));
+		//e.getGenerator().addProvider(e.includeServer(), new DelightfulLootModifierProvider(output));
 
 		e.getGenerator().addProvider(e.includeClient(), new DelightfulBlockStateProvider(output, helper));
 		e.getGenerator().addProvider(e.includeClient(), new DelightfulItemModelProvider(output, helper));

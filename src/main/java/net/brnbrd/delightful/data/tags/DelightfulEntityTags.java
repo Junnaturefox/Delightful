@@ -12,6 +12,7 @@ public class DelightfulEntityTags {
 	public static final TagKey<EntityType<?>> DROPS_ACORN = create("drops_acorn");
 	public static final TagKey<EntityType<?>> DROPS_CRAB_LEGS = create("drops_crab_legs");
 	public static final TagKey<EntityType<?>> DROPS_RAW_GOAT = create("drops_raw_goat");
+	public static final TagKey<EntityType<?>> DROPS_HAM = create("drops_ham");
 
 	// Aether
 	public static final TagKey<EntityType<?>> NO_AMBROSIUM_DROPS = Util.et(Mods.AE, "no_ambrosium_drops");

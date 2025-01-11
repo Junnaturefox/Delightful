@@ -153,5 +153,6 @@ public class DelightfulEntityTagProvider extends EntityTypeTagsProvider {
 		this.tag(DelightfulEntityTags.DROPS_ACORN).addOptional(Util.rl(Mods.ECO, "squirrel"));
 		this.tag(DelightfulEntityTags.DROPS_CRAB_LEGS).addOptional(Util.rl(Mods.ECO, "coconut_crab"));
 		this.tag(DelightfulEntityTags.DROPS_RAW_GOAT).add(EntityType.GOAT);
+		this.tag(DelightfulEntityTags.DROPS_HAM).addOptional(Util.rl(Mods.NA, "boar"));
 	}
 }

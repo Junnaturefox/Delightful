@@ -1,21 +1,8 @@
 package net.brnbrd.delightful.data.gen;
 
 import net.brnbrd.delightful.Delightful;
-import net.brnbrd.delightful.common.item.DelightfulItems;
-import net.brnbrd.delightful.common.loot.AddItemLootModifier;
-import net.brnbrd.delightful.common.loot.LootItemBlockIsTagCondition;
-import net.brnbrd.delightful.common.loot.LootItemEnabledCondition;
-import net.brnbrd.delightful.data.tags.DelightfulBlockTags;
-import net.brnbrd.delightful.data.tags.DelightfulEntityTags;
-import net.brnbrd.delightful.data.tags.DelightfulItemTags;
-import net.minecraft.advancements.critereon.*;
 import net.minecraft.data.PackOutput;
-import net.minecraft.world.item.enchantment.Enchantments;
-import net.minecraft.world.level.storage.loot.LootContext;
-import net.minecraft.world.level.storage.loot.predicates.*;
-import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.GlobalLootModifierProvider;
-import vectorwing.farmersdelight.common.registry.ModItems;
 
 public class DelightfulLootModifierProvider extends GlobalLootModifierProvider {
 	public DelightfulLootModifierProvider(PackOutput output) {
@@ -24,7 +11,7 @@ public class DelightfulLootModifierProvider extends GlobalLootModifierProvider {
 
 	@Override
 	protected void start() {
-		add("green_tea_leaf", new AddItemLootModifier(
+		/*add("green_tea_leaf", new AddItemLootModifier(
 				new LootItemCondition[]{
 						LootItemEnabledCondition.enabled(DelightfulItems.GREEN_TEA_LEAF.getId().getPath()),
 						LootItemRandomChanceCondition.randomChance(0.8F).build(),
@@ -114,6 +101,6 @@ public class DelightfulLootModifierProvider extends GlobalLootModifierProvider {
 						LootItemBlockIsTagCondition.isTag(DelightfulBlockTags.DROPS_STRAW)
 				},
 				ModItems.STRAW.get(), 1, 1, true
-		));
+		));*/
 	}
 }

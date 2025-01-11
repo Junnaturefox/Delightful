@@ -3,19 +3,19 @@
   "conditions": [
     {
       "condition": "delightful:enabled",
-      "item": "raw_goat"
+      "item": "cooked_goat"
     },
     {
       "chance": 1.0,
       "condition": "minecraft:random_chance_with_looting",
-      "looting_multiplier": 2.0
+      "looting_multiplier": 0.1
     },
     {
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
         "flags": {
-          "is_on_fire": false
+          "is_on_fire": true
         }
       }
     },
@@ -27,7 +27,7 @@
       }
     }
   ],
-  "item": "delightful:raw_goat",
+  "item": "delightful:cooked_goat",
   "maxAmount": 2,
   "minAmount": 1,
   "unique": true
