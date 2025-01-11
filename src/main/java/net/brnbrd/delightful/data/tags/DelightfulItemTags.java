@@ -197,6 +197,9 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> CRYSTAL_SPIKE_TIPS = Util.it(Mods.EP, "crystal_spike_tips");
 	public static final TagKey<Item> XP_BOOSTED = Util.it(Mods.EP, "gets_xp_speed_boost");
 
+	// Unusual End
+	public static final TagKey<Item> INGOTS_PEARLESCENT = DelightfulItems.ingot("pearlescent");
+
 	// AE2
 	public static final TagKey<Item> QUARTZ_KNIFE = Util.it(Delightful.MODID, "quartz_knife");
 	public static final TagKey<Item> CERTUS_QUARTZ = Knives.gem("certus_quartz");

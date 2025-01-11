@@ -738,6 +738,10 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addOptional(Util.rl("spirit", "soul_steel_ingot"));
 		this.tag(DelightfulItemTags.SOUL_STEEL_MAINHAND).add(Knives.SOUL_STEEL.get());
 
+		// Unusual End
+		this.tag(DelightfulItemTags.INGOTS_PEARLESCENT)
+				.addOptional(Util.rl("unusualend", "pearlescent_ingot"));
+
 		// Botania
 		this.addSelf(DelightfulItemTags.LIVINGWOOD_TWIG);
 		this.addSelf(DelightfulItemTags.DREAMWOOD_TWIG);

@@ -42,6 +42,7 @@ import net.brnbrd.delightful.common.item.knife.compat.undergarden.CloggrumKnifeI
 import net.brnbrd.delightful.common.item.knife.compat.undergarden.ForgottenKnifeItem;
 import net.brnbrd.delightful.common.item.knife.compat.undergarden.FroststeelKnifeItem;
 import net.brnbrd.delightful.common.item.knife.compat.undergarden.UtheriumKnifeItem;
+import net.brnbrd.delightful.common.item.knife.compat.unusualend.PearlescentKnifeItem;
 import net.brnbrd.delightful.compat.AetherReduxCompat;
 import net.brnbrd.delightful.compat.BotaniaCompat;
 import net.brnbrd.delightful.compat.DeepAetherCompat;
@@ -83,6 +84,7 @@ public class Knives extends DelightfulItems {
 	public static final RegistryObject<Item> ONYX = registerCompatKnife("onyx", Mods.SO, gem("onyx"));
 	public static final RegistryObject<Item> THYRIUM = registerCompatIngotKnife("thyrium", Mods.FUS);
 	public static final RegistryObject<Item> SINISITE = registerCompatIngotKnife("sinisite", Mods.FUS);
+	public static final RegistryObject<Item> PEARLESCENT = registerItem("pearlescent_knife", () -> new PearlescentKnifeItem(props()));
 	public static final RegistryObject<Item> ALLTHEMODIUM = registerItem("allthemodium_knife", () -> new AllthemodiumKnifeItem(props()));
 	public static final RegistryObject<Item> ENDERITE = registerItem("enderite_knife", () -> new EnderiteKnifeItem(props()));
 	public static final RegistryObject<Item> DRACO_ARCANUS = registerItem("draco_arcanus_knife", () -> new DracoArcanusKnifeItem(props()));

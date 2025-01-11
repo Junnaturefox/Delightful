@@ -5,37 +5,37 @@
       "conditions": [
         {
           "type": "delightful:enabled",
-          "value": "warden_knife"
+          "value": "pearlescent_knife"
         },
         {
           "type": "forge:not",
           "value": {
             "type": "forge:tag_empty",
-            "tag": "deeperdarker:reinforced_echo_shard"
+            "tag": "forge:ingots/pearlescent"
           }
         },
         {
           "type": "forge:mod_loaded",
-          "modid": "deeperdarker"
+          "modid": "unusualend"
         },
         {
           "type": "forge:item_exists",
-          "item": "deeperdarker:warden_upgrade_smithing_template"
+          "item": "unusualend:pearlescent_upgrade_smithing_template"
         }
       ],
       "recipe": {
         "type": "minecraft:smithing_transform",
         "addition": {
-          "tag": "deeperdarker:reinforced_echo_shard"
+          "tag": "forge:ingots/pearlescent"
         },
         "base": {
-          "item": "farmersdelight:netherite_knife"
+          "item": "farmersdelight:diamond_knife"
         },
         "result": {
-          "item": "delightful:warden_knife"
+          "item": "delightful:pearlescent_knife"
         },
         "template": {
-          "item": "deeperdarker:warden_upgrade_smithing_template"
+          "item": "unusualend:pearlescent_upgrade_smithing_template"
         }
       }
     }

@@ -1,6 +1,13 @@
 # Changelog
 
 
+# 3.6.3
+
+### Updates
+- Added Pearlescent Knife (for [Unusual End](https://www.curseforge.com/minecraft/mc-mods/unusual-end))
+- Can scavenge Ham from Naturalist's Boars (and any entity tagged "delightful:drops_ham")
+
+
 # 3.6.2
 
 ### Updates
