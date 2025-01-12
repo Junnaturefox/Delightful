@@ -11,6 +11,6 @@ public class VenisonChopsItem extends DItem {
 
 	@Override
 	public String[] getConflicts() {
-		return new String[]{Mods.TFD};
+		return new String[]{Mods.AD, Mods.TFD};
 	}
 }
