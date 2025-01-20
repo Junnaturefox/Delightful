@@ -1,5 +1,6 @@
 package net.brnbrd.delightful.common.events;
 
+import net.brnbrd.delightful.Delightful;
 import net.brnbrd.delightful.Util;
 import net.brnbrd.delightful.common.block.DelightfulCauldronInteractions;
 import net.brnbrd.delightful.common.crafting.EnabledCondition;
@@ -9,7 +10,12 @@ import net.brnbrd.delightful.common.item.knife.DelightfulKnifeItem;
 import net.brnbrd.delightful.compat.Mods;
 import net.brnbrd.delightful.data.tags.DelightfulItemTags;
 import net.brnbrd.delightful.network.DPacketHandler;
+import net.minecraft.ChatFormatting;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.packs.PackType;
+import net.minecraft.server.packs.repository.Pack;
+import net.minecraft.server.packs.repository.PackSource;
 import net.minecraft.world.entity.animal.Chicken;
 import net.minecraft.world.entity.animal.Parrot;
 import net.minecraft.world.item.CreativeModeTab;
@@ -18,13 +24,17 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.common.crafting.CompoundIngredient;
 import net.minecraftforge.common.crafting.CraftingHelper;
+import net.minecraftforge.event.AddPackFindersEvent;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.forgespi.locating.IModFile;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegisterEvent;
 import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.resource.PathPackResources;
+import org.apache.commons.lang3.StringUtils;
 import vectorwing.farmersdelight.common.registry.ModCreativeTabs;
 import java.util.Collections;
 
@@ -46,7 +56,8 @@ public class ModEvents {
 			ComposterBlock.COMPOSTABLES.put(DelightfulItems.PUMPKIN_PIE_SLICE.get(), 0.85F);
 			ComposterBlock.COMPOSTABLES.put(DelightfulItems.BAKLAVA.get(), 1.0F);
 			ComposterBlock.COMPOSTABLES.put(DelightfulItems.BAKLAVA_SLICE.get(), 0.85F);
-			ComposterBlock.COMPOSTABLES.put(DelightfulItems.SOURCE_BERRY_PIE_SLICE.get(), 0.85F);
+			ComposterBlock.COMPOSTABLES.put(DelightfulItems.CHORUS_MUFFIN.get(), 1.0F);
+			ComposterBlock.COMPOSTABLES.put(DelightfulItems.CHORUS_PIE_SLICE.get(), 0.85F);
 			ComposterBlock.COMPOSTABLES.put(DelightfulItems.GLOOMGOURD_PIE_SLICE.get(), 0.85F);
 			ComposterBlock.COMPOSTABLES.put(DelightfulItems.BLUEBERRY_PIE_SLICE.get(), 0.85F);
 			ComposterBlock.COMPOSTABLES.put(DelightfulItems.GREEN_APPLE_PIE_SLICE.get(), 0.85F);
@@ -136,4 +147,26 @@ public class ModEvents {
 		}
 	}
 
+	@SubscribeEvent
+	public void addPackFinders(AddPackFindersEvent e) {
+		if (e.getPackType() == PackType.CLIENT_RESOURCES) {
+			String name = "overhauls";
+			String path = Delightful.MODID + ":" + name;
+			e.addRepositorySource(consumer -> {
+				IModFile file = ModList.get().getModFileById(Delightful.MODID).getFile();
+				try (PathPackResources packResources = new PathPackResources(path, true, file.findResource("builtin/" + name))) {
+					consumer.accept(Pack.readMetaAndCreate(
+						path,
+						Component.literal(StringUtils.capitalize(Delightful.MODID) + " ")
+							.append(Component.translatable(Delightful.MODID + "." + name)),
+						false,
+						(id) -> packResources,
+						PackType.CLIENT_RESOURCES,
+						Pack.Position.TOP,
+						PackSource.BUILT_IN
+					));
+				}
+			});
+		}
+	}
 }

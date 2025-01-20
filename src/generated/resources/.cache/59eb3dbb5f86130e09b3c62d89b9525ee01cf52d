@@ -1,4 +1,4 @@
-// 1.20.1	2025-01-11T12:32:09.9434037	Loot Tables
+// 1.20.1	2025-01-20T14:28:21.1981625	Loot Tables
 2b9b2e38c5ea1b16ab49d97e8273a06d9522ff89 data/delightful/loot_tables/blocks/acorn_sack.json
 9d5b84ac2d4addf19f3e04c606d85bceee5f2519 data/delightful/loot_tables/blocks/baklava.json
 1363024576f5e67e0984401cb699644221da8f5b data/delightful/loot_tables/blocks/baobab_fruit_crate.json
@@ -9,6 +9,7 @@ bf8dcc525af80f852fbb174d30d51e8a225895c4 data/delightful/loot_tables/blocks/bast
 67a77805c21f717fe16f0db614e5d715a482ff59 data/delightful/loot_tables/blocks/bombegranate_crate.json
 556b8e70b7714b1280d900d203cce6c2cae89ea5 data/delightful/loot_tables/blocks/cantaloupe.json
 06573c323b889e3ebea85b882ec12fe13a4a1bfe data/delightful/loot_tables/blocks/cantaloupe_plant.json
+6bc4b69e6e75158c41b2356e47cef2c9640ffed1 data/delightful/loot_tables/blocks/chorus_pie.json
 876d46ab5d2d26f63bb601e9c0b33efa7eab6fa0 data/delightful/loot_tables/blocks/frostaya_crate.json
 204ffae7b2b334ee52fd49ac0118ea9988b08b97 data/delightful/loot_tables/blocks/gloomgourd_pie.json
 7184a7c42a7a3608f066a9b4428cee74f03fefcc data/delightful/loot_tables/blocks/green_apple_crate.json

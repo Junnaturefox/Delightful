@@ -543,7 +543,7 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
 						Ingredient.of(DelightfulItemTags.SMALL_CACTI),
 						Ingredient.of(ForgeTags.TOOLS_KNIVES),
 						DelightfulItems.CACTUS_FLESH.get(), 1),
-				"cutting/small_cactus", finished, enabled("cactus_flesh"));
+				"cutting/small_cactus", finished, enabled("cactus_flesh"), not(tagEmpty(DelightfulItemTags.SMALL_CACTI)));
 		wrap(CuttingBoardRecipeBuilder.cuttingRecipe(
 						Ingredient.of(DelightfulItems.MINI_MELON.get()),
 						Ingredient.of(ForgeTags.TOOLS_KNIVES),

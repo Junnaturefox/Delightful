@@ -3,6 +3,7 @@ package net.brnbrd.delightful.common.item;
 import net.brnbrd.delightful.Delightful;
 import net.brnbrd.delightful.common.block.DelightfulBlocks;
 import net.brnbrd.delightful.common.item.food.*;
+import net.brnbrd.delightful.compat.UnusualEndCompat;
 import net.brnbrd.delightful.compat.ars_nouveau.*;
 import net.brnbrd.delightful.compat.BWGCompat;
 import net.brnbrd.delightful.compat.Mods;
@@ -81,12 +82,16 @@ public class DelightfulItems {
 			() -> new DItem((new Item.Properties()).food(Nutrition.SALMONBERRY_PIE_SLICE), false));
 	public static final RegistryObject<Item> PUMPKIN_PIE_SLICE = registerItem("pumpkin_pie_slice",
 			() -> new PumpkinPieSliceItem((new Item.Properties()).food(FoodValues.PIE_SLICE)));
-	public static final RegistryObject<Item> GLOOMGOURD_PIE_SLICE = registerCompatPieSlice("gloomgourd_pie_slice",
+	public static final RegistryObject<Item> GLOOMGOURD_PIE_SLICE = registerCompatPieSlice("gloomgourd_pie",
 			UndergardenCompat.GLOOMGOURD_PIE_SLICE.get(), Mods.UG);
-	public static final RegistryObject<Item> BLUEBERRY_PIE_SLICE = registerCompatPieSlice(BWGCompat.blueberry_pie + "_slice",
+	public static final RegistryObject<Item> BLUEBERRY_PIE_SLICE = registerCompatPieSlice(BWGCompat.blueberry_pie,
 			FoodValues.PIE_SLICE, Mods.BWG);
-	public static final RegistryObject<Item> GREEN_APPLE_PIE_SLICE = registerCompatPieSlice(BWGCompat.green_apple_pie + "_slice",
+	public static final RegistryObject<Item> GREEN_APPLE_PIE_SLICE = registerCompatPieSlice(BWGCompat.green_apple_pie,
 			BWGCompat.GREEN_APPLE_PIE_SLICE.get(), Mods.BWG);
+	public static final RegistryObject<Item> CHORUS_PIE_SLICE = registerCompatPieSlice(UnusualEndCompat.chorus_pie,
+			UnusualEndCompat.CHORUS_PIE_SLICE, Mods.UE);
+	public static final RegistryObject<Item> CHORUS_MUFFIN = registerItem("chorus_muffin",
+			() -> new ChorusMuffinItem((new Item.Properties()).food(UnusualEndCompat.CHORUS_MUFFIN)));
 	public static final RegistryObject<Item> SOURCE_BERRY_PIE_SLICE = registerItem("source_berry_pie_slice",
 			() -> new CompatItem((new Item.Properties()).food(ArsNouveauCompat.SOURCE_BERRY_PIE_SLICE), true, Mods.AND, Mods.AN));
 	public static final RegistryObject<Item> SOURCE_BERRY_COOKIE = registerItem("source_berry_cookie",
@@ -186,8 +191,8 @@ public class DelightfulItems {
 				() -> new DConsumableItem((new Item.Properties()).food(food).craftRemainder(remainder), hasFoodEffectTooltip, hasCustomTooltip));
 	}
 
-	public static RegistryObject<Item> registerCompatPieSlice(String name, FoodProperties food, String modid) {
-		return registerItem(name, () -> new CompatItem((new Item.Properties().food(food)), false, null, modid));
+	public static RegistryObject<Item> registerCompatPieSlice(String pieName, FoodProperties food, String modid) {
+		return registerItem(pieName + "_slice", () -> new CompatItem((new Item.Properties().food(food)), false, null, modid));
 	}
 
 	public static RegistryObject<Item> registerCompatFood(String name, FoodProperties food, String modid, boolean hasFoodEffectTooltip) {

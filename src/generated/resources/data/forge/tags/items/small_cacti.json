@@ -9,6 +9,10 @@
       "required": false
     },
     {
+      "id": "atmospheric:barrel_cactus",
+      "required": false
+    },
+    {
       "id": "biomemakeover:barrel_cactus",
       "required": false
     }

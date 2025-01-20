@@ -38,6 +38,7 @@ public class DelightfulBlockTagProvider extends BlockTagsProvider {
 				.add(DelightfulBlocks.GREEN_APPLE_PIE.get())
 				.add(DelightfulBlocks.SOURCE_BERRY_PIE.get())
 				.add(DelightfulBlocks.GLOOMGOURD_PIE.get())
+				.add(DelightfulBlocks.CHORUS_PIE.get())
 				.add(DelightfulBlocks.BAKLAVA.get());
 		this.tag(ModTags.WILD_CROPS)
 				.add(DelightfulBlocks.WILD_SALMONBERRIES.get());

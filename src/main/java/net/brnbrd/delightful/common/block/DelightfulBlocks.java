@@ -77,6 +77,8 @@ public class DelightfulBlocks {
 			() -> new BaklavaBlock(Block.Properties.copy(ModBlocks.APPLE_PIE.get()), DelightfulItems.BAKLAVA_SLICE));
 	public static final RegistryObject<Block> SOURCE_BERRY_PIE = BLOCKS.register("source_berry_pie",
 			() -> new DPieBlock(DelightfulItems.SOURCE_BERRY_PIE_SLICE, Util.rl(Mods.AN, "source_berry_pie")));
+	public static final RegistryObject<Block> CHORUS_PIE = BLOCKS.register("chorus_pie",
+			() -> new DPieBlock(DelightfulItems.CHORUS_PIE_SLICE, Util.rl(Mods.UE, "chorus_pie")));
 	public static final RegistryObject<Block> GLOOMGOURD_PIE = BLOCKS.register("gloomgourd_pie",
 			() -> new DPieBlock(DelightfulItems.GLOOMGOURD_PIE_SLICE, Util.rl(Mods.UG, "gloomgourd_pie")));
 	public static final RegistryObject<Block> BLUEBERRY_PIE = BLOCKS.register("blueberry_pie",

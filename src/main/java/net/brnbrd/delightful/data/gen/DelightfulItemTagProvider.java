@@ -5,12 +5,9 @@ import net.brnbrd.delightful.Util;
 import net.brnbrd.delightful.common.item.DelightfulItems;
 import net.brnbrd.delightful.common.item.knife.DelightfulKnifeItem;
 import net.brnbrd.delightful.common.item.knife.Knives;
-import net.brnbrd.delightful.common.item.knife.compat.additionaladditions.GildedNetheriteKnifeItem;
-import net.brnbrd.delightful.common.item.knife.compat.additionaladditions.RoseGoldKnifeItem;
-import net.brnbrd.delightful.common.item.knife.compat.lolenderite.EnderiteKnifeItem;
-import net.brnbrd.delightful.common.item.knife.compat.undergarden.ForgottenKnifeItem;
 import net.brnbrd.delightful.compat.BWGCompat;
 import net.brnbrd.delightful.compat.Mods;
+import net.brnbrd.delightful.compat.UnusualEndCompat;
 import net.brnbrd.delightful.data.tags.DelightfulItemTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -44,7 +41,8 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addOptional(Util.rl(Mods.AN, "source_berry_pie"))
 				.addOptional(Util.rl(Mods.UG, "gloomgourd_pie"))
 				.addOptional(Util.rl(Mods.BWG, BWGCompat.blueberry_pie))
-				.addOptional(Util.rl(Mods.BWG, BWGCompat.green_apple_pie));
+				.addOptional(Util.rl(Mods.BWG, BWGCompat.green_apple_pie))
+				.addOptional(Util.rl(Mods.UE, UnusualEndCompat.chorus_pie));
 		this.tag(DelightfulItemTags.FIRE_KNIVES)
 				.add(Knives.FIERY.get())
 				.add(Knives.KIWANO.get())
@@ -168,6 +166,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		this.tag(DelightfulItemTags.SMALL_CACTI)
 				.addOptionalTag(Util.rl(Mods.HAB, "ball_cacti"))
 				.addOptional(Util.rl(Mods.BWG, "mini_cactus"))
+				.addOptional(Util.rl("atmospheric", "barrel_cactus"))
 				.addOptional(Util.rl("biomemakeover", "barrel_cactus"));
 		this.tag(DelightfulItemTags.MATCHA)
 				.add(DelightfulItems.MATCHA.get());

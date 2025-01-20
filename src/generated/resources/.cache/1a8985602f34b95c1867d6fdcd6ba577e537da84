@@ -1,4 +1,4 @@
-// 1.20.1	2025-01-11T12:32:09.9444039	delightful
+// 1.20.1	2025-01-20T14:28:21.1995456	delightful
 8980358a7235536580c6b076956e78e18eca38e9 data/additionaladditions/tags/items/gilded_netherite_upgrade.json
 251ab39f668c15d972d4630264e39f06ec646606 data/additionaladditions/tags/items/gold_ring.json
 9136930399e99d219f34c05a02844b699ef0873a data/additionaladditions/tags/items/rose_gold_alloy.json
@@ -23,7 +23,7 @@ b306cd52d0a89b88fd149766a3ccc1f9d27d4e5f data/deeperdarker/tags/items/reinforced
 ea08bf83fedea8a54423800d88b8e9df50cd0449 data/deeperdarker/tags/items/resonarium.json
 29b212520fec512acbe234302c31627d3339cadc data/deeperdarker/tags/items/resonarium_plate.json
 ed18beedb5068fe9f48327153c678096971fcd24 data/deep_aether/tags/items/stratus_smithing_template.json
-69e5fe4ffe45732eec62598a1cbc83398f1e70c6 data/delightful/tags/items/compat_pies.json
+1e53d9502ac9a2cd6aa1dd0402b537b2a4857a42 data/delightful/tags/items/compat_pies.json
 6c44caac9f1c6b7419020d539d40046963a51ad9 data/delightful/tags/items/cooked_venison_chop_compat.json
 ae718511234f1a47f26d2f294e4d17f33374a95d data/delightful/tags/items/cooked_venison_compat.json
 c635f7a0507d48b606bd3d26bfe43ade5cfe05ee data/delightful/tags/items/fire_knives.json
@@ -172,7 +172,7 @@ eede30f09088aaf8a642eb4ea1ebc60e3b69e020 data/forge/tags/items/ropes.json
 a09b42ac27e237ab7a07cef195745960d786fca5 data/forge/tags/items/seeds.json
 9b41a77626703e8e0afcfac6855ec3e6bc967180 data/forge/tags/items/seeds/cantaloupe.json
 812e02df7738d094a037a44204b8edcb5b13f600 data/forge/tags/items/seeds/salmonberry.json
-290f7312cda4577e6472fd1b02775d90ce0f02b8 data/forge/tags/items/small_cacti.json
+4c846805ddf14c59595b98321c5e75a690bf6179 data/forge/tags/items/small_cacti.json
 d8955b9e7314b64916053e7f89b6953462952a71 data/forge/tags/items/snail_shells.json
 e801bdef0719e27dd7decd88269ada7c5740348e data/forge/tags/items/sugar.json
 242e1de4d62fda525230fddaa5f8297751621c94 data/forge/tags/items/syrup.json

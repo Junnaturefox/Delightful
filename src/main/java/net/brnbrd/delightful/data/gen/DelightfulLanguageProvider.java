@@ -48,6 +48,8 @@ public class DelightfulLanguageProvider extends LanguageProvider {
 		addItem(DelightfulItems.GREEN_APPLE_PIE_SLICE, "Slice of Green Apple Pie");
 		addItem(DelightfulItems.BLUEBERRY_PIE_SLICE, "Slice of Blueberry Pie");
 		addItem(DelightfulItems.BAKLAVA_SLICE, "Slice of Baklava");
+		addItem(DelightfulItems.CHORUS_PIE_SLICE, "Slice of Chorus Pie");
+		addItem(DelightfulItems.CHORUS_MUFFIN, "Chorus Muffin");
 		addItem(DelightfulItems.CANTALOUPE_SLICE, "Cantaloupe Slice");
 		addItem(DelightfulItems.CANTALOUPE_SEEDS, "Cantaloupe Seeds");
 		addItem(DelightfulItems.CANTALOUPE_BREAD, "Cantaloupe Bread");
@@ -101,6 +103,7 @@ public class DelightfulLanguageProvider extends LanguageProvider {
 		addBlock(DelightfulBlocks.GLOOMGOURD_PIE, "Gloomgourd Pie");
 		addBlock(DelightfulBlocks.GREEN_APPLE_PIE, "Green Apple Pie");
 		addBlock(DelightfulBlocks.BLUEBERRY_PIE, "Blueberry Pie");
+		addBlock(DelightfulBlocks.CHORUS_PIE, "Chorus Pie");
 		addBlock(DelightfulBlocks.SALMONBERRY_PIE, "Salmonberry Pie");
 		addBlock(DelightfulBlocks.SALMONBERRY_BUSH, "Salmonberry Bush");
 		addBlock(DelightfulBlocks.WILD_SALMONBERRIES, "Wild Salmonberries");
@@ -140,6 +143,7 @@ public class DelightfulLanguageProvider extends LanguageProvider {
 		add("delightful.cantaloupe_seeds.desc", "Cantaloupe Seeds will sprout when planted in sand.");
 		add("delightful.sliceable.desc", "Sliceable with a Knife.");
 		add("delightful.placeable.desc", "Placeable");
+		add("delightful.overhauls", "Overhauls");
 		add("tooltip.disabled", "Disabled");
 		add("tooltip.requires_tag", "Requires tag:");
 		add("tooltip.requires_empty_tag", "Requires empty tag:");

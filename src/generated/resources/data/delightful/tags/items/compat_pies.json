@@ -16,6 +16,10 @@
     {
       "id": "biomeswevegone:green_apple_pie",
       "required": false
+    },
+    {
+      "id": "unusualend:chorus_pie",
+      "required": false
     }
   ]
 }
