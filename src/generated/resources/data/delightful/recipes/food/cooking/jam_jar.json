@@ -24,6 +24,9 @@
       ],
       "recipe": {
         "type": "farmersdelight:cooking",
+        "container": {
+          "item": "minecraft:glass_bottle"
+        },
         "cookingtime": 200,
         "experience": 0.35,
         "ingredients": [
@@ -32,9 +35,6 @@
           },
           {
             "tag": "forge:fruits/sweet"
-          },
-          {
-            "tag": "forge:sugar"
           },
           {
             "tag": "forge:sugar"

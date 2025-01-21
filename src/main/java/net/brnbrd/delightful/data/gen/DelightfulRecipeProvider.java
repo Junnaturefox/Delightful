@@ -370,21 +370,19 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
 						.unlockedBy("has_animal_fat", has(DelightfulItems.ANIMAL_FAT.get())),
 				"cooking/animal_oil_bottle", finished, enabled(DelightfulItems.ANIMAL_OIL_BOTTLE));
 		wrap(CookingPotRecipeBuilder.cookingPotRecipe(
-								DelightfulItems.JAM_JAR.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F)
+								DelightfulItems.JAM_JAR.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F, Items.GLASS_BOTTLE)
 						.addIngredient(Ingredient.of(DelightfulItemTags.FRUITS_SWEET), 2)
-						.addIngredient(Ingredient.of(DelightfulItemTags.SUGAR), 2)
+						.addIngredient(DelightfulItemTags.SUGAR)
 						.unlockedBy("has_sweet_fruit", has(DelightfulItemTags.FRUITS_SWEET)),
 				"food/cooking/jam_jar", finished, enabled(DelightfulItems.JAM_JAR), not(modLoaded(Mods.BC)), not(modLoaded(Mods.FRD)));
 		wrap(CookingPotRecipeBuilder.cookingPotRecipe(
-								DelightfulItems.GLOW_JAM_JAR.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F)
-						.addIngredient(DelightfulItemTags.FRUITS_GLOW_BERRIES)
-						.addIngredient(DelightfulItemTags.FRUITS_GLOW_BERRIES)
-						.addIngredient(Tags.Items.DUSTS_GLOWSTONE)
-						.addIngredient(Ingredient.of(DelightfulItemTags.SUGAR), 2)
+								DelightfulItems.GLOW_JAM_JAR.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F, Items.GLASS_BOTTLE)
+						.addIngredient(Ingredient.of(DelightfulItemTags.FRUITS_GLOW_BERRIES), 2)
+						.addIngredient(DelightfulItemTags.SUGAR)
 						.unlockedBy("has_glow_berries", has(DelightfulItemTags.FRUITS_GLOW_BERRIES)),
 				"food/cooking/glow_jam_jar", finished, enabled(DelightfulItems.GLOW_JAM_JAR), not(modLoaded(Mods.BC)), not(modLoaded(Mods.FRD)));
 		wrap(CookingPotRecipeBuilder.cookingPotRecipe(
-								DelightfulItems.NUT_BUTTER_BOTTLE.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F)
+								DelightfulItems.NUT_BUTTER_BOTTLE.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F, Items.GLASS_BOTTLE)
 						.addIngredient(DelightfulItemTags.NUTS)
 						.addIngredient(DelightfulItemTags.SUGAR)
 						.unlockedBy("has_nuts", has(DelightfulItemTags.NUTS)),

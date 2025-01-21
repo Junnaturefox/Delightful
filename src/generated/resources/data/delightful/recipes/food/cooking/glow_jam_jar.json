@@ -24,6 +24,9 @@
       ],
       "recipe": {
         "type": "farmersdelight:cooking",
+        "container": {
+          "item": "minecraft:glass_bottle"
+        },
         "cookingtime": 200,
         "experience": 0.35,
         "ingredients": [
@@ -32,12 +35,6 @@
           },
           {
             "tag": "forge:fruits/glow_berries"
-          },
-          {
-            "tag": "forge:dusts/glowstone"
-          },
-          {
-            "tag": "forge:sugar"
           },
           {
             "tag": "forge:sugar"
