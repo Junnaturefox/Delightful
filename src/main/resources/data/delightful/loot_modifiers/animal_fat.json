@@ -6,7 +6,7 @@
       "item": "animal_fat"
     },
     {
-      "chance": 0.6,
+      "chance": 0.7,
       "condition": "minecraft:random_chance_with_looting",
       "looting_multiplier": 0.1
     },
