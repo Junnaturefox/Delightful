@@ -374,7 +374,7 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
 						.addIngredient(Ingredient.of(DelightfulItemTags.FRUITS_SWEET), 2)
 						.addIngredient(Ingredient.of(DelightfulItemTags.SUGAR), 2)
 						.unlockedBy("has_sweet_fruit", has(DelightfulItemTags.FRUITS_SWEET)),
-				"food/cooking/jam_jar", finished, enabled(DelightfulItems.JAM_JAR), not(modLoaded(Mods.FRD)));
+				"food/cooking/jam_jar", finished, enabled(DelightfulItems.JAM_JAR), not(modLoaded(Mods.BC)), not(modLoaded(Mods.FRD)));
 		wrap(CookingPotRecipeBuilder.cookingPotRecipe(
 								DelightfulItems.GLOW_JAM_JAR.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F)
 						.addIngredient(DelightfulItemTags.FRUITS_GLOW_BERRIES)
@@ -382,7 +382,7 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
 						.addIngredient(Tags.Items.DUSTS_GLOWSTONE)
 						.addIngredient(Ingredient.of(DelightfulItemTags.SUGAR), 2)
 						.unlockedBy("has_glow_berries", has(DelightfulItemTags.FRUITS_GLOW_BERRIES)),
-				"food/cooking/glow_jam_jar", finished, enabled(DelightfulItems.GLOW_JAM_JAR), not(modLoaded(Mods.FRD)));
+				"food/cooking/glow_jam_jar", finished, enabled(DelightfulItems.GLOW_JAM_JAR), not(modLoaded(Mods.BC)), not(modLoaded(Mods.FRD)));
 		wrap(CookingPotRecipeBuilder.cookingPotRecipe(
 								DelightfulItems.NUT_BUTTER_BOTTLE.get(), 1, CookingRecipes.NORMAL_COOKING, 0.35F)
 						.addIngredient(DelightfulItemTags.NUTS)
