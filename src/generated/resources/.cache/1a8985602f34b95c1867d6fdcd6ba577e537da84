@@ -1,4 +1,4 @@
-// 1.20.1	2025-01-20T14:28:21.1995456	delightful
+// 1.20.1	2025-01-20T15:28:35.6943118	delightful
 8980358a7235536580c6b076956e78e18eca38e9 data/additionaladditions/tags/items/gilded_netherite_upgrade.json
 251ab39f668c15d972d4630264e39f06ec646606 data/additionaladditions/tags/items/gold_ring.json
 9136930399e99d219f34c05a02844b699ef0873a data/additionaladditions/tags/items/rose_gold_alloy.json
@@ -142,7 +142,7 @@ dc9122bbc29f63ef88ae687ac23a961648297ae0 data/forge/tags/items/ingots/pearlescen
 df21ab79976e7373593d2fce09cfbf66c595e447 data/forge/tags/items/ingots/steel.json
 a2c1b0bb89891c01a65518d797b2be4020720a63 data/forge/tags/items/ingots/stratus.json
 d554ed3f6b8762427d8c40a172c78361952260ed data/forge/tags/items/ingots/veridium.json
-b4436aa7833a6b36bd4df2f813f4b8d7d7b327ce data/forge/tags/items/jams.json
+89c20de55a139324a709ee494c4dcc56fc7d7db4 data/forge/tags/items/jams.json
 52d821c48dd4653008d93009d83156469191b18c data/forge/tags/items/lavender.json
 5160d3e42adb69a7a3e121df7fe653817a5d6b1b data/forge/tags/items/matcha.json
 f75e891b9cb5a6081e44eb8398b26d5304798c68 data/forge/tags/items/milk.json

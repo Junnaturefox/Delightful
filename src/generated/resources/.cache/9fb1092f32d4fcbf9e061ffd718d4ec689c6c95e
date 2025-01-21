@@ -1,4 +1,4 @@
-// 1.20.1	2025-01-20T14:28:21.2007577	Recipes
+// 1.20.1	2025-01-20T15:51:56.1969382	Recipes
 6c217dd6477efa10f6042809ba959d53036ab5e2 data/delightful/advancements/recipes/cabinets/basalt_cabinet.json
 5b82f87851220644287d771121677deac66b3b89 data/delightful/advancements/recipes/cabinets/quartz_cabinet.json
 cf29033c1c919355c261025df529938e6ebc73f8 data/delightful/advancements/recipes/campfire/cactus_steak.json
@@ -28,8 +28,8 @@ cf9ff57919e70462a9f5a1edec659fa1f7025750 data/delightful/advancements/recipes/fo
 296f9be70bda9a6a1736b2fcc8781cebbf6e1142 data/delightful/advancements/recipes/food/cooking/crab_rangoon.json
 9d60ac27ffcaee4ef197b33ba0809f093007e305 data/delightful/advancements/recipes/food/cooking/crab_rangoon_from_milk.json
 1499e66b8288740c89cefe418256eb7b0838e2ba data/delightful/advancements/recipes/food/cooking/ender_nectar.json
-5f119e550a6ed7064cf39f4f88c9da0a6e4ef39b data/delightful/advancements/recipes/food/cooking/glow_jam_jar.json
-6d17909a9d7de0733ae35a04bf0fb4671f8c20b7 data/delightful/advancements/recipes/food/cooking/jam_jar.json
+c1927c8e5f3a6cfa92965c4f8fc8a1bdc35da413 data/delightful/advancements/recipes/food/cooking/glow_jam_jar.json
+cfadb9d22a35102abc3a4967b8c767ca4303ee3c data/delightful/advancements/recipes/food/cooking/jam_jar.json
 f3f5c3372c4259ba5983cfb6588ebe582ab13c46 data/delightful/advancements/recipes/food/cooking/nut_butter_bottle.json
 d4a4766917f2da309bcee9e3b02e4456e487f17e data/delightful/advancements/recipes/food/cooking/nut_milk.json
 f8b64cbc40cbbe4360b7223029d1758da01949bd data/delightful/advancements/recipes/food/cooking/rock_candy.json
@@ -189,8 +189,8 @@ daba62a3504783d89d6fe972f0ad14307775220c data/delightful/recipes/food/cooking/co
 49022ee58f367a5a877f416d57b1ba5061ff1fba data/delightful/recipes/food/cooking/crab_rangoon.json
 27c99a5c883cbd86ad0ced9cca2d2686ab99dc36 data/delightful/recipes/food/cooking/crab_rangoon_from_milk.json
 b65cc57bafa4bd64bfe59e5f14d5eaeefc944363 data/delightful/recipes/food/cooking/ender_nectar.json
-b8826eeb6c30c987407c8b7eb40809f6d2be3845 data/delightful/recipes/food/cooking/glow_jam_jar.json
-7e52e490429b7bdf3a7c046052931cc77010e29e data/delightful/recipes/food/cooking/jam_jar.json
+67b097318fa02fdf9e0751670bbd12e4b1d864a7 data/delightful/recipes/food/cooking/glow_jam_jar.json
+d1482bacab79d365f56397e95046f1634cfa997d data/delightful/recipes/food/cooking/jam_jar.json
 08500e48997950e03ec99e3015a141000ff5afd4 data/delightful/recipes/food/cooking/nut_butter_bottle.json
 b57570b06b306e19aa181b259554f8790d74116f data/delightful/recipes/food/cooking/nut_milk.json
 7929dbfbb2c7919471522340fad0d0de6765bb54 data/delightful/recipes/food/cooking/rock_candy.json
