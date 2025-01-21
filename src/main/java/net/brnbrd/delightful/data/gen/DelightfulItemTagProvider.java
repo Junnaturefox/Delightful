@@ -398,6 +398,9 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addOptionalTag(Util.rl(Util.LOADER, "jam_bottles"))
 				.addOptionalTag(Util.rl(Mods.WB, "berry_jams"))
 				.addOptionalTag(Util.rl(Mods.VD, "sweet_jam_bottles"))
+				.addOptional(Util.rl(Mods.BC, "sweet_berry_jam"))
+				.addOptional(Util.rl(Mods.BC, "glow_berry_marmalade"))
+				.addOptional(Util.rl(Mods.BC, "apple_jelly"))
 				.addOptional(Util.rl("upgrade_aquatic", "mulberry_jam_bottle"));
 		this.tag(DelightfulItemTags.PEANUT_BUTTER)
 				.addOptional(Util.rl("thermal", "peanut_butter"))
@@ -425,7 +428,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addOptional(Util.rl("finsandtails", "white_bull_crab_claw"));
 		this.tag(DelightfulItemTags.CHEESE)
 				.addOptionalTag(Util.rl(Util.LOADER, "cheeses"))
-				.addOptional(Util.rl("brewinandchewin", "flaxen_cheese_wedge"))
+				.addOptional(Util.rl(Mods.BC, "flaxen_cheese_wedge"))
 				.addOptional(Util.rl("farmlife", "tribull_cheese_wedge"))
 				.addOptional(Util.rl("croptopia", "cheese"))
 				.addOptional(Util.rl("thermal", "cheese_wedge"))

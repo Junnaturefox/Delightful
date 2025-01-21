@@ -9,6 +9,6 @@ public class JamJarItem extends DConsumableItem {
 
 	@Override
 	public String[] getConflicts() {
-		return new String[]{Mods.FRD};
+		return new String[]{Mods.BC, Mods.FRD};
 	}
 }

@@ -19,6 +19,18 @@
       "required": false
     },
     {
+      "id": "brewinandchewin:sweet_berry_jam",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:glow_berry_marmalade",
+      "required": false
+    },
+    {
+      "id": "brewinandchewin:apple_jelly",
+      "required": false
+    },
+    {
       "id": "upgrade_aquatic:mulberry_jam_bottle",
       "required": false
     }

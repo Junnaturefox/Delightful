@@ -21,6 +21,7 @@ public class Mods {
 	public static final String AND = "arsdelight";
 	public static final String AS = "appleskin";
 	public static final String BB = "buzzier_bees";
+	public static final String BC = "brewinandchewin";
 	public static final String BOP = "biomesoplenty";
 	public static final String BTA = "botania";
 	public static final String BWG = "biomeswevegone";
