@@ -10,11 +10,8 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.ItemStack;
 import java.util.Iterator;
-import java.util.UUID;
 
 public class ZaniteKnifeItem extends AetherKnifeItem {
-	private final UUID DAMAGE = UUID.fromString("CAE1DE8D-8A7F-4391-B6BD-C060B1DD49C5");
-
 	public ZaniteKnifeItem(Properties properties) {
 		super(DelightfulItemTags.GEMS_ZANITE, DelightfulTiers.ZANITE, properties);
 	}
@@ -25,8 +22,8 @@ public class ZaniteKnifeItem extends AetherKnifeItem {
 		ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
 		if (this.enabled() && slot == EquipmentSlot.MAINHAND) {
 			builder.putAll(map);
-			builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(DAMAGE,
-					"Damage modifier", calculateIncrease(map, stack), AttributeModifier.Operation.ADDITION));
+			builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID,
+					"Attack damage modifier", calculateIncrease(map, stack), AttributeModifier.Operation.ADDITION));
 			return builder.build();
 		}
 		return map;

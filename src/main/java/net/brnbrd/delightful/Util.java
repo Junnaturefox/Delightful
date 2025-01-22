@@ -33,11 +33,14 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import java.util.List;
 import java.util.Objects;
+import java.util.UUID;
 import java.util.function.Supplier;
 
 public class Util {
 
 	public static final String LOADER = "forge";
+	public static final UUID BLOCK_REACH = UUID.fromString("C18598A9-F66A-44E7-9CE1-99B1EE178678");
+	public static final UUID ENTITY_REACH = UUID.fromString("61F992E6-276F-4D2B-88A7-823CB64BA459");
 
 	public static ResourceLocation rl(String modid, String path) {
 		return new ResourceLocation(modid, path);

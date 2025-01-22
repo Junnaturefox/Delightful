@@ -95,7 +95,9 @@ public class DelightfulKnifeItem extends KnifeItem implements IConfigured {
 		Lazy<Multimap<Attribute, AttributeModifier>> additional = this.getModifiers(slot, stack);
 		if (this.enabled() && slot == EquipmentSlot.MAINHAND && additional != null) {
 			ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
+			if (!mods.isEmpty()) {
 			builder.putAll(mods);
+			}
 			builder.putAll(additional.get());
 			return builder.build();
 		}
