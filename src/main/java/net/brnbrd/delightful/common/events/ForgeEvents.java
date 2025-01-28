@@ -1,11 +1,11 @@
 package net.brnbrd.delightful.common.events;
 
-import net.brnbrd.delightful.Delightful;
 import net.brnbrd.delightful.Util;
 import net.brnbrd.delightful.common.block.DelightfulBlocks;
 import net.brnbrd.delightful.common.block.SlicedGourdBlock;
 import net.brnbrd.delightful.common.block.SlicedMelonBlock;
 import net.brnbrd.delightful.common.item.DelightfulItems;
+import net.brnbrd.delightful.compat.BrewinChewinCompat;
 import net.brnbrd.delightful.compat.CasualnessDelightCompat;
 import net.brnbrd.delightful.compat.Mods;
 import net.brnbrd.delightful.data.tags.DelightfulItemTags;
@@ -15,6 +15,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -31,7 +32,6 @@ import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.MissingMappingsEvent;
 import vectorwing.farmersdelight.common.tag.ForgeTags;
 import java.util.List;
 import java.util.Objects;
@@ -39,35 +39,25 @@ import java.util.Objects;
 public class ForgeEvents {
 
 	@SubscribeEvent
-	void onEatRotten(LivingEntityUseItemEvent.Finish e) {
-		if (
-			e.getResult() != Event.Result.DENY &&
-			Mods.loaded(Mods.CAD) &&
-			e.getItem().is(DelightfulItemTags.ROTTEN) &&
-			e.getEntity().getRandom().nextBoolean() // 50% chance
-		) {
-			MobEffect rotten = CasualnessDelightCompat.getRotten();
-			if (rotten != null) {
-				int duration = 160;
-				if (e.getItem().is(Util.item(Mods.RL, "rotten_chunk"))) {
-					duration = 1800;
-				}
-				Util.addEffect(e.getEntity(), rotten, duration, 0);
-			}
-		}
-	}
-
-	@SubscribeEvent
-	public static void onMissingMappings(MissingMappingsEvent e) {
-		if (e.getRegistry() == ForgeRegistries.ITEMS) {
-			for (var map : e.getMappings(ForgeRegistries.ITEMS.getRegistryKey(), Delightful.MODID)) {
-				var remap = Util.rl(map.getKey().getNamespace(), map.getKey().getPath()
-						.replace("jelly_bottle", "jam_jar")
-						.replace("jelly", "jam"));
-				if (ForgeRegistries.ITEMS.containsKey(remap)) {
-					map.remap(ForgeRegistries.ITEMS.getValue(remap));
-				} else {
-					map.warn();
+	void onEatEffectProvider(LivingEntityUseItemEvent.Finish e) {
+		if (e.getResult() != Event.Result.DENY) {
+			if (
+				Mods.loaded(Mods.BG) && // Berry Good loaded
+				Util.itemStackIs(e.getItem(), BrewinChewinCompat.glowMarmalade) // Brewin' & Chewin' item exists
+			) {
+				Util.addEffect(e.getEntity(), MobEffects.GLOWING, 3000, 0);
+			} else if (
+				Mods.loaded(Mods.CAD) &&
+				e.getItem().is(DelightfulItemTags.ROTTEN) &&
+				e.getEntity().getRandom().nextBoolean() // 50% chance
+			) {
+				MobEffect rotten = CasualnessDelightCompat.getRotten();
+				if (rotten != null) {
+					int duration = 160;
+					if (e.getItem().is(Util.item(Mods.RL, "rotten_chunk"))) {
+						duration = 1800;
+					}
+					Util.addEffect(e.getEntity(), rotten, duration, 0);
 				}
 			}
 		}

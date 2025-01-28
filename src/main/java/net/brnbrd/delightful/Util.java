@@ -93,6 +93,10 @@ public class Util {
 		return with(before, addition, 1);
 	}
 
+	public static boolean itemExists(ResourceLocation location) {
+		return ForgeRegistries.ITEMS.containsKey(location);
+	}
+
 	@Nullable
 	public static Item item(ResourceLocation rl) {
 		return ForgeRegistries.ITEMS.getValue(rl);
@@ -104,13 +108,30 @@ public class Util {
 	}
 
 	@NotNull
-	public static Item item(ResourceLocation rl, @NotNull Item backup) {
-		return ForgeRegistries.ITEMS.containsKey(rl) ? Objects.requireNonNull(item(rl)) : backup;
+	public static Item item(ResourceLocation location, @NotNull Item backup) {
+		return itemExists(location) ? Objects.requireNonNull(item(location)) : backup;
 	}
 
 	@NotNull
-	public static Item item(ResourceLocation rl, @NotNull Supplier<Item> backup) {
-		return item(rl, backup.get());
+	public static Item item(ResourceLocation location, @NotNull Supplier<Item> backup) {
+		return item(location, backup.get());
+	}
+
+	@NotNull
+	public static ItemStack itemStack(ResourceLocation location, @NotNull ItemStack backup) {
+		return (
+			itemExists(location) ?
+			new ItemStack(Objects.requireNonNull(item(location))) :
+			backup
+		);
+	}
+
+	public static boolean itemStackIs(ItemStack stack, ResourceLocation location) {
+		return (
+			Mods.loaded(location.getNamespace()) &&
+			itemExists(location) &&
+			stack.is(item(location))
+		);
 	}
 
 	@Nullable
@@ -138,10 +159,9 @@ public class Util {
 	}
 
 	public static void addEffect(LivingEntity entity, @Nullable MobEffect effect, int duration, int amp) {
-		if (effect == null) {
-			return;
+		if (effect != null) {
+			entity.addEffect(new MobEffectInstance(effect, duration, amp));
 		}
-		entity.addEffect(new MobEffectInstance(effect, duration, amp));
 	}
 
 	public static void addEffect(LivingEntity entity, String modid, String name, int duration, int amp, MobEffect... backup) {
