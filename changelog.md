@@ -4,7 +4,13 @@
 # 3.6.3
 
 ### Updates
+- Added "Delightful Overhauls" built-in resource pack (16x)
+  - Retextures of supported items from other mods in a Farmer's Delight style
+  - Appears in Resource Pack selection page, disabled by default
+- Added Aluminum Knife (fix [#106](https://github.com/brnbrd/Delightful/issues/106))
 - Added Pearlescent Knife (for [Unusual End](https://www.curseforge.com/minecraft/mc-mods/unusual-end))
+- Placeable Chorus Pie, added Chorus Pie Slice and Chorus Muffin (for Unusual End)
+  - Recommended with Delightful Overhauls resource pack enabled
 - Can scavenge Ham from Naturalist's Boars (and any entity tagged "delightful:drops_ham")
 
 

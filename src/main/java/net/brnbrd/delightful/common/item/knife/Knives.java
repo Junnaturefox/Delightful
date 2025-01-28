@@ -70,6 +70,7 @@ public class Knives extends DelightfulItems {
 	public static final RegistryObject<Item> TIN = registerIngotKnife("tin");
 	public static final RegistryObject<Item> STEEL = registerIngotKnife("steel");
 	public static final RegistryObject<Item> SILVER = registerIngotKnife("silver");
+	public static final RegistryObject<Item> ALUMINUM = registerIngotKnife("aluminum");
 	public static final RegistryObject<Item> BRASS = registerIngotKnife("brass");
 	public static final RegistryObject<Item> BRONZE = registerIngotKnife("bronze");
 	public static final RegistryObject<Item> CONSTANTAN = registerIngotKnife("constantan");
