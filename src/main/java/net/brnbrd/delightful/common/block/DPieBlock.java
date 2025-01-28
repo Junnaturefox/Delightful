@@ -1,5 +1,6 @@
 package net.brnbrd.delightful.common.block;
 
+import net.brnbrd.delightful.Util;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Player;
@@ -26,17 +27,11 @@ public class DPieBlock extends PieBlock {
 
 	@Override
 	public @NotNull Item asItem() {
-		if (ForgeRegistries.ITEMS.containsKey(this.pie)) {
-			return Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(this.pie));
-		}
-		return super.asItem();
+		return Util.item(this.pie, super.asItem());
 	}
 
 	public @NotNull ItemStack getStack() {
-		if (ForgeRegistries.ITEMS.containsKey(this.pie)) {
-			return new ItemStack(this.asItem());
-		}
-		return ItemStack.EMPTY;
+		return Util.itemStack(this.pie, ItemStack.EMPTY);
 	}
 
 	@Override

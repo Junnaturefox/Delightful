@@ -37,7 +37,11 @@ public class DelightfulItemTags {
 	// Minecraft
 	public static final TagKey<Item> FLOWERS_AZALEA = Util.it("minecraft", "flowers/azalea");
 
-	// Forge
+	// Farmers Delight
+	public static final TagKey<Item> CABINETS_STONE = Util.it(FarmersDelight.MODID, "cabinets/stone");
+	public static final TagKey<Item> STRAW_PLANTS = Util.it(FarmersDelight.MODID, "straw_plants");
+
+	// Fruits
 	public static final TagKey<Item> FRUITS = forge("fruits");
 	public static final TagKey<Item> FRUITS_APPLE = forge("fruits/apple");
 	public static final TagKey<Item> FRUITS_KIWI = forge("fruits/kiwi");
@@ -83,14 +87,15 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> FRUITS_SWEET = forge("fruits/sweet");
 	public static final TagKey<Item> FRUITS_PRICKLY_PEAR = forge("fruits/prickly_pear");
 	public static final TagKey<Item> FRUITS_CITRUS = forge("fruits/citrus");
+
+	// Vegetables
+	public static final TagKey<Item> VEGETABLES_SPICY = forge("vegetables/spicy");
 	public static final TagKey<Item> VEGETABLES_CORN = forge("vegetables/corn");
 	public static final TagKey<Item> VEGETABLES_GINGER = forge("vegetables/ginger");
 	public static final TagKey<Item> VEGETABLES_CUCUMBER = forge("vegetables/cucumber");
 	public static final TagKey<Item> CUCUMBER = forge("cucumber");
-	public static final TagKey<Item> VEGETABLES_SPICY = forge("vegetables/spicy");
-	public static final TagKey<Item> CROPS_CARROT = forge("crops/carrot");
-	public static final TagKey<Item> CROPS_BEETROOT = forge("crops/beetroot");
-	public static final TagKey<Item> CROPS_GINGER = forge("crops/ginger");
+
+	// Forge
 	public static final TagKey<Item> HOT_SPICE = forge("hot_spice");
 	public static final TagKey<Item> PUMPKINS = forge("pumpkins");
 	public static final TagKey<Item> PUMPKINS_CARVED = forge("pumpkins/carved");
@@ -164,10 +169,6 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> ROPES = forge("ropes");
 	public static final TagKey<Item> FEATHERS = forge("feathers");
 	public static final TagKey<Item> SNAIL_SHELLS = forge("snail_shells");
-
-	// Farmers Delight
-	public static final TagKey<Item> CABINETS_STONE = Util.it(FarmersDelight.MODID, "cabinets/stone");
-	public static final TagKey<Item> STRAW_PLANTS = Util.it(FarmersDelight.MODID, "straw_plants");
 
 	// Forbidden and Arcanus
 	public static final TagKey<Item> DRAGON_SCALE = Util.it("forbidden_arcanus", "dragon_scale");

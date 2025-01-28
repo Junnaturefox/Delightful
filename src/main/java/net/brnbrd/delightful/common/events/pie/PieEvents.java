@@ -32,14 +32,14 @@ public class PieEvents {
 	void onPieTooltip(ItemTooltipEvent e) {
 		ItemStack stack = e.getItemStack();
 		if (
-				(stack.getItem() instanceof BlockItem b && b.getBlock() instanceof PieBlock) ||
-						Pies.enabled(stack) ||
-						isBerryPieOrMuffin(stack)
+			(stack.getItem() instanceof BlockItem b && b.getBlock() instanceof PieBlock) ||
+			Pies.enabled(stack) ||
+			isBerryPieOrMuffin(stack)
 		) {
 			e.getToolTip().add(
-					Component.translatable(Delightful.MODID + ".placeable.desc")
-							.withStyle(ChatFormatting.DARK_GRAY)
-							.withStyle(ChatFormatting.ITALIC)
+				Component.translatable(Delightful.MODID + ".placeable.desc")
+					.withStyle(ChatFormatting.DARK_GRAY)
+					.withStyle(ChatFormatting.ITALIC)
 			);
 		}
 	}
@@ -57,17 +57,17 @@ public class PieEvents {
 	@SubscribeEvent
 	void onPieOverhaul(PlayerInteractEvent.RightClickBlock e) {
 		if (
-				Pies.enabled(e.getItemStack()) &&
-						!e.getLevel().getBlockState(e.getHitVec().getBlockPos()).is(ModBlocks.CUTTING_BOARD.get()) &&
-						!e.isCanceled()
+			Pies.enabled(e.getItemStack()) &&
+			!e.getLevel().getBlockState(e.getHitVec().getBlockPos()).is(ModBlocks.CUTTING_BOARD.get()) &&
+			!e.isCanceled()
 		) {
 			PieBlock pie = Pies.get(e.getItemStack());
 			if (pie != null) {
 				InteractionResult place = placePie(pie, new BlockPlaceContext(
-						e.getEntity(),
-						e.getHand(),
-						e.getItemStack(),
-						e.getHitVec()
+					e.getEntity(),
+					e.getHand(),
+					e.getItemStack(),
+					e.getHitVec()
 				));
 				if (place.consumesAction()) {
 					e.setUseItem(Event.Result.DENY);
@@ -114,19 +114,18 @@ public class PieEvents {
 		Player player = pContext.getPlayer();
 		CollisionContext collisioncontext = player == null ? CollisionContext.empty() : CollisionContext.of(player);
 		return (
-				pState.canSurvive(pContext.getLevel(), pContext.getClickedPos()) &&
-						pContext.getLevel().isUnobstructed(pState, pContext.getClickedPos(), collisioncontext)
+			pState.canSurvive(pContext.getLevel(), pContext.getClickedPos()) &&
+			pContext.getLevel().isUnobstructed(pState, pContext.getClickedPos(), collisioncontext)
 		);
 	}
 
 	// Wild Berries compat
 	boolean isBerryPieOrMuffin(ItemStack stack) {
 		return (
-				Mods.loaded(Mods.WB) &&
-						(
-								stack.is(Util.it(Mods.WB, "berry_pies")) ||
-										stack.is(Util.it(Mods.WB, "berry_muffins"))
-						)
+			Mods.loaded(Mods.WB) && (
+				stack.is(Util.it(Mods.WB, "berry_pies")) ||
+				stack.is(Util.it(Mods.WB, "berry_muffins"))
+			)
 		);
 	}
 }

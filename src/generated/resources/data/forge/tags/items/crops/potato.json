@@ -1,11 +1,11 @@
 {
   "values": [
     {
-      "id": "biomeswevegone:oddion_bulb",
+      "id": "moredelight:diced_potatoes",
       "required": false
     },
     {
-      "id": "some_assembly_required:sliced_onion",
+      "id": "casualness_delight:potato_slice",
       "required": false
     }
   ]

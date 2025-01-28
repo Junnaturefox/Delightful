@@ -1,8 +1,5 @@
 {
   "values": [
-    {
-      "id": "some_assembly_required:chopped_beetroot",
-      "required": false
-    }
+    "#forge:crops/beetroot"
   ]
 }

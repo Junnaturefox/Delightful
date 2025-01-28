@@ -1,9 +1,5 @@
 {
   "values": [
-    "#forge:crops/onion",
-    {
-      "id": "some_assembly_required:sliced_onion",
-      "required": false
-    }
+    "#forge:crops/onion"
   ]
 }

@@ -21,6 +21,7 @@ public enum DelightfulTiers implements Tier {
 	BRASS(2, 484, 6F, 2.5F, 16, DelightfulItems.getIngot("brass")),
 	ENDERITE(5, 2401, 10F, 5F, 15, DelightfulItems.getIngot("enderite")),
 	OBSIDIAN_INFUSED_ENDERITE(5, 2771, 11F, 6F, 15, DelightfulItems.getIngot("obsidian_infused_enderite")),
+	ALUMINUM(2, 220, 6F, 2F, 22, DelightfulItems.getIngot("aluminum")),
 	BRONZE(2, 375, 3F, 2F, 10, DelightfulItems.getIngot("bronze")),
 	OSMIUM(3, 1024, 4F, 4F, 14, DelightfulItems.getIngot("osmium")),
 	REFINED_GLOWSTONE(2, 384, 15F, 2F, 20, DelightfulItems.getIngot("refined_glowstone")),

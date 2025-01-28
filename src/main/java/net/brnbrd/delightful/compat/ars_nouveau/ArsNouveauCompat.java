@@ -8,7 +8,6 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 
 public class ArsNouveauCompat {
-
 	public static MobEffect getManaRegen() {
 		return Util.effect(Mods.AN, "mana_regen", MobEffects.ABSORPTION);
 	}
@@ -16,10 +15,6 @@ public class ArsNouveauCompat {
 	public static final FoodProperties SOURCE_BERRY_PIE_SLICE = (new FoodProperties.Builder())
 			.nutrition(3).saturationMod(0.3F).fast()
 			.effect(() -> new MobEffectInstance(getManaRegen(), 200, 1), 1.0F).build();
-
-	public static final FoodProperties SOURCE_BERRY_CAKE_SLICE = (new FoodProperties.Builder())
-			.nutrition(3).saturationMod(0.3F).fast()
-			.effect(() -> new MobEffectInstance(getManaRegen(), 300, 0), 1.0F).build();
 
 	public static final FoodProperties SOURCE_BERRY_COOKIE = (new FoodProperties.Builder())
 			.nutrition(2).saturationMod(0.1F).fast()
@@ -36,5 +31,4 @@ public class ArsNouveauCompat {
 	public static final FoodProperties SOURCE_BERRY_GUMMY = (new FoodProperties.Builder())
 			.nutrition(2).saturationMod(0.0F).alwaysEat()
 			.effect(() -> new MobEffectInstance(getManaRegen(), 80, 2), 1.0F).build();
-
 }

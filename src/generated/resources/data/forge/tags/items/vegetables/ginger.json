@@ -1,5 +1,8 @@
 {
   "values": [
-    "#forge:crops/ginger"
+    {
+      "id": "snowyspirit:ginger",
+      "required": false
+    }
   ]
 }

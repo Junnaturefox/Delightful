@@ -55,8 +55,8 @@ public class JEIPlugin implements IModPlugin {
 		this.hide(hidden, "cratedelight", "sugar_bag", Mods.SUP);
 		this.hide(hidden, "cratedelight", "cod_crate", Mods.CRAB);
 		this.hide(hidden, "cratedelight", "salmon_crate", Mods.CRAB);
-		this.hide(hidden, "cratedelight", "berry_crate", "berry_good");
-		this.hide(hidden, "cratedelight", "glowberry_crate", "berry_good");
+		this.hide(hidden, "cratedelight", "berry_crate", Mods.BG);
+		this.hide(hidden, "cratedelight", "glowberry_crate", Mods.BG);
 
 		// Other
 		this.hide(hidden, Mods.AA, "honeyed_apple", Mods.BB);
