@@ -8,8 +8,8 @@
     "delightful:raw_goat",
     "delightful:cooked_goat",
     "delightful:compat/straw",
-    "delightful:compat/acorn_from_squirrel",
     "delightful:compat/acorn_block",
+    "delightful:compat/scavenging_acorn",
     "delightful:compat/scavenging_ham",
     "delightful:compat/scavenging_smoked_ham"
   ],
