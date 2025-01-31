@@ -153,8 +153,6 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> GEMS_ZANITE = forge("gems/zanite");
 	public static final TagKey<Item> INGOTS_STEEL = DelightfulItems.ingot("steel");
 	public static final TagKey<Item> INGOTS_ZINC = DelightfulItems.ingot("zinc");
-	public static final TagKey<Item> TOOLS_SCAVENGING = forge("tools/scavenging");
-	public static final TagKey<Item> TOOLS_MACHETES = forge("tools/machetes");
 	public static final TagKey<Item> SEEDS_SALMONBERRY = forge("seeds/salmonberry");
 	public static final TagKey<Item> SEEDS_CANTALOUPE = forge("seeds/cantaloupe");
 	public static final TagKey<Item> BONES = forge("bones");

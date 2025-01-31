@@ -12,7 +12,7 @@
     {
       "condition": "minecraft:match_tool",
       "predicate": {
-        "tag": "forge:tools/scavenging"
+        "tag": "forge:tools/knives"
       }
     },
     {

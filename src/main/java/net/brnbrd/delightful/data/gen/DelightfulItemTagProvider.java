@@ -383,11 +383,6 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 		this.tag(DelightfulItemTags.BREAD_OR_BUN)
 			.addTag(ForgeTags.BREAD)
 			.addTag(DelightfulItemTags.BURGER_BUN);
-		this.tag(DelightfulItemTags.TOOLS_MACHETES)
-			.addOptionalTag(Util.rl(Mods.ND, "tools/machetes"));
-		this.tag(DelightfulItemTags.TOOLS_SCAVENGING)
-			.addTag(ForgeTags.TOOLS_KNIVES)
-			.addOptionalTag(Util.rl(Mods.ND, "scavenging_tools"));
 		this.tag(DelightfulItemTags.HOT_SPICE)
 				.add(Items.BLAZE_POWDER)
 				.addTag(DelightfulItemTags.VEGETABLES_SPICY)
