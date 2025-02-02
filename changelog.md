@@ -12,6 +12,12 @@
 - Placeable Chorus Pie, added Chorus Pie Slice and Chorus Muffin (for Unusual End)
   - Recommended with Delightful Overhauls resource pack enabled
 - Can scavenge Ham from Naturalist's Boars (and any entity tagged "delightful:drops_ham")
+- Removed support for "forge:tools/scavenging" tag
+- Added recipe for cutting Ecologics' Coconut Husk into Straw
+
+### Fixes
+- Stews must be cooked in a Cooking Pot
+- Fixed Ecologics cooking recipe container issues
 
 
 # 3.6.2
