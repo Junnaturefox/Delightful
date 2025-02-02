@@ -431,6 +431,13 @@ configBackground="farmersdelight:textures/block/tatami_mat_half.png"
     side="BOTH"
 
 [[dependencies.delightful]]
+    modId="ecologics"
+    mandatory=false
+    versionRange="[2.2,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.delightful]]
     modId="botanypots"
     mandatory=false
     versionRange="[13,)"
