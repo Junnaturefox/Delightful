@@ -47,10 +47,6 @@
             "type": "forge:tag_empty",
             "tag": "forge:nuts"
           }
-        },
-        {
-          "type": "forge:tag_empty",
-          "tag": "forge:bread_slices"
         }
       ]
     }

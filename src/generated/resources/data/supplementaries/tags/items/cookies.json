@@ -1,7 +1,6 @@
 {
   "values": [
     "#forge:cookies",
-    "#forge:bread_slices",
     {
       "id": "culturaldelights:tortilla_chips",
       "required": false

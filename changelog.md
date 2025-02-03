@@ -14,6 +14,7 @@
 - Can scavenge Ham from Naturalist's Boars (and any entity tagged "delightful:drops_ham")
 - Removed support for "forge:tools/scavenging" tag
 - Added recipe for cutting Ecologics' Coconut Husk into Straw
+- Slightly increased nutrition and saturation of Slice of Baklava
 
 ### Fixes
 - Stews must be cooked in a Cooking Pot

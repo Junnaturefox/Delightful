@@ -6,10 +6,6 @@
         {
           "type": "forge:item_exists",
           "item": "culturaldelights:mutton_sandwich"
-        },
-        {
-          "type": "forge:tag_empty",
-          "tag": "forge:bread_slices"
         }
       ],
       "recipe": {
@@ -27,45 +23,6 @@
           },
           {
             "tag": "forge:vegetables/beetroot"
-          }
-        ],
-        "result": {
-          "item": "culturaldelights:mutton_sandwich"
-        }
-      }
-    },
-    {
-      "conditions": [
-        {
-          "type": "forge:item_exists",
-          "item": "culturaldelights:mutton_sandwich"
-        },
-        {
-          "type": "forge:not",
-          "value": {
-            "type": "forge:tag_empty",
-            "tag": "forge:bread_slices"
-          }
-        }
-      ],
-      "recipe": {
-        "type": "minecraft:crafting_shapeless",
-        "category": "misc",
-        "ingredients": [
-          {
-            "tag": "forge:bread_slices"
-          },
-          {
-            "tag": "forge:cooked_mutton"
-          },
-          {
-            "tag": "forge:cooked_eggs"
-          },
-          {
-            "tag": "forge:vegetables/beetroot"
-          },
-          {
-            "tag": "forge:bread_slices"
           }
         ],
         "result": {

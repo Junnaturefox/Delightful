@@ -369,15 +369,6 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 			.addOptional(Util.rl("hauntedharvest", "cornbread"));
 		this.tag(ForgeTags.BREAD)
 			.addTag(DelightfulItemTags.BREAD_CORN);
-		this.tag(DelightfulItemTags.BREAD_SLICES_TOASTED)
-			.addOptional(Util.rl(Mods.SAS, "toasted_bread_slice"))
-			.addOptional(Util.rl(Mods.MOD, "toast"));
-		this.tag(DelightfulItemTags.BREAD_SLICES)
-			.addTag(DelightfulItemTags.BREAD_SLICES_TOASTED)
-			.addOptional(Util.rl(Mods.SAS, "bread_slice"))
-			.addOptional(Util.rl(Mods.MOD, "bread_slice"));
-		this.tag(Util.it(Mods.SAS, "sandwich_bread"))
-			.addTag(DelightfulItemTags.BREAD_SLICES);
 		this.tag(DelightfulItemTags.BURGER_BUN)
 			.addOptional(Util.rl(Mods.SAS, "burger_bun"));
 		this.tag(DelightfulItemTags.BREAD_OR_BUN)
@@ -654,7 +645,6 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 				.addOptional(Util.rl("snowyspirit", "gingerbread_cookie"));
 		this.tag(Util.it(Mods.SUP, "cookies"))
 				.addTag(DelightfulItemTags.COOKIES)
-				.addTag(DelightfulItemTags.BREAD_SLICES)
 				.addOptional(Util.rl(Mods.CD, "tortilla_chips"))
 				.addOptional(Util.rl("corn_delight", "tortilla_chip"));
 		this.tag(DelightfulItemTags.ROPES)

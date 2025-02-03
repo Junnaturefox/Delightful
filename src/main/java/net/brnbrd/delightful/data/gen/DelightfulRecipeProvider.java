@@ -74,14 +74,7 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
 						.requires(DelightfulItemTags.NUT_BUTTER)
 						.requires(DelightfulItemTags.JAMS)
 						.unlockedBy("has_nut_butter", has(DelightfulItems.NUT_BUTTER_BOTTLE.get())),
-				"food/nut_butter_and_jam_sandwich", finished, enabled("nut_butter_and_jam_sandwich"), not(tagEmpty(DelightfulItemTags.NUTS)), tagEmpty(DelightfulItemTags.BREAD_SLICES));
-		wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DelightfulItems.NUT_BUTTER_AND_JAM_SANDWICH.get())
-						.requires(DelightfulItemTags.BREAD_SLICES)
-						.requires(DelightfulItemTags.NUT_BUTTER)
-						.requires(DelightfulItemTags.JAMS)
-						.requires(DelightfulItemTags.BREAD_SLICES)
-						.unlockedBy("has_nut_butter", has(DelightfulItems.NUT_BUTTER_BOTTLE.get())),
-				"food/nut_butter_and_jam_sandwich_from_bread_slice", finished, enabled("nut_butter_and_jam_sandwich"), not(tagEmpty(DelightfulItemTags.NUTS)), not(tagEmpty(DelightfulItemTags.BREAD_SLICES)));
+				"food/nut_butter_and_jam_sandwich", finished, enabled(DelightfulItems.NUT_BUTTER_AND_JAM_SANDWICH), not(tagEmpty(DelightfulItemTags.NUTS)));
 		wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DelightfulItems.CHEESEBURGER.get())
 						.requires(ForgeTags.BREAD)
 						.requires(ModItems.BEEF_PATTY.get())
@@ -90,7 +83,7 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
 						.requires(ForgeTags.VEGETABLES_TOMATO)
 						.requires(ForgeTags.VEGETABLES_ONION)
 						.unlockedBy("has_cheese", has(DelightfulItemTags.CHEESE)),
-				"food/cheeseburger", finished, enabled("cheeseburger"), tagEmpty(DelightfulItemTags.BURGER_BUN), not(tagEmpty(DelightfulItemTags.CHEESE)), not(modLoaded(Mods.VD)));
+				"food/cheeseburger", finished, enabled(DelightfulItems.CHEESEBURGER), tagEmpty(DelightfulItemTags.BURGER_BUN), not(tagEmpty(DelightfulItemTags.CHEESE)), not(modLoaded(Mods.VD)));
 		wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DelightfulItems.CHEESEBURGER.get())
 						.requires(ForgeTags.BREAD)
 						.requires(ModItems.BEEF_PATTY.get())

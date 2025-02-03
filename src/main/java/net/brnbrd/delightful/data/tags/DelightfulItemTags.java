@@ -159,8 +159,6 @@ public class DelightfulItemTags {
 	public static final TagKey<Item> DOUGH_CORN = forge("dough/corn");
 	public static final TagKey<Item> DOUGH_NUT = forge("dough/nut");
 	public static final TagKey<Item> BREAD_CORN = forge("bread/corn");
-	public static final TagKey<Item> BREAD_SLICES = forge("bread_slices");
-	public static final TagKey<Item> BREAD_SLICES_TOASTED = forge("bread_slices/toasted");
 	public static final TagKey<Item> BURGER_BUN = forge("burger_bun");
 	public static final TagKey<Item> BREAD_OR_BUN = forge("bread_or_bun");
 	public static final TagKey<Item> COOKIES = forge("cookies");
