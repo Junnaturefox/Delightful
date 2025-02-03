@@ -155,6 +155,9 @@ public class Nutrition {
 	public static final FoodProperties SALMONBERRY_PIE_SLICE = (new FoodProperties.Builder())
 			.nutrition(3).saturationMod(0.3F).fast()
 			.effect(() -> new MobEffectInstance(MobEffects.WATER_BREATHING, 600, 0), 1.0F).build();
+	public static final FoodProperties BAKLAVA_SLICE = (new FoodProperties.Builder())
+		.nutrition(5).saturationMod(0.4F).fast()
+		.effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 600, 0, false, false), 1.0F).build();
 	public static final FoodProperties SALMONBERRY_GUMMY = (new FoodProperties.Builder())
 			.nutrition(2).saturationMod(0.0F).alwaysEat()
 			.effect(() -> new MobEffectInstance(MobEffects.WATER_BREATHING, 400, 0), 1.0F).build();
@@ -164,7 +167,4 @@ public class Nutrition {
 	public static final FoodProperties CANTALOUPE_GUMMY = (new FoodProperties.Builder())
 			.nutrition(2).saturationMod(0.0F).alwaysEat()
 			.effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 300, 1), 1.0F).build();
-	public static final FoodProperties BAKLAVA_SLICE = (new FoodProperties.Builder())
-			.nutrition(4).saturationMod(0.35F).fast()
-			.effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 600, 0, false, false), 1.0F).build();
 }
