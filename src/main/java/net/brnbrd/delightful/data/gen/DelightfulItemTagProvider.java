@@ -348,7 +348,7 @@ public class DelightfulItemTagProvider extends ItemTagsProvider {
 			.addOptional(Util.rl(Mods.Q, "egg_parrot_blue"))
 			.addOptional(Util.rl(Mods.Q, "egg_parrot_green"))
 			.addOptional(Util.rl(Mods.Q, "egg_parrot_yellow_blue"))
-			.addOptional(Util.rl(Mods.Q, "egg_parrot_grey"))
+			.addOptional(Util.rl(Mods.Q, "egg_parrot_gray"))
 			.addOptional(Util.rl("autumnity", "turkey_egg"))
 			.addOptional(Util.rl("deep_aether", "quail_egg"))
 			.addOptional(Util.rl("farmlife", "galliraptor_egg"))
