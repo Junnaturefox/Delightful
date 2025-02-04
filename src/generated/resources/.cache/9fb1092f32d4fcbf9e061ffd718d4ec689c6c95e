@@ -1,4 +1,4 @@
-// 1.20.1	2025-02-02T19:31:08.6845648	Recipes
+// 1.20.1	2025-02-04T12:14:13.6429651	Recipes
 6c217dd6477efa10f6042809ba959d53036ab5e2 data/delightful/advancements/recipes/cabinets/basalt_cabinet.json
 5b82f87851220644287d771121677deac66b3b89 data/delightful/advancements/recipes/cabinets/quartz_cabinet.json
 cf29033c1c919355c261025df529938e6ebc73f8 data/delightful/advancements/recipes/campfire/cactus_steak.json
@@ -141,13 +141,13 @@ d4e8be16b4790d9ade8903422ebeb7bc55fb6c75 data/delightful/recipes/campfire/marshm
 3bd2976855ebf31e14c8b97c0744642792559067 data/delightful/recipes/campfire/roasted_acorn.json
 320c77635e9f705d77357dab52286d99d03ae652 data/delightful/recipes/candle_from_animal_fat.json
 4ec6056e9ad24f7243ac486e7bada7834dbd1efb data/delightful/recipes/cantaloupe_seeds.json
-3969d709b683b3eabe48e75225a46529edfa71d4 data/delightful/recipes/cantaloupe_slice.json
+14da98cd0a18d17e8c2521f256950ff1cc78e259 data/delightful/recipes/cantaloupe_slice.json
 0ad070142d2c20cf6a500f88ba545b22206aabb8 data/delightful/recipes/cooking/animal_oil_bottle.json
 1b81cd56f336fdc01a31a5ca08a5ddfa8ae84e29 data/delightful/recipes/cooking/matcha_latte.json
 c92680cce5f1a7851ea35a25a9251e6401222767 data/delightful/recipes/cutting/baklava.json
 78f553a22ac586b5068eaa8153855233b416b4af data/delightful/recipes/cutting/cactus.json
 b1a086de89bbe413ddbc8ec067d97b06ab2e03b9 data/delightful/recipes/cutting/cactus_steak.json
-ef210c25b1a3d2453c0b37c587390bec5d6dadd0 data/delightful/recipes/cutting/cantaloupe.json
+e1775adbe96cf44d4fcf39ad8a1088bb4220cd62 data/delightful/recipes/cutting/cantaloupe.json
 6d83188833f8de6e476dff434874899ad77869fc data/delightful/recipes/cutting/clover.json
 3101fc62589432292872d0ff450c1d7c39c02cda data/delightful/recipes/cutting/cooked_venison.json
 0d1501a802294f211d78d43f092ba855aebd2884 data/delightful/recipes/cutting/green_tea_leaves.json
@@ -165,7 +165,7 @@ e6ca19c0b22ff461eb58cd4328081b7565eab70d data/delightful/recipes/cutting/makes_d
 1754315d89d59d82e2870ec3b78490c0c3a9637a data/delightful/recipes/cutting/makes_dye/red.json
 03b9473769dbc7bc453d83eaa3b67f0112cdad6c data/delightful/recipes/cutting/makes_dye/white.json
 00de56e2d1cfd807c2c9f2e5180623f9b028ff1a data/delightful/recipes/cutting/makes_dye/yellow.json
-170a8e1f1ce519b51ee4ecd9a1735441b4436724 data/delightful/recipes/cutting/mini_melon.json
+ea2e4b62b24148c28ef0dfb2395cc778edfcf3f2 data/delightful/recipes/cutting/mini_melon.json
 94844bad124bf4c999bd39f9e661e44611b2db92 data/delightful/recipes/cutting/pumpkin_pie.json
 832d880fed642035591f4f852fe5b567d88d99e9 data/delightful/recipes/cutting/raw_venison.json
 66c0e664acd6c60912d049d9269ea0d5dddf2e64 data/delightful/recipes/cutting/salmonberry_pie.json
@@ -277,7 +277,7 @@ cd26556190bd299d6095dc908cda31bf5a11f545 data/delightful/recipes/knives/valkyrum
 d73e5100c81bed00eecf31f246626afbcf72264a data/delightful/recipes/knives/zanite_knife.json
 44e61a6e83e524c89d38df100349f456ca1ab7e8 data/delightful/recipes/knives/zinc_knife.json
 af6edb1309726c7214a45b3eaffa220c1ee2c2de data/delightful/recipes/matcha_ice_cream_block.json
-8340a8ddfec0dad3ca187aa1e82ad2e55bdb3b68 data/delightful/recipes/melon_slice.json
+85b4ed09f830c75f0a764dcf18dd03db85e184c5 data/delightful/recipes/melon_slice.json
 4e812a491f65b5eebce1e7f5f7ee09f9aa1696d9 data/delightful/recipes/salmonberry_ice_cream_block.json
 130f19d2c12cf16147cbc8aebc0a845a45de6eae data/delightful/recipes/salmonberry_pips.json
 a729eab49381139e3010dfe3b99a8f13f0556962 data/delightful/recipes/smelting/cactus_steak.json

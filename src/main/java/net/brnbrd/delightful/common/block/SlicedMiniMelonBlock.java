@@ -35,8 +35,8 @@ import vectorwing.farmersdelight.common.tag.ForgeTags;
 import java.util.function.Supplier;
 
 public class SlicedMiniMelonBlock extends MelonBlock implements ISliceable {
-
-	public static final IntegerProperty BITES = IntegerProperty.create("bites", 1, 5);
+	public static final Integer MAX_BITES = 3;
+	public static final IntegerProperty BITES = IntegerProperty.create("bites", 1, MAX_BITES);
 	private final Supplier<Item> sliceItem;
 	private final Supplier<Item> juiceItem;
 
@@ -67,8 +67,18 @@ public class SlicedMiniMelonBlock extends MelonBlock implements ISliceable {
 	}
 
 	@Override
+	public int getMaxBites() {
+		return MAX_BITES;
+	}
+
+	@Override
 	public IntegerProperty getBitesProperty() {
 		return BITES;
+	}
+
+	@Override
+	public int getBaseHeight() {
+		return 10;
 	}
 
 	@Override
@@ -79,21 +89,6 @@ public class SlicedMiniMelonBlock extends MelonBlock implements ISliceable {
 	@Nullable
 	public ItemStack getJuiceItem() {
 		return new ItemStack(this.juiceItem.get());
-	}
-
-	@Override
-	public int getMaxBites() {
-		return 5;
-	}
-
-	@Override
-	public float getBaseHeight() {
-		return 9f;
-	}
-
-	@Override
-	public int getSliceSize() {
-		return 2;
 	}
 
 	@Override

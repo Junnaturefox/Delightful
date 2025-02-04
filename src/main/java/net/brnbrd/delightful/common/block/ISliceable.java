@@ -10,11 +10,32 @@ public interface ISliceable {
 
 	int getMaxBites();
 
-	int getSliceSize();
+	default int getBaseHeight() { // Height of block before first bite
+		return 16;
+	}
 
-	float getBaseHeight();
+	default int getFinalHeight() { // Height of sliced block with maximum bites taken (1 remaining)
+		return 1;
+	}
+
+	default int getSliceSize() {
+		return Math.round((float) (getBaseHeight() - getFinalHeight()) / getMaxBites());
+	}
+
+	default int getFirstBiteMod() {
+		return 0;
+	}
 
 	default float getHeight(int bites) {
-		return this.getBaseHeight() - ((bites - 1) * getSliceSize());
+		int height = getBaseHeight();
+		if (bites <= 0) {
+			return (float) height;
+		} else if (bites == getMaxBites()) {
+			return (float) getFinalHeight();
+		} else if (getFirstBiteMod() == 0) {
+			return (float) (height - (bites * getSliceSize()));
+		} else {
+			return (float) (height - getFirstBiteMod() - (bites * getSliceSize()));
+		}
 	}
 }

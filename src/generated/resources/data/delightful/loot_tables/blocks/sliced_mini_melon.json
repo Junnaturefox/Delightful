@@ -28,7 +28,7 @@
           "add": false,
           "count": {
             "type": "minecraft:uniform",
-            "max": 5.0,
+            "max": 3.0,
             "min": 1.0
           },
           "function": "minecraft:set_count"
@@ -58,66 +58,6 @@
           "add": false,
           "count": {
             "type": "minecraft:uniform",
-            "max": 4.0,
-            "min": 1.0
-          },
-          "function": "minecraft:set_count"
-        }
-      ],
-      "rolls": 1.0
-    },
-    {
-      "bonus_rolls": 0.0,
-      "conditions": [
-        {
-          "block": "delightful:sliced_mini_melon",
-          "condition": "minecraft:block_state_property",
-          "properties": {
-            "bites": "3"
-          }
-        }
-      ],
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:melon_slice"
-        }
-      ],
-      "functions": [
-        {
-          "add": false,
-          "count": {
-            "type": "minecraft:uniform",
-            "max": 3.0,
-            "min": 1.0
-          },
-          "function": "minecraft:set_count"
-        }
-      ],
-      "rolls": 1.0
-    },
-    {
-      "bonus_rolls": 0.0,
-      "conditions": [
-        {
-          "block": "delightful:sliced_mini_melon",
-          "condition": "minecraft:block_state_property",
-          "properties": {
-            "bites": "4"
-          }
-        }
-      ],
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:melon_slice"
-        }
-      ],
-      "functions": [
-        {
-          "add": false,
-          "count": {
-            "type": "minecraft:uniform",
             "max": 2.0,
             "min": 1.0
           },
@@ -133,7 +73,7 @@
           "block": "delightful:sliced_mini_melon",
           "condition": "minecraft:block_state_property",
           "properties": {
-            "bites": "5"
+            "bites": "3"
           }
         }
       ],

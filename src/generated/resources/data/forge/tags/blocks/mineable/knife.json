@@ -1,9 +1,12 @@
 {
   "values": [
+    "delightful:sliced_pumpkin",
+    "delightful:sliced_melon",
     "delightful:mini_melon",
     "delightful:sliced_mini_melon",
     "delightful:cantaloupe",
     "delightful:sliced_cantaloupe",
+    "delightful:sliced_gloomgourd",
     "delightful:salmonberry_pie",
     "delightful:pumpkin_pie",
     "delightful:blueberry_pie",
@@ -11,6 +14,14 @@
     "delightful:source_berry_pie",
     "delightful:gloomgourd_pie",
     "delightful:chorus_pie",
-    "delightful:baklava"
+    "delightful:baklava",
+    {
+      "id": "undergarden:gloomgourd",
+      "required": false
+    },
+    {
+      "id": "undergarden:carved_gloomgourd",
+      "required": false
+    }
   ]
 }

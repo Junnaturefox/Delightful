@@ -90,14 +90,15 @@ public class ForgeEvents {
 				slice(sliced.defaultBlockState(), sliced.getSliceItem(), world, pos, SoundEvents.BAMBOO_BREAK, e, client);
 			} else if (
 					Mods.loaded(Mods.UGD) &&
-							Objects.equals(ForgeRegistries.BLOCKS.getKey(current.getBlock()), Util.rl(Mods.UG, "gloomgourd"))
+					e.getEntity().isCrouching() && // Must be crouching to avoid "carving"
+					Objects.equals(ForgeRegistries.BLOCKS.getKey(current.getBlock()), Util.rl(Mods.UG, "gloomgourd"))
 			) {
 				SlicedGourdBlock sliced = (SlicedGourdBlock) DelightfulBlocks.SLICED_GLOOMGOURD.get();
 				slice(sliced.defaultBlockState(), sliced.getSliceItem(), world, pos, SoundEvents.BAMBOO_BREAK, e, client);
 			} else if (
 					Mods.loaded(Mods.FU, Mods.FUD) &&
-							Util.name(current.getBlock()).equals("truffle_cake") &&
-							ForgeRegistries.ITEMS.containsKey(Util.rl(Mods.FUD, "truffle_cake_slice"))
+					Util.name(current.getBlock()).equals("truffle_cake") &&
+					ForgeRegistries.ITEMS.containsKey(Util.rl(Mods.FUD, "truffle_cake_slice"))
 			) {
 				int currentBites = current.getValue(BlockStateProperties.BITES);
 				ItemStack slice = new ItemStack(Objects.requireNonNull(Util.item(Mods.FUD, "truffle_cake_slice")));

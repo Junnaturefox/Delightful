@@ -32,8 +32,8 @@ import vectorwing.farmersdelight.common.tag.ForgeTags;
 import java.util.function.Supplier;
 
 public class SlicedGourdBlock extends StemGrownBlock implements ISliceable {
-
-	public static final IntegerProperty BITES = IntegerProperty.create("bites", 1, 3);
+	public static final Integer MAX_BITES = 3;
+	public static final IntegerProperty BITES = IntegerProperty.create("bites", 1, MAX_BITES);
 	private final Supplier<Item> sliceItem;
 	private final Supplier<? extends Block> stemBlock;
 	private final Supplier<? extends Block> attachedStemBlock;
@@ -66,6 +66,11 @@ public class SlicedGourdBlock extends StemGrownBlock implements ISliceable {
 	}
 
 	@Override
+	public int getMaxBites() {
+		return MAX_BITES;
+	}
+
+	@Override
 	public IntegerProperty getBitesProperty() {
 		return BITES;
 	}
@@ -73,21 +78,6 @@ public class SlicedGourdBlock extends StemGrownBlock implements ISliceable {
 	@Override
 	public ItemStack getSliceItem() {
 		return new ItemStack(this.sliceItem.get());
-	}
-
-	@Override
-	public int getMaxBites() {
-		return 3;
-	}
-
-	@Override
-	public float getBaseHeight() {
-		return 11f;
-	}
-
-	@Override
-	public int getSliceSize() {
-		return 5;
 	}
 
 	@Override

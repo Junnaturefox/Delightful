@@ -314,14 +314,14 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
 						.requires(DelightfulItems.SALMONBERRIES.get())
 						.unlockedBy("has_salmonberries", has(DelightfulItemTags.FRUITS_SALMONBERRIES)),
 				"salmonberry_pips", finished, enabled("salmonberry_pips"));
-		wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DelightfulItems.CANTALOUPE_SLICE.get(), 3)
+		wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DelightfulItems.CANTALOUPE_SLICE.get(), 2)
 						.requires(DelightfulItems.CANTALOUPE.get())
 						.unlockedBy("has_cantaloupe", has(DelightfulItems.CANTALOUPE.get())),
 				"cantaloupe_slice", finished, enabled(DelightfulItems.CANTALOUPE_SLICE));
 		wrap(CuttingBoardRecipeBuilder.cuttingRecipe(
 						Ingredient.of(DelightfulItems.CANTALOUPE.get()),
 						Ingredient.of(ForgeTags.TOOLS_KNIVES),
-						DelightfulItems.CANTALOUPE_SLICE.get(), 6),
+						DelightfulItems.CANTALOUPE_SLICE.get(), 4),
 				"cutting/cantaloupe", finished, enabled(DelightfulItems.CANTALOUPE_SLICE));
 		wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, DelightfulItems.CANTALOUPE_SEEDS.get())
 						.requires(DelightfulItems.CANTALOUPE_SLICE.get())
@@ -538,8 +538,8 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
 		wrap(CuttingBoardRecipeBuilder.cuttingRecipe(
 						Ingredient.of(DelightfulItems.MINI_MELON.get()),
 						Ingredient.of(ForgeTags.TOOLS_KNIVES),
-						Items.MELON_SLICE, 6),
-				"cutting/mini_melon", finished, enabled("mini_melon"));
+						Items.MELON_SLICE, 4),
+				"cutting/mini_melon", finished, enabled(DelightfulItems.MINI_MELON));
 		wrap(CuttingBoardRecipeBuilder.cuttingRecipe(
 						Ingredient.of(DelightfulItemTags.RAW_VENISON_COMPAT),
 						Ingredient.of(ForgeTags.TOOLS_KNIVES),
@@ -550,10 +550,10 @@ public class DelightfulRecipeProvider extends RecipeProvider implements IConditi
 						Ingredient.of(ForgeTags.TOOLS_KNIVES),
 						DelightfulItems.COOKED_VENISON_CHOPS.get(), 2),
 				"cutting/cooked_venison", finished, enabled(DelightfulItems.COOKED_VENISON_CHOPS), not(tagEmpty(DelightfulItemTags.COOKED_VENISON_COMPAT)), tagEmpty(DelightfulItemTags.COOKED_VENISON_CHOP_COMPAT));
-		wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.MELON_SLICE, 3)
+		wrap(ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.MELON_SLICE, 2)
 						.requires(DelightfulItems.MINI_MELON.get())
 						.unlockedBy("has_mini_melon", has(DelightfulItems.MINI_MELON.get())),
-				"melon_slice", finished, enabled("mini_melon"));
+				"melon_slice", finished, enabled(DelightfulItems.MINI_MELON));
 		wrap(shaped(RecipeCategory.BUILDING_BLOCKS, DelightfulItems.SALMONBERRY_ICE_CREAM_BLOCK, 8)
 						.pattern("sss")
 						.pattern("sis")
