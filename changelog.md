@@ -4,21 +4,24 @@
 # 3.7
 
 ### Updates
-- Added "Delightful Overhauls" built-in resource pack (16x)
+- Added `Delightful Overhauls` built-in resource pack (16x)
   - Retextures of supported items from other mods in a Farmer's Delight style
   - Appears in Resource Pack selection page, disabled by default
 - Added Aluminum Knife (closes [#106](https://github.com/brnbrd/Delightful/issues/106))
 - Added Pearlescent Knife (for [Unusual End](https://www.curseforge.com/minecraft/mc-mods/unusual-end))
 - Placeable Chorus Pie, added Chorus Pie Slice and Chorus Muffin (for Unusual End)
   - Recommended with Delightful Overhauls resource pack enabled
-- Can scavenge Ham from Naturalist's Boars (and any entity tagged "delightful:drops_ham")
-- Removed support for "forge:tools/scavenging" tag
+- Cantaloupes and Mini Melons now produce 4 slices (from 6)
+- Can scavenge slices from breaking Cantaloupes and Mini Melons with a knife
+- Can scavenge Ham from Naturalist's Boars (and any entity tagged `delightful:drops_ham`)
+- Removed support for `forge:tools/scavenging` tag
 - Added recipe for cutting Ecologics' Coconut Husk into Straw
 - Slightly increased nutrition and saturation of Slice of Baklava
 
 ### Fixes
 - Stews must be cooked in a Cooking Pot
 - Fixed Ecologics cooking recipe container issues
+- Fixed typo in `quark:parrot_egg_gray` in `forge:eggs` tag (closes [#109](https://github.com/brnbrd/Delightful/pull/109))
 
 
 # 3.6.2
